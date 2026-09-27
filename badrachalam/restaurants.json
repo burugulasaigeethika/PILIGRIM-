@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Sri Rama Nithya Annadanam Complex",
+    "type": "Official Temple Annadanam Complex",
+    "distance": "Near main entrance",
+    "cost": "Completely Free",
+    "speciality": "Free, pure vegetarian lunch served daily from 11:30 AM to 2:30 PM."
+  },
+  {
+    "name": "Local Pilgrim Eateries & Messes",
+    "type": "Family-run Eateries",
+    "distance": "Clustered across Temple Road and Ashok Nagar",
+    "cost": "Budget-friendly (₹50–₹120 per plate standard breakfast/meals)",
+    "speciality": "Traditional South Indian meals, tiffins, and satvic options (without onion and garlic) tailored for devotees."
+  },
+  {
+    "name": "TGTDC Haritha Hotel Restaurant",
+    "type": "State-Run Standard Restaurant",
+    "distance": "~1 km",
+    "cost": "Moderate (₹150–₹350 per head configuration)",
+    "speciality": "On-site restaurant at TGTDC Haritha Hotel."
+  },
+  {
+    "name": "Arya Vysya Nityannadana Satram Dining",
+    "type": "Community Sathram",
+    "distance": "Medical Colony",
+    "cost": "Free (Voluntary maintenance donations highly encouraged)",
+    "speciality": "Free traditional meals provided to devotees."
+  }
+]

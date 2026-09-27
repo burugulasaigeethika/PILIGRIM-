@@ -1,0 +1,36 @@
+{
+  "temple_id": "chilkur_balaji",
+  "opening_time": "06:00 AM",
+  "closing_time": "08:00 PM",
+  "afternoon_break": {
+    "from": "01:00 PM",
+    "to": "04:00 PM"
+  },
+  "daily_schedule": [
+    {
+      "time_slot": "06:00 AM – 06:30 AM",
+      "ritual_name": "Temple Opening & Alankarana",
+      "details_and_significance": "Opening of the temple gates and decoration rituals."
+    },
+    {
+      "time_slot": "06:30 AM – 01:00 PM",
+      "ritual_name": "General Darshanam & Pradakshinam (Morning Slot)",
+      "details_and_significance": "Sarva Darshanam & Pradakshinam (Morning Slot) open to all devotees."
+    },
+    {
+      "time_slot": "01:00 PM – 04:00 PM",
+      "ritual_name": "Noon Naivedyam & Temple Cleaning (Sanctum Closed)",
+      "details_and_significance": "Afternoon closure for cleansing rituals and offerings."
+    },
+    {
+      "time_slot": "04:00 PM – 07:30 PM",
+      "ritual_name": "Temple Reopening & Evening Darshanam (Evening Slot)",
+      "details_and_significance": "Sarva Darshanam & Pradakshinam (Evening Slot) open to all devotees."
+    },
+    {
+      "time_slot": "07:30 PM – 08:00 PM",
+      "ritual_name": "Pavalimpu Seva & Temple Closing",
+      "details_and_significance": "Bedtime seva and closure of the temple."
+    }
+  ]
+}

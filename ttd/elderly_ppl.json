@@ -1,0 +1,68 @@
+{
+  "special_priority_darshan": {
+    "url": "https://www.tirumala.org/SpecialDarshanForPhysicallyDisabledAndAged.aspx",
+    "portal_booking_url": "https://ttdevasthanams.ap.gov.in",
+    "cost": "Free of charge (Privilege Darshan)",
+    "daily_quota": "Up to 1,000 tokens per day (released monthly in advance online)",
+    "cooling_off_period": "Once availed, the privilege can only be accessed again after 90 days",
+    "slots_and_timings": [
+      {
+        "slot_name": "Standard Daily Afternoon Slot",
+        "reporting_time": "01:00 PM",
+        "darshan_time": "03:00 PM",
+        "days": "Monday through Saturday"
+      },
+      {
+        "slot_name": "Morning Slot (Subject to TTD Quota Schedule)",
+        "reporting_time": "08:00 AM / 09:00 AM",
+        "darshan_time": "10:00 AM",
+        "days": "Sunday, Monday, Tuesday, Thursday, Saturday"
+      }
+    ],
+    "reporting_venue": {
+      "name": "Senior Citizen & Differently-Abled Waiting Complex",
+      "location": "Near Supatham Entrance / Opposite SV Museum, South Mada Street, Tirumala",
+      "amenities": "Air-conditioned sitting galleries, free hot milk, coffee, tea, sambar rice, accessible toilets, and medical assistance staff"
+    },
+    "eligibility_categories": {
+      "senior_citizens": {
+        "min_age": "65 years and above",
+        "mandatory_document": "Original Government Photo ID (Aadhaar Card preferred) showing complete Date of Birth",
+        "spouse_rule": "If either husband or wife is 65+ years old, the spouse is permitted to accompany as an attendant regardless of age"
+      },
+      "differently_abled": {
+        "requirement": "Minimum 21% permanent physical disability",
+        "mandatory_document": "Valid Medical Disability Certificate / UDID Card issued by Central/State Medical Board along with original Photo ID"
+      },
+      "medical_cases": {
+        "eligible_conditions": [
+          "Open Heart Surgery",
+          "Kidney / Renal Failure & Dialysis Patients",
+          "Organ Transplantation (Liver, Kidney)",
+          "Active Cancer / Brain Surgery",
+          "Severe Spine Surgery (Unable to walk long distances)"
+        ],
+        "mandatory_document": "Valid discharge summary or medical certificate issued by the concerned surgeon/specialist along with original Photo ID"
+      }
+    },
+    "attendant_policy": {
+      "general_rule": "Only spouse is permitted automatically for 65+ senior citizens and medical cases",
+      "super_senior_citizens": "1 dedicated attendant/helper allowed for pilgrims aged 80+ years",
+      "differently_abled_attendant": "1 dedicated attendant permitted if disability certificate mandates continuous assistance"
+    }
+  },
+  "wheelchair_assistance": {
+    "manual_wheelchairs": "Free manual wheelchairs available at South Mada Street, Supatham entrance, VQC-2, and PACs",
+    "motorized_wheelchairs": "Free battery-operated wheelchairs with trained Srivari Sevak volunteer assistants",
+    "deposit_policy": "No rental fee; available on a first-come, first-served basis at major entry gates"
+  },
+  "battery_buggies": {
+    "fleet_size": "50+ free electric battery vehicles",
+    "coverage_routes": "Continuous service running between CRO, Tirumala Bus Stand, PACs, SV Museum, and Temple Entry Gates",
+    "priority_boarding": "Reserved exclusively for elderly, disabled, pregnant women, and parents with infants"
+  },
+  "physical_accessibility": {
+    "ramps_and_flooring": "Gentle barrier-free non-slip ramps, tactile flooring, and stainless steel support handrails throughout the queue lines",
+    "sanctum_access": "Dedicated hydraulic lifts, escalator bridges, and direct ramp access bypassing steps directly into the Mahadwaram and inner sanctum"
+  }
+}

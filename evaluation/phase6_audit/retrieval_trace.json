@@ -1,0 +1,110 @@
+[
+  {
+    "temple": "Dharmapuri",
+    "category": "sevas",
+    "source_files": [
+      "dharmapuri/sevas.json"
+    ],
+    "has_parent_text": true,
+    "traceable": true
+  },
+  {
+    "temple": "Dharmapuri",
+    "category": "timings",
+    "source_files": [
+      "dharmapuri/timings.json"
+    ],
+    "has_parent_text": false,
+    "traceable": true
+  },
+  {
+    "temple": "Dharmapuri",
+    "category": "festivals",
+    "source_files": [
+      "dharmapuri/festivals.json"
+    ],
+    "has_parent_text": true,
+    "traceable": true
+  },
+  {
+    "temple": "Dharmapuri",
+    "category": "river_bank",
+    "source_files": [
+      "dharmapuri/river_bank.json"
+    ],
+    "has_parent_text": false,
+    "traceable": true
+  },
+  {
+    "temple": "Basara",
+    "category": "sevas",
+    "source_files": [
+      "basara/sevas.json"
+    ],
+    "has_parent_text": true,
+    "traceable": true
+  },
+  {
+    "temple": "Basara",
+    "category": "timings",
+    "source_files": [
+      "basara/timings.json"
+    ],
+    "has_parent_text": false,
+    "traceable": true
+  },
+  {
+    "temple": "Basara",
+    "category": "festivals",
+    "source_files": [
+      "basara/festivals.json"
+    ],
+    "has_parent_text": true,
+    "traceable": true
+  },
+  {
+    "temple": "Basara",
+    "category": "river_bank",
+    "source_files": [
+      "basara/river_bank.json"
+    ],
+    "has_parent_text": false,
+    "traceable": true
+  },
+  {
+    "temple": "Yadadri",
+    "category": "sevas",
+    "source_files": [
+      "yadadri/sevas.json"
+    ],
+    "has_parent_text": true,
+    "traceable": true
+  },
+  {
+    "temple": "Yadadri",
+    "category": "timings",
+    "source_files": [
+      "yadadri/timings.json"
+    ],
+    "has_parent_text": false,
+    "traceable": true
+  },
+  {
+    "temple": "Yadadri",
+    "category": "festivals",
+    "source_files": [
+      "yadadri/festivals.json"
+    ],
+    "has_parent_text": true,
+    "traceable": true
+  },
+  {
+    "temple": "Yadadri",
+    "category": "river_bank",
+    "source_files": [
+      "yadadri/river_bank.json"
+    ],
+    "has_parent_text": false,
+    "traceable": true
+  }
+]

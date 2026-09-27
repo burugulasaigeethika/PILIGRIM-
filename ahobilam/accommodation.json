@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Malola Guest House",
+    "type": "Guest House",
+    "distance": "Lower Ahobilam",
+    "price": "Non-AC Room for 2 Beds is around ₹900 per night,AC Room for 2 Bed is around ₹1,200 per night,Dormitories / Large Family Rooms are Typically range from ₹500 to ₹1,000 depending on total bed count",
+    "description": "Run directly by Sri Ahobila Muth in Lower Ahobilam, offering 14 rooms (single, double, triple AC/non-AC) and 10 dormitories."
+  },
+  {
+    "name": "Haritha Hotel (APTDC)",
+    "type": "Tourism Hotel",
+    "distance": "Lower Ahobilam",
+    "price": "Standard Non-AC Room ranges from ₹735 to ₹945 per night,Standard / Deluxe AC Room ranges from ₹1,155 to ₹1,575 per night,Executive / Suite AC Room ranges from ₹1,785 to ₹2,835 per night",
+    "description": "Managed by Andhra Pradesh Tourism Development Corporation, located in Lower Ahobilam, providing comfortable rooms and parking.Note: This community rest house traditionally provides free afternoon and night meals (Annadanam) to visiting pilgrims"
+  },
+  {
+    "name": "Arya Vysya Annadhana Satram",
+    "type": "Community Rest House (Satram)",
+    "distance": "Lower Ahobilam",
+    "price": "Non-AC Rooms ranges from ₹600 to ₹800 per night,Deluxe AC / Super Deluxe Rooms ranges from ₹1,200 to ₹1,600 per night,",
+    "description": "Local community rest house offering simple, budget-friendly accommodation and food for pilgrims."
+  },
+  {
+    "name": "Padmashali Satram / Yogi Vemana Satram",
+    "type": "Community Rest House (Satram)",
+    "distance": "Lower Ahobilam",
+    "price": "Basic Non-AC Rooms ranging from ₹500 to ₹700 per night,Basic AC Rooms ranging from ₹1,000 to ₹1,200 per night",
+    "description": "Community satrams offering budget rooms."
+  }
+]

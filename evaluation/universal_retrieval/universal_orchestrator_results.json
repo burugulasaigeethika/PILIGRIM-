@@ -1,0 +1,321 @@
+[
+  {
+    "id": "1_TARGETED_SEVA_PRICE",
+    "query": "What is the price of Abhishekam in Dharmapuri?",
+    "expected_mode": "targeted",
+    "actual_mode": "targeted",
+    "temples": [
+      "Dharmapuri"
+    ],
+    "categories": [
+      "sevas"
+    ],
+    "exhaustive": false,
+    "retrieved_chunks": 3,
+    "sources_count": 3,
+    "sources": [
+      "dharmapuri/faq.json",
+      "dharmapuri/prasadam.json",
+      "dharmapuri/sevas.json"
+    ],
+    "latency_ms": 3804.08,
+    "answer_length": 46,
+    "answer_preview": "The price of Abhishekam in Dharmapuri is \u20b9500.",
+    "passed": true
+  },
+  {
+    "id": "2_COMPLETE_SEVAS_DHARMAPURI",
+    "query": "What are all the sevas in Dharmapuri?",
+    "expected_mode": "complete_category",
+    "actual_mode": "complete_category",
+    "temples": [
+      "Dharmapuri"
+    ],
+    "categories": [
+      "sevas"
+    ],
+    "exhaustive": true,
+    "retrieved_chunks": 1,
+    "sources_count": 1,
+    "sources": [
+      "dharmapuri/sevas.json"
+    ],
+    "latency_ms": 43878.21,
+    "answer_length": 1659,
+    "answer_preview": "Based on the provided context, the sevas in Dharmapuri are:\n\n1. Abhishekam\n   - Telugu Name: \u0c05\u0c2d\u0c3f\u0c37\u0c47\u0c15\u0c02\n   - Price: \u20b9500\n   - Timing: from 6:00 AM\n   - Description: Sri Swami vari Abh...",
+    "passed": true
+  },
+  {
+    "id": "3_COMPLETE_FESTIVALS_BASARA",
+    "query": "List all festivals at Basara.",
+    "expected_mode": "complete_category",
+    "actual_mode": "complete_category",
+    "temples": [
+      "Basara"
+    ],
+    "categories": [
+      "festivals"
+    ],
+    "exhaustive": true,
+    "retrieved_chunks": 1,
+    "sources_count": 1,
+    "sources": [
+      "basara/festivals.json"
+    ],
+    "latency_ms": 19416.88,
+    "answer_length": 1285,
+    "answer_preview": "Basara hosts the following festivals:\n\n1. **Vasant Panchami / Sri Panchami** - Celebrated on Magha Masam, this festival features the highest annual single-day crowd density and is ...",
+    "passed": true
+  },
+  {
+    "id": "4_AGGREGATION_RIVER_POSITIVE",
+    "query": "List all temples that have a river bank.",
+    "expected_mode": "cross_temple_aggregation",
+    "actual_mode": "cross_temple_aggregation",
+    "temples": [],
+    "categories": [
+      "river_bank"
+    ],
+    "exhaustive": true,
+    "retrieved_chunks": 11,
+    "sources_count": 11,
+    "sources": [
+      "ahobilam/river_bank.json",
+      "badrachalam/river_bank.json",
+      "basara/river_bank.json",
+      "dharmapuri/river_bank.json",
+      "edupayal/river_bank.json",
+      "jogulamba(new)/river_bank.json",
+      "kaleshvaram/river_bank.json",
+      "medaram/river_bank.json",
+      "srisaila/river_bank.json",
+      "veera satyanarayana/river_bank.json",
+      "vemulavada/river_bank.json"
+    ],
+    "latency_ms": 10.54,
+    "answer_length": 1310,
+    "answer_preview": "Based on the temple knowledge base, the following **11 temples** have confirmed **River Bank** information:\n\n1. **Ahobilam** \u2014 River: Bhavanashini River (Pavanasini River) (Ghat: R...",
+    "passed": true
+  },
+  {
+    "id": "5_AGGREGATION_WHEELCHAIR_NEGATIVE",
+    "query": "List all temples that don't have wheelchair facilities.",
+    "expected_mode": "cross_temple_aggregation",
+    "actual_mode": "cross_temple_aggregation",
+    "temples": [],
+    "categories": [
+      "wheelchair"
+    ],
+    "exhaustive": true,
+    "retrieved_chunks": 7,
+    "sources_count": 7,
+    "sources": [
+      "balkampet/elderly_ppl.json",
+      "birla mandir/elderly_ppl.json",
+      "dharmapuri/elderly_ppl.json",
+      "edupayal/elderly_ppl.json",
+      "ramappa/elderly_ppl.json",
+      "thousand pillar/elderly_ppl.json",
+      "ujjaini/elderly_ppl.json"
+    ],
+    "latency_ms": 8.99,
+    "answer_length": 1307,
+    "answer_preview": "Based on verified temple knowledge base records, the following **7 temples** are confirmed to **NOT have Wheelchair** (or have major documented architectural/physical limitations):...",
+    "passed": true
+  },
+  {
+    "id": "6_AGGREGATION_ACCOMMODATION_POSITIVE",
+    "query": "Which temples have accommodation?",
+    "expected_mode": "cross_temple_aggregation",
+    "actual_mode": "cross_temple_aggregation",
+    "temples": [],
+    "categories": [
+      "accommodation"
+    ],
+    "exhaustive": true,
+    "retrieved_chunks": 20,
+    "sources_count": 20,
+    "sources": [
+      "ahobilam/accommodation.json",
+      "badrachalam/accommodation.json",
+      "balkampet/accommodation.json",
+      "basara/accommodation.json",
+      "birla mandir/accommodation.json",
+      "chilkur/accommodation.json",
+      "dharmapuri/accommodation.json",
+      "edupayal/accommodation.json",
+      "jogulamba(new)/accommodation.json",
+      "kaleshvaram/accommodation.json",
+      "karmanghat/accommodation.json",
+      "medaram/accommodation.json",
+      "ramappa/accommodation.json",
+      "srisaila/accommodation.json",
+      "thousand pillar/accommodation.json",
+      "ttd/accommodation.json",
+      "ujjaini/accommodation.json",
+      "veera satyanarayana/accommodation.json",
+      "vemulavada/accommodation.json",
+      "yadadri/accommodation.json"
+    ],
+    "latency_ms": 7.42,
+    "answer_length": 1133,
+    "answer_preview": "Based on the temple knowledge base, the following **20 temples** have confirmed **Accommodation** information:\n\n1. **Ahobilam** \u2014 Offers 4 accommodation options\n2. **Badrachalam** ...",
+    "passed": true
+  },
+  {
+    "id": "7_AGGREGATION_RESTAURANTS_NEGATIVE",
+    "query": "Which temples don't have restaurants?",
+    "expected_mode": "cross_temple_aggregation",
+    "actual_mode": "cross_temple_aggregation",
+    "temples": [],
+    "categories": [
+      "restaurants"
+    ],
+    "exhaustive": true,
+    "retrieved_chunks": 0,
+    "sources_count": 0,
+    "sources": [],
+    "latency_ms": 6.3,
+    "answer_length": 106,
+    "answer_preview": "I could not find any temples with confirmed absence of restaurants in the available temple knowledge base.",
+    "passed": true
+  },
+  {
+    "id": "8_MULTI_CATEGORY_ACCOMMODATION_RESTAURANTS",
+    "query": "What accommodation and restaurants are available near Dharmapuri?",
+    "expected_mode": "multi_category",
+    "actual_mode": "multi_category",
+    "temples": [
+      "Dharmapuri"
+    ],
+    "categories": [
+      "accommodation",
+      "restaurants"
+    ],
+    "exhaustive": true,
+    "retrieved_chunks": 2,
+    "sources_count": 2,
+    "sources": [
+      "dharmapuri/accommodation.json",
+      "dharmapuri/restaurants.json"
+    ],
+    "latency_ms": 7493.6,
+    "answer_length": 287,
+    "answer_preview": "Accommodation:\n- Sri Hanuman tiffins and meals (Type: Private Veg Hotel)\n- New Geetha Bhavan (Type: Private Veg Hotel)\n\nRestaurants:\n- Sri Hanuman tiffins and meals (Type: Private ...",
+    "passed": true
+  },
+  {
+    "id": "9_TARGETED_TIMINGS",
+    "query": "What are the timings of Dharmapuri Temple?",
+    "expected_mode": "targeted",
+    "actual_mode": "targeted",
+    "temples": [
+      "Dharmapuri"
+    ],
+    "categories": [
+      "timings"
+    ],
+    "exhaustive": false,
+    "retrieved_chunks": 3,
+    "sources_count": 3,
+    "sources": [
+      "dharmapuri/faq.json",
+      "dharmapuri/restaurants.json",
+      "dharmapuri/timings.json"
+    ],
+    "latency_ms": 13010.94,
+    "answer_length": 146,
+    "answer_preview": "The Dharmapuri Temple is open daily. Morning darshan timings are from 5:00 AM to 2:30 PM, and evening darshan timings are from 4:00 PM to 8:00 PM.",
+    "passed": true
+  },
+  {
+    "id": "10_TARGETED_HISTORY",
+    "query": "Tell me the history of Yadadri.",
+    "expected_mode": "targeted",
+    "actual_mode": "targeted",
+    "temples": [
+      "Yadadri"
+    ],
+    "categories": [
+      "temple"
+    ],
+    "exhaustive": false,
+    "retrieved_chunks": 3,
+    "sources_count": 1,
+    "sources": [
+      "yadadri/temple.json"
+    ],
+    "latency_ms": 6577.06,
+    "answer_length": 336,
+    "answer_preview": "The reconstruction of the Yadadri temple is one of the largest stone temple renovation projects in modern history. Executed by the Yadadri Temple Development Authority (YTDA) and d...",
+    "passed": true
+  },
+  {
+    "id": "11_BROAD_TEMPLE_INFO",
+    "query": "Tell me everything about Dharmapuri Temple.",
+    "expected_mode": "broad_temple",
+    "actual_mode": "broad_temple",
+    "temples": [
+      "Dharmapuri"
+    ],
+    "categories": [],
+    "exhaustive": true,
+    "retrieved_chunks": 4,
+    "sources_count": 4,
+    "sources": [
+      "dharmapuri/festivals.json",
+      "dharmapuri/prasadam.json",
+      "dharmapuri/restaurants.json",
+      "dharmapuri/sevas.json"
+    ],
+    "latency_ms": 72935.21,
+    "answer_length": 3618,
+    "answer_preview": "Dharmapuri Temple is a comprehensive temple located in Dharmapuri, Telangana. It offers a variety of services and events throughout the year, including Sevas, festivals, and restau...",
+    "passed": true
+  },
+  {
+    "id": "12_TARGETED_SINGLE_WHEELCHAIR",
+    "query": "Does Dharmapuri have wheelchair facilities?",
+    "expected_mode": "targeted",
+    "actual_mode": "targeted",
+    "temples": [
+      "Dharmapuri"
+    ],
+    "categories": [
+      "wheelchair"
+    ],
+    "exhaustive": false,
+    "retrieved_chunks": 3,
+    "sources_count": 3,
+    "sources": [
+      "dharmapuri/elderly_ppl.json",
+      "dharmapuri/emergency_nos.json",
+      "dharmapuri/facilities.json"
+    ],
+    "latency_ms": 4142.33,
+    "answer_length": 51,
+    "answer_preview": "No, Dharmapuri does not have wheelchair facilities.",
+    "passed": true
+  },
+  {
+    "id": "13_UNSUPPORTED_REFUSAL",
+    "query": "Does Dharmapuri have a helicopter launch pad?",
+    "expected_mode": "targeted",
+    "actual_mode": "targeted",
+    "temples": [
+      "Dharmapuri"
+    ],
+    "categories": [],
+    "exhaustive": false,
+    "retrieved_chunks": 3,
+    "sources_count": 2,
+    "sources": [
+      "dharmapuri/faq.json",
+      "dharmapuri/rules.json"
+    ],
+    "latency_ms": 8637.27,
+    "answer_length": 53,
+    "answer_preview": "No, Dharmapuri does not have a helicopter launch pad.",
+    "passed": true
+  }
+]

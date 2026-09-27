@@ -1,0 +1,50 @@
+[
+  {
+    "festival_name": "Sharad Navaratri / Dasara",
+    "month": "September/October",
+    "importance": "This is the grandest festival at this Maha Shakti Peetha. The festival spans 9 days, where Goddess Jogulamba is beautifully adorned in different forms (Nava Durga Alankaram) each day.",
+    "description": "This is the grandest festival at this Maha Shakti Peetha. The festival spans 9 days, where Goddess Jogulamba is beautifully adorned in different forms (Nava Durga Alankaram) each day. A major highlight is the grand Teppotsavam (Float Festival / Boat Rituals) held on the adjacent Tungabhadra River on Vijayadashami.",
+    "schedule": [
+      {
+        "date": "Vijayadashami",
+        "tithi_event": "Teppotsavam (Float Festival / Boat Rituals)",
+        "details": "Grand float festival held on the adjacent Tungabhadra River on Vijayadashami."
+      }
+    ]
+  },
+  {
+    "festival_name": "Maha Shivaratri",
+    "month": "February/March",
+    "importance": "A massive festival due to the temple's integration within the historic Navabrahma Shiva Temple complex.",
+    "description": "A massive festival due to the temple's integration within the historic Navabrahma Shiva Temple complex. Special focus is placed on the neighboring Sri Bala Brahmeswara Swamy Temple. Devotees participate in day-and-night-long continuous prayers, chanting, and special Abhishekams.",
+    "schedule": []
+  },
+  {
+    "festival_name": "Annual Jogulamba Brahmotsavam",
+    "month": "January/February (Magha Masam)",
+    "importance": "Celebrated annually during the auspicious Magha Masam.",
+    "description": "This is a 5-day temple festival featuring elaborate community processions, chariot festivals (Rathotsavam), and specialized Chandi Homams performed by elite priests.",
+    "schedule": []
+  },
+  {
+    "festival_name": "Telangana Bonalu & Shakambari Festival",
+    "month": "July/August (Ashada Masam)",
+    "importance": "Celebrated in the Hindu month of Ashada to honor the fierce protector form of the goddess.",
+    "description": "Celebrated in the Hindu month of Ashada to honor the fierce protector form of the goddess. Local women carry decorated earthen pots containing cooked rice and jaggery (Bonam) to offer to the deity. During this time, the goddess is also uniquely decorated completely with fresh fruits and vegetables (Shakambari Alankaram).",
+    "schedule": []
+  },
+  {
+    "festival_name": "Ugadi & Kartik Purnima",
+    "month": "March/April & November",
+    "importance": "Celebrations marking seasonal transitions and auspicious lunar alignment days.",
+    "description": "On Ugadi (Telugu New Year), specialized astrological readings (Panchanga Sravanam) take place. During Kartik Purnima, thousands of oil lamps are lit around the river banks and temple corridors.",
+    "schedule": []
+  },
+  {
+    "festival_name": "Krishna & Tungabhadra Pushkaralu",
+    "month": "Every 12 Years",
+    "importance": "A massive river confluence festival that occurs once every 12 years.",
+    "description": "Millions of pilgrims travel here to take a holy dip in the river confluence to wash away sins before offering prayers to the Goddess. The most recent Tungabhadra Pushkaralu was held from 20 November to 1 December 2020, with the next one expected in 2032.",
+    "schedule": []
+  }
+]

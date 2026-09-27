@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Balaji Chilkur Family Dhaba",
+    "cuisine": "Pure vegetarian North & South Indian meals",
+    "type": "Private Veg Hotel",
+    "distance": "~3 km",
+    "pricing": "₹100–₹300",
+    "timings": "11:00 AM–10:30 PM",
+    "address": "Moinabad Road"
+  },
+  {
+    "name": "Iraa Restaurant",
+    "cuisine": "Multi-cuisine family dining (A/C)",
+    "type": "Private Hotel/Restaurant",
+    "distance": "~5.1 km",
+    "pricing": "₹200–₹500",
+    "timings": "11:00 AM–11:00 PM",
+    "address": "Aziz Nagar"
+  },
+  {
+    "name": "Local Tiffin Stalls",
+    "cuisine": "Traditional South Indian breakfast & tea",
+    "type": "Private Veg Hotel",
+    "distance": "Walking distance",
+    "pricing": "₹20–₹100",
+    "timings": "5:00 AM–8:00 PM",
+    "address": "Outside Temple Gate"
+  }
+]

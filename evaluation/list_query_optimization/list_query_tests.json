@@ -1,0 +1,145 @@
+[
+  {
+    "id": "TC_DHARMAPURI_SEVAS_ALL",
+    "question": "What are all the sevas in Dharmapuri Temple?",
+    "query_type": "complete_list",
+    "temple": "Dharmapuri",
+    "category": "sevas",
+    "source_file": "dharmapuri/sevas.json",
+    "expected_items": [
+      "Abhishekam",
+      "Tulasi Vishe\u1e63\u0101rchana",
+      "Sahasranamas",
+      "Gok\u1e63an\u0101ma Harati",
+      "Odi Biyyam",
+      "Kumkuma Archana",
+      "Pulihora Bhogam",
+      "B\u014drela Bhogam",
+      "Veda Aashirvachanam"
+    ],
+    "status": "PASSED",
+    "latency_ms": 65414.1,
+    "retrieved_chunks": 1,
+    "sources": [
+      "dharmapuri/sevas.json"
+    ],
+    "answer": "The sevas in Dharmapuri Temple are as follows:\n\n1. Abhishekam - Telugu Name: \u0c05\u0c2d\u0c3f\u0c37\u0c47\u0c15\u0c02\n   Price: \u20b9500\n   Timing: from 6:00 AM\n\n2. Tulasi Vishe\u1e63\u0101rchana - Telugu Name: \u0c24\u0c41\u0c32\u0c38\u0c3f \u0c35\u0c3f\u0c36\u0c47\u0c37\u0c3e\u0c30\u0c4d\u0c1a\u0c28\n   Price: \u20b9500\n   Timing: from 8:00 AM\n\n3. Sahasranamas / Korika Niv\u1e5btti - Telugu Name: \u0c38\u0c39\u0c38\u0c4d\u0c30\u0c28\u0c3e\u0c2e\u0c3e\u0c32\u0c41 / \u0c15\u0c4b\u0c30\u0c3f\u0c15 \u0c28\u0c3f\u0c35\u0c43\u0c24\u0c4d\u0c24\u0c3f\n   Price: \u20b950\n   Timing: Daily during Archana slots\n   Description: Chanting of Sahasranamas and fulfillment of vows\n\n4. Gok\u1e63an\u0101ma Harati - Telugu Name: \u0c17\u0c4b\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c2e \u0c39\u0c3e\u0c30\u0c24\u0c3f\n   Price: \u20b9200\n   Timing: Daily during Archana slots\n   Description: Special Harati ritual\n\n5. Odi Biyyam - Telugu Name: \u0c12\u0c21\u0c3f \u0c2c\u0c3f\u0c2f\u0c4d\u0c2f\u0c02\n   Price: \u20b950\n   Timing: Daily during Archana slots\n   Description: Traditional ritual offering of rice\n\n6. Kumkuma Archana - Telugu Name: \u0c15\u0c41\u0c02\u0c15\u0c41\u0c2e \u0c05\u0c30\u0c4d\u0c1a\u0c28\n   Price: \u20b9200\n   Timing: Daily during Archana slots\n   Description: Kumkuma Archana ritual\n\n7. Pulihora Bhogam / Dadhojana Bhogam - Telugu Name: \u0c2a\u0c41\u0c32\u0c3f\u0c39\u0c4b\u0c30 \u0c2d\u0c4b\u0c17\u0c02 / \u0c26\u0c26\u0c4d\u0c27\u0c4b\u0c1c\u0c28 \u0c2d\u0c4b\u0c17\u0c02\n   Price: \u20b9300\n   Timing: at 10:00 AM\n   Description: Special food offerings of Pulihora or Dadhojana served at 10:00 AM\n\n8. B\u014drela Bhogam - Telugu Name: \u0c2c\u0c4b\u0c30\u0c46\u0c32 \u0c2d\u0c4b\u0c17\u0c02\n   Price: \u20b9500\n   Timing: at 12:00 noon\n   Description: Borela sweet food offering served at 12:00 noon\n\n9. Veda Aashirvachanam - Telugu Name: \u0c35\u0c47\u0c26 \u0c06\u0c36\u0c40\u0c30\u0c4d\u0c35\u0c1a\u0c28\u0c02\n   Price: \u20b9500\n   Timing: Daily during Archana slots\n   Description: Vedic blessings by temple priests\n\nThese are all the sevas available in Dharmapuri Temple.",
+    "matched_items": [
+      "Abhishekam",
+      "Tulasi Vishe\u1e63\u0101rchana",
+      "Sahasranamas",
+      "Gok\u1e63an\u0101ma Harati",
+      "Odi Biyyam",
+      "Kumkuma Archana",
+      "Pulihora Bhogam",
+      "B\u014drela Bhogam",
+      "Veda Aashirvachanam"
+    ],
+    "missing_items": []
+  },
+  {
+    "id": "TC_DHARMAPURI_SEVAS_LIST",
+    "question": "List all sevas available at Dharmapuri.",
+    "query_type": "complete_list",
+    "temple": "Dharmapuri",
+    "category": "sevas",
+    "source_file": "dharmapuri/sevas.json",
+    "expected_items": [
+      "Abhishekam",
+      "Tulasi Vishe\u1e63\u0101rchana",
+      "Sahasranamas",
+      "Gok\u1e63an\u0101ma Harati",
+      "Odi Biyyam",
+      "Kumkuma Archana",
+      "Pulihora Bhogam",
+      "B\u014drela Bhogam",
+      "Veda Aashirvachanam"
+    ],
+    "status": "PASSED",
+    "latency_ms": 26863.53,
+    "retrieved_chunks": 1,
+    "sources": [
+      "dharmapuri/sevas.json"
+    ],
+    "answer": "Here is the list of sevas available at Dharmapuri:\n\n1. Abhishekam - Sri Swami vari Abhishekam ritual starting at 6:00 AM\n2. Tulasi Vishe\u1e63\u0101rchana - Special Tulasi Archana ritual starting at 8:00 AM\n3. Sahasranamas / Korika Niv\u1e5btti - Chanting of Sahasranamas and fulfillment of vows\n4. Gok\u1e63an\u0101ma Harati - Special Harati ritual\n5. Odi Biyyam - Traditional ritual offering of rice\n6. Kumkuma Archana - Kumkuma Archana ritual\n7. Pulihora Bhogam / Dadhojana Bhogam - Special food offerings of Pulihora or Dadhojana served at 10:00 AM\n8. B\u014drela Bhogam - Borela sweet food offering served at 12:00 noon\n9. Veda Aashirvachanam - Vedic blessings by temple priests",
+    "matched_items": [
+      "Abhishekam",
+      "Tulasi Vishe\u1e63\u0101rchana",
+      "Sahasranamas",
+      "Gok\u1e63an\u0101ma Harati",
+      "Odi Biyyam",
+      "Kumkuma Archana",
+      "Pulihora Bhogam",
+      "B\u014drela Bhogam",
+      "Veda Aashirvachanam"
+    ],
+    "missing_items": []
+  },
+  {
+    "id": "TC_BASARA_FESTIVALS_ALL",
+    "question": "What are all the festivals at Basara Temple?",
+    "query_type": "complete_list",
+    "temple": "Basara",
+    "category": "festivals",
+    "source_file": "basara/festivals.json",
+    "expected_items": [
+      "Vasant Panchami",
+      "Devi Navarathrotsavams",
+      "Mahasivarathri Jathra",
+      "Vyasa Pournima"
+    ],
+    "status": "PASSED",
+    "latency_ms": 50897.25,
+    "retrieved_chunks": 1,
+    "sources": [
+      "basara/festivals.json"
+    ],
+    "answer": "Basara Temple celebrates the following festivals:\n\n1. **Vasant Panchami / Sri Panchami** - Celebrated in Magha Masam (Typically January or February), this festival features the grandest annual single-day crowd density and is widely revered as the manifestation day of the Goddess of Knowledge (Saraswathi Jayanthi).\n\n2. **Devi Navarathrotsavams (Sharad Navratri)** - Celebrated in Ashwayuja Masam (Typically September or October), this festival includes 9-day grand celebrations dedicated to Goddess Durga, Lakshmi, and Saraswathi with special Alankarams, Chandi Homam, and religious discourses.\n\n3. **Mahasivarathri Jathra** - Celebrated in Magha Masam / Bahula Trayodashi (Typically February or March), this festival features a major festival where lakhs of pilgrims visit the shrine to offer vows to Lord Vyaseshwara & Lord Shiva on the banks of Godavari.\n\n4. **Vyasa Pournima** - Celebrated on Ashada Paurnima, this festival is performed in a large scale to pay ancestral homage to the legendary author of the Mahabharata and the Puranas.\n\n5. **Other Festivals** - Sreerama Navami, Vyasa Purnima, Sravana Masotsavam, Kartheeka Masotsavam, Deepavali, and Akshaya Tritiya are celebrated throughout the Hindu Lunar Calendar cycles, ensuring the continuous flow of seasonal community prayers, special evening oil-lamp line lightings (Deepotsavam), and localized multi-deity offerings.",
+    "matched_items": [
+      "Vasant Panchami",
+      "Devi Navarathrotsavams",
+      "Mahasivarathri Jathra",
+      "Vyasa Pournima"
+    ],
+    "missing_items": []
+  },
+  {
+    "id": "TC_DHARMAPURI_ABHISHEKAM_PRICE",
+    "question": "What is the price of Abhishekam in Dharmapuri?",
+    "query_type": "normal_targeted",
+    "temple": "Dharmapuri",
+    "category": "sevas",
+    "source_file": "dharmapuri/sevas.json",
+    "expected_substring": "500",
+    "status": "PASSED",
+    "latency_ms": 5335.61,
+    "retrieved_chunks": 3,
+    "sources": [
+      "dharmapuri/faq.json",
+      "dharmapuri/prasadam.json",
+      "dharmapuri/sevas.json"
+    ],
+    "answer": "The price of Abhishekam in Dharmapuri is \u20b9500.",
+    "matched_items": [],
+    "missing_items": []
+  },
+  {
+    "id": "TC_YADADRI_TIMINGS",
+    "question": "What are the timings of Yadadri Temple?",
+    "query_type": "normal_targeted",
+    "temple": "Yadadri",
+    "category": "timings",
+    "source_file": "yadadri/timings.json",
+    "expected_substring": "AM",
+    "status": "PASSED",
+    "latency_ms": 40972.28,
+    "retrieved_chunks": 3,
+    "sources": [
+      "yadadri/faq.json",
+      "yadadri/timings.json"
+    ],
+    "answer": "The Yadadri Temple is open daily from 4:00 AM to 9:45 PM. It is closed for a brief afternoon rest period between 3:00 PM and 4:00 PM.",
+    "matched_items": [],
+    "missing_items": []
+  }
+]

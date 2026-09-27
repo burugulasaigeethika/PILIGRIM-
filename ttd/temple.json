@@ -1,0 +1,100 @@
+{
+  "temple_id": "ttd_tirumala",
+  "name": "Sri Venkateswara Swamy Temple (Tirumala Tirupati Devasthanams - TTD)",
+  "alternate_names": [
+    "Tirumala Temple",
+    "Tirupati Balaji Temple",
+    "Sri Vari Temple",
+    "Ezhumalayan Temple",
+    "Kaliyuga Vaikuntam",
+    "Seven Hills Temple"
+  ],
+  "state": "Andhra Pradesh",
+  "district": "Tirupati (formerly Chittoor)",
+  "village": "Tirumala",
+  "address": "Sri Venkateswara Swamy Vari Temple, Srivari Sannidhi Street (East Mada Street), Tirumala, Tirupati District, Andhra Pradesh - 517504, India",
+  "administrative_office": "TTD Administrative Building, K.T. Road, Tirupati - 517501, Andhra Pradesh",
+  "river": "Holy Swami Pushkarini Theertham (Tirumala) / Swarnamukhi River (foothills)",
+  "main_deity": "Lord Sri Venkateswara Swamy (Lord Balaji / Srinivasa / Govinda) – Swayambhu (Self-manifested) granite idol standing in the sanctum sanctorum under the golden Ananda Nilayam Vimana.",
+  "deities_inside_sanctum": {
+    "presiding_deity": "Lord Sri Venkateswara Swamy (Moola Virat / Dhruva Beram)",
+    "pancha_beram": [
+      {
+        "name": "Bhoga Srinivasa",
+        "description": "The silver idol that receives daily Abhishekams and nightly Ekantha Seva."
+      },
+      {
+        "name": "Sri Malayappa Swamy",
+        "description": "The main processional deity (Utsava Murti) who steps out of the temple with consorts Sridevi and Bhudevi."
+      },
+      {
+        "name": "Ugra Srinivasa",
+        "description": "The fierce form (Snapana Beram) that leaves the sanctum only once a year on Kaishika Dwadasi."
+      },
+      {
+        "name": "Koluvu Srinivasa",
+        "description": "The deity (Bali Beram) who oversees the daily ledger and distributes accounts each morning."
+      }
+    ],
+    "other_lineage_deities": [
+      {
+        "name": "Sri Krishna Avatara",
+        "description": "Idols of Lord Krishna with his consort Rukmini."
+      },
+      {
+        "name": "Sri Rama Avatara",
+        "description": "Idols of Lord Rama, Sita Devi, Lakshmana, and Sugriva."
+      },
+      {
+        "name": "Sri Chakrathalwar",
+        "description": "The divine discus (Sudarshana Chakra) of Vishnu."
+      }
+    ]
+  },
+  "sub_shrines_within_enclosures": [
+    {
+      "name": "Sri Yoga Narasimha Swamy",
+      "location": "Located in a separate shrine inside the Vimana Pradakshinam."
+    },
+    {
+      "name": "Sri Ramanujacharya (Bhashyakarulu)",
+      "location": "Located in the Vimana Pradakshinam adjacent to the main shrine."
+    },
+    {
+      "name": "Sri Vishwaksena",
+      "location": "Enshrined in the northern wing inside the temple."
+    },
+    {
+      "name": "Sri Garuda Bhagavan",
+      "location": "Seated directly facing the main deity in a small porch inside the inner enclosure."
+    },
+    {
+      "name": "Sri Sanaka & Sanandana",
+      "location": "Small metallic deities flanking the golden Bangaru Vakili entrance doors."
+    }
+  ],
+  "description": "Sri Venkateswara Swamy Temple is the world-renowned Vaishnavite shrine situated atop the sacred Seshachala Hills (Venkatadri) in Tirumala. Celebrated as 'Kaliyuga Vaikuntam', it is the most visited religious center in the world. The presiding deity, Lord Venkateswara, stands majestically as a swayambhu vigraha adorned with diamond crown (Kireetam), Shanka, Chakra, Varada Hasta (pointing downward to His feet, commanding surrender) and Katyavalambita Hasta (the hand that visually proves Samsara will only be hip/knee deep). Managed by Tirumala Tirupati Devasthanams (TTD), the shrine attracts 60,000 to 100,000+ pilgrims daily.",
+  "history": "Documented through more than 1,000 stone epigraphical inscriptions carved in Tamil, Telugu, and Kannada.\n- Earliest recorded historical endowment dates to 966 AD by Pallava Queen Samavai (Kadavan-Perundevi Samavai), who consecrated the silver idol 'Manavalapperumal' (Bhoga Srinivasa) and donated lands and jewels.\n- Patronized by Cholas (Kulothunga Chola I, Rajendra Chola), Pandyas (Sundara Pandya), and Hoysalas.\n- The golden era was under the Vijayanagara Empire (1336–1646 AD). Emperor Sri Krishnadevaraya visited 7 times with his queens, donating immense gold and financing the gold gilding of Ananda Nilayam in 1518 AD.\n- Later managed by the Marathas (Raghoji Bhonsle) and British East India Company. In 1843, administration was handed over to the Mahants of Hathiramji Mutt until 1933, when the autonomous TTD Act was enacted.",
+  "mythology": "According to Brahmanda and Skanda Puranas (Venkatachala Mahatyam):\nSage Bhrigu tested the Trimurtis and kicked Lord Vishnu's chest. Lord Vishnu massaged the sage's foot to suppress his ego. Goddess Lakshmi, feeling insulted, left Vaikuntha for Kolhapur. Lord Vishnu descended to Earth, residing in an anthill on Seshachala Hills. Mother Vakula Devi (incarnation of Yashoda) cared for Him as Srinivasa. Princess Padmavathi (daughter of King Akasa Raja) and Lord Srinivasa united in a celestial wedding. To finance the wedding, Lord Srinivasa borrowed wealth from Kubera, pledging to repay the interest until the end of Kali Yuga through pilgrim offerings (Hundi). Lord Srinivasa manifested as the stone deity on Venkatadri to redeem devotees from sins.",
+  "architecture": {
+    "style": "Classical Dravidian Architecture",
+    "highlights": [
+      {
+        "name": "Ananda Nilayam Golden Vimana",
+        "description": "Three-tiered pyramidal tower over the Sanctum Sanctorum, gilded with 1000+ kg of pure gold, featuring the historic Vimana Venkateswara on its exterior."
+      },
+      {
+        "name": "Mahadwaram & Rajagopuram",
+        "description": "5-tiered majestic outer entrance gateway with monolithic carved stone pillars."
+      },
+      {
+        "name": "Bangaruvakili & Vendivakili",
+        "description": "Golden Entrance guarded by statues of Dwarapalakas Jaya & Vijaya, and Silver Entrance into Sampangi Pradakshinam."
+      },
+      {
+        "name": "Pillared Mandapams",
+        "description": "Ranga Mandapam, Tirumala Raya Mandapam, and Aina Mahal (Mirror Hall) with Vijayanagara sculpted Yali monoliths and musical stone pillars."
+      }
+    ]
+  }
+}

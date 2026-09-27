@@ -1,0 +1,22 @@
+{
+  "before": {
+    "top1_retrieval_pct": 77.73,
+    "top3_retrieval_pct": 85.29,
+    "top5_retrieval_pct": 93.7,
+    "source_hit_pct": 77.31,
+    "isolation_pct": 77.73,
+    "top1_contamination_count": 53,
+    "top3_contamination_count": 131,
+    "top5_contamination_count": 179
+  },
+  "after": {
+    "top1_retrieval_pct": 99.58,
+    "top3_retrieval_pct": 99.58,
+    "top5_retrieval_pct": 99.58,
+    "source_hit_pct": 84.03,
+    "isolation_pct": 99.58,
+    "top1_contamination_count": 1,
+    "top3_contamination_count": 0,
+    "top5_contamination_count": 0
+  }
+}

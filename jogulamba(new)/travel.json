@@ -1,0 +1,33 @@
+{
+  "how_to_reach": [
+    "Sri Jogulamba Devi Temple is located at Alampur in Jogulamba Gadwal district of Telangana. It can be reached by bus via NH 44, by train to Alampur Road Station (11 km) or Kurnool City Station (27 km), and by flight to Rajiv Gandhi International Airport in Hyderabad (195 km)."
+  ],
+  "nearest_railway_station": {
+    "name": "Alampur Road Station (ALPR)",
+    "distance": "11 km",
+    "connectivity": "Several local passenger trains running between Hyderabad (Kacheguda) and Kurnool stop here. Shared auto-rickshaws available to the temple. (Note: Kurnool City Railway Station KRNT is 27 km away for major long-distance express trains, with buses, taxis, and autos heading to Alampur)."
+  },
+  "nearest_airport": {
+    "name": "Rajiv Gandhi International Airport (HYD), Hyderabad",
+    "distance": "195 km",
+    "connectivity": "Closest airport, located about 195 km (~200 km) away from Alampur."
+  },
+  "bus_routes": [
+    "1. From Mahatma Gandhi Bus Station (MGBS), Hyderabad via Jadcherla & Pebbiar (Direct TGSRTC Express buses to Alampur Crossroads).",
+    "2. From Jubilee Bus Station (JBS), Secunderabad via Hyderabad MGBS & Mahbubnagar.",
+    "3. From Kurnool RTC Bus Stand via NH 44 River Bridge (Frequent local/express state buses dropping directly inside Alampur town).",
+    "4. From Gadwal Bus Stop via Erravalli Crossroads & Manopad local route.",
+    "5. From Raichur Bus Station via Shaktinagar & Ieeja highway route.",
+    "6. From Shamshabad (ORR Bus Bay) via National Highway 44 southbound.",
+    "7. From Mehdipatnam via Aramghar Crossroads & NH 44 route.",
+    "8. From Dilsukhnagar via Chandrayangutta, Aramghar & National Highway 44.",
+    "9. From Miyapur / Kukatpally via Outer Ring Road (ORR), exiting at Shamshabad to NH 44.",
+    "10. From Bengaluru (Kempegowda Bus Station) via Anantapur & Dhone (Northbound long-distance buses passing Alampur Crossroads)."
+  ],
+  "road_routes": [
+    "National Highway 44 (NH 44) southbound from Hyderabad / Shamshabad, or northbound from Bengaluru / Kurnool via NH 44 River Bridge directly into Alampur town."
+  ],
+  "parking_info": [
+    "Devasthanam Parking Lot: Broad, open parking space handling cars, bikes, and tourist buses. Standard vehicle entry parking tickets are priced under 100 rupees. Accessible parking spaces available."
+  ]
+}

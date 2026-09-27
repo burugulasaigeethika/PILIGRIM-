@@ -1,0 +1,179 @@
+[
+  {
+    "id": "BHADRACHALAM_TIMINGS_TARGETED",
+    "query": "What are the temple timings at Bhadrachalam?",
+    "retrieval_mode": "targeted",
+    "scope_temples": [
+      "Badrachalam"
+    ],
+    "scope_categories": [
+      "timings"
+    ],
+    "answer_preview": "The temple is open daily from 4:30 AM to 1:00 PM and from 3:00 PM to 9:00 PM. The temple is closed for afternoon rest between 1:00 PM and 3:00 PM.",
+    "answer_full": "The temple is open daily from 4:30 AM to 1:00 PM and from 3:00 PM to 9:00 PM. The temple is closed for afternoon rest between 1:00 PM and 3:00 PM.",
+    "latency_ms": 16907.35,
+    "unrelated_terms_detected": [],
+    "passed": true
+  },
+  {
+    "id": "DHARMAPURI_ABHISHEKAM_PRICE_TARGETED",
+    "query": "What is the price of Abhishekam in Dharmapuri?",
+    "retrieval_mode": "targeted",
+    "scope_temples": [
+      "Dharmapuri"
+    ],
+    "scope_categories": [
+      "sevas"
+    ],
+    "answer_preview": "\u20b9500",
+    "answer_full": "\u20b9500",
+    "latency_ms": 14273.76,
+    "unrelated_terms_detected": [],
+    "passed": true
+  },
+  {
+    "id": "DHARMAPURI_ALL_SEVAS_COMPLETE",
+    "query": "What are all the sevas in Dharmapuri?",
+    "retrieval_mode": "complete_category",
+    "scope_temples": [
+      "Dharmapuri"
+    ],
+    "scope_categories": [
+      "sevas"
+    ],
+    "answer_preview": "Here is a complete list of all the sevas in Dharmapuri:\n\n1. Abhishekam\n2. Tulasi Vishe\u1e63\u0101rchana\n3. Sahasranamas / Korika Niv\u1e5btti\n4. Gok\u1e63an\u0101ma Harati\n5. Odi Biyyam\n6. Kumkuma Archana\n7. Pulihora Bhogam ...",
+    "answer_full": "Here is a complete list of all the sevas in Dharmapuri:\n\n1. Abhishekam\n2. Tulasi Vishe\u1e63\u0101rchana\n3. Sahasranamas / Korika Niv\u1e5btti\n4. Gok\u1e63an\u0101ma Harati\n5. Odi Biyyam\n6. Kumkuma Archana\n7. Pulihora Bhogam / Dadhojana Bhogam\n8. B\u014drela Bhogam\n9. Veda Aashirvachanam\n10. Mudupu",
+    "latency_ms": 19380.22,
+    "unrelated_terms_detected": [],
+    "passed": true
+  },
+  {
+    "id": "BASARA_ALL_FESTIVALS_COMPLETE",
+    "query": "List all festivals at Basara.",
+    "retrieval_mode": "complete_category",
+    "scope_temples": [
+      "Basara"
+    ],
+    "scope_categories": [
+      "festivals"
+    ],
+    "answer_preview": "Basara hosts a variety of festivals throughout the year, each with its own unique significance and celebration. Here is a complete list of festivals celebrated at Basara:\n\n1. **Vasant Panchami / Sri P...",
+    "answer_full": "Basara hosts a variety of festivals throughout the year, each with its own unique significance and celebration. Here is a complete list of festivals celebrated at Basara:\n\n1. **Vasant Panchami / Sri Panchami**\n   - Description: The grandest festival celebrated at Sri Gnana Saraswathi Temple, Basara. Lakhs of devotees and parents visit the temple to perform Akshara Abhyasam (holy initiation into learning and education) for children.\n   - Month: Magha Masam (Typically matches January or February)\n   - Importance: Widely revered as the manifestation day (Saraswathi Jayanthi) of the Goddess of Knowledge. It features the absolute highest annual single-day crowd density.\n\n2. **Devi Navarathrotsavams (Sharad Navratri)**\n   - Description: 9-day grand celebrations dedicated to Goddess Durga, Lakshmi, and Saraswathi with special Alankarams, Chandi Homam, and religious discourses.\n   - Month: Ashwayuja Masam (Typically matches September or October)\n   - Importance: Marks the victory of light over spiritual darkness. Celebrates high-density Vedic chanting sessions and elaborate ritual decoration shifts across the main shrine layouts.\n\n3. **Mahasivarathri Jathra**\n   - Description: Major festival where lakhs of pilgrims visit the shrine to offer vows to Lord Vyaseshwara & Lord Shiva on the banks of Godavari.\n   - Month: Magha Masam / Bahula Trayodashi (Typically matches February or March)\n   - Importance: Highlights the deep historical intersection of Saivite and Vaishnavite traditions at Basara, drawing extensive night-long meditation crowds to the river banks.\n\n4. **Vyasa Pournima**\n   - Description: Vyasa paurnima Utsavam is celebrated on Ashada Paurnima. As the legend of the temple says the Deity of the temple was established by Veda Vyasa, hence Utasavam is performed in a large scale.\n   - For more details about the Vyasa Paurnima Utsavam at Basara Temple contact Basara Devasthanam.\n   - Month: Ashadha Masam (Typically matches June or July)\n   - Importance: A deeply unique heritage festival specific to Basara. Celebrated on a massive scale to pay ancestral homage to the legendary author of the Mahabharata and the Puranas.\n\n5. **Other Festivals**\n   - Sreerama Navami\n   - Vyasa Purnima\n   - Sravana Masotsavam\n   - Kartheeka Masotsavam\n   - Deepavali\n   - Akshaya Tritiya\n   - Month: Distributed across the Hindu Lunar Calendar cycles\n   - Importance: Ensures the continuous flow of seasonal community prayers, special evening oil-lamp line lightings (Deepotsavam), and localized multi-deity offerings.",
+    "latency_ms": 43756.14,
+    "unrelated_terms_detected": [],
+    "passed": true
+  },
+  {
+    "id": "RIVER_BANK_AGGREGATION",
+    "query": "List all temples that have a river bank.",
+    "retrieval_mode": "cross_temple_aggregation",
+    "scope_temples": [
+      "*"
+    ],
+    "scope_categories": [
+      "river_bank"
+    ],
+    "answer_preview": "Based on the temple knowledge base, the following **11 temples** have confirmed **River Bank** information:\n\n1. **Ahobilam** \u2014 River: Bhavanashini River (Pavanasini River) (Ghat: Raktha Kundam)\n2. **B...",
+    "answer_full": "Based on the temple knowledge base, the following **11 temples** have confirmed **River Bank** information:\n\n1. **Ahobilam** \u2014 River: Bhavanashini River (Pavanasini River) (Ghat: Raktha Kundam)\n2. **Badrachalam** \u2014 River: River Godavari (Dakshina Vahini) (Ghat: Godavari Bathing Ghats & Kalyana Katta)\n3. **Basara** \u2014 River: River Godavari (Ghat: Basara Godavari River Bathing Ghat)\n4. **Dharmapuri** \u2014 River: Godavari (Dakshina Vahini) (Ghat: Dharmapuri Godavari River Bathing Ghat)\n5. **Edupayal** \u2014 River: Manjeera River (Edu Payalu Confluence) (Ghat: Edupayala Seven Streams River Ghats)\n6. **Jogulamba(New)** \u2014 River: Tungabhadra River & Krishna River (Sacred Confluence / Tungabhadra\u2013Krishna Sangam) (Ghat: Jogulamba River Ghat)\n7. **Kaleshvaram** \u2014 River: Dakshina Triveni Sangamam (River Godavari, River Pranahita, and subterranean River Saraswati) (Ghat: Triveni Sangam Bathing Ghats)\n8. **Medaram** \u2014 River: Jampanna Vagu (Ghat: Jampanna Vagu Main Bathing Ghats)\n9. **Srisaila** \u2014 River: Krishna River (Patalaganga) (Ghat: Patalaganga Bathing Ghat)\n10. **Veera Satyanarayana** \u2014 River: Pampa River (Ghat: Pampa River Foothills Boating & Ghat Point)\n11. **Vemulavada** \u2014 River: Mulavagu stream (tributary of Godavari River) & Dharma Gundam (Pushkarni) / Gudicheruvu (Ghat: Dharma Gundam Bathing Steps)",
+    "latency_ms": 9.57,
+    "unrelated_terms_detected": [],
+    "passed": true
+  },
+  {
+    "id": "WHEELCHAIR_NEGATIVE_AGGREGATION",
+    "query": "List all temples that don't have wheelchair facilities.",
+    "retrieval_mode": "cross_temple_aggregation",
+    "scope_temples": [
+      "*"
+    ],
+    "scope_categories": [
+      "wheelchair"
+    ],
+    "answer_preview": "Based on verified temple knowledge base records, the following **7 temples** are confirmed to **NOT have Wheelchair** (or have major documented architectural/physical limitations):\n\n1. **Balkampet** \u2014...",
+    "answer_full": "Based on verified temple knowledge base records, the following **7 temples** are confirmed to **NOT have Wheelchair** (or have major documented architectural/physical limitations):\n\n1. **Balkampet** \u2014 Not wheelchair friendly (Subterranean Staircase Access Only: The main self-manifested sanctum is situated 10 feet below groun)\n2. **Birla Mandir** \u2014 Not wheelchair friendly (Lift Available with Step Caveats: An on-site elevator/lift facility is operated for senior citizens )\n3. **Dharmapuri** \u2014 Not wheelchair friendly (Walking Aids Recommended: Navigating the stone temple courtyards (Prakarams) and long flight of ston)\n4. **Edupayal** \u2014 Not wheelchair friendly (Riverbed Cave Shrine Access: The self-manifested sanctum is located directly within the riverbed of )\n5. **Ramappa** \u2014 Not wheelchair friendly (Not Wheelchair Friendly: The temple is built on a high, star-shaped raised platform typical of Kakat)\n6. **Thousand Pillar** \u2014 Not wheelchair friendly (Accessible Entrance Gates: The main entrance and exit pathways are wide and flat, allowing convenien)\n7. **Ujjaini** \u2014 Not wheelchair friendly (The temple is a historic structure located in a dense urban market area. It currently lacks dedicate)\n\n*(Note: 7 temples have no specific wheelchair records documented in the current knowledge base).*",
+    "latency_ms": 8.9,
+    "unrelated_terms_detected": [],
+    "passed": true
+  },
+  {
+    "id": "MULTI_CATEGORY_ACCOMMODATION_RESTAURANTS",
+    "query": "What accommodation and restaurants are available near Dharmapuri?",
+    "retrieval_mode": "multi_category",
+    "scope_temples": [
+      "Dharmapuri"
+    ],
+    "scope_categories": [
+      "accommodation",
+      "restaurants"
+    ],
+    "answer_preview": "### Accommodation\n- **Name:** Sri Hanuman tiffins and meals\n  - **Cuisine:** Authentic South Indian vegetarian meals, breakfast tiffins (idli, dosa, vada), and simple rice items\n  - **Type:** Private ...",
+    "answer_full": "### Accommodation\n- **Name:** Sri Hanuman tiffins and meals\n  - **Cuisine:** Authentic South Indian vegetarian meals, breakfast tiffins (idli, dosa, vada), and simple rice items\n  - **Type:** Private Veg Hotel\n  - **Distance:** ~ 900 m\n  - **Pricing:** Affordable / Budget-friendly\n  - **Timings:** Monday to Sunday, 6:00 AM \u2013 11:30 PM\n  - **Address:** Sri Laxmi Narasimha, 3-57, Swami Temple Road, near Laxmi Narasimha Swamy Temple, Boyawada, Police Quarters, Dharmapuri, Telangana 505425\n\n- **Name:** New Geetha Bhavan\n  - **Cuisine:** Pure vegetarian South Indian breakfast specialties and standard afternoon lunch plates\n  - **Type:** Private Veg Hotel\n  - **Distance:** Approximately 350 meters away from the temple area\n  - **Pricing:** Affordable / Budget-friendly\n  - **Timings:** Monday to Sunday, 8:00 AM \u2013 8:00 PM\n  - **Address:** Guest House Road, Boyawada, Dharmapuri, Jagtial - 505425 (Opposite Vani Vidhyalayam)\n\n### Restaurants\n- **Name:** Temple Nithya Annadanam\n  - **Cuisine:** Traditional vegetarian temple meal\n  - **Type:** Temple Annadanam\n  - **Distance:** Within the Sri Lakshmi Narasimha Swamy Temple complex\n  - **Pricing:** Free\n  - **Timings:** Daily Annadanam is available; exact serving hours should be confirmed with the temple\n  - **Address:** Sri Lakshmi Narasimha Swamy Temple Complex, Dharmapuri, Telangana 505425",
+    "latency_ms": 30727.9,
+    "unrelated_terms_detected": [],
+    "passed": true
+  },
+  {
+    "id": "YADADRI_HISTORY_TARGETED",
+    "query": "Tell me the history of Yadadri.",
+    "retrieval_mode": "targeted",
+    "scope_temples": [
+      "Yadadri"
+    ],
+    "scope_categories": [
+      "temple"
+    ],
+    "answer_preview": "The reconstruction of the Yadadri temple is one of the largest stone temple renovation projects in modern history. Executed by the Yadadri Temple Development Authority (YTDA) and designed by chief arc...",
+    "answer_full": "The reconstruction of the Yadadri temple is one of the largest stone temple renovation projects in modern history. Executed by the Yadadri Temple Development Authority (YTDA) and designed by chief architect Anand Sai and traditional sthapatis, the temple has been expanded from a 2-acre hill shrine to a sprawling 17-acre stone complex. The temple is celebrated as a major spiritual center of Sanatana Dharma, located in the Yadadri Bhuvanagiri district of Telangana. The Five Manifestations (Swayambhu Cave Deities) include Jwala Narasimha, Yogananda Narasimha, Gandabherunda Narasimha, Ugra Narasimha, and Lakshmi Narasimha. The temple's architectural marvel is the Krishna Shila, built entirely out of black granite sourced from Guntur and Prakasam districts, and features seven gopurams.",
+    "latency_ms": 26041.27,
+    "unrelated_terms_detected": [],
+    "passed": true
+  },
+  {
+    "id": "DHARMAPURI_BROAD_OVERVIEW",
+    "query": "Tell me everything about Dharmapuri Temple.",
+    "retrieval_mode": "broad_temple",
+    "scope_temples": [
+      "Dharmapuri"
+    ],
+    "scope_categories": [
+      "*"
+    ],
+    "answer_preview": "Dharmapuri Temple, also known as Sri Lakshmi Narasimha Swamy Temple, is a significant religious site located in Dharmapuri, Telangana. The temple is known for its rich history, diverse offerings, and ...",
+    "answer_full": "Dharmapuri Temple, also known as Sri Lakshmi Narasimha Swamy Temple, is a significant religious site located in Dharmapuri, Telangana. The temple is known for its rich history, diverse offerings, and annual festivals. The temple is situated near the Sri Laxmi Narasimha Swamy Temple, making it a popular destination for pilgrims and devotees.\n\nThe temple is known for its Sevas, which are religious rituals performed by the temple priests. The Sevas include Abhishekam, Tulasi Vishe\u1e63\u0101rchana, Sahasranamas / Korika Niv\u1e5btti, Gok\u1e63an\u0101ma Harati, Odi Biyyam, Kumkuma Archana, Pulihora Bhogam / Dadhojana Bhogam, and B\u014drela Bhogam. These Sevas are performed daily during the temple's Archana slots, with specific timings and descriptions provided.\n\nThe temple is also known for its festivals, which are celebrated annually. The festivals include the Abhisheka Festival, which is held on the first day of the Hindu month of Chaitra, and the Nityanivedana Festival, which is held on the last day of the month. The festivals are marked by elaborate rituals and offerings, and the temple is adorned with colorful decorations and lights.\n\nThe temple is also known for its restaurants, which offer a variety of vegetarian meals. The restaurants include Sri Hanuman tiffins and meals, New Geetha Bhavan, and Temple Nithya Annadanam. These restaurants provide affordable and budget-friendly meals, with specific timings and locations provided.\n\nThe temple is also known for its Prasadam, which is distributed following the Sevas and during the evening Aaradhana & Pavalimpu Seva. The Prasadam includes Abhishekam Prasadam, Pulihora Bhogam, Dadhojana Bhogam, and B\u014drela Bhogam, with specific timings and locations provided.\n\nThe temple is also known for its Prasadam, which is distributed following the Sevas and during the evening Aaradhana & Pavalimpu Seva. The Prasadam includes Abhishekam Prasadam, Pulihora Bhogam, Dadhojana Bhogam, and B\u014drela Bhogam, with specific timings and locations provided.\n\nThe temple is also known for its Prasadam, which is distributed following the Sevas and during the evening Aaradhana & Pavalimpu Seva. The Prasadam includes Abhishekam Prasadam, Pulihora Bhogam, Dadhojana Bhogam, and B\u014drela Bhogam, with specific timings and locations provided.\n\nThe temple is also known for its Prasadam, which is distributed following the Sevas and during the evening Aaradhana & Pavalimpu Seva. The Prasadam includes Abhishekam Prasadam, Pulihora Bhogam, Dadhojana Bhogam, and B\u014drela Bhogam, with specific timings and locations provided.\n\nThe temple is also known for its Prasadam, which is distributed following the Sevas and during the evening Aaradhana & Pavalimpu Seva. The Prasadam includes Abhishekam Prasadam, Pulihora Bhogam, Dadhojana Bhogam, and B\u014drela Bhogam, with specific timings and locations provided.\n\nThe temple is also known for its Prasadam, which is distributed following the Sevas and during the evening Aaradhana & Pavalimpu Seva. The Pras",
+    "latency_ms": 72901.72,
+    "unrelated_terms_detected": [],
+    "passed": true
+  },
+  {
+    "id": "DHARMAPURI_WHEELCHAIR_TARGETED",
+    "query": "Does Dharmapuri have wheelchair facilities?",
+    "retrieval_mode": "targeted",
+    "scope_temples": [
+      "Dharmapuri"
+    ],
+    "scope_categories": [
+      "wheelchair"
+    ],
+    "answer_preview": "No",
+    "answer_full": "No",
+    "latency_ms": 19619.21,
+    "unrelated_terms_detected": [],
+    "passed": true
+  },
+  {
+    "id": "HELIPAD_GROUNDED_REFUSAL",
+    "query": "Does Dharmapuri have a helicopter launch pad?",
+    "retrieval_mode": "targeted",
+    "scope_temples": [
+      "Dharmapuri"
+    ],
+    "scope_categories": [
+      "*"
+    ],
+    "answer_preview": "I could not find this information in the temple knowledge base.",
+    "answer_full": "I could not find this information in the temple knowledge base.",
+    "latency_ms": 12313.26,
+    "unrelated_terms_detected": [],
+    "passed": true
+  }
+]

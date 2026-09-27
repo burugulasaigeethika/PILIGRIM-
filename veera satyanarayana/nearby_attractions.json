@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Pampa River",
+    "distance": "700 m",
+    "type": "River / Nature / Boating",
+    "description": "Peaceful boating facilities right at the temple foothills with scenic views of the Ratnagiri hill."
+  },
+  {
+    "name": "Tuni (Talupulamma Thalli Devasthanam)",
+    "distance": "~19 km",
+    "type": "Shrine / Pilgrimage",
+    "description": "Sri Talupulamma Thalli Devasthanam, a very popular and revered hill-slope shrine."
+  },
+  {
+    "name": "Pithapuram",
+    "distance": "~31 km",
+    "type": "Shakti Peetha / Sacred Tank / Pilgrimage",
+    "description": "Famous for the ancient Pada Gaya Sarovaram sacred tank and Sri Puruhutika Devi Shakti Peetha."
+  },
+  {
+    "name": "Samarlakota (Kumararama Bhimeswara Swamy Temple)",
+    "distance": "~45 km",
+    "type": "Pancharama Kshetra / Ancient Heritage Temple",
+    "description": "Ancient 9th-century Pancharama Kshetra dedicated to Lord Siva (Kumararama Bhimeswara Swamy)."
+  },
+  {
+    "name": "Kakinada",
+    "distance": "~50 km",
+    "type": "Coastal City / Heritage & Tourism",
+    "description": "Port city famous for scenic beach parks, Hope Island, and the world-famous Kakinada Kaaja sweet."
+  },
+  {
+    "name": "Uppada Beach",
+    "distance": "~35 km",
+    "type": "Beach / Handloom Heritage Village",
+    "description": "Scenic Uppada Beach and famous traditional handloom Uppada Jamdani Silk Weaving Village."
+  },
+  {
+    "name": "Coringa Wildlife Sanctuary",
+    "distance": "~65 km",
+    "type": "Wildlife Sanctuary / Mangrove Forest",
+    "description": "Dense mangrove forest offering wooden boardwalks, birdwatching, and boat safaris."
+  },
+  {
+    "name": "Rajahmundry",
+    "distance": "~83 km",
+    "type": "Cultural Capital / River Tourism",
+    "description": "Cultural capital of Andhra Pradesh, famous for Godavari River ghats, bridges, and river cruises."
+  },
+  {
+    "name": "Draksharamam (Bhimeswara Swamy Temple)",
+    "distance": "~77 km",
+    "type": "Pancharama Kshetra / Shakti Peetha",
+    "description": "Ancient Bhimeswara Swamy Temple, revered both as a prominent Pancharama Kshetram and a powerful Shakti Peetha (Manikyamba Devi)."
+  }
+]

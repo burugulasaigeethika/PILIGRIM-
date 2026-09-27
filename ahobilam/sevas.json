@@ -1,0 +1,45 @@
+[
+  {
+    "name": "Nitya Kalyanotsavam",
+    "telugu_name": "నిత్య కల్యాణోత్సవం",
+    "price": "~₹3,000 (Subject to temple board updates)",
+    "booking_url": "Not Available Online (Tickets must be purchased at the Lower Ahobilam counter)",
+    "type": "Arjitha Seva"
+  },
+  {
+    "name": "Swathi Thirumanjanam (All 9 Narasimha Shrines)",
+    "telugu_name": "స్వాతి తిరుమంజనం (నవ నారసింహ)",
+    "price": "Varies by shrine (~₹500 to ₹2,000 per person)",
+    "booking_url": "Not Available Online (Sponsorship amount paid at the guest house office / Swathi Trust)",
+    "type": "Arjitha Seva"
+  },
+  {
+    "name": "Sudarshana Homam",
+    "telugu_name": "సుదర్శన హోమం",
+    "price": "Nominal fee (Verify current rates on-site)",
+    "booking_url": "Not Available Online",
+    "type": "Arjitha Seva"
+  },
+  {
+    "name": "Saswatha Nitya Thirumanjanam",
+    "telugu_name": "శాశ్వత నిత్య తిరుమంజనం",
+    "price": "Endowment Fund (Contact office for official corpus amount)",
+    "booking_url": "Not Available Online",
+    "type": "Saswatha Seva"
+  },
+  {
+    "name": "Saswatha Tadiyaradhanam",
+    "telugu_name": "శాశ్వత తదీయారాధనం",
+    "price": "varies",
+    "booking_url": "Not Available Online",
+    "type": "Saswatha Seva"
+  },
+  {
+    "name": "Annamacharya Nitya Annadanam Scheme",
+    "telugu_name": "నిత్య అన్నదాన పథకం",
+    "price": "Variable Contributions",
+    "booking_url": "Contributions accepted via cheque/draft to \"Annamacharya Nitya Annadanam Trust\" at the Guest House Office.",
+    "description": "Contributions accepted via cheque/draft to 'Annamacharya Nitya Annadanam Trust' at the Guest House Office. Free meals/prasadam are served to all visiting pilgrims three times daily at the Annadanam hall near the Malola Guest House.",
+    "type": "Nityannadanam"
+  }
+]

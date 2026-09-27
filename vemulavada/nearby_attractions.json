@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Baddi Pochamma Temple",
+    "distance": "Walking distance (700 m)",
+    "description": "Traditional custom to visit alongside Rajanna temple."
+  },
+  {
+    "name": "Sri Bhimeshwara Swamy Temple",
+    "distance": "Walking distance (1 km)",
+    "description": "9th-century Chalukyan rock-carved shrine."
+  },
+  {
+    "name": "Nampally Gutta Temple",
+    "distance": "3.3 km",
+    "description": "Massive snake-belly entry walk-through shrine on a hillock."
+  },
+  {
+    "name": "Elgandal Fort",
+    "distance": "23 to 25 km",
+    "description": "Historic hillfort with unique oscillating minarets."
+  },
+  {
+    "name": "Kondagattu Sri Anjaneya Swamy Temple",
+    "distance": "28 to 30  km",
+    "description": "Famous hilltop Hanuman temple in Jagtial district."
+  },
+  {
+    "name": "Lower Manair Dam (LMD)",
+    "distance": "37  km",
+    "description": "Scenic dam featuring speedboating, sunset viewpoints, and a deer park."
+  }
+]

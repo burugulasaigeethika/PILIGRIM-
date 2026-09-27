@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Matrusri Tarigonda Vengamamba Annaprasadam Complex (MTVAC)",
+    "type": "Free Mega Annadanam Hall",
+    "location": "Tirumala",
+    "cost": "100% Free",
+    "timings": "09:00 AM – 11:00 PM (Serving sessions: Breakfast 08:30 AM – 10:30 AM, Lunch 10:30 AM – 04:00 PM, Break/Cleaning Interval 04:00 PM – 05:00 PM, Dinner 05:00 PM – 11:00 PM)",
+    "speciality": "Unlimited free hot Andhra satvik meals: rice, sambar, rasam, chutney, vegetable curry, sweet pongal, and fresh curd."
+  },
+  {
+    "name": "TTD Subsidized Canteens",
+    "type": "TTD Canteens",
+    "location": "PAC 1 to 4, CRO, Bus Stand, Tirumala",
+    "cost": "₹15 – ₹50",
+    "speciality": "Subsidized Idli, Vada, Upma, Meals, Curd Rice."
+  },
+  {
+    "name": "Sri Balaji Woodlands Vegetarian Restaurant",
+    "type": "Pure Veg South/North Indian Restaurant",
+    "location": "Near Seva Sadan / Anjanadri Nagar, close to CRO, Tirumala",
+    "cost": "₹100 – ₹300",
+    "timings": "06:00 AM – 10:30 PM",
+    "speciality": "Pure Vegetarian South and North Indian dishes."
+  },
+  {
+    "name": "Annapoorna Pure Veg Restaurant",
+    "type": "Pure Veg Restaurant",
+    "location": "Opp. Bus Stand, Tirumala",
+    "cost": "₹80 – ₹250",
+    "timings": "06:30 AM – 10:30 PM",
+    "speciality": "Pure vegetarian tiffins and meals."
+  },
+  {
+    "name": "Bhimas Deluxe Pure Veg",
+    "type": "Traditional South Indian & Multi-Cuisine Veg Restaurant",
+    "location": "Near Railway Station, Tirupati",
+    "cost": "₹150 – ₹450",
+    "speciality": "Traditional South Indian and multi-cuisine pure vegetarian dining."
+  },
+  {
+    "name": "Hotel Mayura & Sri Saravana Bhavan",
+    "type": "Pure Veg Restaurant",
+    "location": "Tirupati",
+    "cost": "₹80 – ₹250",
+    "speciality": "Pure Veg South Indian Tiffins & Meals."
+  },
+  {
+    "name": "Minerva Grand Vegetarian",
+    "type": "Fine-Dining Pure Veg Restaurant",
+    "location": "Renigunta Road, Tirupati",
+    "cost": "₹200 – ₹600",
+    "speciality": "Fine-dining pure vegetarian cuisine."
+  }
+]

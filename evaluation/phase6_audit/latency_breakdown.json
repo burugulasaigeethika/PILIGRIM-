@@ -1,0 +1,11 @@
+{
+  "planning_latency_ms": 0.05,
+  "retrieval_aggregation_ms": 8.5,
+  "retrieval_complete_parent_ms": 0.12,
+  "retrieval_targeted_hybrid_ms": 45.0,
+  "reranking_ms": 110.0,
+  "context_building_ms": 0.08,
+  "validation_ms": 0.15,
+  "llm_generation_average_ms": 11800.0,
+  "analysis": "Deterministic components (Planner, Knowledge Registry, Context Builder, Validator, Aggregator) execute in <15ms. 99% of total user latency stems from local LLM generation (Qwen 2.5:1.5B token generation)."
+}

@@ -1,0 +1,202 @@
+{
+  "Ahobilam": {
+    "canonical_name": "Ahobilam",
+    "latitude": 15.127814,
+    "longitude": 78.718048,
+    "display_name": "Sri Ahobila Narasimha Swamy Temple",
+    "district": "Nandyal",
+    "state": "Andhra Pradesh",
+    "source": "ahobilam/maps.json (Google Maps embed URL)",
+    "verification_status": "derived_from_temple_maps_json"
+  },
+  "Badrachalam": {
+    "canonical_name": "Badrachalam",
+    "latitude": 17.669822,
+    "longitude": 80.893641,
+    "display_name": "Sri Sita Ramachandraswamy Temple, Bhadrachalam",
+    "district": "Bhadradri Kothagudem",
+    "state": "Telangana",
+    "source": "OpenStreetMap geographic landmark (provisional; maps.json contains query-only URL)",
+    "verification_status": "needs_verification"
+  },
+  "Balkampet": {
+    "canonical_name": "Balkampet",
+    "latitude": 17.447528,
+    "longitude": 78.451639,
+    "display_name": "Balkampet Yellamma Temple, Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "source": "OpenStreetMap geographic landmark (provisional; maps.json contains query-only URL)",
+    "verification_status": "needs_verification"
+  },
+  "Basara": {
+    "canonical_name": "Basara",
+    "latitude": 18.870451,
+    "longitude": 77.954153,
+    "display_name": "Sri Gnana Saraswathi Devasthanam, Basara",
+    "district": "Nirmal",
+    "state": "Telangana",
+    "source": "basara/maps.json (Google Maps embed URL)",
+    "verification_status": "derived_from_temple_maps_json"
+  },
+  "Birla Mandir": {
+    "canonical_name": "Birla Mandir",
+    "latitude": 17.404290,
+    "longitude": 78.469146,
+    "display_name": "Birla Mandir, Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "source": "birla mandir/maps.json (Google Maps embed URL)",
+    "verification_status": "derived_from_temple_maps_json"
+  },
+  "Chilkur": {
+    "canonical_name": "Chilkur",
+    "latitude": 17.378281,
+    "longitude": 78.297491,
+    "display_name": "Chilkur Balaji Temple",
+    "district": "Rangareddy",
+    "state": "Telangana",
+    "source": "chilkur/maps.json (Google Maps embed URL)",
+    "verification_status": "derived_from_temple_maps_json"
+  },
+  "Dharmapuri": {
+    "canonical_name": "Dharmapuri",
+    "latitude": 18.951520,
+    "longitude": 79.091710,
+    "display_name": "Sri Lakshmi Narasimha Swamy Temple, Dharmapuri",
+    "district": "Jagtial",
+    "state": "Telangana",
+    "source": "OpenStreetMap geographic landmark (provisional; maps.json contains directions URL)",
+    "verification_status": "needs_verification"
+  },
+  "Edupayal": {
+    "canonical_name": "Edupayal",
+    "latitude": 17.971210,
+    "longitude": 78.175520,
+    "display_name": "Sri Edupayala Vana Durga Bhavani Devalayam",
+    "district": "Medak",
+    "state": "Telangana",
+    "source": "OpenStreetMap geographic landmark (provisional; maps.json contains query-only URL)",
+    "verification_status": "needs_verification"
+  },
+  "Jogulamba(New)": {
+    "canonical_name": "Jogulamba(New)",
+    "latitude": 15.876984,
+    "longitude": 78.134864,
+    "display_name": "Jogulamba Devi Temple, Alampur",
+    "district": "Jogulamba Gadwal",
+    "state": "Telangana",
+    "source": "jogulamba(new)/maps.json (Google Maps URL parameters)",
+    "verification_status": "derived_from_temple_maps_json"
+  },
+  "Kaleshvaram": {
+    "canonical_name": "Kaleshvaram",
+    "latitude": 18.811821,
+    "longitude": 79.904026,
+    "display_name": "Sri Kaleshwara Mukteshwara Swamy Temple, Kaleshwaram",
+    "district": "Jayashankar Bhupalpally",
+    "state": "Telangana",
+    "source": "kaleshvaram/maps.json (Google Maps embed URL)",
+    "verification_status": "derived_from_temple_maps_json"
+  },
+  "Karmanghat": {
+    "canonical_name": "Karmanghat",
+    "latitude": 17.341166,
+    "longitude": 78.522387,
+    "display_name": "Karmanghat Hanuman Temple, Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "source": "karmanghat/maps.json (Google Maps coordinate parameter)",
+    "verification_status": "derived_from_temple_maps_json"
+  },
+  "Medaram": {
+    "canonical_name": "Medaram",
+    "latitude": 18.225900,
+    "longitude": 79.946300,
+    "display_name": "Sammakka Saralamma Gaddelu, Medaram",
+    "district": "Mulugu",
+    "state": "Telangana",
+    "source": "medaram/maps.json (Google Maps embed URL)",
+    "verification_status": "derived_from_temple_maps_json"
+  },
+  "Ramappa": {
+    "canonical_name": "Ramappa",
+    "latitude": 18.256242,
+    "longitude": 79.940562,
+    "display_name": "Ramappa Temple, Palampet",
+    "district": "Mulugu",
+    "state": "Telangana",
+    "source": "ramappa/maps.json (Google Maps embed URL)",
+    "verification_status": "derived_from_temple_maps_json"
+  },
+  "Srisaila": {
+    "canonical_name": "Srisaila",
+    "latitude": 16.074200,
+    "longitude": 78.868199,
+    "display_name": "Sri Bhramaramba Mallikarjuna Swamy Temple, Srisailam",
+    "district": "Nandyal",
+    "state": "Andhra Pradesh",
+    "source": "srisaila/maps.json (Google Maps URL parameters)",
+    "verification_status": "derived_from_temple_maps_json"
+  },
+  "Thousand Pillar": {
+    "canonical_name": "Thousand Pillar",
+    "latitude": 18.003737,
+    "longitude": 79.574771,
+    "display_name": "Thousand Pillar Temple, Hanamkonda",
+    "district": "Hanamkonda",
+    "state": "Telangana",
+    "source": "thousand pillar/maps.json (Google Maps URL parameters)",
+    "verification_status": "derived_from_temple_maps_json"
+  },
+  "Ttd": {
+    "canonical_name": "Ttd",
+    "latitude": 13.680736,
+    "longitude": 79.350898,
+    "display_name": "Sri Venkateswara Swamy Temple, Tirumala",
+    "district": "Tirupati",
+    "state": "Andhra Pradesh",
+    "source": "ttd/maps.json (Google Maps URL parameters)",
+    "verification_status": "derived_from_temple_maps_json"
+  },
+  "Ujjaini": {
+    "canonical_name": "Ujjaini",
+    "latitude": 17.441235,
+    "longitude": 78.498123,
+    "display_name": "Sri Ujjaini Mahakali Temple, Secunderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "source": "ujjaini/maps.json (Google Maps embed URL)",
+    "verification_status": "derived_from_temple_maps_json"
+  },
+  "Veera Satyanarayana": {
+    "canonical_name": "Veera Satyanarayana",
+    "latitude": 17.280512,
+    "longitude": 82.404523,
+    "display_name": "Sri Veera Venkata Satyanarayana Swamy Temple, Annavaram",
+    "district": "Kakinada",
+    "state": "Andhra Pradesh",
+    "source": "OpenStreetMap geographic landmark (provisional; maps.json contains search URL)",
+    "verification_status": "needs_verification"
+  },
+  "Vemulavada": {
+    "canonical_name": "Vemulavada",
+    "latitude": 18.467234,
+    "longitude": 78.868728,
+    "display_name": "Sri Raja Rajeshwara Swamy Temple, Vemulawada",
+    "district": "Rajanna Sircilla",
+    "state": "Telangana",
+    "source": "vemulavada/maps.json (Google Maps embed URL)",
+    "verification_status": "derived_from_temple_maps_json"
+  },
+  "Yadadri": {
+    "canonical_name": "Yadadri",
+    "latitude": 17.587714,
+    "longitude": 78.948325,
+    "display_name": "Sri Lakshmi Narasimha Swamy Temple, Yadadri",
+    "district": "Yadadri Bhuvanagiri",
+    "state": "Telangana",
+    "source": "OpenStreetMap geographic landmark (provisional; maps.json contains query-only URL)",
+    "verification_status": "needs_verification"
+  }
+}

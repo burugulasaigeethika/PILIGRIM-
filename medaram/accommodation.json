@@ -1,0 +1,69 @@
+[
+  {
+    "name": "Forest Tents (Forest Department)",
+    "type": "State Tourism / Forest Department",
+    "distance": "Near Balloon No. 5 behind Kalyana Katta (Medaram)",
+    "capacity": "Up to 5 persons per tent",
+    "price": "₹2,000 (24 Hours) / ₹1,000 (12 Hours)",
+    "contact": "+91 95531 42346 (A. Venkat)",
+    "amenities_and_facilities": [
+      "100 comfortable tents set up in a 1-acre clearing by the Forest Department.",
+      "Dedicated mobile freshwater toilet van provided for every 10 tents.",
+      "Freshwater facilities for each tent.",
+      "Fire extinguisher safety setup available at every tent."
+    ],
+    "description": "100 official Forest Tents set up behind Kalyana Katta near Balloon No. 5 for devotees listening to the veneration."
+  },
+  {
+    "name": "Haritha Tourism Suite (1 BHK)",
+    "type": "State Tourism (Telangana Tourism)",
+    "location": "Tadvai Forest / Medaram",
+    "capacity": "4 Adults + 2 Children",
+    "price": "₹1,000 / Day",
+    "status": "Bookings Closed during peak Jathara",
+    "layout": "1 Bedroom, Hall, Kitchen, and attached Bathroom",
+    "description": "1 BHK Suite accommodation managed by Telangana Tourism."
+  },
+  {
+    "name": "Haritha Tourism Single Room",
+    "type": "State Tourism (Telangana Tourism)",
+    "location": "Tadvai Forest / Medaram",
+    "capacity": "2 Adults + 1 Child",
+    "price": "₹500 / Day",
+    "status": "Bookings Closed during peak Jathara",
+    "layout": "Single bedroom with attached bathroom",
+    "description": "Standard single room accommodation managed by Telangana Tourism."
+  },
+  {
+    "name": "Haritha Tourism Dormitory",
+    "type": "State Tourism (Telangana Tourism)",
+    "location": "Tadvai Forest / Medaram",
+    "capacity": "1 bed per individual",
+    "price": "Per bed basis",
+    "status": "Bookings Closed during peak Jathara",
+    "layout": "Large hall with multiple beds arranged and common bathrooms",
+    "description": "Dormitory bedding facility run by Telangana Tourism for budget travelers."
+  },
+  {
+    "name": "Airbnb / Local Village Homestays",
+    "type": "Private Homestays & Community Rentals",
+    "location": "In Medaram, Tadvai, Pasra, and surrounding villages",
+    "price": "Varies by host and proximity",
+    "booking_platform": "Airbnb & Local Direct Hosts",
+    "description": "Local villagers offer unique individual homes, host rooms, and private houses on rent for devotees during Jathara days."
+  },
+  {
+    "name": "TTD Kalyana Mandapam Guest Rooms",
+    "type": "Temple Rest House",
+    "location": "Near Medaram village center",
+    "price": "Official allocation / Regulated rates",
+    "description": "Located near the central shrine area. Primarily reserved for official, security, administrative, and medical duty staff during peak Jathara days."
+  },
+  {
+    "name": "Temporary Open Camping Grounds & Tree Clearings",
+    "type": "Open Forest Camping",
+    "location": "Eturnagaram Sanctuary forest clearings around Medaram",
+    "price": "Free",
+    "description": "Millions of visiting pilgrims pitch self-arranged tents, makeshift tarpaulin shelters, or camp under tree shades throughout the surrounding forest clearings."
+  }
+]

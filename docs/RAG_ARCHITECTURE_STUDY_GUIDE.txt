@@ -1,0 +1,423 @@
+================================================================================
+PILGRIMAI — RAG ARCHITECTURE & CODEBASE STUDY GUIDE
+Telangana Temples AI Assistant — Retrieval-Augmented Generation Deep Dive
+================================================================================
+
+PURPOSE:
+This document is a complete, easy-to-read study guide explaining the architecture,
+pipeline stages, and every single code file in the backend/app/rag directory.
+No code modifications have been made.
+
+--------------------------------------------------------------------------------
+TABLE OF CONTENTS:
+1. Executive Summary & Core Philosophy
+2. High-Level Pipeline Flow (Step-by-Step)
+3. The 5 Smart Retrieval Routes
+4. Complete File-by-File Breakdown (All 22 Code Modules)
+5. Top 5 Interview / Viva Questions & Model Answers
+--------------------------------------------------------------------------------
+
+
+================================================================================
+1. EXECUTIVE SUMMARY & CORE PHILOSOPHY
+================================================================================
+
+PilgrimAI is a local, zero-hallucination, domain-specific AI assistant built for 
+pilgrims visiting temples across Telangana, India.
+
+Core Design Principles:
+- 100% Offline & Private: Runs using local SentenceTransformers, local Qdrant,
+  local BM25, and local Ollama (Qwen 2.5 1.5B).
+- Zero Hallucination: The LLM runs at Temperature = 0.0 with strict instructions
+  to answer ONLY from retrieved facts.
+- Parent-Child Chunking: Searches small 300-character snippets for high precision,
+  but delivers full section context to the LLM.
+- Hybrid Search + Neural Reranking: Combines Dense Vectors + BM25 Keywords via
+  Reciprocal Rank Fusion (RRF), then filters the best Top-3 with a Cross-Encoder.
+- Relevance Guardrail: Rejects out-of-domain questions before LLM generation if
+  the reranking score is below -3.0.
+
+
+================================================================================
+2. HIGH-LEVEL PIPELINE FLOW (STEP-BY-STEP)
+================================================================================
+
+PHASE 1: OFFLINE INGESTION (Run once to build search databases)
+  1. loader.py scans dataset folders and reads all JSON files.
+  2. parser.py converts JSON trees into clean, structured Parent Documents.
+  3. chunker.py splits Parent Documents into 300-char Child Chunks with IDs.
+  4. embeddings.py converts Child Chunks into 384-dimensional dense vectors.
+  5. vectordb.py saves vectors and metadata into local Qdrant database.
+  6. bm25.py indexes Child Chunks into an in-memory sparse keyword index.
+  7. knowledge_registry.py loads full raw documents into an in-memory cache.
+
+PHASE 2: ONLINE QUERY EXECUTION (Runs on every user message)
+  1. User asks a question (e.g. "What are the darshan timings at Yadagirigutta?").
+  2. query_planner.py identifies temple names, categories, and assigns 1 of 5 routes.
+  3. vectordb.py finds Top-30 semantic vector matches.
+  4. bm25.py finds Top-30 exact keyword matches.
+  5. rrf.py (Reciprocal Rank Fusion) merges and deduplicates both lists.
+  6. reranker.py (Cross-Encoder) evaluates query-chunk pairs and picks Top-3.
+  7. guardrail.py checks if top score >= -3.0. If not, returns polite refusal.
+  8. completeness_validator.py checks whether facts are confirmed or missing.
+  9. context_builder.py formats the top parent documents into clean Markdown.
+  10. answer_scope_controller.py wraps context with multi-part question rules.
+  11. prompt.py constructs the anti-hallucination system prompt.
+  12. llm.py sends prompt to local Ollama (Qwen 2.5 1.5B @ temperature=0.0).
+  13. answer_grounding_validator.py checks generated text against source facts.
+  14. chat.py returns the verified answer with exact source citations.
+
+
+================================================================================
+3. THE 5 SMART RETRIEVAL ROUTES
+================================================================================
+
+1. TARGETED ROUTE
+   - Trigger: Single temple + specific category (e.g., "VIP darshan at Yadagirigutta").
+   - Action: Hybrid search filtered strictly by temple name.
+
+2. COMPLETE_CATEGORY ROUTE
+   - Trigger: Exact category query (e.g., "Dress code for Bhadrachalam").
+   - Action: Instant O(1) direct lookup from knowledge_registry.py memory cache.
+
+3. CROSS_TEMPLE ROUTE
+   - Trigger: Mentions 2 or more temples (e.g., "Compare accommodation in Vemulawada vs Yadagirigutta").
+   - Action: Retrieves facts for each temple independently and merges them side-by-side.
+
+4. MULTI_CATEGORY ROUTE
+   - Trigger: Single temple + 2 or more distinct questions (e.g., "Timings, entry fees, and parking for Ramappa").
+   - Action: Slices context for each requested topic to ensure no question is skipped.
+
+5. BROAD_TEMPLE ROUTE
+   - Trigger: General overview question (e.g., "Tell me about Thousand Pillar Temple").
+   - Action: Retrieves high-level sections in priority order (History -> Deity -> Timings -> Festivals).
+
+
+================================================================================
+4. COMPLETE FILE-BY-FILE CODE BREAKDOWN (ALL 22 MODULES)
+================================================================================
+
+--------------------------------------------------------------------------------
+1. config.py — Central Configuration & Settings
+--------------------------------------------------------------------------------
+- Purpose: Single configuration file storing all paths, model names, chunk sizes,
+  and score thresholds.
+- Key Lines:
+    EMBEDDING_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
+    CROSS_ENCODER_MODEL_NAME = "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    CHILD_CHUNK_SIZE = 300
+    CHILD_CHUNK_OVERLAP = 50
+    GUARDRAIL_SCORE_THRESHOLD = -3.0
+- Explanation: Defines the 384-dim bi-encoder, neural cross-encoder, 300-char
+  chunking parameters, and the -3.0 relevance guardrail score.
+- Gist: The master control settings file for the entire engine.
+
+--------------------------------------------------------------------------------
+2. utils.py — Text Cleaning & Type Sanitization
+--------------------------------------------------------------------------------
+- Purpose: Helper functions to clean text, normalize whitespace, and convert
+  complex JSON datatypes into clean natural language strings.
+- Key Lines:
+    def sanitize_json_value(val: Any) -> str:
+        if val is None: return ""
+        if isinstance(val, bool): return "Yes" if val else "No"
+- Explanation: Converts raw values (like booleans or nulls) into human words
+  before they are inserted into the prompt.
+- Gist: The data cleaning and formatting utility.
+
+--------------------------------------------------------------------------------
+3. prompt.py — Zero-Hallucination Prompt Template
+--------------------------------------------------------------------------------
+- Purpose: Contains system instructions that forbid the LLM from making up
+  facts or using external knowledge outside the provided context.
+- Key Lines:
+    SYSTEM_PROMPT = """You are PilgrimAI, an expert guide for Telangana Temples.
+    1. Rely ONLY on the clear facts directly mentioned in the Context.
+    2. Do NOT assume or extrapolate.
+    3. If not mentioned in Context, state that the information is unavailable."""
+- Explanation: Enforces strict ground rules on the AI model.
+- Gist: The rulebook keeping the LLM strictly grounded.
+
+--------------------------------------------------------------------------------
+4. loader.py — Dynamic Dataset Scanner
+--------------------------------------------------------------------------------
+- Purpose: Scans disk directories dynamically, discovers temple folders, and
+  streams JSON files without any hardcoded temple lists.
+- Key Lines:
+    RESERVED_DIRS = {"backend", "qdrant_db", "bm25_index", ".git", ".venv", "tests"}
+    def load_temple_files(self) -> Generator[...]:
+        for folder in temple_folders:
+            for json_path in folder.rglob("*.json"):
+                yield (temple_name, file_name, relative_path, json_content)
+- Explanation: Uses Python generators to stream files efficiently and skips
+  code or database folders.
+- Gist: The automated file discovery system.
+
+--------------------------------------------------------------------------------
+5. parser.py — JSON to Parent Document Converter
+--------------------------------------------------------------------------------
+- Purpose: Flattens nested JSON hierarchies (darshan slots, pooja tables, festival
+  calendars) into clean, human-readable structured parent documents.
+- Key Lines:
+    def _format_dict(self, d: Dict[str, Any], indent: int = 0) -> str:
+        for k, v in d.items():
+            formatted_key = k.replace("_", " ").title()
+- Explanation: Converts raw code keys like "darshan_timings" into formatted
+  headings like "Darshan Timings:" for the LLM.
+- Gist: The translator converting raw JSON data into clean readable chapters.
+
+--------------------------------------------------------------------------------
+6. chunker.py — Parent-Child Hierarchical Chunker
+--------------------------------------------------------------------------------
+- Purpose: Creates small 300-character child chunks for search index precision
+  while preserving links to the full parent document.
+- Key Lines:
+    self.splitter = RecursiveCharacterTextSplitter(chunk_size=300, chunk_overlap=50)
+    child_doc = Document(
+        page_content=chunk,
+        metadata={**parent_doc.metadata, "is_child": True, "parent_id": parent_id}
+    )
+- Explanation: Small chunks give exact vector matches; parent IDs allow the
+  system to supply the full parent section to the LLM.
+- Gist: Creates small index cards that link back to the full book chapter.
+
+--------------------------------------------------------------------------------
+7. ingest.py — Offline Ingestion CLI Script
+--------------------------------------------------------------------------------
+- Purpose: The build script that runs the entire offline ingestion pipeline:
+  scans files, creates chunks, computes embeddings, and builds search databases.
+- Key Lines:
+    vectordb_manager.create_collection(child_documents, parent_documents)
+    bm25_manager.build_index(child_documents)
+- Explanation: Coordinates Qdrant and BM25 index creation in one unified step.
+- Gist: The offline index compiler.
+
+--------------------------------------------------------------------------------
+8. category_registry.py — 23-Category Knowledge Schema
+--------------------------------------------------------------------------------
+- Purpose: Domain dictionary containing canonical category names, synonyms,
+  and regex patterns for all 23 temple topics.
+- Key Lines:
+    CATEGORY_SYNONYMS = {
+        "timings": ["darshan timings", "opening hours", "closing time", "schedule"],
+        "accessibility": ["wheelchair", "elderly", "lift", "ramp", "physically disabled"],
+        "dress_code": ["attire", "clothes", "wearing", "traditional dress"],
+    }
+- Explanation: Maps user phrases to exact standardized category keys.
+- Gist: The vocabulary engine mapping user intent to data categories.
+
+--------------------------------------------------------------------------------
+9. knowledge_registry.py — Fast Direct Memory Cache
+--------------------------------------------------------------------------------
+- Purpose: In-memory dictionary store (temple -> category -> data) for instant
+  O(1) lookups without running vector search.
+- Key Lines:
+    def get_temple_category_data(self, temple_name: str, category: str):
+        canonical_temple = self.resolve_temple_name(temple_name)
+        return self._store.get(canonical_temple, {}).get(category)
+- Explanation: Delivers 100% complete, unchunked JSON data in under 1 millisecond.
+- Gist: The high-speed memory cache for direct facts.
+
+--------------------------------------------------------------------------------
+10. embeddings.py — Local Sentence Transformer Wrapper
+--------------------------------------------------------------------------------
+- Purpose: Wraps local HuggingFace all-MiniLM-L6-v2 to convert text into
+  384-dimensional dense vector embeddings.
+- Key Lines:
+    self.model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
+    def embed_query(self, text: str) -> List[float]:
+        return self.model.encode(text, normalize_embeddings=True).tolist()
+- Explanation: Runs locally with zero cloud API latency or costs.
+- Gist: The text-to-vector encoder.
+
+--------------------------------------------------------------------------------
+11. vectordb.py — Embedded Qdrant Vector Engine
+--------------------------------------------------------------------------------
+- Purpose: Manages local on-disk Qdrant vector database for HNSW dense similarity
+  searches.
+- Key Lines:
+    self.client = QdrantClient(path=settings.QDRANT_DB_PATH)
+    def search_candidates(self, query_vector, filter_temple=None, top_k=30):
+- Explanation: Finds the Top-30 most semantically similar chunks with temple
+  filtering support.
+- Gist: The dense vector search engine.
+
+--------------------------------------------------------------------------------
+12. bm25.py — BM25 Sparse Lexical Search Engine
+--------------------------------------------------------------------------------
+- Purpose: Implements BM25Okapi keyword search to capture exact deity names,
+  Telugu terms, and numbers.
+- Key Lines:
+    self.bm25 = BM25Okapi(tokenized_corpus)
+    def search_candidates(self, query: str, filter_temple=None, top_k=30):
+- Explanation: Guarantees matches on exact terms (e.g. "Abhishekam", "₹500", "VIP").
+- Gist: The exact-keyword search specialist.
+
+--------------------------------------------------------------------------------
+13. rrf.py — Reciprocal Rank Fusion (Hybrid Combiner)
+--------------------------------------------------------------------------------
+- Purpose: Merges and deduplicates ranking lists from Vector Search and BM25 Search.
+- Key Lines:
+    # RRF Formula: Score(d) = sum(1.0 / (60.0 + rank))
+    def reciprocal_rank_fusion(vector_results, bm25_results, k=60.0):
+- Explanation: Boosts documents that appear near the top in both vector and
+  keyword searches.
+- Gist: The fair judge combining vector results and keyword results.
+
+--------------------------------------------------------------------------------
+14. reranker.py — Neural Cross-Encoder Reranker
+--------------------------------------------------------------------------------
+- Purpose: Performs deep cross-attention using ms-marco-MiniLM-L-6-v2 to select
+  the final Top-3 most relevant parent passages.
+- Key Lines:
+    scores = self.model.predict([(query, doc.page_content) for doc in candidates])
+    ranked = sorted(zip(candidates, scores), key=lambda x: x[1], reverse=True)[:top_k]
+- Explanation: Evaluates query-document pairs together for precise ranking.
+- Gist: The fine-tooth comb that picks the 3 best answers from 30 candidates.
+
+--------------------------------------------------------------------------------
+15. guardrail.py — Semantic Relevance & Domain Guardrail
+--------------------------------------------------------------------------------
+- Purpose: Blocks off-topic queries (recipes, coding, general trivia) before they
+  reach the LLM.
+- Key Lines:
+    def evaluate_relevance(self, top_score: float) -> Tuple[bool, str]:
+        if top_score < settings.GUARDRAIL_SCORE_THRESHOLD:  # -3.0
+            return False, "I can only assist with information regarding Telangana temples..."
+- Explanation: Returns an instant helpful refusal if relevance score is below -3.0.
+- Gist: The security guard filtering out off-topic questions.
+
+--------------------------------------------------------------------------------
+16. query_planner.py — Deterministic Route Classifier
+--------------------------------------------------------------------------------
+- Purpose: Analyzes user query, aliases, and category triggers to choose the
+  optimal retrieval route.
+- Key Lines:
+    class RetrievalRoute(str, Enum):
+        TARGETED = "TARGETED"
+        COMPLETE_CATEGORY = "COMPLETE_CATEGORY"
+        CROSS_TEMPLE = "CROSS_TEMPLE"
+        MULTI_CATEGORY = "MULTI_CATEGORY"
+        BROAD_TEMPLE = "BROAD_TEMPLE"
+- Explanation: Decides whether to use direct cache, hybrid search, or cross-temple
+  comparison.
+- Gist: The intelligent traffic controller directing queries.
+
+--------------------------------------------------------------------------------
+17. context_builder.py — Structured Prompt Context Assembler
+--------------------------------------------------------------------------------
+- Purpose: Formats retrieved documents and metadata into clean, structured
+  context blocks for the LLM prompt.
+- Key Lines:
+    def build_targeted_context(self, temple_name, category, text_chunks):
+        return f"### TEMPLE: {temple_name}\n### CATEGORY: {category.upper()}\n{content}"
+- Explanation: Clearly labels temple and category headings for the model.
+- Gist: The document layout designer packaging context for the LLM.
+
+--------------------------------------------------------------------------------
+18. answer_scope_controller.py — Multi-Part Question Controller
+--------------------------------------------------------------------------------
+- Purpose: Handles multi-part questions (e.g. "Timings and accommodation at Bhadrachalam")
+  and ensures prompt explicitly demands all parts be answered.
+- Key Lines:
+    @dataclass
+    class AnswerScope:
+        temple_name: Optional[str]
+        requested_categories: List[str]
+        is_multi_part: bool
+- Explanation: Prevents the LLM from answering only the first half of a question.
+- Gist: The checklist manager ensuring all sub-questions are answered.
+
+--------------------------------------------------------------------------------
+19. completeness_validator.py — Tri-State Availability Engine
+--------------------------------------------------------------------------------
+- Purpose: Prevents confusing missing data with confirmed absence.
+- Key Lines:
+    CONFIRMED_AVAILABLE = "CONFIRMED_AVAILABLE"
+    CONFIRMED_UNAVAILABLE = "CONFIRMED_UNAVAILABLE"
+    INFORMATION_NOT_AVAILABLE = "INFORMATION_NOT_AVAILABLE"
+- Explanation: Distinguishes between explicit absence ("No lift available")
+  and missing dataset entries ("Not mentioned in records").
+- Gist: The logic auditor distinguishing "confirmed not there" from "not in records".
+
+--------------------------------------------------------------------------------
+20. answer_grounding_validator.py — Post-Generation Hallucination Sanitizer
+--------------------------------------------------------------------------------
+- Purpose: Inspects generated answers against retrieved context to catch and
+  sanitize any hallucinated numbers, timings, or ungrounded statements.
+- Key Lines:
+    def validate(self, answer: str, context: str) -> GroundingResult:
+    def sanitize_answer(self, answer: str, context: str) -> str:
+- Explanation: Acts as the final safety net before the user sees the answer.
+- Gist: The final fact-checking proofreader.
+
+--------------------------------------------------------------------------------
+21. llm.py — Local Ollama LLM Connector
+--------------------------------------------------------------------------------
+- Purpose: Connects to local Ollama running Qwen 2.5 (1.5B) at Temperature = 0.0.
+- Key Lines:
+    payload = {
+        "model": "qwen2.5:1.5b",
+        "prompt": prompt,
+        "options": {"temperature": 0.0, "top_p": 0.9}
+    }
+- Explanation: Temperature = 0.0 removes randomness to enforce strict adherence
+  to provided facts.
+- Gist: The local natural language generator.
+
+--------------------------------------------------------------------------------
+22. chat.py — Master RAG Service Orchestrator
+--------------------------------------------------------------------------------
+- Purpose: The central service class (PilgrimRAGService) connecting every
+  subsystem into an end-to-end question-answering workflow.
+- Key Lines:
+    class PilgrimRAGService:
+        def answer(self, query: str) -> Dict[str, Any]:
+            plan = self.planner.plan(query)
+            docs, score = self.retrieve(query, plan)
+            is_valid, msg = self.guardrail.evaluate_relevance(score)
+            if not is_valid: return {"answer": msg, "sources": []}
+            raw_answer = self.llm.generate(prompt)
+            final_answer = self.grounding_validator.sanitize(raw_answer, context)
+            return {"answer": final_answer, "sources": sources}
+- Explanation: Manages planning, retrieval, reranking, guardrails, generation,
+  and validation in one unified call.
+- Gist: The conductor leading the entire RAG pipeline.
+
+
+================================================================================
+5. TOP 5 INTERVIEW / VIVA QUESTIONS & MODEL ANSWERS
+================================================================================
+
+Q1: Why did you choose Parent-Child Chunking instead of standard fixed chunking?
+Answer: Fixed chunking creates arbitrary cuts that often separate related data
+(like pooja ticket prices from pooja names). With Parent-Child Chunking, we search
+over small 300-character child chunks for high semantic precision, but inject the
+entire parent document into the prompt so the LLM has complete context.
+
+Q2: Why combine Dense Vector Search and BM25 Sparse Search using RRF?
+Answer: Dense vector embeddings understand high-level semantics (e.g., "where to stay"
+-> accommodation), but can struggle with exact proper nouns and numbers. BM25
+excels at exact keyword and numeric matching (e.g., "Saswatha Pooja ₹500").
+Reciprocal Rank Fusion (RRF) merges their strengths without needing manual score tuning.
+
+Q3: Why is Temperature set to 0.0 in the LLM?
+Answer: PilgrimAI is an informative pilgrimage assistant where precision is vital.
+A temperature of 0.0 turns off stochastic creativity, ensuring the model deterministically
+selects the most probable tokens strictly grounded in the retrieved facts.
+
+Q4: How does your pipeline block out-of-domain queries without wasting LLM tokens?
+Answer: guardrail.py checks the top score from the neural Cross-Encoder. If the score
+is below -3.0, the query is identified as irrelevant (e.g., general trivia or coding)
+and an instant refusal message is returned immediately without invoking the LLM.
+
+Q5: What is the Tri-State Completeness Principle in completeness_validator.py?
+Answer: In travel and accessibility, missing data must never be reported as confirmed
+absence. The validator distinguishes between:
+1. Confirmed Available (affirmative evidence in text)
+2. Confirmed Unavailable (explicit negative statements like "No lift")
+3. Information Not Available (missing data), avoiding misleading claims.
+
+================================================================================
+END OF STUDY GUIDE
+================================================================================

@@ -1,0 +1,63 @@
+{
+  "facilities": [
+    {
+      "name": "Parking",
+      "available": "Yes",
+      "description": "Parking is available near the temple premises."
+    },
+    {
+      "name": "Drinking Water",
+      "available": "Yes",
+      "description": "Drinking water facility is available for devotees."
+    },
+    {
+      "name": "Restrooms",
+      "available": "Yes",
+      "description": "Public restrooms are available near the temple."
+    },
+    {
+      "name": "Photography",
+      "available": "Yes",
+      "description": "Photography is generally allowed outside the temple. Follow instructions inside the premises."
+    },
+    {
+      "name": "Footwear Stand",
+      "available": "Yes",
+      "description": "Footwear can be kept outside the temple before entering."
+    }
+  ],
+  "elderly_facilities": {
+    "available_elderly_infrastructure": [
+      {
+        "facility": "Accessible Gates",
+        "description": "The main entrance and exit pathways are wide and flat, making last-mile vehicle drop-offs highly accessible."
+      },
+      {
+        "facility": "Minimal Steps",
+        "description": "The sprawling outer complex features flat paths and a lush lawn area with minimal steep steps."
+      },
+      {
+        "facility": "Rest Areas",
+        "description": "Benches and seating structures are positioned around the outer garden lawns for elderly pilgrims to sit and rest."
+      },
+      {
+        "facility": "Drinking Water",
+        "description": "Clean drinking water stations are maintained near the entrance."
+      }
+    ],
+    "crucial_accessibility_limitations": [
+      {
+        "limitation": "Wheelchair Access Constraints",
+        "description": "While the entrance is wheelchair accessible, actual wheelchair friendly passage is limited to the outer courtyard areas. The inner sanctum chambers (Trikutalayam) are elevated on a raised stone platform."
+      },
+      {
+        "limitation": "Sanctum Steps",
+        "description": "To see the main deities, elderly visitors must climb a small set of steps, ancient stone stairs. There are no ramps or mechanical lifts leading onto the main platform or into the narrow temple corridors."
+      },
+      {
+        "limitation": "Barefoot Walking Ground",
+        "description": "Shoes must be left at the entrance counter. The stone flooring can become hot and uncomfortable for seniors to walk on during peak afternoon hours"
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Dakshina Triveni Sangamam",
+    "distance": "~1.0 km",
+    "type": "River",
+    "description": "Holy river confluence of Godavari, Pranahita & Saraswati"
+  },
+  {
+    "name": "Kaleshwaram Lift Irrigation / Medigadda Barrage",
+    "distance": "~4.0 km",
+    "type": "Engineering marvel",
+    "description": "Engineering marvel & world's largest multi-stage lift irrigation scheme"
+  },
+  {
+    "name": "Pratapagiri Fort",
+    "distance": "~35.5 km ",
+    "type": "Historical",
+    "description": "Historic Kakatiya hillfort with panoramic views"
+  },
+  {
+    "name": "Shivaram Wildlife Sanctuary",
+    "distance": "~36.1 km ",
+    "type": "Nature",
+    "description": "Nature reserve famous for freshwater marsh crocodiles in Godavari"
+  },
+  {
+    "name": "Manthani Ancient Temples",
+    "distance": "~56.5 km ",
+    "type": "Shrine",
+    "description": "Ancient Vedic town with Gautameshwara & Laxmi Narasimha temples"
+  }
+]

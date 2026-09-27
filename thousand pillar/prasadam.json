@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Laddu",
+    "price": "₹15 to ₹20 per packet",
+    "description": "Traditional sweet prasadam distributed to devotees."
+  },
+  {
+    "name": "Pulihora",
+    "price": "Free Distribution (No counter sales)",
+    "description": "Tamarind rice offered as prasadam during special occasions."
+  },
+  {
+    "name": "Chakkara Pongal",
+    "price": "Free Distribution (Festival specific)",
+    "description": "Sweet rice prasadam prepared during festivals."
+  },
+  {
+    "name": "Curd Rice",
+    "price": "Free Distribution (Special occasions)",
+    "description": "Offered on selected festival days."
+  }
+]

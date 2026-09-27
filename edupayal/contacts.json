@@ -1,0 +1,187 @@
+{
+  "address": "Nagasanpally Village, Papannapet Mandal, Medak District, Telangana, India",
+  "phones": [
+    "+91 9866331529",
+    "+91 9441022065",
+    "+91 8309986447",
+    "+91 8452220209",
+    "+91 9441878165"
+  ],
+  "emails": [],
+  "website": "http://edupayalavanadurgatemple.org",
+  "google_map": "https://maps.google.com/?q=Sri+Edupayala+Vana+Durga+Bhavani+Devalayam",
+  "google_embed_map": "",
+  "contact_persons": [
+    {
+      "name": "M. Satish Kumar",
+      "role": "Inquiries",
+      "phones": [
+        "+91 9866331529"
+      ]
+    },
+    {
+      "name": "S. Srinivas",
+      "role": "Administration",
+      "phones": [
+        "+91 9441022065",
+        "+91 8309986447"
+      ]
+    },
+    {
+      "name": "Sathram Office",
+      "role": "Booking",
+      "phones": [
+        "+91 8452220209",
+        "+91 9441878165"
+      ]
+    }
+  ],
+  "emergency_and_essential_services": {
+    "hospitals_and_medical_facilities": [
+      {
+        "name": "Primary Health Centre (PHC), Papannapet",
+        "type": "Government Primary Health Centre",
+        "address": "Main Road, Papannapet Town, Medak District, Telangana - 502303",
+        "distance": "~17.8 km",
+        "contact_number": "+91 8500201229",
+        "available_medical_services": "General outpatient care, primary emergency first aid, maternal and child healthcare, basic diagnostics, and seasonal disease treatment.",
+        "working_hours": "9:00 AM – 4:00 PM (Monday to Saturday)",
+        "google_maps_link": "https://maps.google.com/?q=PHC+Papannapet"
+      },
+      {
+        "name": "PHC Podichanpally (Government)",
+        "type": "Government Primary Health Centre",
+        "address": "Podichanpally Village (Closer to the temple entrance axis)",
+        "distance": "~8.9 km",
+        "contact_number": "+91 9989598121",
+        "available_medical_services": "",
+        "working_hours": "",
+        "google_maps_link": ""
+      },
+      {
+        "name": "Government General Hospital, Medak (District Hospital)",
+        "type": "Government General Hospital",
+        "address": "Jambikunta, Main Road, Near Medak Collectorate Office, Medak, Telangana – 502110",
+        "distance": "~14.7 km",
+        "contact_number": "08455-242020 / 08455-245566 (Superintendent / District Coordinator of Hospital Services: +91 94933 17594)",
+        "available_medical_services": "24/7 Emergency and Trauma care, intensive care unit (ICU), specialized pediatric ward, maternity services, general surgery, diagnostic lab testing, and fully stocked pharmacy.",
+        "working_hours": "24/7 (Emergency Services), Outpatient Consultation (9:00 AM – 2:00 PM)",
+        "google_maps_link": "https://maps.google.com/?q=Government+General+Hospital+Medak"
+      },
+      {
+        "name": "Life Care Super Speciality Hospital",
+        "type": "Private Multi-specialty Hospital",
+        "address": "Nadeem Plaza, Hyderabad Road, Opposite Agriculture Market Committee, Medak - 502110",
+        "distance": "~13.5 km",
+        "contact_number": "08452-242211 / Alternately via emergency triage",
+        "available_medical_services": "24/7 Critical care, trauma stabilization, advanced orthopedics, general surgery, laparoscopy, and internal medicine.",
+        "working_hours": "24/7 (Emergency Services)",
+        "google_maps_link": ""
+      },
+      {
+        "name": "Chinnari Mother & Children's Hospital",
+        "type": "Private Pediatric & Maternity Hospital",
+        "address": "Opposite Indian Oil Petrol Bunk, Road Number 2, Azhampura, Medak - 502110",
+        "distance": "~13.4 km",
+        "contact_number": "08452-223456 (Local registry)",
+        "available_medical_services": "Specialized neonatal intensive care (NICU), pediatric emergencies, gynecology, high-risk maternity care, and 24-hour pharmacy.",
+        "working_hours": "24/7 (Emergency Services)",
+        "google_maps_link": ""
+      }
+    ],
+    "ambulance_services": [
+      {
+        "name": "108 Emergency Ambulance",
+        "details": "Dial 108 (Telangana State 24/7 Emergency Response Service). Ambulances are stationed at Mandal level (including Papannapet and Medak) for rapid dispatch during road accidents, trauma, or maternal emergencies.",
+        "service_availability": "24/7 (Toll-Free)"
+      },
+      {
+        "name": "Local Ambulance Services",
+        "details": "Information not officially available for dedicated private ambulance companies; pilgrims can contact Government General Hospital Medak (08455-242020) for transport coordination.",
+        "service_availability": ""
+      }
+    ],
+    "police_and_security": [
+      {
+        "name": "Papannapet Police Station",
+        "address": "Main Road, Opposite Police Station Bus Stop, Papannapet, Medak District, Telangana - 502303",
+        "distance": "~18 km",
+        "contact_number": "Landline: 08450-230533, Station House Officer (SHO) Mobile: +91 8712657920",
+        "google_maps_link": "https://maps.google.com/?q=Papannapet+Police+Station"
+      },
+      {
+        "name": "Medak Town Police Station",
+        "address": "Police Station Road, Near Medak Cathedral, Medak Town, Telangana - 502110",
+        "distance": "~18 km",
+        "contact_number": "Landline: 08452-221333, Circle Inspector Mobile: +91 8712657913, DSP Medak: +91 8712657903",
+        "google_maps_link": "https://maps.google.com/?q=Medak+Town+Police+Station"
+      }
+    ],
+    "fire_and_rescue_services": [
+      {
+        "name": "Medak Fire Station",
+        "address": "Fire Station Road, Medak Town, Medak District, Telangana - 502110",
+        "contact_number": "Landline: 08452-221299, Station Fire Officer Mobile: +91 9963748220 (Mr. Baba Sharfuddin)",
+        "distance": "~15 km"
+      }
+    ],
+    "important_emergency_helplines": {
+      "national_emergency_number": "112 (Universal Emergency Help)",
+      "police_control_room": "100",
+      "ambulance_services": "108",
+      "fire_services": "101",
+      "women_helpline": "1091 / 181",
+      "child_helpline": "1098",
+      "health_medical_advice_helpline": "104",
+      "telangana_state_disaster_management_control_room": "040-23442940 / 040-23455620"
+    },
+    "medical_stores": [
+      {
+        "name": "Medisign Pharmacy",
+        "address": "AB Tower, Main Road, Opposite Police Station, Papannapet, Medak - 502303",
+        "distance": "~18 km (in Papannapet town center)",
+        "contact_number": "Information not officially available",
+        "working_hours": "24 Hours"
+      },
+      {
+        "name": "Sri Sai Medical & General Stores",
+        "address": "Main Road, Papannapet, Medak - 502303",
+        "distance": "~18 km",
+        "contact_number": "Information not officially available",
+        "working_hours": "8:00 AM – 9:30 PM (Daily)"
+      }
+    ],
+    "banks_and_atms": {
+      "atms": [
+        "State Bank of India (SBI) ATM is located in Papannapet Town (~8 km away).",
+        "Indicash ATM is located in Papannapet Town (~8 km away).",
+        "Additional ATMs of major banks (SBI, HDFC, Union Bank) are available in Medak town (~18 km away)."
+      ],
+      "banks": [
+        {
+          "name": "State Bank of India (SBI) - Kothapally Branch",
+          "ifsc": "SBIN0022029",
+          "phone": "08450-270032",
+          "location": "located in Papannapet Mandal (~8 km away)"
+        },
+        {
+          "name": "Telangana Grameena Bank (TGB)",
+          "branch": "Papannapet Branch (~8 km away)"
+        }
+      ]
+    },
+    "petrol_pumps": [
+      {
+        "name": "Yedupayala Service Station (Hindustan Petroleum - HP)",
+        "address": "Located on State Highway 15 (SH 15), Podichanpally village, Papannapet Mandal, Medak – 502125 (near the temple entrance/Mokshadwaram junction)",
+        "distance": "~3.5 km",
+        "contact_number": "+91 9985202326"
+      },
+      {
+        "name": "Indian Oil Petrol Pump",
+        "address": "Located on the Medak-Bodhan road, near Papannapet (~8 km away)",
+        "distance": "~8 km"
+      }
+    ]
+  }
+}

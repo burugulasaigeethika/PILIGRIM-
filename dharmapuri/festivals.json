@@ -1,0 +1,133 @@
+[
+  {
+    "festival_name": "Bramhotsavalu (Jatara) 2026",
+    "month": "27 February 2026 – 11 March 2026 (13 days)",
+    "importance": "Annual grand 13-day festival of Sri Lakshmi Narasimha Swamy and Sri Venkateswara Swamy held on the banks of Godavari in Dharmapuri",
+    "description": "The peak annual celebration where tens of thousands of devotees gather. Involves celestial wedding (Kalyanotsavam), processions, Teppotsavam, Rathotsavam, Chakratirtham, Pushpayagam, and stage plays by Laxmi Narasimha Natya Mandali. During this period, Nithya Kalyanam and Nitya Nrusimha Homams are suspended.",
+    "schedule": [
+      {
+        "date": "27 Feb 2026 (Friday)",
+        "tithi_event": "11:00 AM",
+        "details": "Ankurarpana, Kalasha Sthapana, Varahatirtham, Putta Bangaram"
+      },
+      {
+        "date": "28 Feb 2026 (Saturday)",
+        "tithi_event": "6:00 PM (Godhuli Muhurtam)",
+        "details": "Sri Swamy Varala Kalyanotsavam (Divine Wedding)"
+      },
+      {
+        "date": "1 Mar 2026 (Sunday)",
+        "tithi_event": "7:00 PM",
+        "details": "Sri Lakshmi Narasimha Swamy Procession (Uregimpu Seva)"
+      },
+      {
+        "date": "2 Mar 2026 (Monday)",
+        "tithi_event": "7:00 PM",
+        "details": "Sri Venkateswara Swamy Procession (Uregimpu Seva)"
+      },
+      {
+        "date": "3 Mar 2026 (Tuesday)",
+        "tithi_event": "6:00 AM – 7:00 AM",
+        "details": "Lunar Eclipse day. Sri Yoga Narasimha Swamy Dolotsavam (Swing Festival) held 6:00 AM to 7:00 AM, after which temple closes with no darshan for devotees."
+      },
+      {
+        "date": "4 Mar 2026 (Wednesday)",
+        "tithi_event": "3:00 PM",
+        "details": "Sri Ugra Narasimha Swamy Teppotsavam, Dolotsavam (Boat & Swing Festival)"
+      },
+      {
+        "date": "5 Mar 2026 (Thursday)",
+        "tithi_event": "3:00 PM & 4:00 PM",
+        "details": "3:00 PM – Sri Venkateswara Swamy Teppotsavam, Dolotsavam. 4:00 PM – Sri Lakshmi Narasimha Swamy Dakshina Digyatra (Southern Direction Journey)"
+      },
+      {
+        "date": "6 Mar 2026 (Friday)",
+        "tithi_event": "4:00 PM & 8:00 PM",
+        "details": "4:00 PM – Sri Lakshmi Narasimha Swamy Uttara Digyatra (Northern Direction Journey). 8:00 PM – Bhogamandapa Utsavam, Vedasadasu"
+      },
+      {
+        "date": "7 Mar 2026 (Saturday)",
+        "tithi_event": "4:00 PM & 8:00 PM",
+        "details": "4:00 PM – Sri Venkateswara Swamy Dakshina & Uttara Digyatralu. 8:00 PM – Dopotsavam (Dopukatha)"
+      },
+      {
+        "date": "8 Mar 2026 (Sunday)",
+        "tithi_event": "3:00 PM & 7:00 PM",
+        "details": "3:00 PM – Muvvuru Swamula Rathotsavam (Chariot Festival of the three deities). 7:00 PM – Chakratirtham, Sri Lakshmi Narasimha Swamy (Yoga) Pushpayagam"
+      },
+      {
+        "date": "9 Mar 2026 (Monday)",
+        "tithi_event": "7:00 PM & 9:00 PM",
+        "details": "7:00 PM – Sri Venkateswara Swamy Pushpayagam. 9:00 PM – Sri Yoga (Pata) Narasimha Swamy Ekantotsavam"
+      },
+      {
+        "date": "10 Mar 2026 (Tuesday)",
+        "tithi_event": "7:00 PM & 9:00 PM",
+        "details": "7:00 PM – Sri Ugra Narasimha Swamy Pushpayagam. 9:00 PM – Sri Venkateswara Swamy Ekantotsavam"
+      },
+      {
+        "date": "11 Mar 2026 (Wednesday)",
+        "tithi_event": "9:00 PM",
+        "details": "Sri Ugra Narasimha Swamy Ekantotsavam"
+      }
+    ]
+  },
+  {
+    "festival_name": "Godavari Pushkaralu 2027",
+    "month": "26 June 2027 – 7 July 2027 (12 days Adi Pushkarams); Anthya Pushkarams: 13 July 2028 – 24 July 2028",
+    "importance": "Major 12-year astrological river festival when Jupiter (Guru) enters Simha (Leo), charging Godavari with divine energy",
+    "description": "Millions of pilgrims gather at Dakshina Vahini Godavari banks for Pushkara Snanam (holy dip, especially Arunodaya Snanam at dawn), Pinda Pradaanam (ancestral rites), Pitru Tarpanam (water offerings with sesame seeds), and Daanam & Dharma (charity). Transit Muhurtham starts on 26 June 2027 at approx 05:25 AM IST.",
+    "schedule": [
+      {
+        "date": "26 June 2027 (Saturday)",
+        "tithi_event": "05:25 AM IST Transit Muhurtham",
+        "details": "Start of Adi Pushkarams as Jupiter enters Simha (Leo). Sacred bath (Arunodaya Snanam) commences."
+      },
+      {
+        "date": "26 June 2027 to 7 July 2027",
+        "tithi_event": "12-Day Adi Pushkarams",
+        "details": "Daily Pushkara Snanam, Pinda Pradaanam, Pitru Tarpanam, and Daanam & Dharma."
+      },
+      {
+        "date": "13 July 2028 to 24 July 2028",
+        "tithi_event": "Anthya Pushkarams",
+        "details": "Final sacred 12 days of the 12-year Jupiter cycle."
+      }
+    ]
+  },
+  {
+    "festival_name": "Nrusimha Navarathrulu",
+    "month": "Narasimha Jayanti period (April-May)",
+    "importance": "Nine nights of Narasimha worship",
+    "description": "Devotional plays and special ceremonies performed by Laxmi Narasimha Natya Mandali during the nine nights of Narasimha worship.",
+    "schedule": []
+  },
+  {
+    "festival_name": "Mukti Pradayini Karthika Masam",
+    "month": "Karthika Masam (October- November)",
+    "importance": "Holy Hindu month for lighting lamps",
+    "description": "Thousands of devotees arrive daily to light lamps (Akasha Deepam) along the Godavari river bank.",
+    "schedule": []
+  },
+  {
+    "festival_name": "Maha Shivaratri",
+    "month": "Magha / Phalguna (Maha Shivaratri)(January–February)",
+    "importance": "Major regional Shaivite festival",
+    "description": "Tens of thousands of devotees pack the temple and river banks celebrating the Hari-Hara tradition.",
+    "schedule": []
+  },
+  {
+    "festival_name": "Hanuman Jayanti",
+    "month": "Vaisakha / Chaitra (March–April)",
+    "importance": "Festival of Lord Hanuman",
+    "description": "High-volume festive day with heavy surge of devotees at the temple.",
+    "schedule": []
+  },
+  {
+    "festival_name": "Vaikuntha Ekadashi",
+    "month": "Margashirsha / Pausha (November–December)",
+    "importance": "Sacred Vaishnavite Ekadashi day",
+    "description": "Major festive day drawing large crowds for special darshan.",
+    "schedule": []
+  }
+]

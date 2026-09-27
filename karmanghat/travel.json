@@ -1,0 +1,74 @@
+{
+  "bus_routes": [
+    "From Mahatma Gandhi Bus Station (MGBS) via Chaderghat & Saidabad",
+    "From Secunderabad Station via Tarnaka, Uppal & LB Nagar",
+    "From Koti via Malakpet & Santoshnagar",
+    "From Dilsukhnagar via Inner Ring Road",
+    "From LB Nagar Cross Roads via Nagarjuna Sagar Ring Road",
+    "From Jeedimetla via Ameerpet, Koti & Champapet",
+    "From Patancheru via Miyapur, Kukatpally & LB Nagar",
+    "From Mehdipatnam via Chandrayangutta & Owaisi Hospital Crossroads",
+    "From Chandrayangutta via Pisalbanda & Champapet",
+    "From Ibrahimpatnam via Sagar Highway & Bairamalguda"
+  ],
+  "railway": {
+    "station": "Kacheguda Railway Station / Secunderabad Junction",
+    "distance": "~9 km / ~14 km",
+    "stations": [
+      {
+        "station": "Kacheguda Railway Station",
+        "distance": "~9 km"
+      },
+      {
+        "station": "Secunderabad Junction",
+        "distance": "~14 km"
+      }
+    ]
+  },
+  "airport": {
+    "name": "Rajiv Gandhi International Airport (RGIA)",
+    "distance": "approximately 22 km",
+    "travel_options": [
+      {
+        "mode": "Taxi (Prepaid / Uber / Ola)",
+        "description": "Take the Outer Ring Road (ORR) from Shamshabad, exit at the Bongloor or Sagar Road junction, and head towards the Inner Ring Road at Champapet. Travel time is around 35 to 45 minutes."
+      },
+      {
+        "mode": "Pushpak Airport Liner (Bus)",
+        "description": "Take the official airport luxury bus towards the LB Nagar route. Drop off at LB Nagar, and take an auto-rickshaw directly to the temple."
+      }
+    ]
+  },
+  "metro": {
+    "station": "LB Nagar Metro Station (Red Line)",
+    "distance": "3.5 km",
+    "description": "The nearest Metro Station is LB Nagar Metro Station (Red Line), located approximately 3.5 km away. From there, city buses, auto-rickshaws, and sharing autos are directly available to the temple gates."
+  },
+  "nearby_places_to_visit": [
+    {
+      "destination": "Saroornagar Lake & Park",
+      "distance": "~2.5 km",
+      "highlight_feature": "Lakeside evening walking tracks and local street food stalls"
+    },
+    {
+      "destination": "Priyadarshini Park",
+      "distance": "~3.0 km",
+      "highlight_feature": "Manicured lawns, musical fountains, and children's play zones"
+    },
+    {
+      "destination": "Shri Ashtalakshmi Temple",
+      "distance": "~3.5 km",
+      "highlight_feature": "Ornate pink-hued structure dedicated to the 8 forms of Lakshmi"
+    },
+    {
+      "destination": "Meerpet Burj",
+      "distance": "~4.0 km",
+      "highlight_feature": "Ancient stone watchtower dating back centuries"
+    },
+    {
+      "destination": "Shri Shyam Baba Mandir",
+      "distance": "~9.5 km",
+      "highlight_feature": "Prominent Marwari-style marble temple dedicated to Khatu Shyam, located directly opposite Kachiguda Railway Station"
+    }
+  ]
+}

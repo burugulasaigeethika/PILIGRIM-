@@ -1,0 +1,11 @@
+{
+  "wheelchair_accessibility": {
+    "is_wheelchair_friendly": true,
+    "has_lift": true,
+    "details": [
+      "Side Entrance Lift: A lift is available near a side entrance specifically for elderly and differently-abled devotees.",
+      "Wheelchair Availability: Wheelchairs are available upon request at the main temple entrance.",
+      "Priority Darshan Access: Priority darshan queue access is provided to senior citizens and differently-abled individuals upon showing valid proof of age or medical status."
+    ]
+  }
+}

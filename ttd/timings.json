@@ -1,0 +1,85 @@
+{
+  "temple_id": "ttd_tirumala",
+  "opening_time": "02:30 AM",
+  "closing_time": "01:30 AM (Next Day)",
+  "afternoon_break": {
+    "details": "No complete closure; brief 20-30 minute queue pauses for Naivedyam (food offerings) during First Bell, Second Bell, and Night Bell."
+  },
+  "daily_schedule": [
+    {
+      "time_slot": "02:30 AM – 03:00 AM",
+      "ritual_name": "Suprabhatam Preparation",
+      "details_and_significance": "Opening of temple doors and sacred preparation for morning rituals."
+    },
+    {
+      "time_slot": "03:00 AM – 03:30 AM",
+      "ritual_name": "Suprabhatam Seva",
+      "details_and_significance": "Awakening ritual recited in front of Bangaru Vakili to wake the Lord with holy hymns."
+    },
+    {
+      "time_slot": "03:30 AM – 03:45 AM",
+      "ritual_name": "Suddhi & Viswaroopa Darshanam",
+      "details_and_significance": "Sanctum cleansing and initial direct viewing of the deity post-awakening."
+    },
+    {
+      "time_slot": "03:45 AM – 04:30 AM",
+      "ritual_name": "Thomala Seva",
+      "details_and_significance": "Garland decoration of Moola Virat (Public ticket holders allowed Tue, Wed, Thu)."
+    },
+    {
+      "time_slot": "04:30 AM – 05:30 AM",
+      "ritual_name": "Koluvu & Sahasranamarchana",
+      "details_and_significance": "Recitation of 1,008 sacred names and daily accounts reading before Koluvu Srinivasa."
+    },
+    {
+      "time_slot": "05:30 AM – 06:30 AM",
+      "ritual_name": "Prathama Naivedyam (First Bell)",
+      "details_and_significance": "Morning sacred food offering offering to the Lord behind closed curtains."
+    },
+    {
+      "time_slot": "06:30 AM – 08:00 AM",
+      "ritual_name": "VIP Break Darshan",
+      "details_and_significance": "Protocol, judiciary, and high-priority VIP entry quota."
+    },
+    {
+      "time_slot": "08:00 AM – 10:00 AM",
+      "ritual_name": "Special Entry Darshan (SED ₹300) & General Sarva Darshan",
+      "details_and_significance": "Morning slot clearance for paid ticket holders and general queue lines."
+    },
+    {
+      "time_slot": "10:30 AM – 01:30 PM",
+      "ritual_name": "Srivari Kalyanotsavam & Arjitha Sevas",
+      "details_and_significance": "Celestial wedding ritual and daytime Arjitha Sevas conducted in external mandapams."
+    },
+    {
+      "time_slot": "11:30 AM – 12:00 PM",
+      "ritual_name": "Madhyahnika Naivedyam (Second Bell)",
+      "details_and_significance": "Midday food offering to the deity."
+    },
+    {
+      "time_slot": "12:00 PM – 05:30 PM",
+      "ritual_name": "Continuous Sarva Darshan & Divya Darshan",
+      "details_and_significance": "Afternoon continuous general darshan queue clearance including pedestrian (footpath) pilgrims."
+    },
+    {
+      "time_slot": "05:30 PM – 06:30 PM",
+      "ritual_name": "Sahasra Deepalankara Seva & Procession",
+      "details_and_significance": "Lighting of 1,000 ghee lamps outside temple followed by Mada Street processional swing."
+    },
+    {
+      "time_slot": "07:00 PM – 08:00 PM",
+      "ritual_name": "Ratri Kainkaryam & Ratri Bell (Naivedyam)",
+      "details_and_significance": "Evening pujas, night food offerings, and sanctum cleansing."
+    },
+    {
+      "time_slot": "08:00 PM – 01:00 AM",
+      "ritual_name": "Night Sarva Darshan",
+      "details_and_significance": "Late-night queue clearance for non-ticketed general pilgrims."
+    },
+    {
+      "time_slot": "01:00 AM – 01:30 AM",
+      "ritual_name": "Ekantha Seva (Sayana Seva)",
+      "details_and_significance": "Nightly bedding ritual where Bhoga Srinivasa Swamy is put to rest with lullabies."
+    }
+  ]
+}

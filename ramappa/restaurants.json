@@ -1,0 +1,30 @@
+[
+   {
+    "name": "Haritha Lake View Resort Restaurant",
+    "type": "Government Tourism Restaurant",
+    "distance": "1.3 km",
+    "cost": "₹150–₹300 per person",
+    "speciality": "Authentic, budget-friendly traditional Telangana buffet lunch and simple South Indian breakfasts served right by the scenic lakeside"
+  },
+  {
+    "name": "Ruchi Restaurant",
+    "type": "Casual Local Eatery",
+    "distance": "300 m",
+    "cost": "₹150–₹250 per person",
+    "speciality": "No-frills quick bite spot located near the vehicle parking ground serving standard North and South Indian vegetarian dishes like Palak Paneer and quick meals"
+  },
+  {
+    "name": "SV Grand Family Restaurant",
+    "type": "A/C Highway Restaurant",
+    "distance": "~11 km (Jangalapally Highway)",
+    "cost": "₹200–₹400 per platter",
+    "speciality": "A heavily preferred highway stopover for families traveling back from the temple, celebrated for its tender Mutton Biryani, Prawns Biryani, and Apollo Fish"
+  },
+  {
+    "name": "Sri Venkateswara Family Restaurant",
+    "type": "Multi-Cuisine Restaurant",
+    "distance": "~15 km (Mulugu Hub)",
+    "cost": "₹200–₹400 per person",
+    "speciality": "Heavily rated highway junction hub famous for its regional Gongura Chicken Pulao, Hyderabadi-style Chicken Dum Biryani, and quick chicken fry starters"
+  }
+]

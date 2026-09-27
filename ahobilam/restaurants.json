@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Private Mess (Adjacent to Malola Guest House)",
+    "location": "Lower Ahobilam",
+    "distance": "Walking distance from main shrine",
+    "speciality": "Traditional South Indian home-style meals and tiffins",
+    "cost": "₹50 - ₹120 (Approximate)",
+    "operating_hours": "Typically 6:30 AM - 9:30 PM"
+    
+  },
+  {
+    "name": "Sri Guru Raghavendra Udupi Brahmana Hotel",
+    "location": "Lower Ahobilam (Allagadda - Ahobilam Road)",
+    "distance": "Within 200 meters of the Lower Temple complex",
+    "speciality": "Pure Vegetarian Brahmin-style meals, Idli, Dosa, and Filter Coffee",
+    "cost": "₹60 - ₹150 (Approximate)",
+    "operating_hours": "7:00 AM - 9:30 PM"
+    
+  },
+  {
+    "name": "Local Temple Satram Dining Halls",
+    "location": "Lower Ahobilam Sannidhi Street",
+    "distance": "Walking distance from guest houses",
+    "speciality": "Free traditional full-course vegetarian lunch meals",
+    "cost": "Free (Donations accepted willingly)",
+    "operating_hours": "Typically lunch hours only (~12:30 PM - 2:30 PM)"
+    
+  }
+]

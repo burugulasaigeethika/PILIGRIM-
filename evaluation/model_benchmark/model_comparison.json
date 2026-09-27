@@ -1,0 +1,28 @@
+{
+  "qwen2.5:1.5b": {
+    "total_queries_evaluated": 15,
+    "overall_accuracy": 100.0,
+    "grounding_rate": 100.0,
+    "completeness_rate": 100.0,
+    "scope_compliance_rate": 100.0,
+    "cross_temple_contamination_rate": 0.0,
+    "hallucination_rate": 0.0,
+    "avg_latency_ms": 19928.200666666668,
+    "median_latency_ms": 16832.82,
+    "p95_latency_ms": 50983.28699999998,
+    "avg_answer_length_chars": 459.3333333333333
+  },
+  "qwen2.5:7b": {
+    "total_queries_evaluated": 15,
+    "overall_accuracy": 100.0,
+    "grounding_rate": 100.0,
+    "completeness_rate": 100.0,
+    "scope_compliance_rate": 100.0,
+    "cross_temple_contamination_rate": 0.0,
+    "hallucination_rate": 0.0,
+    "avg_latency_ms": 67286.394,
+    "median_latency_ms": 72577.16,
+    "p95_latency_ms": 122404.868,
+    "avg_answer_length_chars": 290.46666666666664
+  }
+}

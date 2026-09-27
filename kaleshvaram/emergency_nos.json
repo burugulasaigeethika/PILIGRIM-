@@ -1,0 +1,26 @@
+{
+  "police": "100 or 112",
+  "ambulance": "108",
+  "fire": "101",
+  "helpline": "",
+  "temple_control_room": "",
+  "local_police": {
+    "name": "Kaleshwaram Police Station (SHO)",
+    "contact": "+91 79010 97045",
+    "email": "sho-klrm-jsb@tspolice.gov.in"
+  },
+  "hospitals": [
+    {
+      "name": "Kaleshwaram Primary Health Centre (PHC)",
+      "address": "Kaleshwaram Village",
+      "distance": "~1 km from temple",
+      "contact_number": ""
+    },
+    {
+      "name": "Government General Hospital Bhupalpally",
+      "address": "Bhupalpally",
+      "distance": "~60 km away",
+      "contact_number": "08713-221300 / +91 97017 77907"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "dress_code": {
+    "men": "Traditional attire like White Pancha, Dhoti, Kurta, or Pyjama. Standard formal shirts and trousers are allowed for general darshan, but traditional wear is mandatory for special sevas like Abhishekam and Kalyanotsavam.",
+    "women": "Saree with blouse, Chudidhar/Punjabi Dress with Dupatta, Half Saree, or Lehenga. Modern western clothing (shorts, sleeveless tops, ripped jeans) is strictly discouraged."
+  },
+  "dos": [
+    "Follow one-way pedestrian flow circuits from transit drop-offs to river and temple gates",
+    "Bathe safely behind security nets, floating ropes, and bamboo barricades at river ghats or use overhead showers",
+    "Maintain ritual purity (Madi) when staying at satralu/guest houses for family rituals",
+    "Park private vehicles at peripheral parking lots along incoming highways during peak processing times",
+    "Listen to public address announcements for safety instructions, missing persons, and queue wait times"
+  ],
+  "donts": [
+    "Do not cross anchored floating ropes, security nets, or bamboo barricades into deep river water",
+    "Do not drive motorized vehicles past the main Dharmapuri Temple Arch Kaman during processing peaks",
+    "Do not perform Nithya Kalyanam or Nitya Nrusimha Homams during Bramhotsavalu period (27 Feb 2026 to 11 Mar 2026)",
+    "No darshan for devotees on 3 March 2026 after 7:00 AM due to Lunar Eclipse temple closure"
+  ],
+  "electronic_ban": "Mobile phones, DSLRs, and cameras are strictly prohibited inside the Garbhagriha (inner sanctum). Photography and videography of the main deity are forbidden. While phones are tolerated in the outer courtyard, photography during main rituals/sevas is disallowed. Drones and tripods are strictly banned across the entire temple complex without official Devastanam permission. Locker facilities are available near the entrance to deposit devices.",
+  "safety_guidelines": "During monsoon surge, stay clear of submerging lower steps on Godavari River Ghat. Stationed lifeguards on boats monitor bathing areas. Lost-and-found reports and missing child announcements are handled via central loudspeaker networks and Police Command Control Room near Temple Arch Kaman. Temporary medical tents and 24/7 CHC handle heat exhaustion and emergency medical care."
+}

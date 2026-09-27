@@ -1,0 +1,25 @@
+{
+  "prasadams": [
+    {
+      "item": "Mahachandi Laddu (Standard Counter Variant)",
+      "price": "₹20 each",
+      "timings": "06:00 AM to 12:00 PM & 04:00 PM to 09:00 PM (Slightly extended on peak Fridays/Tuesdays)",
+      "location": "Official Devasthanam Prasadam Counter, Inner Temple Courtyard Compound",
+      "description": "Sacred sweet offering blessed at the altar of Goddess Mahakali. Traditionally prepared by designated temple cooks utilizing pure cow ghee, gram flour (besan), cardamom powder, and refined sugar."
+    },
+    {
+      "item": "Pulihora (Tamarind Rice Packet)",
+      "price": "₹15 each",
+      "timings": "06:00 AM to 12:00 PM & 04:00 PM to 09:00 PM",
+      "location": "Official Devasthanam Prasadam Counter, Inner Temple Courtyard Compound",
+      "description": "Traditional savory prasadam made of parboiled rice infused with fresh tamarind paste, roasted peanuts, curry leaves, green chilies, mustard seeds, and turmeric powder."
+    },
+    {
+      "item": "Ammavari Kumkum Packet",
+      "price": "₹5 to ₹10 each",
+      "timings": "06:00 AM to 12:00 PM & 04:00 PM to 09:00 PM",
+      "location": "Main Altar Exit & Counter Areas",
+      "description": "Highly revered deep-red vermilion powder placed directly at the feet of the historic wooden deity idol during daily Archana rituals, distributed to devotees as a vital token of protection."
+    }
+  ]
+}

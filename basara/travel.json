@@ -1,0 +1,17 @@
+{
+  "bus_routes": [
+    "1. From Hyderabad (200 km) via Nizamabad",
+    "2. From Nizamabad (30 km) via RTC bus service",
+    "3. From Nirmal District Head Quarters (70 km)",
+    "4. From Nanded (Maharashtra) cross-border routes operating smoothly through Bhainsa town lines.",
+    "5. From Kamareddy & Armoor"
+  ],
+  "railway": {
+    "station": "Basar Railway Station (BSX)",
+    "distance": "2 km"
+  },
+  "airport": {
+    "name": "Rajiv Gandhi International Airport (HYD), Hyderabad",
+    "distance": "approx 245 km"
+  }
+}

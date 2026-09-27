@@ -1,0 +1,48 @@
+{
+  "facilities": [
+    {
+      "name": "Kalyana Katta (Tonsure)",
+      "description": "Dedicated tonsure complexes are operated near the Godavari River ghats."
+    },
+    {
+      "name": "RO Drinking Water",
+      "description": "Purified reverse osmosis (RO) drinking water plants are installed across the queue lines and waiting halls."
+    },
+    {
+      "name": "Luggage Deposit & Footwear Counters",
+      "description": "Located near the temple entrance gates."
+    },
+    {
+      "name": "Automated Security Lockers & Cloakrooms",
+      "description": "Available near the entrance gates for depositing prohibited electronic items (mobile phones, cameras, laptops, smartwatches)."
+    },
+    {
+      "name": "Accessibility (Lift & Wheelchairs)",
+      "description": "A lift is available near a side entrance for elderly and differently-abled devotees. Wheelchairs are available and can be requested at the main temple entrance."
+    },
+    {
+      "name": "Nithya Annadanam Complex",
+      "description": "The temple operates a Nithya Annadanam complex near the main entrance serving free pure vegetarian lunch daily from 11:30 AM to 2:30 PM."
+    },
+    {
+      "name": "Dedicated Parking Areas",
+      "description": "Dedicated open parking spaces are maintained by the temple administration near the temple entrance and town bus stand."
+    },
+    {
+      "name": "Public Toilets",
+      "description": "Located near the main temple entry gates, Kalyana Katta, and the town bus stand."
+    },
+    {
+      "name": "First Aid Center",
+      "description": "A basic first-aid room is maintained by the Devasthanam near the main temple administrative block during darshan hours."
+    },
+    {
+      "name": "Barricaded Queue Compartments",
+      "description": "Steel queue corridors and holding compartments with drinking water and seating."
+    },
+    {
+      "name": "Local Shuttles",
+      "description": "Shared and private auto-rickshaws connecting the bus stand and local choultries directly to the temple gates."
+    }
+  ]
+}

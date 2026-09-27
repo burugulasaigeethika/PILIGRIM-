@@ -1,0 +1,50 @@
+{
+  "bus_routes": [
+    "From Secunderabad Station: Bus Nos. 5K, 5M, 49M to Lakdikapul / Hill Fort Road",
+    "From Koti / Abids: Bus Nos. 8N, 9K, 113 to Lakdikapul",
+    "From Mehdipatnam: Bus Nos. 5M, 113M, 127M to Lakdikapul",
+    "From Charminar: Bus Nos. 2U, 9F to Abids / Lakdikapul"
+  ],
+  "railway": {
+    "station": "Hyderabad Deccan / Nampally Railway Station (HYB)",
+    "distance": "2.5 km"
+  },
+  "railway_stations": [
+    {
+      "station": "Hyderabad Deccan / Nampally Railway Station (HYB)",
+      "distance": "2.5 km"
+    },
+    {
+      "station": "Secunderabad Junction (SC)",
+      "distance": "7 km"
+    },
+    {
+      "station": "Kacheguda Railway Station (KCG)",
+      "distance": "6 km"
+    }
+  ],
+  "metro_stations": [
+    {
+      "station": "Lakdikapul Metro Station (Red Line)",
+      "distance": "1.5 km"
+    },
+    {
+      "station": "Assembly Metro Station (Red Line)",
+      "distance": "1.2 km"
+    }
+  ],
+  "airport": {
+    "name": "Rajiv Gandhi International Airport (HYD), Shamshabad",
+    "distance": "32 km via PVNR Expressway / Outer Ring Road"
+  },
+  "nearby_attractions": [
+    "Attraction 1: B.M. Birla Planetarium & Science Museum (Located right on adjacent Kala Pahad hillock).",
+    "Attraction 2: Hussain Sagar Lake & Monolithic Buddha Statue (0.7 km).",
+    "Attraction 3: Lumbini Park & Musical Laser Fountain Show (1.2 km).",
+    "Attraction 4: NTR Gardens & NTR Ghat (1.5 km).",
+    "Attraction 5: Telangana State Archaeology Museum in Public Gardens (1.5 km).",
+    "Attraction 6: Salar Jung Museum (4.5 km).",
+    "Attraction 7: Charminar & Laad Bazaar (6.0 km).",
+    "Attraction 8: Golconda Fort (9.0 km)."
+  ]
+}

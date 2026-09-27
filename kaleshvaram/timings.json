@@ -1,0 +1,56 @@
+{
+  "temple_id": "kaleshvaram_kaleshwaram",
+  "opening_time": "04:30 AM",
+  "closing_time": "08:30 PM",
+  "afternoon_break": {
+    "from": "01:00 PM",
+    "to": "03:30 PM"
+  },
+  "daily_schedule": [
+    {
+      "time_slot": "04:30 AM – 05:00 AM",
+      "ritual_name": "Suprabhata Seva & Temple Opening",
+      "details_and_significance": "Morning awakening ritual and opening of the temple doors."
+    },
+    {
+      "time_slot": "05:00 AM – 01:00 PM",
+      "ritual_name": "Morning Abhishekam & Archana",
+      "details_and_significance": "General morning abhishekam and archana."
+    },
+    {
+      "time_slot": "05:00 AM – 01:00 PM & 03:30 PM – 08:00 PM",
+      "ritual_name": "Sarva Darshanam & Dharma Darshanam",
+      "details_and_significance": "General public entry for darshan."
+    },
+    {
+      "time_slot": "05:30 AM – 12:30 PM",
+      "ritual_name": "Garbhagriha Abhishekam",
+      "details_and_significance": "Sacred bathing of the twin Lingas inside the inner sanctum."
+    },
+    {
+      "time_slot": "06:00 AM – 12:00 PM",
+      "ritual_name": "Kala Sarpa Dosha Nivarana & Navagraha Pujas",
+      "details_and_significance": "Remedial astrological rituals."
+    },
+    {
+      "time_slot": "01:00 PM – 03:30 PM / 04:00 PM",
+      "ritual_name": "Madhyahnika Nivedana & Dwara Bhandanam (Afternoon Break)",
+      "details_and_significance": "Afternoon recess where temple gates are closed."
+    },
+    {
+      "time_slot": "03:30 PM / 04:00 PM – 06:00 PM",
+      "ritual_name": "Evening Reopening & Archana",
+      "details_and_significance": "Temple reopening and evening archana prayers."
+    },
+    {
+      "time_slot": "06:00 PM – 07:30 PM",
+      "ritual_name": "Pradosakala Puja & Nivedana",
+      "details_and_significance": "Auspicious evening offerings and prayers."
+    },
+    {
+      "time_slot": "08:00 PM – 08:30 PM",
+      "ritual_name": "Pavalimpu Seva & Temple Closure",
+      "details_and_significance": "Bedtime hymns sung for deities and night closure."
+    }
+  ]
+}

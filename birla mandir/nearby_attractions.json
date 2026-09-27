@@ -1,0 +1,42 @@
+[
+  {
+    "name": "B.M. Birla Planetarium, Science Museum & Dinosaurium",
+    "distance": "Adjacent hillock (Kala Pahad)",
+    "description": "World-class planetarium, interactive science museum, and dinosaurium built on the adjacent hill."
+  },
+  {
+    "name": "Hussain Sagar Lake & Monolithic Buddha Statue",
+    "distance": "0.7 km",
+    "description": "Historic artificial lake with a massive single-stone Buddha statue situated in the center of the lake."
+  },
+  {
+    "name": "Lumbini Park & Musical Laser Fountain Show",
+    "distance": "1.2 km",
+    "description": "Popular urban park offering speed boat rides to the Buddha Statue and evening musical laser fountain shows."
+  },
+  {
+    "name": "NTR Gardens & NTR Ghat",
+    "distance": "1.5 km",
+    "description": "Landscaped urban recreational gardens along the banks of Hussain Sagar Lake."
+  },
+  {
+    "name": "Telangana State Archaeology Museum",
+    "distance": "1.5 km",
+    "description": "Located in Public Gardens, housing historic artifacts, ancient coins, and Egyptian mummy exhibits."
+  },
+  {
+    "name": "Salar Jung Museum",
+    "distance": "4.5 km",
+    "description": "One of India's premier national museums housing a vast private collection of art, sculptures, and rare manuscripts."
+  },
+  {
+    "name": "Charminar & Laad Bazaar",
+    "distance": "6.0 km",
+    "description": "Iconic 16th-century monument and bustling historic market famous for traditional bangles and pearl jewelry."
+  },
+  {
+    "name": "Golconda Fort",
+    "distance": "9.0 km",
+    "description": "Majestic fortress complex renowned for acoustic engineering and historical diamond trade."
+  }
+]

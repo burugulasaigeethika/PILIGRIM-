@@ -1,0 +1,96 @@
+{
+  "hospitals": [
+    {
+      "name": "Aswini Hospital (TTD Free Emergency Hospital, Tirumala)",
+      "type": "TTD Free Emergency Hospital",
+      "location": "Near CRO and Rambagicha, Tirumala (500 meters from temple)",
+      "distance": "500 meters from temple",
+      "contact_number": "0877-2263630 / 0877-2263631",
+      "emergency_availability": "24/7 ICU, Emergency, Cardiac Ambulance & Pharmacy."
+    },
+    {
+      "name": "SVIMS Multi-Super Specialty Hospital (Tirupati)",
+      "type": "Multi-Super Specialty Hospital",
+      "location": "Alipiri Road, Tirupati",
+      "distance": "22 km from Tirumala",
+      "contact_number": "0877-2287777 / 0877-2287152",
+      "emergency_availability": "24/7 Apex Trauma & Super Specialty Care."
+    },
+    {
+      "name": "BIRRD Orthopedic Hospital (Tirupati)",
+      "type": "Specialized Orthopedic Hospital",
+      "location": "Near Alipiri, Tirupati",
+      "contact_number": "0877-2287156 / 0877-2264619",
+      "emergency_availability": "24/7 Orthopedic Emergency."
+    },
+    {
+      "name": "Sri Padmavathi Children's Heart Hospital (TTD, Tirupati)",
+      "type": "Pediatric Cardiac Hospital",
+      "location": "Alipiri Road, Tirupati",
+      "contact_number": "0877-2288000",
+      "emergency_availability": "24/7 Pediatric Cardiac Care."
+    },
+    {
+      "name": "SVRR Government General Hospital / Ruia Hospital (Tirupati)",
+      "type": "Government General Hospital",
+      "location": "Alipiri Road, Tirupati",
+      "contact_number": "0877-2286666",
+      "emergency_availability": "24/7 Casualty."
+    }
+  ],
+  "ambulance_services": [
+    {
+      "name": "108 Emergency Ambulance",
+      "contact": "108",
+      "description": "24/7 Emergency Ambulance Service."
+    },
+    {
+      "name": "Aswini Hospital Cardiac Ambulance",
+      "contact": "0877-2263630 / 0877-2263631",
+      "description": "Dedicated cardiac emergency ambulance in Tirumala."
+    }
+  ],
+  "police_and_security": [
+    {
+      "name": "Police Control Room",
+      "contact_numbers": {
+        "emergency": "100 / 112"
+      }
+    },
+    {
+      "name": "Chief Vigilance & Security Officer (CVSO) TTD",
+      "contact_numbers": {
+        "office": "0877-2263695",
+        "email": "cvso@tirumala.org"
+      }
+    },
+    {
+      "name": "TTD Ghat Road Vehicle Breakdown Assistance",
+      "contact_numbers": {
+        "helpline": "0877-2263636"
+      }
+    }
+  ],
+  "fire_and_rescue_services": {
+    "name": "Fire Services",
+    "contact_numbers": {
+      "emergency": "101"
+    }
+  },
+  "important_emergency_helplines": {
+    "national_emergency_number": "112",
+    "police_control_room": "100",
+    "ambulance_services": "108",
+    "fire_services": "101",
+    "ttd_call_center_short_code": "155257",
+    "ttd_national_toll_free": [
+      "1800 425 4141",
+      "1800 425 333333"
+    ],
+    "ttd_landlines": [
+      "0877-2233333",
+      "0877-2277777",
+      "0877-2287777"
+    ]
+  }
+}

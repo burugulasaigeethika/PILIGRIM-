@@ -1,0 +1,37 @@
+[
+  {
+    "festival_name": "Annual Brahmotsavams",
+    "month": "Chaitra Masam (usually March-April; varies annually according to the Hindu lunar calendar)",
+    "importance": "Brahmotsavams is one of the major annual festivals celebrated at Chilkur Balaji Temple. The festival includes special rituals, homas, decorations, and processions. Garuda Prasadam has historically been associated with the Brahmotsavam period, although temple management frequently updates its availability, distribution format, and schedule from year to year to ensure proper crowd management.",
+    "description": "The annual Brahmotsavam is generally conducted over seven days, starting with the preliminary Ankurarpanam ritual. Daily vehicle processions (Vahanams) are a key element of the week.",
+    "schedule": [
+      "Opening: Ankurarpanam (Sacred seed sowing)",
+      "Day 1: Dwajarohanam (Garuda flag-hoisting ceremony)",
+      "Mid-festival: Kalyanotsavam (Celestial marriage) and special Vahana Sevas",
+      "Later: Rathotsavam (Chariot procession)",
+      "Later: Ashwavahanam (Horse-vehicle procession)",
+      "Final day: Chakrasnanam / Chakra Theertham followed by conclusion of the festival"
+    ]
+  },
+  {
+    "festival_name": "Vaikunta Ekadasi",
+    "month": "Margashirsha / Dhanur Masam (varies annually according to the Hindu lunar calendar)",
+    "importance": "Vaikunta Ekadasi is an important Vaishnava observance celebrated at Chilkur Balaji Temple. Due to high pilgrim surges on this day, specific darshan protocols, access to designated pathways or gateways, and line waiting times can vary significantly by year.",
+    "description": "The date changes annually based on lunar cycles. Devotees are advised to verify special entry configurations and potential changes to pradakshina rules with temple administrators closer to the event date.",
+    "schedule": []
+  },
+  {
+    "festival_name": "Poolangi",
+    "month": "Varies annually according to the Hindu lunar calendar",
+    "importance": "Poolangi is an important religious observance associated with Chilkur Balaji Temple. It is recognized by local government listings, including the Rangareddy District administration, as a key festive occasion that draws large crowds of visiting devotees.",
+    "description": "The observance centers around elaborate, special floral decorations (Alankaram) completely adorning the main deity.",
+    "schedule": []
+  },
+  {
+    "festival_name": "Annakota",
+    "month": "Varies annually according to the Hindu lunar calendar",
+    "importance": "Annakota is another prominent religious observance celebrated at Chilkur Balaji Temple and is specifically cited by the Rangareddy District government as a major event in the temple's calendar.",
+    "description": "Features dedicated food offerings and traditional rituals. Devotees should verify the specific Gregorian date and timing with local temple handlers for the current year.",
+    "schedule": []
+  }
+]

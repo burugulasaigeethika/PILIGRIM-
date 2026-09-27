@@ -1,0 +1,121 @@
+{
+  "how_to_reach": [
+    "By Road: Medaram is a forest village in SS Tadvai Mandal, Mulugu District, Telangana, located inside the Eturnagaram Wildlife Sanctuary. It is approximately 240 km from Hyderabad and 90 km from Warangal."
+  ],
+  "nearest_railway_station": {
+    "name": "Warangal Railway Station (WL) / Kazipet Junction (KZJ)",
+    "distance": "Warangal: ~90 km, Kazipet: ~100 km",
+    "connectivity": "Special RTC connecting buses run continuously from Warangal and Kazipet stations directly to Medaram."
+  },
+  "nearest_airport": {
+    "name": "Rajiv Gandhi International Airport (HYD) in Hyderabad",
+    "distance": "~250 km",
+    "connectivity": "During Jathara days, Telangana Tourism operates special helicopter charter services from Hyderabad (Begumpet) and Warangal (Hanumakonda) directly to the Medaram Helipad."
+  },
+  "tg_srtc_overview": {
+    "summary": "On the occasion of Medaram Jathara, 30 major bus points/operating routes are available with direct buses to Medaram from all areas of Telangana and select interstate locations.",
+    "fleet": "Over 5,000–6,000 special buses operating across 52 designated holding points in the temporary Mega Bus Station.",
+    "control_room_helplines": [
+      "TGSRTC Control Room: 08715-223257",
+      "TSRTC Hanamkonda Enquiry: 99592 26148",
+      "TSRTC MGBS Hyderabad Enquiry: 99592 26160"
+    ]
+  },
+  "bus_routes_and_fares": [
+    {
+      "region": "Peddapalli Region",
+      "operating_points": [
+        { "point": "Godavarikhani", "distance_km": 175, "fare_inr": 400 },
+        { "point": "Peddapalli", "distance_km": 185, "fare_inr": 420 },
+        { "point": "Manthani", "distance_km": 150, "fare_inr": 350 },
+        { "point": "B-Incline", "distance_km": 175, "fare_inr": 400 }
+      ]
+    },
+    {
+      "region": "Karimnagar Region",
+      "operating_points": [
+        { "point": "Karimnagar", "distance_km": 185, "fare_inr": 390 },
+        { "point": "Huzurabad", "distance_km": 145, "fare_inr": 320 }
+      ]
+    },
+    {
+      "region": "Siddipet Region",
+      "operating_points": [
+        { "point": "Husnabad", "distance_km": 160, "fare_inr": 350 }
+      ]
+    },
+    {
+      "region": "Bhadradri Kothagudem Region",
+      "operating_points": [
+        { "point": "Yellandu", "distance_km": 195, "fare_inr": 400 },
+        { "point": "Yellandu (via Gundala)", "distance_km": 130, "fare_inr": 270 },
+        { "point": "Kothagudem", "distance_km": 165, "fare_inr": 350 },
+        { "point": "Bhadrachalam", "distance_km": 145, "fare_inr": 300 },
+        { "point": "Palvancha", "distance_km": 155, "fare_inr": 310 },
+        { "point": "Manuguru", "distance_km": 100, "fare_inr": 210 },
+        { "point": "Cherla (via Eturnagaram)", "distance_km": 110, "fare_inr": 250 }
+      ]
+    },
+    {
+      "region": "Khammam Region",
+      "operating_points": [
+        { "point": "Khammam", "distance_km": 245, "fare_inr": 480 }
+      ]
+    },
+    {
+      "region": "Mulugu & Local Feeder Region",
+      "operating_points": [
+        { "point": "Narlapoor / Chintal", "distance_km": 10, "fare_inr": 40 },
+        { "point": "Eturnagaram", "distance_km": 30, "fare_inr": 80 },
+        { "point": "Mangapet", "distance_km": 45, "fare_inr": 110 },
+        { "point": "Vazeedu", "distance_km": 55, "fare_inr": 120 },
+        { "point": "Venkatapur", "distance_km": 65, "fare_inr": 150 },
+        { "point": "Peruru", "distance_km": 75, "fare_inr": 160 }
+      ]
+    },
+    {
+      "region": "Jayashankar Bhupalpally Region",
+      "operating_points": [
+        { "point": "Kataram", "distance_km": 120, "fare_inr": 290 },
+        { "point": "Kaleshwaram", "distance_km": 155, "fare_inr": 360 }
+      ]
+    },
+    {
+      "region": "Mancherial Region",
+      "operating_points": [
+        { "point": "Srirampur", "distance_km": 190, "fare_inr": 430 },
+        { "point": "Mancherial", "distance_km": 200, "fare_inr": 440 },
+        { "point": "Chennur", "distance_km": 205, "fare_inr": 450 },
+        { "point": "Mandamarri", "distance_km": 215, "fare_inr": 470 },
+        { "point": "Bellampally", "distance_km": 225, "fare_inr": 520 }
+      ]
+    },
+    {
+      "region": "Komaram Bheem Asifabad Region",
+      "operating_points": [
+        { "point": "Asifabad", "distance_km": 265, "fare_inr": 590 }
+      ]
+    },
+    {
+      "region": "Outside Telangana / Interstate",
+      "operating_points": [
+        { "point": "Sironcha (Maharashtra)", "distance_km": 175, "fare_inr": 400 }
+      ]
+    },
+    {
+      "region": "Hyderabad & Warangal Core Routes",
+      "operating_points": [
+        { "point": "Hyderabad (MGBS / JBS / Uppal)", "distance_km": 240, "route": "via Warangal, Mulugu, Pasra & Tadvai" },
+        { "point": "Warangal / Hanamkonda", "distance_km": 90, "route": "via Mulugu & Pasra" }
+      ]
+    }
+  ],
+  "road_routes": [
+    "Warangal-Medaram highway via Mulugu, Pasra & Tadvai.",
+    "Eturnagaram-Medaram highway via Tadvai (connecting Bhadrachalam, Chhattisgarh, and Maharashtra)."
+  ],
+  "parking_info": [
+    "Temporary Mega Bus Station spread over 50+ acres with 52 designated holding points managed by TGSRTC.",
+    "Private vehicle parking areas are demarcated by traffic police at designated sectors (3–5 km prior to the shrine area), with dedicated lanes reserved for TGSRTC buses."
+  ]
+}

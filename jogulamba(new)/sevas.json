@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Sri Jogulamba Seva",
+    "telugu_name": "శ్రీ జోగులాంబ సేవ",
+    "price": "₹50",
+    "timing": "07:30 AM – 12:30 PM, 02:30 PM – 08:00 PM",
+    "booking_url": "",
+    "description": "Sri Jogulamba Seva represents the most basic offering at ₹50, providing direct temple worship facilitation."
+  },
+  {
+    "name": "Kum Kum Archana",
+    "telugu_name": "కుంకుమార్చన",
+    "price": "₹50",
+    "timing": "07:30 AM – 12:30 PM, 02:30 PM – 07:30 PM",
+    "booking_url": "",
+    "description": "Kum Kum Archana at identical pricing enables participants to receive blessed vermillion powder."
+  },
+  {
+    "name": "Sahastra Namarchana",
+    "telugu_name": "సహస్ర నామార్చన",
+    "price": "₹216",
+    "timing": "08:30 AM – 11:30 AM",
+    "booking_url": "",
+    "description": "Sahastra Namarchana involves thousand-fold recitation of goddess names, deepening spiritual connection."
+  },
+  {
+    "name": "Friday Vishesha Pooja",
+    "telugu_name": "శుక్రవారం విశేష పూజ",
+    "price": "₹150",
+    "timing": "Fridays: 08:00 AM – 12:00 PM",
+    "booking_url": "",
+    "description": "Friday Vishesha Pooja specifically occurs on Fridays with enhanced ritual procedures."
+  },
+  {
+    "name": "Chandi Homam",
+    "telugu_name": "చండీ హోమం",
+    "price": "₹750",
+    "timing": "09:00 AM – 12:00 PM",
+    "booking_url": "",
+    "description": "Chandi Homam comprises elaborate fire rituals invoking supreme feminine divine power."
+  },
+  {
+    "name": "Maasa Kum Kum Pooja",
+    "telugu_name": "మాస కుంకుమ పూజ",
+    "price": "₹1,200",
+    "timing": "Monthly Recurring Schedule / Pournami Days",
+    "booking_url": "",
+    "description": "Maasa Kum Kum Pooja represents a monthly special ritual ensuring year-round spiritual connection."
+  },
+  {
+    "name": "Vehicle Pooja (2-wheeler)",
+    "telugu_name": "వాహన పూజ (ద్విచక్ర వాహనం)",
+    "price": "₹50",
+    "timing": "07:00 AM – 06:00 PM",
+    "booking_url": "",
+    "description": "Vehicle poojas bless automobiles for safe travel. Two-wheeler blessing costs while four-wheeler blessing reaches . Pilgrims driving to Alampur frequently perform vehicle poojas seeking travel protection and divine blessings for journeys ahead."
+  },
+  {
+    "name": "Vehicle Pooja (4-wheeler)",
+    "telugu_name": "వాహన పూజ (నాలుగు చక్రాల వాహనం)",
+    "price": "₹100",
+    "timing": "07:00 AM – 06:00 PM",
+    "booking_url": "",
+    "description": "Vehicle poojas bless automobiles for safe travel. Two-wheeler blessing costs while four-wheeler blessing reaches . Pilgrims driving to Alampur frequently perform vehicle poojas seeking travel protection and divine blessings for journeys ahead."
+  }
+]

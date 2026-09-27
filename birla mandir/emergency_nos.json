@@ -1,0 +1,36 @@
+{
+  "police": [
+    {
+      "name": "Saifabad Police Station (Closest)",
+      "phone": "+91 40 2785 2488",
+      "alt_phone": "+91 9490616352",
+      "address": "Near Ayodhya Hotel Junction, Lakdikapul (0.75 km away)",
+      "details": "Open 24 hours."
+    },
+    {
+      "name": "Police Commissionerate Office",
+      "address": "Basheer Bagh (0.95 km away)",
+      "details": "Open 24 hours."
+    },
+    {
+      "name": "Saifabad Traffic Outpost / Control Room",
+      "address": "Near LB Stadium / Basheer Bagh (1.2 km away)",
+      "details": "Open 24 hours."
+    }
+  ],
+  "medical": [
+    {
+      "name": "Apollo Hospitals Hyderguda",
+      "phone": "+91 40 6907 1298",
+      "alt_phone": "040 2323 1380",
+      "address": "Hyderguda-Basheerbagh Road (1.5 km away)",
+      "details": "Open 24 hours. Multi-specialty care and emergency services."
+    },
+    {
+      "name": "Sai Vani Super Speciality Hospital",
+      "phone": "+91 40 2763 4463",
+      "address": "Ramakrishna Mutt Road, Domalguda (2.2 km away)",
+      "details": "Open 24 hours."
+    }
+  ]
+}

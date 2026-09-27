@@ -1,0 +1,18 @@
+[
+  {
+    "name": "The Superb Hotels",
+    "type": "Hotel",
+    "distance": "quick 10-minute walk from Birla Mandir",
+    "price": "₹2,002",
+    "rating": "4.4 (176)",
+    "description": "Located directly on Secretariat Road, right opposite the Old Gate. This highly clean, relatively new property is a quick 10-minute walk from Birla Mandir. Rooms cost roughly ₹2,275 per night and feature modern amenities, a family-friendly layout, and panoramic window views of Hussain Sagar Lake and the city skyline"
+  },
+  {
+    "name": "Amrutha Castle",
+    "type": "3-star hotel",
+    "distance": "Positioned right near the main hill base",
+    "price": "₹2,518",
+    "rating": "4.0 (16.2K)",
+    "description": "Positioned right near the main hill base. It is visually striking, modeled entirely like a medieval European Bavarian castle. Rooms average around ₹2,518 per night and include free breakfast, a rooftop pool, and an attached bar. (Note: While the exterior is iconic, some internal rooms are older; it is smart to check the room condition upon arrival)"
+  }
+]

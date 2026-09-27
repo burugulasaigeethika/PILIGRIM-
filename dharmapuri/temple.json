@@ -1,0 +1,74 @@
+{
+  "temple_id": "dharmapuri_lakshmi_narasimha_swamy",
+  "name": "Sri Lakshmi Narasimha Swamy Temple, Dharmapuri",
+  "alternate_names": [
+    "Dharmapuri Kshetram",
+    "Sri Lakshmi Narasimha Swami Devasthanam",
+    "Sri Yoga Narasimha Swamy Temple",
+    "Sri Ugra Narasimha Swamy Temple"
+  ],
+  "state": "Telangana",
+  "district": "Jagtial",
+  "village": "Dharmapuri",
+  "address": "Sri Lakshmi Narasimha Swamy Temple, Boyawada, Dharmapuri, Jagtial District, Telangana 505425",
+  "river": "Godavari (Dakshina Vahini)",
+  "main_deity": "Sri Lakshmi Narasimha Swamy (presiding deity, worshipped also in Yoga Narasimha and Ugra Narasimha forms)",
+  "other_deities": [
+    "Sri Venkateswara Swamy",
+    "Sri Yoga Narasimha Swamy",
+    "Sri Ugra Narasimha Swamy",
+    "Sri Ramalingeshwara Swamy (installed by Lord Rama)",
+    "Sri Hanuman"
+  ],
+  "description": "Dharmapuri Kshetram is a sacred land and living confluence of Sanatana Dharma, magnificent historical heritage, and artistic grandeur, nestled on the banks of the holy River Godavari flowing as 'Dakshina Vahini' (southward flow). It is revered as one of the nine sacred Narasimha abodes (Nava Narasimha Kshetram) in India and serves as a powerful Hari-Hara Kshetram symbolizing spiritual unity between Shaivite and Vaishnavite traditions.",
+  "history": "The temple heritage endures from the era of King Dharmavarma of Vidarbha to the present day as a unique stream preserving Vedic knowledge and fine arts. The Kshetram has been patronised over a millennium by prominent dynasties including the Chalukyas, Rashtrakutas, and the Recharla Velama chiefs. It has also been enriched by literary luminaries like Sheshappa Kavi and Pingali Surana.",
+  "mythology": "Dharmapuri finds explicit mention in several sacred Puranas including the Skandha Purana and Brahmanda Purana. It is celebrated as a primary center for devotion and spiritual liberation since Puranic times. Lord Ramalingeshwara Swamy deity was installed by Lord Rama. A unique physical synthesis exists at the Satyavati temple where Lord Narasimha is placed directly on top of a Shiva Panamattam.",
+  "sub_temples": [
+    {
+      "name": "Satyavati Temple",
+      "location": "Within Dharmapuri Kshetram",
+      "significance": "A unique physical testament to Hari-Hara synthesis where Lord Narasimha is placed directly on top of a Shiva Panamattam."
+    },
+    {
+      "name": "Sri Ramalingeshwara Swamy Temple",
+      "location": "Within Dharmapuri Kshetram",
+      "significance": "Shaivite shrine featuring Sri Ramalingeshwara Swamy, installed by Lord Rama himself."
+    },
+    {
+      "name": "Sri Venkateswara Swamy Temple",
+      "location": "Within Dharmapuri Kshetram",
+      "significance": "Shrine dedicated to Sri Venkateswara Swamy whose chariot and procession participate alongside Sri Lakshmi Narasimha Swamy during Brahmotsavams."
+    },
+    {
+      "name": "Sri Yoga Narasimha Swamy Shrine",
+      "location": "Within Dharmapuri Kshetram",
+      "significance": "Dedicated shrine for the Yoga form of Lord Narasimha, feature of special Dolotsavam and Ekantotsavam rituals."
+    },
+    {
+      "name": "Sri Ugra Narasimha Swamy Shrine",
+      "location": "Within Dharmapuri Kshetram",
+      "significance": "Dedicated shrine for the Ugra form of Lord Narasimha, featuring Teppotsavam, Dolotsavam, and Ekantotsavam rituals."
+    }
+  ],
+  "architecture": {
+    "style": "Ancient traditional South Indian temple architecture with stone structures, double-storied tiled village surroundings, and sacred riverfront ghats",
+    "highlights": [
+      {
+        "name": "Satyavati Temple Shiva Panamattam Installation",
+        "description": "Unique architectural and iconographic synthesis where Lord Narasimha is installed directly on top of a Shiva Panamattam."
+      },
+      {
+        "name": "Dharmapuri Temple Arch Kaman",
+        "description": "Main entrance arch serving as the primary gateway and perimeter control point for the temple complex."
+      },
+      {
+        "name": "Koneru Pond",
+        "description": "Sacred water tank within the temple complex with stone steps."
+      },
+      {
+        "name": "Dharmapuri Godavari River Bathing Ghats",
+        "description": "Long flight of stone steps leading down to the Dakshina Vahini Godavari River with traditional village architectural framing."
+      }
+    ]
+  }
+}

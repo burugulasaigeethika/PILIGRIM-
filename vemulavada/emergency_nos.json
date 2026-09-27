@@ -1,0 +1,60 @@
+{
+  "police": [
+    {
+      "name": "Vemulawada Town Police Station",
+      "phone": "8712656413",
+      "address": "(1.1 km) Vemulawada Town",
+      "details": "Inspector on duty."
+    },
+    {
+      "name": "Vemulawada Rural Police Station",
+      "phone": "8712656417",
+      "address": "Vemulawada Rural",
+      "details": "Sub-Inspector on duty."
+    }
+  ],
+  "medical": [
+    {
+      "name": "Area Hospital / CHC Vemulawada (Government)",
+      "phone": "+91 9490510308",
+      "alt_phone": "+91 9440078901",
+      "address": "Vemulawada (~1.0 km from temple)",
+      "details": "Government 24/7 hospital."
+    },
+    {
+      "name": "Devasthanam Homeopathic Hospital",
+      "address": "Devasthanam Premises",
+      "details": "Free medical facility operated by Devasthanam Medical Officer."
+    },
+    {
+      "name": "Sri Raksha Multi Speciality Hospital (Private)",
+      "phone": "+91 91600 05122",
+      "address": "Bypass Road (~1.9 km)",
+      "details": "24/7 multi-speciality private care."
+    },
+    {
+      "name": "Vijaya Durga Clinic",
+      "phone": "+91 91820 78261",
+      "address": "Main Road (4.2 km)",
+      "details": "5-minute walk down Main Road."
+    }
+  ],
+  "fire_and_rescue": {
+    "name": "Vemulawada Fire Station",
+    "phone": "101"
+  },
+  "helpline": [
+    {
+      "name": "National Emergency Number",
+      "phone": "112"
+    },
+    {
+      "name": "Police Control Room",
+      "phone": "100"
+    },
+    {
+      "name": "State Ambulance Service",
+      "phone": "108"
+    }
+  ]
+}

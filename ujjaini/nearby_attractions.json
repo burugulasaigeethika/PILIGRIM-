@@ -1,0 +1,22 @@
+[
+  {
+    "name": "General Bazaar & Tobacco Bazaar",
+    "distance": "Surrounding temple area (200 m)",
+    "description": "Bustling historic wholesale market famous for traditional textiles, brassware, and festive shopping."
+  },
+  {
+    "name": "Secunderabad Clock Tower",
+    "distance": "1.5 km",
+    "description": "Historic heritage tower built in 1897 located near Park Lane."
+  },
+  {
+    "name": "Paradise Circle",
+    "distance": "1.4 km",
+    "description": "Famous commercial hub renowned for iconic Hyderabadi biryani and heritage eateries."
+  },
+  {
+    "name": "Hussain Sagar Lake & Tank Bund",
+    "distance": "~2.8 km",
+    "description": "Scenic promenade featuring bronze statues of famous Telangana historical figures and boat rides."
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "peak_days": [
+    "Saturdays",
+    "Sundays",
+    "Fridays",
+    "Ekadashi",
+    "Pournami",
+    "Government/school holidays"
+  ],
+  "peak_festival_seasons": [
+    "Annual Brahmotsavams (September/October)",
+    "Vaikuntha Ekadashi (December/January)",
+    "Rathasapthami (January/February)",
+    "Summer holidays (May/June)"
+  ],
+  "average_darshan_wait_times": {
+    "special_entry_darshan_sed_300": "1.5 to 3 hours",
+    "slotted_sarva_darshan_ssd_tokens": "3 to 6 hours",
+    "free_sarva_darshan_without_tokens": "8 to 18 hours (Weekdays) / 24 to 36+ hours (Peak festivals)"
+  },
+  "recommended_visiting_time": "Tuesdays, Wednesdays, and Thursdays in non-festival months (February, July, August, November).",
+  "crowd_management": "Vaikuntam Queue Complex I & II (62 large air-cooled compartments with live TV screens, free food/milk, attached restrooms, and AI crowd monitoring)."
+}

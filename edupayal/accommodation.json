@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Cottages",
+    "type": "Temple Guest House",
+    "distance": "Adjoining the temple complex / near the temple",
+    "price": "",
+    "description": "A limited number of cottages are available for booking near the temple. Cottage Reservations: +91 73966 60378 (Mr. Manohar Goud)"
+  },
+  {
+    "name": "Haritha Hotel Edupayala (Telangana Tourism)",
+    "type": "Telangana Tourism Hotel",
+    "distance": "~500 meters from the main temple",
+    "price": "",
+    "description": "Telangana Tourism operates standard rooms and cottages near the temple. Room Types: Standard AC and Non-AC rooms. Contact/Booking: +91 84990 88481"
+  },
+  {
+    "name": "Haritha Lake View Resort, Medak (Telangana Tourism)",
+    "type": "Resort",
+    "distance": "~13.8 km from Edupayala",
+    "price": "",
+    "description": "Located in Medak Town Area (~19 km from Edupayala)."
+  },
+  {
+    "name": "Alankar Lodge & Local Lodges",
+    "type": "Lodge",
+    "distance": "~13.6 km from Edupayala (near Medak Cathedral)",
+    "price": "",
+    "description": "Located in Medak Town Area (~18 km from Edupayala, near Medak Cathedral)."
+  },
+  {
+    "name": "Vanam Resort",
+    "type": "Nature Stays / Farm Stays & Resorts",
+    "distance": "Along the drive to Medak",
+    "price": "~41.3 km",
+    "description": "Located along the drive to Medak, offering cottage-style rooms, a swimming pool, and an in-house restaurant."
+  },
+  {
+    "name": "Narsapur Forest Area Resorts",
+    "type": "Nature Stays / Eco-resorts and farmhouses",
+    "distance": "Along the Hyderabad-Narsapur-Medak highway",
+    "price": "~37.2 km",
+    "description": "Multiple eco-resorts and farmhouses available along the Hyderabad-Narsapur-Medak highway."
+  }
+]

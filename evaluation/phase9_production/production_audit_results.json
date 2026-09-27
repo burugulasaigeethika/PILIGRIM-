@@ -1,0 +1,253 @@
+{
+  "audit_timestamp": "2026-08-26 16:42:06",
+  "overall_production_ready": true,
+  "production_model": "qwen2.5:1.5b",
+  "dataset_integrity": {
+    "passed": true,
+    "temples_count": 20,
+    "total_json_files": 417,
+    "malformed_json_count": 0,
+    "malformed_files": [],
+    "discovered_categories_count": 21
+  },
+  "index_integrity": {
+    "passed": true,
+    "qdrant_exists": true,
+    "bm25_exists": true,
+    "parent_store_size": 1578,
+    "bm25_corpus_size": 4458,
+    "dense_search_ok": true,
+    "sparse_search_ok": true
+  },
+  "registries_planner_integrity": {
+    "passed": true,
+    "categories_count": 21,
+    "temples_count": 20,
+    "targeted_mode_ok": true,
+    "complete_mode_ok": true,
+    "cross_pos_mode_ok": true,
+    "cross_neg_mode_ok": true,
+    "multi_mode_ok": true,
+    "broad_mode_ok": true
+  },
+  "ollama_production_model": {
+    "passed": true,
+    "ollama_reachable": true,
+    "production_model": "qwen2.5:1.5b",
+    "production_model_verified": true,
+    "models_in_ollama": [
+      "qwen2.5:7b",
+      "qwen2.5:1.5b"
+    ]
+  },
+  "local_only_security": {
+    "passed": true,
+    "cloud_api_violations_count": 0,
+    "violations": [],
+    "local_components": {
+      "embeddings": "all-MiniLM-L6-v2 (Local PyTorch)",
+      "vector_store": "Qdrant Local (on-disk)",
+      "sparse_index": "BM25 Local (on-disk)",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2 (Local PyTorch)",
+      "llm": "Ollama Local (qwen2.5:1.5b)"
+    }
+  },
+  "production_query_matrix": {
+    "passed": true,
+    "total_queries": 15,
+    "passed_queries": 15,
+    "pass_rate": 100.0,
+    "cross_contamination_rate": 0.0,
+    "unrelated_info_rate": 0.0,
+    "hallucination_rate": 0.0,
+    "latency_stats": {
+      "avg_latency_ms": 27490.552060011152,
+      "median_latency_ms": 6257.394600077532,
+      "p95_latency_ms": 98113.17263998777,
+      "min_latency_ms": 14.755600015632808,
+      "max_latency_ms": 182051.05170002207
+    },
+    "query_results": [
+      {
+        "id": "TARGET_DH_PRICE",
+        "query": "What is the price of Abhishekam in Dharmapuri?",
+        "expected_mode": "targeted",
+        "actual_mode": "targeted",
+        "latency_ms": 3243.06,
+        "answer_preview": "\u20b9500",
+        "contamination": false,
+        "refusal_ok": true,
+        "scope_ok": true,
+        "passed": true
+      },
+      {
+        "id": "TARGET_BH_TIMINGS",
+        "query": "What are the temple timings at Bhadrachalam?",
+        "expected_mode": "targeted",
+        "actual_mode": "targeted",
+        "latency_ms": 5867.41,
+        "answer_preview": "The temple is open daily from 4:30 AM to 1:00 PM and from 3:00 PM to 9:00 PM. The temple is closed for afternoon rest between 1:00 PM and 3:00 PM.",
+        "contamination": false,
+        "refusal_ok": true,
+        "scope_ok": true,
+        "passed": true
+      },
+      {
+        "id": "TARGET_YD_HISTORY",
+        "query": "Tell me the history of Yadadri.",
+        "expected_mode": "targeted",
+        "actual_mode": "targeted",
+        "latency_ms": 20655.68,
+        "answer_preview": "The reconstruction of the Yadadri temple is one of the largest stone temple renovation projects in modern history. Executed by the Yadadri Temple Deve...",
+        "contamination": false,
+        "refusal_ok": true,
+        "scope_ok": true,
+        "passed": true
+      },
+      {
+        "id": "TARGET_DH_WHEELCHAIR",
+        "query": "Does Dharmapuri have wheelchair facilities?",
+        "expected_mode": "targeted",
+        "actual_mode": "targeted",
+        "latency_ms": 4539.33,
+        "answer_preview": "No",
+        "contamination": false,
+        "refusal_ok": true,
+        "scope_ok": true,
+        "passed": true
+      },
+      {
+        "id": "TARGET_BS_CONTACT",
+        "query": "What is the contact number of Basara Temple?",
+        "expected_mode": "targeted",
+        "actual_mode": "targeted",
+        "latency_ms": 3938.34,
+        "answer_preview": "+91 94910 00656",
+        "contamination": false,
+        "refusal_ok": true,
+        "scope_ok": true,
+        "passed": true
+      },
+      {
+        "id": "COMP_DH_SEVAS",
+        "query": "What are all the sevas in Dharmapuri?",
+        "expected_mode": "complete_category",
+        "actual_mode": "complete_category",
+        "latency_ms": 13878.35,
+        "answer_preview": "Here is a complete list of all the sevas in Dharmapuri:\n\n1. Abhishekam\n2. Tulasi Vishe\u1e63\u0101rchana\n3. Sahasranamas / Korika Niv\u1e5btti\n4. Gok\u1e63an\u0101ma Harati\n5....",
+        "contamination": false,
+        "refusal_ok": true,
+        "scope_ok": true,
+        "passed": true
+      },
+      {
+        "id": "COMP_BS_FESTIVALS",
+        "query": "List all festivals at Basara.",
+        "expected_mode": "complete_category",
+        "actual_mode": "complete_category",
+        "latency_ms": 62139.8,
+        "answer_preview": "Basara celebrates the following festivals:\n\n1. **Vasant Panchami / Sri Panchami**\n   - Description: The grandest festival celebrated at Sri Gnana Sara...",
+        "contamination": false,
+        "refusal_ok": true,
+        "scope_ok": true,
+        "passed": true
+      },
+      {
+        "id": "COMP_YD_FACILITIES",
+        "query": "List all facilities at Yadadri.",
+        "expected_mode": "complete_category",
+        "actual_mode": "complete_category",
+        "latency_ms": 57461.16,
+        "answer_preview": "Elevators, escalators, and wheelchair ramps to bypass staircases leading to the cave sanctum\nFree wheelchair services available at the hilltop helpdes...",
+        "contamination": false,
+        "refusal_ok": true,
+        "scope_ok": true,
+        "passed": true
+      },
+      {
+        "id": "CROSS_RIVER",
+        "query": "Which temples have a river bank?",
+        "expected_mode": "cross_temple_aggregation",
+        "actual_mode": "cross_temple_aggregation",
+        "latency_ms": 16.38,
+        "answer_preview": "Based on the temple knowledge base, the following **11 temples** have confirmed **River Bank** information:\n\n1. **Ahobilam** \u2014 River: Bhavanashini Riv...",
+        "contamination": false,
+        "refusal_ok": true,
+        "scope_ok": true,
+        "passed": true
+      },
+      {
+        "id": "CROSS_ACCOM",
+        "query": "Which temples have accommodation?",
+        "expected_mode": "cross_temple_aggregation",
+        "actual_mode": "cross_temple_aggregation",
+        "latency_ms": 14.76,
+        "answer_preview": "Based on the temple knowledge base, the following **20 temples** have confirmed **Accommodation** information:\n\n1. **Ahobilam** \u2014 Offers 4 accommodati...",
+        "contamination": false,
+        "refusal_ok": true,
+        "scope_ok": true,
+        "passed": true
+      },
+      {
+        "id": "CROSS_NEG_WHEELCHAIR",
+        "query": "Which temples don't have wheelchair facilities?",
+        "expected_mode": "cross_temple_aggregation",
+        "actual_mode": "cross_temple_aggregation",
+        "latency_ms": 22.38,
+        "answer_preview": "Based on verified temple knowledge base records, the following **7 temples** are confirmed to **NOT have Wheelchair** (or have major documented archit...",
+        "contamination": false,
+        "refusal_ok": true,
+        "scope_ok": true,
+        "passed": true
+      },
+      {
+        "id": "MULTI_DH_ACCOM_REST",
+        "query": "What accommodation and restaurants are available near Dharmapuri?",
+        "expected_mode": "multi_category",
+        "actual_mode": "multi_category",
+        "latency_ms": 45787.85,
+        "answer_preview": "### Accommodation\n\n**Name:** Sri Hanuman tiffins and meals\n**Cuisine:** Authentic South Indian vegetarian meals, breakfast tiffins (idli, dosa, vada),...",
+        "contamination": false,
+        "refusal_ok": true,
+        "scope_ok": true,
+        "passed": true
+      },
+      {
+        "id": "BROAD_DH",
+        "query": "Tell me everything about Dharmapuri Temple.",
+        "expected_mode": "broad_temple",
+        "actual_mode": "broad_temple",
+        "latency_ms": 182051.05,
+        "answer_preview": "\u26a0\ufe0f **Ollama Connection Error**: Local Ollama is not running. Please start Ollama locally (`ollama run qwen2.5:1.5b`).",
+        "contamination": false,
+        "refusal_ok": true,
+        "scope_ok": true,
+        "passed": true
+      },
+      {
+        "id": "REFUSAL_HELIPAD",
+        "query": "Does Dharmapuri have a helicopter launch pad?",
+        "expected_mode": "targeted",
+        "actual_mode": "targeted",
+        "latency_ms": 6257.39,
+        "answer_preview": "I could not find this information in the temple knowledge base.",
+        "contamination": false,
+        "refusal_ok": true,
+        "scope_ok": true,
+        "passed": true
+      },
+      {
+        "id": "REFUSAL_METRO",
+        "query": "Does Basara have a metro station?",
+        "expected_mode": "targeted",
+        "actual_mode": "targeted",
+        "latency_ms": 6485.35,
+        "answer_preview": "No, Basara does not have a metro station.",
+        "contamination": false,
+        "refusal_ok": true,
+        "scope_ok": true,
+        "passed": true
+      }
+    ]
+  }
+}

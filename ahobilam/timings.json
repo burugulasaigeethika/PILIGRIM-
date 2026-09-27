@@ -1,0 +1,68 @@
+{
+  "temple_id": "ahobilam_narasimha",
+  "opening_time": "06:30 AM  and 03:00 PM(Lower Ahobilam) / 07:00 AM and 02:00 PM (Upper Ahobilam)",
+  "closing_time": "01:00 PM and 08:00 PM (Lower Ahobilam) / 01:00 PM and 05:30 PM (Upper Ahobilam)",
+  "afternoon_break": {
+    "lower_ahobilam": {
+      "from": "01:00 PM",
+      "to": "03:00 PM"
+    },
+    "upper_ahobilam": {
+      "from": "01:00 PM",
+      "to": "02:00 PM"
+    }
+  },
+  "daily_schedule": [
+    {
+      "time_slot": "06:30 AM – 07:00 AM",
+      "ritual_name": "Lower Ahobilam Temple Opening & Suprabhata Seva",
+      "details_and_significance": "Morning opening and Suprabhata Seva at the Lower Ahobilam temple."
+    },
+    {
+      "time_slot": "06:00 AM – 07:30 AM",
+      "ritual_name": "Upper Ahobilam Temple Opening & Viswaroopa Darshan",
+      "details_and_significance": "Morning opening and Viswaroopa Darshan at the Upper Ahobilam temple."
+    },
+    {
+      "time_slot": "08:00 AM – 10:00 AM",
+      "ritual_name": "Thirumanjanam (Abhishekam) at Upper Shrines",
+      "details_and_significance": "Sacred bathing ceremony performed at the Upper Ahobilam shrines."
+    },
+    {
+      "time_slot": "12:30 PM – 01:00 PM",
+      "ritual_name": "Noon Nivedana & Maha Mangala Harathi",
+      "details_and_significance": "Mid-day food offering and grand lamp ritual."
+    },
+    {
+      "time_slot": "01:00 PM – 03:00 PM",
+      "ritual_name": "Lower Ahobilam Afternoon Recess",
+      "details_and_significance": "Lower Ahobilam sanctum closed for afternoon recess."
+    },
+
+    {
+      "time_slot": "03:00 PM – 05:00 PM/ 07:00 PM",
+      "ritual_name": "Upper Ahobilam Evening Reopening",
+      "details_and_significance": "Upper Ahobilam shrines reopen for evening darshan. Closes early due to forest restrictions."
+    },
+    {
+      "time_slot": "03:00 PM – 07:30 PM",
+      "ritual_name": "Lower Ahobilam Evening Reopening & Archana",
+      "details_and_significance": "Lower Ahobilam temple opens for evening darshan and individual archana."
+    },
+    {
+      "time_slot": "07:30 PM – 08:00 PM",
+      "ritual_name": "Pavalimpu Seva & Temple Closing (Lower Ahobilam)",
+      "details_and_significance": "Night bedtime ritual and closing of the Lower Ahobilam temple."
+    },
+    {
+      "time_slot": "07:00 AM – 01:00 PM & 03:00 PM – 07:30 PM",
+      "ritual_name": "Sarva Darshanam & Pradakshinam (Lower Ahobilam)",
+      "details_and_significance": "General public darshan and circumambulation timings at the Lower temple."
+    },
+    {
+      "time_slot": "07:30 AM – 01:00 PM & 02:00 PM – 05:30 PM",
+      "ritual_name": "Sarva Darshanam (Upper Ahobilam Cave Shrine)",
+      "details_and_significance": "General public darshan timings at the main cave shrine of Upper Ahobilam."
+    }
+  ]
+}

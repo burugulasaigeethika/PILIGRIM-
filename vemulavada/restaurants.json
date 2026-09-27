@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Devasthanam Canteen",
+    "location": "Temple Premises",
+    "distance": "Within temple complex",
+    "speciality": "Full Meals (Lunch & Dinner Timings)",
+    "price_range": "₹25",
+    "operating_hours": "Standard Lunch & Dinner Timings"
+  },
+  {
+    "name": "Chandika Vilas",
+    "location": "Bheemeshwaralayam Street",
+    "distance": "800 meter",
+    "speciality": "Pure vegetarian meals",
+    "price_range": "₹150–₹250 for two",
+    "operating_hours": "Not reliably listed"
+  },
+  {
+    "name": "Bhavani Restaurant",
+    "location": "1st Bypass Road",
+    "distance": "~1 km",
+    "speciality": "Pure vegetarian food, A/C dining",
+    "price_range": "₹200–₹400 for two",
+    "operating_hours": "10:00 AM–10:00 PM"
+  },
+  {
+    "name": "Sri Geetha Bhawan Udupi Hotel",
+    "location": "Sircilla Road, Thippapuram",
+    "distance": "~1.3 km",
+    "speciality": "South Indian/Udupi-style food",
+    "price_range": "₹100–₹250 for two",
+    "operating_hours": "7:00 AM–10:00 PM"
+  },
+  {
+    "name": "Hotel Shubham",
+    "location": "1st Bypass Road",
+    "distance": "~1 km",
+    "speciality": "Vegetarian/buffet-style restaurant",
+    "price_range": "₹200–₹400 for two",
+    "operating_hours": "Not reliably listed"
+  },
+  {
+    "name": "Hotel Sri Ma Palleruchulu",
+    "location": "Opposite Indian Oil Petrol Pump, Thippapuram",
+    "distance": "~1 km",
+    "speciality": "Restaurant",
+    "price_range": "₹200–₹400 for two",
+    "operating_hours": "Open 24 hours"
+  }
+]

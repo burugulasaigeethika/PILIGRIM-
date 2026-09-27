@@ -1,0 +1,322 @@
+{
+  "timestamp": "2026-08-26 18:06:46",
+  "overall_status": "READY FOR PRODUCTION",
+  "dataset": {
+    "temples": 20,
+    "json_files": 417,
+    "categories": 21,
+    "status": "PASS"
+  },
+  "indexes": {
+    "qdrant": "PASS",
+    "bm25": "PASS"
+  },
+  "ollama": {
+    "status": "PASS",
+    "production_model": "qwen2.5:1.5b",
+    "model_verified": true
+  },
+  "metrics": {
+    "total_queries": 15,
+    "passed_queries": 15,
+    "pass_rate_pct": 100.0,
+    "cross_temple_contamination_pct": 0.0,
+    "hallucination_pct": 0.0,
+    "unrelated_info_pct": 0.0,
+    "latency_stats": {
+      "mean_ms": 56533.77957999861,
+      "median_ms": 11104.46940001566,
+      "p95_ms": 211927.9914800189,
+      "min_ms": 27.061900007538497,
+      "max_ms": 541128.4782000585
+    }
+  },
+  "query_results": [
+    {
+      "id": "Q1",
+      "query": "What are the temple timings at Bhadrachalam?",
+      "type": "targeted",
+      "http_status": 200,
+      "latency_ms": 10286.43,
+      "chunks": 3,
+      "sources": [
+        "badrachalam/faq.json",
+        "badrachalam/timings.json"
+      ],
+      "contamination": false,
+      "refusal_ok": true,
+      "unrelated_dump": false,
+      "answer_snippet": "The temple is open daily from 4:30 AM to 1:00 PM and from 3:00 PM to 9:00 PM. The temple is closed for afternoon rest between 1:00 PM and 3:...",
+      "passed": true
+    },
+    {
+      "id": "Q2",
+      "query": "What is the price of Abhishekam in Dharmapuri?",
+      "type": "targeted",
+      "http_status": 200,
+      "latency_ms": 7269.06,
+      "chunks": 1,
+      "sources": [
+        "dharmapuri/sevas.json"
+      ],
+      "contamination": false,
+      "refusal_ok": true,
+      "unrelated_dump": false,
+      "answer_snippet": "\u20b9500...",
+      "passed": true
+    },
+    {
+      "id": "Q3",
+      "query": "What are all the sevas in Dharmapuri?",
+      "type": "complete_list",
+      "http_status": 200,
+      "latency_ms": 26628.2,
+      "chunks": 1,
+      "sources": [
+        "dharmapuri/sevas.json"
+      ],
+      "contamination": false,
+      "refusal_ok": true,
+      "unrelated_dump": false,
+      "answer_snippet": "Here is a complete list of all the sevas in Dharmapuri:  1. Abhishekam 2. Tulasi Vishe\u1e63\u0101rchana 3. Sahasranamas / Korika Niv\u1e5btti 4. Gok\u1e63an\u0101ma...",
+      "passed": true
+    },
+    {
+      "id": "Q4",
+      "query": "List all festivals at Basara.",
+      "type": "complete_list",
+      "http_status": 200,
+      "latency_ms": 70842.07,
+      "chunks": 1,
+      "sources": [
+        "basara/festivals.json"
+      ],
+      "contamination": false,
+      "refusal_ok": true,
+      "unrelated_dump": false,
+      "answer_snippet": "Basara celebrates the following festivals:  1. **Vasant Panchami / Sri Panchami**    - Description: The grandest festival celebrated at Sri ...",
+      "passed": true
+    },
+    {
+      "id": "Q5",
+      "query": "Which temples have a river bank?",
+      "type": "cross_temple",
+      "http_status": 200,
+      "latency_ms": 27.32,
+      "chunks": 11,
+      "sources": [
+        "ahobilam/river_bank.json",
+        "badrachalam/river_bank.json",
+        "basara/river_bank.json",
+        "dharmapuri/river_bank.json",
+        "edupayal/river_bank.json",
+        "jogulamba(new)/river_bank.json",
+        "kaleshvaram/river_bank.json",
+        "medaram/river_bank.json",
+        "srisaila/river_bank.json",
+        "veera satyanarayana/river_bank.json",
+        "vemulavada/river_bank.json"
+      ],
+      "contamination": false,
+      "refusal_ok": true,
+      "unrelated_dump": false,
+      "answer_snippet": "Based on the temple knowledge base, the following **11 temples** have confirmed **River Bank** information:  1. **Ahobilam** \u2014 River: Bhavan...",
+      "passed": true
+    },
+    {
+      "id": "Q6",
+      "query": "Which temples don't have wheelchair facilities?",
+      "type": "cross_temple",
+      "http_status": 200,
+      "latency_ms": 27.52,
+      "chunks": 7,
+      "sources": [
+        "balkampet/elderly_ppl.json",
+        "birla mandir/elderly_ppl.json",
+        "dharmapuri/elderly_ppl.json",
+        "edupayal/elderly_ppl.json",
+        "ramappa/elderly_ppl.json",
+        "thousand pillar/elderly_ppl.json",
+        "ujjaini/elderly_ppl.json"
+      ],
+      "contamination": false,
+      "refusal_ok": true,
+      "unrelated_dump": false,
+      "answer_snippet": "Based on verified temple knowledge base records, the following **7 temples** are confirmed to **NOT have Wheelchair** (or have major documen...",
+      "passed": true
+    },
+    {
+      "id": "Q7",
+      "query": "Which temples have accommodation?",
+      "type": "cross_temple",
+      "http_status": 200,
+      "latency_ms": 27.06,
+      "chunks": 20,
+      "sources": [
+        "ahobilam/accommodation.json",
+        "badrachalam/accommodation.json",
+        "balkampet/accommodation.json",
+        "basara/accommodation.json",
+        "birla mandir/accommodation.json",
+        "chilkur/accommodation.json",
+        "dharmapuri/accommodation.json",
+        "edupayal/accommodation.json",
+        "jogulamba(new)/accommodation.json",
+        "kaleshvaram/accommodation.json",
+        "karmanghat/accommodation.json",
+        "medaram/accommodation.json",
+        "ramappa/accommodation.json",
+        "srisaila/accommodation.json",
+        "thousand pillar/accommodation.json",
+        "ttd/accommodation.json",
+        "ujjaini/accommodation.json",
+        "veera satyanarayana/accommodation.json",
+        "vemulavada/accommodation.json",
+        "yadadri/accommodation.json"
+      ],
+      "contamination": false,
+      "refusal_ok": true,
+      "unrelated_dump": false,
+      "answer_snippet": "Based on the temple knowledge base, the following **20 temples** have confirmed **Accommodation** information:  1. **Ahobilam** \u2014 Offers 4 a...",
+      "passed": true
+    },
+    {
+      "id": "Q8",
+      "query": "What accommodation and restaurants are available near Dharmapuri?",
+      "type": "multi_category",
+      "http_status": 200,
+      "latency_ms": 51365.79,
+      "chunks": 2,
+      "sources": [
+        "dharmapuri/accommodation.json",
+        "dharmapuri/restaurants.json"
+      ],
+      "contamination": false,
+      "refusal_ok": true,
+      "unrelated_dump": false,
+      "answer_snippet": "### Accommodation  **Name:** Sri Hanuman tiffins and meals **Cuisine:** Authentic South Indian vegetarian meals, breakfast tiffins (idli, do...",
+      "passed": true
+    },
+    {
+      "id": "Q9",
+      "query": "What are the timings of Dharmapuri Temple?",
+      "type": "targeted",
+      "http_status": 200,
+      "latency_ms": 10938.59,
+      "chunks": 3,
+      "sources": [
+        "dharmapuri/faq.json",
+        "dharmapuri/restaurants.json",
+        "dharmapuri/timings.json"
+      ],
+      "contamination": false,
+      "refusal_ok": true,
+      "unrelated_dump": false,
+      "answer_snippet": "The temple is open daily. Morning darshan timings are from 5:00 AM to 2:30 PM, and evening darshan timings are from 4:00 PM to 8:00 PM....",
+      "passed": true
+    },
+    {
+      "id": "Q10",
+      "query": "Tell me the history of Yadadri.",
+      "type": "targeted",
+      "http_status": 200,
+      "latency_ms": 541128.48,
+      "chunks": 3,
+      "sources": [
+        "yadadri/temple.json"
+      ],
+      "contamination": false,
+      "refusal_ok": true,
+      "unrelated_dump": false,
+      "answer_snippet": "The reconstruction of the Yadadri temple is one of the largest stone temple renovation projects in modern history. Executed by the Yadadri T...",
+      "passed": true
+    },
+    {
+      "id": "Q11",
+      "query": "Tell me everything about Dharmapuri Temple.",
+      "type": "broad",
+      "http_status": 200,
+      "latency_ms": 67221.42,
+      "chunks": 4,
+      "sources": [
+        "dharmapuri/festivals.json",
+        "dharmapuri/prasadam.json",
+        "dharmapuri/restaurants.json",
+        "dharmapuri/sevas.json"
+      ],
+      "contamination": false,
+      "refusal_ok": true,
+      "unrelated_dump": false,
+      "answer_snippet": "Dharmapuri Temple, also known as Sri Lakshmi Narasimha Swamy Temple, is a significant religious site located in Dharmapuri, Telangana. The t...",
+      "passed": true
+    },
+    {
+      "id": "Q12",
+      "query": "Does Dharmapuri have wheelchair facilities?",
+      "type": "targeted",
+      "http_status": 200,
+      "latency_ms": 14634.98,
+      "chunks": 3,
+      "sources": [
+        "dharmapuri/elderly_ppl.json",
+        "dharmapuri/emergency_nos.json",
+        "dharmapuri/facilities.json"
+      ],
+      "contamination": false,
+      "refusal_ok": true,
+      "unrelated_dump": false,
+      "answer_snippet": "No...",
+      "passed": true
+    },
+    {
+      "id": "Q13",
+      "query": "Does Dharmapuri have a helicopter launch pad?",
+      "type": "refusal",
+      "http_status": 200,
+      "latency_ms": 11104.47,
+      "chunks": 3,
+      "sources": [
+        "dharmapuri/faq.json",
+        "dharmapuri/rules.json"
+      ],
+      "contamination": false,
+      "refusal_ok": true,
+      "unrelated_dump": false,
+      "answer_snippet": "I could not find this information in the temple knowledge base....",
+      "passed": true
+    },
+    {
+      "id": "Q14",
+      "query": "What is the contact number of Basara Temple?",
+      "type": "targeted",
+      "http_status": 200,
+      "latency_ms": 8529.78,
+      "chunks": 3,
+      "sources": [
+        "basara/contacts.json",
+        "basara/emergency_nos.json"
+      ],
+      "contamination": false,
+      "refusal_ok": true,
+      "unrelated_dump": false,
+      "answer_snippet": "+91 94910 00656...",
+      "passed": true
+    },
+    {
+      "id": "Q15",
+      "query": "What facilities are available at Bhadrachalam?",
+      "type": "complete_list",
+      "http_status": 200,
+      "latency_ms": 27975.52,
+      "chunks": 1,
+      "sources": [
+        "badrachalam/facilities.json"
+      ],
+      "contamination": false,
+      "refusal_ok": true,
+      "unrelated_dump": false,
+      "answer_snippet": "Badrachalam offers the following facilities:  1. **Kalyana Katta (Tonsure)** - Dedicated tonsure complexes near the Godavari River ghats. 2....",
+      "passed": true
+    }
+  ]
+}

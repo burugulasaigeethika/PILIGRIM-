@@ -1,0 +1,175 @@
+{
+  "accuracy": 1.0,
+  "results": [
+    {
+      "query": "What is the contact number of Dharmapuri Temple?",
+      "expected_mode": "targeted",
+      "actual_mode": "targeted",
+      "expected_scope": "single_temple",
+      "actual_scope": "single_temple",
+      "condition": "none",
+      "exhaustive": false,
+      "passed": true
+    },
+    {
+      "query": "What is the price of Abhishekam in Dharmapuri?",
+      "expected_mode": "targeted",
+      "actual_mode": "targeted",
+      "expected_scope": "single_temple",
+      "actual_scope": "single_temple",
+      "condition": "none",
+      "exhaustive": false,
+      "passed": true
+    },
+    {
+      "query": "When does Yadadri temple open in the morning?",
+      "expected_mode": "targeted",
+      "actual_mode": "targeted",
+      "expected_scope": "single_temple",
+      "actual_scope": "single_temple",
+      "condition": "none",
+      "exhaustive": false,
+      "passed": true
+    },
+    {
+      "query": "Does Dharmapuri have wheelchair facilities?",
+      "expected_mode": "targeted",
+      "actual_mode": "targeted",
+      "expected_scope": "single_temple",
+      "actual_scope": "single_temple",
+      "condition": "none",
+      "exhaustive": false,
+      "passed": true
+    },
+    {
+      "query": "List all facilities at Dharmapuri Temple.",
+      "expected_mode": "complete_category",
+      "actual_mode": "complete_category",
+      "expected_scope": "single_temple",
+      "actual_scope": "single_temple",
+      "condition": "none",
+      "exhaustive": true,
+      "passed": true
+    },
+    {
+      "query": "What are all the sevas in Dharmapuri?",
+      "expected_mode": "complete_category",
+      "actual_mode": "complete_category",
+      "expected_scope": "single_temple",
+      "actual_scope": "single_temple",
+      "condition": "none",
+      "exhaustive": true,
+      "passed": true
+    },
+    {
+      "query": "Show all festivals at Basara.",
+      "expected_mode": "complete_category",
+      "actual_mode": "complete_category",
+      "expected_scope": "single_temple",
+      "actual_scope": "single_temple",
+      "condition": "none",
+      "exhaustive": true,
+      "passed": true
+    },
+    {
+      "query": "Give me all prasadams available at Yadadri.",
+      "expected_mode": "complete_category",
+      "actual_mode": "complete_category",
+      "expected_scope": "single_temple",
+      "actual_scope": "single_temple",
+      "condition": "none",
+      "exhaustive": true,
+      "passed": true
+    },
+    {
+      "query": "Which temples have accommodation?",
+      "expected_mode": "cross_temple_aggregation",
+      "actual_mode": "cross_temple_aggregation",
+      "expected_scope": "cross_temple",
+      "actual_scope": "cross_temple",
+      "condition": "positive",
+      "exhaustive": true,
+      "passed": true
+    },
+    {
+      "query": "List all temples that have a river bank.",
+      "expected_mode": "cross_temple_aggregation",
+      "actual_mode": "cross_temple_aggregation",
+      "expected_scope": "cross_temple",
+      "actual_scope": "cross_temple",
+      "condition": "positive",
+      "exhaustive": true,
+      "passed": true
+    },
+    {
+      "query": "Which temples offer Annadanam?",
+      "expected_mode": "cross_temple_aggregation",
+      "actual_mode": "cross_temple_aggregation",
+      "expected_scope": "cross_temple",
+      "actual_scope": "cross_temple",
+      "condition": "positive",
+      "exhaustive": true,
+      "passed": true
+    },
+    {
+      "query": "Which temples do not have wheelchair facilities?",
+      "expected_mode": "cross_temple_aggregation",
+      "actual_mode": "cross_temple_aggregation",
+      "expected_scope": "cross_temple",
+      "actual_scope": "cross_temple",
+      "condition": "negative",
+      "exhaustive": true,
+      "passed": true
+    },
+    {
+      "query": "Which temples don't have restaurants?",
+      "expected_mode": "cross_temple_aggregation",
+      "actual_mode": "cross_temple_aggregation",
+      "expected_scope": "cross_temple",
+      "actual_scope": "cross_temple",
+      "condition": "negative",
+      "exhaustive": true,
+      "passed": true
+    },
+    {
+      "query": "What accommodation and restaurants are available near Dharmapuri?",
+      "expected_mode": "multi_category",
+      "actual_mode": "multi_category",
+      "expected_scope": "single_temple",
+      "actual_scope": "single_temple",
+      "condition": "none",
+      "exhaustive": true,
+      "passed": true
+    },
+    {
+      "query": "Tell me about sevas and festivals at Srisailam",
+      "expected_mode": "multi_category",
+      "actual_mode": "multi_category",
+      "expected_scope": "single_temple",
+      "actual_scope": "single_temple",
+      "condition": "none",
+      "exhaustive": true,
+      "passed": true
+    },
+    {
+      "query": "Tell me everything about Dharmapuri Temple.",
+      "expected_mode": "broad_temple",
+      "actual_mode": "broad_temple",
+      "expected_scope": "single_temple",
+      "actual_scope": "single_temple",
+      "condition": "none",
+      "exhaustive": true,
+      "passed": true
+    },
+    {
+      "query": "Give me an overview of Basara temple.",
+      "expected_mode": "broad_temple",
+      "actual_mode": "broad_temple",
+      "expected_scope": "single_temple",
+      "actual_scope": "single_temple",
+      "condition": "none",
+      "exhaustive": true,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Kamat Hotel",
+    "type": "Vegetarian",
+    "distance": "Located right on Secretariat Road",
+    "cost": "₹700 for two people (approx.)",
+    "rating": "4.2 (13.9K)",
+    "address": "Open6-1-60/1 Sectt Road Sf Bad, NH 44",
+    "speciality": "South Indian Thalis on traditional plates, alongside excellent breakfast tiffins (Idli, Vada, and Paneer Dosa)",
+    "description": "Located right on Secretariat Road. This is the most legendary vegetarian landmark near the temple. It is famous for serving highly authentic South Indian Thalis on traditional plates, alongside excellent breakfast tiffins (Idli, Vada, and Paneer Dosa). It features full valet parking and separate AC sections."
+  },
+  {
+    "name": "Lake District Bar & Kitchen",
+    "type": "Grill",
+    "distance": "Situated on PV Narasimha Rao Marg, right facing the lake",
+    "cost": "₹1,600 for two people (approx.)",
+    "rating": "4.1 (3.0K)",
+    "address": "OpenKhairtabad",
+    "speciality": "wood-fired pizzas, and fusion kebabs",
+    "description": "Situated on PV Narasimha Rao Marg, right facing the lake. If you want a scenic dinner directly after visiting the temple, this venue is modeled like a Goan beach resort terrace. It features live weekend music, spectacular sunset views over Hussain Sagar, wood-fired pizzas, and fusion kebabs."
+  }
+]

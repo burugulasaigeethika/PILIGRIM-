@@ -1,0 +1,65 @@
+{
+  "temple_id": "sri_jogulamba_devi_temple",
+  "name": "Sri Jogulamba Devi Temple",
+  "alternate_names": [
+    "Shri Jogulamba Ammavari Temple",
+    "Alampur Jogulamba Temple",
+    "Jogulamba Temple"
+  ],
+  "state": "Telangana",
+  "district": "Jogulamba Gadwal District",
+  "village": "Alampur",
+  "address": "Executive Officer, Sri Jogulamba Bala Brahmeswara Swamy Devasthanam, Temple Road, Bukkapur, Alampur, Jogulamba Gadwal District, Telangana - 509152",
+  "river": "Tungabhadra River (near sacred confluence of Tungabhadra and Krishna rivers)",
+  "main_deity": "Goddess Jogulamba (Fierce form of Goddess Shakti seated on a corpse with a scorpion, frog, and lizard on her head)",
+  "other_deities": [
+    "Chandi",
+    "Mundi",
+    "Sri Bala Brahmeswara Swamy"
+  ],
+  "description": "Sri Jogulamba Devi Temple is located at Alampur in Jogulamba Gadwal district of Telangana. It is one of the eighteen revered Maha Shakti Peethas in India (5th of the 18 Maha Shakti Peethas) and is dedicated to Goddess Jogulamba, a fierce form of Goddess Shakti. The temple is situated near the sacred confluence of the Tungabhadra and Krishna rivers and is one of the most important pilgrimage destinations in South India. Goddess Jogulamba is worshipped in a fierce form and is believed to bless devotees with spiritual strength, protection and prosperity. The temple is also closely associated with the historic Nava Brahma Temples, making Alampur an important centre of both Shaivism and Shakti worship. Maintained by Endowments Department, Government of Telangana (Sri Jogulamba Devasthanam Board).",
+  "history": "Alampur is an ancient temple town situated on the banks of the Tungabhadra River and is regarded as the western gateway to Srisailam. The Jogulamba Temple is closely associated with the Badami Chalukyas, who built the renowned Nava Brahma Temples during the 7th century CE. The region later came under the rule of several South Indian dynasties, which contributed to its religious and architectural importance. According to local tradition, the saint Rasa Siddha, who was closely associated with King Pulakesi II, played an important role in the construction of the Nava Brahma Temples. The original Jogulamba Temple was destroyed during the Bahmani invasions, and the idol of Goddess Jogulamba, along with the idols of Chandi and Mundi, was shifted to the Bala Brahmeswara Swamy Temple for protection. The idols remained there until 2005, when a new temple was reconstructed near the historic Nava Brahma Temple complex and the original idol of Goddess Jogulamba was reinstalled. Today, the temple remains one of the most sacred centres of Shakti worship in India.",
+  "mythology": "Goddess Jogulamba is revered as the 5th of the 18 Maha Shakti Peethas in India. Goddess Jogulamba is depicted in a powerful and fierce form sitting on a corpse. The animals on her head—a lizard, scorpion, and frog (and bat)—symbolize evil elements and signs of house degeneration. The Goddess destroys these forces to protect her devotees, which is why she is also called Gruha Chandi (Protector of Homes).",
+  "sub_temples": [
+    {
+      "name": "Bala Brahmeswara Temple",
+      "location": "Adjacent to Jogulamba Temple / Historic Nava Brahma Temple complex",
+      "significance": "Head shrine of the Nava Brahma group where the idol of Goddess Jogulamba along with the idols of Chandi and Mundi was protected and kept until 2005."
+    },
+    {
+      "name": "Nava Brahma Temples",
+      "location": "Adjacent to Jogulamba Temple complex",
+      "significance": "Group of nine 7th-century Shiva shrines built during Badami Chalukya rule featuring rock-cut Nagara architecture."
+    },
+    {
+      "name": "Idols of Chandi and Mundi",
+      "location": "Jogulamba Temple complex",
+      "significance": "Protected alongside Goddess Jogulamba during the Bahmani invasions and reinstalled."
+    }
+  ],
+  "architecture": {
+    "style": "Early Chalukyan Nagara Style (Associated with Badami Chalukyas). Originally 7th Century CE (Complex); Current shrine reconstructed in 2005 CE following historical descriptions found in the 12th-century text Rasaratnakaram.",
+    "highlights": [
+      {
+        "name": "Main Sanctum",
+        "description": "The main sanctum enshrines Goddess Jogulamba in her fierce form. The idol depicts the goddess seated on a corpse with a scorpion, frog, and lizard on her head, symbolizing her power and protective nature."
+      },
+      {
+        "name": "Temple Complex",
+        "description": "The temple complex is located adjacent to the historic Nava Brahma Temples, which are among the finest examples of early Badami Chalukyan architecture. The complex represents a unique blend of Shaivite and Shakti traditions and is one of Telangana's important heritage sites."
+      },
+      {
+        "name": "Building Material",
+        "description": "Primarily constructed using sandstone, with granite used in parts of the temple complex."
+      },
+      {
+        "name": "Architectural Features",
+        "description": "Badami Chalukyan architectural style, intricately carved stone pillars, beautiful stone sculptures and carvings, traditional Dravidian temple design, and historic Nava Brahma temple complex."
+      },
+      {
+        "name": "Special Features",
+        "description": "One of the eighteen Maha Shakti Peethas, located near the sacred confluence of the Krishna and Tungabhadra rivers, ancient Chalukyan stone architecture, unique idol of Goddess Jogulamba in her fierce form, adjacent to the historic Nava Brahma Temples."
+      }
+    ]
+  }
+}

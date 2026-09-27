@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Manorath (Lords Resort)",
+    "type": "Fine Dining (AC)",
+    "distance": "~1.5 Kilometres",
+    "cost": "₹250 – ₹500",
+    "speciality": "Pristine hygiene & North Indian"
+  },
+  {
+    "name": "Saajan Hotel",
+    "type": "Casual Tiffin",
+    "distance": "~800 Metres",
+    "cost": "₹60 – ₹100",
+    "speciality": "Economical ₹80 Veg Thalis"
+  },
+  {
+    "name": "Hotel Apoorva",
+    "type": "Budget Diner",
+    "distance": "Walkable",
+    "cost": "₹80 – ₹150",
+    "speciality": "Fast-moving South Indian meals"
+  },
+  {
+    "name": "Sri Vasavi Veg",
+    "type": "Quick Stop",
+    "distance": "~270 Metres",
+    "cost": "₹50 – ₹100",
+    "speciality": "Early morning idli & filter coffee"
+  }
+]

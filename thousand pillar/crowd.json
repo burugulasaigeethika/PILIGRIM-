@@ -1,0 +1,42 @@
+{
+  "peak_days": [
+    "Weekends",
+    "Public Holidays"
+  ],
+  "peak_hours": [],
+  "festival_crowds": [
+    {
+      "festival": "Shivaratri",
+      "crowd_level": "Extremely High crowd",
+      "wait_time": "2 to 4+ hours wait",
+      "details": "Long barricaded lines extending to the highway."
+    }
+  ],
+  "tips": [],
+  "crowd_details": [
+    {
+      "day_type": "Weekdays",
+      "crowd_level": "Low crowd",
+      "wait_time": "0 to 10 minutes wait",
+      "description": "Peaceful and best for photography."
+    },
+    {
+      "day_type": "Weekends",
+      "crowd_level": "Moderate crowd",
+      "wait_time": "15 to 30 minutes wait",
+      "description": "Busy with local families and tight parking."
+    },
+    {
+      "day_type": "Public Holidays",
+      "crowd_level": "Moderate to High crowd",
+      "wait_time": "30 to 45 minutes wait",
+      "description": "Packed lawns and busier shrines."
+    },
+    {
+      "day_type": "Festivals (e.g., Shivaratri)",
+      "crowd_level": "Extremely High crowd",
+      "wait_time": "2 to 4+ hours wait",
+      "description": "Long barricaded lines extending to the highway."
+    }
+  ]
+}

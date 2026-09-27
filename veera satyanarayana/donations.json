@@ -1,0 +1,39 @@
+{
+  "annadanam": {
+    "booking_url": "https://annavaramdevasthanam.nic.in",
+    "schemes": [
+      {
+        "name": "Nitya Annadanam Scheme",
+        "amount": "Rs. 1,000 to Rs. 1,00,000",
+        "periodicity": "Once in Year"
+      },
+      {
+        "name": "Pulihora & Dadhojanam Scheme - Patron (Saswata) Contribution",
+        "amount": "Rs. 558",
+        "periodicity": "Saswata"
+      },
+      {
+        "name": "Pulihora & Dadhojanam Scheme - Simple Contribution",
+        "amount": "Rs. 58",
+        "periodicity": "One Time"
+      }
+    ]
+  },
+  "trusts_and_schemes": [
+    {
+      "name": "Sri Swamyvari Shashwata Vratham (10 Years Period)",
+      "amount": "Rs. 7,000/-",
+      "periodicity": "Once in Year for 10 Years"
+    },
+    {
+      "name": "Sri Swamyvari Shashwata Kalyanam (10 Years Period)",
+      "amount": "Rs. 10,000/-",
+      "periodicity": "Once in Year for 10 Years"
+    },
+    {
+      "name": "Gosamrakshana Padhakam Trust",
+      "amount": "Rs. 1,000 to Rs. 1,00,000",
+      "periodicity": "Once in Year"
+    }
+  ]
+}

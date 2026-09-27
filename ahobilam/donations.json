@@ -1,0 +1,26 @@
+{
+  "annadanam": {
+    "booking_url": "Contributions accepted via cheque/draft to \"Annamacharya Nitya Annadanam Trust\" at the Guest House Office.",
+    "required_fields": [
+      "Name",
+      "Gotram",
+      "Address",
+      "PAN Card (for tax benefits)",
+      "Mobile",
+      "Email",
+      "Contribution Amount"
+    ]
+  },
+  "general_donation": {
+    "booking_url": "Donations to the \"Swathi Trust\" or \"Sri Paduka Sevaka Sabha\" are accepted at the Guest House Office.",
+    "required_fields": [
+      "Name",
+      "Mobile",
+      "Gothram",
+      "Address",
+      "Donation Purpose",
+      "Amount"
+    ]
+  },
+  "refund_policy": []
+}

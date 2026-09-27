@@ -1,0 +1,51 @@
+{
+  "temple_id": "",
+  "opening_time": "4:00 AM",
+  "closing_time": "8:30 PM",
+  "afternoon_break": {
+    "from": "12:30 PM",
+    "to": "2:00 PM"
+  },
+  "daily_schedule": [
+    {
+      "time": "4:00 AM",
+      "details": "Temple Opens"
+    },
+    {
+      "time": "4:00 AM to 4:30 AM",
+      "details": "Temple Pooja, Issuance of Abhishekham Tickets"
+    },
+    {
+      "time": "4:30 AM to 7:30 AM",
+      "details": "Abhishekam, Alankarana, Harathi, Prasadam"
+    },
+    {
+      "time": "7:30 AM to 12:00 Noon",
+      "details": "Archana and Sarva Darshan and other poojas"
+    },
+    {
+      "time": "12:00 to 12:30 PM",
+      "details": "Nivedana - Harathi"
+    },
+    {
+      "time": "1:00 PM to 2:00 PM",
+      "details": "Closed (Dwarabandhanam)"
+    },
+    {
+      "time": "2:00 PM to 6:00 PM",
+      "details": "Archana and Sarva Darshan and other poojas"
+    },
+    {
+      "time": "6:30 PM to 7:00 PM",
+      "details": "Devasthanam Pradosha Pooja"
+    },
+    {
+      "time": "7:00 PM to 8:30 PM",
+      "details": "Maha Harathi, Darshanam and Prasadam"
+    },
+    {
+      "time": "8:30 PM",
+      "details": "Temple will be closed (Dwarabandhanam)"
+    }
+  ]
+}

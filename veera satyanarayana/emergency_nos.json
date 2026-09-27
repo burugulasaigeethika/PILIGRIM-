@@ -1,0 +1,70 @@
+{
+  "police": [
+    {
+      "name": "Annavaram Law & Order Police Station",
+      "phone": "+91 88682 38133",
+      "address": "(750 m)Annavaram Town",
+      "details": "Local Police Station."
+    },
+    {
+      "name": "Temple Devasthanam Security Office (Hilltop)",
+      "phone": "+91 88682 38121 / 8984261861",
+      "address": "Ratnagiri Hilltop Temple Complex",
+      "details": "Temple security and immediate hilltop assistance."
+    }
+  ],
+  "medical": [
+    {
+      "name": "S.V.V.S.S. Devasthanam Hospital",
+      "address": "Located inside hilltop courtyard complex at Vahanala Vedi (0.0 km)",
+      "details": "Temple / Trust Hospital. 24/7. Request immediate dispatch through on-duty temple security."
+    },
+    {
+      "name": "Sri Satya Maruthi Hospital (Private)",
+      "phone": "+91 77996 62666",
+      "address": "Near Sai Baba Temple, Subbarayapuram (3 km)",
+      "details": "24/7 General Emergency Care."
+    },
+    {
+      "name": "Satya Emergency Hospital (Private)",
+      "phone": "+91 99499 22010",
+      "address": "Railway Station Road, Velampeta (2.7 km)",
+      "details": "24/7 Trauma and Critical Care Stabilization."
+    },
+    {
+      "name": "Surya Emergency Hospital (Private)",
+      "address": "Chalamayya Nagar, Railway Station Road (2.9 km)",
+      "details": "24/7 Trauma Medicine and Pediatrics. Available via local triage desk or 108 ambulance coordination."
+    },
+    {
+      "name": "Mamata Multispeciality Hospital",
+      "phone": "+91 88542 55823",
+      "address": "Red Convent Street, Tuni (~20 km)",
+      "details": "24/7 Comprehensive Emergency and ICU Care."
+    },
+    {
+      "name": "Shankar Children's Hospital",
+      "phone": "+91 94916 49111",
+      "address": "Park Center, Tuni (~20 km)",
+      "details": "24/7 Specialized Pediatric and Neonatal Emergency Facility."
+    }
+  ],
+  "fire_and_rescue": {
+    "name": "Annavaram Fire Station",
+    "phone": "101"
+  },
+  "helpline": [
+    {
+      "name": "National Emergency Number",
+      "phone": "112"
+    },
+    {
+      "name": "Police Control Room",
+      "phone": "100"
+    },
+    {
+      "name": "Andhra Pradesh Medical Ambulance Service",
+      "phone": "108"
+    }
+  ]
+}

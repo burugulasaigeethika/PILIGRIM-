@@ -1,0 +1,19 @@
+{
+  "peak_days": [
+    "Weekends (Saturday & Sunday)",
+    "Swathi Nakshatram",
+    "Annual Brahmotsavam (Feb/March)"
+  ],
+  "moderate_days": [
+    "Weekdays (Tuesday–Thursday)"
+  ],
+  "waiting_times": {
+    "weekdays": "Moderate crowds. Trekking trails and darshanam lines are relatively quiet and peaceful.",
+    "weekends": "High crowds, with wait times extending up to 1 to 2 hours at the main Lower and Upper temples.",
+    "swathi_nakshatram": "Extreme crowds. The monthly star day witnesses massive queues at all nine temples for Abhishekam.",
+    "annual_brahmotsavam": "Peak congestion. Hundreds of thousands of devotees occupy all guest rooms and local satrams."
+  },
+  "tips": [
+    "Seniors should limit visits to Lower Ahobilam, or use Doli services and trek during early morning hours."
+  ]
+}

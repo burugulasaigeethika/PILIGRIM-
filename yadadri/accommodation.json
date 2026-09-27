@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Hilltop cottages",
+    "type": "High-end VVIP suites and cottages",
+    "distance": "0 km (Located directly at the temple).",
+    "price": "Highly restricted VVIP pricing.",
+    "description": "Extremely limited, high-end VVIP suites and cottages. Overnight stays on the hilltop are highly restricted for the general public."
+  },
+  {
+    "name": "YTDA Divya Sannidhi Cottages",
+    "type": "Premium, modern villa-style cottages",
+    "distance": "2.7 to 3.5 km",
+    "price": "₹3,000 per night",
+    "description": "Located at the foothills. These are premium, modern villa-style cottages designed for families, priced at approximately ₹3,000 per night. Bookable online via the official YTDA portal (ytda.in / ytdabooking.in)."
+  },
+  {
+    "name": "Temple Satralu & Guest Houses (Yogananda Nilayam)",
+    "type": "Temple Satralu & Guest Houses",
+    "distance": "~2 km",
+    "price": "Budget-friendly (typically starting under ₹1,000 per night).",
+    "description": "Located at the foothills. Clean, basic, and budget-friendly rooms. Yogananda Nilayam booking counter contact: 08685-236664."
+  },
+  {
+    "name": "Haritha Hotel Yadagirigutta (Telangana Tourism)",
+    "type": "Government Tourism Hotel (TSTDC)",
+    "distance": "280 m",
+    "price": "₹1000 to ₹1700 per night",
+    "description": "Located at the foothills near the main TGRTC bus stand. Managed by TSTDC, it features standard AC/Non-AC rooms, family deluxe suites, and an on-site vegetarian restaurant. Direct phone: 08685-293217, Mobile: 96669-82023. Bookable via tgtdc.in or tourism.telangana.gov.in."
+  },
+  {
+    "name": "Sannidhi Emerald",
+    "type": "Private Hotel",
+    "distance": "3.2 km",
+    "price": "₹3150 to ₹3250 per night",
+    "description": "Premium amenities, family rooms."
+  },
+  {
+    "name": "Aditya Residency",
+    "type": "Private Hotel",
+    "distance": "1.6 km",
+    "price": "₹896 to ₹2240 per night",
+    "description": "Budget-friendly, located 1.6 km from temple."
+  },
+  {
+    "name": "Sowbhagya Resorts",
+    "type": "Resort",
+    "distance": "~4 to 4.5 km away",
+    "price": "₹2700 to ₹3100 per night",
+    "description": "Features swimming pool and gardens."
+  },
+  {
+    "name": "Mani Residency",
+    "type": "Private Hotel",
+    "distance": "2.6 km",
+    "price": "₹1000 to ₹1500 per nigh",
+    "description": "Basic lodging with an AC convention hall."
+  }
+]

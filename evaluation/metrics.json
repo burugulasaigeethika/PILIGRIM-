@@ -1,0 +1,223 @@
+{
+  "metadata": {
+    "total_questions": 252,
+    "total_temples": 20,
+    "answerable_questions": 238,
+    "unanswerable_questions": 14,
+    "evaluation_duration_seconds": 7666.04
+  },
+  "retrieval": {
+    "qdrant": {
+      "top1_pct": 68.91,
+      "top3_pct": 84.03,
+      "top5_pct": 88.24,
+      "source_hit_pct": 65.97
+    },
+    "bm25": {
+      "top1_pct": 23.11,
+      "top3_pct": 59.66,
+      "top5_pct": 75.63,
+      "source_hit_pct": 36.97
+    },
+    "hybrid": {
+      "top1_pct": 77.73,
+      "top3_pct": 85.29,
+      "top5_pct": 93.7,
+      "source_hit_pct": 77.31,
+      "rerank_improvements": 31
+    }
+  },
+  "temple_isolation": {
+    "isolation_rate_pct": 77.73,
+    "top1_contamination_count": 53,
+    "top3_contamination_count": 131,
+    "top5_contamination_count": 179
+  },
+  "answer_quality": {
+    "accuracy_pct": 84.52,
+    "partial_pct": 9.52,
+    "incorrect_pct": 5.16,
+    "hallucination_pct": 0.79,
+    "groundedness_pct": 99.21,
+    "unanswerable_handling_pct": 85.71
+  },
+  "latency": {
+    "qdrant_avg_ms": 120.86,
+    "qdrant_median_ms": 105.91,
+    "qdrant_p95_ms": 262.38,
+    "bm25_avg_ms": 43.58,
+    "bm25_median_ms": 44.1,
+    "bm25_p95_ms": 70.01,
+    "rerank_avg_ms": 868.37,
+    "rerank_median_ms": 836.17,
+    "rerank_p95_ms": 1464.31,
+    "total_avg_ms": 29385.94,
+    "total_median_ms": 25435.34,
+    "total_p95_ms": 58086.61,
+    "total_min_ms": 7970.49,
+    "total_max_ms": 64339.65
+  },
+  "per_temple": {
+    "ahobilam": {
+      "temple_name": "Ahobilam",
+      "total_questions": 13,
+      "answer_accuracy_pct": 84.62,
+      "hybrid_top5_pct": 91.67,
+      "isolation_pct": 83.33,
+      "avg_latency_ms": 19766.44
+    },
+    "badrachalam": {
+      "temple_name": "Badrachalam",
+      "total_questions": 13,
+      "answer_accuracy_pct": 92.31,
+      "hybrid_top5_pct": 100.0,
+      "isolation_pct": 75.0,
+      "avg_latency_ms": 21971.31
+    },
+    "balkampet": {
+      "temple_name": "Balkampet",
+      "total_questions": 12,
+      "answer_accuracy_pct": 83.33,
+      "hybrid_top5_pct": 91.67,
+      "isolation_pct": 83.33,
+      "avg_latency_ms": 18412.24
+    },
+    "basara": {
+      "temple_name": "Basara",
+      "total_questions": 13,
+      "answer_accuracy_pct": 76.92,
+      "hybrid_top5_pct": 91.67,
+      "isolation_pct": 75.0,
+      "avg_latency_ms": 17382.51
+    },
+    "birla mandir": {
+      "temple_name": "Birla Mandir",
+      "total_questions": 13,
+      "answer_accuracy_pct": 100.0,
+      "hybrid_top5_pct": 91.67,
+      "isolation_pct": 75.0,
+      "avg_latency_ms": 25706.68
+    },
+    "chilkur": {
+      "temple_name": "Chilkur",
+      "total_questions": 13,
+      "answer_accuracy_pct": 92.31,
+      "hybrid_top5_pct": 100.0,
+      "isolation_pct": 83.33,
+      "avg_latency_ms": 35546.69
+    },
+    "dharmapuri": {
+      "temple_name": "Dharmapuri",
+      "total_questions": 13,
+      "answer_accuracy_pct": 84.62,
+      "hybrid_top5_pct": 100.0,
+      "isolation_pct": 66.67,
+      "avg_latency_ms": 34093.75
+    },
+    "edupayal": {
+      "temple_name": "Edupayal",
+      "total_questions": 13,
+      "answer_accuracy_pct": 69.23,
+      "hybrid_top5_pct": 91.67,
+      "isolation_pct": 91.67,
+      "avg_latency_ms": 28841.93
+    },
+    "jogulamba(new)": {
+      "temple_name": "Jogulamba(New)",
+      "total_questions": 12,
+      "answer_accuracy_pct": 100.0,
+      "hybrid_top5_pct": 100.0,
+      "isolation_pct": 100.0,
+      "avg_latency_ms": 34413.33
+    },
+    "kaleshvaram": {
+      "temple_name": "Kaleshvaram",
+      "total_questions": 12,
+      "answer_accuracy_pct": 66.67,
+      "hybrid_top5_pct": 83.33,
+      "isolation_pct": 75.0,
+      "avg_latency_ms": 34227.02
+    },
+    "karmanghat": {
+      "temple_name": "Karmanghat",
+      "total_questions": 13,
+      "answer_accuracy_pct": 76.92,
+      "hybrid_top5_pct": 91.67,
+      "isolation_pct": 66.67,
+      "avg_latency_ms": 30621.89
+    },
+    "medaram": {
+      "temple_name": "Medaram",
+      "total_questions": 13,
+      "answer_accuracy_pct": 76.92,
+      "hybrid_top5_pct": 100.0,
+      "isolation_pct": 41.67,
+      "avg_latency_ms": 30879.29
+    },
+    "ramappa": {
+      "temple_name": "Ramappa",
+      "total_questions": 12,
+      "answer_accuracy_pct": 91.67,
+      "hybrid_top5_pct": 100.0,
+      "isolation_pct": 72.73,
+      "avg_latency_ms": 28155.69
+    },
+    "srisaila": {
+      "temple_name": "Srisaila",
+      "total_questions": 12,
+      "answer_accuracy_pct": 75.0,
+      "hybrid_top5_pct": 83.33,
+      "isolation_pct": 75.0,
+      "avg_latency_ms": 33270.64
+    },
+    "thousand pillar": {
+      "temple_name": "Thousand Pillar",
+      "total_questions": 13,
+      "answer_accuracy_pct": 92.31,
+      "hybrid_top5_pct": 91.67,
+      "isolation_pct": 83.33,
+      "avg_latency_ms": 25777.91
+    },
+    "ttd": {
+      "temple_name": "Ttd",
+      "total_questions": 11,
+      "answer_accuracy_pct": 63.64,
+      "hybrid_top5_pct": 81.82,
+      "isolation_pct": 81.82,
+      "avg_latency_ms": 44185.0
+    },
+    "ujjaini": {
+      "temple_name": "Ujjaini",
+      "total_questions": 13,
+      "answer_accuracy_pct": 76.92,
+      "hybrid_top5_pct": 91.67,
+      "isolation_pct": 66.67,
+      "avg_latency_ms": 29334.94
+    },
+    "veera satyanarayana": {
+      "temple_name": "Veera Satyanarayana",
+      "total_questions": 12,
+      "answer_accuracy_pct": 100.0,
+      "hybrid_top5_pct": 100.0,
+      "isolation_pct": 83.33,
+      "avg_latency_ms": 37011.31
+    },
+    "vemulavada": {
+      "temple_name": "Vemulavada",
+      "total_questions": 13,
+      "answer_accuracy_pct": 92.31,
+      "hybrid_top5_pct": 100.0,
+      "isolation_pct": 100.0,
+      "avg_latency_ms": 27647.85
+    },
+    "yadadri": {
+      "temple_name": "Yadadri",
+      "total_questions": 13,
+      "answer_accuracy_pct": 92.31,
+      "hybrid_top5_pct": 91.67,
+      "isolation_pct": 75.0,
+      "avg_latency_ms": 33454.99
+    }
+  },
+  "failures": []
+}

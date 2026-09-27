@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Kamaldham Mandir (Lotus Temple)",
+    "distance": "12-15 minute drive (3.5 km)",
+    "type": "Shrine",
+    "description": "Serene white temple structured like a lotus blossom"
+  },
+  {
+    "name": "Osman Sagar (Gandipet Lake)",
+    "distance": "0 to 15-minute drive (~13 km)",
+    "type": "Nature",
+    "description": "Scenic reservoir bank, walking pathways, sunset views"
+  },
+  {
+    "name": "Mrugavani National Park",
+    "distance": "10-minute drive (10 km)",
+    "type": "Nature",
+    "description": "Deer park, jungle safaris, and nature trails"
+  },
+  {
+    "name": "Statue of Equality (Muchintal)",
+    "distance": "30-minute drive (31.9 km)",
+    "type": "Historical",
+    "description": "Massive 216-foot statue of saint Sri Ramanujacharya"
+  }
+]

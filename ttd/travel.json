@@ -1,0 +1,62 @@
+{
+  "by_air": {
+    "nearest_airport": "Tirupati International Airport (TIR / Renigunta) - 38 km from Tirumala (14 km from Tirupati). Daily direct flights from Hyderabad, Bengaluru, Chennai, Mumbai, Delhi, and Vijayawada.",
+    "alternate_airports": [
+      "Chennai International Airport (MAA - 150 km)",
+      "Bengaluru International Airport (BLR - 260 km)"
+    ]
+  },
+  "by_train": {
+    "nearest_stations": [
+      {
+        "station": "Tirupati Main (TPTY)",
+        "distance": "22 km"
+      },
+      {
+        "station": "Renigunta Junction (RU)",
+        "distance": "32 km"
+      }
+    ],
+    "connectivity": "Direct superfast trains connect all major Indian cities."
+  },
+  "by_bus": {
+    "local_connectivity": "APSRTC operates non-stop 'Sapthagiri Link Bus Express' and zero-emission electric buses running every 2 minutes 24/7 between Tirupati Railway Station / Central Bus Station and Tirumala.",
+    "inter_state_routes": [
+      "Hyderabad (550 km)",
+      "Bengaluru (250 km)",
+      "Chennai (140 km)",
+      "Vijayawada (420 km)"
+    ]
+  },
+  "by_road_and_ghat_rules": {
+    "up_ghat_road": {
+      "route": "Alipiri to Tirumala (18 km)",
+      "timings": "Open 03:00 AM to 12:00 Midnight",
+      "minimum_travel_time": "28 mins"
+    },
+    "down_ghat_road": {
+      "route": "Tirumala to Alipiri (19 km)",
+      "timings": "Open 03:00 AM to 12:00 Midnight",
+      "minimum_travel_time": "40 mins"
+    }
+  },
+  "by_foot_trekking_footpaths": [
+    {
+      "name": "Alipiri Footpath",
+      "distance": "9 km",
+      "steps": "3,550 stone steps",
+      "duration": "3.5 to 5 hours",
+      "timings": "Open 03:00 AM – 10:00 PM",
+      "luggage_facility": "Free luggage transport available at base point directly to Tirumala hilltop."
+    },
+    {
+      "name": "Srivari Mettu Footpath",
+      "location": "Near Srinivasa Mangapuram",
+      "distance": "2.1 km",
+      "steps": "2,388 steps",
+      "duration": "1.5 to 2.5 hours",
+      "timings": "Open 06:00 AM – 05:00 PM",
+      "luggage_facility": "Free luggage transport available at base point directly to Tirumala hilltop."
+    }
+  ]
+}

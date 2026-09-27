@@ -1,0 +1,338 @@
+[
+  {
+    "name": "Ampro Rest House (2 Big Suites & 1 Small Suite)",
+    "type": "VIP AC Guest House",
+    "location": "SPGH Area, Tirumala Hilltop",
+    "price": "₹750 – ₹1,500/night",
+    "description": "VIP AC guest house featuring 2 big suites and 1 small suite in SPGH zone."
+  },
+  {
+    "name": "Bela Kuteeram A/C (6 Suites)",
+    "type": "VIP AC Guest House",
+    "location": "SPGH Area, Tirumala Hilltop",
+    "price": "₹500/night",
+    "description": "6-suite AC guest house block located in Sri Padmavathi Guest House zone."
+  },
+  {
+    "name": "Gayathri Sadan A/C",
+    "type": "Super VIP AC Guest House",
+    "location": "SPGH Area, Tirumala Hilltop",
+    "price": "₹1,500 – ₹2,500/night",
+    "description": "Premium luxury AC suites for high-level delegates and VIP pilgrims."
+  },
+  {
+    "name": "Hari Sadan Guest House A/C (7 Suites)",
+    "type": "VIP AC Guest House",
+    "location": "SPGH Area, Tirumala Hilltop",
+    "price": "₹1,500/night",
+    "description": "7-suite AC executive guest house in the SPGH complex."
+  },
+  {
+    "name": "Hill View Cottages (Deluxe, Big & Small Suites)",
+    "type": "Deluxe Hill Cottages",
+    "location": "SPGH / Hill View Area, Tirumala Hilltop",
+    "price": "₹50 – ₹1,500/night",
+    "description": "Ranging from ordinary budget cottages (₹50) up to Deluxe Big Suites (₹1,500)."
+  },
+  {
+    "name": "Indira Rest House A/C (4 Suites)",
+    "type": "VIP AC Guest House",
+    "location": "SPGH Area, Tirumala Hilltop",
+    "price": "₹2,000/night",
+    "description": "4-suite AC VIP accommodation located in SPGH area."
+  },
+  {
+    "name": "Jagannadha Bhavan (4 Suites)",
+    "type": "VIP AC Guest House",
+    "location": "SPGH Area, Tirumala Hilltop",
+    "price": "₹2,500 – ₹3,500/night",
+    "description": "High-tier executive AC guest house with 4 premium suites."
+  },
+  {
+    "name": "Karam Nivas A/C",
+    "type": "VIP AC Guest House",
+    "location": "SPGH Area, Tirumala Hilltop",
+    "price": "₹1,500 – ₹2,500/night",
+    "description": "Deluxe AC suites in the SPGH zone."
+  },
+  {
+    "name": "Lakshmi Nivas",
+    "type": "Devasthanam Guest House",
+    "location": "SPGH Area, Tirumala Hilltop",
+    "price": "₹500 – ₹600/night",
+    "description": "Standard non-AC family guest house suites near SPGH."
+  },
+  {
+    "name": "RajyaLakshmi Guest House A/C",
+    "type": "VIP AC Guest House",
+    "location": "SPGH Area, Tirumala Hilltop",
+    "price": "₹1,000 – ₹3,500/night",
+    "description": "Multi-tier AC suites ranging from standard to grand executive suites."
+  },
+  {
+    "name": "SP Guest House (Main)",
+    "type": "VIP AC Guest House",
+    "location": "SPGH Area, Tirumala Hilltop",
+    "price": "₹1,500 – ₹2,500/night",
+    "description": "Main Sri Padmavathi Guest House block featuring VIP suite options."
+  },
+  {
+    "name": "Srinikethan A/C (3 Suites)",
+    "type": "Super VIP Guest House",
+    "location": "SPGH Area, Tirumala Hilltop",
+    "price": "₹6,000/night",
+    "description": "Ultra-deluxe entire guest house / master suite complex."
+  },
+  {
+    "name": "Srinivasa Nilayam A/C",
+    "type": "VIP AC Guest House",
+    "location": "SPGH Area, Tirumala Hilltop",
+    "price": "₹2,500 – ₹3,500/night",
+    "description": "Spacious executive AC guest house suites."
+  },
+  {
+    "name": "Venkata Vijayam Guest House A/C (3 Master & 6 Other Suites)",
+    "type": "VIP AC Guest House",
+    "location": "SPGH Area, Tirumala Hilltop",
+    "price": "₹1,500 – ₹2,500/night",
+    "description": "Features 3 master suites and 6 standard executive AC suites."
+  },
+  {
+    "name": "Vidya Sadan",
+    "type": "VIP AC Guest House",
+    "location": "SPGH Area, Tirumala Hilltop",
+    "price": "₹1,500/night",
+    "description": "Executive AC guest house located in the Sri Padmavathi zone."
+  },
+  {
+    "name": "Sri Venkateswara Guest House (Corner & Standard Suites)",
+    "type": "Devasthanam Rest House",
+    "location": "SVGH Area, Tirumala Hilltop",
+    "price": "₹1,500 – ₹2,000/night",
+    "description": "AC Corner suites and standard suites north of the main temple."
+  },
+  {
+    "name": "New Group Cottages (NGC)",
+    "type": "Devasthanam Cottages",
+    "location": "SVGH Area, Tirumala Hilltop",
+    "price": "₹2,000 – ₹2,500/night",
+    "description": "Spacious family AC cottages in the NGC sector."
+  },
+  {
+    "name": "Venkata Vijayam Guest House (VVGH - SVGH Sector)",
+    "type": "Devasthanam Guest House",
+    "location": "SVGH Area, Tirumala Hilltop",
+    "price": "₹1,500 – ₹2,500/night",
+    "description": "Premium AC rest house suites in the SVGH surrounding sector."
+  },
+  {
+    "name": "High Range Guest House (HRG Cottages)",
+    "type": "Devasthanam Cottages",
+    "location": "SVGH Area, Tirumala Hilltop",
+    "price": "₹750/night",
+    "description": "Standard cottages located in the HRG zone."
+  },
+  {
+    "name": "MBC Cottages (Blocks 20 & 22)",
+    "type": "Budget Cottages",
+    "location": "SVGH Area, Tirumala Hilltop",
+    "price": "₹200/night",
+    "description": "Multi-Storeyed Building budget cottages near the CRO."
+  },
+  {
+    "name": "Narayanagiri Guest House - I (Standard & Corner Suites)",
+    "type": "Devasthanam Rest House",
+    "location": "SVGH Area, Tirumala Hilltop",
+    "price": "₹1,500 – ₹2,000/night",
+    "description": "Multi-storeyed AC guest house complex near the main Queue Complex."
+  },
+  {
+    "name": "Narayanagiri Guest House - II (Standard & Corner Suites)",
+    "type": "Devasthanam Rest House",
+    "location": "SVGH Area, Tirumala Hilltop",
+    "price": "₹1,500 – ₹2,000/night",
+    "description": "Block II AC suites close to the temple and Vaikuntam Queue Complex."
+  },
+  {
+    "name": "Narayanagiri Guest House - III (Standard & Corner Suites)",
+    "type": "Devasthanam Rest House",
+    "location": "SVGH Area, Tirumala Hilltop",
+    "price": "₹1,500 – ₹2,000/night",
+    "description": "Block III AC suites close to the temple and Vaikuntam Queue Complex."
+  },
+  {
+    "name": "Srivari Kuteer Guest House A/C (Suites 1 to 4)",
+    "type": "Devasthanam Guest House",
+    "location": "SVGH Area, Tirumala Hilltop",
+    "price": "₹200 – ₹1,500/night",
+    "description": "Standard non-AC rooms (₹200) to full AC guest suites (₹1,500)."
+  },
+  {
+    "name": "Surapuram Thota Cottages",
+    "type": "Devasthanam Cottages",
+    "location": "SVGH Area, Tirumala Hilltop",
+    "price": "₹1,500/night",
+    "description": "Independent cottages allotment located in Surapuram Thota sector."
+  },
+  {
+    "name": "Alwar Tank Cottages - Single Rooms",
+    "type": "Budget Cottages",
+    "location": "TB Cottages Area, Tirumala Hilltop",
+    "price": "₹50 – ₹100/night",
+    "description": "Single-room non-AC cottages situated around the Alwar Tank area."
+  },
+  {
+    "name": "Alwar Tank Cottage No. 99 (Marriage Allocation)",
+    "type": "Marriage / Function Cottage",
+    "location": "TB Cottages Area, Tirumala Hilltop",
+    "price": "₹200/night",
+    "description": "Special cottage unit allocated for marriage and ceremony rituals."
+  },
+  {
+    "name": "Anjanadri Nagar Cottages",
+    "type": "Budget Cottages",
+    "location": "TB Cottages Area, Tirumala Hilltop",
+    "price": "₹50/night",
+    "description": "Economical non-AC pilgrim cottages on Anjanadri Ring Road."
+  },
+  {
+    "name": "Garudadri Nagar Cottages",
+    "type": "Budget Cottages",
+    "location": "TB Cottages Area, Tirumala Hilltop",
+    "price": "₹50/night",
+    "description": "Economical non-AC pilgrim cottages on Garudadri Ring Road."
+  },
+  {
+    "name": "Hill View Cottages (Ordinary)",
+    "type": "Budget Cottages",
+    "location": "TB Cottages Area, Tirumala Hilltop",
+    "price": "₹50/night",
+    "description": "Ordinary non-AC budget cottages in the Hill View zone."
+  },
+  {
+    "name": "Mangala Bavi Cottages (2 Suites & 4 Cottages)",
+    "type": "Budget Cottages",
+    "location": "TB Cottages Area, Tirumala Hilltop",
+    "price": "₹100 – ₹200/night",
+    "description": "Standard non-AC cottages and suites near Mangala Bavi."
+  },
+  {
+    "name": "Ram Bagicha Guest House - I",
+    "type": "Devasthanam Rest House",
+    "location": "Near CRO, Tirumala Hilltop",
+    "price": "₹100/night",
+    "description": "Block I non-AC rooms located right behind the Central Reception Office."
+  },
+  {
+    "name": "Ram Bagicha Guest House - II",
+    "type": "Devasthanam Rest House",
+    "location": "Near CRO, Tirumala Hilltop",
+    "price": "₹100/night",
+    "description": "Block II non-AC rooms near the CRO and bus terminal."
+  },
+  {
+    "name": "Ram Bagicha Guest House - III",
+    "type": "Devasthanam Rest House",
+    "location": "Near CRO, Tirumala Hilltop",
+    "price": "₹100/night",
+    "description": "Block III non-AC rooms near the CRO and bus terminal."
+  },
+  {
+    "name": "Sanku Mitta Cottages",
+    "type": "Budget Cottages",
+    "location": "TB Cottages Area, Tirumala Hilltop",
+    "price": "₹200/night",
+    "description": "Standard budget cottages; includes 10 dedicated blocks reserved for marriages (₹200)."
+  },
+  {
+    "name": "Seshadri Nagar Cottages",
+    "type": "Budget Cottages",
+    "location": "TB Cottages Area, Tirumala Hilltop",
+    "price": "₹50/night",
+    "description": "Economical non-AC pilgrim cottages on Seshadri Ring Road."
+  },
+  {
+    "name": "TB Cottages (2 Suites, Single Rooms & A/C Blocks)",
+    "type": "Budget & AC Cottages",
+    "location": "TB Cottages Area, Tirumala Hilltop",
+    "price": "₹50 – ₹500/night",
+    "description": "Ranges from single non-AC rooms (₹50) to 2-suite/13 A/C units (₹500)."
+  },
+  {
+    "name": "TB Cottages - Marriage Reserved (5 Cottages)",
+    "type": "Marriage / Function Cottages",
+    "location": "TB Cottages Area, Tirumala Hilltop",
+    "price": "₹200/night",
+    "description": "Dedicated Traveller's Bungalow cottages reserved for wedding rituals."
+  },
+  {
+    "name": "Outside Cottages",
+    "type": "Budget Cottages",
+    "location": "TB Cottages Area, Tirumala Hilltop",
+    "price": "₹100/night",
+    "description": "Peripheral cottages managed under the TB Cottages reception sector."
+  },
+  {
+    "name": "Valley View Cottages (6 Suites)",
+    "type": "Budget Cottages",
+    "location": "TB Cottages Area, Tirumala Hilltop",
+    "price": "₹100 – ₹200/night",
+    "description": "Standard non-AC family suites offering scenic views."
+  },
+  {
+    "name": "Varahaswamy Rest House (VSRH)",
+    "type": "Devasthanam Rest House",
+    "location": "Near North Mada Street, Tirumala Hilltop",
+    "price": "₹100 – ₹600/night",
+    "description": "Rest house adjacent to Swami Pushkarini tank and Varahaswamy Temple."
+  },
+  {
+    "name": "Pilgrim Amenities Complexes (PAC 1, 2, 3 & 4)",
+    "type": "Free Transit Dormitories",
+    "location": "Tirumala Hilltop",
+    "price": "100% Free",
+    "description": "Massive open halls with free lockers, 24/7 hot water, and canteens."
+  },
+  {
+    "name": "Vishnu Nivasam Complex (Rooms, Suites & Dormitory)",
+    "type": "TTD City Transit Complex",
+    "location": "Opp. Tirupati Railway Station, Tirupati",
+    "price": "Non-AC (₹300), AC (₹800), AC Suites (₹1,300), Dormitory (₹100)",
+    "description": "Massive transit facility directly opposite Tirupati Central Railway Station."
+  },
+  {
+    "name": "Srinivasam Complex",
+    "type": "TTD City Transit Complex",
+    "location": "Opp. APSRTC Bus Station, Tirupati",
+    "price": "Non-AC (₹200), AC (₹400), AC Deluxe (₹600)",
+    "description": "Transit complex opposite Tirupati Central Bus Terminal."
+  },
+  {
+    "name": "Madhavam Guest House Complex",
+    "type": "TTD City Transit Complex",
+    "location": "Adjacent to Srinivasam, Tirupati",
+    "price": "AC Ordinary Suites (₹800), AC Deluxe Suites (₹1,000)",
+    "description": "Deluxe AC suite complex in Tirupati city."
+  },
+  {
+    "name": "Sri Venkateswara Dharmasala & Choultries (1st, 2nd NC & 3rd NC)",
+    "type": "City Budget Choultries",
+    "location": "Near Railway Station, Tirupati",
+    "price": "Free / ₹50 – ₹100/night",
+    "description": "Historical choultries (Govindaraja / Kodandarama) with free locker facilities."
+  },
+  {
+    "name": "Sri Padmavathi Nilayam",
+    "type": "TTD Pilgrim Amenities Complex",
+    "location": "Tiruchanur Road, Tirupati",
+    "price": "₹200 – ₹800/night",
+    "description": "Large pilgrim complex offering non-AC and AC rooms near Tiruchanur."
+  },
+  {
+    "name": "Tholappa Gardens",
+    "type": "Temple Guest House",
+    "location": "Tiruchanur (Near Padmavathi Ammavari Temple)",
+    "price": "₹100 – ₹300/night",
+    "description": "TTD rest house for pilgrims visiting the Sri Padmavathi Ammavari Temple."
+  }
+]

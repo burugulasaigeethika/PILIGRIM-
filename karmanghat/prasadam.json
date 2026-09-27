@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Pulihora (200g)",
+    "price": "₹20",
+    "description": "Spicy tamarind rice offering."
+  },
+  {
+    "name": "Laddu (80g)",
+    "price": "₹20",
+    "description": "Traditional sweet laddu."
+  },
+  {
+    "name": "Vada (70g)",
+    "price": "₹20",
+    "description": "Savory vada offering."
+  },
+  {
+    "name": "Bellam Laddu",
+    "price": "₹30",
+    "description": "Jaggery sweet laddu."
+  },
+  {
+    "name": "Ravva Kesari (100g)",
+    "price": "₹20",
+    "description": "Semolina sweet dessert."
+  },
+  {
+    "name": "Millet Payasam",
+    "price": "₹30",
+    "description": "Healthy millet sweet kheer."
+  },
+  {
+    "name": "Millet Pongali",
+    "price": "₹30",
+    "description": "Healthy millet savory pongal."
+  },
+  {
+    "name": "Millet Daddojanam",
+    "price": "₹30",
+    "description": "Healthy millet curd rice."
+  }
+]

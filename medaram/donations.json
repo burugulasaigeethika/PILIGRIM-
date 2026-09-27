@@ -1,0 +1,54 @@
+{
+  "annadanam": {
+    "booking_url": "https://medaramjathara.com/",
+    "payment_method": "Online Payment Gateway / Direct Bank Transfer to Executive Officer, Sri Sammakka Saralamma Devasthanam Account / Official Canara Bank QR Code Scanner at Temple Premises",
+    "required_fields": [
+      "Name *",
+      "Gothram / Tribe / Clan *",
+      "Email",
+      "Gender *",
+      "Address *",
+      "Mobile *",
+      "Purpose (Annadanam / Temple Development / Festival Corpus)",
+      "Amount *"
+    ],
+    "categories": [
+      {
+        "name": "Chief Patron / Maharaja Poshakalu",
+        "price": "₹10,116 & above"
+      },
+      {
+        "name": "Poshakalu",
+        "price": "₹5,116"
+      },
+      {
+        "name": "Sadharana Sabhyulu",
+        "price": "₹1,116"
+      },
+      {
+        "name": "One-Day Annadanam Contribution",
+        "price": "₹500"
+      }
+    ]
+  },
+  "e_hundi": {
+    "booking_url": "https://medaramjathara.com/",
+    "payment_method": "Digital Hundi via Official Canara Bank QR Code Scanners deployed across Gaddelu premises and online payment portal",
+    "required_fields": [
+      "Name *",
+      "Gothram / Tribe / Family Name",
+      "Mobile *",
+      "Email",
+      "Amount *"
+    ],
+    "accepted_modes": [
+      "UPI (Google Pay, PhonePe, Paytm)",
+      "Net Banking",
+      "Debit / Credit Cards"
+    ]
+  },
+  "refund_policy": [
+    "Donations made towards Annadanam, E-Hundi, or Temple Development Corpus are non-refundable once successfully processed.",
+    "In the event of duplicate transactions caused by network glitches, donors can submit proof of double deduction (Bank Statement & Transaction Ref ID) to the Executive Officer Desk (collector.mulugu@gmail.com) for manual reconciliation."
+  ]
+}

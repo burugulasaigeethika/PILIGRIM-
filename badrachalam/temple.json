@@ -1,0 +1,54 @@
+{
+  "temple_id": "bhadradri_bhadrachalam",
+  "name": "Sree Seetha Ramachandra Swamy Devasthanam",
+  "alternate_names": [
+    "Bhadrachalam Temple",
+    "Dakshina Ayodhya",
+    "Southern Ayodhya"
+  ],
+  "state": "Telangana",
+  "district": "Bhadradri Kothagudem district",
+  "village": "Bhadrachalam",
+  "address": "Bhadrachalam, Bhadradri Kothagudem District, Telangana - 507111",
+  "river": "River Godavari (Dakshina Vahini)",
+  "main_deity": "Vaikunta Rama (Chaturbhuja Rama)",
+  "other_deities": [
+    "Goddess Seetha Devi",
+    "Lakshmana"
+  ],
+  "description": "The Sree Seetha Ramachandra Swamy Devasthanam at Bhadrachalam, situated on the banks of the River Godavari in the Bhadradri Kothagudem district of Telangana, is revered as a premier Vaishnavite shrine in India. Popularly known as \"Dakshina Ayodhya\" (Southern Ayodhya), it is a historic center of Rama-worship, spiritual Carnatic music, and ancient Vedic traditions.\n\nVaikunta Chaturbhuja Rama (Unique Deity Form):\nBhadrachalam is globally unique because Lord Rama is worshipped here in the form of Vaikunta Rama or Chaturbhuja Rama (four-armed Rama). Unlike standard representations where Lord Rama has two arms holding a bow and arrow, the Swayambhu deity here holds a bow (Dhanus) and arrow in two hands, and Shankha (conch) and Chakra (discus) in the other two—emblems of Lord Vishnu. Goddess Seetha Devi is seated on His left lap, and His brother Lakshmana stands to His right. This represents the Lord in His transcendent Vaikunta state while simultaneously maintaining His mortal incarnation as Rama.\n\nThe Holy Godavari River:\nA profound spiritual feature of Bhadrachalam is the Godavari River, which flows as \"Dakshina Vahini\" (southward flow) at this specific location. Taking a holy dip in the Godavari, especially during Pushkarams or auspicious Hindu months, is believed to cleanse sins and bestow divine merit.",
+  "history": "Pokala Dhammakka: A tribal woman who had a dream where Lord Rama revealed the location of the Swayambhu idols hidden inside an anthill. She cleared the anthill using Godavari water and began performing basic daily bhajan and worship in a simple thatched structure.\n\nBhakta Ramadasu (Kancharla Gopanna): A 17th-century Tehsildar of Bhadrachalam under the Qutb Shahi dynasty. He utilized six lakh rupees of government revenue to construct the grand stone temple. Consequently, he was imprisoned in Golconda Fort for 12 years by Sultan Abul Hasan Qutb Shah (Tanishah). While in prison, he composed the immortal Ramadasu Keertanalu (devotional Carnatic songs). According to historical faith, Lord Rama and Lakshmana disguised themselves as royal servants (Ramoji and Laxmoji) and repaid the Sultan six lakh gold coins (Ramatankas) to secure Ramadasu's release.",
+  "mythology": "According to the Skanda Purana, the hillock upon which the temple stands is named after Bhadra Maharshi, the son of Mount Meru and Menaka. Bhadra Maharshi performed intense penance on the banks of the Godavari to receive the blessings of Lord Rama. Pleased with his devotion, Lord Vishnu manifested in His Vaikunta Rama form. Fulfilling the sage's wish, the Lord permanently resided on the hill, turning Bhadra Maharshi's body into the hillock (Bhadrachalam) that supports the temple.",
+  "sub_temples": [
+    {
+      "name": "Bhadra Temple",
+      "location": "Foothill shrine",
+      "significance": "Shrine located at the foothill dedicated to Bhadra Maharshi where Abhishekam is performed daily."
+    }
+  ],
+  "architecture": {
+    "style": "Blend of Dravidian styles, built primarily during the 17th century by Bhakta Ramadasu, incorporating features from the Vijayanagara and Chola traditions.",
+    "highlights": [
+      {
+        "name": "The Rajagopuram",
+        "description": "Reaching towards the sky, the main gopuram faces the Godavari River, acting as the main gateway to the temple. Its tiers are adorned with elaborate carvings depicting scenes from the Ramayana."
+      },
+      {
+        "name": "Inner Sanctum (Garbhalayam)",
+        "description": "The sanctum sanctorum houses the self-manifested icons of Vaikunta Rama (four-armed, seated in padmasana), Seetha Devi (seated on His left lap), and Lakshmana (standing to His right)."
+      },
+      {
+        "name": "The Sudarsana Chakra",
+        "description": "A golden Sudarsana Chakra sits at the crest of the temple's main Vimana tower. Legend states that Bhakta Ramadasu retrieved this sacred eight-faced disc from the Godavari River following a dream instruction from Lord Rama."
+      },
+      {
+        "name": "Ramadasu Dhyana Mandiram",
+        "description": "A dedicated meditation hall inside the temple complex that showcases the life of Kancharla Gopanna, including representations of the historical Ramatanka gold coins."
+      },
+      {
+        "name": "Mithila Stadium (Kalyana Mandapam)",
+        "description": "A large open-air pavilion located near the temple, specifically designed to accommodate devotees during the annual Sri Rama Navami Kalyanotsavam."
+      }
+    ]
+  }
+}

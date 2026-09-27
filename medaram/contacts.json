@@ -1,0 +1,90 @@
+{
+  "address": "Executive Officer / Special Officer, Sri Sammakka Saralamma Devasthanam, Medaram Village, SS Tadvai Mandal, Mulugu District, Telangana - 506344",
+  "phones": [
+    "08715-223257",
+    "08717-281247",
+    "08715-222047"
+  ],
+  "emails": [
+    "collector.mulugu@gmail.com",
+    "subcollector.rdo@gmail.com",
+    "districteerwssjayashankar@gmail.com"
+  ],
+  "website": "https://medaramjathara.com/",
+  "google_map": "https://www.google.com/maps/search/?api=1&query=Sammakka+Saralamma+Gaddelu+Medaram",
+  "google_embed_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.123!2d79.9463!3d18.2259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a33400000000000%3A0x123456789abcdef!2sSammakka+Saralamma+Gaddelu+Medaram!5e0!3m2!1sen!2sin!4v1528791090794",
+  "pincode": "506344",
+  "directory": {
+    "Control Room Helpline 1": "08715-223257",
+    "Control Room Helpline 2": "08717-281247",
+    "Other Info / Secondary Line": "08717-281247",
+    "Mulugu District Collectorate Office": "08715-222047",
+    "Mulugu District SP Office": "08715-222047",
+    "Tadvai Police Station (SHO)": "+91 87172 81247 / +91 94910 68909",
+    "Forest Department Tents Contact": "+91 95531 42346",
+    "TSRTC Hanamkonda Enquiry": "+91 99592 26148",
+    "TSRTC MGBS Hyderabad Enquiry": "+91 99592 26160"
+  },
+  "emergency_services": {
+    "hospitals": [
+      {
+        "name": "50-Bed Central Jathara Hospital",
+        "type": "Government",
+        "address": "TTD Kalyana Mandapam (Sri Sammakka Saralamma Vidyashala), Medaram",
+        "distance": "0 km",
+        "contact_number": "108 / Integrated Command Control Desk",
+        "working_hours": "24/7 operational during Jathara"
+      },
+      {
+        "name": "CHC Eturnagaram",
+        "type": "Government",
+        "address": "Eturnagaram",
+        "distance": "~25 km",
+        "contact_number": "",
+        "working_hours": "24/7 Emergency Service"
+      },
+      {
+        "name": "Mulugu Area Hospital",
+        "type": "Government",
+        "address": "Mulugu",
+        "distance": "~50 km",
+        "contact_number": "08715-222055 / +91 94400 78950",
+        "working_hours": "24/7 Emergency Service"
+      }
+    ],
+    "ambulance_services": [
+      {
+        "name": "Universal Emergency Response",
+        "contact": "108",
+        "description": "Universal emergency ambulance service in Telangana. 14 peripheral medical outposts with 100+ ambulances deployed across holding camps during Jathara."
+      }
+    ],
+    "police_and_security": [
+      {
+        "name": "Medaram Jathara Control Room I",
+        "address": "Medaram Central Command & Control Center",
+        "contact_numbers": "08715-223257"
+      },
+      {
+        "name": "Medaram Jathara Control Room II",
+        "address": "Medaram Central Command & Control Center",
+        "contact_numbers": "08717-281247"
+      },
+      {
+        "name": "Tadvai Police Station",
+        "address": "Tadvai",
+        "contact_numbers": "+91 87172 81247 / +91 94910 68909"
+      },
+      {
+        "name": "Mulugu District SP Office",
+        "address": "Mulugu",
+        "contact_numbers": "08715-222047"
+      },
+      {
+        "name": "State Emergency Services",
+        "address": "Telangana State Police & Fire Emergency Services",
+        "contact_numbers": "Police: 100, Fire: 101, Disaster Line: 112"
+      }
+    ]
+  }
+}

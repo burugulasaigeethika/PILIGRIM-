@@ -1,0 +1,30 @@
+[
+  {
+    "name": "TG Tourism Haritha Hotel Kaleshwaram",
+    "type": "State Tourism Hotel",
+    "distance": "~1 km",
+    "price": "₹1200 - 2500",
+    "description": "Operated by Telangana Tourism, located on Main Road, offering A/C & non-A/C rooms, restaurant, and ample parking. Phone: +91 70364 51451 / Toll-Free: 1800-425-46464."
+  },
+  {
+    "name": "Devasthanam Guest Houses & Choultries",
+    "type": "Temple Rest House",
+    "distance": "~ 450 m",
+    "price": "₹300 - 1200",
+    "description": "Maintained directly by the temple administration, offering affordable budget rooms and dormitory halls."
+  },
+  {
+    "name": "Saraswathi Choultry Kaleshwaram",
+    "type": "Temple Rest House",
+    "distance": "Walking distance",
+    "price": "₹200 - 500",
+    "description": "Located within walking distance from the main temple, offering clean basic accommodation for pilgrims."
+  },
+  {
+    "name": "RSR Lodge & Hotel",
+    "type": "Private Lodge",
+    "distance": "~ 1.1 km",
+    "price": "₹500 - 1500",
+    "description": "Private lodge located in Kaleshwaram village within short distance of the temple."
+  }
+]

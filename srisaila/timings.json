@@ -1,0 +1,36 @@
+{
+  "temple_id": "srisailam_srisaila_devasthanam",
+  "opening_time": "04:30 AM",
+  "closing_time": "10:00 PM",
+  "afternoon_break": {
+    "from": "03:30 PM",
+    "to": "04:30 PM"
+  },
+  "daily_schedule": [
+    {
+      "time_slot": "Daily Morning (04:30 AM to 05:15 AM)",
+      "ritual_name": "Mangala Harathi & Suprabhata Seva",
+      "details_and_significance": "The sacred morning awakening prayers performed to the primary Swayambhu Lingam of Lord Mallikarjuna Swamy. Mangalavadyams begin at 4:30 AM followed by Suprabhatam at 5:00 AM."
+    },
+    {
+      "time_slot": "Daily Slots (Morning & Evening Windows)",
+      "ritual_name": "Nija Rupa Darshanam & Garbhagriha Sparsha Abhishekam",
+      "details_and_significance": "A globally unique feature where common pilgrims holding valid tickets are permitted to enter the core sanctum to physically touch the Jyotirlingam and perform direct water abhishekam."
+    },
+    {
+      "time_slot": "Daily (06:00 AM - 01:00 PM & 06:30 PM - 09:00 PM)",
+      "ritual_name": "Sri Bhramaramba Ammavaru Kumkumarchana",
+      "details_and_significance": "Sacred vermilion prayers offered in morning and evening slots at the altar of the Divine Mother, which is historically revered as one of the 18 premier Ashta Dasa Shakti Peethas."
+    },
+    {
+      "time_slot": "Annual Ashvin Masam (September/October)",
+      "ritual_name": "Srisailam Sharan Navaratri Utsavams",
+      "details_and_significance": "Grand multi-day celebration featuring distinct daily Alankarams and grand vehicle processions (Vahana Sevas) for Goddess Bhramaramba Devi."
+    },
+    {
+      "time_slot": "Maha Shivaratri Brahmotsavam",
+      "ritual_name": "Pagallanka, Lingodbhava Kalyanam & Kalyanotsavam",
+      "details_and_significance": "Utsavas completed after washing tridents in Mallika Gundam water body. Note: During Maha Shivaratri, general timings are extended."
+    }
+  ]
+}

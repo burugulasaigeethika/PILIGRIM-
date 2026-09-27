@@ -1,0 +1,35 @@
+{
+  "bus_routes": [
+    "From Hyderabad via Siddipet",
+    "From Khammam via Warangal & Karimangar",
+    "From Kothagudem via Warangal & Karimangar",
+    "From Mahabubabad via Warangal & Karimangar",
+    "From Asifabad via Karimangar",
+    "From Karimangar",
+    "From Nizamabad via Sircilla",
+    "From Kamareddy via Sircilla",
+    "From Yadagirigutta via Siddipet",
+    "From Warangal via Karimangar",
+    "From Narsampet via Karimangar",
+    "From Parkal via Karimnagar",
+    "From Jagitial",
+    "From Korutla",
+    "From Basar via Nizamabad & Kamareddy",
+    "From Manthani via Peddapelly & Karimangar",
+    "From Godavarikhani via Peddapelly & Karimangar"
+  ],
+  "railway": {
+    "nearest_station": "Karimnagar Railway Station",
+    "distance": "approximately 36 km",
+    "other_stations": [
+      {
+        "station": "Kamareddy Railway Station",
+        "distance": "approximately 68 km away"
+      }
+    ]
+  },
+  "airport": {
+    "name": "Rajiv Gandhi International Airport in Hyderabad",
+    "distance": "approximately 160 km"
+  }
+}

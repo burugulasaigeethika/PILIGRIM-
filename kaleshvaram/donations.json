@@ -1,0 +1,29 @@
+{
+  "annadanam": {
+    "booking_url": "Offline Counter (accepted directly at the Temple Executive Office counter)",
+    "required_fields": [
+      "Name *",
+      "Gothram *",
+      "Email",
+      "Gender *",
+      "Address *",
+      "Mobile *",
+      "Purpose",
+      "Amount *"
+    ]
+  },
+  "e_donations": {
+    "booking_url": "Offline Counter (accepted directly at the Temple Executive Office counter)",
+    "required_fields": [
+      "Name *",
+      "Gothram *",
+      "Email",
+      "Gender *",
+      "Address *",
+      "Mobile *",
+      "Purpose",
+      "Amount *"
+    ]
+  },
+  "refund_policy": []
+}

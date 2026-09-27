@@ -1,0 +1,10 @@
+{
+  "rag_pipeline_is_100_percent_local": true,
+  "runtime_llm": "Local Ollama (qwen2.5:1.5b)",
+  "runtime_vectordb": "Local Qdrant (embedded / local persistence)",
+  "runtime_sparse_bm25": "Local BM25 (offline pickle/json)",
+  "runtime_embeddings": "Local sentence-transformers",
+  "runtime_reranker": "Local Cross-Encoder",
+  "violations_found_in_rag": [],
+  "files_audited_count": 29
+}

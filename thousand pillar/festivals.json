@@ -1,0 +1,32 @@
+[
+  {
+    "festival_name": "Maha Shivaratri",
+    "description": "The most important festival celebrated with special Abhishekam, pujas and night-long prayers.",
+    "month": "February or March",
+    "importance": "Most important festival"
+  },
+  {
+    "festival_name": "Karthika Masam",
+    "description": "A holy month during which devotees perform Deepa Aradhana and special Shiva worship.",
+    "month": "October or November",
+    "importance": "Holy month of Shiva worship"
+  },
+  {
+    "festival_name": "Ugadi",
+    "description": "Telugu New Year celebrated with special prayers.",
+    "month": "Chaitra (March/April)",
+    "importance": "Telugu New Year"
+  },
+  {
+    "festival_name": "Bathukamma & Dasara Sharan Navaratri",
+    "description": "The historic temple grounds serve as a major central hub for the state festival of Bathukamma. Thousands of local women gather in traditional attire around the temple steps to arrange floral stacks and offer prayers.",
+    "month": "Ashvin Masam (September/October)",
+    "importance": "The most prominent socio-cultural festival celebrated at the temple site."
+  },
+  {
+    "festival_name": "Kakatiya Festival (Utsavalu)",
+    "description": "Organized by the tourism department to showcase the architectural marvels of the Kakatiya dynasty. Features grand classical dance performances (such as Perini Sivatandavam) illuminated against the thousand pillars.",
+    "month": "Dynamic / Government Scheduled",
+    "importance": "Official heritage and tourism festival celebrating the temple's architectural lineage."
+  }
+]

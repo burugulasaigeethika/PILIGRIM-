@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Hotel Aoorva",
+    "type": "Pure Vegetarian Restaurant",
+    "distance": "550 m",
+    "cost": "₹300–500 for two",
+    "speciality": "Located a mere 200 metres from the main temple gate along the Nandi Temple Line. A no-nonsense, casual vegetarian joint heavily frequented by pilgrims for its soft idlis, hot vadas, parottas, and fresh tea."
+  },
+  {
+    "name": "Hotel Sai Balaji",
+    "type": "Pure Vegetarian Restaurant",
+    "distance": "550 m",
+    "cost": "₹200–400 for two",
+    "speciality": "A classic, high-traffic local budget spot situated centrally near the main Sri Mallikarjuna Temple. Highly preferred for quick-service, inexpensive South Indian breakfast plates featuring fresh pongal, puri, and spicy chutneys."
+  },
+  {
+    "name": "Trishul Family Restaurant",
+    "type": "Pure Vegetarian Restaurant",
+    "distance": "700 m",
+    "cost": "₹500–800 for two",
+    "speciality": "Located right inside the Mallikarjuna Sadan Complex near the CRO office. Known for its fast-paced, high-volume environment and simple market ambiance, it is a reliable choice for fresh tandoori rotis, curries, and value-for-money South Indian thalis."
+  },
+  {
+    "name": "Hotel Sahasra",
+    "type": "Pure Vegetarian Restaurant",
+    "distance": "1.2 km",
+    "cost": "₹200–400 for two",
+    "speciality": "A standard, low-budget local hub within short walking distance from the main temple. Offers minimal wait times and serves a quick, basic mix of North Indian, South Indian, and street-style Chinese fast-food items."
+  },
+  {
+    "name": "Apple Family Restaurant",
+    "type": "Multi-Cuisine (Veg & Non-Veg)",
+    "distance": "9.3 km",
+    "cost": "₹350–600 for two",
+    "speciality": "A relaxed roadside highway dhaba located along Srisailam Road near Ring Park in Sundipenta. It features simple, no-frills interiors where local chefs cook spicy, authentic Andhra-style non-veg curries and Rayalaseema specialty dishes."
+  },
+  {
+    "name": "Adithya Garden Restaurant",
+    "type": "Multi-Cuisine (Veg & Non-Veg)",
+    "distance": "10.2 km",
+    "cost": "₹400–700 for two",
+    "speciality": "Located near the Government Degree College on Hyderabad Road in Sundipenta. An economical roadside stop offering indoor and outdoor seating, locally famous as a great place for rugged river fish fry, chicken 65, and chicken biryanis."
+  }
+]

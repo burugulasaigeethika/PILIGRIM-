@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Sri Sai Sathish Lodge",
+    "type": "Budget Highway Lodge",
+    "distance": "350 m ",
+    "best_for": "Quick transit and bus access"
+  },
+  {
+    "name": "Shilpa Lodge",
+    "type": "Budget Town Lodge",
+    "distance": "1.5 km",
+    "best_for": "Budget stay near the bus stand"
+  },
+  {
+    "name": "Nandini Lodge",
+    "type": "Budget Town Lodge",
+    "distance": "1.4 km",
+    "best_for": "Short transit stays"
+  },
+  {
+    "name": "Hotel Thousand Pillars",
+    "type": "3-Star Hotel",
+    "distance": "2.4 km",
+    "best_for": "Families and comfortable stay"
+  },
+  {
+    "name": "Venkateshwara Mitra Residency",
+    "type": "3-Star Hotel",
+    "distance": "3.1 km",
+    "best_for": "Parking and comfortable stay"
+  },
+  {
+    "name": "Hotel O Savoy Grand",
+    "type": "Premium OYO Room",
+    "distance": "2.1 km",
+    "best_for": "Modern rooms and Wi-Fi"
+  },
+  {
+    "name": "Aditya Lodge",
+    "type": "Traditional Station Lodge",
+    "distance": "~6.0 km",
+    "best_for": "Railway-station transit"
+  },
+  {
+    "name": "Vishnu Lodge",
+    "type": "Traditional Station Lodge",
+    "distance": "~5.3 km",
+    "best_for": "Budget stay near the railway station"
+  },
+  {
+    "name": "Vijaya Lodge",
+    "type": "Traditional Station Lodge",
+    "distance": "~5.5 km",
+    "best_for": "Budget railway-area stay"
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "official_portal": "https://ttdevasthanams.ap.gov.in/home/dashboard",
+  "charitable_trusts": [
+    {
+      "name": "Sri Venkateswara Nitya Annadanam Trust",
+      "description": "Free meals for over 100,000 pilgrims daily"
+    },
+    {
+      "name": "Sri Venkateswara Pranadanam Trust",
+      "description": "Free super-specialty medical treatments and surgeries"
+    },
+    {
+      "name": "Sri Venkateswara Gosamrakshana Trust",
+      "description": "Protection of indigenous cows"
+    },
+    {
+      "name": "Sri Venkateswara Vedaparirakshana Trust",
+      "description": "Preservation of Vedic education"
+    },
+    {
+      "name": "Srivari Heritage & Temple Protection Trusts",
+      "description": "Preservation of ancient temples and cultural heritage"
+    }
+  ],
+  "e_hundi": {
+    "description": "Direct electronic hundi offerings via UPI, Net Banking, and Cards.",
+    "booking_url": "https://ttdevasthanams.ap.gov.in/home/dashboard"
+  },
+  "tax_exemption": "All eligible donations qualify for 80G Indian Income Tax exemption.",
+  "caution_deposit_refunds": {
+    "details": "Automatically refunded to source bank account within 7 to 10 days after room vacation.",
+    "email": "cd.refunddesk@tirumala.org"
+  }
+}

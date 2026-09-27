@@ -1,0 +1,5291 @@
+{
+  "metadata": {
+    "random_seed": 42,
+    "total_temples": 20,
+    "total_questions": 252,
+    "answerable_questions": 238,
+    "unanswerable_questions": 14,
+    "category_distribution": {
+      "basic_factual": 100,
+      "service": 39,
+      "festivals": 20,
+      "rules": 19,
+      "travel": 20,
+      "multi_field": 20,
+      "multi_hop": 20,
+      "negative_unanswerable": 14
+    },
+    "difficulty_distribution": {
+      "easy": 119,
+      "medium": 93,
+      "hard": 40
+    },
+    "temple_question_counts": {
+      "ahobilam": 13,
+      "badrachalam": 13,
+      "balkampet": 12,
+      "basara": 13,
+      "birla mandir": 13,
+      "chilkur": 13,
+      "dharmapuri": 13,
+      "edupayal": 13,
+      "jogulamba(new)": 12,
+      "kaleshvaram": 12,
+      "karmanghat": 13,
+      "medaram": 13,
+      "ramappa": 12,
+      "srisaila": 12,
+      "thousand pillar": 13,
+      "ttd": 11,
+      "ujjaini": 13,
+      "veera satyanarayana": 12,
+      "vemulavada": 13,
+      "yadadri": 13
+    },
+    "temple_metadata": [
+      {
+        "temple_id": "ahobilam",
+        "temple_name": "Ahobilam",
+        "dataset_directory": "d:\\PiligrimAI -c\\ahobilam",
+        "total_json_files": 21,
+        "available_categories": [
+          "accommodation",
+          "contacts",
+          "crowd",
+          "donations",
+          "elderly_ppl",
+          "emergency_nos",
+          "facilities",
+          "faq",
+          "festivals",
+          "gallery",
+          "maps",
+          "nearby_attractions",
+          "prasadam",
+          "restaurants",
+          "river_bank",
+          "rules",
+          "sevas",
+          "sub_temples",
+          "temple",
+          "timings",
+          "travel"
+        ]
+      },
+      {
+        "temple_id": "badrachalam",
+        "temple_name": "Badrachalam",
+        "dataset_directory": "d:\\PiligrimAI -c\\badrachalam",
+        "total_json_files": 21,
+        "available_categories": [
+          "accommodation",
+          "contacts",
+          "crowd",
+          "donations",
+          "elderly_ppl",
+          "emergency_nos",
+          "facilities",
+          "faq",
+          "festivals",
+          "gallery",
+          "maps",
+          "nearby_attractions",
+          "prasadam",
+          "restaurants",
+          "river_bank",
+          "rules",
+          "sevas",
+          "sub_temples",
+          "temple",
+          "timings",
+          "travel"
+        ]
+      },
+      {
+        "temple_id": "balkampet",
+        "temple_name": "Balkampet",
+        "dataset_directory": "d:\\PiligrimAI -c\\balkampet",
+        "total_json_files": 20,
+        "available_categories": [
+          "accommodation",
+          "contacts",
+          "crowd",
+          "elderly_ppl",
+          "emergency_nos",
+          "facilities",
+          "faq",
+          "festivals",
+          "gallery",
+          "maps",
+          "nearby_attractions",
+          "prasadam",
+          "restaurants",
+          "river_bank",
+          "rules",
+          "sevas",
+          "sub_temples",
+          "temple",
+          "timings",
+          "travel"
+        ]
+      },
+      {
+        "temple_id": "basara",
+        "temple_name": "Basara",
+        "dataset_directory": "d:\\PiligrimAI -c\\basara",
+        "total_json_files": 21,
+        "available_categories": [
+          "accommodation",
+          "contacts",
+          "crowd",
+          "donations",
+          "elderly_ppl",
+          "emergency_nos",
+          "facilities",
+          "faq",
+          "festivals",
+          "gallery",
+          "maps",
+          "nearby_attractions",
+          "prasadam",
+          "restaurants",
+          "river_bank",
+          "rules",
+          "sevas",
+          "sub_temples",
+          "temple",
+          "timings",
+          "travel"
+        ]
+      },
+      {
+        "temple_id": "birla mandir",
+        "temple_name": "Birla Mandir",
+        "dataset_directory": "d:\\PiligrimAI -c\\birla mandir",
+        "total_json_files": 21,
+        "available_categories": [
+          "accommodation",
+          "contacts",
+          "crowd",
+          "donations",
+          "elderly_ppl",
+          "emergency_nos",
+          "facilities",
+          "faq",
+          "festivals",
+          "gallery",
+          "maps",
+          "nearby_attractions",
+          "prasadam",
+          "restaurants",
+          "river_bank",
+          "rules",
+          "sevas",
+          "sub_temples",
+          "temple",
+          "timings",
+          "travel"
+        ]
+      },
+      {
+        "temple_id": "chilkur",
+        "temple_name": "Chilkur",
+        "dataset_directory": "d:\\PiligrimAI -c\\chilkur",
+        "total_json_files": 21,
+        "available_categories": [
+          "accommodation",
+          "contacts",
+          "crowd",
+          "donations",
+          "elderly_ppl",
+          "emergency_nos",
+          "facilities",
+          "faq",
+          "festivals",
+          "gallery",
+          "maps",
+          "nearby_attractions",
+          "prasadam",
+          "restaurants",
+          "river_bank",
+          "rules",
+          "sevas",
+          "sub_temples",
+          "temple",
+          "timings",
+          "travel"
+        ]
+      },
+      {
+        "temple_id": "dharmapuri",
+        "temple_name": "Dharmapuri",
+        "dataset_directory": "d:\\PiligrimAI -c\\dharmapuri",
+        "total_json_files": 20,
+        "available_categories": [
+          "accommodation",
+          "contacts",
+          "crowd",
+          "elderly_ppl",
+          "emergency_nos",
+          "facilities",
+          "faq",
+          "festivals",
+          "gallery",
+          "maps",
+          "nearby_attractions",
+          "prasadam",
+          "restaurants",
+          "river_bank",
+          "rules",
+          "sevas",
+          "sub_temples",
+          "temple",
+          "timings",
+          "travel"
+        ]
+      },
+      {
+        "temple_id": "edupayal",
+        "temple_name": "Edupayal",
+        "dataset_directory": "d:\\PiligrimAI -c\\edupayal",
+        "total_json_files": 21,
+        "available_categories": [
+          "accommodation",
+          "contacts",
+          "crowd",
+          "donations",
+          "elderly_ppl",
+          "emergency_nos",
+          "facilities",
+          "faq",
+          "festivals",
+          "gallery",
+          "maps",
+          "nearby_attractions",
+          "prasadam",
+          "restaurants",
+          "river_bank",
+          "rules",
+          "sevas",
+          "sub_temples",
+          "temple",
+          "timings",
+          "travel"
+        ]
+      },
+      {
+        "temple_id": "jogulamba(new)",
+        "temple_name": "Jogulamba(New)",
+        "dataset_directory": "d:\\PiligrimAI -c\\jogulamba(new)",
+        "total_json_files": 21,
+        "available_categories": [
+          "accommodation",
+          "contacts",
+          "crowd",
+          "donations",
+          "elderly_ppl",
+          "emergency_nos",
+          "facilities",
+          "faq",
+          "festivals",
+          "gallery",
+          "maps",
+          "nearby_attractions",
+          "prasadam",
+          "restaurants",
+          "river_bank",
+          "rules",
+          "sevas",
+          "sub_temples",
+          "temple",
+          "timings",
+          "travel"
+        ]
+      },
+      {
+        "temple_id": "kaleshvaram",
+        "temple_name": "Kaleshvaram",
+        "dataset_directory": "d:\\PiligrimAI -c\\kaleshvaram",
+        "total_json_files": 21,
+        "available_categories": [
+          "accommodation",
+          "contacts",
+          "crowd",
+          "donations",
+          "elderly_ppl",
+          "emergency_nos",
+          "facilities",
+          "faq",
+          "festivals",
+          "gallery",
+          "maps",
+          "nearby_attractions",
+          "prasadam",
+          "restaurants",
+          "river_bank",
+          "rules",
+          "sevas",
+          "sub_temples",
+          "temple",
+          "timings",
+          "travel"
+        ]
+      },
+      {
+        "temple_id": "karmanghat",
+        "temple_name": "Karmanghat",
+        "dataset_directory": "d:\\PiligrimAI -c\\karmanghat",
+        "total_json_files": 21,
+        "available_categories": [
+          "accommodation",
+          "contacts",
+          "crowd",
+          "donations",
+          "elderly_ppl",
+          "emergency_nos",
+          "facilities",
+          "faq",
+          "festivals",
+          "gallery",
+          "maps",
+          "nearby_attractions",
+          "prasadam",
+          "restaurants",
+          "river_bank",
+          "rules",
+          "sevas",
+          "sub_temples",
+          "temple",
+          "timings",
+          "travel"
+        ]
+      },
+      {
+        "temple_id": "medaram",
+        "temple_name": "Medaram",
+        "dataset_directory": "d:\\PiligrimAI -c\\medaram",
+        "total_json_files": 21,
+        "available_categories": [
+          "accommodation",
+          "contacts",
+          "crowd",
+          "donations",
+          "elderly_ppl",
+          "emergency_nos",
+          "facilities",
+          "faq",
+          "festivals",
+          "gallery",
+          "maps",
+          "nearby_attractions",
+          "prasadam",
+          "restaurants",
+          "river_bank",
+          "rules",
+          "sevas",
+          "sub_temples",
+          "temple",
+          "timings",
+          "travel"
+        ]
+      },
+      {
+        "temple_id": "ramappa",
+        "temple_name": "Ramappa",
+        "dataset_directory": "d:\\PiligrimAI -c\\ramappa",
+        "total_json_files": 21,
+        "available_categories": [
+          "accommodation",
+          "contacts",
+          "crowd",
+          "donations",
+          "elderly_ppl",
+          "emergency_nos",
+          "facilities",
+          "faq",
+          "festivals",
+          "gallery",
+          "maps",
+          "nearby_attractions",
+          "prasadam",
+          "restaurants",
+          "river_bank",
+          "rules",
+          "sevas",
+          "sub_temples",
+          "temple",
+          "timings",
+          "travel"
+        ]
+      },
+      {
+        "temple_id": "srisaila",
+        "temple_name": "Srisaila",
+        "dataset_directory": "d:\\PiligrimAI -c\\srisaila",
+        "total_json_files": 20,
+        "available_categories": [
+          "accommodation",
+          "contacts",
+          "crowd",
+          "elderly_ppl",
+          "emergency_nos",
+          "facilities",
+          "faq",
+          "festivals",
+          "gallery",
+          "maps",
+          "nearby_attractions",
+          "prasadam",
+          "restaurants",
+          "river_bank",
+          "rules",
+          "sevas",
+          "sub_temples",
+          "temple",
+          "timings",
+          "travel"
+        ]
+      },
+      {
+        "temple_id": "thousand pillar",
+        "temple_name": "Thousand Pillar",
+        "dataset_directory": "d:\\PiligrimAI -c\\thousand pillar",
+        "total_json_files": 21,
+        "available_categories": [
+          "accommodation",
+          "contacts",
+          "crowd",
+          "donations",
+          "elderly_ppl",
+          "emergency_nos",
+          "facilities",
+          "faq",
+          "festivals",
+          "gallery",
+          "maps",
+          "nearby_attractions",
+          "prasadam",
+          "restaurants",
+          "river_bank",
+          "rules",
+          "sevas",
+          "sub_temples",
+          "temple",
+          "timings",
+          "travel"
+        ]
+      },
+      {
+        "temple_id": "ttd",
+        "temple_name": "Ttd",
+        "dataset_directory": "d:\\PiligrimAI -c\\ttd",
+        "total_json_files": 21,
+        "available_categories": [
+          "accommodation",
+          "contacts",
+          "crowd",
+          "donations",
+          "elderly_ppl",
+          "emergency_nos",
+          "facilities",
+          "faq",
+          "festivals",
+          "gallery",
+          "maps",
+          "nearby_attractions",
+          "prasadam",
+          "restaurants",
+          "river_bank",
+          "rules",
+          "sevas",
+          "sub_temples",
+          "temple",
+          "timings",
+          "travel"
+        ]
+      },
+      {
+        "temple_id": "ujjaini",
+        "temple_name": "Ujjaini",
+        "dataset_directory": "d:\\PiligrimAI -c\\ujjaini",
+        "total_json_files": 21,
+        "available_categories": [
+          "accommodation",
+          "contacts",
+          "crowd",
+          "donations",
+          "elderly_ppl",
+          "emergency_nos",
+          "facilities",
+          "faq",
+          "festivals",
+          "gallery",
+          "maps",
+          "nearby_attractions",
+          "prasadam",
+          "restaurants",
+          "river_bank",
+          "rules",
+          "sevas",
+          "sub_temples",
+          "temple",
+          "timings",
+          "travel"
+        ]
+      },
+      {
+        "temple_id": "veera satyanarayana",
+        "temple_name": "Veera Satyanarayana",
+        "dataset_directory": "d:\\PiligrimAI -c\\veera satyanarayana",
+        "total_json_files": 21,
+        "available_categories": [
+          "accommodation",
+          "contacts",
+          "crowd",
+          "donations",
+          "elderly_ppl",
+          "emergency_nos",
+          "facilities",
+          "faq",
+          "festivals",
+          "gallery",
+          "maps",
+          "nearby_attractions",
+          "prasadam",
+          "restaurants",
+          "river_bank",
+          "rules",
+          "sevas",
+          "sub_temples",
+          "temple",
+          "timings",
+          "travel"
+        ]
+      },
+      {
+        "temple_id": "vemulavada",
+        "temple_name": "Vemulavada",
+        "dataset_directory": "d:\\PiligrimAI -c\\vemulavada",
+        "total_json_files": 21,
+        "available_categories": [
+          "accommodation",
+          "contacts",
+          "crowd",
+          "donations",
+          "elderly_ppl",
+          "emergency_nos",
+          "facilities",
+          "faq",
+          "festivals",
+          "gallery",
+          "maps",
+          "nearby_attractions",
+          "prasadam",
+          "restaurants",
+          "river_bank",
+          "rules",
+          "sevas",
+          "sub_temples",
+          "temple",
+          "timings",
+          "travel"
+        ]
+      },
+      {
+        "temple_id": "yadadri",
+        "temple_name": "Yadadri",
+        "dataset_directory": "d:\\PiligrimAI -c\\yadadri",
+        "total_json_files": 21,
+        "available_categories": [
+          "accommodation",
+          "contacts",
+          "crowd",
+          "donations",
+          "elderly_ppl",
+          "emergency_nos",
+          "facilities",
+          "faq",
+          "festivals",
+          "gallery",
+          "maps",
+          "nearby_attractions",
+          "prasadam",
+          "restaurants",
+          "river_bank",
+          "rules",
+          "sevas",
+          "sub_temples",
+          "temple",
+          "timings",
+          "travel"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q_ahobilam_01",
+      "temple_id": "ahobilam",
+      "temple_name": "Ahobilam",
+      "category": "basic_factual",
+      "question": "Who is the main deity worshipped at Ahobilam temple?",
+      "expected_answer": "The main deity of Ahobilam temple is Lord Lakshmi Narasimha Swamy.",
+      "source_files": [
+        "ahobilam/temple.json"
+      ],
+      "source_fields": [
+        "main_deity"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ahobilam_02",
+      "temple_id": "ahobilam",
+      "temple_name": "Ahobilam",
+      "category": "basic_factual",
+      "question": "Where is Ahobilam temple located?",
+      "expected_answer": "Ahobilam temple is located at Village: Ahobilam, District: Nandyal District, State: Andhra Pradesh.",
+      "source_files": [
+        "ahobilam/temple.json"
+      ],
+      "source_fields": [
+        "village",
+        "district",
+        "state"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_ahobilam_03",
+      "temple_id": "ahobilam",
+      "temple_name": "Ahobilam",
+      "category": "basic_factual",
+      "question": "What is the historical or mythological background of Ahobilam temple?",
+      "expected_answer": "Sri Ahobila Muth was established over 600 years ago and administers the temple under hereditary trusteeship. A prominent Jayasthambham (victory pillar) erected in the spacious ground outside the lower",
+      "source_files": [
+        "ahobilam/temple.json"
+      ],
+      "source_fields": [
+        "history",
+        "mythology"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ahobilam_04",
+      "temple_id": "ahobilam",
+      "temple_name": "Ahobilam",
+      "category": "basic_factual",
+      "question": "What are the daily opening and closing timings of Ahobilam temple?",
+      "expected_answer": "Ahobilam temple opens at 06:30 AM  and 03:00 PM(Lower Ahobilam) / 07:00 AM and 02:00 PM (Upper Ahobilam) and closes at 01:00 PM and 08:00 PM (Lower Ahobilam) / 01:00 PM and 05:30 PM (Upper Ahobilam). Afternoon break is {'lower_ahobilam': {'from': '01:00 PM', 'to': '03:00 PM'}, 'upper_ahobilam': {'from': '01:00 PM', 'to': '02:00 PM'}}.",
+      "source_files": [
+        "ahobilam/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "afternoon_break"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ahobilam_05",
+      "temple_id": "ahobilam",
+      "temple_name": "Ahobilam",
+      "category": "basic_factual",
+      "question": "When can devotees visit Ahobilam temple for darshan during the day?",
+      "expected_answer": "Devotees can visit between opening time 06:30 AM  and 03:00 PM(Lower Ahobilam) / 07:00 AM and 02:00 PM (Upper Ahobilam) and closing time 01:00 PM and 08:00 PM (Lower Ahobilam) / 01:00 PM and 05:30 PM (Upper Ahobilam).",
+      "source_files": [
+        "ahobilam/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "daily_schedule"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "query_variation"
+    },
+    {
+      "id": "q_ahobilam_06",
+      "temple_id": "ahobilam",
+      "temple_name": "Ahobilam",
+      "category": "service",
+      "question": "What sevas or poojas are performed at Ahobilam temple?",
+      "expected_answer": "Sevas performed at Ahobilam include: Nitya Kalyanotsavam, Swathi Thirumanjanam (All 9 Narasimha Shrines), Sudarshana Homam.",
+      "source_files": [
+        "ahobilam/sevas.json"
+      ],
+      "source_fields": [
+        "sevas",
+        "seva_name",
+        "name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ahobilam_07",
+      "temple_id": "ahobilam",
+      "temple_name": "Ahobilam",
+      "category": "service",
+      "question": "What facilities and amenities are available for pilgrims at Ahobilam temple?",
+      "expected_answer": "Facilities at Ahobilam include: facilities.",
+      "source_files": [
+        "ahobilam/facilities.json"
+      ],
+      "source_fields": [
+        "facilities"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ahobilam_08",
+      "temple_id": "ahobilam",
+      "temple_name": "Ahobilam",
+      "category": "festivals",
+      "question": "What major festivals and annual celebrations take place at Ahobilam temple?",
+      "expected_answer": "Major festivals celebrated at Ahobilam include: Annual Brahmotsavams (Masi Mahotsavam), Monthly Swathi Nakshatram, Narasimha Jayanthi.",
+      "source_files": [
+        "ahobilam/festivals.json"
+      ],
+      "source_fields": [
+        "festivals",
+        "festival_name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ahobilam_09",
+      "temple_id": "ahobilam",
+      "temple_name": "Ahobilam",
+      "category": "rules",
+      "question": "What are the dress codes and code of conduct rules for visiting Ahobilam temple?",
+      "expected_answer": "Dress Code: darshan_dress_code: decent traditional Indian outfits.; women: Sarees or salwar kameez with dupatta.; men: Dhotis, panchas, or formal shirts and trousers. Lungis, shorts, and sleeveless tops are strictly prohibited.; Do's: Do trekking in groups and complete Upper Ahobilam visits well before sunset due to wild animals., Do; Don'ts: Don't litter the forest or Nallamala hill reserve paths with plastics, bottles, or food packets., Do",
+      "source_files": [
+        "ahobilam/rules.json"
+      ],
+      "source_fields": [
+        "dress_code",
+        "dos",
+        "donts"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ahobilam_11",
+      "temple_id": "ahobilam",
+      "temple_name": "Ahobilam",
+      "category": "travel",
+      "question": "What are the emergency contact and helpline numbers for Ahobilam temple?",
+      "expected_answer": "Phones: +91 8519 252045, +91 8519 252024, +91 94905 15284, +91 94407 92736, +91 8519 220022",
+      "source_files": [
+        "ahobilam/emergency_nos.json",
+        "ahobilam/contacts.json"
+      ],
+      "source_fields": [
+        "police",
+        "medical",
+        "helpline",
+        "phones"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ahobilam_12",
+      "temple_id": "ahobilam",
+      "temple_name": "Ahobilam",
+      "category": "multi_field",
+      "question": "What are the darshan timings and required dress code guidelines at Ahobilam temple?",
+      "expected_answer": "Timings: 06:30 AM  and 03:00 PM(Lower Ahobilam) / 07:00 AM and 02:00 PM (Upper Ahobilam) to 01:00 PM and 08:00 PM (Lower Ahobilam) / 01:00 PM and 05:30 PM (Upper Ahobilam). Dress code: darshan_dress_code: decent traditional Indian outfits.; women: Sarees or salwar .",
+      "source_files": [
+        "ahobilam/timings.json",
+        "ahobilam/rules.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "dress_code"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_ahobilam_13",
+      "temple_id": "ahobilam",
+      "temple_name": "Ahobilam",
+      "category": "multi_hop",
+      "question": "Tell me about the presiding deity of Ahobilam temple and how to reach the temple premises.",
+      "expected_answer": "Deity: Lord Lakshmi Narasimha Swamy. Location & Travel: Village: Ahobilam, District: Nandyal District, State: Andhra Pradesh.",
+      "source_files": [
+        "ahobilam/temple.json",
+        "ahobilam/maps.json"
+      ],
+      "source_fields": [
+        "main_deity",
+        "village",
+        "nearest_railway_station"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_hop"
+    },
+    {
+      "id": "q_badrachalam_01",
+      "temple_id": "badrachalam",
+      "temple_name": "Badrachalam",
+      "category": "basic_factual",
+      "question": "Who is the main deity worshipped at Badrachalam temple?",
+      "expected_answer": "The main deity of Badrachalam temple is Vaikunta Rama (Chaturbhuja Rama).",
+      "source_files": [
+        "badrachalam/temple.json"
+      ],
+      "source_fields": [
+        "main_deity"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_badrachalam_02",
+      "temple_id": "badrachalam",
+      "temple_name": "Badrachalam",
+      "category": "basic_factual",
+      "question": "Where is Badrachalam temple located?",
+      "expected_answer": "Badrachalam temple is located at Village: Bhadrachalam, District: Bhadradri Kothagudem district, State: Telangana.",
+      "source_files": [
+        "badrachalam/temple.json"
+      ],
+      "source_fields": [
+        "village",
+        "district",
+        "state"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_badrachalam_03",
+      "temple_id": "badrachalam",
+      "temple_name": "Badrachalam",
+      "category": "basic_factual",
+      "question": "What is the historical or mythological background of Badrachalam temple?",
+      "expected_answer": "Pokala Dhammakka: A tribal woman who had a dream where Lord Rama revealed the location of the Swayambhu idols hidden inside an anthill. She cleared the anthill using Godavari water and began performin",
+      "source_files": [
+        "badrachalam/temple.json"
+      ],
+      "source_fields": [
+        "history",
+        "mythology"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_badrachalam_04",
+      "temple_id": "badrachalam",
+      "temple_name": "Badrachalam",
+      "category": "basic_factual",
+      "question": "What are the daily opening and closing timings of Badrachalam temple?",
+      "expected_answer": "Badrachalam temple opens at 04:30 AM and closes at 09:00 PM. Afternoon break is {'from': '01:00 PM', 'to': '03:00 PM'}.",
+      "source_files": [
+        "badrachalam/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "afternoon_break"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_badrachalam_05",
+      "temple_id": "badrachalam",
+      "temple_name": "Badrachalam",
+      "category": "basic_factual",
+      "question": "When can devotees visit Badrachalam temple for darshan during the day?",
+      "expected_answer": "Devotees can visit between opening time 04:30 AM and closing time 09:00 PM.",
+      "source_files": [
+        "badrachalam/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "daily_schedule"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "query_variation"
+    },
+    {
+      "id": "q_badrachalam_06",
+      "temple_id": "badrachalam",
+      "temple_name": "Badrachalam",
+      "category": "service",
+      "question": "What sevas or poojas are performed at Badrachalam temple?",
+      "expected_answer": "Sevas performed at Badrachalam include: Nitya Sitarama Kalyanotsavam, Antaralaya Abhishekam, Abhishekam (at Bhadra Temple).",
+      "source_files": [
+        "badrachalam/sevas.json"
+      ],
+      "source_fields": [
+        "sevas",
+        "seva_name",
+        "name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_badrachalam_07",
+      "temple_id": "badrachalam",
+      "temple_name": "Badrachalam",
+      "category": "service",
+      "question": "What facilities and amenities are available for pilgrims at Badrachalam temple?",
+      "expected_answer": "Facilities at Badrachalam include: facilities.",
+      "source_files": [
+        "badrachalam/facilities.json"
+      ],
+      "source_fields": [
+        "facilities"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_badrachalam_08",
+      "temple_id": "badrachalam",
+      "temple_name": "Badrachalam",
+      "category": "festivals",
+      "question": "What major festivals and annual celebrations take place at Badrachalam temple?",
+      "expected_answer": "Major festivals celebrated at Badrachalam include: Annual Brahmotsavams, Vaikuntha Ekadashi (Mukkoti Ekadashi), Sri Bhadradri Vaggeyakara Utsavams.",
+      "source_files": [
+        "badrachalam/festivals.json"
+      ],
+      "source_fields": [
+        "festivals",
+        "festival_name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_badrachalam_09",
+      "temple_id": "badrachalam",
+      "temple_name": "Badrachalam",
+      "category": "rules",
+      "question": "What are the dress codes and code of conduct rules for visiting Badrachalam temple?",
+      "expected_answer": "Dress Code: men: Dhoti and Kanduva, or Kurta-Pyjama. Jeans, T-shirts, and shorts are not permitted in the Kalyanotsavam hall.; women: Saree, Half-Saree, or Salwar-Kameez with Dupatta.; Do's: Deposit prohibited electronic items at cloakrooms or automated security lockers near entrance gates.; Don'ts: Mobile phones, cameras, laptops, and smartwatches are strictly prohibited inside the main temple san",
+      "source_files": [
+        "badrachalam/rules.json"
+      ],
+      "source_fields": [
+        "dress_code",
+        "dos",
+        "donts"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_badrachalam_11",
+      "temple_id": "badrachalam",
+      "temple_name": "Badrachalam",
+      "category": "travel",
+      "question": "What are the emergency contact and helpline numbers for Badrachalam temple?",
+      "expected_answer": "Phones: 08743-232428, 08743-232465, 08743-232467, +91 8985891929, +91 9705192935",
+      "source_files": [
+        "badrachalam/emergency_nos.json",
+        "badrachalam/contacts.json"
+      ],
+      "source_fields": [
+        "police",
+        "medical",
+        "helpline",
+        "phones"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_badrachalam_12",
+      "temple_id": "badrachalam",
+      "temple_name": "Badrachalam",
+      "category": "multi_field",
+      "question": "What are the darshan timings and required dress code guidelines at Badrachalam temple?",
+      "expected_answer": "Timings: 04:30 AM to 09:00 PM. Dress code: men: Dhoti and Kanduva, or Kurta-Pyjama. Jeans, T-shirts, and shorts are not per.",
+      "source_files": [
+        "badrachalam/timings.json",
+        "badrachalam/rules.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "dress_code"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_badrachalam_13",
+      "temple_id": "badrachalam",
+      "temple_name": "Badrachalam",
+      "category": "multi_hop",
+      "question": "Tell me about the presiding deity of Badrachalam temple and how to reach the temple premises.",
+      "expected_answer": "Deity: Vaikunta Rama (Chaturbhuja Rama). Location & Travel: Village: Bhadrachalam, District: Bhadradri Kothagudem district, State: Telangana.",
+      "source_files": [
+        "badrachalam/temple.json",
+        "badrachalam/maps.json"
+      ],
+      "source_fields": [
+        "main_deity",
+        "village",
+        "nearest_railway_station"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_hop"
+    },
+    {
+      "id": "q_balkampet_01",
+      "temple_id": "balkampet",
+      "temple_name": "Balkampet",
+      "category": "basic_factual",
+      "question": "Who is the main deity worshipped at Balkampet temple?",
+      "expected_answer": "The main deity of Balkampet temple is Goddess Yellamma (also known as Renuka Devi, Jala Durga, or Jaggadamba).",
+      "source_files": [
+        "balkampet/temple.json"
+      ],
+      "source_fields": [
+        "main_deity"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_balkampet_02",
+      "temple_id": "balkampet",
+      "temple_name": "Balkampet",
+      "category": "basic_factual",
+      "question": "Where is Balkampet temple located?",
+      "expected_answer": "Balkampet temple is located at Village: Balkampet, District: Hyderabad, State: Telangana.",
+      "source_files": [
+        "balkampet/temple.json"
+      ],
+      "source_fields": [
+        "village",
+        "district",
+        "state"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_balkampet_03",
+      "temple_id": "balkampet",
+      "temple_name": "Balkampet",
+      "category": "basic_factual",
+      "question": "What is the historical or mythological background of Balkampet temple?",
+      "expected_answer": "The temple devasthanam was first constructed in the 15th Century AD. The idol of the Goddess is located 10 feet deeper than the ground level. The temple took its current form later, during renovations",
+      "source_files": [
+        "balkampet/temple.json"
+      ],
+      "source_fields": [
+        "history",
+        "mythology"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_balkampet_04",
+      "temple_id": "balkampet",
+      "temple_name": "Balkampet",
+      "category": "basic_factual",
+      "question": "What are the daily opening and closing timings of Balkampet temple?",
+      "expected_answer": "Balkampet temple opens at 06:00 AM and closes at 08:00 PM. Afternoon break is {'from': '01:00 PM', 'to': '03:00 PM'}.",
+      "source_files": [
+        "balkampet/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "afternoon_break"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_balkampet_05",
+      "temple_id": "balkampet",
+      "temple_name": "Balkampet",
+      "category": "basic_factual",
+      "question": "When can devotees visit Balkampet temple for darshan during the day?",
+      "expected_answer": "Devotees can visit between opening time 06:00 AM and closing time 08:00 PM.",
+      "source_files": [
+        "balkampet/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "daily_schedule"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "query_variation"
+    },
+    {
+      "id": "q_balkampet_06",
+      "temple_id": "balkampet",
+      "temple_name": "Balkampet",
+      "category": "service",
+      "question": "What sevas or poojas are performed at Balkampet temple?",
+      "expected_answer": "Sevas performed at Balkampet include: General Darshan, Shatha Chandi Homam (Kumbhabhishekam), Arjitha Sevas.",
+      "source_files": [
+        "balkampet/sevas.json"
+      ],
+      "source_fields": [
+        "sevas",
+        "seva_name",
+        "name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_balkampet_07",
+      "temple_id": "balkampet",
+      "temple_name": "Balkampet",
+      "category": "service",
+      "question": "What facilities and amenities are available for pilgrims at Balkampet temple?",
+      "expected_answer": "Facilities at Balkampet include: cloakroom, drinking_water, toilets, footwear_counter, annadanam.",
+      "source_files": [
+        "balkampet/facilities.json"
+      ],
+      "source_fields": [
+        "facilities"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_balkampet_08",
+      "temple_id": "balkampet",
+      "temple_name": "Balkampet",
+      "category": "festivals",
+      "question": "What major festivals and annual celebrations take place at Balkampet temple?",
+      "expected_answer": "Major festivals celebrated at Balkampet include: Bonalu Jathara (Ashada Bonalu), Yellamma Kalyanotsavam, Dasara Navarathrulu.",
+      "source_files": [
+        "balkampet/festivals.json"
+      ],
+      "source_fields": [
+        "festivals",
+        "festival_name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_balkampet_09",
+      "temple_id": "balkampet",
+      "temple_name": "Balkampet",
+      "category": "rules",
+      "question": "What are the dress codes and code of conduct rules for visiting Balkampet temple?",
+      "expected_answer": "Dress Code: men: No dress code guidelines are officially published on the temple website.; women: No dress code guidelines are officially published on the temple website.; Do's: Do keep your mind fresh and leave all your negative thoughts, stress, and pain behind., Do open your; Don'ts: Don't carry excess jewellery and cash with you., Don't wear footwear in and around the premises of t",
+      "source_files": [
+        "balkampet/rules.json"
+      ],
+      "source_fields": [
+        "dress_code",
+        "dos",
+        "donts"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_balkampet_11",
+      "temple_id": "balkampet",
+      "temple_name": "Balkampet",
+      "category": "travel",
+      "question": "What are the emergency contact and helpline numbers for Balkampet temple?",
+      "expected_answer": "Police: name: SR Nagar Police Station (Law & Order); phone: 9490616619; address: S.R. Nagar X Roads, opposite Govt. Urban Health Post, Hyderabad - 500038 (~1.0 km away); details: SHO SR Nagar Line., name: SR Nagar Traffic Police Station; phone: 040-27852506; alt_phone: 8712660637; address: 621, 7-1-254, SR Nagar Main Rd, Srinivasa Nagar, Hyderabad; Medical: name: S. V. Hospital (Private); phone: 040-65589530; address: 7-1-246/B/1, Road Opposite Yellamma Temple, Balkampet, Hyderabad; details: Located directly opposite the temple. Open 24/7 Casualty., name: ESIC Super Speciality Hospital (Government); phone: 040-23701714; address: ESIC Super Speciality Hospital, Essae Digitronics Road, Sanathnagar, Hyderabad (~2.0 km away); details: Open 24/7 Emergency Wing.; Helpline: name: Emergency Police Helpline; phone: 100 / 112, name: State Ambulance Service; phone: 108, name: Sanathnagar Fire Station; phone: 101; address: Sanathnagar Industrial Area (~3.0 km away); Phones: 040-23704311",
+      "source_files": [
+        "balkampet/emergency_nos.json",
+        "balkampet/contacts.json"
+      ],
+      "source_fields": [
+        "police",
+        "medical",
+        "helpline",
+        "phones"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_balkampet_12",
+      "temple_id": "balkampet",
+      "temple_name": "Balkampet",
+      "category": "multi_field",
+      "question": "What are the darshan timings and required dress code guidelines at Balkampet temple?",
+      "expected_answer": "Timings: 06:00 AM to 08:00 PM. Dress code: men: No dress code guidelines are officially published on the temple website.; w.",
+      "source_files": [
+        "balkampet/timings.json",
+        "balkampet/rules.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "dress_code"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_balkampet_13",
+      "temple_id": "balkampet",
+      "temple_name": "Balkampet",
+      "category": "multi_hop",
+      "question": "Tell me about the presiding deity of Balkampet temple and how to reach the temple premises.",
+      "expected_answer": "Deity: Goddess Yellamma (also known as Renuka Devi, Jala Durga, or Jaggadamba). Location & Travel: Village: Balkampet, District: Hyderabad, State: Telangana.",
+      "source_files": [
+        "balkampet/temple.json",
+        "balkampet/maps.json"
+      ],
+      "source_fields": [
+        "main_deity",
+        "village",
+        "nearest_railway_station"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_hop"
+    },
+    {
+      "id": "q_basara_01",
+      "temple_id": "basara",
+      "temple_name": "Basara",
+      "category": "basic_factual",
+      "question": "Who is the main deity worshipped at Basara temple?",
+      "expected_answer": "The main deity of Basara temple is Goddess Sri Gnana Saraswathi Devi.",
+      "source_files": [
+        "basara/temple.json"
+      ],
+      "source_fields": [
+        "main_deity"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_basara_02",
+      "temple_id": "basara",
+      "temple_name": "Basara",
+      "category": "basic_factual",
+      "question": "Where is Basara temple located?",
+      "expected_answer": "Basara temple is located at Village: Basara village, District: Nirmal District, State: Telangana State.",
+      "source_files": [
+        "basara/temple.json"
+      ],
+      "source_fields": [
+        "village",
+        "district",
+        "state"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_basara_03",
+      "temple_id": "basara",
+      "temple_name": "Basara",
+      "category": "basic_factual",
+      "question": "What is the historical or mythological background of Basara temple?",
+      "expected_answer": "Established by Maharshi Veda Vyasa after the Mahabharata war. The place was originally called 'Vyasapuri' and gradually evolved into 'Basara'.",
+      "source_files": [
+        "basara/temple.json"
+      ],
+      "source_fields": [
+        "history",
+        "mythology"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_basara_04",
+      "temple_id": "basara",
+      "temple_name": "Basara",
+      "category": "basic_factual",
+      "question": "What are the daily opening and closing timings of Basara temple?",
+      "expected_answer": "Basara temple opens at 4:00 AM and closes at 8:30 PM. Afternoon break is {'from': '12:30 PM', 'to': '2:00 PM'}.",
+      "source_files": [
+        "basara/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "afternoon_break"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_basara_05",
+      "temple_id": "basara",
+      "temple_name": "Basara",
+      "category": "basic_factual",
+      "question": "When can devotees visit Basara temple for darshan during the day?",
+      "expected_answer": "Devotees can visit between opening time 4:00 AM and closing time 8:30 PM.",
+      "source_files": [
+        "basara/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "daily_schedule"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "query_variation"
+    },
+    {
+      "id": "q_basara_06",
+      "temple_id": "basara",
+      "temple_name": "Basara",
+      "category": "service",
+      "question": "What sevas or poojas are performed at Basara temple?",
+      "expected_answer": "Sevas performed at Basara include: ప్రత్యేక అక్షరాభ్యాసం (Special Aksharabyasam), మండప ప్రవేశం - Spl. అక్షరబ్యాసం (Mandapa Pravesham - Spl. Aksharabyasam), అక్షరాభ్యాసం (Aksharabyasam).",
+      "source_files": [
+        "basara/sevas.json"
+      ],
+      "source_fields": [
+        "sevas",
+        "seva_name",
+        "name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_basara_07",
+      "temple_id": "basara",
+      "temple_name": "Basara",
+      "category": "service",
+      "question": "What facilities and amenities are available for pilgrims at Basara temple?",
+      "expected_answer": "Facilities at Basara include: facilities.",
+      "source_files": [
+        "basara/facilities.json"
+      ],
+      "source_fields": [
+        "facilities"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_basara_08",
+      "temple_id": "basara",
+      "temple_name": "Basara",
+      "category": "festivals",
+      "question": "What major festivals and annual celebrations take place at Basara temple?",
+      "expected_answer": "Major festivals celebrated at Basara include: Vasant Panchami / Sri Panchami, Devi Navarathrotsavams (Sharad Navratri), Mahasivarathri Jathra.",
+      "source_files": [
+        "basara/festivals.json"
+      ],
+      "source_fields": [
+        "festivals",
+        "festival_name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_basara_09",
+      "temple_id": "basara",
+      "temple_name": "Basara",
+      "category": "rules",
+      "question": "What are the dress codes and code of conduct rules for visiting Basara temple?",
+      "expected_answer": "Dress Code: men: dhotis or kurtas with pyjamas; women: sarees or chudidars with dupattas; Do's: Do pay obeisance to your Ishta Divam or Kula Divam before you start for Basara., Do bathe in the God; Don'ts: Do not carry too much jewelry or cash with you., Do not come to Basara for any purpose other than wo",
+      "source_files": [
+        "basara/rules.json"
+      ],
+      "source_fields": [
+        "dress_code",
+        "dos",
+        "donts"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_basara_11",
+      "temple_id": "basara",
+      "temple_name": "Basara",
+      "category": "travel",
+      "question": "What are the emergency contact and helpline numbers for Basara temple?",
+      "expected_answer": "Police: name: Basara Police Station (Closest); phone: +91 87126 59540; details: Station House Officer (SHO), name: Basara Police Station Line 2; phone: +91 87126 58195; Medical: name: RGUKT Basar Campus Hospital; phone: +91 87522 55588; address: Campus Road, Mahadpur, Basar (1.4 km away); details: Open 24 hours. Houses dedicated medical staff and primary bed facilities, handling immediate stabilization before major trauma centers., name: Sri Saraswati Clinic (Ayurvedic Clinic); address: VXM3+5G9, Basar, Telangana (Approx. 600m away); details: Local private general physician setup ideal for cold, fever, basic diagnostics, and pharmacy needs.; Phones: +91 94910 00656",
+      "source_files": [
+        "basara/emergency_nos.json",
+        "basara/contacts.json"
+      ],
+      "source_fields": [
+        "police",
+        "medical",
+        "helpline",
+        "phones"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_basara_12",
+      "temple_id": "basara",
+      "temple_name": "Basara",
+      "category": "multi_field",
+      "question": "What are the darshan timings and required dress code guidelines at Basara temple?",
+      "expected_answer": "Timings: 4:00 AM to 8:30 PM. Dress code: men: dhotis or kurtas with pyjamas; women: sarees or chudidars with dupattas.",
+      "source_files": [
+        "basara/timings.json",
+        "basara/rules.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "dress_code"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_basara_13",
+      "temple_id": "basara",
+      "temple_name": "Basara",
+      "category": "multi_hop",
+      "question": "Tell me about the presiding deity of Basara temple and how to reach the temple premises.",
+      "expected_answer": "Deity: Goddess Sri Gnana Saraswathi Devi. Location & Travel: Village: Basara village, District: Nirmal District, State: Telangana State.",
+      "source_files": [
+        "basara/temple.json",
+        "basara/maps.json"
+      ],
+      "source_fields": [
+        "main_deity",
+        "village",
+        "nearest_railway_station"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_hop"
+    },
+    {
+      "id": "q_birla mandir_01",
+      "temple_id": "birla mandir",
+      "temple_name": "Birla Mandir",
+      "category": "basic_factual",
+      "question": "Who is the main deity worshipped at Birla Mandir temple?",
+      "expected_answer": "The main deity of Birla Mandir temple is 11-foot tall idol of Lord Venkateswara (resembling Tirupati Balaji) sculpted out of a single black granite rock under a carved lotus canopy..",
+      "source_files": [
+        "birla mandir/temple.json"
+      ],
+      "source_fields": [
+        "main_deity"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_birla mandir_02",
+      "temple_id": "birla mandir",
+      "temple_name": "Birla Mandir",
+      "category": "basic_factual",
+      "question": "Where is Birla Mandir temple located?",
+      "expected_answer": "Birla Mandir temple is located at Village: Khairatabad, District: Hyderabad, State: Telangana.",
+      "source_files": [
+        "birla mandir/temple.json"
+      ],
+      "source_fields": [
+        "village",
+        "district",
+        "state"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_birla mandir_03",
+      "temple_id": "birla mandir",
+      "temple_name": "Birla Mandir",
+      "category": "basic_factual",
+      "question": "What is the historical or mythological background of Birla Mandir temple?",
+      "expected_answer": "Commissioned by industrialist and philanthropist Dr. B.D. Birla and built over 10 years by skilled artisans. Consecrated and opened to the public in 1976 under the Birla Foundation.",
+      "source_files": [
+        "birla mandir/temple.json"
+      ],
+      "source_fields": [
+        "history",
+        "mythology"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_birla mandir_04",
+      "temple_id": "birla mandir",
+      "temple_name": "Birla Mandir",
+      "category": "basic_factual",
+      "question": "What are the daily opening and closing timings of Birla Mandir temple?",
+      "expected_answer": "Birla Mandir temple opens at 7:00 AM and closes at 9:00 PM. Afternoon break is {'from': '12:00 PM', 'to': '3:00 PM'}.",
+      "source_files": [
+        "birla mandir/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "afternoon_break"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_birla mandir_05",
+      "temple_id": "birla mandir",
+      "temple_name": "Birla Mandir",
+      "category": "basic_factual",
+      "question": "When can devotees visit Birla Mandir temple for darshan during the day?",
+      "expected_answer": "Devotees can visit between opening time 7:00 AM and closing time 9:00 PM.",
+      "source_files": [
+        "birla mandir/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "daily_schedule"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "query_variation"
+    },
+    {
+      "id": "q_birla mandir_06",
+      "temple_id": "birla mandir",
+      "temple_name": "Birla Mandir",
+      "category": "service",
+      "question": "What sevas or poojas are performed at Birla Mandir temple?",
+      "expected_answer": "Sevas performed at Birla Mandir include: Pancharatra Agama Rituals, Nitya Pooja & Aarti, Kirtan Chanting.",
+      "source_files": [
+        "birla mandir/sevas.json"
+      ],
+      "source_fields": [
+        "sevas",
+        "seva_name",
+        "name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_birla mandir_07",
+      "temple_id": "birla mandir",
+      "temple_name": "Birla Mandir",
+      "category": "service",
+      "question": "What facilities and amenities are available for pilgrims at Birla Mandir temple?",
+      "expected_answer": "Facilities at Birla Mandir include: facilities.",
+      "source_files": [
+        "birla mandir/facilities.json"
+      ],
+      "source_fields": [
+        "facilities"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_birla mandir_08",
+      "temple_id": "birla mandir",
+      "temple_name": "Birla Mandir",
+      "category": "festivals",
+      "question": "What major festivals and annual celebrations take place at Birla Mandir temple?",
+      "expected_answer": "Major festivals celebrated at Birla Mandir include: Vaikuntha Ekadashi, Brahmotsavam, Janmashtami & Dasara.",
+      "source_files": [
+        "birla mandir/festivals.json"
+      ],
+      "source_fields": [
+        "festivals",
+        "festival_name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_birla mandir_09",
+      "temple_id": "birla mandir",
+      "temple_name": "Birla Mandir",
+      "category": "rules",
+      "question": "What are the dress codes and code of conduct rules for visiting Birla Mandir temple?",
+      "expected_answer": "Dress Code: men: Modest and traditional Indian attire is recommended. While there is no mandatory uniform, avoid short outfits.; women: Modest and traditional Indian attire is recommended. While there is no mandatory uniform, avoid short outfits.; Do's: Deposit Your Phone Early: Advise readers to surrender all phones and smartwatches at the main securi; Don'ts: No Photography At All: Photography and videography are strictly prohibited everywhere inside the gat",
+      "source_files": [
+        "birla mandir/rules.json"
+      ],
+      "source_fields": [
+        "dress_code",
+        "dos",
+        "donts"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_birla mandir_11",
+      "temple_id": "birla mandir",
+      "temple_name": "Birla Mandir",
+      "category": "travel",
+      "question": "What are the emergency contact and helpline numbers for Birla Mandir temple?",
+      "expected_answer": "Police: name: Saifabad Police Station (Closest); phone: +91 40 2785 2488; alt_phone: +91 9490616352; address: Near Ayodhya Hotel Junction, Lakdikapul (0.75 km away), name: Police Commissionerate Office; address: Basheer Bagh (0.95 km away); details: Open 24 hours., name: Saifabad Traffic Outpost / Control Room; address: Near LB Stadium / Basheer Bagh (1.2 km away); details: Open 24 hours.; Medical: name: Apollo Hospitals Hyderguda; phone: +91 40 6907 1298; alt_phone: 040 2323 1380; address: Hyderguda-Basheerbagh Road (1.5 km away), name: Sai Vani Super Speciality Hospital; phone: +91 40 2763 4463; address: Ramakrishna Mutt Road, Domalguda (2.2 km away); details: Open 24 hours.; Phones: 040-23233259, 040-23450165",
+      "source_files": [
+        "birla mandir/emergency_nos.json",
+        "birla mandir/contacts.json"
+      ],
+      "source_fields": [
+        "police",
+        "medical",
+        "helpline",
+        "phones"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_birla mandir_12",
+      "temple_id": "birla mandir",
+      "temple_name": "Birla Mandir",
+      "category": "multi_field",
+      "question": "What are the darshan timings and required dress code guidelines at Birla Mandir temple?",
+      "expected_answer": "Timings: 7:00 AM to 9:00 PM. Dress code: men: Modest and traditional Indian attire is recommended. While there is no mand.",
+      "source_files": [
+        "birla mandir/timings.json",
+        "birla mandir/rules.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "dress_code"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_birla mandir_13",
+      "temple_id": "birla mandir",
+      "temple_name": "Birla Mandir",
+      "category": "multi_hop",
+      "question": "Tell me about the presiding deity of Birla Mandir temple and how to reach the temple premises.",
+      "expected_answer": "Deity: 11-foot tall idol of Lord Venkateswara (resembling Tirupati Balaji) sculpted out of a single black granite rock under a carved lotus canopy.. Location & Travel: Village: Khairatabad, District: Hyderabad, State: Telangana.",
+      "source_files": [
+        "birla mandir/temple.json",
+        "birla mandir/maps.json"
+      ],
+      "source_fields": [
+        "main_deity",
+        "village",
+        "nearest_railway_station"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_hop"
+    },
+    {
+      "id": "q_chilkur_01",
+      "temple_id": "chilkur",
+      "temple_name": "Chilkur",
+      "category": "basic_factual",
+      "question": "Who is the main deity worshipped at Chilkur temple?",
+      "expected_answer": "The main deity of Chilkur temple is Lord Balaji Venkateshwara in the form of a Swayambhu idol (accompanied by Sridevi and Bhoodevi).",
+      "source_files": [
+        "chilkur/temple.json"
+      ],
+      "source_fields": [
+        "main_deity"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_chilkur_02",
+      "temple_id": "chilkur",
+      "temple_name": "Chilkur",
+      "category": "basic_factual",
+      "question": "Where is Chilkur temple located?",
+      "expected_answer": "Chilkur temple is located at Village: Chilkur, District: Rangareddy District, State: Telangana State.",
+      "source_files": [
+        "chilkur/temple.json"
+      ],
+      "source_fields": [
+        "village",
+        "district",
+        "state"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_chilkur_03",
+      "temple_id": "chilkur",
+      "temple_name": "Chilkur",
+      "category": "basic_factual",
+      "question": "What is the historical or mythological background of Chilkur temple?",
+      "expected_answer": "History mentions that the temple was built during the time of Akkanna and Madanna, the uncles of Bhakta Ramdas (circa 17th century AD / 500 years ago). According to tradition, a devotee who used to vi",
+      "source_files": [
+        "chilkur/temple.json"
+      ],
+      "source_fields": [
+        "history",
+        "mythology"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_chilkur_04",
+      "temple_id": "chilkur",
+      "temple_name": "Chilkur",
+      "category": "basic_factual",
+      "question": "What are the daily opening and closing timings of Chilkur temple?",
+      "expected_answer": "Chilkur temple opens at 06:00 AM and closes at 08:00 PM. Afternoon break is {'from': '01:00 PM', 'to': '04:00 PM'}.",
+      "source_files": [
+        "chilkur/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "afternoon_break"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_chilkur_05",
+      "temple_id": "chilkur",
+      "temple_name": "Chilkur",
+      "category": "basic_factual",
+      "question": "When can devotees visit Chilkur temple for darshan during the day?",
+      "expected_answer": "Devotees can visit between opening time 06:00 AM and closing time 08:00 PM.",
+      "source_files": [
+        "chilkur/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "daily_schedule"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "query_variation"
+    },
+    {
+      "id": "q_chilkur_06",
+      "temple_id": "chilkur",
+      "temple_name": "Chilkur",
+      "category": "service",
+      "question": "What sevas or poojas are performed at Chilkur temple?",
+      "expected_answer": "Sevas performed at Chilkur include: Free Darshanam, 11 Wish-Making Pradakshinam (Sankalpa), 108 Thanksgiving Pradakshinam (Krithagnatha).",
+      "source_files": [
+        "chilkur/sevas.json"
+      ],
+      "source_fields": [
+        "sevas",
+        "seva_name",
+        "name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_chilkur_07",
+      "temple_id": "chilkur",
+      "temple_name": "Chilkur",
+      "category": "service",
+      "question": "What facilities and amenities are available for pilgrims at Chilkur temple?",
+      "expected_answer": "Facilities at Chilkur include: cloakroom, drinking_water, toilets, footwear_counter, annadanam.",
+      "source_files": [
+        "chilkur/facilities.json"
+      ],
+      "source_fields": [
+        "facilities"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_chilkur_08",
+      "temple_id": "chilkur",
+      "temple_name": "Chilkur",
+      "category": "festivals",
+      "question": "What major festivals and annual celebrations take place at Chilkur temple?",
+      "expected_answer": "Major festivals celebrated at Chilkur include: Annual Brahmotsavams, Vaikunta Ekadasi, Poolangi.",
+      "source_files": [
+        "chilkur/festivals.json"
+      ],
+      "source_fields": [
+        "festivals",
+        "festival_name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_chilkur_09",
+      "temple_id": "chilkur",
+      "temple_name": "Chilkur",
+      "category": "rules",
+      "question": "What are the dress codes and code of conduct rules for visiting Chilkur temple?",
+      "expected_answer": "Dress Code: men: Kurta-pyjamas, dhotis, or formal shirts and trousers. Shorts and sleeveless shirts are prohibited inside the complex.; women: Sarees, half-sarees, or salwar kameez are highly encouraged. Shorts, sleeveless, and tight-fitting clothes are prohibited.; Do's: Do perform 11 pradakshinas (circumambulations) around the outer path to make your wish., Do return t; Don'ts: Don't offer money, gold, or gifts to the priests or temple workers. The temple has no hundi., Don't ",
+      "source_files": [
+        "chilkur/rules.json"
+      ],
+      "source_fields": [
+        "dress_code",
+        "dos",
+        "donts"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_chilkur_11",
+      "temple_id": "chilkur",
+      "temple_name": "Chilkur",
+      "category": "travel",
+      "question": "What are the emergency contact and helpline numbers for Chilkur temple?",
+      "expected_answer": "Police: +91 40 2785 2400 (Moinabad Police Station), 100 or 112 (Universal Help Line); Ambulance: 108; Helpline: 112 (Universal Emergency Number); Phones: +91 84172 35933",
+      "source_files": [
+        "chilkur/emergency_nos.json",
+        "chilkur/contacts.json"
+      ],
+      "source_fields": [
+        "police",
+        "medical",
+        "helpline",
+        "phones"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_chilkur_12",
+      "temple_id": "chilkur",
+      "temple_name": "Chilkur",
+      "category": "multi_field",
+      "question": "What are the darshan timings and required dress code guidelines at Chilkur temple?",
+      "expected_answer": "Timings: 06:00 AM to 08:00 PM. Dress code: men: Kurta-pyjamas, dhotis, or formal shirts and trousers. Shorts and sleeveless.",
+      "source_files": [
+        "chilkur/timings.json",
+        "chilkur/rules.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "dress_code"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_chilkur_13",
+      "temple_id": "chilkur",
+      "temple_name": "Chilkur",
+      "category": "multi_hop",
+      "question": "Tell me about the presiding deity of Chilkur temple and how to reach the temple premises.",
+      "expected_answer": "Deity: Lord Balaji Venkateshwara in the form of a Swayambhu idol (accompanied by Sridevi and Bhoodevi). Location & Travel: Village: Chilkur, District: Rangareddy District, State: Telangana State.",
+      "source_files": [
+        "chilkur/temple.json",
+        "chilkur/maps.json"
+      ],
+      "source_fields": [
+        "main_deity",
+        "village",
+        "nearest_railway_station"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_hop"
+    },
+    {
+      "id": "q_dharmapuri_01",
+      "temple_id": "dharmapuri",
+      "temple_name": "Dharmapuri",
+      "category": "basic_factual",
+      "question": "Who is the main deity worshipped at Dharmapuri temple?",
+      "expected_answer": "The main deity of Dharmapuri temple is Sri Lakshmi Narasimha Swamy (presiding deity, worshipped also in Yoga Narasimha and Ugra Narasimha forms).",
+      "source_files": [
+        "dharmapuri/temple.json"
+      ],
+      "source_fields": [
+        "main_deity"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_dharmapuri_02",
+      "temple_id": "dharmapuri",
+      "temple_name": "Dharmapuri",
+      "category": "basic_factual",
+      "question": "Where is Dharmapuri temple located?",
+      "expected_answer": "Dharmapuri temple is located at Village: Dharmapuri, District: Jagtial, State: Telangana.",
+      "source_files": [
+        "dharmapuri/temple.json"
+      ],
+      "source_fields": [
+        "village",
+        "district",
+        "state"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_dharmapuri_03",
+      "temple_id": "dharmapuri",
+      "temple_name": "Dharmapuri",
+      "category": "basic_factual",
+      "question": "What is the historical or mythological background of Dharmapuri temple?",
+      "expected_answer": "The temple heritage endures from the era of King Dharmavarma of Vidarbha to the present day as a unique stream preserving Vedic knowledge and fine arts. The Kshetram has been patronised over a millenn",
+      "source_files": [
+        "dharmapuri/temple.json"
+      ],
+      "source_fields": [
+        "history",
+        "mythology"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_dharmapuri_04",
+      "temple_id": "dharmapuri",
+      "temple_name": "Dharmapuri",
+      "category": "basic_factual",
+      "question": "What are the daily opening and closing timings of Dharmapuri temple?",
+      "expected_answer": "Dharmapuri temple opens at 5:00 AM and closes at 8:00 PM. Afternoon break is {'from': '2:30 PM', 'to': '4:00 PM'}.",
+      "source_files": [
+        "dharmapuri/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "afternoon_break"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_dharmapuri_05",
+      "temple_id": "dharmapuri",
+      "temple_name": "Dharmapuri",
+      "category": "basic_factual",
+      "question": "When can devotees visit Dharmapuri temple for darshan during the day?",
+      "expected_answer": "Devotees can visit between opening time 5:00 AM and closing time 8:00 PM.",
+      "source_files": [
+        "dharmapuri/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "daily_schedule"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "query_variation"
+    },
+    {
+      "id": "q_dharmapuri_06",
+      "temple_id": "dharmapuri",
+      "temple_name": "Dharmapuri",
+      "category": "service",
+      "question": "What sevas or poojas are performed at Dharmapuri temple?",
+      "expected_answer": "Sevas performed at Dharmapuri include: Abhishekam, Tulasi Visheṣārchana, Sahasranamas / Korika Nivṛtti.",
+      "source_files": [
+        "dharmapuri/sevas.json"
+      ],
+      "source_fields": [
+        "sevas",
+        "seva_name",
+        "name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_dharmapuri_07",
+      "temple_id": "dharmapuri",
+      "temple_name": "Dharmapuri",
+      "category": "service",
+      "question": "What facilities and amenities are available for pilgrims at Dharmapuri temple?",
+      "expected_answer": "Facilities at Dharmapuri include: drinking_water, annadanam, parking, other_facilities.",
+      "source_files": [
+        "dharmapuri/facilities.json"
+      ],
+      "source_fields": [
+        "facilities"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_dharmapuri_08",
+      "temple_id": "dharmapuri",
+      "temple_name": "Dharmapuri",
+      "category": "festivals",
+      "question": "What major festivals and annual celebrations take place at Dharmapuri temple?",
+      "expected_answer": "Major festivals celebrated at Dharmapuri include: Bramhotsavalu (Jatara) 2026, Godavari Pushkaralu 2027, Nrusimha Navarathrulu.",
+      "source_files": [
+        "dharmapuri/festivals.json"
+      ],
+      "source_fields": [
+        "festivals",
+        "festival_name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_dharmapuri_09",
+      "temple_id": "dharmapuri",
+      "temple_name": "Dharmapuri",
+      "category": "rules",
+      "question": "What are the dress codes and code of conduct rules for visiting Dharmapuri temple?",
+      "expected_answer": "Dress Code: men: Traditional attire like White Pancha, Dhoti, Kurta, or Pyjama. Standard formal shirts and trousers are allowed for general darshan, but traditional wear is mandatory for special sevas like Abhishekam and Kalyanotsavam.; women: Saree with blouse, Chudidhar/Punjabi Dress with Dupatta, Half Saree, or Lehenga. Modern western clothing (shorts, sleeveless tops, ripped jeans) is strictly discouraged.; Do's: Follow one-way pedestrian flow circuits from transit drop-offs to river and temple gates, Bathe safe; Don'ts: Do not cross anchored floating ropes, security nets, or bamboo barricades into deep river water, Do ",
+      "source_files": [
+        "dharmapuri/rules.json"
+      ],
+      "source_fields": [
+        "dress_code",
+        "dos",
+        "donts"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_dharmapuri_11",
+      "temple_id": "dharmapuri",
+      "temple_name": "Dharmapuri",
+      "category": "travel",
+      "question": "What are the emergency contact and helpline numbers for Dharmapuri temple?",
+      "expected_answer": "Police: name: Dharmapuri Police Station; phone: +91 87126 56824; details: Station House Officer (SHO), Dharmapuri Police Station handling localized town jurisdiction., name: Jagtial Police Control Room; phone: +91 8724 223100; alternate_phone: +91 87126 56811; details: Jagtial District Police Control Room administrative communications desk.; Medical: name: Community Health Center, Dharmapuri; phone: +91 8724 273055; address: Near Old Bus Stand, Jagtial-Dharmapuri Main Road, Dharmapuri, Jagtial District, Telangana 505425; details: Primary government medical emergency facility situated ~1.5 km from the main temple arch gateway., name: Fortune Sigma Multispeciality Hospital; phone: +91 8724 230102; address: H.No. 7-6-196, Beside LIC Office, Ashok Nagar, Gollapally Road, Jagtial, Telangana 505327; details: Private multi-specialty trauma facility situated ~29.1 km from the temple site. Verified 24-hour critical care and ICU availability., name: Anvi Shree Multi-Speciality Hospital; phone: +91 87242 28842; address: H.No. 7-6-190/1, Gollapally Road, Ashok Nagar, Jagtial, Telangana 505327; details: Private medical infrastructure setup in Jagtial town district hub, located ~29.6 km away from Dharmapuri village.; Helpline: name: National Emergency Number; phone: 112, name: Police Emergency; phone: 100, name: Ambulance; phone: 108, name: Fire Emergency; phone: 101",
+      "source_files": [
+        "dharmapuri/emergency_nos.json",
+        "dharmapuri/contacts.json"
+      ],
+      "source_fields": [
+        "police",
+        "medical",
+        "helpline",
+        "phones"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_dharmapuri_12",
+      "temple_id": "dharmapuri",
+      "temple_name": "Dharmapuri",
+      "category": "multi_field",
+      "question": "What are the darshan timings and required dress code guidelines at Dharmapuri temple?",
+      "expected_answer": "Timings: 5:00 AM to 8:00 PM. Dress code: men: Traditional attire like White Pancha, Dhoti, Kurta, or Pyjama. Standard for.",
+      "source_files": [
+        "dharmapuri/timings.json",
+        "dharmapuri/rules.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "dress_code"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_dharmapuri_13",
+      "temple_id": "dharmapuri",
+      "temple_name": "Dharmapuri",
+      "category": "multi_hop",
+      "question": "Tell me about the presiding deity of Dharmapuri temple and how to reach the temple premises.",
+      "expected_answer": "Deity: Sri Lakshmi Narasimha Swamy (presiding deity, worshipped also in Yoga Narasimha and Ugra Narasimha forms). Location & Travel: Village: Dharmapuri, District: Jagtial, State: Telangana.",
+      "source_files": [
+        "dharmapuri/temple.json",
+        "dharmapuri/maps.json"
+      ],
+      "source_fields": [
+        "main_deity",
+        "village",
+        "nearest_railway_station"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_hop"
+    },
+    {
+      "id": "q_edupayal_01",
+      "temple_id": "edupayal",
+      "temple_name": "Edupayal",
+      "category": "basic_factual",
+      "question": "Who is the main deity worshipped at Edupayal temple?",
+      "expected_answer": "The main deity of Edupayal temple is Sri Vana Durga Bhavani Amma.",
+      "source_files": [
+        "edupayal/temple.json"
+      ],
+      "source_fields": [
+        "main_deity"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_edupayal_02",
+      "temple_id": "edupayal",
+      "temple_name": "Edupayal",
+      "category": "basic_factual",
+      "question": "Where is Edupayal temple located?",
+      "expected_answer": "Edupayal temple is located at Village: Nagasanpally village, District: Medak District, State: Telangana.",
+      "source_files": [
+        "edupayal/temple.json"
+      ],
+      "source_fields": [
+        "village",
+        "district",
+        "state"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_edupayal_03",
+      "temple_id": "edupayal",
+      "temple_name": "Edupayal",
+      "category": "basic_factual",
+      "question": "What is the historical or mythological background of Edupayal temple?",
+      "expected_answer": "Dating back to the 12th century, the temple is heavily integrated with the rural culture of Telangana. It serves as a central hub during the monsoon and Ashada months, where thousands of women carry d",
+      "source_files": [
+        "edupayal/temple.json"
+      ],
+      "source_fields": [
+        "history",
+        "mythology"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_edupayal_04",
+      "temple_id": "edupayal",
+      "temple_name": "Edupayal",
+      "category": "basic_factual",
+      "question": "What are the daily opening and closing timings of Edupayal temple?",
+      "expected_answer": "Edupayal temple opens at 5:30 AM and closes at 6:30 PM. Afternoon break is {'from': '', 'to': ''}.",
+      "source_files": [
+        "edupayal/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "afternoon_break"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_edupayal_05",
+      "temple_id": "edupayal",
+      "temple_name": "Edupayal",
+      "category": "basic_factual",
+      "question": "When can devotees visit Edupayal temple for darshan during the day?",
+      "expected_answer": "Devotees can visit between opening time 5:30 AM and closing time 6:30 PM.",
+      "source_files": [
+        "edupayal/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "daily_schedule"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "query_variation"
+    },
+    {
+      "id": "q_edupayal_06",
+      "temple_id": "edupayal",
+      "temple_name": "Edupayal",
+      "category": "service",
+      "question": "What sevas or poojas are performed at Edupayal temple?",
+      "expected_answer": "Sevas performed at Edupayal include: Abhishekam, Alankarana, Vedaparayanam.",
+      "source_files": [
+        "edupayal/sevas.json"
+      ],
+      "source_fields": [
+        "sevas",
+        "seva_name",
+        "name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_edupayal_07",
+      "temple_id": "edupayal",
+      "temple_name": "Edupayal",
+      "category": "service",
+      "question": "What facilities and amenities are available for pilgrims at Edupayal temple?",
+      "expected_answer": "Facilities at Edupayal include: facilities.",
+      "source_files": [
+        "edupayal/facilities.json"
+      ],
+      "source_fields": [
+        "facilities"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_edupayal_08",
+      "temple_id": "edupayal",
+      "temple_name": "Edupayal",
+      "category": "festivals",
+      "question": "What major festivals and annual celebrations take place at Edupayal temple?",
+      "expected_answer": "Major festivals celebrated at Edupayal include: Bramhotsavalu (Jatara) 2026, Ashada Bonalu & Folk Traditions, Bathukamma Panduga.",
+      "source_files": [
+        "edupayal/festivals.json"
+      ],
+      "source_fields": [
+        "festivals",
+        "festival_name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_edupayal_09",
+      "temple_id": "edupayal",
+      "temple_name": "Edupayal",
+      "category": "rules",
+      "question": "What are the dress codes and code of conduct rules for visiting Edupayal temple?",
+      "expected_answer": "Dress Code: men: Dhoti/Kurta (Devotees are encouraged to wear modest and traditional Indian attire while visiting the temple and participating in rituals); women: Saree/Churidar (Devotees are encouraged to wear modest and traditional Indian attire while visiting the temple and participating in rituals); Do's: Wear modest and traditional Indian attire (Dhoti/Kurta for men, Saree/Churidar for women) while visi; Don'ts: Strictly avoid entering the river or attempting to swim when warning signs are placed during monsoon",
+      "source_files": [
+        "edupayal/rules.json"
+      ],
+      "source_fields": [
+        "dress_code",
+        "dos",
+        "donts"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_edupayal_11",
+      "temple_id": "edupayal",
+      "temple_name": "Edupayal",
+      "category": "travel",
+      "question": "What are the emergency contact and helpline numbers for Edupayal temple?",
+      "expected_answer": "Police: name: Papannapet Police Station; phone: 08450-230533 (fax number); alt_phone: +91 8452223233; address: Main Road, Opposite Police Station Bus Stop, Papannapet, Medak District (~18 km away), name: Medak Town Police Station; phone: 08452-221333 (fax-number); alt_phone: +91 8712657903; address: Police Station Road, Near Medak Cathedral, Medak Town (~18 km away); Medical: name: Primary Health Centre (PHC) Papannapet; phone: +91 8500201229; address: Main Road, Papannapet Town (~17 km away); details: General outpatient care, primary emergency first aid, maternal care., name: PHC Podichanpally (Government); phone: +91 8374041456; address: Podichanpally Village (~8.9 km away), name: Government General Hospital (GGH), Medak (District Hospital); phone: 91+ 9849099985; alt_phone: ; address: Jambikunta, Main Road, Near Medak Collectorate Office, Medak (~14.7 km away), name: Life Care Super Speciality Hospital (Private); phone: 08452-242211; address: Nadeem Plaza, Hyderabad Road, Medak (~12.5 km away); details: 24/7 Critical care, trauma, orthopedics, and internal medicine., name: Chinnari Mother & Children's Hospital; phone: 08452-223456; address: Azhampura, Medak (~13.3 km away); details: 24/7 NICU, pediatric emergencies, and high-risk maternity care.; Helpline: name: National Emergency Number; phone: 112, name: Police Control Room; phone: 100, name: State Ambulance Service; phone: 108, name: Fire Services; phone: 101; Phones: +91 9866331529, +91 9441022065, +91 8309986447, +91 8452220209, +91 9441878165",
+      "source_files": [
+        "edupayal/emergency_nos.json",
+        "edupayal/contacts.json"
+      ],
+      "source_fields": [
+        "police",
+        "medical",
+        "helpline",
+        "phones"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_edupayal_12",
+      "temple_id": "edupayal",
+      "temple_name": "Edupayal",
+      "category": "multi_field",
+      "question": "What are the darshan timings and required dress code guidelines at Edupayal temple?",
+      "expected_answer": "Timings: 5:30 AM to 6:30 PM. Dress code: men: Dhoti/Kurta (Devotees are encouraged to wear modest and traditional Indian .",
+      "source_files": [
+        "edupayal/timings.json",
+        "edupayal/rules.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "dress_code"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_edupayal_13",
+      "temple_id": "edupayal",
+      "temple_name": "Edupayal",
+      "category": "multi_hop",
+      "question": "Tell me about the presiding deity of Edupayal temple and how to reach the temple premises.",
+      "expected_answer": "Deity: Sri Vana Durga Bhavani Amma. Location & Travel: Village: Nagasanpally village, District: Medak District, State: Telangana.",
+      "source_files": [
+        "edupayal/temple.json",
+        "edupayal/maps.json"
+      ],
+      "source_fields": [
+        "main_deity",
+        "village",
+        "nearest_railway_station"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_hop"
+    },
+    {
+      "id": "q_jogulamba(new)_01",
+      "temple_id": "jogulamba(new)",
+      "temple_name": "Jogulamba(New)",
+      "category": "basic_factual",
+      "question": "Who is the main deity worshipped at Jogulamba(New) temple?",
+      "expected_answer": "The main deity of Jogulamba(New) temple is Goddess Jogulamba (Fierce form of Goddess Shakti seated on a corpse with a scorpion, frog, and lizard on her head).",
+      "source_files": [
+        "jogulamba(new)/temple.json"
+      ],
+      "source_fields": [
+        "main_deity"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_jogulamba(new)_02",
+      "temple_id": "jogulamba(new)",
+      "temple_name": "Jogulamba(New)",
+      "category": "basic_factual",
+      "question": "Where is Jogulamba(New) temple located?",
+      "expected_answer": "Jogulamba(New) temple is located at Village: Alampur, District: Jogulamba Gadwal District, State: Telangana.",
+      "source_files": [
+        "jogulamba(new)/temple.json"
+      ],
+      "source_fields": [
+        "village",
+        "district",
+        "state"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_jogulamba(new)_03",
+      "temple_id": "jogulamba(new)",
+      "temple_name": "Jogulamba(New)",
+      "category": "basic_factual",
+      "question": "What is the historical or mythological background of Jogulamba(New) temple?",
+      "expected_answer": "Alampur is an ancient temple town situated on the banks of the Tungabhadra River and is regarded as the western gateway to Srisailam. The Jogulamba Temple is closely associated with the Badami Chaluky",
+      "source_files": [
+        "jogulamba(new)/temple.json"
+      ],
+      "source_fields": [
+        "history",
+        "mythology"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_jogulamba(new)_04",
+      "temple_id": "jogulamba(new)",
+      "temple_name": "Jogulamba(New)",
+      "category": "basic_factual",
+      "question": "What are the daily opening and closing timings of Jogulamba(New) temple?",
+      "expected_answer": "Jogulamba(New) temple opens at 06:30 AM and closes at 08:30 PM. Afternoon break is {'from': '01:00 PM', 'to': '02:00 PM'}.",
+      "source_files": [
+        "jogulamba(new)/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "afternoon_break"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_jogulamba(new)_05",
+      "temple_id": "jogulamba(new)",
+      "temple_name": "Jogulamba(New)",
+      "category": "basic_factual",
+      "question": "When can devotees visit Jogulamba(New) temple for darshan during the day?",
+      "expected_answer": "Devotees can visit between opening time 06:30 AM and closing time 08:30 PM.",
+      "source_files": [
+        "jogulamba(new)/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "daily_schedule"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "query_variation"
+    },
+    {
+      "id": "q_jogulamba(new)_06",
+      "temple_id": "jogulamba(new)",
+      "temple_name": "Jogulamba(New)",
+      "category": "service",
+      "question": "What sevas or poojas are performed at Jogulamba(New) temple?",
+      "expected_answer": "Sevas performed at Jogulamba(New) include: Sri Jogulamba Seva, Kum Kum Archana, Sahastra Namarchana.",
+      "source_files": [
+        "jogulamba(new)/sevas.json"
+      ],
+      "source_fields": [
+        "sevas",
+        "seva_name",
+        "name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_jogulamba(new)_07",
+      "temple_id": "jogulamba(new)",
+      "temple_name": "Jogulamba(New)",
+      "category": "service",
+      "question": "What facilities and amenities are available for pilgrims at Jogulamba(New) temple?",
+      "expected_answer": "Facilities at Jogulamba(New) include: cloakroom, drinking_water, toilets, footwear_counter, annadanam.",
+      "source_files": [
+        "jogulamba(new)/facilities.json"
+      ],
+      "source_fields": [
+        "facilities"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_jogulamba(new)_08",
+      "temple_id": "jogulamba(new)",
+      "temple_name": "Jogulamba(New)",
+      "category": "festivals",
+      "question": "What major festivals and annual celebrations take place at Jogulamba(New) temple?",
+      "expected_answer": "Major festivals celebrated at Jogulamba(New) include: Sharad Navaratri / Dasara, Maha Shivaratri, Annual Jogulamba Brahmotsavam.",
+      "source_files": [
+        "jogulamba(new)/festivals.json"
+      ],
+      "source_fields": [
+        "festivals",
+        "festival_name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_jogulamba(new)_09",
+      "temple_id": "jogulamba(new)",
+      "temple_name": "Jogulamba(New)",
+      "category": "rules",
+      "question": "What are the dress codes and code of conduct rules for visiting Jogulamba(New) temple?",
+      "expected_answer": "Dress Code: men: Traditional dhotis, panchas, kurtas, or standard formal trousers with shirts are standard. For special rituals like Rudrabhishekam puja, men must wear a white dhoti and remove their upper shirt and vest.; women: Traditional attire like sarees, salwar suits, salwar kameez, chudidhars with a dupatta, or half-sarees are strongly recommended. Avoid short skirts, sleeveless kurtis, or revealing dresses (avoid western casuals like shorts or ripped jeans).; Do's: Dress traditionally: Wear modest clothing like sarees or salwar suits for women, and dhotis or forma; Don'ts: No photography: Do not take photos or videos inside the main sanctum, as cameras are strictly prohib",
+      "source_files": [
+        "jogulamba(new)/rules.json"
+      ],
+      "source_fields": [
+        "dress_code",
+        "dos",
+        "donts"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_jogulamba(new)_11",
+      "temple_id": "jogulamba(new)",
+      "temple_name": "Jogulamba(New)",
+      "category": "travel",
+      "question": "What are the emergency contact and helpline numbers for Jogulamba(New) temple?",
+      "expected_answer": "Police: 08502-241333 / +91 94409 04766 / +91 87126 70285 / 100 / 112; Ambulance: +91 85022 41300 (Govt General Hospital Alampur) / 108 (Ambulance 108 Alampur X Road Hub); Helpline: +91 85559 65827 (Temple Helpline Desk); Phones: +91 85022 41327, +91 85559 65827, +91 79899 93291, +91 85022 41300, 08502-241333",
+      "source_files": [
+        "jogulamba(new)/emergency_nos.json",
+        "jogulamba(new)/contacts.json"
+      ],
+      "source_fields": [
+        "police",
+        "medical",
+        "helpline",
+        "phones"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_jogulamba(new)_12",
+      "temple_id": "jogulamba(new)",
+      "temple_name": "Jogulamba(New)",
+      "category": "multi_field",
+      "question": "What are the darshan timings and required dress code guidelines at Jogulamba(New) temple?",
+      "expected_answer": "Timings: 06:30 AM to 08:30 PM. Dress code: men: Traditional dhotis, panchas, kurtas, or standard formal trousers with shirt.",
+      "source_files": [
+        "jogulamba(new)/timings.json",
+        "jogulamba(new)/rules.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "dress_code"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_jogulamba(new)_13",
+      "temple_id": "jogulamba(new)",
+      "temple_name": "Jogulamba(New)",
+      "category": "multi_hop",
+      "question": "Tell me about the presiding deity of Jogulamba(New) temple and how to reach the temple premises.",
+      "expected_answer": "Deity: Goddess Jogulamba (Fierce form of Goddess Shakti seated on a corpse with a scorpion, frog, and lizard on her head). Location & Travel: Village: Alampur, District: Jogulamba Gadwal District, State: Telangana.",
+      "source_files": [
+        "jogulamba(new)/temple.json",
+        "jogulamba(new)/maps.json"
+      ],
+      "source_fields": [
+        "main_deity",
+        "village",
+        "nearest_railway_station"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_hop"
+    },
+    {
+      "id": "q_kaleshvaram_01",
+      "temple_id": "kaleshvaram",
+      "temple_name": "Kaleshvaram",
+      "category": "basic_factual",
+      "question": "Who is the main deity worshipped at Kaleshvaram temple?",
+      "expected_answer": "The main deity of Kaleshvaram temple is Lord Kaleshwara (representing Lord Yama / Time) & Lord Mukteshwara (representing Lord Shiva / Liberation) on a single pedestal (Panavattam).",
+      "source_files": [
+        "kaleshvaram/temple.json"
+      ],
+      "source_fields": [
+        "main_deity"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_kaleshvaram_02",
+      "temple_id": "kaleshvaram",
+      "temple_name": "Kaleshvaram",
+      "category": "basic_factual",
+      "question": "Where is Kaleshvaram temple located?",
+      "expected_answer": "Kaleshvaram temple is located at Village: Kaleshwaram, District: Jayashankar Bhupalpally District, State: Telangana.",
+      "source_files": [
+        "kaleshvaram/temple.json"
+      ],
+      "source_fields": [
+        "village",
+        "district",
+        "state"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_kaleshvaram_03",
+      "temple_id": "kaleshvaram",
+      "temple_name": "Kaleshvaram",
+      "category": "basic_factual",
+      "question": "What is the historical or mythological background of Kaleshvaram temple?",
+      "expected_answer": "Skanda Purana mentions that Lord Yama Dharma Raja performed severe penance at this spot after discovering that devotees worshipping Lord Shiva here were directly attaining salvation, leaving Yama's re",
+      "source_files": [
+        "kaleshvaram/temple.json"
+      ],
+      "source_fields": [
+        "history",
+        "mythology"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_kaleshvaram_04",
+      "temple_id": "kaleshvaram",
+      "temple_name": "Kaleshvaram",
+      "category": "basic_factual",
+      "question": "What are the daily opening and closing timings of Kaleshvaram temple?",
+      "expected_answer": "Kaleshvaram temple opens at 04:30 AM and closes at 08:30 PM. Afternoon break is {'from': '01:00 PM', 'to': '03:30 PM'}.",
+      "source_files": [
+        "kaleshvaram/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "afternoon_break"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_kaleshvaram_05",
+      "temple_id": "kaleshvaram",
+      "temple_name": "Kaleshvaram",
+      "category": "basic_factual",
+      "question": "When can devotees visit Kaleshvaram temple for darshan during the day?",
+      "expected_answer": "Devotees can visit between opening time 04:30 AM and closing time 08:30 PM.",
+      "source_files": [
+        "kaleshvaram/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "daily_schedule"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "query_variation"
+    },
+    {
+      "id": "q_kaleshvaram_06",
+      "temple_id": "kaleshvaram",
+      "temple_name": "Kaleshvaram",
+      "category": "service",
+      "question": "What sevas or poojas are performed at Kaleshvaram temple?",
+      "expected_answer": "Sevas performed at Kaleshvaram include: Sheegra Darshanam, Garbhagriha Abhishekam, Mahanyasa Poorvaka Rudrabhishekam.",
+      "source_files": [
+        "kaleshvaram/sevas.json"
+      ],
+      "source_fields": [
+        "sevas",
+        "seva_name",
+        "name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_kaleshvaram_07",
+      "temple_id": "kaleshvaram",
+      "temple_name": "Kaleshvaram",
+      "category": "service",
+      "question": "What facilities and amenities are available for pilgrims at Kaleshvaram temple?",
+      "expected_answer": "Facilities at Kaleshvaram include: cloakroom, drinking_water, toilets, footwear_counter, annadanam.",
+      "source_files": [
+        "kaleshvaram/facilities.json"
+      ],
+      "source_fields": [
+        "facilities"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_kaleshvaram_08",
+      "temple_id": "kaleshvaram",
+      "temple_name": "Kaleshvaram",
+      "category": "festivals",
+      "question": "What major festivals and annual celebrations take place at Kaleshvaram temple?",
+      "expected_answer": "Major festivals celebrated at Kaleshvaram include: Mahasivarathri Jathra, Karthika Masotsavam & Karthika Purnima, Other Festivals.",
+      "source_files": [
+        "kaleshvaram/festivals.json"
+      ],
+      "source_fields": [
+        "festivals",
+        "festival_name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_kaleshvaram_09",
+      "temple_id": "kaleshvaram",
+      "temple_name": "Kaleshvaram",
+      "category": "rules",
+      "question": "What are the dress codes and code of conduct rules for visiting Kaleshvaram temple?",
+      "expected_answer": "Dress Code: men: Any decent traditional outfit for Darshan. For Garbhagriha Abhishekam, men must remove Shirt and Vest (Dhoti / Pancha required).; women: Any decent traditional outfit for Darshan. For Garbhagriha Abhishekam, women must wear Saree or Chudidhar with Dupatta.; Do's: Do take a holy bath in the Triveni Sangam (Godavari, Pranahita, Saraswati river confluence) before e; Don'ts: Don't wear any footwear inside or around the main temple boundary walls., Don't take photographs or ",
+      "source_files": [
+        "kaleshvaram/rules.json"
+      ],
+      "source_fields": [
+        "dress_code",
+        "dos",
+        "donts"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_kaleshvaram_11",
+      "temple_id": "kaleshvaram",
+      "temple_name": "Kaleshvaram",
+      "category": "travel",
+      "question": "What are the emergency contact and helpline numbers for Kaleshvaram temple?",
+      "expected_answer": "Police: 100 or 112; Ambulance: 108; Phones: +91 94910 17012, +91 94910 18012",
+      "source_files": [
+        "kaleshvaram/emergency_nos.json",
+        "kaleshvaram/contacts.json"
+      ],
+      "source_fields": [
+        "police",
+        "medical",
+        "helpline",
+        "phones"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_kaleshvaram_12",
+      "temple_id": "kaleshvaram",
+      "temple_name": "Kaleshvaram",
+      "category": "multi_field",
+      "question": "What are the darshan timings and required dress code guidelines at Kaleshvaram temple?",
+      "expected_answer": "Timings: 04:30 AM to 08:30 PM. Dress code: men: Any decent traditional outfit for Darshan. For Garbhagriha Abhishekam, men .",
+      "source_files": [
+        "kaleshvaram/timings.json",
+        "kaleshvaram/rules.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "dress_code"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_kaleshvaram_13",
+      "temple_id": "kaleshvaram",
+      "temple_name": "Kaleshvaram",
+      "category": "multi_hop",
+      "question": "Tell me about the presiding deity of Kaleshvaram temple and how to reach the temple premises.",
+      "expected_answer": "Deity: Lord Kaleshwara (representing Lord Yama / Time) & Lord Mukteshwara (representing Lord Shiva / Liberation) on a single pedestal (Panavattam). Location & Travel: Village: Kaleshwaram, District: Jayashankar Bhupalpally District, State: Telangana.",
+      "source_files": [
+        "kaleshvaram/temple.json",
+        "kaleshvaram/maps.json"
+      ],
+      "source_fields": [
+        "main_deity",
+        "village",
+        "nearest_railway_station"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_hop"
+    },
+    {
+      "id": "q_karmanghat_01",
+      "temple_id": "karmanghat",
+      "temple_name": "Karmanghat",
+      "category": "basic_factual",
+      "question": "Who is the main deity worshipped at Karmanghat temple?",
+      "expected_answer": "The main deity of Karmanghat temple is Lord Hanuman (Dhyana Anjaneya Swamy).",
+      "source_files": [
+        "karmanghat/temple.json"
+      ],
+      "source_fields": [
+        "main_deity"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_karmanghat_02",
+      "temple_id": "karmanghat",
+      "temple_name": "Karmanghat",
+      "category": "basic_factual",
+      "question": "Where is Karmanghat temple located?",
+      "expected_answer": "Karmanghat temple is located at Village: Karmanghat, District: Ranga Reddy Dist, State: Telangana.",
+      "source_files": [
+        "karmanghat/temple.json"
+      ],
+      "source_fields": [
+        "village",
+        "district",
+        "state"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_karmanghat_03",
+      "temple_id": "karmanghat",
+      "temple_name": "Karmanghat",
+      "category": "basic_factual",
+      "question": "What is the historical or mythological background of Karmanghat temple?",
+      "expected_answer": "It was built in the 12th century A.D (approximately 1143). When a Kakatiya king went hunting and was resting under a tree, he heard the chanting of Lord Rama's name. Wondering who it was in the middle",
+      "source_files": [
+        "karmanghat/temple.json"
+      ],
+      "source_fields": [
+        "history",
+        "mythology"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_karmanghat_04",
+      "temple_id": "karmanghat",
+      "temple_name": "Karmanghat",
+      "category": "basic_factual",
+      "question": "What are the daily opening and closing timings of Karmanghat temple?",
+      "expected_answer": "Karmanghat temple opens at 6am and closes at 8:30pm. Afternoon break is {'from': '12 noon', 'to': '4:30pm'}.",
+      "source_files": [
+        "karmanghat/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "afternoon_break"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_karmanghat_05",
+      "temple_id": "karmanghat",
+      "temple_name": "Karmanghat",
+      "category": "basic_factual",
+      "question": "When can devotees visit Karmanghat temple for darshan during the day?",
+      "expected_answer": "Devotees can visit between opening time 6am and closing time 8:30pm.",
+      "source_files": [
+        "karmanghat/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "daily_schedule"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "query_variation"
+    },
+    {
+      "id": "q_karmanghat_06",
+      "temple_id": "karmanghat",
+      "temple_name": "Karmanghat",
+      "category": "service",
+      "question": "What sevas or poojas are performed at Karmanghat temple?",
+      "expected_answer": "Sevas performed at Karmanghat include: Suvarna Pushpaarchana, Vendi Thamalapaku Puja, Archana (Sankalpa Puja).",
+      "source_files": [
+        "karmanghat/sevas.json"
+      ],
+      "source_fields": [
+        "sevas",
+        "seva_name",
+        "name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_karmanghat_07",
+      "temple_id": "karmanghat",
+      "temple_name": "Karmanghat",
+      "category": "service",
+      "question": "What facilities and amenities are available for pilgrims at Karmanghat temple?",
+      "expected_answer": "Facilities at Karmanghat include: facilities, elderly_facilities.",
+      "source_files": [
+        "karmanghat/facilities.json"
+      ],
+      "source_fields": [
+        "facilities"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_karmanghat_08",
+      "temple_id": "karmanghat",
+      "temple_name": "Karmanghat",
+      "category": "festivals",
+      "question": "What major festivals and annual celebrations take place at Karmanghat temple?",
+      "expected_answer": "Major festivals celebrated at Karmanghat include: Hanuman Jayanti, Sri Rama Navami, Maha Shivaratri.",
+      "source_files": [
+        "karmanghat/festivals.json"
+      ],
+      "source_fields": [
+        "festivals",
+        "festival_name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_karmanghat_09",
+      "temple_id": "karmanghat",
+      "temple_name": "Karmanghat",
+      "category": "rules",
+      "question": "What are the dress codes and code of conduct rules for visiting Karmanghat temple?",
+      "expected_answer": "Dress Code: men: Recommended: Formal or traditional attire including a Dhoti, Kurta-Pyjama, or neat formal shirts paired with regular trousers / full pants. Strictly Banned: T-shirts containing explicit graphics/slogans, shorts, three-fourths, ripped jeans, or gym track pants.; women: Recommended: Traditional Indian attire such as a Saree, Half-Saree, or Salwar Kameez / Chudidhar paired with a dupatta or upper cloth. Strictly Banned: Shorts, mini-skirts, low-waist jeans, sleeveless tops, tank tops, or crop tops that expose the legs, shoulders, or arms.; Do's: Do keep your mind fresh and leave all your negative, stress and pain behind., Do open your eyes whil; Don'ts: Don't carry Jewellery and Cash in excess with you., Don't wear footwear in and around the premises o",
+      "source_files": [
+        "karmanghat/rules.json"
+      ],
+      "source_fields": [
+        "dress_code",
+        "dos",
+        "donts"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_karmanghat_11",
+      "temple_id": "karmanghat",
+      "temple_name": "Karmanghat",
+      "category": "travel",
+      "question": "What are the emergency contact and helpline numbers for Karmanghat temple?",
+      "expected_answer": "Police: name: Saroornagar Police Station; phone: 040-27853580; address: ~3 km away from the temple; details: Primary local jurisdiction police station covering Karmanghat., name: L.B. Nagar Police Station; phone: 040-27853583; address: ~2.2 km away near LB Nagar Junction / Galleria Mall; details: Sub-divisional police station for traffic and law enforcement.; Medical: name: Viswas Hospital; phone: Available on-site; address: 300 meters from temple entrance; details: Immediate first-aid & local outpatient emergencies., name: Onus Robotic Hospitals; phone: +91 73967 77240; address: 900 meters away on Champapet Road; details: Ortho, Neuro, and Advanced Diagnostics., name: Padma Nursing Home; phone: +91 77290 36574; address: 1.1 km away; details: Gynecology, General Medicine, and Trauma Care., name: CBM Multi-Speciality Hospital; phone: +91 80552 23347; address: 1.2 km away; details: ICU care and disabled-friendly infrastructure., name: Gleneagles AWARE Hospital; phone: 040-44777777; address: 2.4 km away (LB Nagar Main Road); details: 24/7 Tertiary care, major trauma, cardiac, and ICU critical care.; Helpline: name: National Emergency Support; phone: 112, name: Police Control Room; phone: 100, name: Medical Emergency Ambulance; phone: 108; Phones: 040-24222222, +91 97041 75441",
+      "source_files": [
+        "karmanghat/emergency_nos.json",
+        "karmanghat/contacts.json"
+      ],
+      "source_fields": [
+        "police",
+        "medical",
+        "helpline",
+        "phones"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_karmanghat_12",
+      "temple_id": "karmanghat",
+      "temple_name": "Karmanghat",
+      "category": "multi_field",
+      "question": "What are the darshan timings and required dress code guidelines at Karmanghat temple?",
+      "expected_answer": "Timings: 6am to 8:30pm. Dress code: men: Recommended: Formal or traditional attire including a Dhoti, Kurta-Pyjama, .",
+      "source_files": [
+        "karmanghat/timings.json",
+        "karmanghat/rules.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "dress_code"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_karmanghat_13",
+      "temple_id": "karmanghat",
+      "temple_name": "Karmanghat",
+      "category": "multi_hop",
+      "question": "Tell me about the presiding deity of Karmanghat temple and how to reach the temple premises.",
+      "expected_answer": "Deity: Lord Hanuman (Dhyana Anjaneya Swamy). Location & Travel: Village: Karmanghat, District: Ranga Reddy Dist, State: Telangana.",
+      "source_files": [
+        "karmanghat/temple.json",
+        "karmanghat/maps.json"
+      ],
+      "source_fields": [
+        "main_deity",
+        "village",
+        "nearest_railway_station"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_hop"
+    },
+    {
+      "id": "q_medaram_01",
+      "temple_id": "medaram",
+      "temple_name": "Medaram",
+      "category": "basic_factual",
+      "question": "Who is the main deity worshipped at Medaram temple?",
+      "expected_answer": "The main deity of Medaram temple is Goddess Sammakka and Goddess Saralamma.",
+      "source_files": [
+        "medaram/temple.json"
+      ],
+      "source_fields": [
+        "main_deity"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_medaram_02",
+      "temple_id": "medaram",
+      "temple_name": "Medaram",
+      "category": "basic_factual",
+      "question": "Where is Medaram temple located?",
+      "expected_answer": "Medaram temple is located at Village: Medaram Village, District: Mulugu District, State: Telangana State.",
+      "source_files": [
+        "medaram/temple.json"
+      ],
+      "source_fields": [
+        "village",
+        "district",
+        "state"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_medaram_03",
+      "temple_id": "medaram",
+      "temple_name": "Medaram",
+      "category": "basic_factual",
+      "question": "What is the historical or mythological background of Medaram temple?",
+      "expected_answer": "The Battle against Injustice (13th Century AD): During the 13th century AD, Medaram was a tribal region ruled by Pagididda Raju, a feudatory chief under Kakatiya King Prataparudra of Warangal. Due to ",
+      "source_files": [
+        "medaram/temple.json"
+      ],
+      "source_fields": [
+        "history",
+        "mythology"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_medaram_04",
+      "temple_id": "medaram",
+      "temple_name": "Medaram",
+      "category": "basic_factual",
+      "question": "What are the daily opening and closing timings of Medaram temple?",
+      "expected_answer": "Medaram temple opens at 06:00 AM and closes at 08:00 PM. Afternoon break is {'from': '', 'to': ''}.",
+      "source_files": [
+        "medaram/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "afternoon_break"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_medaram_05",
+      "temple_id": "medaram",
+      "temple_name": "Medaram",
+      "category": "basic_factual",
+      "question": "When can devotees visit Medaram temple for darshan during the day?",
+      "expected_answer": "Devotees can visit between opening time 06:00 AM and closing time 08:00 PM.",
+      "source_files": [
+        "medaram/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "daily_schedule"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "query_variation"
+    },
+    {
+      "id": "q_medaram_06",
+      "temple_id": "medaram",
+      "temple_name": "Medaram",
+      "category": "service",
+      "question": "What sevas or poojas are performed at Medaram temple?",
+      "expected_answer": "Sevas performed at Medaram include: Free Dharma Darshanam (Gaddelu), Special VIP / Protocol Entry (During Jathara), Bangaram Tulabharam (Jaggery Offering).",
+      "source_files": [
+        "medaram/sevas.json"
+      ],
+      "source_fields": [
+        "sevas",
+        "seva_name",
+        "name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_medaram_07",
+      "temple_id": "medaram",
+      "temple_name": "Medaram",
+      "category": "service",
+      "question": "What facilities and amenities are available for pilgrims at Medaram temple?",
+      "expected_answer": "Facilities at Medaram include: cloakroom, drinking_water, toilets, footwear_counter, annadanam.",
+      "source_files": [
+        "medaram/facilities.json"
+      ],
+      "source_fields": [
+        "facilities"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_medaram_08",
+      "temple_id": "medaram",
+      "temple_name": "Medaram",
+      "category": "festivals",
+      "question": "What major festivals and annual celebrations take place at Medaram temple?",
+      "expected_answer": "Major festivals celebrated at Medaram include: Medaram Sammakka-Saralamma Maha Jathara (Biennial 4-Day Mega Festival), Mini Jathara (Manda Melige / Annual Observance).",
+      "source_files": [
+        "medaram/festivals.json"
+      ],
+      "source_fields": [
+        "festivals",
+        "festival_name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_medaram_09",
+      "temple_id": "medaram",
+      "temple_name": "Medaram",
+      "category": "rules",
+      "question": "What are the dress codes and code of conduct rules for visiting Medaram temple?",
+      "expected_answer": "Dress Code: men: Any decent, comfortable clothing suitable for walking and forest environment. Traditional Indian attire (Dhoti, Kurta, Pancha) is widely preferred.; women: Any decent, comfortable clothing suitable for walking and forest environment. Traditional Indian attire (Saree, Chudidhar) is widely preferred.; Do's: Do take a holy bath in Jampanna Vagu before proceeding for darshan at the Gaddelu., Do offer 'Bangar; Don'ts: Don't litter plastic bottles, wrappers, or garbage in Jampanna Vagu stream or forest areas., Don't c",
+      "source_files": [
+        "medaram/rules.json"
+      ],
+      "source_fields": [
+        "dress_code",
+        "dos",
+        "donts"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_medaram_11",
+      "temple_id": "medaram",
+      "temple_name": "Medaram",
+      "category": "travel",
+      "question": "What are the emergency contact and helpline numbers for Medaram temple?",
+      "expected_answer": "Police: 100 / 112; Ambulance: 108; Helpline: 08715-222047 (Mulugu District Collectorate Office); Phones: 08715-223257, 08717-281247, 08715-222047",
+      "source_files": [
+        "medaram/emergency_nos.json",
+        "medaram/contacts.json"
+      ],
+      "source_fields": [
+        "police",
+        "medical",
+        "helpline",
+        "phones"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_medaram_12",
+      "temple_id": "medaram",
+      "temple_name": "Medaram",
+      "category": "multi_field",
+      "question": "What are the darshan timings and required dress code guidelines at Medaram temple?",
+      "expected_answer": "Timings: 06:00 AM to 08:00 PM. Dress code: men: Any decent, comfortable clothing suitable for walking and forest environmen.",
+      "source_files": [
+        "medaram/timings.json",
+        "medaram/rules.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "dress_code"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_medaram_13",
+      "temple_id": "medaram",
+      "temple_name": "Medaram",
+      "category": "multi_hop",
+      "question": "Tell me about the presiding deity of Medaram temple and how to reach the temple premises.",
+      "expected_answer": "Deity: Goddess Sammakka and Goddess Saralamma. Location & Travel: Village: Medaram Village, District: Mulugu District, State: Telangana State.",
+      "source_files": [
+        "medaram/temple.json",
+        "medaram/maps.json"
+      ],
+      "source_fields": [
+        "main_deity",
+        "village",
+        "nearest_railway_station"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_hop"
+    },
+    {
+      "id": "q_ramappa_01",
+      "temple_id": "ramappa",
+      "temple_name": "Ramappa",
+      "category": "basic_factual",
+      "question": "Who is the main deity worshipped at Ramappa temple?",
+      "expected_answer": "The main deity of Ramappa temple is Lord Rudreshwara Swamy (Lord Shiva).",
+      "source_files": [
+        "ramappa/temple.json"
+      ],
+      "source_fields": [
+        "main_deity"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ramappa_02",
+      "temple_id": "ramappa",
+      "temple_name": "Ramappa",
+      "category": "basic_factual",
+      "question": "Where is Ramappa temple located?",
+      "expected_answer": "Ramappa temple is located at Village: Palampet Village, District: Mulugu District, State: Telangana State.",
+      "source_files": [
+        "ramappa/temple.json"
+      ],
+      "source_fields": [
+        "village",
+        "district",
+        "state"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_ramappa_03",
+      "temple_id": "ramappa",
+      "temple_name": "Ramappa",
+      "category": "basic_factual",
+      "question": "What is the historical or mythological background of Ramappa temple?",
+      "expected_answer": "Built in 1213 CE by Racherla Rudra, a general under the Kakatiya ruler King Ganapati Deva. Popularly named after its master sculptor or architect, Ramappa, making it one of the rare Indian temples nam",
+      "source_files": [
+        "ramappa/temple.json"
+      ],
+      "source_fields": [
+        "history",
+        "mythology"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ramappa_04",
+      "temple_id": "ramappa",
+      "temple_name": "Ramappa",
+      "category": "basic_factual",
+      "question": "What are the daily opening and closing timings of Ramappa temple?",
+      "expected_answer": "Ramappa temple opens at 6:00 AM and closes at 10:00 PM. Afternoon break is {'from': '1:00 PM', 'to': '3:00 PM'}.",
+      "source_files": [
+        "ramappa/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "afternoon_break"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ramappa_05",
+      "temple_id": "ramappa",
+      "temple_name": "Ramappa",
+      "category": "basic_factual",
+      "question": "When can devotees visit Ramappa temple for darshan during the day?",
+      "expected_answer": "Devotees can visit between opening time 6:00 AM and closing time 10:00 PM.",
+      "source_files": [
+        "ramappa/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "daily_schedule"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "query_variation"
+    },
+    {
+      "id": "q_ramappa_07",
+      "temple_id": "ramappa",
+      "temple_name": "Ramappa",
+      "category": "service",
+      "question": "What facilities and amenities are available for pilgrims at Ramappa temple?",
+      "expected_answer": "Facilities at Ramappa include: facilities.",
+      "source_files": [
+        "ramappa/facilities.json"
+      ],
+      "source_fields": [
+        "facilities"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ramappa_08",
+      "temple_id": "ramappa",
+      "temple_name": "Ramappa",
+      "category": "festivals",
+      "question": "What major festivals and annual celebrations take place at Ramappa temple?",
+      "expected_answer": "Major festivals celebrated at Ramappa include: Mahasivarathri Jathra, Kakatiya Heritage & Cultural Utsavams, Kartheeka Masotsavam & Shravana Masam.",
+      "source_files": [
+        "ramappa/festivals.json"
+      ],
+      "source_fields": [
+        "festivals",
+        "festival_name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ramappa_09",
+      "temple_id": "ramappa",
+      "temple_name": "Ramappa",
+      "category": "rules",
+      "question": "What are the dress codes and code of conduct rules for visiting Ramappa temple?",
+      "expected_answer": "Dress Code: men: Modest clothing with shoulders and knees covered (pants, dhotis, or kurtas); women: Sarees, chudidars with dupattas, or modest traditional wear; Do's: Remove Footwear: Leave all footwear at the designated counter outside the raised stone platform befo; Don'ts: Do Not Touch or Lean on Sculptures: The black basalt Madanika (dancer) statues feature a rare glass-",
+      "source_files": [
+        "ramappa/rules.json"
+      ],
+      "source_fields": [
+        "dress_code",
+        "dos",
+        "donts"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ramappa_11",
+      "temple_id": "ramappa",
+      "temple_name": "Ramappa",
+      "category": "travel",
+      "question": "What are the emergency contact and helpline numbers for Ramappa temple?",
+      "expected_answer": "Police: name: Venkatapur Police Station (Closest); phone: +91 87126 56743; alt_phone: +91 94407 95238; address: Mulugu-Ramappa Road, Venkatapur Mandal (~5 km away), name: Mulugu District Police Headquarters; phone: +91 87126 56700; address: National Highway 163, Mulugu (~15 km away); details: District Control Room.; Medical: name: Government Primary Health Centre (PHC), Venkatapur; address: Venkatapur Village (6 km km away); details: Provides baseline outpatient services, immediate stabilization, heatstroke care, and essential first-aid treatment., name: Government Area Hospital, Mulugu (Best for Emergencies); phone: +91 94933 17615; address: National Highway 163, Mulugu Town (~15 km away); details: Open 24 hours. Outfitted with emergency facilities, surgical wings, and active ambulance support lines.; Helpline: name: Unified Emergency Helpline; phone: 100 / 112, name: Free State Ambulance Network; phone: 108; details: Public emergency pickup and transit directly to Mulugu or Warangal medical centers.; Phones: 1800 425 46464",
+      "source_files": [
+        "ramappa/emergency_nos.json",
+        "ramappa/contacts.json"
+      ],
+      "source_fields": [
+        "police",
+        "medical",
+        "helpline",
+        "phones"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ramappa_12",
+      "temple_id": "ramappa",
+      "temple_name": "Ramappa",
+      "category": "multi_field",
+      "question": "What are the darshan timings and required dress code guidelines at Ramappa temple?",
+      "expected_answer": "Timings: 6:00 AM to 10:00 PM. Dress code: men: Modest clothing with shoulders and knees covered (pants, dhotis, or kurtas).",
+      "source_files": [
+        "ramappa/timings.json",
+        "ramappa/rules.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "dress_code"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_ramappa_13",
+      "temple_id": "ramappa",
+      "temple_name": "Ramappa",
+      "category": "multi_hop",
+      "question": "Tell me about the presiding deity of Ramappa temple and how to reach the temple premises.",
+      "expected_answer": "Deity: Lord Rudreshwara Swamy (Lord Shiva). Location & Travel: Village: Palampet Village, District: Mulugu District, State: Telangana State.",
+      "source_files": [
+        "ramappa/temple.json",
+        "ramappa/maps.json"
+      ],
+      "source_fields": [
+        "main_deity",
+        "village",
+        "nearest_railway_station"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_hop"
+    },
+    {
+      "id": "q_srisaila_01",
+      "temple_id": "srisaila",
+      "temple_name": "Srisaila",
+      "category": "basic_factual",
+      "question": "Who is the main deity worshipped at Srisaila temple?",
+      "expected_answer": "The main deity of Srisaila temple is Sri Mallikarjuna Swamy (2nd Jyotirlinga) and Sri Bhramaramba Devi (6th Maha Shakti Peetha).",
+      "source_files": [
+        "srisaila/temple.json"
+      ],
+      "source_fields": [
+        "main_deity"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_srisaila_02",
+      "temple_id": "srisaila",
+      "temple_name": "Srisaila",
+      "category": "basic_factual",
+      "question": "Where is Srisaila temple located?",
+      "expected_answer": "Srisaila temple is located at Village: Srisailam, District: Nandyal, State: Andhra Pradesh.",
+      "source_files": [
+        "srisaila/temple.json"
+      ],
+      "source_fields": [
+        "village",
+        "district",
+        "state"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_srisaila_03",
+      "temple_id": "srisaila",
+      "temple_name": "Srisaila",
+      "category": "basic_factual",
+      "question": "What is the historical or mythological background of Srisaila temple?",
+      "expected_answer": "Srisailam has great ancient significance and has been a worshipping place for millions of devotees over thousands of years. Inscriptional evidence starts from South India's first dynasty, the Satavaha",
+      "source_files": [
+        "srisaila/temple.json"
+      ],
+      "source_fields": [
+        "history",
+        "mythology"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_srisaila_04",
+      "temple_id": "srisaila",
+      "temple_name": "Srisaila",
+      "category": "basic_factual",
+      "question": "What are the daily opening and closing timings of Srisaila temple?",
+      "expected_answer": "Srisaila temple opens at 04:30 AM and closes at 10:00 PM. Afternoon break is {'from': '03:30 PM', 'to': '04:30 PM'}.",
+      "source_files": [
+        "srisaila/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "afternoon_break"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_srisaila_05",
+      "temple_id": "srisaila",
+      "temple_name": "Srisaila",
+      "category": "basic_factual",
+      "question": "When can devotees visit Srisaila temple for darshan during the day?",
+      "expected_answer": "Devotees can visit between opening time 04:30 AM and closing time 10:00 PM.",
+      "source_files": [
+        "srisaila/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "daily_schedule"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "query_variation"
+    },
+    {
+      "id": "q_srisaila_06",
+      "temple_id": "srisaila",
+      "temple_name": "Srisaila",
+      "category": "service",
+      "question": "What sevas or poojas are performed at Srisaila temple?",
+      "expected_answer": "Sevas performed at Srisaila include: Seeghra Darshanam, Sparsha Darshanam ( Single Person Only), Chandi Homam (Virtual Seva - పరోక్ష సేవ).",
+      "source_files": [
+        "srisaila/sevas.json"
+      ],
+      "source_fields": [
+        "sevas",
+        "seva_name",
+        "name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_srisaila_07",
+      "temple_id": "srisaila",
+      "temple_name": "Srisaila",
+      "category": "service",
+      "question": "What facilities and amenities are available for pilgrims at Srisaila temple?",
+      "expected_answer": "Facilities at Srisaila include: cloakroom, drinking_water, toilets, footwear_counter, annadanam.",
+      "source_files": [
+        "srisaila/facilities.json"
+      ],
+      "source_fields": [
+        "facilities"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_srisaila_08",
+      "temple_id": "srisaila",
+      "temple_name": "Srisaila",
+      "category": "festivals",
+      "question": "What major festivals and annual celebrations take place at Srisaila temple?",
+      "expected_answer": "Major festivals celebrated at Srisaila include: Maha Shivaratri, Brahmotsavam, Sankranti.",
+      "source_files": [
+        "srisaila/festivals.json"
+      ],
+      "source_fields": [
+        "festivals",
+        "festival_name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_srisaila_09",
+      "temple_id": "srisaila",
+      "temple_name": "Srisaila",
+      "category": "rules",
+      "question": "What are the dress codes and code of conduct rules for visiting Srisaila temple?",
+      "expected_answer": "Dress Code: men: Traditional attire preferred (Dhoti and Kurta, or formal trousers and shirts). Casual shorts or sleeveless vests are discouraged inside the inner sanctum.; women: Traditional Indian attire such as Sarees, Salwar Kameez, or Churidars with Dupatta.; Do's: Abide strictly by Srisaila Devasthanam regulations while viewing Archana Abhishekam and offering pra; Don'ts: Do not worship Lord Shiva first without worshipping Nandi (Sanagala Basavanna), as divinity comes th",
+      "source_files": [
+        "srisaila/rules.json"
+      ],
+      "source_fields": [
+        "dress_code",
+        "dos",
+        "donts"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_srisaila_11",
+      "temple_id": "srisaila",
+      "temple_name": "Srisaila",
+      "category": "travel",
+      "question": "What are the emergency contact and helpline numbers for Srisaila temple?",
+      "expected_answer": "Police: name: Srisailam One Town Police Station; phone: 08524-287033; address: Srisailam Temple Town, Nandyal District, Andhra Pradesh; details: Local station for temple security and traffic regulation.; Medical: name: Srisaila Devasthanam Hospital; phone: 08524-288884; address: Srisailam Temple Area; details: 24/7 Devasthanam emergency medical care and outpatient clinic., name: Government Hospital, Srisailam; address: Srisailam Town; details: Primary emergency medical treatment.; Helpline: name: National Emergency Hotline; phone: 112, name: Police Control Room; phone: 100, name: Ambulance Service; phone: 108; Phones: +91-8333901351, +91-8333901352, +91-8333901353, +91-8333901354, +91-8333901355",
+      "source_files": [
+        "srisaila/emergency_nos.json",
+        "srisaila/contacts.json"
+      ],
+      "source_fields": [
+        "police",
+        "medical",
+        "helpline",
+        "phones"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_srisaila_12",
+      "temple_id": "srisaila",
+      "temple_name": "Srisaila",
+      "category": "multi_field",
+      "question": "What are the darshan timings and required dress code guidelines at Srisaila temple?",
+      "expected_answer": "Timings: 04:30 AM to 10:00 PM. Dress code: men: Traditional attire preferred (Dhoti and Kurta, or formal trousers and shirt.",
+      "source_files": [
+        "srisaila/timings.json",
+        "srisaila/rules.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "dress_code"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_srisaila_13",
+      "temple_id": "srisaila",
+      "temple_name": "Srisaila",
+      "category": "multi_hop",
+      "question": "Tell me about the presiding deity of Srisaila temple and how to reach the temple premises.",
+      "expected_answer": "Deity: Sri Mallikarjuna Swamy (2nd Jyotirlinga) and Sri Bhramaramba Devi (6th Maha Shakti Peetha). Location & Travel: Village: Srisailam, District: Nandyal, State: Andhra Pradesh.",
+      "source_files": [
+        "srisaila/temple.json",
+        "srisaila/maps.json"
+      ],
+      "source_fields": [
+        "main_deity",
+        "village",
+        "nearest_railway_station"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_hop"
+    },
+    {
+      "id": "q_thousand pillar_01",
+      "temple_id": "thousand pillar",
+      "temple_name": "Thousand Pillar",
+      "category": "basic_factual",
+      "question": "Who is the main deity worshipped at Thousand Pillar temple?",
+      "expected_answer": "The main deity of Thousand Pillar temple is Lord Shiva.",
+      "source_files": [
+        "thousand pillar/temple.json"
+      ],
+      "source_fields": [
+        "main_deity"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_thousand pillar_02",
+      "temple_id": "thousand pillar",
+      "temple_name": "Thousand Pillar",
+      "category": "basic_factual",
+      "question": "Where is Thousand Pillar temple located?",
+      "expected_answer": "Thousand Pillar temple is located at Village: Hanamkonda, District: Hanumakonda, State: Telangana.",
+      "source_files": [
+        "thousand pillar/temple.json"
+      ],
+      "source_fields": [
+        "village",
+        "district",
+        "state"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_thousand pillar_03",
+      "temple_id": "thousand pillar",
+      "temple_name": "Thousand Pillar",
+      "category": "basic_factual",
+      "question": "What is the historical or mythological background of Thousand Pillar temple?",
+      "expected_answer": "Built in 1163 AD by the Kakatiya King Rudra Deva, the temple stands as a testament to the architectural brilliance of the Kakatiya dynasty. It is currently preserved and maintained as a protected monu",
+      "source_files": [
+        "thousand pillar/temple.json"
+      ],
+      "source_fields": [
+        "history",
+        "mythology"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_thousand pillar_04",
+      "temple_id": "thousand pillar",
+      "temple_name": "Thousand Pillar",
+      "category": "basic_factual",
+      "question": "What are the daily opening and closing timings of Thousand Pillar temple?",
+      "expected_answer": "Thousand Pillar temple opens at 6:00 am and closes at 8:00 pm. Afternoon break is {'from': '12:30 pm', 'to': '4:00 pm'}.",
+      "source_files": [
+        "thousand pillar/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "afternoon_break"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_thousand pillar_05",
+      "temple_id": "thousand pillar",
+      "temple_name": "Thousand Pillar",
+      "category": "basic_factual",
+      "question": "When can devotees visit Thousand Pillar temple for darshan during the day?",
+      "expected_answer": "Devotees can visit between opening time 6:00 am and closing time 8:00 pm.",
+      "source_files": [
+        "thousand pillar/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "daily_schedule"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "query_variation"
+    },
+    {
+      "id": "q_thousand pillar_06",
+      "temple_id": "thousand pillar",
+      "temple_name": "Thousand Pillar",
+      "category": "service",
+      "question": "What sevas or poojas are performed at Thousand Pillar temple?",
+      "expected_answer": "Sevas performed at Thousand Pillar include: Suprabhata Seva, Nitya Abhishekam, Nitya Archana & Harati.",
+      "source_files": [
+        "thousand pillar/sevas.json"
+      ],
+      "source_fields": [
+        "sevas",
+        "seva_name",
+        "name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_thousand pillar_07",
+      "temple_id": "thousand pillar",
+      "temple_name": "Thousand Pillar",
+      "category": "service",
+      "question": "What facilities and amenities are available for pilgrims at Thousand Pillar temple?",
+      "expected_answer": "Facilities at Thousand Pillar include: facilities, elderly_facilities.",
+      "source_files": [
+        "thousand pillar/facilities.json"
+      ],
+      "source_fields": [
+        "facilities"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_thousand pillar_08",
+      "temple_id": "thousand pillar",
+      "temple_name": "Thousand Pillar",
+      "category": "festivals",
+      "question": "What major festivals and annual celebrations take place at Thousand Pillar temple?",
+      "expected_answer": "Major festivals celebrated at Thousand Pillar include: Maha Shivaratri, Karthika Masam, Ugadi.",
+      "source_files": [
+        "thousand pillar/festivals.json"
+      ],
+      "source_fields": [
+        "festivals",
+        "festival_name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_thousand pillar_09",
+      "temple_id": "thousand pillar",
+      "temple_name": "Thousand Pillar",
+      "category": "rules",
+      "question": "What are the dress codes and code of conduct rules for visiting Thousand Pillar temple?",
+      "expected_answer": "Dress Code: men: ; women: ; Do's: Remove footwear before entering the temple premises., Dress modestly and respectfully., Maintain sil; Don'ts: Do not litter inside or around the temple., Do not damage temple structures or sculptures., Do not c",
+      "source_files": [
+        "thousand pillar/rules.json"
+      ],
+      "source_fields": [
+        "dress_code",
+        "dos",
+        "donts"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_thousand pillar_11",
+      "temple_id": "thousand pillar",
+      "temple_name": "Thousand Pillar",
+      "category": "travel",
+      "question": "What are the emergency contact and helpline numbers for Thousand Pillar temple?",
+      "expected_answer": "Police: name: Hanamkonda Law & Order Police Station; phone: +91 94910 89126; address: Hanamkonda; details: Station House Officer (SHO)., name: Hanamkonda Patrol Cars / Mobile Patrol; phone: +91 63005 31346; details: 24/7 Mobile Patrol., name: Hanamkonda Traffic Police Station; phone: +91 87126 85053; address: Hanamkonda Chowrasta; details: Traffic management & assistance.; Medical: name: G.R. Hospital (Private Multispecialty); phone: +91 870 255 0999; alt_phone: 020-48562555; address: 2.5 km, name: MGM Government Hospital (Major Public Trauma Centre); phone: +91 870 257 1151; address: 2.7 km; details: Major government 24/7 emergency & trauma hospital.; Helpline: name: All-in-One Emergency Response System; phone: 112, name: Police Control Room; phone: 100, name: Medical Emergency / Ambulance; phone: 108; Phones: 8919499761, 08702511777, +91 94910 89126, +91 63005 31346, +91 87126 85053",
+      "source_files": [
+        "thousand pillar/emergency_nos.json",
+        "thousand pillar/contacts.json"
+      ],
+      "source_fields": [
+        "police",
+        "medical",
+        "helpline",
+        "phones"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_thousand pillar_12",
+      "temple_id": "thousand pillar",
+      "temple_name": "Thousand Pillar",
+      "category": "multi_field",
+      "question": "What are the darshan timings and required dress code guidelines at Thousand Pillar temple?",
+      "expected_answer": "Timings: 6:00 am to 8:00 pm. Dress code: men: ; women: .",
+      "source_files": [
+        "thousand pillar/timings.json",
+        "thousand pillar/rules.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "dress_code"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_thousand pillar_13",
+      "temple_id": "thousand pillar",
+      "temple_name": "Thousand Pillar",
+      "category": "multi_hop",
+      "question": "Tell me about the presiding deity of Thousand Pillar temple and how to reach the temple premises.",
+      "expected_answer": "Deity: Lord Shiva. Location & Travel: Village: Hanamkonda, District: Hanumakonda, State: Telangana.",
+      "source_files": [
+        "thousand pillar/temple.json",
+        "thousand pillar/maps.json"
+      ],
+      "source_fields": [
+        "main_deity",
+        "village",
+        "nearest_railway_station"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_hop"
+    },
+    {
+      "id": "q_ttd_01",
+      "temple_id": "ttd",
+      "temple_name": "Ttd",
+      "category": "basic_factual",
+      "question": "Who is the main deity worshipped at Ttd temple?",
+      "expected_answer": "The main deity of Ttd temple is Lord Sri Venkateswara Swamy (Lord Balaji / Srinivasa / Govinda) – Swayambhu (Self-manifested) granite idol standing in the sanctum sanctorum under the golden Ananda Nilayam Vimana..",
+      "source_files": [
+        "ttd/temple.json"
+      ],
+      "source_fields": [
+        "main_deity"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ttd_02",
+      "temple_id": "ttd",
+      "temple_name": "Ttd",
+      "category": "basic_factual",
+      "question": "Where is Ttd temple located?",
+      "expected_answer": "Ttd temple is located at Village: Tirumala, District: Tirupati (formerly Chittoor), State: Andhra Pradesh.",
+      "source_files": [
+        "ttd/temple.json"
+      ],
+      "source_fields": [
+        "village",
+        "district",
+        "state"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_ttd_03",
+      "temple_id": "ttd",
+      "temple_name": "Ttd",
+      "category": "basic_factual",
+      "question": "What is the historical or mythological background of Ttd temple?",
+      "expected_answer": "Documented through more than 1,000 stone epigraphical inscriptions carved in Tamil, Telugu, and Kannada.\n- Earliest recorded historical endowment dates to 966 AD by Pallava Queen Samavai (Kadavan-Peru",
+      "source_files": [
+        "ttd/temple.json"
+      ],
+      "source_fields": [
+        "history",
+        "mythology"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ttd_04",
+      "temple_id": "ttd",
+      "temple_name": "Ttd",
+      "category": "basic_factual",
+      "question": "What are the daily opening and closing timings of Ttd temple?",
+      "expected_answer": "Ttd temple opens at 02:30 AM and closes at 01:30 AM (Next Day). Afternoon break is {'details': 'No complete closure; brief 20-30 minute queue pauses for Naivedyam (food offerings) during First Bell, Second Bell, and Night Bell.'}.",
+      "source_files": [
+        "ttd/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "afternoon_break"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ttd_05",
+      "temple_id": "ttd",
+      "temple_name": "Ttd",
+      "category": "basic_factual",
+      "question": "When can devotees visit Ttd temple for darshan during the day?",
+      "expected_answer": "Devotees can visit between opening time 02:30 AM and closing time 01:30 AM (Next Day).",
+      "source_files": [
+        "ttd/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "daily_schedule"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "query_variation"
+    },
+    {
+      "id": "q_ttd_06",
+      "temple_id": "ttd",
+      "temple_name": "Ttd",
+      "category": "service",
+      "question": "What sevas or poojas are performed at Ttd temple?",
+      "expected_answer": "Sevas performed at Ttd include: Suprabhatam, Thomala Seva, Archana / Sahasranamarchana.",
+      "source_files": [
+        "ttd/sevas.json"
+      ],
+      "source_fields": [
+        "sevas",
+        "seva_name",
+        "name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ttd_07",
+      "temple_id": "ttd",
+      "temple_name": "Ttd",
+      "category": "service",
+      "question": "What facilities and amenities are available for pilgrims at Ttd temple?",
+      "expected_answer": "Facilities at Ttd include: facilities.",
+      "source_files": [
+        "ttd/facilities.json"
+      ],
+      "source_fields": [
+        "facilities"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ttd_08",
+      "temple_id": "ttd",
+      "temple_name": "Ttd",
+      "category": "festivals",
+      "question": "What major festivals and annual celebrations take place at Ttd temple?",
+      "expected_answer": "Major festivals celebrated at Ttd include: Srivari Salakatla & Navarathri Brahmotsavams, Vaikuntha Ekadashi & Vaikuntha Dwara Darshanam, Rathasapthami (Surya Jayanti / Mini Brahmotsavam).",
+      "source_files": [
+        "ttd/festivals.json"
+      ],
+      "source_fields": [
+        "festivals",
+        "festival_name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ttd_11",
+      "temple_id": "ttd",
+      "temple_name": "Ttd",
+      "category": "travel",
+      "question": "What are the emergency contact and helpline numbers for Ttd temple?",
+      "expected_answer": "Phones: 155257, 1800 425 4141, 1800 425 111111, 1800 425 333333, 0877-2233333",
+      "source_files": [
+        "ttd/emergency_nos.json",
+        "ttd/contacts.json"
+      ],
+      "source_fields": [
+        "police",
+        "medical",
+        "helpline",
+        "phones"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ttd_12",
+      "temple_id": "ttd",
+      "temple_name": "Ttd",
+      "category": "multi_field",
+      "question": "What are the darshan timings and required dress code guidelines at Ttd temple?",
+      "expected_answer": "Timings: 02:30 AM to 01:30 AM (Next Day). Dress code: .",
+      "source_files": [
+        "ttd/timings.json",
+        "ttd/rules.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "dress_code"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_ttd_13",
+      "temple_id": "ttd",
+      "temple_name": "Ttd",
+      "category": "multi_hop",
+      "question": "Tell me about the presiding deity of Ttd temple and how to reach the temple premises.",
+      "expected_answer": "Deity: Lord Sri Venkateswara Swamy (Lord Balaji / Srinivasa / Govinda) – Swayambhu (Self-manifested) granite idol standing in the sanctum sanctorum under the golden Ananda Nilayam Vimana.. Location & Travel: Village: Tirumala, District: Tirupati (formerly Chittoor), State: Andhra Pradesh.",
+      "source_files": [
+        "ttd/temple.json",
+        "ttd/maps.json"
+      ],
+      "source_fields": [
+        "main_deity",
+        "village",
+        "nearest_railway_station"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_hop"
+    },
+    {
+      "id": "q_ujjaini_01",
+      "temple_id": "ujjaini",
+      "temple_name": "Ujjaini",
+      "category": "basic_factual",
+      "question": "Who is the main deity worshipped at Ujjaini temple?",
+      "expected_answer": "The main deity of Ujjaini temple is Goddess Ujjaini Mahakali (Historic wooden idol in Padmasana posture with four hands, preserved and covered with a silver Vendi Kavacham shield).",
+      "source_files": [
+        "ujjaini/temple.json"
+      ],
+      "source_fields": [
+        "main_deity"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ujjaini_02",
+      "temple_id": "ujjaini",
+      "temple_name": "Ujjaini",
+      "category": "basic_factual",
+      "question": "Where is Ujjaini temple located?",
+      "expected_answer": "Ujjaini temple is located at Village: Secunderabad (General Bazaar), District: Hyderabad, State: Telangana.",
+      "source_files": [
+        "ujjaini/temple.json"
+      ],
+      "source_fields": [
+        "village",
+        "district",
+        "state"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_ujjaini_03",
+      "temple_id": "ujjaini",
+      "temple_name": "Ujjaini",
+      "category": "basic_factual",
+      "question": "What is the historical or mythological background of Ujjaini temple?",
+      "expected_answer": "In 1813, Suriti Appaiah, a military battalion soldier deployed to Ujjain, vowed to build a temple in Secunderabad if his battalion survived a deadly cholera epidemic. Upon safe return, a wooden idol w",
+      "source_files": [
+        "ujjaini/temple.json"
+      ],
+      "source_fields": [
+        "history",
+        "mythology"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ujjaini_04",
+      "temple_id": "ujjaini",
+      "temple_name": "Ujjaini",
+      "category": "basic_factual",
+      "question": "What are the daily opening and closing timings of Ujjaini temple?",
+      "expected_answer": "Ujjaini temple opens at 6:00 AM and closes at 9:00 PM. Afternoon break is {'from': '12:00 PM', 'to': '4:00 PM'}.",
+      "source_files": [
+        "ujjaini/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "afternoon_break"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ujjaini_05",
+      "temple_id": "ujjaini",
+      "temple_name": "Ujjaini",
+      "category": "basic_factual",
+      "question": "When can devotees visit Ujjaini temple for darshan during the day?",
+      "expected_answer": "Devotees can visit between opening time 6:00 AM and closing time 9:00 PM.",
+      "source_files": [
+        "ujjaini/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "daily_schedule"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "query_variation"
+    },
+    {
+      "id": "q_ujjaini_06",
+      "temple_id": "ujjaini",
+      "temple_name": "Ujjaini",
+      "category": "service",
+      "question": "What sevas or poojas are performed at Ujjaini temple?",
+      "expected_answer": "Sevas performed at Ujjaini include: Abhisekam, Annadanam(100), Archana.",
+      "source_files": [
+        "ujjaini/sevas.json"
+      ],
+      "source_fields": [
+        "sevas",
+        "seva_name",
+        "name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ujjaini_07",
+      "temple_id": "ujjaini",
+      "temple_name": "Ujjaini",
+      "category": "service",
+      "question": "What facilities and amenities are available for pilgrims at Ujjaini temple?",
+      "expected_answer": "Facilities at Ujjaini include: facilities.",
+      "source_files": [
+        "ujjaini/facilities.json"
+      ],
+      "source_fields": [
+        "facilities"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ujjaini_08",
+      "temple_id": "ujjaini",
+      "temple_name": "Ujjaini",
+      "category": "festivals",
+      "question": "What major festivals and annual celebrations take place at Ujjaini temple?",
+      "expected_answer": "Major festivals celebrated at Ujjaini include: SHRI AMMAVARI JATHARA, Ghatothsavam, Kolupu Potharaju Bali.",
+      "source_files": [
+        "ujjaini/festivals.json"
+      ],
+      "source_fields": [
+        "festivals",
+        "festival_name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ujjaini_09",
+      "temple_id": "ujjaini",
+      "temple_name": "Ujjaini",
+      "category": "rules",
+      "question": "What are the dress codes and code of conduct rules for visiting Ujjaini temple?",
+      "expected_answer": "Dress Code: men: Kurtas, dhotis, or full-length trousers.; women: Traditional sarees, half-sarees, or modest chudidars with a dupatta.; Do's: Carry Physical Cash: Note that while hundi counters have digital links, the physical prasad and quic; Don'ts: Do Not Bring Massive Bags: Avoid large personal luggage pieces, as the entrance security checks use ",
+      "source_files": [
+        "ujjaini/rules.json"
+      ],
+      "source_fields": [
+        "dress_code",
+        "dos",
+        "donts"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ujjaini_11",
+      "temple_id": "ujjaini",
+      "temple_name": "Ujjaini",
+      "category": "travel",
+      "question": "What are the emergency contact and helpline numbers for Ujjaini temple?",
+      "expected_answer": "Police: name: Mahankali Police Station (Adjacent to Temple); phone: +91 94906 16460; alt_phone: +91 40 2785 3550; address: (1 km) Subhash Road, near Ujjaini Mahakali Temple, Tobacco Bazar, Secunderabad; Medical: name: Yashoda Hospitals (Secunderabad); phone: +91 40 4567 4567; address: (1.2 km) Alexander Road, Kummari Guda, Shivaji Nagar, Secunderabad; details: Open 24 hours. Leading multi-specialty facility for rapid trauma care, advanced diagnostics, cardiac emergencies, and ICU., name: Apollo Hospitals (Secunderabad); phone: +91 40 6907 1299; address: (2 km) Pollicetty Towers, St Johns Road, beside Keyes High School, Regimental Bazaar, Secunderabad; details: Open 24 hours. Trusted 150-bed facility offering round-the-clock emergency support., name: Gandhi Hospital (Public Tertiary Hospital); address: (2.1 km) Musheerabad, Padmarao Nagar, Secunderabad (approx. 2 km away); details: Open 24 hours. One of the largest public tertiary hospitals in the region.; Phones: 040-27814744, +91 91549 94681, +91 91549 94682, +91 91549 94683, +91 91549 94684",
+      "source_files": [
+        "ujjaini/emergency_nos.json",
+        "ujjaini/contacts.json"
+      ],
+      "source_fields": [
+        "police",
+        "medical",
+        "helpline",
+        "phones"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_ujjaini_12",
+      "temple_id": "ujjaini",
+      "temple_name": "Ujjaini",
+      "category": "multi_field",
+      "question": "What are the darshan timings and required dress code guidelines at Ujjaini temple?",
+      "expected_answer": "Timings: 6:00 AM to 9:00 PM. Dress code: men: Kurtas, dhotis, or full-length trousers.; women: Traditional sarees, half-s.",
+      "source_files": [
+        "ujjaini/timings.json",
+        "ujjaini/rules.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "dress_code"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_ujjaini_13",
+      "temple_id": "ujjaini",
+      "temple_name": "Ujjaini",
+      "category": "multi_hop",
+      "question": "Tell me about the presiding deity of Ujjaini temple and how to reach the temple premises.",
+      "expected_answer": "Deity: Goddess Ujjaini Mahakali (Historic wooden idol in Padmasana posture with four hands, preserved and covered with a silver Vendi Kavacham shield). Location & Travel: Village: Secunderabad (General Bazaar), District: Hyderabad, State: Telangana.",
+      "source_files": [
+        "ujjaini/temple.json",
+        "ujjaini/maps.json"
+      ],
+      "source_fields": [
+        "main_deity",
+        "village",
+        "nearest_railway_station"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_hop"
+    },
+    {
+      "id": "q_veera satyanarayana_01",
+      "temple_id": "veera satyanarayana",
+      "temple_name": "Veera Satyanarayana",
+      "category": "basic_factual",
+      "question": "Who is the main deity worshipped at Veera Satyanarayana temple?",
+      "expected_answer": "The main deity of Veera Satyanarayana temple is Lord Sri Veera Venkata Satyanarayana Swamy (Hari Hara Hiranya Garbha Thrimurtyatmaka).",
+      "source_files": [
+        "veera satyanarayana/temple.json"
+      ],
+      "source_fields": [
+        "main_deity"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_veera satyanarayana_02",
+      "temple_id": "veera satyanarayana",
+      "temple_name": "Veera Satyanarayana",
+      "category": "basic_factual",
+      "question": "Where is Veera Satyanarayana temple located?",
+      "expected_answer": "Veera Satyanarayana temple is located at Village: Annavaram, District: East Godavari District, State: Andhra Pradesh.",
+      "source_files": [
+        "veera satyanarayana/temple.json"
+      ],
+      "source_fields": [
+        "village",
+        "district",
+        "state"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_veera satyanarayana_03",
+      "temple_id": "veera satyanarayana",
+      "temple_name": "Veera Satyanarayana",
+      "category": "basic_factual",
+      "question": "What is the historical or mythological background of Veera Satyanarayana temple?",
+      "expected_answer": "It is believed that the place was known for constant food distribution (free feeding) by the benevolent people of the locality and that therefore the place was called by the name Annavaram ('annam' me",
+      "source_files": [
+        "veera satyanarayana/temple.json"
+      ],
+      "source_fields": [
+        "history",
+        "mythology"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_veera satyanarayana_04",
+      "temple_id": "veera satyanarayana",
+      "temple_name": "Veera Satyanarayana",
+      "category": "basic_factual",
+      "question": "What are the daily opening and closing timings of Veera Satyanarayana temple?",
+      "expected_answer": "Veera Satyanarayana temple opens at 03:30 AM and closes at 09:00 PM. Afternoon break is {'from': '12:30 PM', 'to': '01:00 PM'}.",
+      "source_files": [
+        "veera satyanarayana/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "afternoon_break"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_veera satyanarayana_05",
+      "temple_id": "veera satyanarayana",
+      "temple_name": "Veera Satyanarayana",
+      "category": "basic_factual",
+      "question": "When can devotees visit Veera Satyanarayana temple for darshan during the day?",
+      "expected_answer": "Devotees can visit between opening time 03:30 AM and closing time 09:00 PM.",
+      "source_files": [
+        "veera satyanarayana/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "daily_schedule"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "query_variation"
+    },
+    {
+      "id": "q_veera satyanarayana_06",
+      "temple_id": "veera satyanarayana",
+      "temple_name": "Veera Satyanarayana",
+      "category": "service",
+      "question": "What sevas or poojas are performed at Veera Satyanarayana temple?",
+      "expected_answer": "Sevas performed at Veera Satyanarayana include: Sri Swamy Vari Suprabhata Seva, Sri Swamy Vari Vratham, Sri Swamy Vari Special Vratham.",
+      "source_files": [
+        "veera satyanarayana/sevas.json"
+      ],
+      "source_fields": [
+        "sevas",
+        "seva_name",
+        "name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_veera satyanarayana_07",
+      "temple_id": "veera satyanarayana",
+      "temple_name": "Veera Satyanarayana",
+      "category": "service",
+      "question": "What facilities and amenities are available for pilgrims at Veera Satyanarayana temple?",
+      "expected_answer": "Facilities at Veera Satyanarayana include: cloakroom, drinking_water, toilets, footwear_counter, annadanam.",
+      "source_files": [
+        "veera satyanarayana/facilities.json"
+      ],
+      "source_fields": [
+        "facilities"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_veera satyanarayana_08",
+      "temple_id": "veera satyanarayana",
+      "temple_name": "Veera Satyanarayana",
+      "category": "festivals",
+      "question": "What major festivals and annual celebrations take place at Veera Satyanarayana temple?",
+      "expected_answer": "Major festivals celebrated at Veera Satyanarayana include: Sri Swamy Vari Varshika Kalyana Mahotsavam (Brahmotsavaalu), Sri Swami Vari Jayanti, Giri Pradakshina & Jwala Toranam.",
+      "source_files": [
+        "veera satyanarayana/festivals.json"
+      ],
+      "source_fields": [
+        "festivals",
+        "festival_name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_veera satyanarayana_09",
+      "temple_id": "veera satyanarayana",
+      "temple_name": "Veera Satyanarayana",
+      "category": "rules",
+      "question": "What are the dress codes and code of conduct rules for visiting Veera Satyanarayana temple?",
+      "expected_answer": "Dress Code: men: Decent, modest, and respectful traditional attire. Entering the shrine naked or wearing only a loin-cloth is strictly prohibited. Head guards like helmets, caps, turbans, and hats are not allowed inside.; women: Decent, traditional Indian attire (Saree, Half-saree, or Chudidar with Dupatta). Flowers and garlands from temple gardens are strictly for the Lord only and must not be worn by devotees.; Do's: Do observe absolute silence inside the temple and chant 'Om Sri SatyaDevaya Namah' to yourself., Do ; Don'ts: Don't eat non-vegetarian food. Don't consume liquor or other intoxicants., Don't wear footwear, or m",
+      "source_files": [
+        "veera satyanarayana/rules.json"
+      ],
+      "source_fields": [
+        "dress_code",
+        "dos",
+        "donts"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_veera satyanarayana_11",
+      "temple_id": "veera satyanarayana",
+      "temple_name": "Veera Satyanarayana",
+      "category": "travel",
+      "question": "What are the emergency contact and helpline numbers for Veera Satyanarayana temple?",
+      "expected_answer": "Police: name: Annavaram Law & Order Police Station; phone: +91 88682 38133; address: (750 m)Annavaram Town; details: Local Police Station., name: Temple Devasthanam Security Office (Hilltop); phone: +91 88682 38121 / 8984261861; address: Ratnagiri Hilltop Temple Complex; details: Temple security and immediate hilltop assistance.; Medical: name: S.V.V.S.S. Devasthanam Hospital; address: Located inside hilltop courtyard complex at Vahanala Vedi (0.0 km); details: Temple / Trust Hospital. 24/7. Request immediate dispatch through on-duty temple security., name: Sri Satya Maruthi Hospital (Private); phone: +91 77996 62666; address: Near Sai Baba Temple, Subbarayapuram (3 km); details: 24/7 General Emergency Care., name: Satya Emergency Hospital (Private); phone: +91 99499 22010; address: Railway Station Road, Velampeta (2.7 km); details: 24/7 Trauma and Critical Care Stabilization., name: Surya Emergency Hospital (Private); address: Chalamayya Nagar, Railway Station Road (2.9 km); details: 24/7 Trauma Medicine and Pediatrics. Available via local triage desk or 108 ambulance coordination., name: Mamata Multispeciality Hospital; phone: +91 88542 55823; address: Red Convent Street, Tuni (~20 km); details: 24/7 Comprehensive Emergency and ICU Care.; Helpline: name: National Emergency Number; phone: 112, name: Police Control Room; phone: 100, name: Andhra Pradesh Medical Ambulance Service; phone: 108; Phones: 08868-238163, 08868-238125, 08868-238121, 9491249990, 9491249991",
+      "source_files": [
+        "veera satyanarayana/emergency_nos.json",
+        "veera satyanarayana/contacts.json"
+      ],
+      "source_fields": [
+        "police",
+        "medical",
+        "helpline",
+        "phones"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_veera satyanarayana_12",
+      "temple_id": "veera satyanarayana",
+      "temple_name": "Veera Satyanarayana",
+      "category": "multi_field",
+      "question": "What are the darshan timings and required dress code guidelines at Veera Satyanarayana temple?",
+      "expected_answer": "Timings: 03:30 AM to 09:00 PM. Dress code: men: Decent, modest, and respectful traditional attire. Entering the shrine nake.",
+      "source_files": [
+        "veera satyanarayana/timings.json",
+        "veera satyanarayana/rules.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "dress_code"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_veera satyanarayana_13",
+      "temple_id": "veera satyanarayana",
+      "temple_name": "Veera Satyanarayana",
+      "category": "multi_hop",
+      "question": "Tell me about the presiding deity of Veera Satyanarayana temple and how to reach the temple premises.",
+      "expected_answer": "Deity: Lord Sri Veera Venkata Satyanarayana Swamy (Hari Hara Hiranya Garbha Thrimurtyatmaka). Location & Travel: Village: Annavaram, District: East Godavari District, State: Andhra Pradesh.",
+      "source_files": [
+        "veera satyanarayana/temple.json",
+        "veera satyanarayana/maps.json"
+      ],
+      "source_fields": [
+        "main_deity",
+        "village",
+        "nearest_railway_station"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_hop"
+    },
+    {
+      "id": "q_vemulavada_01",
+      "temple_id": "vemulavada",
+      "temple_name": "Vemulavada",
+      "category": "basic_factual",
+      "question": "Who is the main deity worshipped at Vemulavada temple?",
+      "expected_answer": "The main deity of Vemulavada temple is Lord Raja Rajeshwara in the form of \"Neela Lohitha Siva Lingam\".",
+      "source_files": [
+        "vemulavada/temple.json"
+      ],
+      "source_fields": [
+        "main_deity"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_vemulavada_02",
+      "temple_id": "vemulavada",
+      "temple_name": "Vemulavada",
+      "category": "basic_factual",
+      "question": "Where is Vemulavada temple located?",
+      "expected_answer": "Vemulavada temple is located at Village: Vemulawada, District: Rajaanna Sirisilla District, State: Telangana State.",
+      "source_files": [
+        "vemulavada/temple.json"
+      ],
+      "source_fields": [
+        "village",
+        "district",
+        "state"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_vemulavada_03",
+      "temple_id": "vemulavada",
+      "temple_name": "Vemulavada",
+      "category": "basic_factual",
+      "question": "What is the historical or mythological background of Vemulavada temple?",
+      "expected_answer": "Historically this place was the capital of the Vemulawada Chalukyas who ruled from AD 750 to AD 973. Rock cut inscriptions found in this place, however refer to the village as Lemulavatika.\nLiterary a",
+      "source_files": [
+        "vemulavada/temple.json"
+      ],
+      "source_fields": [
+        "history",
+        "mythology"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_vemulavada_04",
+      "temple_id": "vemulavada",
+      "temple_name": "Vemulavada",
+      "category": "basic_factual",
+      "question": "What are the daily opening and closing timings of Vemulavada temple?",
+      "expected_answer": "Vemulavada temple opens at 4.00 AM and closes at 10.20 PM. Afternoon break is {'from': '11:40 AM', 'to': '12:10 PM'}.",
+      "source_files": [
+        "vemulavada/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "afternoon_break"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_vemulavada_05",
+      "temple_id": "vemulavada",
+      "temple_name": "Vemulavada",
+      "category": "basic_factual",
+      "question": "When can devotees visit Vemulavada temple for darshan during the day?",
+      "expected_answer": "Devotees can visit between opening time 4.00 AM and closing time 10.20 PM.",
+      "source_files": [
+        "vemulavada/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "daily_schedule"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "query_variation"
+    },
+    {
+      "id": "q_vemulavada_06",
+      "temple_id": "vemulavada",
+      "temple_name": "Vemulavada",
+      "category": "service",
+      "question": "What sevas or poojas are performed at Vemulavada temple?",
+      "expected_answer": "Sevas performed at Vemulavada include: Mangala Vaidyam, Suprabhata Seva, Prabhata Harathi.",
+      "source_files": [
+        "vemulavada/sevas.json"
+      ],
+      "source_fields": [
+        "sevas",
+        "seva_name",
+        "name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_vemulavada_07",
+      "temple_id": "vemulavada",
+      "temple_name": "Vemulavada",
+      "category": "service",
+      "question": "What facilities and amenities are available for pilgrims at Vemulavada temple?",
+      "expected_answer": "Facilities at Vemulavada include: facilities.",
+      "source_files": [
+        "vemulavada/facilities.json"
+      ],
+      "source_fields": [
+        "facilities"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_vemulavada_08",
+      "temple_id": "vemulavada",
+      "temple_name": "Vemulavada",
+      "category": "festivals",
+      "question": "What major festivals and annual celebrations take place at Vemulavada temple?",
+      "expected_answer": "Major festivals celebrated at Vemulavada include: Mahasivarathri Jathra, Sreerama Navarathrotsavams, Other Festivals.",
+      "source_files": [
+        "vemulavada/festivals.json"
+      ],
+      "source_fields": [
+        "festivals",
+        "festival_name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_vemulavada_09",
+      "temple_id": "vemulavada",
+      "temple_name": "Vemulavada",
+      "category": "rules",
+      "question": "What are the dress codes and code of conduct rules for visiting Vemulavada temple?",
+      "expected_answer": "Dress Code: men: Darshan Dress Code: Any decent outfit; Abhishekam Dress Code: Men must remove Shirt and Vest during the Pooja.; women: Darshan Dress Code: Any decent outfit; Do's: Do take a holy bath in the Dharma Gundam or Surya Gundam before entering the queue lines., Do mainta; Don'ts: Don't wear any footwear in or around the main temple outer boundary lines., Don't take photographs o",
+      "source_files": [
+        "vemulavada/rules.json"
+      ],
+      "source_fields": [
+        "dress_code",
+        "dos",
+        "donts"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_vemulavada_11",
+      "temple_id": "vemulavada",
+      "temple_name": "Vemulavada",
+      "category": "travel",
+      "question": "What are the emergency contact and helpline numbers for Vemulavada temple?",
+      "expected_answer": "Police: name: Vemulawada Town Police Station; phone: 8712656413; address: (1.1 km) Vemulawada Town; details: Inspector on duty., name: Vemulawada Rural Police Station; phone: 8712656417; address: Vemulawada Rural; details: Sub-Inspector on duty.; Medical: name: Area Hospital / CHC Vemulawada (Government); phone: +91 9490510308; alt_phone: +91 9440078901; address: Vemulawada (~1.0 km from temple), name: Devasthanam Homeopathic Hospital; address: Devasthanam Premises; details: Free medical facility operated by Devasthanam Medical Officer., name: Sri Raksha Multi Speciality Hospital (Private); phone: +91 91600 05122; address: Bypass Road (~1.9 km); details: 24/7 multi-speciality private care., name: Vijaya Durga Clinic; phone: +91 91820 78261; address: Main Road (4.2 km); details: 5-minute walk down Main Road.; Helpline: name: National Emergency Number; phone: 112, name: Police Control Room; phone: 100, name: State Ambulance Service; phone: 108; Phones: +91 83339 97618, +91 83339 97619, +91 83339 97612",
+      "source_files": [
+        "vemulavada/emergency_nos.json",
+        "vemulavada/contacts.json"
+      ],
+      "source_fields": [
+        "police",
+        "medical",
+        "helpline",
+        "phones"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_vemulavada_12",
+      "temple_id": "vemulavada",
+      "temple_name": "Vemulavada",
+      "category": "multi_field",
+      "question": "What are the darshan timings and required dress code guidelines at Vemulavada temple?",
+      "expected_answer": "Timings: 4.00 AM to 10.20 PM. Dress code: men: Darshan Dress Code: Any decent outfit; Abhishekam Dress Code: Men must remo.",
+      "source_files": [
+        "vemulavada/timings.json",
+        "vemulavada/rules.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "dress_code"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_vemulavada_13",
+      "temple_id": "vemulavada",
+      "temple_name": "Vemulavada",
+      "category": "multi_hop",
+      "question": "Tell me about the presiding deity of Vemulavada temple and how to reach the temple premises.",
+      "expected_answer": "Deity: Lord Raja Rajeshwara in the form of \"Neela Lohitha Siva Lingam\". Location & Travel: Village: Vemulawada, District: Rajaanna Sirisilla District, State: Telangana State.",
+      "source_files": [
+        "vemulavada/temple.json",
+        "vemulavada/maps.json"
+      ],
+      "source_fields": [
+        "main_deity",
+        "village",
+        "nearest_railway_station"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_hop"
+    },
+    {
+      "id": "q_yadadri_01",
+      "temple_id": "yadadri",
+      "temple_name": "Yadadri",
+      "category": "basic_factual",
+      "question": "Who is the main deity worshipped at Yadadri temple?",
+      "expected_answer": "The main deity of Yadadri temple is Sri Lakshmi Narasimha Swamy.",
+      "source_files": [
+        "yadadri/temple.json"
+      ],
+      "source_fields": [
+        "main_deity"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_yadadri_02",
+      "temple_id": "yadadri",
+      "temple_name": "Yadadri",
+      "category": "basic_factual",
+      "question": "Where is Yadadri temple located?",
+      "expected_answer": "Yadadri temple is located at Village: Yadagirigutta, District: Yadadri Bhuvanagiri district, State: Telangana.",
+      "source_files": [
+        "yadadri/temple.json"
+      ],
+      "source_fields": [
+        "village",
+        "district",
+        "state"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_yadadri_03",
+      "temple_id": "yadadri",
+      "temple_name": "Yadadri",
+      "category": "basic_factual",
+      "question": "What is the historical or mythological background of Yadadri temple?",
+      "expected_answer": "The reconstruction of the Yadadri temple is one of the largest stone temple renovation projects in modern history. Executed by the Yadadri Temple Development Authority (YTDA) and designed by chief arc",
+      "source_files": [
+        "yadadri/temple.json"
+      ],
+      "source_fields": [
+        "history",
+        "mythology"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_yadadri_04",
+      "temple_id": "yadadri",
+      "temple_name": "Yadadri",
+      "category": "basic_factual",
+      "question": "What are the daily opening and closing timings of Yadadri temple?",
+      "expected_answer": "Yadadri temple opens at 04:00 AM and closes at 09:45 PM. Afternoon break is {'from': '03:00 PM', 'to': '04:00 PM'}.",
+      "source_files": [
+        "yadadri/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "afternoon_break"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_yadadri_05",
+      "temple_id": "yadadri",
+      "temple_name": "Yadadri",
+      "category": "basic_factual",
+      "question": "When can devotees visit Yadadri temple for darshan during the day?",
+      "expected_answer": "Devotees can visit between opening time 04:00 AM and closing time 09:45 PM.",
+      "source_files": [
+        "yadadri/timings.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "daily_schedule"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "query_variation"
+    },
+    {
+      "id": "q_yadadri_06",
+      "temple_id": "yadadri",
+      "temple_name": "Yadadri",
+      "category": "service",
+      "question": "What sevas or poojas are performed at Yadadri temple?",
+      "expected_answer": "Sevas performed at Yadadri include: Special Entry, Break Darshanam, Nijabhishekam (For Couples).",
+      "source_files": [
+        "yadadri/sevas.json"
+      ],
+      "source_fields": [
+        "sevas",
+        "seva_name",
+        "name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_yadadri_07",
+      "temple_id": "yadadri",
+      "temple_name": "Yadadri",
+      "category": "service",
+      "question": "What facilities and amenities are available for pilgrims at Yadadri temple?",
+      "expected_answer": "Facilities at Yadadri include: facilities.",
+      "source_files": [
+        "yadadri/facilities.json"
+      ],
+      "source_fields": [
+        "facilities"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_yadadri_08",
+      "temple_id": "yadadri",
+      "temple_name": "Yadadri",
+      "category": "festivals",
+      "question": "What major festivals and annual celebrations take place at Yadadri temple?",
+      "expected_answer": "Major festivals celebrated at Yadadri include: Annual Brahmotsavams, Sri Narasimha Jayanthi, Sri Swathi Nakshatram Kalyanotsavams.",
+      "source_files": [
+        "yadadri/festivals.json"
+      ],
+      "source_fields": [
+        "festivals",
+        "festival_name"
+      ],
+      "answerable": true,
+      "difficulty": "medium",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_yadadri_09",
+      "temple_id": "yadadri",
+      "temple_name": "Yadadri",
+      "category": "rules",
+      "question": "What are the dress codes and code of conduct rules for visiting Yadadri temple?",
+      "expected_answer": "Dress Code: men: Dhoti and Kanduva, or Kurta-Pyjama. Jeans, T-shirts, and shorts are not permitted in the Kalyanotsavam or Homam halls.; women: Saree, Half-Saree, or Salwar-Kameez with Dupatta.; Do's: Traditional attire is strictly enforced for sevas (like Kalyanotsavam)., Deposit mobile phones, came; Don'ts: Mobile phones, cameras, laptops, and smartwatches are strictly prohibited inside the main cave templ",
+      "source_files": [
+        "yadadri/rules.json"
+      ],
+      "source_fields": [
+        "dress_code",
+        "dos",
+        "donts"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_yadadri_11",
+      "temple_id": "yadadri",
+      "temple_name": "Yadadri",
+      "category": "travel",
+      "question": "What are the emergency contact and helpline numbers for Yadadri temple?",
+      "expected_answer": "Police: name: Yadagirigutta Police Station; phone: 08685-236619; alt_phone: +91 9440795643; address: Rajapet Road, Yadagirigutta (2.1 km at foothills), name: ACP Yadadri Office; phone: 08685-242204; alt_phone: +91 8333818894; address: Police PS Road, Yadagirigutta (~2.5 km); Medical: name: Primary Health Centre (PHC), Yadagirigutta; phone: +91 9949997989; address: Rajapet Road, Yadagirigpally, Yadagirigutta (3.1 km); details: Outpatient, primary emergency first aid, maternal care., name: Government General Hospital (GGH), Bhongir (District Hospital); phone: +91 7702131479; address: Main Road, Bhongir (14.8 km away); details: 24/7 Emergency & Trauma care, 220-bed hospital, ICU, pediatrics, orthopedics., name: Dr.Racha Yadagiri Hospital; address: 1.6 km; details: 24/7 emergency first aid, general medicine., name: Temple First Aid Clinic; address: Hilltop entrance near administrative block; details: Duty doctor and basic first-aid supplies during darshan hours.; Helpline: name: National Emergency Number; phone: 112, name: Police Control Room; phone: 100, name: State Ambulance Service; phone: 108, name: Fire Services; phone: 101; Phones: 08685-236622, 08685-236645, 08685-236623, 08685-236664, 08685-236620",
+      "source_files": [
+        "yadadri/emergency_nos.json",
+        "yadadri/contacts.json"
+      ],
+      "source_fields": [
+        "police",
+        "medical",
+        "helpline",
+        "phones"
+      ],
+      "answerable": true,
+      "difficulty": "easy",
+      "test_type": "single_field"
+    },
+    {
+      "id": "q_yadadri_12",
+      "temple_id": "yadadri",
+      "temple_name": "Yadadri",
+      "category": "multi_field",
+      "question": "What are the darshan timings and required dress code guidelines at Yadadri temple?",
+      "expected_answer": "Timings: 04:00 AM to 09:45 PM. Dress code: men: Dhoti and Kanduva, or Kurta-Pyjama. Jeans, T-shirts, and shorts are not per.",
+      "source_files": [
+        "yadadri/timings.json",
+        "yadadri/rules.json"
+      ],
+      "source_fields": [
+        "opening_time",
+        "closing_time",
+        "dress_code"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_field"
+    },
+    {
+      "id": "q_yadadri_13",
+      "temple_id": "yadadri",
+      "temple_name": "Yadadri",
+      "category": "multi_hop",
+      "question": "Tell me about the presiding deity of Yadadri temple and how to reach the temple premises.",
+      "expected_answer": "Deity: Sri Lakshmi Narasimha Swamy. Location & Travel: Village: Yadagirigutta, District: Yadadri Bhuvanagiri district, State: Telangana.",
+      "source_files": [
+        "yadadri/temple.json",
+        "yadadri/maps.json"
+      ],
+      "source_fields": [
+        "main_deity",
+        "village",
+        "nearest_railway_station"
+      ],
+      "answerable": true,
+      "difficulty": "hard",
+      "test_type": "multi_hop"
+    },
+    {
+      "id": "neg_basara",
+      "temple_id": "basara",
+      "temple_name": "Basara",
+      "category": "negative_unanswerable",
+      "question": "What is the ticket price for a space rocket launch from Basara temple?",
+      "expected_answer": "Information not available in temple records. The temple does not provide this facility.",
+      "source_files": [],
+      "source_fields": [],
+      "answerable": false,
+      "difficulty": "medium",
+      "test_type": "negative_unanswerable"
+    },
+    {
+      "id": "neg_chilkur",
+      "temple_id": "chilkur",
+      "temple_name": "Chilkur",
+      "category": "negative_unanswerable",
+      "question": "How much does a helicopter airport shuttle ticket cost at Chilkur Balaji temple?",
+      "expected_answer": "Information not available in temple records. The temple does not provide this facility.",
+      "source_files": [],
+      "source_fields": [],
+      "answerable": false,
+      "difficulty": "medium",
+      "test_type": "negative_unanswerable"
+    },
+    {
+      "id": "neg_yadadri",
+      "temple_id": "yadadri",
+      "temple_name": "Yadadri",
+      "category": "negative_unanswerable",
+      "question": "What are the timings of the indoor snow skiing resort at Yadadri temple?",
+      "expected_answer": "Information not available in temple records. The temple does not provide this facility.",
+      "source_files": [],
+      "source_fields": [],
+      "answerable": false,
+      "difficulty": "medium",
+      "test_type": "negative_unanswerable"
+    },
+    {
+      "id": "neg_dharmapuri",
+      "temple_id": "dharmapuri",
+      "temple_name": "Dharmapuri",
+      "category": "negative_unanswerable",
+      "question": "Where is the scuba diving training center located inside Dharmapuri temple?",
+      "expected_answer": "Information not available in temple records. The temple does not provide this facility.",
+      "source_files": [],
+      "source_fields": [],
+      "answerable": false,
+      "difficulty": "medium",
+      "test_type": "negative_unanswerable"
+    },
+    {
+      "id": "neg_edupayal",
+      "temple_id": "edupayal",
+      "temple_name": "Edupayal",
+      "category": "negative_unanswerable",
+      "question": "Can visitors book submarine rides at Edupayal temple?",
+      "expected_answer": "Information not available in temple records. The temple does not provide this facility.",
+      "source_files": [],
+      "source_fields": [],
+      "answerable": false,
+      "difficulty": "medium",
+      "test_type": "negative_unanswerable"
+    },
+    {
+      "id": "neg_vemulavada",
+      "temple_id": "vemulavada",
+      "temple_name": "Vemulavada",
+      "category": "negative_unanswerable",
+      "question": "What is the entry fee for the roller coaster theme park at Vemulawada temple?",
+      "expected_answer": "Information not available in temple records. The temple does not provide this facility.",
+      "source_files": [],
+      "source_fields": [],
+      "answerable": false,
+      "difficulty": "medium",
+      "test_type": "negative_unanswerable"
+    },
+    {
+      "id": "neg_badrachalam",
+      "temple_id": "badrachalam",
+      "temple_name": "Badrachalam",
+      "category": "negative_unanswerable",
+      "question": "How to rent luxury yachts for private parties at Bhadrachalam temple?",
+      "expected_answer": "Information not available in temple records. The temple does not provide this facility.",
+      "source_files": [],
+      "source_fields": [],
+      "answerable": false,
+      "difficulty": "medium",
+      "test_type": "negative_unanswerable"
+    },
+    {
+      "id": "neg_ramappa",
+      "temple_id": "ramappa",
+      "temple_name": "Ramappa",
+      "category": "negative_unanswerable",
+      "question": "What are the booking prices for hot air balloon safari over Ramappa temple?",
+      "expected_answer": "Information not available in temple records. The temple does not provide this facility.",
+      "source_files": [],
+      "source_fields": [],
+      "answerable": false,
+      "difficulty": "medium",
+      "test_type": "negative_unanswerable"
+    },
+    {
+      "id": "neg_thousand pillar",
+      "temple_id": "thousand pillar",
+      "temple_name": "Thousand Pillar",
+      "category": "negative_unanswerable",
+      "question": "Where can I buy tickets for the underwater aquarium at Thousand Pillar temple?",
+      "expected_answer": "Information not available in temple records. The temple does not provide this facility.",
+      "source_files": [],
+      "source_fields": [],
+      "answerable": false,
+      "difficulty": "medium",
+      "test_type": "negative_unanswerable"
+    },
+    {
+      "id": "neg_birla mandir",
+      "temple_id": "birla mandir",
+      "temple_name": "Birla Mandir",
+      "category": "negative_unanswerable",
+      "question": "What is the schedule of Formula 1 car racing around Birla Mandir?",
+      "expected_answer": "Information not available in temple records. The temple does not provide this facility.",
+      "source_files": [],
+      "source_fields": [],
+      "answerable": false,
+      "difficulty": "medium",
+      "test_type": "negative_unanswerable"
+    },
+    {
+      "id": "neg_karmanghat",
+      "temple_id": "karmanghat",
+      "temple_name": "Karmanghat",
+      "category": "negative_unanswerable",
+      "question": "What is the fee for ice skating rink at Karmanghat Hanuman temple?",
+      "expected_answer": "Information not available in temple records. The temple does not provide this facility.",
+      "source_files": [],
+      "source_fields": [],
+      "answerable": false,
+      "difficulty": "medium",
+      "test_type": "negative_unanswerable"
+    },
+    {
+      "id": "neg_ujjaini",
+      "temple_id": "ujjaini",
+      "temple_name": "Ujjaini",
+      "category": "negative_unanswerable",
+      "question": "How to book private jet landing permissions inside Ujjaini Mahakali temple?",
+      "expected_answer": "Information not available in temple records. The temple does not provide this facility.",
+      "source_files": [],
+      "source_fields": [],
+      "answerable": false,
+      "difficulty": "medium",
+      "test_type": "negative_unanswerable"
+    },
+    {
+      "id": "neg_medaram",
+      "temple_id": "medaram",
+      "temple_name": "Medaram",
+      "category": "negative_unanswerable",
+      "question": "What is the tariff for presidential suites in the 7-star casino hotel at Medaram?",
+      "expected_answer": "Information not available in temple records. The temple does not provide this facility.",
+      "source_files": [],
+      "source_fields": [],
+      "answerable": false,
+      "difficulty": "medium",
+      "test_type": "negative_unanswerable"
+    },
+    {
+      "id": "neg_ahobilam",
+      "temple_id": "ahobilam",
+      "temple_name": "Ahobilam",
+      "category": "negative_unanswerable",
+      "question": "Where is the bungee jumping platform located at Ahobilam temple?",
+      "expected_answer": "Information not available in temple records. The temple does not provide this facility.",
+      "source_files": [],
+      "source_fields": [],
+      "answerable": false,
+      "difficulty": "medium",
+      "test_type": "negative_unanswerable"
+    }
+  ]
+}

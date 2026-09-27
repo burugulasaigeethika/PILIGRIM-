@@ -1,0 +1,51 @@
+{
+  "annadanam": {
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=45",
+    "required_fields": [
+      "Name *",
+      "Gothram *",
+      "Email",
+      "Gender *",
+      "Address *",
+      "Name (Telugu) *",
+      "Gothram (Telugu) *",
+      "Mobile *",
+      "Purpose",
+      "Amount *"
+    ],
+    "payment_button": "Make Payment"
+  },
+  "e_hundi": {
+    "booking_url": "",
+    "required_fields": [
+      "Name *",
+      "Gothram *",
+      "Email",
+      "Gender *",
+      "Address *",
+      "Name (Telugu) *",
+      "Gothram (Telugu) *",
+      "Mobile *",
+      "Purpose",
+      "Amount *"
+    ],
+    "payment_button": "Make Payment"
+  },
+  "general_donation": {
+    "booking_url": "",
+    "required_fields": [
+      "Name *",
+      "Gothram *",
+      "Email",
+      "Gender *",
+      "Address *",
+      "Name (Telugu) *",
+      "Gothram (Telugu) *",
+      "Mobile *",
+      "Purpose",
+      "Amount *"
+    ],
+    "payment_button": "Make Payment"
+  },
+  "refund_policy": []
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "festival_name": "Bonalu Jathara (Ashada Bonalu)",
+    "month": "Ashada Month (July/August)",
+    "importance": "Telangana folk festival. The Bonalu festival at Balkampet Yellamma Temple starts after the Golconda Bonalu Jathara and Ujjaini Mahankali Bonalu Jathara.",
+    "description": "Celebratory festival dedicated to Goddess Yellamma / Kali.",
+    "schedule": [
+      {
+        "date": "Ashada Month (July/August)",
+        "tithi_event": "Bonalu Jathara",
+        "details": "Devotees present 'Bonam'—sacred offerings consisting of cooked rice with milk, jaggery, and curd, intricately placed in brass or earthen pots adorned with neem leaves, turmeric, and vermilion."
+      }
+    ]
+  },
+  {
+    "festival_name": "Yellamma Kalyanotsavam",
+    "month": "Ashada Masam",
+    "importance": "The marriage ceremony of the temple goddess, Yellamma.",
+    "description": "Divine marriage ceremony of Goddess Yellamma.",
+    "schedule": [
+      {
+        "date": "Ashada Masam",
+        "tithi_event": "Kalyanotsavam",
+        "details": "Vedic marriage rituals performed by temple priests."
+      }
+    ]
+  },
+  {
+    "festival_name": "Dasara Navarathrulu",
+    "month": "Ashwina Month (September/October)",
+    "importance": "Navaratri festival dedicated to the Goddess.",
+    "description": "Special rituals and offerings during the Navaratri festival.",
+    "schedule": [
+      {
+        "date": "Ashwina Shuddha Padyami to Navami",
+        "tithi_event": "Navaratri Alankaram & Chandi Homam",
+        "details": "The goddess is intricately adorned in a unique incarnation dress/avatar each day, culminating in powerful Chandi Homam prayers for universal protection."
+      }
+    ]
+  }
+]

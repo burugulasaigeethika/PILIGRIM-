@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Temple Satrams & Dharamshalas",
+    "type": "Temple Rest House / Dharamshala",
+    "distance": "Within the Srisailam temple complex and gateway precincts (~1.1 km)",
+    "price": "₹400 – ₹2,500 per night",
+    "description": "Rest houses, Satrams, and Dharamshalas established for pilgrim lodging, dating back to historic royal grants such as the 1069 C.E. Kalyana Chalukya grant. Includes community-run facilities offering basic amenities."
+  },
+  {
+    "name": "AP Tourism Haritha Hotel",
+    "type": "State Government Hotel",
+    "distance": "500 m",
+    "price": "₹1,200 – ₹2,700 per night",
+    "description": "A well-maintained government property located within walking distance of the shrine. Features standard air-conditioned deluxe rooms and an on-site pure vegetarian dining hall."
+  },
+  {
+    "name": "Hotel Srisailas Nest",
+    "type": "Private 3-Star Hotel",
+    "distance": "~10.2 km(Located in Sunnipenta town)",
+    "price": "₹3,000 – ₹6,000 per night",
+    "description": "A popular private establishment offering modern amenities, clean air-conditioned family suites, geysers, 24/7 room service, and an attached vegetarian restaurant."
+  },
+  {
+    "name": "Hilltop Mrugavani Resort",
+    "type": "Luxury Eco-Resort",
+    "distance": "22 km from the temple (Located in Eegalapenta)",
+    "price": "₹4,500 – ₹8,000 per night",
+    "description": "A premium luxury resort option on the Telangana side of the forest checkpoint. Offers independent cottages, scenic views of the Krishna River valley, and an outdoor swimming pool."
+  }
+]

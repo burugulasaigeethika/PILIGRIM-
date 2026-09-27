@@ -1,0 +1,23 @@
+[
+  {
+    "item": "Laddu",
+    "price": "Varies by vendor (typically ₹20 - ₹30)",
+    "timings": "Available throughout daily vendor operating hours",
+    "location": "Local stalls outside the temple gates",
+    "description": "Standard Size"
+  },
+  {
+    "item": "Pulihora (Tamarind Rice)",
+    "price": "Varies by vendor (typically ₹10 - ₹20)",
+    "timings": "Available throughout daily vendor operating hours",
+    "location": "Local stalls outside the temple gates",
+    "description": "Packet"
+  },
+  {
+    "item": "Garuda Prasadam",
+    "price": "Free",
+    "timings": "Distributed during Brahmotsavam",
+    "location": "Within the temple complex",
+    "description": "Special Size. Distributed during the Annual Brahmotsavams. The highly sacred prasadam attracts thousands of childless couples from various states who seek blessings for progeny."
+  }
+]

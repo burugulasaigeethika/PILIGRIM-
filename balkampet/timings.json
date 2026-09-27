@@ -1,0 +1,26 @@
+{
+  "temple_id": "balkampet_yellamma",
+  "opening_time": "06:00 AM",
+  "closing_time": "08:00 PM",
+  "afternoon_break": {
+    "from": "01:00 PM",
+    "to": "03:00 PM"
+  },
+  "daily_schedule": [
+    {
+      "time_slot": "06:00 AM – 01:00 PM",
+      "ritual_name": "Morning Session",
+      "details_and_significance": "Open on all days"
+    },
+    {
+      "time_slot": "01:00 PM – 03:00 PM",
+      "ritual_name": "Afternoon Break (Closed)",
+      "details_and_significance": "The temple is closed during this period"
+    },
+    {
+      "time_slot": "03:00 PM – 08:00 PM",
+      "ritual_name": "Evening Session",
+      "details_and_significance": "Open on all days"
+    }
+  ]
+}

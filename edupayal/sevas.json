@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Abhishekam",
+    "telugu_name": "అభిషేకం",
+    "price": "",
+    "timing": "5:30 AM – 6:30 AM",
+    "booking_url": "",
+    "description": "Daily Ritual Schedule Abhishekam"
+  },
+  {
+    "name": "Alankarana",
+    "telugu_name": "అలంకరణ",
+    "price": "",
+    "timing": "6:30 AM – 7:00 AM",
+    "booking_url": "",
+    "description": "Daily Ritual Schedule Alankarana"
+  },
+  {
+    "name": "Vedaparayanam",
+    "telugu_name": "వేదపారాయణం",
+    "price": "",
+    "timing": "8:00 AM – 11:00 AM",
+    "booking_url": "",
+    "description": "Daily Ritual Schedule Vedaparayanam"
+  },
+  {
+    "name": "Lalitha Sahasranama Parayanam",
+    "telugu_name": "లలితా సహస్రనామ పారాయణం",
+    "price": "",
+    "timing": "Evening (time not specified)",
+    "booking_url": "",
+    "description": "Evening Lalitha Sahasranama Parayanam"
+  }
+]

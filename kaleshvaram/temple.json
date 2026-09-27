@@ -1,0 +1,83 @@
+{
+  "temple_id": "kaleshvaram_kaleshwaram",
+  "name": "Sri Kaleshwara Mukteshwara Swamy Devasthanam",
+  "alternate_names": [
+    "Kaleshwaram Temple",
+    "Sri Kaleshwara Mukteshwara Swamy Temple"
+  ],
+  "state": "Telangana",
+  "district": "Jayashankar Bhupalpally District",
+  "village": "Kaleshwaram",
+  "address": "Executive Officer, Sri Kaleshwara Mukteshwara Swamy Devasthanam, Kaleshwaram Village, Mahadevpur Mandal, Jayashankar Bhupalpally District, Telangana - 505504",
+  "river": "Dakshina Triveni Sangamam (River Godavari, River Pranahita, and subterranean River Saraswati)",
+  "main_deity": "Lord Kaleshwara (representing Lord Yama / Time) & Lord Mukteshwara (representing Lord Shiva / Liberation) on a single pedestal (Panavattam)",
+  "other_deities": [
+    "Goddess Parvati (Sri Subhananda Devi)",
+    "Goddess Maha Saraswati",
+    "Adi Mukteshwara",
+    "Suryanarayana Swamy",
+    "Dattatreya Swamy",
+    "Sangameshwara Swamy",
+    "Lord Rama",
+    "Panchamukhi Anjaneya Swamy"
+  ],
+  "description": "Abode of Lord Kaleshwara & Lord Mukteshwara – at Kaleshwaram village is one of the most ancient, revered, and architecturally unique Shaivite shrines in South India. The presiding deity is unique because two Shiva Lingas—Lord Kaleshwara and Lord Mukteshwara—are enshrined together on a single pedestal (Panavattam). Another divine wonder is the presence of two distinct nostrils (Nasarandhras) on the Mukteshwara Linga. Water poured during Abhishekam into these openings flows through subterranean channels and drains directly into the holy Triveni Sangam river bed. Devotees must first worship Lord Kaleshwara before proceeding to Lord Mukteshwara.",
+  "history": "Skanda Purana mentions that Lord Yama Dharma Raja performed severe penance at this spot after discovering that devotees worshipping Lord Shiva here were directly attaining salvation, leaving Yama's realm (Yama Loka) empty. Pleased with his penance, Lord Shiva granted Yama a spot alongside Him on the same pedestal and ordained that Yama (Kaleshwara) be worshipped first.\n\nKaleshwaram is also revered as one of the cornerstone shrines of Telugu heritage under the 'Trilinga Desam' connection, bounded by three famous shrines: Srisailam (Andhra Pradesh), Draksharamam (Andhra Pradesh), and Kaleshwaram (Telangana).",
+  "mythology": "Lord Shiva granted Yama a spot alongside Him on the same pedestal. Devotees worship Lord Yama first to destroy fear of death and grant ultimate liberation (Moksha). Worshipping the twin Lingas together is a unique spiritual custom.",
+  "sub_temples": [
+    {
+      "name": "Sri Subhananda Devi Temple",
+      "location": "Inside the complex",
+      "significance": "Dedicated to Goddess Parvati, divine consort of Mukteshwara Swamy."
+    },
+    {
+      "name": "Sri Maha Saraswati Devi Temple",
+      "location": "Inside the complex",
+      "significance": "Dedicated to Goddess Saraswati."
+    },
+    {
+      "name": "Sri Adi Mukteshwara Swamy Shrine",
+      "location": "Inside the complex",
+      "significance": "Dedicated to Lord Adi Mukteshwara."
+    },
+    {
+      "name": "Sri Suryanarayana Swamy Temple",
+      "location": "Inside the complex",
+      "significance": "Dedicated to Sun God."
+    },
+    {
+      "name": "Sri Dattatreya Swamy Temple",
+      "location": "Inside the complex",
+      "significance": "Dedicated to Lord Dattatreya."
+    },
+    {
+      "name": "Sri Sangameshwara Swamy Temple",
+      "location": "Inside the complex",
+      "significance": "Dedicated to Lord Sangameshwara."
+    },
+    {
+      "name": "Sri Rama Temple",
+      "location": "Inside the complex",
+      "significance": "Dedicated to Lord Rama."
+    },
+    {
+      "name": "Sri Panchamukhi Anjaneya Swamy Temple",
+      "location": "Inside the complex",
+      "significance": "Dedicated to Lord Panchamukhi Anjaneya."
+    },
+    {
+      "name": "Ganapeshwaralayam (Kota Gullu)",
+      "location": "Inside the complex",
+      "significance": "Ganapeshwaralayam (Kota Gullu) shrine."
+    }
+  ],
+  "architecture": {
+    "style": "Ancient Kakatiya and Chalukya styles",
+    "highlights": [
+      {
+        "name": "Intricate stone pillars and carvings",
+        "description": "Intricate stone pillars, sanctum carvings, and historic outer walls built during the 10th to 12th centuries AD."
+      }
+    ]
+  }
+}

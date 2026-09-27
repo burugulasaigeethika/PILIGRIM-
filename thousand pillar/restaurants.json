@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Hotel Thousand Pillars Restaurant",
+    "location": "(2.5 km) Kaloji Marg, Balasamudram, Hanamkonda",
+    "typical_pricing": "₹200–₹400",
+    "best_for": "Bamboo Chicken Biryani, MLA Potlam Biryani, and breakfast buffet spreads"
+  },
+  {
+    "name": "Aranyam - The Jungle Theme Restaurant",
+    "location": "(2.8km) 4th Floor, Fox Hills Complex, Nakkala Gutta, Hanamkonda",
+    "typical_pricing": "₹200–₹1,400",
+    "best_for": "Immersive forest theme dining, Zafrani Kebabs, and Prawns Biryani"
+  },
+  {
+    "name": "Aroma Fine Dine Restaurant & Banquet Hall",
+    "location": "(2.9 km) Lopamudra Arcade Mall, Naim Nagar Main Road, Hanamkonda",
+    "typical_pricing": "₹400–₹1,600",
+    "best_for": "Upscale family dining and Pachi Mirchi Kodi Pulao"
+  },
+  {
+    "name": "Sri Vaarahi Restaurant",
+    "location": "(1.2 km) Prof Jaya Shankar Marg, Reddy Colony, Hanamkonda",
+    "typical_pricing": "₹200–₹1,400",
+    "best_for": "Authentic spicy Telangana cooking, Boti Fry, and Dynamite Prawns"
+  },
+  {
+    "name": "Kritunga Restaurant",
+    "location": "(~5.8 km) 3rd Floor, Manikanta Gateway, Subedari, Hanamkonda",
+    "typical_pricing": "₹200–₹600",
+    "best_for": "Rayalaseema specialities, Nalli Gosht Biryani, and fiery chicken wings"
+  }
+]

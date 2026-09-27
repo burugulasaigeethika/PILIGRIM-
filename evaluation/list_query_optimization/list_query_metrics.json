@@ -1,0 +1,18 @@
+{
+  "total_tests": 5,
+  "passed_tests": 5,
+  "success_rate_percent": 100.0,
+  "avg_normal_query_latency_ms": 23153.94,
+  "avg_list_query_latency_ms": 47724.96,
+  "source_data_item_counts": {
+    "dharmapuri_sevas": 10,
+    "basara_festivals": 5,
+    "dharmapuri_restaurants": 3
+  },
+  "indexed_complete_parent_counts": {
+    "dharmapuri_sevas": 10,
+    "basara_festivals": 5,
+    "dharmapuri_restaurants": 3
+  },
+  "data_integrity_match": true
+}

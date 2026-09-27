@@ -1,0 +1,31 @@
+{
+  "how_to_reach": [
+    "Dharmapuri Kshetram is well-connected by road and accessible from major cities across Telangana and Andhra Pradesh.",
+    "TGRTC and various private operators run regular buses to Dharmapuri from all major cities of Telangana and Andhra Pradesh.",
+    "The fastest way to reach the temple is by your own vehicle (car or private taxi).",
+    "Daily TGRTC Rajadhani A/C bus service operates from Hyderabad MGBS to Dharmapuri Kshetram at 11:00 PM, returning from Dharmapuri at 11:30 PM."
+  ],
+  "nearest_railway_station": {
+    "name": "Mancherial Railway Station",
+    "distance": "~40 km",
+    "connectivity": "Major railway hub connecting regional and national routes"
+  },
+  "nearest_airport": {
+    "name": "Hyderabad Airport (Rajiv Gandhi International Airport)",
+    "distance": "~280 km",
+    "connectivity": "Well connected to all major cities of India and abroad. Other close airports include Nagpur Airport (330 km) and Vijayawada Airport (390 km)."
+  },
+  "bus_routes": [
+    "TGRTC Rajadhani A/C daily service: Hyderabad MGBS to Dharmapuri Kshetram at 11:00 PM; Return from Dharmapuri at 11:30 PM.",
+    "Regular TGRTC and private buses connecting Dharmapuri with Jagtial, Hyderabad, and major cities across Telangana and Andhra Pradesh."
+  ],
+  "road_routes": [
+    "Jagtial-Dharmapuri Main Road into Dharmapuri town.",
+    "Accessible by private car or taxi via major highway networks in Telangana."
+  ],
+  "parking_info": [
+    "Use designated parking areas and follow local traffic and police instructions.",
+    "During festivals and other high-crowd periods, temporary traffic and parking arrangements may be introduced.",
+    "Parking availability and access restrictions can change during major festivals, so visitors should follow current on-site instructions."
+  ]
+}

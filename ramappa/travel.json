@@ -1,0 +1,17 @@
+{
+  "bus_routes": [
+    "1. From Warangal / Hanamkonda (70 km) via Mulugu / Venkatapur",
+    "2. From Hyderabad (210 km) via Warangal Highway",
+    "3. From Karimnagar (110 km) via Parkal",
+    "4. From Khammam (150 km) via Warangal",
+    "5. Regular TSRTC buses operate from Hanamkonda Bus Station to Palampet & Mulugu."
+  ],
+  "railway": {
+    "station": "1. Kazipet Junction (KZP) - 75 km from Ramappa Temple, 2. Warangal Railway Station (WL) - 70 km from Ramappa Temple",
+    "distance": "75 km / 70 km"
+  },
+  "airport": {
+    "name": "Rajiv Gandhi International Airport (HYD), Hyderabad",
+    "distance": "approx 200 km"
+  }
+}

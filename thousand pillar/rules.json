@@ -1,0 +1,22 @@
+{
+  "dress_code": {
+    "men": "",
+    "women": ""
+  },
+  "dos": [
+    "Remove footwear before entering the temple premises.",
+    "Dress modestly and respectfully.",
+    "Maintain silence inside the temple.",
+    "Follow the instructions of temple authorities.",
+    "Keep the temple premises clean.",
+    "Stand in the designated queue for darshan."
+  ],
+  "donts": [
+    "Do not litter inside or around the temple.",
+    "Do not damage temple structures or sculptures.",
+    "Do not consume alcohol or tobacco inside the premises.",
+    "Do not carry weapons or hazardous materials.",
+    "Do not disturb other devotees during prayers.",
+    "Avoid loud conversations and music."
+  ]
+}

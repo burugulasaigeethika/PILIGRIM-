@@ -1,0 +1,4286 @@
+[
+  {
+    "id": "q_ahobilam_01",
+    "temple_id": "ahobilam",
+    "question": "Who is the main deity worshipped at Ahobilam temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ahobilam",
+      "ahobilam",
+      "birla mandir"
+    ]
+  },
+  {
+    "id": "q_ahobilam_02",
+    "temple_id": "ahobilam",
+    "question": "Where is Ahobilam temple located?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ahobilam",
+      "ahobilam",
+      "ahobilam"
+    ]
+  },
+  {
+    "id": "q_ahobilam_03",
+    "temple_id": "ahobilam",
+    "question": "What is the historical or mythological background of Ahobilam temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ahobilam",
+      "ahobilam",
+      "ahobilam"
+    ]
+  },
+  {
+    "id": "q_ahobilam_04",
+    "temple_id": "ahobilam",
+    "question": "What are the daily opening and closing timings of Ahobilam temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ahobilam",
+      "ahobilam",
+      "ahobilam"
+    ]
+  },
+  {
+    "id": "q_ahobilam_05",
+    "temple_id": "ahobilam",
+    "question": "When can devotees visit Ahobilam temple for darshan during the day?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "badrachalam",
+      "dharmapuri",
+      "veera satyanarayana"
+    ]
+  },
+  {
+    "id": "q_ahobilam_06",
+    "temple_id": "ahobilam",
+    "question": "What sevas or poojas are performed at Ahobilam temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ahobilam",
+      "ahobilam",
+      "veera satyanarayana"
+    ]
+  },
+  {
+    "id": "q_ahobilam_07",
+    "temple_id": "ahobilam",
+    "question": "What facilities and amenities are available for pilgrims at Ahobilam temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ahobilam",
+      "ahobilam",
+      "ahobilam"
+    ]
+  },
+  {
+    "id": "q_ahobilam_08",
+    "temple_id": "ahobilam",
+    "question": "What major festivals and annual celebrations take place at Ahobilam temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "chilkur",
+      "balkampet",
+      "srisaila"
+    ]
+  },
+  {
+    "id": "q_ahobilam_09",
+    "temple_id": "ahobilam",
+    "question": "What are the dress codes and code of conduct rules for visiting Ahobilam temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ahobilam",
+      "ahobilam",
+      "jogulamba(new)"
+    ]
+  },
+  {
+    "id": "q_ahobilam_11",
+    "temple_id": "ahobilam",
+    "question": "What are the emergency contact and helpline numbers for Ahobilam temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ahobilam",
+      "ahobilam",
+      "ahobilam"
+    ]
+  },
+  {
+    "id": "q_ahobilam_12",
+    "temple_id": "ahobilam",
+    "question": "What are the darshan timings and required dress code guidelines at Ahobilam temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ahobilam",
+      "ahobilam",
+      "vemulavada"
+    ]
+  },
+  {
+    "id": "q_ahobilam_13",
+    "temple_id": "ahobilam",
+    "question": "Tell me about the presiding deity of Ahobilam temple and how to reach the temple premises.",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ahobilam",
+      "ahobilam",
+      "karmanghat"
+    ]
+  },
+  {
+    "id": "q_badrachalam_01",
+    "temple_id": "badrachalam",
+    "question": "Who is the main deity worshipped at Badrachalam temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "badrachalam",
+      "badrachalam",
+      "birla mandir"
+    ]
+  },
+  {
+    "id": "q_badrachalam_02",
+    "temple_id": "badrachalam",
+    "question": "Where is Badrachalam temple located?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "badrachalam",
+      "badrachalam",
+      "badrachalam"
+    ]
+  },
+  {
+    "id": "q_badrachalam_03",
+    "temple_id": "badrachalam",
+    "question": "What is the historical or mythological background of Badrachalam temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "badrachalam",
+      "badrachalam",
+      "badrachalam"
+    ]
+  },
+  {
+    "id": "q_badrachalam_04",
+    "temple_id": "badrachalam",
+    "question": "What are the daily opening and closing timings of Badrachalam temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "badrachalam",
+      "badrachalam",
+      "yadadri"
+    ]
+  },
+  {
+    "id": "q_badrachalam_05",
+    "temple_id": "badrachalam",
+    "question": "When can devotees visit Badrachalam temple for darshan during the day?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "badrachalam",
+      "veera satyanarayana",
+      "dharmapuri"
+    ]
+  },
+  {
+    "id": "q_badrachalam_06",
+    "temple_id": "badrachalam",
+    "question": "What sevas or poojas are performed at Badrachalam temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "badrachalam",
+      "badrachalam",
+      "badrachalam"
+    ]
+  },
+  {
+    "id": "q_badrachalam_07",
+    "temple_id": "badrachalam",
+    "question": "What facilities and amenities are available for pilgrims at Badrachalam temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "vemulavada",
+      "chilkur",
+      "badrachalam"
+    ]
+  },
+  {
+    "id": "q_badrachalam_08",
+    "temple_id": "badrachalam",
+    "question": "What major festivals and annual celebrations take place at Badrachalam temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "chilkur",
+      "balkampet",
+      "karmanghat"
+    ]
+  },
+  {
+    "id": "q_badrachalam_09",
+    "temple_id": "badrachalam",
+    "question": "What are the dress codes and code of conduct rules for visiting Badrachalam temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "badrachalam",
+      "jogulamba(new)",
+      "edupayal"
+    ]
+  },
+  {
+    "id": "q_badrachalam_11",
+    "temple_id": "badrachalam",
+    "question": "What are the emergency contact and helpline numbers for Badrachalam temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "badrachalam",
+      "badrachalam",
+      "badrachalam"
+    ]
+  },
+  {
+    "id": "q_badrachalam_12",
+    "temple_id": "badrachalam",
+    "question": "What are the darshan timings and required dress code guidelines at Badrachalam temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "ahobilam",
+      "vemulavada",
+      "ahobilam"
+    ]
+  },
+  {
+    "id": "q_badrachalam_13",
+    "temple_id": "badrachalam",
+    "question": "Tell me about the presiding deity of Badrachalam temple and how to reach the temple premises.",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "badrachalam",
+      "badrachalam",
+      "edupayal"
+    ]
+  },
+  {
+    "id": "q_balkampet_01",
+    "temple_id": "balkampet",
+    "question": "Who is the main deity worshipped at Balkampet temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "balkampet",
+      "balkampet",
+      "balkampet"
+    ]
+  },
+  {
+    "id": "q_balkampet_02",
+    "temple_id": "balkampet",
+    "question": "Where is Balkampet temple located?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "balkampet",
+      "balkampet",
+      "balkampet"
+    ]
+  },
+  {
+    "id": "q_balkampet_03",
+    "temple_id": "balkampet",
+    "question": "What is the historical or mythological background of Balkampet temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "balkampet",
+      "balkampet",
+      "balkampet"
+    ]
+  },
+  {
+    "id": "q_balkampet_04",
+    "temple_id": "balkampet",
+    "question": "What are the daily opening and closing timings of Balkampet temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "balkampet",
+      "balkampet",
+      "balkampet"
+    ]
+  },
+  {
+    "id": "q_balkampet_05",
+    "temple_id": "balkampet",
+    "question": "When can devotees visit Balkampet temple for darshan during the day?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "veera satyanarayana",
+      "edupayal",
+      "karmanghat"
+    ]
+  },
+  {
+    "id": "q_balkampet_06",
+    "temple_id": "balkampet",
+    "question": "What sevas or poojas are performed at Balkampet temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "balkampet",
+      "balkampet",
+      "balkampet"
+    ]
+  },
+  {
+    "id": "q_balkampet_07",
+    "temple_id": "balkampet",
+    "question": "What facilities and amenities are available for pilgrims at Balkampet temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "balkampet",
+      "balkampet",
+      "balkampet"
+    ]
+  },
+  {
+    "id": "q_balkampet_08",
+    "temple_id": "balkampet",
+    "question": "What major festivals and annual celebrations take place at Balkampet temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "balkampet",
+      "balkampet",
+      "balkampet"
+    ]
+  },
+  {
+    "id": "q_balkampet_09",
+    "temple_id": "balkampet",
+    "question": "What are the dress codes and code of conduct rules for visiting Balkampet temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "balkampet",
+      "jogulamba(new)",
+      "edupayal"
+    ]
+  },
+  {
+    "id": "q_balkampet_11",
+    "temple_id": "balkampet",
+    "question": "What are the emergency contact and helpline numbers for Balkampet temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "balkampet",
+      "balkampet",
+      "balkampet"
+    ]
+  },
+  {
+    "id": "q_balkampet_12",
+    "temple_id": "balkampet",
+    "question": "What are the darshan timings and required dress code guidelines at Balkampet temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "vemulavada",
+      "ahobilam",
+      "ahobilam"
+    ]
+  },
+  {
+    "id": "q_balkampet_13",
+    "temple_id": "balkampet",
+    "question": "Tell me about the presiding deity of Balkampet temple and how to reach the temple premises.",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "balkampet",
+      "balkampet",
+      "balkampet"
+    ]
+  },
+  {
+    "id": "q_basara_01",
+    "temple_id": "basara",
+    "question": "Who is the main deity worshipped at Basara temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "basara",
+      "basara",
+      "basara"
+    ]
+  },
+  {
+    "id": "q_basara_02",
+    "temple_id": "basara",
+    "question": "Where is Basara temple located?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "basara",
+      "basara",
+      "basara"
+    ]
+  },
+  {
+    "id": "q_basara_03",
+    "temple_id": "basara",
+    "question": "What is the historical or mythological background of Basara temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "basara",
+      "basara",
+      "basara"
+    ]
+  },
+  {
+    "id": "q_basara_04",
+    "temple_id": "basara",
+    "question": "What are the daily opening and closing timings of Basara temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "basara",
+      "basara",
+      "basara"
+    ]
+  },
+  {
+    "id": "q_basara_05",
+    "temple_id": "basara",
+    "question": "When can devotees visit Basara temple for darshan during the day?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "veera satyanarayana",
+      "badrachalam",
+      "karmanghat"
+    ]
+  },
+  {
+    "id": "q_basara_06",
+    "temple_id": "basara",
+    "question": "What sevas or poojas are performed at Basara temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "basara",
+      "basara",
+      "basara"
+    ]
+  },
+  {
+    "id": "q_basara_07",
+    "temple_id": "basara",
+    "question": "What facilities and amenities are available for pilgrims at Basara temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "vemulavada",
+      "chilkur",
+      "thousand pillar"
+    ]
+  },
+  {
+    "id": "q_basara_08",
+    "temple_id": "basara",
+    "question": "What major festivals and annual celebrations take place at Basara temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "basara",
+      "balkampet",
+      "chilkur"
+    ]
+  },
+  {
+    "id": "q_basara_09",
+    "temple_id": "basara",
+    "question": "What are the dress codes and code of conduct rules for visiting Basara temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "basara",
+      "jogulamba(new)",
+      "edupayal"
+    ]
+  },
+  {
+    "id": "q_basara_11",
+    "temple_id": "basara",
+    "question": "What are the emergency contact and helpline numbers for Basara temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "basara",
+      "medaram",
+      "veera satyanarayana"
+    ]
+  },
+  {
+    "id": "q_basara_12",
+    "temple_id": "basara",
+    "question": "What are the darshan timings and required dress code guidelines at Basara temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "vemulavada",
+      "ahobilam",
+      "ahobilam"
+    ]
+  },
+  {
+    "id": "q_basara_13",
+    "temple_id": "basara",
+    "question": "Tell me about the presiding deity of Basara temple and how to reach the temple premises.",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "basara",
+      "basara",
+      "basara"
+    ]
+  },
+  {
+    "id": "q_birla mandir_01",
+    "temple_id": "birla mandir",
+    "question": "Who is the main deity worshipped at Birla Mandir temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "birla mandir",
+      "birla mandir",
+      "birla mandir"
+    ]
+  },
+  {
+    "id": "q_birla mandir_02",
+    "temple_id": "birla mandir",
+    "question": "Where is Birla Mandir temple located?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "birla mandir",
+      "birla mandir",
+      "birla mandir"
+    ]
+  },
+  {
+    "id": "q_birla mandir_03",
+    "temple_id": "birla mandir",
+    "question": "What is the historical or mythological background of Birla Mandir temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "birla mandir",
+      "birla mandir",
+      "birla mandir"
+    ]
+  },
+  {
+    "id": "q_birla mandir_04",
+    "temple_id": "birla mandir",
+    "question": "What are the daily opening and closing timings of Birla Mandir temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "birla mandir",
+      "birla mandir",
+      "birla mandir"
+    ]
+  },
+  {
+    "id": "q_birla mandir_05",
+    "temple_id": "birla mandir",
+    "question": "When can devotees visit Birla Mandir temple for darshan during the day?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "veera satyanarayana",
+      "badrachalam",
+      "vemulavada"
+    ]
+  },
+  {
+    "id": "q_birla mandir_06",
+    "temple_id": "birla mandir",
+    "question": "What sevas or poojas are performed at Birla Mandir temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "birla mandir",
+      "birla mandir",
+      "birla mandir"
+    ]
+  },
+  {
+    "id": "q_birla mandir_07",
+    "temple_id": "birla mandir",
+    "question": "What facilities and amenities are available for pilgrims at Birla Mandir temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "vemulavada",
+      "birla mandir",
+      "birla mandir"
+    ]
+  },
+  {
+    "id": "q_birla mandir_08",
+    "temple_id": "birla mandir",
+    "question": "What major festivals and annual celebrations take place at Birla Mandir temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "chilkur",
+      "balkampet",
+      "birla mandir"
+    ]
+  },
+  {
+    "id": "q_birla mandir_09",
+    "temple_id": "birla mandir",
+    "question": "What are the dress codes and code of conduct rules for visiting Birla Mandir temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "birla mandir",
+      "jogulamba(new)",
+      "edupayal"
+    ]
+  },
+  {
+    "id": "q_birla mandir_11",
+    "temple_id": "birla mandir",
+    "question": "What are the emergency contact and helpline numbers for Birla Mandir temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "birla mandir",
+      "birla mandir",
+      "birla mandir"
+    ]
+  },
+  {
+    "id": "q_birla mandir_12",
+    "temple_id": "birla mandir",
+    "question": "What are the darshan timings and required dress code guidelines at Birla Mandir temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "birla mandir",
+      "vemulavada",
+      "ahobilam"
+    ]
+  },
+  {
+    "id": "q_birla mandir_13",
+    "temple_id": "birla mandir",
+    "question": "Tell me about the presiding deity of Birla Mandir temple and how to reach the temple premises.",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "birla mandir",
+      "edupayal",
+      "veera satyanarayana"
+    ]
+  },
+  {
+    "id": "q_chilkur_01",
+    "temple_id": "chilkur",
+    "question": "Who is the main deity worshipped at Chilkur temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "chilkur",
+      "chilkur",
+      "chilkur"
+    ]
+  },
+  {
+    "id": "q_chilkur_02",
+    "temple_id": "chilkur",
+    "question": "Where is Chilkur temple located?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "chilkur",
+      "chilkur",
+      "chilkur"
+    ]
+  },
+  {
+    "id": "q_chilkur_03",
+    "temple_id": "chilkur",
+    "question": "What is the historical or mythological background of Chilkur temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "chilkur",
+      "chilkur",
+      "chilkur"
+    ]
+  },
+  {
+    "id": "q_chilkur_04",
+    "temple_id": "chilkur",
+    "question": "What are the daily opening and closing timings of Chilkur temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "chilkur",
+      "chilkur",
+      "chilkur"
+    ]
+  },
+  {
+    "id": "q_chilkur_05",
+    "temple_id": "chilkur",
+    "question": "When can devotees visit Chilkur temple for darshan during the day?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "veera satyanarayana",
+      "karmanghat",
+      "chilkur"
+    ]
+  },
+  {
+    "id": "q_chilkur_06",
+    "temple_id": "chilkur",
+    "question": "What sevas or poojas are performed at Chilkur temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "chilkur",
+      "chilkur",
+      "chilkur"
+    ]
+  },
+  {
+    "id": "q_chilkur_07",
+    "temple_id": "chilkur",
+    "question": "What facilities and amenities are available for pilgrims at Chilkur temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "chilkur",
+      "chilkur",
+      "chilkur"
+    ]
+  },
+  {
+    "id": "q_chilkur_08",
+    "temple_id": "chilkur",
+    "question": "What major festivals and annual celebrations take place at Chilkur temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "chilkur",
+      "chilkur",
+      "balkampet"
+    ]
+  },
+  {
+    "id": "q_chilkur_09",
+    "temple_id": "chilkur",
+    "question": "What are the dress codes and code of conduct rules for visiting Chilkur temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "chilkur",
+      "chilkur",
+      "jogulamba(new)"
+    ]
+  },
+  {
+    "id": "q_chilkur_11",
+    "temple_id": "chilkur",
+    "question": "What are the emergency contact and helpline numbers for Chilkur temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "chilkur",
+      "chilkur",
+      "chilkur"
+    ]
+  },
+  {
+    "id": "q_chilkur_12",
+    "temple_id": "chilkur",
+    "question": "What are the darshan timings and required dress code guidelines at Chilkur temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "vemulavada",
+      "ahobilam",
+      "ahobilam"
+    ]
+  },
+  {
+    "id": "q_chilkur_13",
+    "temple_id": "chilkur",
+    "question": "Tell me about the presiding deity of Chilkur temple and how to reach the temple premises.",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "chilkur",
+      "chilkur",
+      "chilkur"
+    ]
+  },
+  {
+    "id": "q_dharmapuri_01",
+    "temple_id": "dharmapuri",
+    "question": "Who is the main deity worshipped at Dharmapuri temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "dharmapuri",
+      "dharmapuri",
+      "dharmapuri"
+    ]
+  },
+  {
+    "id": "q_dharmapuri_02",
+    "temple_id": "dharmapuri",
+    "question": "Where is Dharmapuri temple located?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "dharmapuri",
+      "dharmapuri",
+      "dharmapuri"
+    ]
+  },
+  {
+    "id": "q_dharmapuri_03",
+    "temple_id": "dharmapuri",
+    "question": "What is the historical or mythological background of Dharmapuri temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "dharmapuri",
+      "dharmapuri",
+      "dharmapuri"
+    ]
+  },
+  {
+    "id": "q_dharmapuri_04",
+    "temple_id": "dharmapuri",
+    "question": "What are the daily opening and closing timings of Dharmapuri temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "dharmapuri",
+      "dharmapuri",
+      "yadadri"
+    ]
+  },
+  {
+    "id": "q_dharmapuri_05",
+    "temple_id": "dharmapuri",
+    "question": "When can devotees visit Dharmapuri temple for darshan during the day?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "badrachalam",
+      "dharmapuri",
+      "veera satyanarayana"
+    ]
+  },
+  {
+    "id": "q_dharmapuri_06",
+    "temple_id": "dharmapuri",
+    "question": "What sevas or poojas are performed at Dharmapuri temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "dharmapuri",
+      "veera satyanarayana",
+      "dharmapuri"
+    ]
+  },
+  {
+    "id": "q_dharmapuri_07",
+    "temple_id": "dharmapuri",
+    "question": "What facilities and amenities are available for pilgrims at Dharmapuri temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "vemulavada",
+      "chilkur",
+      "edupayal"
+    ]
+  },
+  {
+    "id": "q_dharmapuri_08",
+    "temple_id": "dharmapuri",
+    "question": "What major festivals and annual celebrations take place at Dharmapuri temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "dharmapuri",
+      "dharmapuri",
+      "chilkur"
+    ]
+  },
+  {
+    "id": "q_dharmapuri_09",
+    "temple_id": "dharmapuri",
+    "question": "What are the dress codes and code of conduct rules for visiting Dharmapuri temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "jogulamba(new)",
+      "dharmapuri",
+      "edupayal"
+    ]
+  },
+  {
+    "id": "q_dharmapuri_11",
+    "temple_id": "dharmapuri",
+    "question": "What are the emergency contact and helpline numbers for Dharmapuri temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "dharmapuri",
+      "dharmapuri",
+      "dharmapuri"
+    ]
+  },
+  {
+    "id": "q_dharmapuri_12",
+    "temple_id": "dharmapuri",
+    "question": "What are the darshan timings and required dress code guidelines at Dharmapuri temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "vemulavada",
+      "ahobilam",
+      "dharmapuri"
+    ]
+  },
+  {
+    "id": "q_dharmapuri_13",
+    "temple_id": "dharmapuri",
+    "question": "Tell me about the presiding deity of Dharmapuri temple and how to reach the temple premises.",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "dharmapuri",
+      "edupayal",
+      "karmanghat"
+    ]
+  },
+  {
+    "id": "q_edupayal_01",
+    "temple_id": "edupayal",
+    "question": "Who is the main deity worshipped at Edupayal temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "edupayal",
+      "edupayal",
+      "edupayal"
+    ]
+  },
+  {
+    "id": "q_edupayal_02",
+    "temple_id": "edupayal",
+    "question": "Where is Edupayal temple located?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "edupayal",
+      "edupayal",
+      "edupayal"
+    ]
+  },
+  {
+    "id": "q_edupayal_03",
+    "temple_id": "edupayal",
+    "question": "What is the historical or mythological background of Edupayal temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "edupayal",
+      "edupayal",
+      "edupayal"
+    ]
+  },
+  {
+    "id": "q_edupayal_04",
+    "temple_id": "edupayal",
+    "question": "What are the daily opening and closing timings of Edupayal temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "edupayal",
+      "edupayal",
+      "edupayal"
+    ]
+  },
+  {
+    "id": "q_edupayal_05",
+    "temple_id": "edupayal",
+    "question": "When can devotees visit Edupayal temple for darshan during the day?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "veera satyanarayana",
+      "vemulavada",
+      "karmanghat"
+    ]
+  },
+  {
+    "id": "q_edupayal_06",
+    "temple_id": "edupayal",
+    "question": "What sevas or poojas are performed at Edupayal temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "edupayal",
+      "edupayal",
+      "edupayal"
+    ]
+  },
+  {
+    "id": "q_edupayal_07",
+    "temple_id": "edupayal",
+    "question": "What facilities and amenities are available for pilgrims at Edupayal temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "edupayal",
+      "edupayal",
+      "chilkur"
+    ]
+  },
+  {
+    "id": "q_edupayal_08",
+    "temple_id": "edupayal",
+    "question": "What major festivals and annual celebrations take place at Edupayal temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "edupayal",
+      "edupayal",
+      "chilkur"
+    ]
+  },
+  {
+    "id": "q_edupayal_09",
+    "temple_id": "edupayal",
+    "question": "What are the dress codes and code of conduct rules for visiting Edupayal temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "edupayal",
+      "edupayal",
+      "jogulamba(new)"
+    ]
+  },
+  {
+    "id": "q_edupayal_11",
+    "temple_id": "edupayal",
+    "question": "What are the emergency contact and helpline numbers for Edupayal temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "edupayal",
+      "ramappa",
+      "edupayal"
+    ]
+  },
+  {
+    "id": "q_edupayal_12",
+    "temple_id": "edupayal",
+    "question": "What are the darshan timings and required dress code guidelines at Edupayal temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "edupayal",
+      "edupayal",
+      "vemulavada"
+    ]
+  },
+  {
+    "id": "q_edupayal_13",
+    "temple_id": "edupayal",
+    "question": "Tell me about the presiding deity of Edupayal temple and how to reach the temple premises.",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "edupayal",
+      "edupayal",
+      "edupayal"
+    ]
+  },
+  {
+    "id": "q_jogulamba(new)_01",
+    "temple_id": "jogulamba(new)",
+    "question": "Who is the main deity worshipped at Jogulamba(New) temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "jogulamba(new)",
+      "jogulamba(new)",
+      "jogulamba(new)"
+    ]
+  },
+  {
+    "id": "q_jogulamba(new)_02",
+    "temple_id": "jogulamba(new)",
+    "question": "Where is Jogulamba(New) temple located?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "jogulamba(new)",
+      "jogulamba(new)",
+      "jogulamba(new)"
+    ]
+  },
+  {
+    "id": "q_jogulamba(new)_03",
+    "temple_id": "jogulamba(new)",
+    "question": "What is the historical or mythological background of Jogulamba(New) temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "jogulamba(new)",
+      "jogulamba(new)",
+      "jogulamba(new)"
+    ]
+  },
+  {
+    "id": "q_jogulamba(new)_04",
+    "temple_id": "jogulamba(new)",
+    "question": "What are the daily opening and closing timings of Jogulamba(New) temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "jogulamba(new)",
+      "jogulamba(new)",
+      "jogulamba(new)"
+    ]
+  },
+  {
+    "id": "q_jogulamba(new)_05",
+    "temple_id": "jogulamba(new)",
+    "question": "When can devotees visit Jogulamba(New) temple for darshan during the day?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "jogulamba(new)",
+      "badrachalam",
+      "veera satyanarayana"
+    ]
+  },
+  {
+    "id": "q_jogulamba(new)_06",
+    "temple_id": "jogulamba(new)",
+    "question": "What sevas or poojas are performed at Jogulamba(New) temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "jogulamba(new)",
+      "jogulamba(new)",
+      "jogulamba(new)"
+    ]
+  },
+  {
+    "id": "q_jogulamba(new)_07",
+    "temple_id": "jogulamba(new)",
+    "question": "What facilities and amenities are available for pilgrims at Jogulamba(New) temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "jogulamba(new)",
+      "jogulamba(new)",
+      "jogulamba(new)"
+    ]
+  },
+  {
+    "id": "q_jogulamba(new)_08",
+    "temple_id": "jogulamba(new)",
+    "question": "What major festivals and annual celebrations take place at Jogulamba(New) temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "jogulamba(new)",
+      "jogulamba(new)",
+      "jogulamba(new)"
+    ]
+  },
+  {
+    "id": "q_jogulamba(new)_09",
+    "temple_id": "jogulamba(new)",
+    "question": "What are the dress codes and code of conduct rules for visiting Jogulamba(New) temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "jogulamba(new)",
+      "jogulamba(new)",
+      "edupayal"
+    ]
+  },
+  {
+    "id": "q_jogulamba(new)_11",
+    "temple_id": "jogulamba(new)",
+    "question": "What are the emergency contact and helpline numbers for Jogulamba(New) temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "jogulamba(new)",
+      "jogulamba(new)",
+      "jogulamba(new)"
+    ]
+  },
+  {
+    "id": "q_jogulamba(new)_12",
+    "temple_id": "jogulamba(new)",
+    "question": "What are the darshan timings and required dress code guidelines at Jogulamba(New) temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "jogulamba(new)",
+      "vemulavada",
+      "ahobilam"
+    ]
+  },
+  {
+    "id": "q_jogulamba(new)_13",
+    "temple_id": "jogulamba(new)",
+    "question": "Tell me about the presiding deity of Jogulamba(New) temple and how to reach the temple premises.",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "jogulamba(new)",
+      "jogulamba(new)",
+      "jogulamba(new)"
+    ]
+  },
+  {
+    "id": "q_kaleshvaram_01",
+    "temple_id": "kaleshvaram",
+    "question": "Who is the main deity worshipped at Kaleshvaram temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "kaleshvaram",
+      "kaleshvaram",
+      "kaleshvaram"
+    ]
+  },
+  {
+    "id": "q_kaleshvaram_02",
+    "temple_id": "kaleshvaram",
+    "question": "Where is Kaleshvaram temple located?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "kaleshvaram",
+      "kaleshvaram",
+      "kaleshvaram"
+    ]
+  },
+  {
+    "id": "q_kaleshvaram_03",
+    "temple_id": "kaleshvaram",
+    "question": "What is the historical or mythological background of Kaleshvaram temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "kaleshvaram",
+      "kaleshvaram",
+      "kaleshvaram"
+    ]
+  },
+  {
+    "id": "q_kaleshvaram_04",
+    "temple_id": "kaleshvaram",
+    "question": "What are the daily opening and closing timings of Kaleshvaram temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "kaleshvaram",
+      "kaleshvaram",
+      "badrachalam"
+    ]
+  },
+  {
+    "id": "q_kaleshvaram_05",
+    "temple_id": "kaleshvaram",
+    "question": "When can devotees visit Kaleshvaram temple for darshan during the day?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "dharmapuri",
+      "badrachalam",
+      "veera satyanarayana"
+    ]
+  },
+  {
+    "id": "q_kaleshvaram_06",
+    "temple_id": "kaleshvaram",
+    "question": "What sevas or poojas are performed at Kaleshvaram temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "kaleshvaram",
+      "kaleshvaram",
+      "kaleshvaram"
+    ]
+  },
+  {
+    "id": "q_kaleshvaram_07",
+    "temple_id": "kaleshvaram",
+    "question": "What facilities and amenities are available for pilgrims at Kaleshvaram temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "kaleshvaram",
+      "vemulavada",
+      "kaleshvaram"
+    ]
+  },
+  {
+    "id": "q_kaleshvaram_08",
+    "temple_id": "kaleshvaram",
+    "question": "What major festivals and annual celebrations take place at Kaleshvaram temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "kaleshvaram",
+      "balkampet",
+      "chilkur"
+    ]
+  },
+  {
+    "id": "q_kaleshvaram_09",
+    "temple_id": "kaleshvaram",
+    "question": "What are the dress codes and code of conduct rules for visiting Kaleshvaram temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "badrachalam",
+      "yadadri",
+      "jogulamba(new)"
+    ]
+  },
+  {
+    "id": "q_kaleshvaram_11",
+    "temple_id": "kaleshvaram",
+    "question": "What are the emergency contact and helpline numbers for Kaleshvaram temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "kaleshvaram",
+      "kaleshvaram",
+      "kaleshvaram"
+    ]
+  },
+  {
+    "id": "q_kaleshvaram_12",
+    "temple_id": "kaleshvaram",
+    "question": "What are the darshan timings and required dress code guidelines at Kaleshvaram temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "vemulavada",
+      "badrachalam",
+      "ahobilam"
+    ]
+  },
+  {
+    "id": "q_kaleshvaram_13",
+    "temple_id": "kaleshvaram",
+    "question": "Tell me about the presiding deity of Kaleshvaram temple and how to reach the temple premises.",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "kaleshvaram",
+      "kaleshvaram",
+      "kaleshvaram"
+    ]
+  },
+  {
+    "id": "q_karmanghat_01",
+    "temple_id": "karmanghat",
+    "question": "Who is the main deity worshipped at Karmanghat temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "karmanghat",
+      "karmanghat",
+      "karmanghat"
+    ]
+  },
+  {
+    "id": "q_karmanghat_02",
+    "temple_id": "karmanghat",
+    "question": "Where is Karmanghat temple located?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "karmanghat",
+      "karmanghat",
+      "karmanghat"
+    ]
+  },
+  {
+    "id": "q_karmanghat_03",
+    "temple_id": "karmanghat",
+    "question": "What is the historical or mythological background of Karmanghat temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "karmanghat",
+      "karmanghat",
+      "karmanghat"
+    ]
+  },
+  {
+    "id": "q_karmanghat_04",
+    "temple_id": "karmanghat",
+    "question": "What are the daily opening and closing timings of Karmanghat temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "karmanghat",
+      "karmanghat",
+      "badrachalam"
+    ]
+  },
+  {
+    "id": "q_karmanghat_05",
+    "temple_id": "karmanghat",
+    "question": "When can devotees visit Karmanghat temple for darshan during the day?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "badrachalam",
+      "veera satyanarayana",
+      "veera satyanarayana"
+    ]
+  },
+  {
+    "id": "q_karmanghat_06",
+    "temple_id": "karmanghat",
+    "question": "What sevas or poojas are performed at Karmanghat temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "karmanghat",
+      "karmanghat",
+      "karmanghat"
+    ]
+  },
+  {
+    "id": "q_karmanghat_07",
+    "temple_id": "karmanghat",
+    "question": "What facilities and amenities are available for pilgrims at Karmanghat temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "vemulavada",
+      "chilkur",
+      "karmanghat"
+    ]
+  },
+  {
+    "id": "q_karmanghat_08",
+    "temple_id": "karmanghat",
+    "question": "What major festivals and annual celebrations take place at Karmanghat temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "karmanghat",
+      "chilkur",
+      "balkampet"
+    ]
+  },
+  {
+    "id": "q_karmanghat_09",
+    "temple_id": "karmanghat",
+    "question": "What are the dress codes and code of conduct rules for visiting Karmanghat temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "jogulamba(new)",
+      "karmanghat",
+      "edupayal"
+    ]
+  },
+  {
+    "id": "q_karmanghat_11",
+    "temple_id": "karmanghat",
+    "question": "What are the emergency contact and helpline numbers for Karmanghat temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "karmanghat",
+      "karmanghat",
+      "karmanghat"
+    ]
+  },
+  {
+    "id": "q_karmanghat_12",
+    "temple_id": "karmanghat",
+    "question": "What are the darshan timings and required dress code guidelines at Karmanghat temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "vemulavada",
+      "ahobilam",
+      "ahobilam"
+    ]
+  },
+  {
+    "id": "q_karmanghat_13",
+    "temple_id": "karmanghat",
+    "question": "Tell me about the presiding deity of Karmanghat temple and how to reach the temple premises.",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "karmanghat",
+      "karmanghat",
+      "karmanghat"
+    ]
+  },
+  {
+    "id": "q_medaram_01",
+    "temple_id": "medaram",
+    "question": "Who is the main deity worshipped at Medaram temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "medaram",
+      "medaram",
+      "birla mandir"
+    ]
+  },
+  {
+    "id": "q_medaram_02",
+    "temple_id": "medaram",
+    "question": "Where is Medaram temple located?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "medaram",
+      "medaram",
+      "medaram"
+    ]
+  },
+  {
+    "id": "q_medaram_03",
+    "temple_id": "medaram",
+    "question": "What is the historical or mythological background of Medaram temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "medaram",
+      "medaram",
+      "medaram"
+    ]
+  },
+  {
+    "id": "q_medaram_04",
+    "temple_id": "medaram",
+    "question": "What are the daily opening and closing timings of Medaram temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "basara",
+      "badrachalam",
+      "medaram"
+    ]
+  },
+  {
+    "id": "q_medaram_05",
+    "temple_id": "medaram",
+    "question": "When can devotees visit Medaram temple for darshan during the day?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "badrachalam",
+      "veera satyanarayana",
+      "medaram"
+    ]
+  },
+  {
+    "id": "q_medaram_06",
+    "temple_id": "medaram",
+    "question": "What sevas or poojas are performed at Medaram temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "veera satyanarayana",
+      "basara",
+      "medaram"
+    ]
+  },
+  {
+    "id": "q_medaram_07",
+    "temple_id": "medaram",
+    "question": "What facilities and amenities are available for pilgrims at Medaram temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "chilkur",
+      "medaram",
+      "medaram"
+    ]
+  },
+  {
+    "id": "q_medaram_08",
+    "temple_id": "medaram",
+    "question": "What major festivals and annual celebrations take place at Medaram temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "balkampet",
+      "medaram",
+      "chilkur"
+    ]
+  },
+  {
+    "id": "q_medaram_09",
+    "temple_id": "medaram",
+    "question": "What are the dress codes and code of conduct rules for visiting Medaram temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "jogulamba(new)",
+      "medaram",
+      "edupayal"
+    ]
+  },
+  {
+    "id": "q_medaram_11",
+    "temple_id": "medaram",
+    "question": "What are the emergency contact and helpline numbers for Medaram temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "medaram",
+      "medaram",
+      "medaram"
+    ]
+  },
+  {
+    "id": "q_medaram_12",
+    "temple_id": "medaram",
+    "question": "What are the darshan timings and required dress code guidelines at Medaram temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "vemulavada",
+      "ahobilam",
+      "ahobilam"
+    ]
+  },
+  {
+    "id": "q_medaram_13",
+    "temple_id": "medaram",
+    "question": "Tell me about the presiding deity of Medaram temple and how to reach the temple premises.",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "medaram",
+      "karmanghat",
+      "edupayal"
+    ]
+  },
+  {
+    "id": "q_ramappa_01",
+    "temple_id": "ramappa",
+    "question": "Who is the main deity worshipped at Ramappa temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ramappa",
+      "ramappa",
+      "birla mandir"
+    ]
+  },
+  {
+    "id": "q_ramappa_02",
+    "temple_id": "ramappa",
+    "question": "Where is Ramappa temple located?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ramappa",
+      "ramappa",
+      "ramappa"
+    ]
+  },
+  {
+    "id": "q_ramappa_03",
+    "temple_id": "ramappa",
+    "question": "What is the historical or mythological background of Ramappa temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ramappa",
+      "medaram",
+      "ramappa"
+    ]
+  },
+  {
+    "id": "q_ramappa_04",
+    "temple_id": "ramappa",
+    "question": "What are the daily opening and closing timings of Ramappa temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "badrachalam",
+      "yadadri",
+      "ramappa"
+    ]
+  },
+  {
+    "id": "q_ramappa_05",
+    "temple_id": "ramappa",
+    "question": "When can devotees visit Ramappa temple for darshan during the day?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "badrachalam",
+      "veera satyanarayana",
+      "vemulavada"
+    ]
+  },
+  {
+    "id": "q_ramappa_07",
+    "temple_id": "ramappa",
+    "question": "What facilities and amenities are available for pilgrims at Ramappa temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ramappa",
+      "vemulavada",
+      "chilkur"
+    ]
+  },
+  {
+    "id": "q_ramappa_08",
+    "temple_id": "ramappa",
+    "question": "What major festivals and annual celebrations take place at Ramappa temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ramappa",
+      "karmanghat",
+      "chilkur"
+    ]
+  },
+  {
+    "id": "q_ramappa_09",
+    "temple_id": "ramappa",
+    "question": "What are the dress codes and code of conduct rules for visiting Ramappa temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ramappa",
+      "jogulamba(new)",
+      "edupayal"
+    ]
+  },
+  {
+    "id": "q_ramappa_11",
+    "temple_id": "ramappa",
+    "question": "What are the emergency contact and helpline numbers for Ramappa temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ramappa",
+      "ramappa",
+      "vemulavada"
+    ]
+  },
+  {
+    "id": "q_ramappa_12",
+    "temple_id": "ramappa",
+    "question": "What are the darshan timings and required dress code guidelines at Ramappa temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "vemulavada",
+      "ahobilam",
+      "ahobilam"
+    ]
+  },
+  {
+    "id": "q_ramappa_13",
+    "temple_id": "ramappa",
+    "question": "Tell me about the presiding deity of Ramappa temple and how to reach the temple premises.",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ramappa",
+      "edupayal",
+      "veera satyanarayana"
+    ]
+  },
+  {
+    "id": "q_srisaila_01",
+    "temple_id": "srisaila",
+    "question": "Who is the main deity worshipped at Srisaila temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "srisaila",
+      "ttd",
+      "srisaila"
+    ]
+  },
+  {
+    "id": "q_srisaila_02",
+    "temple_id": "srisaila",
+    "question": "Where is Srisaila temple located?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "srisaila",
+      "srisaila",
+      "srisaila"
+    ]
+  },
+  {
+    "id": "q_srisaila_03",
+    "temple_id": "srisaila",
+    "question": "What is the historical or mythological background of Srisaila temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "srisaila",
+      "srisaila",
+      "ujjaini"
+    ]
+  },
+  {
+    "id": "q_srisaila_04",
+    "temple_id": "srisaila",
+    "question": "What are the daily opening and closing timings of Srisaila temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "srisaila",
+      "yadadri",
+      "badrachalam"
+    ]
+  },
+  {
+    "id": "q_srisaila_05",
+    "temple_id": "srisaila",
+    "question": "When can devotees visit Srisaila temple for darshan during the day?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "veera satyanarayana",
+      "dharmapuri",
+      "dharmapuri"
+    ]
+  },
+  {
+    "id": "q_srisaila_06",
+    "temple_id": "srisaila",
+    "question": "What sevas or poojas are performed at Srisaila temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "veera satyanarayana",
+      "ujjaini",
+      "veera satyanarayana"
+    ]
+  },
+  {
+    "id": "q_srisaila_07",
+    "temple_id": "srisaila",
+    "question": "What facilities and amenities are available for pilgrims at Srisaila temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "srisaila",
+      "srisaila",
+      "srisaila"
+    ]
+  },
+  {
+    "id": "q_srisaila_08",
+    "temple_id": "srisaila",
+    "question": "What major festivals and annual celebrations take place at Srisaila temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "srisaila",
+      "srisaila",
+      "srisaila"
+    ]
+  },
+  {
+    "id": "q_srisaila_09",
+    "temple_id": "srisaila",
+    "question": "What are the dress codes and code of conduct rules for visiting Srisaila temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "srisaila",
+      "jogulamba(new)",
+      "edupayal"
+    ]
+  },
+  {
+    "id": "q_srisaila_11",
+    "temple_id": "srisaila",
+    "question": "What are the emergency contact and helpline numbers for Srisaila temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "srisaila",
+      "srisaila",
+      "srisaila"
+    ]
+  },
+  {
+    "id": "q_srisaila_12",
+    "temple_id": "srisaila",
+    "question": "What are the darshan timings and required dress code guidelines at Srisaila temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "vemulavada",
+      "ahobilam",
+      "ahobilam"
+    ]
+  },
+  {
+    "id": "q_srisaila_13",
+    "temple_id": "srisaila",
+    "question": "Tell me about the presiding deity of Srisaila temple and how to reach the temple premises.",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "srisaila",
+      "edupayal",
+      "veera satyanarayana"
+    ]
+  },
+  {
+    "id": "q_thousand pillar_01",
+    "temple_id": "thousand pillar",
+    "question": "Who is the main deity worshipped at Thousand Pillar temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "thousand pillar",
+      "thousand pillar",
+      "thousand pillar"
+    ]
+  },
+  {
+    "id": "q_thousand pillar_02",
+    "temple_id": "thousand pillar",
+    "question": "Where is Thousand Pillar temple located?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "thousand pillar",
+      "thousand pillar",
+      "thousand pillar"
+    ]
+  },
+  {
+    "id": "q_thousand pillar_03",
+    "temple_id": "thousand pillar",
+    "question": "What is the historical or mythological background of Thousand Pillar temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "thousand pillar",
+      "thousand pillar",
+      "thousand pillar"
+    ]
+  },
+  {
+    "id": "q_thousand pillar_04",
+    "temple_id": "thousand pillar",
+    "question": "What are the daily opening and closing timings of Thousand Pillar temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "thousand pillar",
+      "thousand pillar",
+      "thousand pillar"
+    ]
+  },
+  {
+    "id": "q_thousand pillar_05",
+    "temple_id": "thousand pillar",
+    "question": "When can devotees visit Thousand Pillar temple for darshan during the day?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "veera satyanarayana",
+      "karmanghat",
+      "badrachalam"
+    ]
+  },
+  {
+    "id": "q_thousand pillar_06",
+    "temple_id": "thousand pillar",
+    "question": "What sevas or poojas are performed at Thousand Pillar temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "thousand pillar",
+      "thousand pillar",
+      "thousand pillar"
+    ]
+  },
+  {
+    "id": "q_thousand pillar_07",
+    "temple_id": "thousand pillar",
+    "question": "What facilities and amenities are available for pilgrims at Thousand Pillar temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "thousand pillar",
+      "vemulavada",
+      "thousand pillar"
+    ]
+  },
+  {
+    "id": "q_thousand pillar_08",
+    "temple_id": "thousand pillar",
+    "question": "What major festivals and annual celebrations take place at Thousand Pillar temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "thousand pillar",
+      "thousand pillar",
+      "thousand pillar"
+    ]
+  },
+  {
+    "id": "q_thousand pillar_09",
+    "temple_id": "thousand pillar",
+    "question": "What are the dress codes and code of conduct rules for visiting Thousand Pillar temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "thousand pillar",
+      "jogulamba(new)",
+      "edupayal"
+    ]
+  },
+  {
+    "id": "q_thousand pillar_11",
+    "temple_id": "thousand pillar",
+    "question": "What are the emergency contact and helpline numbers for Thousand Pillar temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "thousand pillar",
+      "thousand pillar",
+      "thousand pillar"
+    ]
+  },
+  {
+    "id": "q_thousand pillar_12",
+    "temple_id": "thousand pillar",
+    "question": "What are the darshan timings and required dress code guidelines at Thousand Pillar temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "vemulavada",
+      "ahobilam",
+      "ahobilam"
+    ]
+  },
+  {
+    "id": "q_thousand pillar_13",
+    "temple_id": "thousand pillar",
+    "question": "Tell me about the presiding deity of Thousand Pillar temple and how to reach the temple premises.",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "thousand pillar",
+      "thousand pillar",
+      "thousand pillar"
+    ]
+  },
+  {
+    "id": "q_ttd_01",
+    "temple_id": "ttd",
+    "question": "Who is the main deity worshipped at Ttd temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ttd",
+      "ttd",
+      "birla mandir"
+    ]
+  },
+  {
+    "id": "q_ttd_02",
+    "temple_id": "ttd",
+    "question": "Where is Ttd temple located?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ttd",
+      "ttd",
+      "ttd"
+    ]
+  },
+  {
+    "id": "q_ttd_03",
+    "temple_id": "ttd",
+    "question": "What is the historical or mythological background of Ttd temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ttd",
+      "ujjaini",
+      "ttd"
+    ]
+  },
+  {
+    "id": "q_ttd_04",
+    "temple_id": "ttd",
+    "question": "What are the daily opening and closing timings of Ttd temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ttd",
+      "badrachalam",
+      "yadadri"
+    ]
+  },
+  {
+    "id": "q_ttd_05",
+    "temple_id": "ttd",
+    "question": "When can devotees visit Ttd temple for darshan during the day?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "veera satyanarayana",
+      "vemulavada",
+      "badrachalam"
+    ]
+  },
+  {
+    "id": "q_ttd_06",
+    "temple_id": "ttd",
+    "question": "What sevas or poojas are performed at Ttd temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ttd",
+      "veera satyanarayana",
+      "ttd"
+    ]
+  },
+  {
+    "id": "q_ttd_07",
+    "temple_id": "ttd",
+    "question": "What facilities and amenities are available for pilgrims at Ttd temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ttd",
+      "ttd",
+      "chilkur"
+    ]
+  },
+  {
+    "id": "q_ttd_08",
+    "temple_id": "ttd",
+    "question": "What major festivals and annual celebrations take place at Ttd temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ttd",
+      "ttd",
+      "chilkur"
+    ]
+  },
+  {
+    "id": "q_ttd_11",
+    "temple_id": "ttd",
+    "question": "What are the emergency contact and helpline numbers for Ttd temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ttd",
+      "ttd",
+      "ttd"
+    ]
+  },
+  {
+    "id": "q_ttd_12",
+    "temple_id": "ttd",
+    "question": "What are the darshan timings and required dress code guidelines at Ttd temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "vemulavada",
+      "ahobilam",
+      "ahobilam"
+    ]
+  },
+  {
+    "id": "q_ttd_13",
+    "temple_id": "ttd",
+    "question": "Tell me about the presiding deity of Ttd temple and how to reach the temple premises.",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ttd",
+      "ttd",
+      "edupayal"
+    ]
+  },
+  {
+    "id": "q_ujjaini_01",
+    "temple_id": "ujjaini",
+    "question": "Who is the main deity worshipped at Ujjaini temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ujjaini",
+      "ujjaini",
+      "ujjaini"
+    ]
+  },
+  {
+    "id": "q_ujjaini_02",
+    "temple_id": "ujjaini",
+    "question": "Where is Ujjaini temple located?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ujjaini",
+      "ujjaini",
+      "ujjaini"
+    ]
+  },
+  {
+    "id": "q_ujjaini_03",
+    "temple_id": "ujjaini",
+    "question": "What is the historical or mythological background of Ujjaini temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ujjaini",
+      "ujjaini",
+      "ujjaini"
+    ]
+  },
+  {
+    "id": "q_ujjaini_04",
+    "temple_id": "ujjaini",
+    "question": "What are the daily opening and closing timings of Ujjaini temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ujjaini",
+      "ujjaini",
+      "ujjaini"
+    ]
+  },
+  {
+    "id": "q_ujjaini_05",
+    "temple_id": "ujjaini",
+    "question": "When can devotees visit Ujjaini temple for darshan during the day?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "veera satyanarayana",
+      "badrachalam",
+      "vemulavada"
+    ]
+  },
+  {
+    "id": "q_ujjaini_06",
+    "temple_id": "ujjaini",
+    "question": "What sevas or poojas are performed at Ujjaini temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ujjaini",
+      "veera satyanarayana",
+      "ujjaini"
+    ]
+  },
+  {
+    "id": "q_ujjaini_07",
+    "temple_id": "ujjaini",
+    "question": "What facilities and amenities are available for pilgrims at Ujjaini temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "vemulavada",
+      "chilkur",
+      "edupayal"
+    ]
+  },
+  {
+    "id": "q_ujjaini_08",
+    "temple_id": "ujjaini",
+    "question": "What major festivals and annual celebrations take place at Ujjaini temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "karmanghat",
+      "chilkur",
+      "balkampet"
+    ]
+  },
+  {
+    "id": "q_ujjaini_09",
+    "temple_id": "ujjaini",
+    "question": "What are the dress codes and code of conduct rules for visiting Ujjaini temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ujjaini",
+      "jogulamba(new)",
+      "yadadri"
+    ]
+  },
+  {
+    "id": "q_ujjaini_11",
+    "temple_id": "ujjaini",
+    "question": "What are the emergency contact and helpline numbers for Ujjaini temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ujjaini",
+      "ujjaini",
+      "vemulavada"
+    ]
+  },
+  {
+    "id": "q_ujjaini_12",
+    "temple_id": "ujjaini",
+    "question": "What are the darshan timings and required dress code guidelines at Ujjaini temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "vemulavada",
+      "ahobilam",
+      "badrachalam"
+    ]
+  },
+  {
+    "id": "q_ujjaini_13",
+    "temple_id": "ujjaini",
+    "question": "Tell me about the presiding deity of Ujjaini temple and how to reach the temple premises.",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ujjaini",
+      "edupayal",
+      "ujjaini"
+    ]
+  },
+  {
+    "id": "q_veera satyanarayana_01",
+    "temple_id": "veera satyanarayana",
+    "question": "Who is the main deity worshipped at Veera Satyanarayana temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "veera satyanarayana",
+      "veera satyanarayana",
+      "veera satyanarayana"
+    ]
+  },
+  {
+    "id": "q_veera satyanarayana_02",
+    "temple_id": "veera satyanarayana",
+    "question": "Where is Veera Satyanarayana temple located?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "veera satyanarayana",
+      "veera satyanarayana",
+      "veera satyanarayana"
+    ]
+  },
+  {
+    "id": "q_veera satyanarayana_03",
+    "temple_id": "veera satyanarayana",
+    "question": "What is the historical or mythological background of Veera Satyanarayana temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "veera satyanarayana",
+      "veera satyanarayana",
+      "veera satyanarayana"
+    ]
+  },
+  {
+    "id": "q_veera satyanarayana_04",
+    "temple_id": "veera satyanarayana",
+    "question": "What are the daily opening and closing timings of Veera Satyanarayana temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "veera satyanarayana",
+      "veera satyanarayana",
+      "badrachalam"
+    ]
+  },
+  {
+    "id": "q_veera satyanarayana_05",
+    "temple_id": "veera satyanarayana",
+    "question": "When can devotees visit Veera Satyanarayana temple for darshan during the day?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "veera satyanarayana",
+      "vemulavada",
+      "badrachalam"
+    ]
+  },
+  {
+    "id": "q_veera satyanarayana_06",
+    "temple_id": "veera satyanarayana",
+    "question": "What sevas or poojas are performed at Veera Satyanarayana temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "veera satyanarayana",
+      "veera satyanarayana",
+      "veera satyanarayana"
+    ]
+  },
+  {
+    "id": "q_veera satyanarayana_07",
+    "temple_id": "veera satyanarayana",
+    "question": "What facilities and amenities are available for pilgrims at Veera Satyanarayana temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "veera satyanarayana",
+      "veera satyanarayana",
+      "veera satyanarayana"
+    ]
+  },
+  {
+    "id": "q_veera satyanarayana_08",
+    "temple_id": "veera satyanarayana",
+    "question": "What major festivals and annual celebrations take place at Veera Satyanarayana temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "veera satyanarayana",
+      "veera satyanarayana",
+      "veera satyanarayana"
+    ]
+  },
+  {
+    "id": "q_veera satyanarayana_09",
+    "temple_id": "veera satyanarayana",
+    "question": "What are the dress codes and code of conduct rules for visiting Veera Satyanarayana temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "vemulavada",
+      "veera satyanarayana",
+      "jogulamba(new)"
+    ]
+  },
+  {
+    "id": "q_veera satyanarayana_11",
+    "temple_id": "veera satyanarayana",
+    "question": "What are the emergency contact and helpline numbers for Veera Satyanarayana temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "veera satyanarayana",
+      "veera satyanarayana",
+      "veera satyanarayana"
+    ]
+  },
+  {
+    "id": "q_veera satyanarayana_12",
+    "temple_id": "veera satyanarayana",
+    "question": "What are the darshan timings and required dress code guidelines at Veera Satyanarayana temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "vemulavada",
+      "ahobilam",
+      "ahobilam"
+    ]
+  },
+  {
+    "id": "q_veera satyanarayana_13",
+    "temple_id": "veera satyanarayana",
+    "question": "Tell me about the presiding deity of Veera Satyanarayana temple and how to reach the temple premises.",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "veera satyanarayana",
+      "veera satyanarayana",
+      "veera satyanarayana"
+    ]
+  },
+  {
+    "id": "q_vemulavada_01",
+    "temple_id": "vemulavada",
+    "question": "Who is the main deity worshipped at Vemulavada temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "vemulavada",
+      "vemulavada",
+      "birla mandir"
+    ]
+  },
+  {
+    "id": "q_vemulavada_02",
+    "temple_id": "vemulavada",
+    "question": "Where is Vemulavada temple located?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "vemulavada",
+      "vemulavada",
+      "vemulavada"
+    ]
+  },
+  {
+    "id": "q_vemulavada_03",
+    "temple_id": "vemulavada",
+    "question": "What is the historical or mythological background of Vemulavada temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "vemulavada",
+      "vemulavada",
+      "veera satyanarayana"
+    ]
+  },
+  {
+    "id": "q_vemulavada_04",
+    "temple_id": "vemulavada",
+    "question": "What are the daily opening and closing timings of Vemulavada temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "vemulavada",
+      "vemulavada",
+      "basara"
+    ]
+  },
+  {
+    "id": "q_vemulavada_05",
+    "temple_id": "vemulavada",
+    "question": "When can devotees visit Vemulavada temple for darshan during the day?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "vemulavada",
+      "veera satyanarayana",
+      "badrachalam"
+    ]
+  },
+  {
+    "id": "q_vemulavada_06",
+    "temple_id": "vemulavada",
+    "question": "What sevas or poojas are performed at Vemulavada temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "vemulavada",
+      "veera satyanarayana",
+      "vemulavada"
+    ]
+  },
+  {
+    "id": "q_vemulavada_07",
+    "temple_id": "vemulavada",
+    "question": "What facilities and amenities are available for pilgrims at Vemulavada temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "vemulavada",
+      "vemulavada",
+      "vemulavada"
+    ]
+  },
+  {
+    "id": "q_vemulavada_08",
+    "temple_id": "vemulavada",
+    "question": "What major festivals and annual celebrations take place at Vemulavada temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "vemulavada",
+      "chilkur",
+      "vemulavada"
+    ]
+  },
+  {
+    "id": "q_vemulavada_09",
+    "temple_id": "vemulavada",
+    "question": "What are the dress codes and code of conduct rules for visiting Vemulavada temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "vemulavada",
+      "jogulamba(new)",
+      "edupayal"
+    ]
+  },
+  {
+    "id": "q_vemulavada_11",
+    "temple_id": "vemulavada",
+    "question": "What are the emergency contact and helpline numbers for Vemulavada temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "vemulavada",
+      "vemulavada",
+      "veera satyanarayana"
+    ]
+  },
+  {
+    "id": "q_vemulavada_12",
+    "temple_id": "vemulavada",
+    "question": "What are the darshan timings and required dress code guidelines at Vemulavada temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "vemulavada",
+      "ahobilam",
+      "badrachalam"
+    ]
+  },
+  {
+    "id": "q_vemulavada_13",
+    "temple_id": "vemulavada",
+    "question": "Tell me about the presiding deity of Vemulavada temple and how to reach the temple premises.",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "vemulavada",
+      "vemulavada",
+      "vemulavada"
+    ]
+  },
+  {
+    "id": "q_yadadri_01",
+    "temple_id": "yadadri",
+    "question": "Who is the main deity worshipped at Yadadri temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "yadadri",
+      "yadadri",
+      "yadadri"
+    ]
+  },
+  {
+    "id": "q_yadadri_02",
+    "temple_id": "yadadri",
+    "question": "Where is Yadadri temple located?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "yadadri",
+      "yadadri",
+      "yadadri"
+    ]
+  },
+  {
+    "id": "q_yadadri_03",
+    "temple_id": "yadadri",
+    "question": "What is the historical or mythological background of Yadadri temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "yadadri",
+      "yadadri",
+      "yadadri"
+    ]
+  },
+  {
+    "id": "q_yadadri_04",
+    "temple_id": "yadadri",
+    "question": "What are the daily opening and closing timings of Yadadri temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "yadadri",
+      "badrachalam",
+      "yadadri"
+    ]
+  },
+  {
+    "id": "q_yadadri_05",
+    "temple_id": "yadadri",
+    "question": "When can devotees visit Yadadri temple for darshan during the day?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "veera satyanarayana",
+      "karmanghat",
+      "vemulavada"
+    ]
+  },
+  {
+    "id": "q_yadadri_06",
+    "temple_id": "yadadri",
+    "question": "What sevas or poojas are performed at Yadadri temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "yadadri",
+      "yadadri",
+      "yadadri"
+    ]
+  },
+  {
+    "id": "q_yadadri_07",
+    "temple_id": "yadadri",
+    "question": "What facilities and amenities are available for pilgrims at Yadadri temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "vemulavada",
+      "chilkur",
+      "yadadri"
+    ]
+  },
+  {
+    "id": "q_yadadri_08",
+    "temple_id": "yadadri",
+    "question": "What major festivals and annual celebrations take place at Yadadri temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "yadadri",
+      "chilkur",
+      "edupayal"
+    ]
+  },
+  {
+    "id": "q_yadadri_09",
+    "temple_id": "yadadri",
+    "question": "What are the dress codes and code of conduct rules for visiting Yadadri temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "yadadri",
+      "yadadri",
+      "jogulamba(new)"
+    ]
+  },
+  {
+    "id": "q_yadadri_11",
+    "temple_id": "yadadri",
+    "question": "What are the emergency contact and helpline numbers for Yadadri temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "yadadri",
+      "yadadri",
+      "yadadri"
+    ]
+  },
+  {
+    "id": "q_yadadri_12",
+    "temple_id": "yadadri",
+    "question": "What are the darshan timings and required dress code guidelines at Yadadri temple?",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": true,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": false
+    },
+    "top3_temples": [
+      "vemulavada",
+      "ahobilam",
+      "ahobilam"
+    ]
+  },
+  {
+    "id": "q_yadadri_13",
+    "temple_id": "yadadri",
+    "question": "Tell me about the presiding deity of Yadadri temple and how to reach the temple premises.",
+    "answerable": true,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": true,
+      "top5_contamination": true,
+      "isolated": true
+    },
+    "top3_temples": [
+      "yadadri",
+      "edupayal",
+      "ahobilam"
+    ]
+  },
+  {
+    "id": "neg_basara",
+    "temple_id": "basara",
+    "question": "What is the ticket price for a space rocket launch from Basara temple?",
+    "answerable": false,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "basara",
+      "ramappa",
+      "basara"
+    ]
+  },
+  {
+    "id": "neg_chilkur",
+    "temple_id": "chilkur",
+    "question": "How much does a helicopter airport shuttle ticket cost at Chilkur Balaji temple?",
+    "answerable": false,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "chilkur",
+      "vemulavada",
+      "ramappa"
+    ]
+  },
+  {
+    "id": "neg_yadadri",
+    "temple_id": "yadadri",
+    "question": "What are the timings of the indoor snow skiing resort at Yadadri temple?",
+    "answerable": false,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "yadadri",
+      "yadadri",
+      "yadadri"
+    ]
+  },
+  {
+    "id": "neg_dharmapuri",
+    "temple_id": "dharmapuri",
+    "question": "Where is the scuba diving training center located inside Dharmapuri temple?",
+    "answerable": false,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "dharmapuri",
+      "dharmapuri",
+      "dharmapuri"
+    ]
+  },
+  {
+    "id": "neg_edupayal",
+    "temple_id": "edupayal",
+    "question": "Can visitors book submarine rides at Edupayal temple?",
+    "answerable": false,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "edupayal",
+      "edupayal",
+      "edupayal"
+    ]
+  },
+  {
+    "id": "neg_vemulavada",
+    "temple_id": "vemulavada",
+    "question": "What is the entry fee for the roller coaster theme park at Vemulawada temple?",
+    "answerable": false,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "vemulavada",
+      "ramappa",
+      "vemulavada"
+    ]
+  },
+  {
+    "id": "neg_badrachalam",
+    "temple_id": "badrachalam",
+    "question": "How to rent luxury yachts for private parties at Bhadrachalam temple?",
+    "answerable": false,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "badrachalam",
+      "badrachalam",
+      "jogulamba(new)"
+    ]
+  },
+  {
+    "id": "neg_ramappa",
+    "temple_id": "ramappa",
+    "question": "What are the booking prices for hot air balloon safari over Ramappa temple?",
+    "answerable": false,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ramappa",
+      "ramappa",
+      "ramappa"
+    ]
+  },
+  {
+    "id": "neg_thousand pillar",
+    "temple_id": "thousand pillar",
+    "question": "Where can I buy tickets for the underwater aquarium at Thousand Pillar temple?",
+    "answerable": false,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "thousand pillar",
+      "thousand pillar",
+      "thousand pillar"
+    ]
+  },
+  {
+    "id": "neg_birla mandir",
+    "temple_id": "birla mandir",
+    "question": "What is the schedule of Formula 1 car racing around Birla Mandir?",
+    "answerable": false,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "birla mandir",
+      "birla mandir",
+      "birla mandir"
+    ]
+  },
+  {
+    "id": "neg_karmanghat",
+    "temple_id": "karmanghat",
+    "question": "What is the fee for ice skating rink at Karmanghat Hanuman temple?",
+    "answerable": false,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "karmanghat",
+      "karmanghat",
+      "karmanghat"
+    ]
+  },
+  {
+    "id": "neg_ujjaini",
+    "temple_id": "ujjaini",
+    "question": "How to book private jet landing permissions inside Ujjaini Mahakali temple?",
+    "answerable": false,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ujjaini",
+      "ujjaini",
+      "ujjaini"
+    ]
+  },
+  {
+    "id": "neg_medaram",
+    "temple_id": "medaram",
+    "question": "What is the tariff for presidential suites in the 7-star casino hotel at Medaram?",
+    "answerable": false,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "yadadri",
+      "medaram",
+      "medaram"
+    ]
+  },
+  {
+    "id": "neg_ahobilam",
+    "temple_id": "ahobilam",
+    "question": "Where is the bungee jumping platform located at Ahobilam temple?",
+    "answerable": false,
+    "isolation": {
+      "top1_contamination": false,
+      "top3_contamination": false,
+      "top5_contamination": false,
+      "isolated": true
+    },
+    "top3_temples": [
+      "ahobilam",
+      "ahobilam",
+      "ahobilam"
+    ]
+  }
+]

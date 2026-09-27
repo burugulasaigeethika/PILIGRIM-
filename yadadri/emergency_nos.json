@@ -1,0 +1,66 @@
+{
+  "police": [
+    {
+      "name": "Yadagirigutta Police Station",
+      "phone": "08685-236619",
+      "alt_phone": "+91 9440795643",
+      "address": "Rajapet Road, Yadagirigutta (2.1 km at foothills)",
+      "details": "Circle Inspector (CI) Yadagirigutta."
+    },
+    {
+      "name": "ACP Yadadri Office",
+      "phone": "08685-242204",
+      "alt_phone": "+91 8333818894",
+      "address": "Police PS Road, Yadagirigutta (~2.5 km)"
+    }
+  ],
+  "medical": [
+    {
+      "name": "Primary Health Centre (PHC), Yadagirigutta",
+      "phone": "+91 9949997989",
+      "address": "Rajapet Road, Yadagirigpally, Yadagirigutta (3.1 km)",
+      "details": "Outpatient, primary emergency first aid, maternal care."
+    },
+    {
+      "name": "Government General Hospital (GGH), Bhongir (District Hospital)",
+      "phone": "+91 7702131479",
+      "address": "Main Road, Bhongir (14.8 km away)",
+      "details": "24/7 Emergency & Trauma care, 220-bed hospital, ICU, pediatrics, orthopedics."
+    },
+    {
+      "name": "Dr.Racha Yadagiri Hospital",
+      "address": "1.6 km",
+      "details": "24/7 emergency first aid, general medicine."
+    },
+    {
+      "name": "Temple First Aid Clinic",
+      "address": "Hilltop entrance near administrative block",
+      "details": "Duty doctor and basic first-aid supplies during darshan hours."
+    }
+  ],
+  "fire_and_rescue": {
+    "name": "Bhongir Fire Station",
+    "phone": "101",
+    "alt_phone": "+91 8712699151",
+    "address": "Near DSP Office, Jagdevpur Road, Bhongir (~14 km away)",
+    "details": "District Fire Officer (+91 8712699153)."
+  },
+  "helpline": [
+    {
+      "name": "National Emergency Number",
+      "phone": "112"
+    },
+    {
+      "name": "Police Control Room",
+      "phone": "100"
+    },
+    {
+      "name": "State Ambulance Service",
+      "phone": "108"
+    },
+    {
+      "name": "Fire Services",
+      "phone": "101"
+    }
+  ]
+}

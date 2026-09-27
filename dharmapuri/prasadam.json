@@ -1,0 +1,37 @@
+[
+  {
+    "item": "Abhishekam Prasadam",
+    "price": "Included in Abhishekam Seva (₹500)",
+    "timings": "6:00 AM – 8:00 AM",
+    "location": "Temple",
+    "description": "Sacred prasadam distributed following Abhishekam & Nityanivedanam"
+  },
+  {
+    "item": "Pulihora Bhogam",
+    "price": "₹300",
+    "timings": "10:00 AM",
+    "location": "Temple",
+    "description": "Tamarind rice bhogam offering distributed at 10:00 AM"
+  },
+  {
+    "item": "Dadhojana Bhogam",
+    "price": "₹300",
+    "timings": "10:00 AM",
+    "location": "Temple",
+    "description": "Curd rice bhogam offering distributed at 10:00 AM"
+  },
+  {
+    "item": "Bōrela Bhogam",
+    "price": "₹500",
+    "timings": "12:00 PM",
+    "location": "Temple",
+    "description": "Traditional Borela sweet bhogam offering distributed at 12:00 noon"
+  },
+  {
+    "item": "Evening Aaradhana Prasadam",
+    "price": "Not specified",
+    "timings": "7:00 PM – 8:00 PM",
+    "location": "Temple",
+    "description": "Prasadam distributed during evening Aaradhana & Pavalimpu Seva"
+  }
+]

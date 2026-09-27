@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Ramappa Temple (Palampet)",
+    "distance": "49.38 km",
+    "type": "Historical / UNESCO Heritage",
+    "description": "13th-century Kakatiya masterpiece famous for floating light-weight bricks, sandbox foundations, and fine Madanika sculptures."
+  },
+  {
+    "name": "Bogatha Waterfalls (Cheekupalle)",
+    "distance": "106.94 km",
+    "type": "Nature / Waterfall",
+    "description": "Known as the 'Niagara of Telangana', a broad jungle waterfall set in the dense forest heartland."
+  },
+  {
+    "name": "Tadvai Forest Huts & Eco-Tourism",
+    "distance": "15.40 km",
+    "type": "Nature / Eco-Tourism",
+    "description": "Teak forest camping retreat offering canopy walks, bird watching, tree houses, and forest cycling."
+  },
+  {
+    "name": "Laknavaram Lake",
+    "distance": "35.10 km",
+    "type": "Nature / Lake",
+    "description": "Massive Kakatiya-era reservoir featuring 160-meter hanging suspension bridges connecting island resorts."
+  },
+  {
+    "name": "Eturnagaram Wildlife Sanctuary",
+    "distance": "25 km",
+    "type": "Nature / Wildlife Sanctuary",
+    "description": "One of the oldest wildlife sanctuaries in Telangana, covering rich teak forests and sanctuary wildlife."
+  },
+  {
+    "name": "Kongala Waterfalls",
+    "distance": "45 km",
+    "type": "Nature / Waterfall",
+    "description": "A secluded, natural cascade nestled deep within the Eturnagaram forest range."
+  },
+  {
+    "name": "Ghanpur Kota Gullu",
+    "distance": "58.90 km",
+    "type": "Historical / Heritage",
+    "description": "A group of 22 ancient Kakatiya-era stone temples displaying intricate architectural carvings."
+  },
+  {
+    "name": "Damarvai Dolmens",
+    "distance": "31.10 km",
+    "type": "Prehistoric / Archaeological",
+    "description": "Ancient megalithic burial structures built thousands of years ago in the Tadvai forest zone."
+  },
+  {
+    "name": "Pandavula Guhalu (Caves)",
+    "distance": "62.60 km",
+    "type": "Archaeological / Rock Art",
+    "description": "Natural rock shelter caves featuring prehistoric rock art, weapons drawings, and ancient tribal figures."
+  },
+  {
+    "name": "Medaram Tribal Museum",
+    "distance": "2 km",
+    "type": "Cultural / Museum",
+    "description": "Official museum showcasing Koya tribal heritage, life history of Sammakka, ritual weapons, and musical instruments."
+  },
+  {
+    "name": "Malluru Hemachala Temple",
+    "distance": "53.40 km",
+    "type": "Religious / Shrine",
+    "description": "Ancient forest hill temple dedicated to Lord Narasimha Swamy with natural medicinal water springs."
+  },
+  {
+    "name": "Kaleshwaram Temple & Triveni Sangam",
+    "distance": "93.10 km",
+    "type": "Religious / Confluence",
+    "description": "Sacred confluence of Godavari and Pranahita rivers, famous for its unique twin-linga Shiva temple."
+  }
+]

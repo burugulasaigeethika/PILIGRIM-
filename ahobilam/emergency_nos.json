@@ -1,0 +1,45 @@
+{
+  "hospitals": [
+    {
+      "name": "Temple First-Aid Post",
+      "location": "Lower Ahobilam complex for minor issues",
+      "distance": "Within premises",
+      "description": "Located in Lower Ahobilam complex near the guest house for minor issues."
+    },
+    {
+      "name": "Government Area Hospital (Allagadda)",
+      "distance": "~30 km",
+      "description": "Provides primary emergency and trauma care."
+    },
+    {
+      "name": "Nandyal District Hospital",
+      "distance": "~65 km",
+      "description": "Major multispecialty hospital for tertiary care."
+    }
+  ],
+  "ambulance_services": [
+    {
+      "name": "Universal Medical Ambulance",
+      "contact": "108"
+    }
+  ],
+  "police_and_security": [
+    {
+      "name": "Allagadda Police Station (Ahobilam division)",
+      "contact_number": "+91 8519 220022"
+    },
+    {
+      "name": "Universal Police Help Line",
+      "contact": "100 or 112"
+    }
+  ],
+  "fire_and_rescue_services": {
+    "name": "Universal Fire Department",
+    "contact": "101"
+  },
+  "important_emergency_helplines": {
+    "police": "100 or 112",
+    "ambulance": "108",
+    "fire": "101"
+  }
+}

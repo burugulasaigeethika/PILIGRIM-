@@ -1,0 +1,29 @@
+{
+  "how_to_reach": [
+    "Well-connected via Balkampet Road, Sanjeeva Reddy Nagar Road, and Ameerpet Road.",
+    "Nearest bus stop is Balkampet Bus Stop, located approximately 100 meters from the temple.",
+    "Nearest metro stations are SR Nagar Metro Station (Red Line, ~400m-500m) and Ameerpet Metro Station (Red/Blue Line interchange, ~1.5km-2.0km).",
+    "Nearest MMTS station is Nature Cure Hospital MMTS Station (~1.5 km); nearest major railway station is Secunderabad Railway Station (SC, ~8km-9km).",
+    "Nearest airport is Rajiv Gandhi International Airport (HYD, ~35km-40km)."
+  ],
+  "nearest_railway_station": {
+    "name": "Nature Cure Hospital MMTS Station / Secunderabad Railway Station (SC)",
+    "distance": "Nature Cure Hospital MMTS: ~1.5 km; Secunderabad Railway Station: ~8 km to 9 km",
+    "connectivity": "Secunderabad Railway Station connects major cities. Devotees can hire auto-rickshaws or take public transport from there."
+  },
+  "nearest_airport": {
+    "name": "Rajiv Gandhi International Airport (HYD)",
+    "distance": "~35 km to 40 km",
+    "connectivity": "International and domestic flights"
+  },
+  "bus_routes": [
+    "Nearest bus stop: Balkampet Bus Stop, located approximately 100 meters from the temple. (Specific bus route numbers were not specified in official transport sources)."
+  ],
+  "road_routes": [
+    "Access Roads: Well-connected via Balkampet Road, Sanjeeva Reddy Nagar Road, and Ameerpet Road."
+  ],
+  "parking_info": [
+    "A dedicated multi-level parking complex has been developed near the Balkampet Yellamma temple to manage visitor vehicles, offering a more streamlined alternative to previous street-parking arrangements.",
+    "Severe traffic congestion occurs on Sundays, Tuesdays, and during the Bonalu festival, often prompting police to implement one-way traffic rules on Balkampet Road."
+  ]
+}

@@ -1,0 +1,218 @@
+[
+  {
+    "name": "Sri Swamy Vari Suprabhata Seva",
+    "telugu_name": "శ్రీ స్వామి వారి సుప్రభాత సేవ",
+    "price": "₹116",
+    "timing": "03:30 AM",
+    "booking_url": "",
+    "description": "Persons Allowed: Single. Early morning awakening ritual. Prasadam: --"
+  },
+  {
+    "name": "Sri Swamy Vari Vratham",
+    "telugu_name": "శ్రీ స్వామి వారి వ్రతం",
+    "price": "₹300",
+    "timing": "Around 1 hour from 06:00 AM to 06:00 PM",
+    "booking_url": "",
+    "description": "Persons Allowed: Couple / Single Person. Place: Radhapath Surrounding. Prasadam: 500gms Bhogam Prasadam."
+  },
+  {
+    "name": "Sri Swamy Vari Special Vratham",
+    "telugu_name": "శ్రీ స్వామి వారి స్పెషల్ వ్రతం",
+    "price": "₹1000",
+    "timing": "Around 1 hour from 06:00 AM to 06:00 PM",
+    "booking_url": "",
+    "description": "Persons Allowed: Couple / Single Person. Place: Raja Gopuram Inside. Prasadam: 600gms Bhogam Prasadam, Bangi 150gms."
+  },
+  {
+    "name": "Sri Swamy Vari Visista Vratham",
+    "telugu_name": "శ్రీ స్వామి వారి విశిష్ట వ్రతం",
+    "price": "₹1500",
+    "timing": "Around 1 hour from 06:00 AM to 06:00 PM",
+    "booking_url": "",
+    "description": "Persons Allowed: Couple / Single Person. Place: Sri Swami Vari Dwaja Stambham. Prasadam: 600gms Bhogam Prasadam, Bangi 150gms and Kanduva, Blouse Piece."
+  },
+  {
+    "name": "Sri Swamy Vari Vratham (in absence of devotees / Postal / Online)",
+    "telugu_name": "శ్రీ స్వామి వారి పరోక్ష వ్రతం",
+    "price": "₹1116",
+    "timing": "Every Day 09:00 AM",
+    "booking_url": "",
+    "description": "Persons Allowed: In absence of devotees. Devotees can perform this Vratham online or by sending DD/MO with Gotram and names. Prasadam: Sri Swamy Vari Prasadam will be sent by Post."
+  },
+  {
+    "name": "Sri Swamivari Laksha Patri Pooja",
+    "telugu_name": "శ్రీ స్వామివారి లక్ష పత్రి పూజ",
+    "price": "₹2500",
+    "timing": "08:00 AM",
+    "booking_url": "",
+    "description": "Persons Allowed: Couple or Single. Prasadam: --"
+  },
+  {
+    "name": "Sri Ammavari Laksha Kunkumarchana",
+    "telugu_name": "శ్రీ అమ్మవారి లక్ష కుంకుమార్చన",
+    "price": "₹2500",
+    "timing": "08:00 AM",
+    "booking_url": "",
+    "description": "Persons Allowed: Couple or Single. Performed to Goddess Sri Anantha Lakshmi Ammavaru. Prasadam: --"
+  },
+  {
+    "name": "Sri Lakshmi Prayuktha Ayushya Homam (in absence of devotees)",
+    "telugu_name": "శ్రీ లక్ష్మీ ప్రయుక్త ఆయుష్య హోమం (పరోక్షం)",
+    "price": "₹1116",
+    "timing": "Every Day 09:00 AM",
+    "booking_url": "",
+    "description": "Persons Allowed: Couple / Single Person (in absence of devotees). Prasadam: --"
+  },
+  {
+    "name": "Sri Vanadurga Ammavari Chandi Homam (in absence of devotees)",
+    "telugu_name": "శ్రీ వనదుర్గ అమ్మవారి చండీ హోమం (పరోక్షం)",
+    "price": "₹1116",
+    "timing": "Every Friday",
+    "booking_url": "",
+    "description": "Persons Allowed: In absence of devotees. Performed at Sri Vanadurga shrine. Prasadam: --"
+  },
+  {
+    "name": "Pratyangiri Homam (on every pournami/amavasya day only)",
+    "telugu_name": "ప్రత్యంగిరి హోమం",
+    "price": "₹750",
+    "timing": "Every Pournami 09:00 AM",
+    "booking_url": "",
+    "description": "Persons Allowed: Couple or Single. Performed only on full moon and new moon days. Prasadam: --"
+  },
+  {
+    "name": "Sri Swamivari Nitya Kalyanam",
+    "telugu_name": "శ్రీ స్వామివారి నిత్య కళ్యాణం",
+    "price": "₹1116",
+    "timing": "09:30 AM",
+    "booking_url": "",
+    "description": "Persons Allowed: Couple or Single. Daily celestial wedding ritual. Prasadam: Prasadam 1kg, Bangi Prasadam 300gms, Khanduva, Blouse Piece."
+  },
+  {
+    "name": "Sri Swamivari Pavalimpu Seva",
+    "telugu_name": "శ్రీ స్వామివారి పవళింపు సేవ",
+    "price": "₹50",
+    "timing": "02:00 PM",
+    "booking_url": "",
+    "description": "Persons Allowed: Single. Afternoon resting seva. Prasadam: --"
+  },
+  {
+    "name": "Sri Swamivari Abhishekam on the lunar star day of Makha",
+    "telugu_name": "శ్రీ స్వామివారి అభిషేకం (మఖ నక్షత్రం)",
+    "price": "₹3000",
+    "timing": "One Day Only (Makha Star Day)",
+    "booking_url": "",
+    "description": "Persons Allowed: Couple or Single. Special monthly star abhishekam. Prasadam: --"
+  },
+  {
+    "name": "Sri Sitaramula (Kshethra Palakulu) Pattabhishekam on lunar star day of Punarvasu in Sri Ramalayam",
+    "telugu_name": "శ్రీ సీతారాముల పట్టాభిషేకం (పునర్వసు నక్షత్రం)",
+    "price": "₹116",
+    "timing": "On Punarvasu Star Day",
+    "booking_url": "",
+    "description": "Persons Allowed: Couple or Single. Performed at Sri Ramalayam to the Kshetra Palaka. Prasadam: --"
+  },
+  {
+    "name": "Sri Vanadurga Ammavari Pratyangira Homam (in absence of devotees)",
+    "telugu_name": "శ్రీ వనదుర్గ అమ్మవారి ప్రత్యంగిరా హోమం (పరోక్షం)",
+    "price": "₹1116",
+    "timing": "Every Full Moon (Pournami) Day",
+    "booking_url": "",
+    "description": "Persons Allowed: Couple / Single Person (in absence of devotees). Performed on Pournami. Prasadam: --"
+  },
+  {
+    "name": "Sri Kanakadurga Ammavari Chandi Homam on Mula Nakshatram (in absence of devotees)",
+    "telugu_name": "శ్రీ కనకదుర్గ అమ్మవారి చండీ హోమం (మూలా నక్షత్రం)",
+    "price": "₹1116",
+    "timing": "Every Mula Nakshatram Day",
+    "booking_url": "",
+    "description": "Persons Allowed: Couple / Single. Prasadam: 300 Gms Prasadam, Kanduva, Blouse Piece."
+  },
+  {
+    "name": "Sri Swami Vari Abhishekam (On the day of Makha Nakshatram)",
+    "telugu_name": "శ్రీ స్వామి వారి అభిషేకం (మఖ నక్షత్రం తెల్లవారుజాము)",
+    "price": "₹3116",
+    "timing": "On the day of Makha Nakshatram 03:30 AM",
+    "booking_url": "",
+    "description": "Persons Allowed: --. Early morning grand abhishekam on Makha Nakshatram. Prasadam: --"
+  },
+  {
+    "name": "Swarna Pushparchana",
+    "telugu_name": "స్వర్ణ పుష్పార్చన",
+    "price": "₹3000",
+    "timing": "Every Ekadasi",
+    "booking_url": "",
+    "description": "Persons Allowed: Couple or Single. Worship of the Lord with golden flowers on Ekadasi. Prasadam: --"
+  },
+  {
+    "name": "Veda Aseervachanam",
+    "telugu_name": "వేద ఆశీర్వచనం",
+    "price": "₹500",
+    "timing": "As Per Devotee Interest",
+    "booking_url": "",
+    "description": "Persons Allowed: Couple or Single. Vedic blessings rendered by temple Vedic scholars. Prasadam: --"
+  },
+  {
+    "name": "Go (COW) Pooja",
+    "telugu_name": "గో పూజ",
+    "price": "₹116",
+    "timing": "Daily",
+    "booking_url": "",
+    "description": "Persons Allowed: Couple or Single. Sacred cow worship performed daily at Gosala. Prasadam: --"
+  },
+  {
+    "name": "Surya Namaskaramulu",
+    "telugu_name": "సూర్య నమస్కారములు",
+    "price": "₹1116",
+    "timing": "Every Sunday",
+    "booking_url": "",
+    "description": "Persons Allowed: --. Special Sunday Sun worship rituals. Prasadam: --"
+  },
+  {
+    "name": "Sri Lakshmi Prayuktha Ayushya Homam",
+    "telugu_name": "శ్రీ లక్ష్మీ ప్రయుక్త ఆయుష్య హోమం (ప్రత్యక్షం)",
+    "price": "₹1000",
+    "timing": "Every Day 09:00 AM",
+    "booking_url": "",
+    "description": "Persons Allowed: Couple / Single. Performed daily in person at the temple. Prasadam: --"
+  },
+  {
+    "name": "Sri Swamy Vari Seegra Darsanam",
+    "telugu_name": "శ్రీ స్వామి వారి శీఘ్ర దర్శనం",
+    "price": "₹200",
+    "timing": "06:00 AM to 12:30 PM & 01:00 PM to 09:00 PM",
+    "booking_url": "",
+    "description": "Special quick darshan ticket per head with less waiting time via a dedicated queue line. Prasadam: One packet (150Gms) of Bhogam (Bhangi Prasadam) is provided."
+  },
+  {
+    "name": "Sri Swamy Vari Yantralayam",
+    "telugu_name": "శ్రీ స్వామి వారి యంత్రాలయం",
+    "price": "₹50",
+    "timing": "06:00 AM to 12:30 PM & 01:00 PM to 09:00 PM",
+    "booking_url": "",
+    "description": "Darshan at Yantralayam"
+  },
+    {
+    "name": "Antralayam Darshan",
+    "telugu_name": "అంతరాలయ దర్శనం",
+    "price": "₹200",
+    "timing": "06:00 AM to 12:30 PM & 01:00 PM to 09:00 PM",
+    "booking_url": "",
+    "description": "Antralayam with shorter queue line."
+  },
+  {
+    "name": "Abhishekam in Yantralayam",
+    "telugu_name": "యంత్రాలయంలో అభిషేకం",
+    "price": "₹100",
+    "timing": "08:00 AM to 12:00 PM",
+    "booking_url": "",
+    "description": "Devotees can perform Abhishekam in Yantralayam per ticket."
+  },
+  {
+    "name": "Darbaru Mandapam Seva Ticket",
+    "telugu_name": "దర్బారు మండపం సేవ",
+    "price": "₹40",
+    "timing": "06:00 PM to 07:00 PM",
+    "booking_url": "",
+    "description": "Evening Darbaru Mandapam entry ticket."
+  }
+]

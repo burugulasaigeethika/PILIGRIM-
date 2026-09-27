@@ -1,0 +1,38 @@
+{
+  "temple_id": "edupayala_vana_durga_bhavani",
+  "opening_time": "5:30 AM",
+  "closing_time": "6:30 PM",
+  "afternoon_break": {
+    "from": "",
+    "to": ""
+  },
+  "daily_schedule": [
+    {
+      "time": "5:30 AM – 6:30 AM",
+      "event": "Abhishekam"
+    },
+    {
+      "time": "6:30 AM – 7:00 AM",
+      "event": "Alankarana"
+    },
+    {
+      "time": "8:00 AM – 11:00 AM",
+      "event": "Vedaparayanam"
+    },
+    {
+      "time": "Evening",
+      "event": "Lalitha Sahasranama Parayanam (time not specified)"
+    }
+  ],
+  "darshan_timings": [
+    {
+      "days": "Weekdays",
+      "timing": "5:30 AM – 6:30 PM (Continuous Darshan)"
+    },
+    {
+      "days": "Sundays",
+      "timing": "5:00 AM – 7:00 PM (Continuous Darshan)"
+    }
+  ],
+  "overview": "The Sri Edupayala Vana Durga Bhavani Temple follows a highly structured daily schedule of rituals, archanas, and darshan, adhering to the traditional Shakti Smartha Agama customs."
+}

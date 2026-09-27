@@ -1,0 +1,47 @@
+{
+  "bus_routes": [
+    "Direct APSRTC buses run from Hyderabad, Kurnool, and Kadapa to Allagadda. Town buses connect Allagadda to Ahobilam (30 km) every 45 minutes.",
+    "From Chennai, overnight buses run to Nandyal. Devotees should alight at Allagadda and take a local town bus."
+  ],
+  "railway_stations": [
+    {
+      "station": "Nandyal Railway Station",
+      "distance": "~60 km",
+      "details": "Nearest major railway station. Devotees can hire taxis or board state buses to reach Ahobilam."
+    },
+    {
+      "station": "Kadapa Railway Station",
+      "distance": "~100 km",
+      "details": "Connected via Chennai Bombay Mail. Devotees can hire taxis or board state buses to reach Ahobilam."
+    },
+    {
+      "station": "Kurnool Railway Station",
+      "distance": "~150 km",
+      "details": "Devotees can hire taxis or board state buses to reach Ahobilam."
+    }
+  ],
+  "airports": [
+    {
+      "name": "Rajiv Gandhi International Airport (Hyderabad)",
+      "distance": "~330 km",
+      "type": "International",
+      "details": "Located approximately 330 km from Ahobilam via the NH44 highway."
+    },
+    {
+      "name": "Kurnool Airport (Uyyalawada Narasimha Reddy Airport - KJB)",
+      "distance": "Approx. 85 km",
+      "type": "Domestic",
+      "details": "The closest operating commercial airport to Ahobilam, located in Orvakal along the Kurnool-Nandyal highway range. Features regional connectivity options."
+    },
+    {
+      "name": "Kadapa Airport",
+      "distance": "~110 km",
+      "type": "Domestic",
+      "details": "Domestic airport located ~110 km away."
+    }
+  ],
+  "parking_and_transit": {
+    "parking_areas": "Spacious parking grounds for buses, cars, and private vehicles at Lower Ahobilam.",
+    "local_transit": "Town buses connect Allagadda to Ahobilam (30 km) every 45 minutes. Taxis can be hired from Nandyal or Kadapa railway stations."
+  }
+}

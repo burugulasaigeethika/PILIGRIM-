@@ -1,0 +1,314 @@
+[
+  {
+    "name": "Seeghra Darshanam",
+    "telugu_name": "ఘీశ్ర దర్శనం",
+    "price": "₹150",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/darshanam",
+    "description": ""
+  },
+  {
+    "name": "Sparsha Darshanam ( Single Person Only)",
+    "telugu_name": "స్పర్శ దర్శనం",
+    "price": "₹500",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/darshanam",
+    "description": ""
+  },
+  {
+    "name": "Chandi Homam (Virtual Seva - పరోక్ష సేవ)",
+    "telugu_name": "చండీ హోమం (పరోక్ష)",
+    "price": "₹1,116",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/paroksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Ekantha Seva ( Virtual Seva - పరోక్ష సేవ)",
+    "telugu_name": "ఏకాంత సేవ (పరోక్ష)",
+    "price": "₹1,116",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/paroksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Ganapathi Homam  (Virtual Seva - పరోక్ష సేవ)",
+    "telugu_name": "గణపతి హోమం (పరోక్ష)",
+    "price": "₹1,116",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/paroksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Kumkumarchana (Virtual Seva - పరోక్ష సేవ)",
+    "telugu_name": "కుంకుమార్చన (పరోక్ష)",
+    "price": "₹1,116",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/paroksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Laksha Kumkumarchana (Virtual Seva - పరోక్ష సేవ)",
+    "telugu_name": "లక్ష కుంకుమార్చన (పరోక్ష)",
+    "price": "₹1,116",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/paroksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Leela Kalyanotsavam (Virtual Seva - పరోక్ష సేవ)",
+    "telugu_name": "లీలా కళ్యాణోత్సవం (పరోక్ష)",
+    "price": "₹1,116",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/paroksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Mrityunjaya Homam (Virtual Seva - పరోక్ష సేవ)",
+    "telugu_name": "మృత్యుంజయ హోమం (పరోక్ష)",
+    "price": "₹1,116",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/paroksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Nandeeshwara Swamy Vari Visesharchana-పరోక్ష సేవ)",
+    "telugu_name": "నందీశ్వర స్వామి విశేషార్చన",
+    "price": "₹1,116",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/paroksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Rudraabhishekam (Virtual Seva - పరోక్ష సేవ)",
+    "telugu_name": "రుద్రాభిషేకం (పరోక్ష)",
+    "price": "₹1,116",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/paroksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Rudra Homam (Virtual Seva - పరోక్ష సేవ)",
+    "telugu_name": "రుద్ర హోమం (పరోక్ష)",
+    "price": "₹1,116",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/paroksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Sri Bayalu Veerabhadra Swamy Vari Visesharchana",
+    "telugu_name": "బయలు వీరభద్ర స్వామి విశేషార్చన",
+    "price": "₹1,116",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/paroksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Valli Devasena Subramanyeswara Swamy Kalyanam",
+    "telugu_name": "వల్లి దేవసేన సుబ్రహ్మణ్య స్వామి కళ్యాణం",
+    "price": "₹1,116",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/paroksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Varalakshmi Vratham (Virtual Seva - పరోక్ష సేవ)",
+    "telugu_name": "వరలక్ష్మి వ్రతం (పరోక్ష)",
+    "price": "₹1,116",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/paroksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Vedaseervachanam (Virtual Seva - పరోక్ష సేవ)",
+    "telugu_name": "వేదాశీర్వచనం (పరోక్ష)",
+    "price": "₹1,116",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/paroksha-seva",
+    "description": ""
+  },
+   {
+    "name": "Abhishekam Garbhalayam",
+    "telugu_name": "గర్భాలయం అభిషేకం",
+    "price": "₹5,000",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/pratyaksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Aksharabhyasam - Puja meterial will not provided the devasthanam to Aksharabhyasam & Annaprasana",
+    "telugu_name": "అక్షరాభ్యాసం",
+    "price": "₹500",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/pratyaksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Annaprasana - Puja meterial will not provided the devasthanam to Aksharabhyasam & Annaprasana",
+    "telugu_name": "అన్నప్రాశన",
+    "price": "₹1,000",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/pratyaksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Chandi Homam",
+    "telugu_name": "చండీ హోమం",
+    "price": "₹1,500",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/pratyaksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Gow Puja",
+    "telugu_name": "గో పూజ",
+    "price": "₹300",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/pratyaksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Kunkumarchana",
+    "telugu_name": "కుంకుమార్చన",
+    "price": "₹1,000",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/pratyaksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Kunkumarchana Prakaramandapam",
+    "telugu_name": "ప్రాకారమండపం కుంకుమార్చన",
+    "price": "₹500",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/pratyaksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Leela Kalyanam",
+    "telugu_name": "లీలా కళ్యాణం",
+    "price": "₹1,000",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/pratyaksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Mrithymjaya Homam",
+    "telugu_name": "మృత్యుంజయ హోమం",
+    "price": "₹1,500",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/pratyaksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Pradoshakala Seva",
+    "telugu_name": "ప్రదోషకాల సేవ",
+    "price": "₹25,116",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/pratyaksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Prathahkala Seva",
+    "telugu_name": "ప్రాతఃకాల సేవ",
+    "price": "₹25,116",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/pratyaksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Rudra Homam",
+    "telugu_name": "రుద్ర హోమం",
+    "price": "₹1,500",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/pratyaksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Sakshi Ganapathi Homam",
+    "telugu_name": "సాక్షి గణపతి హోమం",
+    "price": "₹1,116",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/pratyaksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Samuhika Abhishekam",
+    "telugu_name": "సామూహిక అభిషేకం",
+    "price": "₹1,500",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/pratyaksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Sarpadoshanivarana Puja",
+    "telugu_name": "సర్పదోష నివారణ పూజ",
+    "price": "₹1,500",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/pratyaksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Sri Vruddamallikarjuna Swamy Vari Abhishekam ( Only Alamkara Darshan)",
+    "telugu_name": "వృద్ధ మల్లికార్జున స్వామి అభిషేకం",
+    "price": "₹500",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/pratyaksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Sri Vruddamallikarjuna Swamy Vari Bilwarchana",
+    "telugu_name": "వృద్ధ మల్లికార్జున స్వామి బిల్వార్చన",
+    "price": "₹2,500",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/pratyaksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Varalakshmi Vratham",
+    "telugu_name": "వరలక్ష్మి వ్రతం",
+    "price": "₹0",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/pratyaksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Udhayaastamana Seva is performed in the temple early in the morning from the beginning seva to to Ekantha seva till temple close time.",
+    "telugu_name": "ఉదయస్తమాన సేవ",
+    "price": "₹101,116",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/pratyaksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Umamaheswara Swamy Vratham",
+    "telugu_name": "ఉమామహేశ్వర స్వామి వ్రతం",
+    "price": "₹5,000",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/pratyaksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Vallidevasena Subramanya Swami Vari Kalyanam",
+    "telugu_name": "వల్లి దేవసేన సుబ్రహ్మణ్య స్వామి కళ్యాణం",
+    "price": "₹1,000",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/pratyaksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Veedaaseerwacahanam",
+    "telugu_name": "వేదాశీర్వచనం",
+    "price": "₹1,116",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/pratyaksha-seva",
+    "description": ""
+  },
+  {
+    "name": "Veedaaseerwacahanam",
+    "telugu_name": "వేదాశీర్వచనం",
+    "price": "₹1,500",
+    "timing": "",
+    "booking_url": "https://www.srisailadevasthanam.org/en-in/sevas-and-darshanam/pratyaksha-seva",
+    "description": ""
+  }
+]

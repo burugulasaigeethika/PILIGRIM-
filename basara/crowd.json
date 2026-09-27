@@ -1,0 +1,56 @@
+{
+  "peak_days": [
+    "Weekends & Holidays: Saturdays and Sundays see a major surge of pilgrims traveling from neighboring states and cities like Hyderabad.",
+    "Festival Days: Vasant Panchami, Dasara (Mahanavami), and major academic opening periods record massive spikes in wait times."
+  ],
+  "peak_hours": [
+    "Mornings (8:00 AM – 12:00 PM) are exceptionally busy due to scheduled ritual timings and Aksharabhyasam sessions"
+  ],
+  "festival_crowds": [
+    {
+      "festival": "Vasant Panchami",
+      "estimated_daily_crowd": "40,000 - 50,000+",
+      "normal_darshan_wait_time": "2 - 3 Hours",
+      "aksharabhyasam_wait_time": "An additional 2 Hours"
+    },
+    {
+      "festival": "Dasara / Navaratri",
+      "estimated_daily_crowd": "10,000 - 25,000+",
+      "normal_darshan_wait_time": "1.5 - 2 Hours",
+      "aksharabhyasam_wait_time": "1 - 1.5 Hours"
+    },
+    {
+      "festival": "Maha Shivaratri",
+      "estimated_daily_crowd": "10,000 - 20,000+",
+      "normal_darshan_wait_time": "1 - 2 Hours",
+      "aksharabhyasam_wait_time": "1 Hour"
+    },
+    {
+      "festival": "Regular Weekend",
+      "estimated_daily_crowd": "5,000 - 10,000",
+      "normal_darshan_wait_time": "1 Hour",
+      "aksharabhyasam_wait_time": "45 Minutes"
+    },
+    {
+      "festival": "Godavari Pushkaralu (Once Every 12 Years)",
+      "estimated_daily_crowd": "Over 1.5 to 2 million total footfall (150,000 to 200,000 daily on opening and closing days)",
+      "details": "Known as the 'Kumbh Mela of South India'. While typically marking Jupiter's firm placement in Leo, the upcoming 2027 edition follows specific transit scheduling boundaries."
+    },
+    {
+      "festival": "Maha Shivaratri (River Bank)",
+      "estimated_daily_crowd": "Roughly 15,000 to 20,000 pilgrims crowd the steps of the bathing ghat from pre-dawn (2:30 AM) until noon."
+    },
+    {
+      "festival": "Dasara Navaratri — Deepotsavam (River Bank)",
+      "estimated_daily_crowd": "5,000 to 10,000 onlookers specifically around 5:30 PM to 7:00 PM."
+    }
+  ],
+  "tips": [
+    "Timings: Arrive early right when the doors open in the morning (around 4:00 AM to 6:00 AM) to finish darshan before peak queues form.",
+    "Balalayam Notice: Main sanctum visitor flows may adjust periodically due to ongoing temple renovation and Vedic installation rites, routing visitors through temporary setups.",
+    "General Rules: Keep in mind that mobile phones are restricted inside the main complex.",
+    "Because crowd densities peak to dangerous levels during Pushkaralu, your website should note that the District Collector sets up specific emergency medical camps, strict river-barricading zones, and automated crowd-tracking technology.",
+    "Warn readers that if heavy floods occur, step access to the bathing ghat may be temporarily closed by the district administration for safety.",
+    "Crucial Temple Redevelopment Notice: The primary temple structure is currently undergoing a massive ₹225 crore transformation. Because of this, all main rituals, darshans, and Aksharabhyasam sevas have been systematically moved to a temporary, downsized structure called the Bala Alayam. This setup is temporary, which means pathways can experience occasional dust, construction blocks, and altering queue designs."
+  ]
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Devasthanam Stay (Sita Nilayam, Rama Nilayam, and Ramadasu Choultry)",
+    "type": "Temple Choultries & Rest Houses",
+    "distance": "200–500 meters",
+    "price": "Non-AC rooms start around ₹250/night, and AC rooms up to ₹1,000/night",
+    "description": "Temple Choultries & Rest Houses managed by the temple authority. Located within 200–500 meters of the temple. Bookings can be made via: Central Reception Office (Stay Enquiry): 08743-232467, Assistant EO Cell: +91 98667 70473, CRO Room Bookings: +91 80741 72638."
+  },
+  {
+    "name": "Haritha Hotel Bhadrachalam (Telangana Tourism)",
+    "type": "State Tourism Hotel",
+    "distance": "~1 km",
+    "price": "Rooms range between ₹1,500 and ₹2,500/night depending on AC/Suite tiers",
+    "description": "Located on Temple Road, opposite the Sub Collector Office (~1 km from the temple). Managed by TGTDC, it features standard AC/Non-AC rooms, family suites, and an on-site restaurant. Direct mobile: +91 98488 23073. Bookable via the Telangana Tourism Portal."
+  },
+  {
+    "name": "Varun Residency",
+    "type": "Private Hotel",
+    "distance": "~210m",
+    "price": "Standard AC rooms average around ₹1,800–₹2,200/night",
+    "description": "Located ~210m from the temple entrance on Temple Road. Features 2-bed AC rooms, CCTV, hot water, and a lift."
+  },
+  {
+    "name": "Sri Bhavya Residency",
+    "type": "Private Hotel",
+    "distance": "~200 meters",
+    "price": "Rooms average around ₹2,000–₹2,500/night",
+    "description": "Located on Medical Colony / Kalyanamandapam Road. Popular hotel with standard room amenities."
+  },
+  {
+    "name": "Gouthami Residency",
+    "type": "Private Lodge",
+    "distance": "~400 meters",
+    "price": "Budget rooms starting around ₹1,000/night",
+    "description": "Located on Temple Road, offering budget-friendly rooms."
+  },
+  {
+    "name": "Laxmi Venkateswara Hotel",
+    "type": "Private Budget Lodge",
+    "distance": "~500 meters",
+    "price": "Budget options from ₹800–₹1,500/night",
+    "description": "Located on Temple Road near the Police Station. Budget lodge with standard and deluxe suites."
+  },
+  {
+    "name": "Arya Vysya Nityannadana Satram",
+    "type": "Community-run Sathram",
+    "distance": "~600 meters",
+    "price": "Nominal maintenance donation / Budget-friendly",
+    "description": "Located in Medical Colony. Community-run sathram providing simple lodging and free traditional meals."
+  }
+]

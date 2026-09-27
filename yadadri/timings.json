@@ -1,0 +1,76 @@
+{
+  "temple_id": "yadadri_lakshmi_narasimha",
+  "opening_time": "04:00 AM",
+  "closing_time": "09:45 PM",
+  "afternoon_break": {
+    "from": "03:00 PM",
+    "to": "04:00 PM"
+  },
+  "daily_schedule": [
+    {
+      "time_slot": "04:00 AM – 04:30 AM",
+      "ritual_name": "Suprabhata Seva",
+      "details": "Morning awakening prayers and hymns sung to wake the Lord."
+    },
+    {
+      "time_slot": "04:30 AM – 05:00 AM",
+      "ritual_name": "Bindhe Theertham (Aaradhana)",
+      "details": "Procession to bring sacred water for the deity's morning rituals."
+    },
+    {
+      "time_slot": "05:00 AM – 05:30 AM",
+      "ritual_name": "Balabhogam",
+      "details": "Traditional food offering to the deity."
+    },
+    {
+      "time_slot": "05:30 AM – 06:30 AM",
+      "ritual_name": "Nijabhishekam",
+      "details": "The sacred bathing ritual of the Swayambhu (self-manifested) deity with milk, curd, honey, ghee, and coconut water."
+    },
+    {
+      "time_slot": "06:30 AM – 07:15 AM",
+      "ritual_name": "Archana & Sahasranamarchana",
+      "details": "Recitation of the 108 and 1000 names (Sahasranama) of Lord Narasimha."
+    },
+    {
+      "time_slot": "07:15 AM – 11:30 AM",
+      "ritual_name": "Sarva Darshanam & Archanas",
+      "details": "General public darshan and individual archana pujas."
+    },
+    {
+      "time_slot": "11:30 AM – 12:30 PM",
+      "ritual_name": "Maharaja Bhogamu (Maha Nivedana)",
+      "details": "Offering of the royal culinary feast to the Lord."
+    },
+    {
+      "time_slot": "12:30 PM – 03:00 PM",
+      "ritual_name": "Sarva Darshanam & Archanas",
+      "details": "Afternoon general public darshan and archana pujas."
+    },
+    {
+      "time_slot": "03:00 PM – 04:00 PM",
+      "ritual_name": "Temple Closed (Dwarabandanamu)",
+      "details": "Afternoon rest period (Doors closed)."
+    },
+    {
+      "time_slot": "04:00 PM – 07:00 PM",
+      "ritual_name": "Special & Sarva Darshanam",
+      "details": "Reopening of the temple for evening public and special entry darshans."
+    },
+    {
+      "time_slot": "07:00 PM – 09:30 PM",
+      "ritual_name": "Evening Aaradhana, Archana & Nivedana",
+      "details": "Evening prayers, offering of food, and lighting of lamps."
+    },
+    {
+      "time_slot": "09:30 PM – 09:45 PM",
+      "ritual_name": "Pavalimpu Seva (Sayanotsavam)",
+      "details": "Bedtime ritual where the Lord is put to rest with lullabies."
+    },
+    {
+      "time_slot": "09:45 PM",
+      "ritual_name": "Temple Closed",
+      "details": "Night closure (Doors closed)."
+    }
+  ]
+}

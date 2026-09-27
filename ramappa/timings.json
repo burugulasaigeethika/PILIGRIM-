@@ -1,0 +1,12 @@
+{
+  "temple_id": "ramappa_rudreshwara",
+  "opening_time": "6:00 AM",
+  "closing_time": "10:00 PM",
+  "afternoon_break": {
+    "from": "1:00 PM",
+    "to": "3:00 PM"
+  },
+  "daily_schedule": [
+    
+  ]
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Haritha Restaurant & Eco-Resort Tadvai",
+    "cuisine": "South Indian Veg & Non-Veg Meals, Tiffins",
+    "type": "Telangana Tourism (TG Tourism / TSTDC)",
+    "distance": "~15 km",
+    "pricing": "₹100 – ₹300",
+    "timings": "7:00 AM – 10:00 PM",
+    "address": "TG Tourism Vanajeevan Complex, Tadvai Forest Range"
+  },
+  {
+    "name": "Medaram Jathara Temporary Food Courts & Stalls",
+    "cuisine": "South Indian Tiffins, Rice Meals, Jonna Rotte, Fast Food",
+    "type": "Government Approved & Private Pop-Up Food Stalls",
+    "distance": "Within Medaram Main Grounds / Sector Zones",
+    "pricing": "₹50 – ₹150",
+    "timings": "24 Hours (Operational during Jathara days)",
+    "address": "Medaram Village Main Road & Gaddelu Sector Approaches"
+  },
+  {
+    "name": "Free Mega Annadanam Centers",
+    "cuisine": "Traditional Rice, Sambar, Pappu, Curds & Sweet Prasadam",
+    "type": "Temple Trust, Government & Philanthropic Charity Camps",
+    "distance": "Walking distance (Multiple sector grounds)",
+    "pricing": "Free",
+    "timings": "6:00 AM – 11:30 PM (Continuous service during Jathara)",
+    "address": "Across all major sectors, Jampanna Vagu banks, and bus stand areas"
+  },
+  {
+    "name": "Haritha Restaurant Laknavaram",
+    "cuisine": "South Indian Thalis, North Indian, Snacks & Beverages",
+    "type": "Telangana Tourism Restaurant",
+    "distance": "~35 km",
+    "pricing": "₹120 – ₹350",
+    "timings": "8:00 AM – 9:30 PM",
+    "address": "Laknavaram Lake Tourist Complex, Govindaraopet Mandal"
+  },
+  {
+    "name": "Haritha Restaurant Ramappa",
+    "cuisine": "South Indian Meals, Tiffins & Non-Veg Dishes",
+    "type": "Telangana Tourism Restaurant",
+    "distance": "~49 km",
+    "pricing": "₹100 – ₹300",
+    "timings": "7:30 AM – 9:30 PM",
+    "address": "Near Ramappa Temple Entrance, Palampet Village"
+  },
+  {
+    "name": "Pasra & Mulugu Highway Eateries & Messes",
+    "cuisine": "Telangana Country Meals, Biryani, Tiffins",
+    "type": "Private Local Messes & Highway Dhabas",
+    "distance": "~25 km – 45 km",
+    "pricing": "₹80 – ₹200",
+    "timings": "6:00 AM – 11:00 PM",
+    "address": "NH 163 (Warangal - Medaram Highway stretch at Pasra & Mulugu)"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "peak_days": [
+    "Mondays",
+    "Weekends (Saturday & Sunday)",
+    "Festivals & Holidays"
+  ],
+  "peak_hours": [],
+  "festival_crowds": [
+    "Maha Shivaratri",
+    "Shravana Masam",
+    "Kartika Masam",
+    "Long holiday weekends"
+  ],
+  "tips": [
+    "Weekdays (Tuesday–Friday): Generally moderate crowds. The average waiting time for standard Sarvadarshanam (free darshan) ranges between 20 to 30 minutes.",
+    "Weekends (Saturday & Sunday): The wait times usually increase to 40 to 60 minutes.",
+    "Mondays: Being a temple dedicated to Lord Shiva, Mondays are considered highly auspicious. Crowds spike drastically, and wait times can stretch to 1 to 2 hours.",
+    "Festivals & Holidays: Peak congestion occurs during Maha Shivaratri, Shravana Masam, Kartika Masam, and long holiday weekends. During these peak periods, wait times often exceed 2 to 3 hours."
+  ]
+}

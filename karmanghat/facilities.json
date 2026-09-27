@@ -1,0 +1,36 @@
+{
+  "facilities": [
+    "Parking facility",
+    "Filtered drinking water",
+    "Restroom facilities",
+    "Shoe storage counter (Chappal stand)",
+    "Prasadam counter (Laddu, Pulihora)",
+    "Annadanam (Free daily meal program)",
+    "Puja-item & flower shops",
+    "Hundi / Donation boxes",
+    "Vehicle puja facility (Vahana Puja area)",
+    "Courtyard seating & resting areas for devotees"
+  ],
+  "elderly_facilities": [
+    {
+      "name": "Courtyard Ramp Access",
+      "description": "Main compound entry pathways feature basic ramp access suitable for personal wheelchairs and walking aids."
+    },
+    {
+      "name": "Senior Citizen Drop-off Zone",
+      "description": "Vehicles can drop off elderly devotees directly near the main entrance gate to minimize walking distance."
+    },
+    {
+      "name": "Courtyard Seating Areas",
+      "description": "Shaded stone and concrete benches are situated across the temple courtyard for elderly visitors to sit and rest."
+    },
+    {
+      "name": "On-Site Public Restrooms",
+      "description": "Basic public washrooms are available on the outer temple complex."
+    },
+    {
+      "name": "Special Fast-Track Darshan Queue",
+      "description": "Paid express tickets (₹50 / ₹100) are available at the counter, reducing standing queue time to 15–30 minutes for senior citizens."
+    }
+  ]
+}

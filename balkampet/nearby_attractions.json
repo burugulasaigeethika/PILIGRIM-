@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Hussain Sagar Lake & Buddha Statue",
+    "distance": "~5.2 km",
+    "type": "Nature / Lake",
+    "description": "Large lake with a monolithic Buddha statue, parks, and boating."
+  },
+  {
+    "name": "Birla Mandir",
+    "distance": "~7.0 km",
+    "type": "Shrine",
+    "description": "Hilltop temple built entirely of white marble, dedicated to Lord Venkateswara."
+  },
+  {
+    "name": "KBR National Park",
+    "distance": "~6.2 km",
+    "type": "Nature / Park",
+    "description": "Large urban park and nature walk trail located in Jubilee Hills."
+  },
+  {
+    "name": "Sri Ujjaini Mahakali Temple, Secunderabad",
+    "distance": "~7.5 km",
+    "type": "Shrine",
+    "description": "Historic temple dedicated to Goddess Mahakali."
+  }
+]

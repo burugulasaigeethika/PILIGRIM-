@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Laddu",
+    "quantity": "100 grams",
+    "price": "₹20 (Proposed to change to ₹25–30 due to input costs)",
+    "description": "Sacred sweet laddu offered to Lord Sri Raja Rajeshwara Swamy."
+  },
+  {
+    "name": "Sira Prasadam (Halwa)",
+    "quantity": "100 grams",
+    "price": "₹20",
+    "description": "Delicious halwa prasadam."
+  },
+  {
+    "name": "Pulihora (Tamarind Rice)",
+    "quantity": "200 grams",
+    "price": "₹10",
+    "description": "Spicy tamarind rice prasadam."
+  },
+  {
+    "name": "Abhishekam Laddu",
+    "quantity": "400 grams",
+    "price": "₹50",
+    "description": "Special Abhishekam sweet laddu."
+  },
+  {
+    "name": "Kalyanam Laddu",
+    "quantity": "800 grams",
+    "price": "₹100",
+    "description": "Large Kalyanam sweet laddu."
+  },
+  {
+    "name": "Free Temple Prasadam",
+    "quantity": "Standard serving",
+    "price": "Free",
+    "description": "Distributed free of cost to visiting pilgrims inside the temple."
+  }
+]

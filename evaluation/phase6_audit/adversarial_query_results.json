@@ -1,0 +1,56 @@
+[
+  {
+    "query": "show me every seva in dharmapuri",
+    "expected_mode": "complete_category",
+    "actual_mode": "targeted",
+    "passed": false
+  },
+  {
+    "query": "what poojas can I do at dharmapuri",
+    "expected_mode": "targeted",
+    "actual_mode": "targeted",
+    "passed": true
+  },
+  {
+    "query": "which temples are on a river",
+    "expected_mode": "cross_temple_aggregation",
+    "actual_mode": "cross_temple_aggregation",
+    "passed": true
+  },
+  {
+    "query": "which ones don't have wheelchair access",
+    "expected_mode": "cross_temple_aggregation",
+    "actual_mode": "targeted",
+    "passed": false
+  },
+  {
+    "query": "tell me places to stay around basara",
+    "expected_mode": "targeted",
+    "actual_mode": "targeted",
+    "passed": true
+  },
+  {
+    "query": "where can pilgrims eat near dharmapuri",
+    "expected_mode": "targeted",
+    "actual_mode": "targeted",
+    "passed": true
+  },
+  {
+    "query": "give me all the festivals celebrated at yadadri",
+    "expected_mode": "complete_category",
+    "actual_mode": "complete_category",
+    "passed": true
+  },
+  {
+    "query": "what facilities does this temple have",
+    "expected_mode": "targeted",
+    "actual_mode": "targeted",
+    "passed": true
+  },
+  {
+    "query": "tell me everything about basara",
+    "expected_mode": "broad_temple",
+    "actual_mode": "broad_temple",
+    "passed": true
+  }
+]

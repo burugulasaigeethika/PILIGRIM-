@@ -1,0 +1,29 @@
+{
+  "temple_id": "birla_mandir_hyderabad",
+  "opening_time": "7:00 AM",
+  "closing_time": "9:00 PM",
+  "afternoon_break": {
+    "from": "12:00 PM",
+    "to": "3:00 PM"
+  },
+  "daily_schedule": [
+    {
+      "name": "Morning Visiting Hours",
+      "timing": "7:00 AM to 12:00 PM (Daily)"
+    },
+    {
+      "name": "Evening Visiting Hours",
+      "timing": "3:00 PM to 9:00 PM (Daily)"
+    },
+    {
+      "name": "Prathakala Aarti",
+      "timing": "7:30 AM"
+    },
+    {
+      "name": "Sandhya Aarti",
+      "timing": "7:00 PM"
+    }
+  ],
+  "entry_fee": "FREE (No Ticket Required)",
+  "best_time_to_visit": "Late evenings (6:00 PM to 8:30 PM). The elevated hill view allows tourists to see the city lights and Hussain Sagar Lake clearly."
+}

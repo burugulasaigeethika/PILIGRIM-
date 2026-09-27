@@ -1,0 +1,39 @@
+{
+  "bus_routes": [
+    {
+      "nearest_bus_station": "Hanamkonda Bus Station",
+      "city": "Hanamkonda",
+      "distance": "2 km",
+      "description": "The temple is approximately 2 km from Hanamkonda Bus Station according to the Hanumakonda District government website. Local buses, autos, and taxis are readily available."
+    },
+    {
+      "route": "From Hyderabad",
+      "description": "Regular road services connect Hyderabad and Warangal/Hanamkonda. Journey takes approximately 3 hours depending on traffic."
+    },
+    {
+      "route": "From other major cities",
+      "description": "Warangal is well connected by road to Karimnagar, Khammam, Vijayawada, Bengaluru, Chennai, Tirupati, and others."
+    }
+  ],
+  "railway": {
+    "stations": [
+      {
+        "station": "Warangal Railway Station (WL)",
+        "distance": "approximately 6 km away",
+        "description": "Situated on the major Secunderabad–Vijayawada mainline."
+      },
+      {
+        "station": "Kazipet Junction (KZJ)",
+        "distance": "approximately 10 km away",
+        "description": "Critical national junction connecting major North and South India rail networks."
+      }
+    ],
+    "last_mile_transit": "Local auto-rickshaws, shared vehicles, and app-based cabs operate continuously outside both station exits."
+  },
+  "airport": {
+    "name": "Rajiv Gandhi International Airport (HYD)",
+    "city": "Hyderabad",
+    "distance": "approximately 150 km",
+    "description": "The nearest airport is located in Hyderabad, approximately 150 km away from the temple site."
+  }
+}

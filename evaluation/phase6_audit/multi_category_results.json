@@ -1,0 +1,50 @@
+[
+  {
+    "query": "What accommodation and restaurants are available near Dharmapuri?",
+    "expected_categories": [
+      "accommodation",
+      "restaurants"
+    ],
+    "detected_categories": [
+      "accommodation",
+      "restaurants"
+    ],
+    "coverage_ratio": 1.0,
+    "mode": "multi_category",
+    "passed": true
+  },
+  {
+    "query": "What are the timings, sevas and festivals at Basara?",
+    "expected_categories": [
+      "timings",
+      "sevas",
+      "festivals"
+    ],
+    "detected_categories": [
+      "festivals",
+      "sevas",
+      "timings"
+    ],
+    "coverage_ratio": 1.0,
+    "mode": "multi_category",
+    "passed": true
+  },
+  {
+    "query": "Tell me about accommodation, restaurants, travel and nearby attractions around Yadadri",
+    "expected_categories": [
+      "accommodation",
+      "restaurants",
+      "travel",
+      "nearby_attractions"
+    ],
+    "detected_categories": [
+      "accommodation",
+      "restaurants",
+      "nearby_attractions",
+      "travel"
+    ],
+    "coverage_ratio": 1.0,
+    "mode": "multi_category",
+    "passed": true
+  }
+]

@@ -1,0 +1,134 @@
+{
+  "address": "Executive Officer, Sri Veera Venkata Satyanarayana Swamy Vari Devasthanam, Annavaram - 533406, East Godavari District, Andhra Pradesh",
+  "phones": [
+    "08868-238163",
+    "08868-238125",
+    "08868-238121",
+    "9491249990",
+    "9491249991"
+  ],
+  "emails": [
+    "endow-eoanna@gov.in"
+  ],
+  "website": "https://annavaramdevasthanam.nic.in",
+  "google_map": "https://www.google.com/maps/search/?api=1&query=Sri+Veera+Venkata+Satyanarayana+Swamy+Temple+Annavaram",
+  "google_embed_map": "https://www.google.com/maps/search/?api=1&query=Sri+Veera+Venkata+Satyanarayana+Swamy+Temple+Annavaram",
+  "alternate_website": "",
+  "pincode": "533406",
+  "directory": {
+    "Protocol Office Reception": [
+      "9491249991", 
+      "08868238163"
+    ], 
+    "Temple Assistant Executive Officer": "9491249990",
+    "Temple Superintendent": [
+      "9392908619", 
+      "9491249990"
+    ],    
+    "Vratams Assistant Executive Officer": "9491249990",
+    "Vratams Superintendent": [
+      "9491249990", 
+      "08868238163"
+    ],  
+    "Accommodation Superintendent": [
+      "9392908620", 
+      "08868238163"
+    ],  
+    "Accommodation CRO Office": "9392908620",
+    "Annadanam Superintendent": "9290023323",
+    "Keshakandana Superintendent": "6301465351",
+    "Reception": "8179208908",
+    "Protocol Office Senior Assist": "9491249990",
+    "Paroksha Seva Superintendent": [
+      "9550250333", 
+      "9491249990"
+    ],  
+    "Vratam Tickets Superintendent": [
+      "8074251662", 
+      "9392908619"
+    ],  
+    "Sanitary Inspector": "8096177999",
+    "Annadanam Information Enquiry": "9392908606",
+    "Donation Enquiry Superintendent": "9491249990",
+    "EO's Peshi Superintendent": "9491249990",
+    "Security Officer": "8984261861",
+    "Nithyapooja Superintendent": [
+      "6309604081", 
+      "7013902221"
+    ],  
+    "Transport Gosala Superintendent": "7013858713",
+    "Sanitary Superintendent": "8096177999",
+    "Hospital Doctor": "9392908616"
+  },
+  "emergency_services": {
+    "hospitals": [
+      {
+        "name": "S.V.V.S.S. Devasthanam Hospital",
+        "type": "Temple / Trust Hospital",
+        "address": "Located inside hilltop courtyard complex at Vahanala Vedi",
+        "distance": "Located inside hilltop courtyard complex at Vahanala Vedi",
+        "contact_number": "Request immediate dispatch through on-duty temple security",
+        "working_hours": "24/7"
+      },
+      {
+        "name": "Sri Satya Maruthi Hospital",
+        "type": "Private Hospital",
+        "address": "Near Sai Baba Temple, Subbarayapuram",
+        "distance": "3 km",
+        "contact_number": "+91 77996 62666",
+        "working_hours": "24/7 General Emergency Care"
+      },
+      {
+        "name": "Satya Emergency Hospital",
+        "type": "Private Emergency Care",
+        "address": "Railway Station Road, Velampeta",
+        "distance": "2.7 km",
+        "contact_number": "+91 99499 22010",
+        "working_hours": "24/7 Trauma and Critical Care Stabilization"
+      },
+      {
+        "name": "Surya Emergency Hospital",
+        "type": "Private Hospital",
+        "address": "Chalamayya Nagar, Railway Station Road",
+        "distance": "2.9 km",
+        "contact_number": "Available via local triage desk or 108 ambulance coordination",
+        "working_hours": "24/7 Trauma Medicine and Pediatrics"
+      },
+      {
+        "name": "Mamata Multispeciality Hospital",
+        "type": "Multispeciality Hospital",
+        "address": "Red Convent Street, Tuni",
+        "distance": "~20 km",
+        "contact_number": "+91 88542 55823",
+        "working_hours": "24/7 Comprehensive Emergency and ICU Care"
+      },
+      {
+        "name": "Shankar Children's Hospital",
+        "type": "Pediatric Hospital",
+        "address": "Park Center, Tuni",
+        "distance": "~20 km ",
+        "contact_number": "+91 94916 49111",
+        "working_hours": "24/7 Specialized Pediatric and Neonatal Emergency Facility"
+      }
+    ],
+    "ambulance_services": [
+      {
+        "name": "Andhra Pradesh Medical Ambulance Service (Kakinada District Directory)",
+        "contact": "108",
+        "description": "Free state-wide emergency ambulance service available 24/7 for swift triage and hospital transfer."
+      }
+    ],
+    "police_and_security": [
+      {
+        "name": "Annavaram Law & Order Police Station",
+        "address": " Annavaram Town",
+        "contact_numbers": "+91 88682 38133 / 100 / 112"
+      },
+      {
+        "name": "Temple Devasthanam Security Office (Hilltop)",
+        "address": "Ratnagiri Hilltop Temple Complex",
+        "contact_numbers": "+91 88682 38121 / 8984261861"
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "total_test_cases": 6,
+  "passed_test_cases": 6,
+  "success_rate_percent": 100.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1_score": 1.0,
+  "exact_set_accuracy": 1.0,
+  "duplicate_rate": 0.0,
+  "unsupported_result_rate": 0.0,
+  "source_grounding_rate": 1.0,
+  "temples_searched_per_aggregation": 20,
+  "river_bank_matching_temples_count": 11,
+  "avg_aggregation_latency_ms": 5.53,
+  "avg_normal_rag_latency_ms": 18123.83
+}

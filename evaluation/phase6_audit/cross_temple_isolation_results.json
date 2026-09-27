@@ -1,0 +1,66 @@
+[
+  {
+    "temple": "Dharmapuri",
+    "query": "What are the darshan timings at Dharmapuri?",
+    "detected_temple": [
+      "Dharmapuri"
+    ],
+    "isolated": true
+  },
+  {
+    "temple": "Basara",
+    "query": "What are the darshan timings at Basara?",
+    "detected_temple": [
+      "Basara"
+    ],
+    "isolated": true
+  },
+  {
+    "temple": "Yadadri",
+    "query": "What are the darshan timings at Yadadri?",
+    "detected_temple": [
+      "Yadadri"
+    ],
+    "isolated": true
+  },
+  {
+    "temple": "Vemulavada",
+    "query": "What are the darshan timings at Vemulavada?",
+    "detected_temple": [
+      "Vemulavada"
+    ],
+    "isolated": true
+  },
+  {
+    "temple": "Badrachalam",
+    "query": "What are the darshan timings at Badrachalam?",
+    "detected_temple": [
+      "Badrachalam"
+    ],
+    "isolated": true
+  },
+  {
+    "temple": "Srisaila",
+    "query": "What are the darshan timings at Srisaila?",
+    "detected_temple": [
+      "Srisaila"
+    ],
+    "isolated": true
+  },
+  {
+    "temple": "Ramappa",
+    "query": "What are the darshan timings at Ramappa?",
+    "detected_temple": [
+      "Ramappa"
+    ],
+    "isolated": true
+  },
+  {
+    "temple": "Kaleshvaram",
+    "query": "What are the darshan timings at Kaleshvaram?",
+    "detected_temple": [
+      "Kaleshvaram"
+    ],
+    "isolated": true
+  }
+]

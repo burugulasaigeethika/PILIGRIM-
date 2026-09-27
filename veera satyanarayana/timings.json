@@ -1,0 +1,91 @@
+{
+  "temple_id": "sri_veera_venkata_satyanarayana_swamy_annavaram",
+  "opening_time": "03:30 AM",
+  "closing_time": "09:00 PM",
+  "afternoon_break": {
+    "from": "12:30 PM",
+    "to": "01:00 PM"
+  },
+  "daily_schedule": [
+    {
+      "time_slot": "03:30 AM",
+      "ritual_name": "Sri Swamy Vari Suprabhata Seva",
+      "details_and_significance": "Early morning awakening seva of the Lord (Ticket: Rs. 116, single person)."
+    },
+    {
+      "time_slot": "04:00 AM to 05:15 AM",
+      "ritual_name": "Abhishekam & Archana",
+      "details_and_significance": "Sacred morning bathing and archana rituals for the deity."
+    },
+    {
+      "time_slot": "05:15 AM",
+      "ritual_name": "Balabogam",
+      "details_and_significance": "Early morning food offering to the deity."
+    },
+    {
+      "time_slot": "05:30 AM",
+      "ritual_name": "Panchaharathulu & Neerajana Mantra Pushpamulu",
+      "details_and_significance": "Five sacred harathis and offering of sacred flowers with Vedic mantras."
+    },
+    {
+      "time_slot": "06:00 AM to 12:00 PM",
+      "ritual_name": "Swamy Vari Sarva Darshanam",
+      "details_and_significance": "Morning free general darshan slot for all devotees."
+    },
+    {
+      "time_slot": "06:00 AM to 06:00 PM",
+      "ritual_name": "Sri Satyanarayana Swamy Vratham",
+      "details_and_significance": "Continuous performance of the sacred Satyanarayana Swamy Vrathams across various halls (around 1 hour per batch)."
+    },
+    {
+      "time_slot": "08:00 AM to 12:00 PM",
+      "ritual_name": "Ashtothara Sathanama Poojas & Sahasranamarchanas",
+      "details_and_significance": "Chanting of 108 and 1000 holy names of the Lord and Goddess."
+    },
+    {
+      "time_slot": "08:00 AM to 12:00 PM",
+      "ritual_name": "Abhishekams in Yantralayam",
+      "details_and_significance": "Abhishekams performed by devotees in Yantralayam with ticket of Rs. 100/- each."
+    },
+    {
+      "time_slot": "09:30 AM",
+      "ritual_name": "Sri Vari Nitya Kalyanam",
+      "details_and_significance": "Daily celestial wedding ceremony of Lord Satyadeva and Goddess Anantha Lakshmi (Ticket: Rs. 1116)."
+    },
+    {
+      "time_slot": "12:30 PM to 01:00 PM",
+      "ritual_name": "Rajabhoga Mahanivedana",
+      "details_and_significance": "Midday grand food offering; main darshan is paused briefly during this ritual."
+    },
+    {
+      "time_slot": "01:00 PM to 09:00 PM",
+      "ritual_name": "Swamy Vari Sarva Darshanam (Afternoon & Evening)",
+      "details_and_significance": "Afternoon and evening general darshan for all pilgrims."
+    },
+    {
+      "time_slot": "02:00 PM",
+      "ritual_name": "Sri Swamivari Pavalimpu Seva",
+      "details_and_significance": "Afternoon repose seva for the Lord (Ticket: Rs. 50)."
+    },
+    {
+      "time_slot": "06:00 PM to 07:00 PM",
+      "ritual_name": "Darbaru Mandapam Seva",
+      "details_and_significance": "Evening court hall assembly for ticket holders (Ticket: Rs. 40/-)."
+    },
+    {
+      "time_slot": "07:30 PM to 08:30 PM",
+      "ritual_name": "Sri Swamy Vari Darbaru Seva",
+      "details_and_significance": "Night court seva of the Lord."
+    },
+    {
+      "time_slot": "08:30 PM to 09:00 PM",
+      "ritual_name": "Sri Ammavarla Ekanta Seva",
+      "details_and_significance": "Night closing ritual and resting seva of Goddess Ammavaru."
+    },
+    {
+      "time_slot": "09:00 PM to 03:30 AM",
+      "ritual_name": "Temple Doors Close",
+      "details_and_significance": "Temple sanctum remains closed until Suprabhata Seva."
+    }
+  ]
+}

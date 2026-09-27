@@ -1,0 +1,23 @@
+[
+  {
+    "item": "Laddu Prasadam",
+    "price_status": "Nominal fee (Subject to change on-site)",
+    "timings": "Available throughout the day during darshan hours",
+    "location": "Official Prasadam Counters at Lower and Upper Ahobilam temples",
+    "description": "Traditional sweet laddu offered to Lord Narasimha."
+  },
+  {
+    "item": "Pulihora (Tamarind Rice)",
+    "price_status": "Nominal fee (Subject to change on-site)",
+    "timings": "Available during day darshan hours",
+    "location": "Official Prasadam Counters",
+    "description": "Tangy tamarind rice distributed in packets or leaf bowls."
+  },
+  {
+    "item": "Muth Annadanam (Meals)",
+    "price_status": "Free (Donations accepted via Annamacharya Nitya Annadanam Trust)",
+    "timings": "Typically served during afternoon lunch hours (~12:30 PM - 2:30 PM)",
+    "location": "Annadanam Halls and local community Satrams in Lower Ahobilam",
+    "description": "Full traditional vegetarian meals served free of cost to all visiting pilgrims."
+  }
+]

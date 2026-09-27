@@ -1,0 +1,63 @@
+{
+  "cloakroom": "Cloakroom facility for footwear and personal belongings outside the temple main entrance.",
+  "drinking_water": "Uninterrupted drinking water supply facilities throughout the temple premises and queue complexes.",
+  "toilets": "Clean public toilet complexes (Sulabh Shauchalay) near the river bank and temple entrance.",
+  "footwear_counter": "Cloakroom/footwear deposit facility outside the main entrance.",
+  "annadanam": "Free Annadanam (Nityannadanam) canteen facility providing free wholesome vegetarian meals during lunch hours (12:00 PM – 2:30 PM).",
+  "wheelchair_accessibility": "Manual wheelchairs are available at the main entry point for senior citizens and differently-abled pilgrims.",
+  "parking": "Parking facilities are available at the TG Tourism Haritha Hotel and nearby areas.",
+  "other_facilities": [
+    "Bathing ghats with safety railings and dress changing rooms for ladies at the Triveni Sangam river bank.",
+    "Sanitation and waste disposal in the temple precinct.",
+    "Medical assistance and first-aid facility through the local Primary Health Centre (PHC) Kaleshwaram.",
+    "Free Darshanam (Sarva Darshanam) queue line system.",
+    "Free distribution of holy prasadam to devotees after completing darshan.",
+    "Regular TSRTC bus transportation connecting Kaleshwaram to Manthani, Godavarikhani, Karimnagar, Hanamkonda (Warangal), and Bhupalpally."
+  ],
+  "facilities": [
+    {
+      "name": "Accommodation",
+      "description": "Devasthanam Choultries, Cottages, and nearby Telangana Tourism Haritha Hotel."
+    },
+    {
+      "name": "Cloakroom",
+      "description": "Cloakroom facility for footwear and personal belongings outside the temple main entrance."
+    },
+    {
+      "name": "Free Annadanam",
+      "description": "Free Annadanam (Nityannadanam) canteen facility providing free wholesome vegetarian meals to visiting pilgrims during lunch hours."
+    },
+    {
+      "name": "Drinking Water",
+      "description": "Uninterrupted drinking water supply facilities throughout the temple premises and queue complexes."
+    },
+    {
+      "name": "Bathing Ghats",
+      "description": "Bathing ghats with safety railings and dress changing rooms for ladies at the Triveni Sangam river bank."
+    },
+    {
+      "name": "Toilets",
+      "description": "Clean public toilet complexes (Sulabh Shauchalay) near the river bank and temple entrance."
+    },
+    {
+      "name": "Sanitation",
+      "description": "High standards of sanitation and waste disposal in the temple precinct."
+    },
+    {
+      "name": "Medical Assistance",
+      "description": "First-aid facility through the local Primary Health Centre (PHC) Kaleshwaram."
+    },
+    {
+      "name": "Free Darshanam",
+      "description": "Free Darshanam (Sarva Darshanam) queue line system."
+    },
+    {
+      "name": "Holy Prasadam",
+      "description": "Free distribution of holy prasadam to devotees after completing darshan."
+    },
+    {
+      "name": "Transportation",
+      "description": "Regular TSRTC bus transportation connecting Kaleshwaram to Manthani, Godavarikhani, Karimnagar, Hanamkonda (Warangal), and Bhupalpally."
+    }
+  ]
+}

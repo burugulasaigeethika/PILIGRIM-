@@ -1,0 +1,30 @@
+{
+  "police": [
+    {
+      "name": "Mahankali Police Station (Adjacent to Temple)",
+      "phone": "+91 94906 16460",
+      "alt_phone": "+91 40 2785 3550",
+      "address": "(1 km) Subhash Road, near Ujjaini Mahakali Temple, Tobacco Bazar, Secunderabad",
+      "details": "Located adjacent to temple premises. Oversees crowd management, security grids, and safety protocols."
+    }
+  ],
+  "medical": [
+    {
+      "name": "Yashoda Hospitals (Secunderabad)",
+      "phone": "+91 40 4567 4567",
+      "address": "(1.2 km) Alexander Road, Kummari Guda, Shivaji Nagar, Secunderabad",
+      "details": "Open 24 hours. Leading multi-specialty facility for rapid trauma care, advanced diagnostics, cardiac emergencies, and ICU."
+    },
+    {
+      "name": "Apollo Hospitals (Secunderabad)",
+      "phone": "+91 40 6907 1299",
+      "address": "(2 km) Pollicetty Towers, St Johns Road, beside Keyes High School, Regimental Bazaar, Secunderabad",
+      "details": "Open 24 hours. Trusted 150-bed facility offering round-the-clock emergency support."
+    },
+    {
+      "name": "Gandhi Hospital (Public Tertiary Hospital)",
+      "address": "(2.1 km) Musheerabad, Padmarao Nagar, Secunderabad (approx. 2 km away)",
+      "details": "Open 24 hours. One of the largest public tertiary hospitals in the region."
+    }
+  ]
+}

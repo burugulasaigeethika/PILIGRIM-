@@ -1,0 +1,20 @@
+{
+  "dress_code": {
+    "men": "Darshan Dress Code: Any decent outfit; Abhishekam Dress Code: Men must remove Shirt and Vest during the Pooja.",
+    "women": "Darshan Dress Code: Any decent outfit"
+  },
+  "dos": [
+    "Do take a holy bath in the Dharma Gundam or Surya Gundam before entering the queue lines.",
+    "Do maintain quiet and follow the designated line discipline during heavy rush hours.",
+    "Do deposit luggage and leather goods at the designated cloakrooms outside the complex.",
+    "Do wear a tilak or kumkum on your forehead as a mark of respect when participating in rituals."
+  ],
+  "donts": [
+    "Don't wear any footwear in or around the main temple outer boundary lines.",
+    "Don't take photographs or videos inside the inner sanctum; camera equipment is strictly banned.",
+    "Don't consume non-vegetarian food, tobacco, or alcohol for at least 24 hours before your visit.",
+    "Don't carry plastics, matchboxes, or weapons inside the security check zones.",
+    "Don't approach unauthorized touts or brokers promising quick darshan or special entry slots.",
+    "Don't throw away prasadam or leaf containers anywhere outside of designated trash bins."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "temple_id": "medaram",
+  "opening_time": "06:00 AM",
+  "closing_time": "08:00 PM",
+  "afternoon_break": {
+    "from": "",
+    "to": ""
+  },
+  "daily_schedule": [
+    {
+      "time_slot": "06:00 AM – 08:00 PM",
+      "ritual_name": "Regular Darshan (Non-Jathara Days)",
+      "details_and_significance": "Open daily for pilgrims. Darshan is completely open and free."
+    },
+    {
+      "time_slot": "Open 24/7",
+      "ritual_name": "Maha Jathara Darshan (Jathara Days)",
+      "details_and_significance": "During Biennial Maha Jathara, the Gaddelu area remains open 24/7 continuously for 4 days and nights."
+    }
+  ]
+}

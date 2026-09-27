@@ -1,0 +1,20 @@
+{
+  "bus_routes": [
+    "Located approximately 112 km from Hyderabad (via Medchal & Medak town) or 80 km via the Narsapur forest route. It is 18 km from Medak town.",
+    "TGRTC operates special buses from Hyderabad (JBS/MGBS) to Medak town, and local buses/autos run frequently from Medak town to the temple.",
+    "The temple can be reached by road from Hyderabad and Medak. TGRTC buses, private buses, taxis, and personal vehicles are commonly used to reach the temple."
+  ],
+  "railway": {
+    "station": "Akanapet Railway Station / Medak Railway Station",
+    "distance": "Akanapet Railway Station (19 km away) or Medak Railway Station (18 km away)"
+  },
+  "airport": {
+    "name": "Rajiv Gandhi International Airport (RGIA), Shamshabad, Hyderabad",
+    "distance": "140 km away"
+  },
+  "additional_railway_details": [
+    "Akanapet Railway Station (19 km away) or Medak Railway Station (18 km away), which connects to Secunderabad.",
+    "Alternatively, Secunderabad Junction (110 km) is the major rail hub.",
+    "Kamareddy (60 km) and Secunderabad Junction (110 km) are additional rail connectivity points."
+  ]
+}

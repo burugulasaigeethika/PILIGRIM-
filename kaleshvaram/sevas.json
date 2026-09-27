@@ -1,0 +1,218 @@
+[
+  {
+    "name": "Sheegra Darshanam",
+    "telugu_name": "శీఘ్ర దర్శనం",
+    "price": "₹50 – ₹100",
+    "timing": "From 5:00 AM to 1:00 PM & 3:30 PM to 8:00 PM",
+    "booking_url": "Offline Ticket Counter (at Temple Entrance)",
+    "description": "Arjitha Seva - Priority entry for faster darshan."
+  },
+  {
+    "name": "Garbhagriha Abhishekam",
+    "telugu_name": "గర్భగృహ అభిషేకం",
+    "price": "₹300 – ₹500",
+    "timing": "From 5:30 AM to 12:30 PM",
+    "booking_url": "Offline Ticket Counter (at Temple Entrance)",
+    "description": "Arjitha Seva - Sacred bathing ritual performed inside the inner sanctum. Dress code applies (men must remove shirt/vest and wear dhoti/pancha; women must wear saree or chudidhar with dupatta)."
+  },
+  {
+    "name": "Mahanyasa Poorvaka Rudrabhishekam",
+    "telugu_name": "మహాన్యాస పూర్వక రుద్రాభిషేకం",
+    "price": "₹1200 – ₹2000",
+    "timing": "Morning",
+    "booking_url": "Offline Ticket Counter (at Temple Entrance)",
+    "description": "Arjitha Seva - Special intensive Vedic recitation and abhishekam."
+  },
+  {
+    "name": "Shiva Kalyanam",
+    "telugu_name": "శివ కళ్యాణం",
+    "price": "₹1000",
+    "timing": "09:30 AM – 10:30 AM",
+    "booking_url": "Offline Ticket Counter (at Temple Entrance)",
+    "description": "Arjitha Seva - Celestial wedding ritual of Lord Shiva and Goddess Parvati."
+  },
+  {
+    "name": "Laksha Bilwapatri Archana",
+    "telugu_name": "లక్ష బిల్వపత్రి అర్చన",
+    "price": "₹6000",
+    "timing": "Advance Notification Required",
+    "booking_url": "Offline Ticket Counter (Advance notification at Temple Office)",
+    "description": "Arjitha Seva - Archana performed using one lakh bilva leaves."
+  },
+  {
+    "name": "Kala Sarpa Dosha Nivarana Puja",
+    "telugu_name": "కాళసర్ప దోష నివారణ పూజ",
+    "price": "₹400 – ₹600",
+    "timing": "From 6:00 AM to 12:00 PM",
+    "booking_url": "Offline Ticket Counter (at Temple Entrance)",
+    "description": "Arjitha Seva - Special puja to ward off Kala Sarpa Dosha."
+  },
+  {
+    "name": "Navagraha Homam / Shani Puja",
+    "telugu_name": "నవగ్రహ హోమం / శని పూజ",
+    "price": "₹316 – ₹500",
+    "timing": "From 6:00 AM to 12:00 PM",
+    "booking_url": "Offline Ticket Counter (at Temple Entrance)",
+    "description": "Arjitha Seva - Homam dedicated to the nine planets and Lord Saturn."
+  },
+  {
+    "name": "Sri Satyanarayana Swamy Vratham",
+    "telugu_name": "శ్రీ సత్యనారాయణ స్వామి వ్రతం",
+    "price": "₹300 – ₹500",
+    "timing": "Morning Session",
+    "booking_url": "Offline Ticket Counter (at Temple Entrance)",
+    "description": "Arjitha Seva - Traditional vow ritual for family well-being."
+  },
+  {
+    "name": "Anna Puja",
+    "telugu_name": "అన్న పూజ",
+    "price": "₹100 – ₹200",
+    "timing": "12:30 PM – 01:00 PM",
+    "booking_url": "Offline Ticket Counter (at Temple Entrance)",
+    "description": "Arjitha Seva - Food ritual offering."
+  },
+  {
+    "name": "Astottara Bilwarchana / Kumkuma Archana",
+    "telugu_name": "అష్టోత్తర బిల్వార్చన / కుంకుమార్చన",
+    "price": "₹50",
+    "timing": "Daily Hours",
+    "booking_url": "Offline Ticket Counter (at Temple Entrance)",
+    "description": "Arjitha Seva - Archana using bilva leaves or vermilion."
+  },
+  {
+    "name": "Kesha Khandanam (Tonsure)",
+    "telugu_name": "కేశ ఖండనమ్ (పుట్టువెంట్రుకలు / తలనీలాలు)",
+    "price": "₹20 – ₹50",
+    "timing": "05:00 AM – 05:00 PM",
+    "booking_url": "Kalyanakatta Counter",
+    "description": "Arjitha Seva - Ritual tonsuring (shaving) of head."
+  },
+  {
+    "name": "Vehicle Pooja (Two Wheeler / Four Wheeler)",
+    "telugu_name": "వాహన పూజ",
+    "price": "₹100 – ₹300",
+    "timing": "Daily Hours",
+    "booking_url": "Offline Ticket Counter",
+    "description": "Arjitha Seva - Blessing ceremony for vehicles."
+  },
+  {
+    "name": "Saswatha Rudrabhishekam",
+    "telugu_name": "శాశ్వత రుద్రాభిషేకం",
+    "price": "₹3000",
+    "timing": "Annual Selected Date",
+    "booking_url": "Temple Executive Office",
+    "description": "Saswatha Seva - Permanent/recurring Rudrabhishekam."
+  },
+  {
+    "name": "Saswatha Shiva Kalyanam",
+    "telugu_name": "శాశ్వత శివ కళ్యాణం",
+    "price": "₹5000",
+    "timing": "Annual Selected Date",
+    "booking_url": "Temple Executive Office",
+    "description": "Saswatha Seva - Permanent/recurring Shiva Kalyanam."
+  },
+  {
+    "name": "Saswatha Anna Puja",
+    "telugu_name": "శాశ్వత అన్న పూజ",
+    "price": "₹1116",
+    "timing": "Annual Selected Date",
+    "booking_url": "Temple Executive Office",
+    "description": "Saswatha Seva - Permanent/recurring Anna Puja."
+  },
+  {
+    "name": "Saswatha Kumkuma Puja",
+    "telugu_name": "శాశ్వత కుంకుమ పూజ",
+    "price": "₹1000",
+    "timing": "Annual Selected Date",
+    "booking_url": "Temple Executive Office",
+    "description": "Saswatha Seva - Permanent/recurring Kumkuma Puja."
+  },
+  {
+    "name": "Maharaaja Posakalu",
+    "telugu_name": "మహారాజ పోషకులు (నిత్యాన్నదానం)",
+    "price": "₹10116",
+    "timing": "N/A",
+    "booking_url": "Temple Executive Office / Counter",
+    "description": "Nityannadanam Scheme donation category."
+  },
+  {
+    "name": "Poshakalu",
+    "telugu_name": "పోషకులు (నిత్యాన్నదానం)",
+    "price": "₹5116",
+    "timing": "N/A",
+    "booking_url": "Temple Executive Office / Counter",
+    "description": "Nityannadanam Scheme donation category."
+  },
+  {
+    "name": "Saadhaarana Sabhyulu",
+    "telugu_name": "సాధారణ సభ్యులు (నిత్యాన్నదానం)",
+    "price": "₹1116",
+    "timing": "N/A",
+    "booking_url": "Temple Executive Office / Counter",
+    "description": "Nityannadanam Scheme donation category."
+  },
+  {
+    "name": "Oka Roju Annadaanamu",
+    "telugu_name": "ఒక రోజు అన్నదానము",
+    "price": "₹500",
+    "timing": "N/A",
+    "booking_url": "Temple Executive Office / Counter",
+    "description": "Nityannadanam Scheme - Donating for one day of Annadanam."
+  },
+  {
+    "name": "Kumkuma Archana (Sri Subhananda Devi Temple)",
+    "telugu_name": "కుంకుమ అర్చ న",
+    "price": "₹50",
+    "timing": "Daily Hours",
+    "booking_url": "Offline Counter",
+    "description": "Sub-temple seva for Goddess Parvati."
+  },
+  {
+    "name": "Odi Biyam / Suhasini Puja (Sri Subhananda Devi Temple)",
+    "telugu_name": "ఒడి బియ్య ం / సుహాసిని పూజ",
+    "price": "₹100",
+    "timing": "Daily Hours",
+    "booking_url": "Offline Counter",
+    "description": "Sub-temple seva for Goddess Parvati."
+  },
+  {
+    "name": "Chandi Homam / Special Puja (Sri Subhananda Devi Temple)",
+    "telugu_name": "చండీ హోమం / ప్రత్యేక పూజ",
+    "price": "₹500",
+    "timing": "Daily Hours",
+    "booking_url": "Offline Counter",
+    "description": "Sub-temple homam for Goddess Parvati."
+  },
+  {
+    "name": "Aksharabhyasam / Saraswati Archana (Sri Maha Saraswati Temple)",
+    "telugu_name": "అक्षक రాభ్యా సం",
+    "price": "₹100",
+    "timing": "Daily Hours",
+    "booking_url": "Offline Counter",
+    "description": "Sub-temple initiation of education for children."
+  },
+  {
+    "name": "Vidyarambha Puja (Sri Maha Saraswati Temple)",
+    "telugu_name": "విద్యా రంభ పూజ",
+    "price": "₹150",
+    "timing": "Daily Hours",
+    "booking_url": "Offline Counter",
+    "description": "Sub-temple learning initiation ceremony."
+  },
+  {
+    "name": "Surya Namaskaram & Archana (Sri Suryanarayana Temple)",
+    "telugu_name": "",
+    "price": "₹50",
+    "timing": "Daily Hours",
+    "booking_url": "Offline Counter",
+    "description": "Sub-temple seva for the Sun God."
+  },
+  {
+    "name": "Adi Mukteshwara Abhishekam (Sri Adi Mukteshwara Temple)",
+    "telugu_name": "",
+    "price": "₹100",
+    "timing": "Morning Session",
+    "booking_url": "Offline Counter",
+    "description": "Sub-temple bathing ritual."
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "temple_id": "thousand_pillar_temple",
+  "name": "Thousand Pillar Temple",
+  "alternate_names": [
+    "Sri Rudreshwara Swamy Temple"
+  ],
+  "state": "Telangana",
+  "district": "Hanumakonda",
+  "village": "Hanamkonda",
+  "address": "Hanamkonda, Telangana",
+  "river": "",
+  "main_deity": "Lord Shiva",
+  "other_deities": [
+    "Lord Vishnu",
+    "Lord Surya"
+  ],
+  "description": "Located at the base of Hanamkonda hill, the Thousand Pillar Temple is a premier example of Kakatiya architecture, featuring a magnificent Trikutalayam layout and a massive monolithic Nandi sculpture.",
+  "history": "Built in 1163 AD by the Kakatiya King Rudra Deva, the temple stands as a testament to the architectural brilliance of the Kakatiya dynasty. It is currently preserved and maintained as a protected monument by the Archaeological Survey of India (ASI).",
+  "mythology": "",
+  "sub_temples": [
+    {
+      "name": "Lord Shiva Shrine (Sri Rudreshwara Swamy)",
+      "description": "Primary sanctum sanctorum of the Trikutalayam."
+    },
+    {
+      "name": "Lord Vishnu Shrine",
+      "description": "Second sanctum of the Trikutalayam complex."
+    },
+    {
+      "name": "Lord Surya Shrine",
+      "description": "Third sanctum of the Trikutalayam complex dedicated to the Sun God."
+    }
+  ],
+  "built_in": "12th century",
+  "built_year": "1163 AD",
+  "built_by": "Kakatiya King Rudra Deva",
+  "dynasty": "Kakatiya Dynasty",
+  "temple_type": "Trikutalayam",
+  "number_of_shrines": 3,
+  "maintained_by": "Archaeological Survey of India",
+  "religious_significance": "The temple is dedicated primarily to Lord Shiva and also houses shrines of Lord Vishnu and Lord Surya. Since it has three sanctums, it is known as Trikutalayam.",
+  "architectural_significance": "The temple is famous for its beautifully carved pillars, monolithic Nandi statue, rock-cut elephants and intricate stone engravings representing Kakatiya craftsmanship.",
+  "famous_for": [
+    "Thousand carved pillars",
+    "Monolithic Nandi statue",
+    "Rock-cut elephants",
+    "Kakatiya architecture",
+    "Stone carvings",
+    "Three sanctums (Trikutalayam)"
+  ],
+  "architecture": {
+    "architectural_style": "Kakatiya Architecture",
+    "temple_type": "Trikutalayam",
+    "number_of_shrines": 3,
+    "pillars": "intricately carved pillars",
+    "nandi": "A massive sculpture of Nandi, carved out of a single rock, is another attraction of this temple",
+    "rock_cut_elephants": "Rock cut elephants and exquisite engravings at the temple are also worth noticing",
+    "stone_engravings": "Exquisite stone engravings",
+    "maintained_by": "Archaeological Survey of India",
+    "special_features": [
+      "intricately carved pillars",
+      "Monolithic Nandi",
+      "Rock-cut elephants",
+      "Stone engravings"
+    ],
+    "architecture_description": "Constructed using the stellar layout style, the temple features three shrines oriented around a central pillared hall (Natya Mandapam) supported by richly sculpted pillars and delicate rock-cut elements."
+  }
+}

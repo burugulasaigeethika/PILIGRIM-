@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Sri Bhadrakali Temple",
+    "distance": "2.2 km",
+    "description": "Hilltop lake view & historic shrine."
+  },
+  {
+    "name": "Ramappa Temple",
+    "distance": "68 km",
+    "description": "UNESCO World Heritage Site famous for its Kakatiya architecture and lightweight floating bricks."
+  },
+  {
+    "name": "Kakatiya Zoo",
+    "distance": "4.5 km",
+    "description": "Wildlife sightings & butterfly park."
+  },
+  {
+    "name": "Kakatiya Musical Garden",
+    "distance": "3.3 km",
+    "description": "A garden featuring a musical fountain and recreational facilities."
+  },
+  {
+    "name": "Padmakshi Temple",
+    "distance": "1.6 km",
+    "description": "Ancient temple situated on Padmakshi Hill, dedicated to Goddess Padmakshi."
+  },
+  {
+    "name": "Warangal Fort",
+    "distance": "8.3 km",
+    "description": "Massive stone arches (Keerthi Toranams) & historical carvings."
+  },
+  {
+    "name": "Kush Mahal",
+    "distance": "8.5 km",
+    "description": "Medieval audience hall with ancient idols inside Warangal Fort complex."
+  }
+]

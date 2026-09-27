@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Sri Hanuman tiffins and meals",
+    "cuisine": "Authentic South Indian vegetarian meals, breakfast tiffins (idli, dosa, vada), and simple rice items",
+    "type": "Private Veg Hotel",
+    "distance": "~ 900 m",
+    "pricing": "Affordable / Budget-friendly",
+    "timings": "Monday to Sunday, 6:00 AM – 11:30 PM",
+    "address": "Sri Laxmi Narasimha, 3-57, Swami Temple Road, near Laxmi Narasimha Swamy Temple, Boyawada, Police Quarters, Dharmapuri, Telangana 505425"
+  },
+  {
+    "name": "New Geetha Bhavan",
+    "cuisine": "Pure vegetarian South Indian breakfast specialties and standard afternoon lunch plates",
+    "type": "Private Veg Hotel",
+    "distance": "Approximately 350 meters away from the temple area",
+    "pricing": "Affordable / Budget-friendly",
+    "timings": "Monday to Sunday, 8:00 AM – 8:00 PM",
+    "address": "Guest House Road, Boyawada, Dharmapuri, Jagtial - 505425 (Opposite Vani Vidhyalayam)"
+  },
+  {
+    "name": "Temple Nithya Annadanam",
+    "cuisine": "Traditional vegetarian temple meal",
+    "type": "Temple Annadanam",
+    "distance": "Within the Sri Lakshmi Narasimha Swamy Temple complex",
+    "pricing": "Free",
+    "timings": "Daily Annadanam is available; exact serving hours should be confirmed with the temple",
+    "address": "Sri Lakshmi Narasimha Swamy Temple Complex, Dharmapuri, Telangana 505425"
+  }
+
+]

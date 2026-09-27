@@ -1,0 +1,14 @@
+{
+  "bus_routes": [
+    "Located ~60 km from Hyderabad off NH-163 (Warangal Highway)",
+    "TGRTC operates direct buses from Mahatma Gandhi Bus Station (MGBS), Jubilee Bus Station (JBS), and Uppal X Roads every 15–30 minutes"
+  ],
+  "railway": {
+    "station": "Raigir Railway Station (Yadadri Station) (Alternative major hubs: Bhongir Station - 14 km, Secunderabad Junction - 60 km)",
+    "distance": "6 km"
+  },
+  "airport": {
+    "name": "Rajiv Gandhi International Airport (RGIA), Shamshabad, Hyderabad",
+    "distance": "90 km"
+  }
+}

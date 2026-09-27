@@ -1,0 +1,50 @@
+{
+  "bus_routes": [
+    "Situated roughly 310 km east of Hyderabad, translating to a standard 6 to 7-hour road journey depending on city exit traffic layers.",
+    "TGRTC and APSRTC operate bus services from Mahatma Gandhi Bus Station (MGBS), Hyderabad",
+    "Supplemental departures are handled through the Jubilee Bus Station (JBS) in Secunderabad for northern suburban commuters.",
+    "Frequent district-link shuttle networks run directly from Khammam Bus Station, located approximately 120 km away.",
+    "Direct inter-state highway bus connections route consistently from the Pandit Nehru Bus Station (PNBS) in Vijayawada, sitting 180 km away."
+  ],
+  "railway": {
+    "station": "Bhadrachalam Road Station (located at Kothagudem - BDCR)",
+    "distance": "40 km"
+  },
+  "airport": {
+    "name": "Vijayawada Airport (Gannavaram)",
+    "distance": "185 km"
+  },
+  "railway_stations": [
+    {
+      "station": "Bhadrachalam Road Station (located at Kothagudem - BDCR)",
+      "distance": "40 km",
+      "details": "Nearest railway station. Regular buses connect Kothagudem railway station to Bhadrachalam every 15 minutes."
+    },
+    {
+      "station": "Khammam Railway Station",
+      "distance": "120 km",
+      "details": "Major broad-gauge rail junction."
+    }
+  ],
+  "airports": [
+    {
+      "name": "Vijayawada Airport (Gannavaram)",
+      "distance": "185 km",
+      "type": "Nearest domestic airport"
+    },
+    {
+      "name": "Rajahmundry Airport",
+      "distance": "180 km",
+      "type": "Nearest domestic airport"
+    },
+    {
+      "name": "Rajiv Gandhi International Airport, Hyderabad",
+      "distance": "320 km",
+      "type": "International airport"
+    }
+  ],
+  "parking_and_transit": {
+    "parking_areas": "Dedicated parking spaces are maintained by the temple administration near the temple entrance and town bus stand.",
+    "local_shuttles": "Shared and private auto-rickshaws connect the bus stand and local choultries directly to the temple gates."
+  }
+}

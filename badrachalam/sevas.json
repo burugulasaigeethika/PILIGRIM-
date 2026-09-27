@@ -1,0 +1,114 @@
+[
+  {
+    "name": "Nitya Sitarama Kalyanotsavam",
+    "telugu_name": "నిత్య సీతారామ కళ్యాణోత్సవం",
+    "price": "₹1,500",
+    "timing": "09:30 AM – 11:00 AM (Daily)",
+    "booking_url": "https://bhadradritemple.telangana.gov.in/",
+    "description": "Celestial wedding ritual performed daily for a couple, including prasadam."
+  },
+  {
+    "name": "Antaralaya Abhishekam",
+    "telugu_name": "అంతరాలయ అభిషేకం",
+    "price": "₹500",
+    "timing": "06:00 AM (Sundays only)",
+    "booking_url": "https://bhadradritemple.telangana.gov.in/",
+    "description": "Sacred morning bathing ritual of the main deity in the inner sanctum."
+  },
+  {
+    "name": "Abhishekam (at Bhadra Temple)",
+    "telugu_name": "భద్ర గుడి అభిషేకం",
+    "price": "₹50",
+    "timing": "Daily morning",
+    "booking_url": "https://bhadradritemple.telangana.gov.in/",
+    "description": "Sacred morning bathing ritual at the foothill shrine."
+  },
+  {
+    "name": "Sahasranamarchana",
+    "telugu_name": "సహస్రనామార్చన",
+    "price": "₹200",
+    "timing": "08:30 AM – 09:30 AM (Daily)",
+    "booking_url": "https://bhadradritemple.telangana.gov.in/",
+    "description": "Recitation of the 1000 names of Lord Sri Rama for spiritual blessings."
+  },
+  {
+    "name": "Swarna Pushparchana",
+    "telugu_name": "స్వర్ణ పుష్పార్చన",
+    "price": "₹350",
+    "timing": "08:30 AM – 09:30 AM (Daily)",
+    "booking_url": "https://bhadradritemple.telangana.gov.in/",
+    "description": "Special archana performed using flowers made of gold."
+  },
+  {
+    "name": "Aalaya Chuttu Seva",
+    "telugu_name": "ఆలయ చుట్టు సేవ",
+    "price": "₹250",
+    "timing": "08:00 PM – 08:30 PM",
+    "booking_url": "https://bhadradritemple.telangana.gov.in/",
+    "description": "Participation in the inner temple courtyard procession."
+  },
+  {
+    "name": "Vahana Seva",
+    "telugu_name": "వాహన సేవ",
+    "price": "₹1000",
+    "timing": "Evening",
+    "booking_url": "https://bhadradritemple.telangana.gov.in/",
+    "description": "Procession on a chosen vehicle like Garuda, Hamsa, etc. around the temple."
+  },
+  {
+    "name": "Rajata Ratha Seva",
+    "telugu_name": "రజత రథ సేవ",
+    "price": "₹1,116",
+    "timing": "06:30 PM – 08:00 PM",
+    "booking_url": "https://bhadradritemple.telangana.gov.in/",
+    "description": "Silver chariot procession carried around the temple courtyard."
+  },
+  {
+    "name": "Pavalimpu Seva",
+    "telugu_name": "పవళింపు సేవ",
+    "price": "₹50",
+    "timing": "09:00 PM – 09:30 PM",
+    "booking_url": "https://bhadradritemple.telangana.gov.in/",
+    "description": "Participation in the night bedtime ritual for the deities."
+  },
+  {
+    "name": "Sri Satyanarayana Swamy Vratam",
+    "telugu_name": "శ్రీ సత్యనారాయణ స్వామి వ్రతం",
+    "price": "₹250",
+    "timing": "Morning slots (Daily)",
+    "booking_url": "https://bhadradritemple.telangana.gov.in/",
+    "description": "Ritual for family prosperity, performed in the dedicated Vrata Mandapam."
+  },
+  {
+    "name": "Seeghra Darshanam (Special Entry)",
+    "telugu_name": "శీఘ్ర దర్శనం",
+    "price": "₹100",
+    "timing": "During all general darshan intervals",
+    "booking_url": "https://bhadradritemple.telangana.gov.in/",
+    "description": "Priority queue entry ticket for faster darshan."
+  },
+  {
+    "name": "VIP Break Darshan",
+    "telugu_name": "వి.ఐ.పి బ్రేక్ దర్శనం",
+    "price": "₹250",
+    "timing": "Designated institutional break windows daily",
+    "booking_url": "https://bhadradritemple.telangana.gov.in/",
+    "description": "VIP break queue entrance for priority viewing."
+  },
+  {
+    "name": "Vehicle Puja (Car/Four-Wheeler)",
+    "telugu_name": "వాహన పూజ (కారు)",
+    "price": "₹300",
+    "timing": "Daylight operation hours",
+    "booking_url": "https://bhadradritemple.telangana.gov.in/",
+    "description": "Performed at the temple entrance for safety and blessings."
+  },
+  {
+    "name": "Vehicle Puja (Two-Wheeler)",
+    "telugu_name": "వాహన పూజ (ద్విచక్ర వాహనం)",
+    "price": "₹50",
+    "timing": "Daylight operation hours",
+    "booking_url": "https://bhadradritemple.telangana.gov.in/",
+    "description": "Performed at the temple entrance for safety and blessings."
+  }
+]

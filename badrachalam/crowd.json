@@ -1,0 +1,33 @@
+{
+  "peak_days": [
+    "Sri Rama Navami Kalyanotsavam day",
+    "Vaikuntha Ekadashi (Mukkoti Ekadashi)",
+    "Karthika Masam weekends",
+    "Sundays (Antaralaya Abhishekam at 6:00 AM)",
+    "Weekends"
+  ],
+  "peak_hours": [
+    "04:30 AM – 05:00 AM (Suprabhata Seva)",
+    "06:00 AM – 07:00 AM (Sunday Antaralaya Abhishekam)",
+    "09:30 AM – 11:00 AM (Nitya Sitarama Kalyanotsavam)",
+    "05:00 AM dawn during Vaikuntha Ekadashi (Uttara Dwara Darshanam)"
+  ],
+  "festival_crowds": [
+    "Sri Rama Navami Kalyanotsavam: Devotees gather at the Mithila Stadium to witness the celestial wedding of Lord Rama and Sita.",
+    "Vaikuntha Ekadashi (Mukkoti Ekadashi): Pilgrims visit to pass through the Uttara Dwara (Northern Gate) at dawn.",
+    "Karthika Masam: Devotees perform special prayers and light lamps along the Godavari River banks, creating significant weekend crowds."
+  ],
+   "tips": [
+    "Barricaded Queue Compartments: Steel queue corridors regulate devotee traffic, with temporary holding compartments providing drinking water and seating during peak festivals.",
+    "Token Systems: Barcode and physical slot tokens are distributed during large-scale festivals to systematically stagger entry times and control crowd density.",
+    "Darshan Waiting Times: General free Sarva Darshan queues take roughly 1 hour on normal weekdays, scaling up to several hours during core festival seasons.",
+    "Police Deployment: Extensive local police contingents secure the temple parameters, Mithila Stadium grounds, and Godavari bathing ghats during major events.",
+    "Godavari Bathing Arrangements: Certified lifeguards, divers, patrol boats, and safety lifebuoys are deployed at the riverbanks during peak festival seasons.",
+    "Medical Camps: Temporary medical response tents are erected near Mithila Stadium and the riverbanks to manage emergency healthcare and distribute hydration packets.",
+    "Shuttle Services: Private vehicles face restrictions at town boundaries during major festivals, with the state transit corporation running dedicated pilgrim shuttle buses.",
+    "Public Announcement (PA) Systems: High-power PA systems across the shrine complex, stadium, and riverbanks broadcast safety updates and direct foot traffic.",
+    "Special Entry Darshan: Paid speed queue ticket options are available at the counter for ₹50 and ₹100 to bypass standard free lines.",
+    "VIP Break Darshan: Dedicated VIP Break Darshan access is available at a fixed tier of ₹250 per individual during specific management windows.",
+    "Antaralaya Abhishekam: The premium Sunday morning ritual requires a specialized ticket tier priced officially at ₹500."
+  ]
+}

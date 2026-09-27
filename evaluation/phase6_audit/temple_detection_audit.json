@@ -1,0 +1,249 @@
+{
+  "total_test_cases": 40,
+  "correct": 40,
+  "accuracy": 1.0,
+  "false_positive_rate": 0.0,
+  "false_negative_rate": 0.0,
+  "test_results": [
+    {
+      "query": "What are the timings of Ahobilam temple?",
+      "expected_temple": "Ahobilam",
+      "detected_temple": "Ahobilam",
+      "passed": true
+    },
+    {
+      "query": "Tell me about Ahobila Narasimha",
+      "expected_temple": "Ahobilam",
+      "detected_temple": "Ahobilam",
+      "passed": true
+    },
+    {
+      "query": "Bhadrachalam Lord Rama darshan timings",
+      "expected_temple": "Badrachalam",
+      "detected_temple": "Badrachalam",
+      "passed": true
+    },
+    {
+      "query": "Where is Bhadragiri temple located?",
+      "expected_temple": "Badrachalam",
+      "detected_temple": "Badrachalam",
+      "passed": true
+    },
+    {
+      "query": "Is Balkampet Yellamma temple open today?",
+      "expected_temple": "Balkampet",
+      "detected_temple": "Balkampet",
+      "passed": true
+    },
+    {
+      "query": "Balkampet darshan lines",
+      "expected_temple": "Balkampet",
+      "detected_temple": "Balkampet",
+      "passed": true
+    },
+    {
+      "query": "What is special at Basara Saraswathi temple?",
+      "expected_temple": "Basara",
+      "detected_temple": "Basara",
+      "passed": true
+    },
+    {
+      "query": "Gnana Saraswathi temple Basar",
+      "expected_temple": "Basara",
+      "detected_temple": "Basara",
+      "passed": true
+    },
+    {
+      "query": "How to reach Birla Mandir Hyderabad?",
+      "expected_temple": "Birla Mandir",
+      "detected_temple": "Birla Mandir",
+      "passed": true
+    },
+    {
+      "query": "Birla temple darshan rules",
+      "expected_temple": "Birla Mandir",
+      "detected_temple": "Birla Mandir",
+      "passed": true
+    },
+    {
+      "query": "Tell me about Chilkur Visa Balaji",
+      "expected_temple": "Chilkur",
+      "detected_temple": "Chilkur",
+      "passed": true
+    },
+    {
+      "query": "Chilkur Balaji pradakshinam rules",
+      "expected_temple": "Chilkur",
+      "detected_temple": "Chilkur",
+      "passed": true
+    },
+    {
+      "query": "What are the sevas in Dharmapuri?",
+      "expected_temple": "Dharmapuri",
+      "detected_temple": "Dharmapuri",
+      "passed": true
+    },
+    {
+      "query": "Narasimha swamy Dharmapuri pooja timings",
+      "expected_temple": "Dharmapuri",
+      "detected_temple": "Dharmapuri",
+      "passed": true
+    },
+    {
+      "query": "Where is Edupayala Vanadurga Bhavani temple located?",
+      "expected_temple": "Edupayal",
+      "detected_temple": "Edupayal",
+      "passed": true
+    },
+    {
+      "query": "Edupayal temple festival",
+      "expected_temple": "Edupayal",
+      "detected_temple": "Edupayal",
+      "passed": true
+    },
+    {
+      "query": "Tell me about Jogulamba temple in Alampur",
+      "expected_temple": "Jogulamba(New)",
+      "detected_temple": "Jogulamba(New)",
+      "passed": true
+    },
+    {
+      "query": "Jogulamba Devi history",
+      "expected_temple": "Jogulamba(New)",
+      "detected_temple": "Jogulamba(New)",
+      "passed": true
+    },
+    {
+      "query": "What is the history of Kaleshwaram Mukteshwara temple?",
+      "expected_temple": "Kaleshvaram",
+      "detected_temple": "Kaleshvaram",
+      "passed": true
+    },
+    {
+      "query": "Mukteshwara shrine Kaleshvaram",
+      "expected_temple": "Kaleshvaram",
+      "detected_temple": "Kaleshvaram",
+      "passed": true
+    },
+    {
+      "query": "What are the timings of Karmanghat Hanuman temple?",
+      "expected_temple": "Karmanghat",
+      "detected_temple": "Karmanghat",
+      "passed": true
+    },
+    {
+      "query": "Karmanghat temple darshan",
+      "expected_temple": "Karmanghat",
+      "detected_temple": "Karmanghat",
+      "passed": true
+    },
+    {
+      "query": "When is Sammakka Saralamma Jatara Medaram celebrated?",
+      "expected_temple": "Medaram",
+      "detected_temple": "Medaram",
+      "passed": true
+    },
+    {
+      "query": "Medaram Jatara route",
+      "expected_temple": "Medaram",
+      "detected_temple": "Medaram",
+      "passed": true
+    },
+    {
+      "query": "Tell me about Ramappa Rudreshwara temple",
+      "expected_temple": "Ramappa",
+      "detected_temple": "Ramappa",
+      "passed": true
+    },
+    {
+      "query": "Ramappa temple UNESCO sculpture",
+      "expected_temple": "Ramappa",
+      "detected_temple": "Ramappa",
+      "passed": true
+    },
+    {
+      "query": "What sevas are performed at Srisailam Mallikarjuna temple?",
+      "expected_temple": "Srisaila",
+      "detected_temple": "Srisaila",
+      "passed": true
+    },
+    {
+      "query": "Srisailam Bhramaramba darshan",
+      "expected_temple": "Srisaila",
+      "detected_temple": "Srisaila",
+      "passed": true
+    },
+    {
+      "query": "Tell me about Thousand Pillar Temple in Hanamkonda",
+      "expected_temple": "Thousand Pillar",
+      "detected_temple": "Thousand Pillar",
+      "passed": true
+    },
+    {
+      "query": "Thousand pillars temple Warangal",
+      "expected_temple": "Thousand Pillar",
+      "detected_temple": "Thousand Pillar",
+      "passed": true
+    },
+    {
+      "query": "What are the darshan rules at TTD Tirumala?",
+      "expected_temple": "Ttd",
+      "detected_temple": "Ttd",
+      "passed": true
+    },
+    {
+      "query": "Lord Venkateswara Tirupati TTD",
+      "expected_temple": "Ttd",
+      "detected_temple": "Ttd",
+      "passed": true
+    },
+    {
+      "query": "Where is Ujjaini Mahakali Secunderabad located?",
+      "expected_temple": "Ujjaini",
+      "detected_temple": "Ujjaini",
+      "passed": true
+    },
+    {
+      "query": "Secunderabad Mahakali Ujjaini temple",
+      "expected_temple": "Ujjaini",
+      "detected_temple": "Ujjaini",
+      "passed": true
+    },
+    {
+      "query": "Tell me about Veera Satyanarayana Swamy temple Annavaram",
+      "expected_temple": "Veera Satyanarayana",
+      "detected_temple": "Veera Satyanarayana",
+      "passed": true
+    },
+    {
+      "query": "Annavaram Satyanarayana swamy vratham",
+      "expected_temple": "Veera Satyanarayana",
+      "detected_temple": "Veera Satyanarayana",
+      "passed": true
+    },
+    {
+      "query": "What are the poojas at Vemulawada Rajanna temple?",
+      "expected_temple": "Vemulavada",
+      "detected_temple": "Vemulavada",
+      "passed": true
+    },
+    {
+      "query": "Rajarajeshwara swamy Vemulavada",
+      "expected_temple": "Vemulavada",
+      "detected_temple": "Vemulavada",
+      "passed": true
+    },
+    {
+      "query": "How to reach Yadagirigutta Laxmi Narasimha temple Yadadri?",
+      "expected_temple": "Yadadri",
+      "detected_temple": "Yadadri",
+      "passed": true
+    },
+    {
+      "query": "Yadadri temple hill road timings",
+      "expected_temple": "Yadadri",
+      "detected_temple": "Yadadri",
+      "passed": true
+    }
+  ]
+}

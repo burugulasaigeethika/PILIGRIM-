@@ -1,0 +1,33 @@
+{
+  "how_to_reach": [
+    "Srisailam is located in Nandyal district of Andhra Pradesh and accessible by road from major cities.",
+    "To reach Umamaheshwaram (Northern Gateway), travel via the Hyderabad-Srisailam road, alight at Munnanooru or Rangapuram, and travel 3 km to upper/lower Umamaheshwaram.",
+    "To reach Siddhavatam (Southern Gateway), travel 20 km from Kadapa via Badvelu road across Penna river in YSR Kadapa district.",
+    "To reach Pushpagiri (South-West Gateway), travel 18 km from Kadapa in Valluru Mandal, YSR Kadapa district via auto/bus.",
+    "To reach Sangameswaram, travel 55 km from Kurnool or 20 km from Nandikotkur to Machhumarri (16 km from Nandikotkur), or take bus from Atmakuru to Kapileshwaram, or boat ride from Somashila."
+  ],
+  "nearest_railway_station": {
+    "name": "Markapur Road Railway Station (MRK)",
+    "distance": "85 km",
+    "connectivity": "Well connected to Guntur, Vijayawada, and South Central Railway routes. Kurnool City (180 km) and Nandyal (160 km) are major alternative stations."
+  },
+  "nearest_airport": {
+    "name": "Rajiv Gandhi International Airport (RGIA), Hyderabad",
+    "distance": "200 km",
+    "connectivity": "Well connected nationally and internationally. Kurnool Airport (Orvakal) is ~170 km away."
+  },
+  "bus_routes": [
+    "APSRTC and TGRTC bus services connect Srisailam with Hyderabad, Kurnool, Markapur, Atmakuru, Kadapa, Nellore, and surrounding districts.",
+    "Special RTC bus services operate to Sangameshwaram during Mahashivaratri when the submerged temple resurfaces."
+  ],
+  "road_routes": [
+    "Hyderabad-Srisailam Highway (via Nallamala Forest)",
+    "Kurnool-Atmakur-Srisailam Road",
+    "Kadapa-Badvelu Road (20 km from Kadapa for Siddhavatam)",
+    "Kadapa-Valluru Road (18 km from Kadapa for Pushpagiri)",
+    "Kurnool-Nandikotkur-Machhumarri Road (55 km from Kurnool for Sangameshwaram)"
+  ],
+  "parking_info": [
+    "Large parking facilities managed by Devasthanam near CRO, Ring Road, and Patalaganga entrance."
+  ]
+}

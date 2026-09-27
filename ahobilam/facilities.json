@@ -1,0 +1,32 @@
+{
+  "facilities": [
+    {
+      "name": "Accommodation",
+      "description": "Accommodation in Lower Ahobilam at the Malola Guest House run by the Muth and various community rest houses (satrams) at budget-friendly rates."
+    },
+    {
+      "name": "Doli (Palanquin) Services",
+      "description": "Doli (palanquin) services available for hire at Lower Ahobilam to transport elderly and disabled pilgrims to the steep upper hill shrines."
+    },
+    {
+      "name": "Free Food (Annadanam)",
+      "description": "Free food distribution three times a day by the Annamacharya Nitya Annadanam Trust (Curd Rice in the morning and evening, full course meals at noon)."
+    },
+    {
+      "name": "First-aid Center",
+      "description": "Basic first-aid center and emergency medical desk located at Lower Ahobilam near the guest house."
+    },
+    {
+      "name": "Trained Local Guides",
+      "description": "Trained local guides available for hire at nominal rates to navigate forest trekking trails, especially to Jwala Narasimha and Ugra Sthambham."
+    },
+    {
+      "name": "Restrooms and Toilet Blocks",
+      "description": "Restrooms and toilet blocks located near the guest houses and parking zones."
+    },
+    {
+      "name": "Spacious Parking",
+      "description": "Spacious parking grounds for buses, cars, and private vehicles at Lower Ahobilam."
+    }
+  ]
+}

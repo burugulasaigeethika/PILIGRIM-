@@ -1,0 +1,40 @@
+{
+  "how_to_reach": [
+    "Annavaram is well connected by National Highway (NH-16), major railway lines, and regional bus networks in Andhra Pradesh. Devotees can easily reach by direct RTC buses, trains to Annavaram Railway Station, or flights via Rajahmundry/Visakhapatnam airports, followed by uphill Devasthanam ghat buses, autos, or private cars."
+  ],
+  "nearest_railway_station": {
+    "name": "Annavaram Railway Station (ANV)",
+    "distance": "Approximately 3 km from the temple hill base",
+    "connectivity": "Direct trains connect Annavaram with Visakhapatnam, Rajahmundry, Vijayawada, Hyderabad, Chennai, Howrah, and other major cities. Frequent Devasthanam shuttle buses run uphill for every train. Nearby junctions include Tuni (19 km) and Samalkot Junction (32 km)."
+  },
+  "nearest_airport": {
+    "name": "Rajahmundry Airport (RJA) / Visakhapatnam International Airport (VTZ)",
+    "distance": "Rajahmundry Airport: ~72 km; Visakhapatnam International Airport: ~110 km",
+    "connectivity": "Rajahmundry operates regular domestic flights to Hyderabad, Bangalore, Chennai. Visakhapatnam operates domestic and international flights."
+  },
+  "bus_routes": [
+    "From Visakhapatnam via Anakapalli & Tuni",
+    "From Kakinada via Pithapuram & Kathipudi",
+    "From Rajahmundry via Jaggampeta & Kathipudi",
+    "From Vijayawada via Eluru, Hanuman Junction & Rajahmundry",
+    "From Hyderabad via Suryapet, Vijayawada & Rajahmundry",
+    "From Guntur via Vijayawada & Rajahmundry",
+    "From Amalapuram via Ravulapalem & Kakinada",
+    "From Eluru via Tadepalligudem & Rajahmundry",
+    "From Tuni",
+    "From Pithapuram",
+    "From Samalkot via Pithapuram",
+    "From Yanam via Kakinada",
+    "From Bhimavaram via Narsapuram & Ravulapalem",
+    "From Tanuku via Ravulapalem",
+    "From Srikakulam via Visakhapatnam & Tuni",
+    "From Vizianagaram via Visakhapatnam & Tuni",
+    "From Tirupati via Nellore, Vijayawada & Rajahmundry"
+  ],
+  "road_routes": [
+    "Located along the National Highway (NH-16 / AH-45) connecting Chennai-Kolkata corridor. Motorists can easily drive to the foothills and ascend Ratnagiri hill via the south-side Ghat Road right up to the hilltop complex."
+  ],
+  "parking_info": [
+    "Main hilltop Annavaram Temple car parking area equipped with designated zones for 4-wheelers, 2-wheelers, auto-rickshaws, and wheelchair-accessible parking slots close to the darshan gates. Additional parking available at Hari Hara Sadan."
+  ]
+}

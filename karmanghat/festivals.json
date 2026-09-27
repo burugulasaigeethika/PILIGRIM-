@@ -1,0 +1,26 @@
+[
+  {
+    "festival_name": "Hanuman Jayanti",
+    "description": "The birth anniversary of Lord Hanuman, the presiding deity of the temple. It is the most significant and grandly celebrated festival here, drawing over a hundred thousand devotees. The temple remains open for extended hours, featuring special Abhishekams, betel leaf garlands (Aku Puja), devotional singing, and continuous Annadanam. The temple is a key focal point for the Hanuman Jayanti Shobha Yatra in Hyderabad.",
+    "month": "Chaitra (March/April) / Vaishakha",
+    "importance": "Major & grandest annual festival"
+  },
+  {
+    "festival_name": "Sri Rama Navami",
+    "description": "Marks the birth anniversary of Lord Rama. Given Lord Hanuman's deep devotion to Lord Rama, Sri Rama Navami is celebrated with great religious fervor, including special Akhanda Rama Nama chanting and the divine Sita Rama Kalyanotsavam.",
+    "month": "Chaitra (March/April)",
+    "importance": "Major annual festival"
+  },
+  {
+    "festival_name": "Maha Shivaratri",
+    "description": "Celebrated grandly at the within-complex shrine of Lord Shiva with night-long Pujas, Abhishekam, and special devotional programs.",
+    "month": "Phalguna / Magha (February/March)",
+    "importance": "Significant temple festival"
+  },
+  {
+    "festival_name": "Ugadi & Kartika Masam",
+    "description": "Telugu New Year (Ugadi) involves Panchanga Sravanam at the temple. During Kartika Masam, special Deepotsavam (lighting of lamps) takes place throughout the courtyard.",
+    "month": "Chaitra (March) & Kartika (October/November)",
+    "importance": "Seasonal cultural & spiritual celebrations"
+  }
+]

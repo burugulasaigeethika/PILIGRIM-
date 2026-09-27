@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Suprabhatam",
+    "telugu_name": "సుప్రభాతం సేవ",
+    "price": "₹120 per person",
+    "timing": "Daily 02:30 AM – 03:00 AM (Except Dhanurmasam)",
+    "booking_url": "https://ttdevasthanams.ap.gov.in",
+    "booking_type": "Online Electronic Lucky Dip Quota (released monthly)",
+    "includes": "Sanctum Darshan + 2 Small Laddus",
+    "description": "Awakening seva performed early morning in the sanctum sanctorum."
+  },
+  {
+    "name": "Thomala Seva",
+    "telugu_name": "తోమాల సేవ",
+    "price": "₹220 per person",
+    "timing": "Tue, Wed, Thu (03:30 AM – 04:30 AM)",
+    "booking_url": "https://ttdevasthanams.ap.gov.in",
+    "booking_type": "Online Electronic Lucky Dip Quota",
+    "includes": "Sanctum Darshan with flower garland decoration",
+    "description": "Pushpalankarana seva where the Lord is adorned with exquisite flower garlands."
+  },
+  {
+    "name": "Archana / Sahasranamarchana",
+    "telugu_name": "అర్చన",
+    "price": "₹220 per person",
+    "timing": "Tue, Wed, Thu (04:30 AM – 05:30 AM)",
+    "booking_url": "https://ttdevasthanams.ap.gov.in",
+    "booking_type": "Online Electronic Lucky Dip Quota",
+    "includes": "1,008 divine names chanting and sanctum darshan",
+    "description": "Recitation of Sahasranamarchana (1,008 divine names of the Lord) with sanctum darshan."
+  },
+  {
+    "name": "Srivari Kalyanotsavam",
+    "telugu_name": "శ్రీవారి కల్యాణోత్సవం",
+    "price": "₹1,000 (Allows 2 persons / Couple)",
+    "timing": "Daily 10:00 AM – 01:30 PM",
+    "booking_url": "https://ttdevasthanams.ap.gov.in",
+    "booking_type": "General Online Quota released 3 months in advance",
+    "includes": "2 Big Laddus, 2 Vadas, 1 Silk Shawl (Seshavastram), Blouse Piece",
+    "description": "Celestial wedding ceremony of Lord Venkateswara with Goddesses Sridevi and Bhudevi."
+  },
+  {
+    "name": "Arjitha Brahmotsavam",
+    "telugu_name": "ఆర్జిత బ్రహ్మోత్సవం",
+    "price": "₹200 per person",
+    "timing": "Daily 12:00 PM – 01:30 PM",
+    "booking_url": "https://ttdevasthanams.ap.gov.in",
+    "booking_type": "Online General Quota",
+    "includes": "Participation in Arjitha Brahmotsavam vahana seva rituals",
+    "description": "Daily miniature representation of the grand Brahmotsavam festival vahanas."
+  },
+  {
+    "name": "Unjal Seva / Dolotsavam",
+    "telugu_name": "ఊంజల్ సేవ",
+    "price": "₹200 per person",
+    "timing": "Daily 01:30 PM – 02:30 PM (Mirror Hall / Aina Mahal)",
+    "booking_url": "https://ttdevasthanams.ap.gov.in",
+    "booking_type": "Online General Quota",
+    "includes": "Seva viewing in Aina Mahal",
+    "description": "Swing ritual of the processional deities in the Mirror Hall (Aina Mahal)."
+  },
+  {
+    "name": "Vasanthotsavam",
+    "telugu_name": "వసంతోత్సవం",
+    "price": "₹300 per person",
+    "timing": "Daily 02:30 PM – 03:30 PM",
+    "booking_url": "https://ttdevasthanams.ap.gov.in",
+    "booking_type": "Online General Quota",
+    "includes": "Sacred Abhishekam to Utsava Murti",
+    "description": "Spring festival ritual featuring sacred abhishekams to Sri Malayappa Swamy and consorts."
+  },
+  {
+    "name": "Sahasra Deepalankara Seva",
+    "telugu_name": "సహస్ర దీపాలంకార సేవ",
+    "price": "₹200 per person",
+    "timing": "Daily 05:30 PM – 07:00 PM",
+    "booking_url": "https://ttdevasthanams.ap.gov.in",
+    "booking_type": "Online General Quota",
+    "includes": "1,000 glowing oil lamps viewing + Mada street procession",
+    "description": "Lighting of one thousand traditional oil lamps followed by Mada street procession."
+  },
+  {
+    "name": "Visesha Pooja",
+    "telugu_name": "విశేష పూజ",
+    "price": "₹600",
+    "timing": "Every Monday 06:00 AM – 09:00 AM",
+    "booking_url": "https://ttdevasthanams.ap.gov.in",
+    "booking_type": "Weekly Seva Quota",
+    "description": "Special Monday morning puja performed to the deities."
+  },
+  {
+    "name": "Ashtadala Pada Padmaradhana",
+    "telugu_name": "అష్టదళ పాద పద్మారాధన",
+    "price": "₹1,250",
+    "timing": "Every Tuesday 06:00 AM – 07:30 AM",
+    "booking_url": "https://ttdevasthanams.ap.gov.in",
+    "booking_type": "Weekly Seva Quota",
+    "description": "Special puja offering 108 Golden Lotuses at the holy feet of the Lord."
+  },
+  {
+    "name": "Sahasra Kalasabhishekam",
+    "telugu_name": "సహస్ర కలశాభిషేకం",
+    "price": "₹850",
+    "timing": "Every Wednesday 06:00 AM – 08:30 AM",
+    "booking_url": "https://ttdevasthanams.ap.gov.in",
+    "booking_type": "Weekly Seva Quota",
+    "description": "Grand abhishekam performed using 1,008 sacred silver kalashas."
+  },
+  {
+    "name": "Poorabhishekam (Friday Abhishekam)",
+    "telugu_name": "శుక్రవార అభిషేకం",
+    "price": "₹750",
+    "timing": "Every Friday 03:30 AM – 06:00 AM",
+    "booking_url": "https://ttdevasthanams.ap.gov.in",
+    "booking_type": "Friday Special Seva Quota",
+    "description": "Sacred Moola Virat Abhishekam performed in the sanctum sanctorum."
+  },
+  {
+    "name": "Special Entry Darshan / Sheeghra Darshan (₹300)",
+    "telugu_name": "ప్రత్యేక ప్రవేశ దర్శనం",
+    "price": "₹300 per person",
+    "timing": "Hourly slots from 09:00 AM to 08:00 PM",
+    "booking_url": "https://ttdevasthanams.ap.gov.in",
+    "booking_type": "Bookable online 2-3 months in advance",
+    "includes": "1 Free Laddu",
+    "description": "Special entry queue ticket providing expedited darshan access."
+  },
+  {
+    "name": "Angapradakshinam",
+    "telugu_name": "అంగప్రదక్షిణం",
+    "price": "Free",
+    "timing": "Daily 02:00 AM reporting at Vaikuntam Queue Complex",
+    "booking_url": "https://ttdevasthanams.ap.gov.in",
+    "booking_type": "Online Electronic Quota Booking",
+    "description": "Devotional rolling circumambulation around the sanctum after morning Pushkarini snanam."
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "wheelchair_accessibility": {
+    "is_wheelchair_friendly": true,
+    "has_lift": true,
+    "has_escalator": true,
+    "details": [
+      "Elevators, Escalators & Ramps: The newly reconstructed stone temple complex is equipped with elevators, escalators, and wheelchair ramps to assist senior citizens and differently-abled pilgrims in bypassing staircases leading to the cave sanctum.",
+      "Free Wheelchairs: Free wheelchair assistance services are available at the hilltop helpdesks.",
+      "Priority Darshan Entry: Senior citizens presenting valid age proof (Aadhaar Card) can request priority darshan entry at designated queue gates."
+    ]
+  }
+}

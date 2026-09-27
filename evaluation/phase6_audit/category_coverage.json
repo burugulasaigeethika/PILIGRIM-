@@ -1,0 +1,268 @@
+[
+  {
+    "category": "accommodation",
+    "candidate_files": [
+      "accommodation.json",
+      "facilities.json"
+    ],
+    "is_list_oriented": true,
+    "supports_aggregation": true,
+    "test_variations_count": 3,
+    "matched_variations_count": 3,
+    "accuracy": 1.0,
+    "passed": true
+  },
+  {
+    "category": "restaurants",
+    "candidate_files": [
+      "restaurants.json",
+      "facilities.json"
+    ],
+    "is_list_oriented": true,
+    "supports_aggregation": true,
+    "test_variations_count": 3,
+    "matched_variations_count": 2,
+    "accuracy": 0.6666666666666666,
+    "passed": false
+  },
+  {
+    "category": "contacts",
+    "candidate_files": [
+      "contacts.json",
+      "emergency_nos.json"
+    ],
+    "is_list_oriented": false,
+    "supports_aggregation": true,
+    "test_variations_count": 3,
+    "matched_variations_count": 3,
+    "accuracy": 1.0,
+    "passed": true
+  },
+  {
+    "category": "crowd",
+    "candidate_files": [
+      "crowd.json",
+      "timings.json"
+    ],
+    "is_list_oriented": false,
+    "supports_aggregation": true,
+    "test_variations_count": 3,
+    "matched_variations_count": 3,
+    "accuracy": 1.0,
+    "passed": true
+  },
+  {
+    "category": "donations",
+    "candidate_files": [
+      "donations.json"
+    ],
+    "is_list_oriented": true,
+    "supports_aggregation": true,
+    "test_variations_count": 3,
+    "matched_variations_count": 2,
+    "accuracy": 0.6666666666666666,
+    "passed": false
+  },
+  {
+    "category": "wheelchair",
+    "candidate_files": [
+      "elderly_ppl.json",
+      "facilities.json"
+    ],
+    "is_list_oriented": false,
+    "supports_aggregation": true,
+    "test_variations_count": 3,
+    "matched_variations_count": 3,
+    "accuracy": 1.0,
+    "passed": true
+  },
+  {
+    "category": "emergency_contacts",
+    "candidate_files": [
+      "emergency_nos.json",
+      "contacts.json"
+    ],
+    "is_list_oriented": false,
+    "supports_aggregation": true,
+    "test_variations_count": 3,
+    "matched_variations_count": 3,
+    "accuracy": 1.0,
+    "passed": true
+  },
+  {
+    "category": "facilities",
+    "candidate_files": [
+      "facilities.json",
+      "temple.json"
+    ],
+    "is_list_oriented": true,
+    "supports_aggregation": true,
+    "test_variations_count": 3,
+    "matched_variations_count": 3,
+    "accuracy": 1.0,
+    "passed": true
+  },
+  {
+    "category": "faq",
+    "candidate_files": [
+      "faq.json"
+    ],
+    "is_list_oriented": true,
+    "supports_aggregation": false,
+    "test_variations_count": 3,
+    "matched_variations_count": 2,
+    "accuracy": 0.6666666666666666,
+    "passed": false
+  },
+  {
+    "category": "festivals",
+    "candidate_files": [
+      "festivals.json"
+    ],
+    "is_list_oriented": true,
+    "supports_aggregation": true,
+    "test_variations_count": 3,
+    "matched_variations_count": 2,
+    "accuracy": 0.6666666666666666,
+    "passed": false
+  },
+  {
+    "category": "gallery",
+    "candidate_files": [
+      "gallery.json"
+    ],
+    "is_list_oriented": false,
+    "supports_aggregation": false,
+    "test_variations_count": 3,
+    "matched_variations_count": 3,
+    "accuracy": 1.0,
+    "passed": true
+  },
+  {
+    "category": "maps",
+    "candidate_files": [
+      "maps.json",
+      "travel.json"
+    ],
+    "is_list_oriented": false,
+    "supports_aggregation": false,
+    "test_variations_count": 3,
+    "matched_variations_count": 3,
+    "accuracy": 1.0,
+    "passed": true
+  },
+  {
+    "category": "nearby_attractions",
+    "candidate_files": [
+      "nearby_attractions.json"
+    ],
+    "is_list_oriented": true,
+    "supports_aggregation": true,
+    "test_variations_count": 3,
+    "matched_variations_count": 3,
+    "accuracy": 1.0,
+    "passed": true
+  },
+  {
+    "category": "prasadam",
+    "candidate_files": [
+      "prasadam.json",
+      "prasadams.json",
+      "facilities.json"
+    ],
+    "is_list_oriented": true,
+    "supports_aggregation": true,
+    "test_variations_count": 3,
+    "matched_variations_count": 3,
+    "accuracy": 1.0,
+    "passed": true
+  },
+  {
+    "category": "river_bank",
+    "candidate_files": [
+      "river_bank.json",
+      "travel.json",
+      "temple.json"
+    ],
+    "is_list_oriented": false,
+    "supports_aggregation": true,
+    "test_variations_count": 3,
+    "matched_variations_count": 3,
+    "accuracy": 1.0,
+    "passed": true
+  },
+  {
+    "category": "rules",
+    "candidate_files": [
+      "rules.json",
+      "temple.json"
+    ],
+    "is_list_oriented": false,
+    "supports_aggregation": true,
+    "test_variations_count": 3,
+    "matched_variations_count": 3,
+    "accuracy": 1.0,
+    "passed": true
+  },
+  {
+    "category": "sevas",
+    "candidate_files": [
+      "sevas.json"
+    ],
+    "is_list_oriented": true,
+    "supports_aggregation": true,
+    "test_variations_count": 3,
+    "matched_variations_count": 3,
+    "accuracy": 1.0,
+    "passed": true
+  },
+  {
+    "category": "sub_temples",
+    "candidate_files": [
+      "sub_temples.json"
+    ],
+    "is_list_oriented": true,
+    "supports_aggregation": true,
+    "test_variations_count": 3,
+    "matched_variations_count": 2,
+    "accuracy": 0.6666666666666666,
+    "passed": false
+  },
+  {
+    "category": "temple",
+    "candidate_files": [
+      "temple.json"
+    ],
+    "is_list_oriented": false,
+    "supports_aggregation": false,
+    "test_variations_count": 3,
+    "matched_variations_count": 2,
+    "accuracy": 0.6666666666666666,
+    "passed": false
+  },
+  {
+    "category": "timings",
+    "candidate_files": [
+      "timings.json",
+      "temple.json"
+    ],
+    "is_list_oriented": false,
+    "supports_aggregation": true,
+    "test_variations_count": 3,
+    "matched_variations_count": 2,
+    "accuracy": 0.6666666666666666,
+    "passed": false
+  },
+  {
+    "category": "travel",
+    "candidate_files": [
+      "travel.json"
+    ],
+    "is_list_oriented": false,
+    "supports_aggregation": true,
+    "test_variations_count": 3,
+    "matched_variations_count": 3,
+    "accuracy": 1.0,
+    "passed": true
+  }
+]

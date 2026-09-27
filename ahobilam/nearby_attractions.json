@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Mahanandi Temple",
+    "distance": "1.5-hour drive (60 km)",
+    "type": "Temple",
+    "description": "Ancient Shiva temple famous for its crystal-clear water tanks"
+  },
+  {
+    "name": "Yaganti Temple",
+    "distance": "2-hour drive (85 km)",
+    "type": "Temple",
+    "description": "Famous temple where the stone Nandi statue grows in size"
+  },
+  {
+    "name": "Belum Caves",
+    "distance": "2.5-hour drive (115 km)",
+    "type": "Caves",
+    "description": "Deep natural underground caves with stalactite formations"
+  }
+]

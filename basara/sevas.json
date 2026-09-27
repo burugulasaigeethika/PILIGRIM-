@@ -1,0 +1,82 @@
+[
+  {
+    "name": "ప్రత్యేక అక్షరాభ్యాసం (Special Aksharabyasam)",
+    "telugu_name": "ప్రత్యేక అక్షరాభ్యాసం",
+    "price": "Rs. 1000/-",
+    "timing": "Morning 7:30 AM onwards",
+    "booking_url": "https://basaratemple.telangana.gov.in/bookings/index.php?ssid=1",
+    "description": ""
+  },
+  {
+    "name": "మండప ప్రవేశం - Spl. అక్షరబ్యాసం (Mandapa Pravesham - Spl. Aksharabyasam)",
+    "telugu_name": "మండప ప్రవేశం - Spl. అక్షరబ్యాసం",
+    "price": "Rs. 100/-",
+    "timing": "Morning Session",
+    "booking_url": "https://basaratemple.telangana.gov.in/bookings/index.php?ssid=2",
+    "description": ""
+  },
+  {
+    "name": "అక్షరాభ్యాసం (Aksharabyasam)",
+    "telugu_name": "అక్షరాభ్యాసం",
+    "price": "Rs. 100/-",
+    "timing": "Morning 7:30 AM to 12:30 PM",
+    "booking_url": "https://basaratemple.telangana.gov.in/bookings/index.php?ssid=3",
+    "description": ""
+  },
+  {
+    "name": "మండప ప్రవేశం - అక్షరాభ్యాసం (Mandapa Pravesham - Aksharabyasam)",
+    "telugu_name": "మండప ప్రవేశం - అక్షరాభ్యాసం",
+    "price": "Rs. 50/-",
+    "timing": "Daily Session",
+    "booking_url": "https://basaratemple.telangana.gov.in/bookings/index.php?ssid=4",
+    "description": ""
+  },
+  {
+    "name": "ప్రత్యేక దర్శనం - ఒక వ్యక్తి (Special Dharshanam - One Person)",
+    "telugu_name": "ప్రత్యేక దర్శనం - ఒక వ్యక్తి",
+    "price": "Rs. 100/-",
+    "timing": "During Temple Opening Hours",
+    "booking_url": "https://basaratemple.telangana.gov.in/bookings/index.php?ssid=9",
+    "description": ""
+  },
+  {
+    "name": "Arjitha Sevas (Suryeshwara Alayam)",
+    "telugu_name": "ఆర్జిత సేవలు",
+    "price": "As per Seva Counter Rates",
+    "timing": "Morning & Evening Sessions",
+    "booking_url": "",
+    "description": ""
+  },
+  {
+    "name": "Shivalayam Poojalu (Near Godavari)",
+    "telugu_name": "",
+    "price": "As per Seva Ticket Rates",
+    "timing": "Morning & Evening Sessions",
+    "booking_url": "",
+    "description": ""
+  },
+  {
+    "name": "Vahana Poojalu",
+    "telugu_name": "",
+    "price": "As per Vehicle Type Ticket Rates",
+    "timing": "Daily During Temple Hours",
+    "booking_url": "",
+    "description": ""
+  },
+  {
+    "name": "Saswatha Poojas Scheme",
+    "telugu_name": "శాశ్వత పూజ పథకం",
+    "price": "As per Scheme Slab",
+    "timing": "",
+    "booking_url": "",
+    "description": ""
+  },
+  {
+    "name": "Saswatha Annadhanam Scheme",
+    "telugu_name": "శాశ్వత అన్నదానం పథకం",
+    "price": "Donation Slabs",
+    "timing": "",
+    "booking_url": "",
+    "description": ""
+  }
+]

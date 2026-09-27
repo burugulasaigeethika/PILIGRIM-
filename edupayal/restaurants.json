@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Annadanam Hall",
+    "type": "Free Temple Lunch",
+    "distance": "At the temple (Annadanam hall)",
+    "cost": "Free",
+    "speciality": "The temple provides free lunch daily to all visiting pilgrims from 11:30 AM to 2:30 PM at the Annadanam hall."
+  },
+  {
+    "name": "Local Stalls",
+    "type": "Small eateries and tiffin centers",
+    "distance": "Located near the guest houses",
+    "cost": "Budget",
+    "speciality": "Serving South Indian meals"
+  },
+  {
+    "name": "Pure Vegetarian Dining Network",
+    "type": "Local family-run eateries and community kitchens",
+    "distance": "At the foothills",
+    "cost": "Budget",
+    "speciality": "Traditional, pure vegetarian meals (without onion and garlic/Sattvic options) tailored specifically for devotees observing fasts or performing sacred rituals."
+  },
+  {
+    "name": "Haritha Hotel Restaurant",
+    "type": "Government Tourism Restaurant (TSTDC)",
+    "distance": "1 km (Near temple guest house)",
+    "cost": "Moderate",
+    "speciality": "Standard South Indian thali, tea/coffee, and vegetarian lunch items."
+  }
+]

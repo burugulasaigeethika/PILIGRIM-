@@ -1,0 +1,47 @@
+[
+  {
+    "temple": "Dharmapuri",
+    "category": "sevas",
+    "query": "What are all the sevas in Dharmapuri?",
+    "source_items_count": 10,
+    "has_indexed_complete_parent": true,
+    "completeness_verified": true,
+    "retrieval_completeness": 1.0
+  },
+  {
+    "temple": "Basara",
+    "category": "festivals",
+    "query": "List all festivals at Basara.",
+    "source_items_count": 5,
+    "has_indexed_complete_parent": true,
+    "completeness_verified": true,
+    "retrieval_completeness": 1.0
+  },
+  {
+    "temple": "Yadadri",
+    "category": "facilities",
+    "query": "Show all facilities at Yadadri.",
+    "source_items_count": 1,
+    "has_indexed_complete_parent": false,
+    "completeness_verified": true,
+    "retrieval_completeness": 0.0
+  },
+  {
+    "temple": "Srisaila",
+    "category": "sevas",
+    "query": "What are all the sevas at Srisailam?",
+    "source_items_count": 39,
+    "has_indexed_complete_parent": true,
+    "completeness_verified": true,
+    "retrieval_completeness": 1.0
+  },
+  {
+    "temple": "Badrachalam",
+    "category": "festivals",
+    "query": "List all festivals celebrated at Bhadrachalam.",
+    "source_items_count": 3,
+    "has_indexed_complete_parent": true,
+    "completeness_verified": true,
+    "retrieval_completeness": 1.0
+  }
+]

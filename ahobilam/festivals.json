@@ -1,0 +1,20 @@
+[
+  {
+    "festival_name": "Annual Brahmotsavams (Masi Mahotsavam)",
+    "description": "The annual Brahmotsavam is celebrated in the month of Masi (mid-February to mid-March) lasting for 10 days. The processional deity Lord Prahlada Varadhan is taken out in colorful Vahanas. It is a major notified festival attracting lakhs of devotees. A key ritual is the distribution of the highly sacred \"Garuda Prasadam\", sought by childless couples.",
+    "month": "Masi (mid-February to mid-March)",
+    "importance": "Major notified festival attracting lakhs of devotees. Features processional deity Lord Prahlada Varadhan on colorful Vahanas and distribution of the highly sacred Garuda Prasadam."
+  },
+  {
+    "festival_name": "Monthly Swathi Nakshatram",
+    "description": "Swathi Nakshatram is the birth star of Lord Narasimha. Every month on this day, special mass Abhishekam (Thirumanjanam) is performed for all the nine Narasimha deities across the hills. Devotees travel from Chennai, Bangalore, and Hyderabad to sponsor or witness this holy bathing ceremony.",
+    "month": "Monthly (Swathi Nakshatram)",
+    "importance": "Birth star of Lord Narasimha. Mass bathing ceremony (Abhishekam/Thirumanjanam) for all nine Narasimha deities."
+  },
+  {
+    "festival_name": "Narasimha Jayanthi",
+    "description": "Narasimha Jayanthi is celebrated annually in May (Vaisakha month) with special rituals, night-long prayers, and massive food distribution schemes (Tadiyaradhanam).",
+    "month": "May (Vaisakha month)",
+    "importance": "Annual incarnation day celebrations featuring special rituals, night-long prayers, and massive food distribution (Tadiyaradhanam)."
+  }
+]

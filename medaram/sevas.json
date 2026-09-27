@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Free Dharma Darshanam (Gaddelu)",
+    "telugu_name": "ఉచిత ధర్మ దర్శనం (గద్దెలు)",
+    "price": "Free (₹0)",
+    "timing": "During Jathara: Open 24/7; Non-Jathara Days: 6:00 AM to 8:00 PM",
+    "booking_url": "Direct Queue Lines at Gaddelu",
+    "description": "Entry and Darshan at Medaram Gaddelu are completely free for all pilgrims. No online tickets are required."
+  },
+  {
+    "name": "Special VIP / Protocol Entry (During Jathara)",
+    "telugu_name": "విశిష్ట వ్యక్తి VIP / ప్రొటోకాల్ ప్రవేశం",
+    "price": "Issued by Government / District Authorities",
+    "timing": "During Jathara days",
+    "booking_url": "https://medaramjathara.com/",
+    "description": "Special Protocol VIP Passes managed by District Administration."
+  },
+  {
+    "name": "Bangaram Tulabharam (Jaggery Offering)",
+    "telugu_name": "బంగారం తులాభారం (బెల్లం సమర్పణ)",
+    "price": "Based on Jaggery Weight (Purchased from local counters ₹40–50/kg)",
+    "timing": "Darshan Timings",
+    "booking_url": "On-site at Gaddelu Premises",
+    "description": "Offering Jaggery (Bangaram) equal to the devotee's body weight to Sammakka and Saralamma Ammavarlu."
+  },
+  {
+    "name": "Kesha Khandanam (Hair Tonsure at Kalyana Katta)",
+    "telugu_name": "కేశ ఖండనం (తలనీలాలు - కళ్యాణకట్ట)",
+    "price": "₹20 – ₹50",
+    "timing": "Darshan Timings",
+    "booking_url": "Kalyanakatta Counters near Jampanna Vagu",
+    "description": "Tonsure/hair offering at Kalyana Katta near Jampanna Vagu."
+  }
+]

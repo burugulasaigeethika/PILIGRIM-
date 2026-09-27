@@ -1,0 +1,35 @@
+{
+  "dress_code": {
+    "men": "Dhoti and Kanduva, or Kurta-Pyjama. Jeans, T-shirts, and shorts are not permitted in the Kalyanotsavam hall.",
+    "women": "Saree, Half-Saree, or Salwar-Kameez with Dupatta."
+  },
+  "dos": [
+    "Deposit prohibited electronic items at cloakrooms or automated security lockers near entrance gates.",
+    "Standard leather wallets and waist belts are fully permitted after basic metal detector screening.",
+    "Stay within designated safety barriers and fencing at the Godavari Ghats while performing holy dips.",
+    "Pay attention to monsoon flood alerts and warnings (First Warning: 43 feet, Second Warning: 48 feet, Third Warning: 53 feet).",
+    "Stay hydrated during summer when temperatures exceed 40°C.",
+    "Report lost children or belongings to the Temple Control Room near the main entrance.",
+    "Request wheelchairs at the main temple entrance for senior citizens and differently-abled devotees.",
+    "Show valid proof of age/medical status for senior citizen and Divyang priority darshan access."
+  ],
+  "donts": [
+    "Mobile phones, cameras, laptops, and smartwatches are strictly prohibited inside the main temple sanctum.",
+    "Jeans, T-shirts, and shorts are not permitted for men in the Kalyanotsavam hall.",
+    "Do not cross protective steel fencing boundaries into deep waters at the Godavari Ghats due to strong undercurrents and sudden deep drops.",
+    "River bathing is strictly suspended when flood warnings are active."
+  ],
+  "electronic_ban": " WARNING: Strict Electronic Ban. Mobile phones, cameras, laptops, and smartwatches are strictly prohibited inside the main temple sanctum. They must be deposited at the cloakrooms or automated security lockers located near the entrance gates. (Note: Standard leather wallets and waist belts are fully permitted after basic metal detector screening).",
+  "godavari_river_safety": {
+    "fencing_boundaries": "Devotees performing holy dips must stay within the designated safety barriers and fencing at the Godavari Ghats. Strong undercurrents and sudden deep drops are present.",
+    "monsoon_flood_alerts": "During the peak monsoon (July–September), Godavari water levels can rise rapidly. The local administration issues flood warnings based on gauge levels:\nFirst Warning: 43 feet\nSecond Warning: 48 feet\nThird Warning: 53 feet\nRiver bathing is strictly suspended when flood warnings are active."
+  },
+  "pilgrim_safety_code": {
+    "medical_emergencies": "Report immediately to the first aid clinic near the administrative block. For transfer to Government Area Hospital, dial 108.",
+    "godavari_river_bathing_safety": "Always stay within the protective steel fencing. Do not venture into deep waters; currents are strong and unpredictable. Children must be supervised at all times.",
+    "flood_season_monsoon": "If Godavari levels exceed the warning levels (First Warning: 43 feet, Second Warning: 48 feet, Third Warning: 53 feet), river bathing is suspended. Follow instructions given via public address systems.",
+    "heat_precautions_during_summer": "Temperatures in Bhadrachalam can exceed 40°C in summer (April–June). Devotees are advised to stay hydrated, and the temple administration lays carpet/mats along the walkways.",
+    "lost_children_and_belongings": "Report to the Temple Control Room near the main entrance. The temple administration utilizes a public announcement system to help locate lost individuals.",
+    "senior_citizen_and_divyang_assistance": "Wheelchairs can be requested at the main temple entrance. Priority darshan access is provided to senior citizens and differently-abled individuals upon showing valid proof of age/medical status."
+  }
+}

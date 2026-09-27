@@ -1,0 +1,47 @@
+{
+  "temple_id": "medaram",
+  "name": "Sri Sammakka Saralamma Devasthanam",
+  "alternate_names": [
+    "Medaram Temple",
+    "Sammakka Saralamma Devasthanam"
+  ],
+  "state": "Telangana State",
+  "district": "Mulugu District",
+  "village": "Medaram Village",
+  "address": "Executive Officer / Special Officer, Sri Sammakka Saralamma Devasthanam, Medaram Village, SS Tadvai Mandal, Mulugu District, Telangana - 506344",
+  "river": "Jampanna Vagu",
+  "main_deity": "Goddess Sammakka and Goddess Saralamma",
+  "other_deities": [
+    "Pagididda Raju",
+    "Govinda Raju"
+  ],
+  "description": "Abode of Tribal Goddesses Sammakka & Saralamma – located at Medaram Village of SS Tadvai Mandal in Mulugu District (formerly Warangal/Jayashankar Bhupalpally district), Telangana State. Medaram Sammakka Saralamma Maha Jathara is Asia’s largest tribal congregation and the second-largest religious gathering in India after the Kumbha Mela. The festival was officially declared a State Festival by the Government of Telangana in 1998.\n\nPresiding Deities:\nThe presiding deities of Medaram are the revered mother-daughter duo, Goddess Sammakka and Goddess Saralamma, worshipped along with Pagididda Raju (husband of Sammakka) and Govinda Raju (husband of Saralamma). Unlike traditional Vedic temples, there are no stone idols or brick structures in the main sanctum. Instead, the deities are represented on elevated wooden platforms known as \"Gaddelu\" amidst the dense forest environment.",
+  "history": "The Battle against Injustice (13th Century AD): During the 13th century AD, Medaram was a tribal region ruled by Pagididda Raju, a feudatory chief under Kakatiya King Prataparudra of Warangal. Due to severe drought, Pagididda Raju was unable to pay tribute tax to the Kakatiya empire. The Kakatiya forces invaded the tribal belt.\n\nThe Martyrdom: Pagididda Raju, his daughter Saralamma, son Jampanna, and son-in-law Govinda Raju fought heroically against the massive Kakatiya army and sacrificed their lives. Sammakka fought fiercely, inflicting heavy damage on the army. Upon being fatally wounded, she walked towards Chilakala Gutta (a nearby hill) and disappeared into the forest, leaving behind a container of vermilion (Casket of Kumkuma / Nawa Bharanam).",
+  "mythology": "Divine Manifestation: The Koya tribal hunters who pursued Sammakka found a glowing box of Kumkuma surrounded by tigers and peacocks. They recognized her divine power and started worshipping her as an incarnation of Adi Parashakti who protects her devotees from distress. Devotees honor the supreme sacrifice of the mother and daughter who fought against tyranny and unjust taxation. The festival represents pure indigenous tribal heritage (Koya tradition) performed strictly by traditional Koya Pujaris (priests). It has no Vedic or Brahminical rituals.",
+  "sub_temples": [
+    {
+      "name": "Sri Saralamma Gadde",
+      "location": "Kannepally Village (~4 km from Medaram)",
+      "significance": "Goddess Saralamma is enshrined here throughout the year. On Day 1 of the Jathara, tribal pujaris perform secret rituals at Kannepally and carry Saralamma in a grand procession to Medaram Gaddelu. Services include Free Darshanam & Kumkuma Archana (Daily 6:00 AM to 7:00 PM)."
+    },
+    {
+      "name": "Sri Pagididda Raju Shrine",
+      "location": "Punugondla Village, Kothaguda Mandal",
+      "significance": "Enshrines the tribal chief and husband of Sammakka. His divine symbol is brought to Medaram on Day 1. Services include Traditional Tribal Worship & Darshanam (Free)."
+    },
+    {
+      "name": "Sri Govinda Raju Shrine",
+      "location": "Kondayi Village, Eturnagaram Mandal",
+      "significance": "Enshrines the husband of Saralamma. His divine symbol is also brought to Medaram on Day 1. Services include Traditional Tribal Worship & Darshanam (Free)."
+    }
+  ],
+  "architecture": {
+    "style": "Pure indigenous tribal heritage (Koya tradition) with no Vedic or Brahminical rituals. There are no stone idols or brick structures in the main sanctum.",
+    "highlights": [
+      {
+        "name": "Gaddelu Platforms",
+        "description": "Elevated wooden platforms situated amidst the dense forest environment, where the deities Sammakka and Saralamma are represented."
+      }
+    ]
+  }
+}

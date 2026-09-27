@@ -1,0 +1,12 @@
+{
+  "wheelchair_accessibility": {
+    "is_wheelchair_friendly": false,
+    "has_lift": true,
+    "details": [
+      "Lift Available with Step Caveats: An on-site elevator/lift facility is operated for senior citizens and disabled individuals, but visitors must climb 25 initial steps to reach the lift entrance.",
+      "Wheelchair Helper Cut-off Time (2:00 PM): Wheelchairs are available to carry visitors up the initial 25 steps, but helper staff carrying wheelchairs are only available until 2:00 PM. Visitors requiring wheelchair assistance are strongly advised to visit before 2:00 PM.",
+      "No Ramp Access: There is NO ramp available to push wheelchairs from the base.",
+      "Upper Sanctum Steps: After taking the lift, there are at least 30 additional steps to reach the inner sanctum for Lord's darshan without lift or ramp access."
+    ]
+  }
+}

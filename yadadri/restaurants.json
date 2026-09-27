@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Nithya Annadanam Complex",
+    "type": "Free Temple Annadanam",
+    "distance": "Foothills",
+    "cost": "Free",
+    "speciality": "Lunch served daily from 11:30 AM to 3:30 PM. High-quality, pure vegetarian meals prepared in automated steam kitchens."
+  },
+  {
+    "name": "Foothill Eateries & Messes",
+    "type": "Family-run eateries",
+    "distance": "Foothills/Temple Road",
+    "cost": "₹50 - ₹150 per person",
+    "speciality": "Traditional South Indian meals, tiffins, and satvic options (without onion and garlic) tailored for devotees."
+  },
+  {
+    "name": "Haritha Hotel Restaurant",
+    "type": "Government Tourism Restaurant (TSTDC)",
+    "distance": "Foothills near the main TGRTC bus stand",
+    "cost": "₹150 - ₹300 per person",
+    "speciality": "Managed by TSTDC, serving pure vegetarian meals."
+  }
+]

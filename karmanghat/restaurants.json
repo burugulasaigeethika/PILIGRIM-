@@ -1,0 +1,23 @@
+[
+  {
+    "name": "J.B Nashta Point",
+    "distance": "~1 km from temple (Padma Nagar / Karmanghat)",
+    "style": "Fast Food, Tiffins & Snacks",
+    "price_range": "₹50–150 per person",
+    "best_for": "Quick breakfast, dosas & evening snacks"
+  },
+  {
+    "name": "New Balaji Family Dhaba",
+    "distance": "~600 meters on Karmanghat Main Road",
+    "style": "Pure Veg North Indian & Indo-Chinese",
+    "price_range": "₹400–500 for two",
+    "best_for": "Family lunch & dinner"
+  },
+  {
+    "name": "Hotel Raghavendra Udupi Veg",
+    "distance": "~200 meters (Near temple main gate)",
+    "style": "Pure Veg South & North Indian",
+    "price_range": "₹300–350 for two",
+    "best_for": "Morning tiffins, coffee & quick vegetarian meals"
+  }
+]

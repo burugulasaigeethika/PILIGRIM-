@@ -1,0 +1,20 @@
+[
+  {
+    "festival_name": "Mahasivarathri Jathra",
+    "description": "Mahasivarathri Jathra is the grandest annual festival celebrated at Kaleshwaram. Hundreds of thousands of pilgrims gather at the shrine. The temple remains open round-the-clock during the festival. Elaborate arrangements, special queue lines, and cultural programs are organized by the District Administration and Endowments Department.",
+    "month": "February or March",
+    "importance": "Grandest annual festival, attracting pilgrims from Telangana, Andhra Pradesh, Maharashtra, and Chhattisgarh."
+  },
+  {
+    "festival_name": "Karthika Masotsavam & Karthika Purnima",
+    "description": "The entire month of Karthika is celebrated with high fervor. Thousands of devotees perform holy dips in the Triveni Sangam, participate in Deepotsavam (lighting of oil lamps along the river banks and temple complex), and offer Laksha Bilwapatri Archana and Abhishekams.",
+    "month": "Karthika (October/November)",
+    "importance": "Holy month dedicated to Lord Shiva, marked by holy river baths, lamp lighting, and special archana."
+  },
+  {
+    "festival_name": "Other Festivals",
+    "description": "Other major festivals celebrated include Sri Rama Navami, Ganesh Navarathrotsavams, Devi Navarathrotsavams (Dussehra), Shravana Masam rituals, Hanuman Jayanthi, Vasantha Navaratri, and Pranahita & Godavari Pushkaralu (every 12 years).",
+    "month": "Various",
+    "importance": "Annual celebrations and periodic river festivals."
+  }
+]

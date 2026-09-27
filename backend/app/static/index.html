@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PilgrimAI — Telangana Temples AI Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css?v=2.4">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="app-layout">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <div class="brand-header">
+                <div class="brand-logo">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                </div>
+                <div class="brand-title">
+                    <h2>PilgrimAI</h2>
+                    <span class="brand-badge">Certified RAG + Multi-Agent</span>
+                </div>
+            </div>
+
+            <div class="sidebar-actions">
+                <button id="newChatBtn" class="btn-new-chat" title="Start a new conversation session">
+                    <i data-lucide="plus-circle" style="width: 16px; height: 16px;"></i>
+                    <span>New Chat Session</span>
+                </button>
+            </div>
+
+            <div class="sidebar-scroll">
+                <h3>Covered Temples (20)</h3>
+                <ul class="temple-list" id="templeList">
+                    <!-- Populated dynamically via /api/maps/temples -->
+                    <li class="temple-item" data-temple="Yadadri"><span class="temple-item-left"><span class="dot-online"></span> Yadadri</span><span class="pin-icon">📍</span></li>
+                    <li class="temple-item" data-temple="Basara"><span class="temple-item-left"><span class="dot-online"></span> Basara</span><span class="pin-icon">📍</span></li>
+                    <li class="temple-item" data-temple="Srisailam"><span class="temple-item-left"><span class="dot-online"></span> Srisailam</span><span class="pin-icon">📍</span></li>
+                    <li class="temple-item" data-temple="Bhadrachalam"><span class="temple-item-left"><span class="dot-online"></span> Bhadrachalam</span><span class="pin-icon">📍</span></li>
+                    <li class="temple-item" data-temple="Vemulavada"><span class="temple-item-left"><span class="dot-online"></span> Vemulavada</span><span class="pin-icon">📍</span></li>
+                    <li class="temple-item" data-temple="Ramappa"><span class="temple-item-left"><span class="dot-online"></span> Ramappa</span><span class="pin-icon">📍</span></li>
+                    <li class="temple-item" data-temple="Thousand Pillar"><span class="temple-item-left"><span class="dot-online"></span> Thousand Pillar</span><span class="pin-icon">📍</span></li>
+                    <li class="temple-item" data-temple="Birla Mandir"><span class="temple-item-left"><span class="dot-online"></span> Birla Mandir</span><span class="pin-icon">📍</span></li>
+                    <li class="temple-item" data-temple="Karmanghat"><span class="temple-item-left"><span class="dot-online"></span> Karmanghat</span><span class="pin-icon">📍</span></li>
+                    <li class="temple-item" data-temple="Ujjaini"><span class="temple-item-left"><span class="dot-online"></span> Ujjaini Mahakali</span><span class="pin-icon">📍</span></li>
+                    <li class="temple-item" data-temple="Edupayal"><span class="temple-item-left"><span class="dot-online"></span> Edupayala</span><span class="pin-icon">📍</span></li>
+                    <li class="temple-item" data-temple="Dharmapuri"><span class="temple-item-left"><span class="dot-online"></span> Dharmapuri</span><span class="pin-icon">📍</span></li>
+                    <li class="temple-item" data-temple="Balkampet"><span class="temple-item-left"><span class="dot-online"></span> Balkampet</span><span class="pin-icon">📍</span></li>
+                    <li class="temple-item" data-temple="Ttd"><span class="temple-item-left"><span class="dot-online"></span> Tirumala (TTD)</span><span class="pin-icon">📍</span></li>
+                    <li class="temple-item" data-temple="Jogulamba"><span class="temple-item-left"><span class="dot-online"></span> Jogulamba</span><span class="pin-icon">📍</span></li>
+                    <li class="temple-item" data-temple="Ahobilam"><span class="temple-item-left"><span class="dot-online"></span> Ahobilam</span><span class="pin-icon">📍</span></li>
+                    <li class="temple-item" data-temple="Chilkur"><span class="temple-item-left"><span class="dot-online"></span> Chilkur Balaji</span><span class="pin-icon">📍</span></li>
+                    <li class="temple-item" data-temple="Kaleshwaram"><span class="temple-item-left"><span class="dot-online"></span> Kaleshwaram</span><span class="pin-icon">📍</span></li>
+                    <li class="temple-item" data-temple="Medaram"><span class="temple-item-left"><span class="dot-online"></span> Medaram</span><span class="pin-icon">📍</span></li>
+                    <li class="temple-item" data-temple="Annavaram"><span class="temple-item-left"><span class="dot-online"></span> Annavaram</span><span class="pin-icon">📍</span></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="pulse-green"></div>
+                <div class="status-text">
+                    <p>Engine Certified (592 Tests)</p>
+                    <p>Qdrant + BM25 + 8 Agents</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Center: Main Chat Area -->
+        <main class="main-chat">
+            <header class="chat-header">
+                <div>
+                    <h1>Telangana Pilgrimage Assistant</h1>
+                    <p>Verified darshan timings, sevas, budget, navigation, live weather & itinerary</p>
+                </div>
+                <div class="header-controls">
+                    <!-- Language Selection Chips -->
+                    <div class="lang-chips">
+                        <button class="lang-chip active" data-lang="en">English</button>
+                        <button class="lang-chip" data-lang="te">తెలుగు</button>
+                        <button class="lang-chip" data-lang="hi">हिन्दी</button>
+                    </div>
+
+                    <!-- Map Toggle -->
+                    <button id="toggleMapBtn" class="btn-toggle-map" title="Toggle Map & Places View">
+                        <i data-lucide="map-pin" style="width: 14px; height: 14px;"></i>
+                        <span>Map & Places</span>
+                    </button>
+                </div>
+            </header>
+
+            <div class="message-area" id="messageArea">
+                <div class="welcome-box" id="welcomeBox">
+                    <h2>Namaste! Welcome to PilgrimAI</h2>
+                    <p>Your intelligent, verified pilgrimage companion for 20 major Telangana & regional shrines. Select a prompt or ask your question below:</p>
+
+                    <div class="prompt-grid">
+                        <div class="prompt-card" onclick="sendPrompt('What are the timings of Yadadri temple?')">
+                            🕒 <strong>Yadadri Timings</strong><br>Darshan schedule & poojas
+                        </div>
+                        <div class="prompt-card" onclick="sendPrompt('How far is Hyderabad from Yadadri?')">
+                            🧭 <strong>Hyderabad to Yadadri</strong><br>Driving distance & duration
+                        </div>
+                        <div class="prompt-card" onclick="sendPrompt('What is the weather at Yadadri?')">
+                            🌤️ <strong>Yadadri Weather</strong><br>Live temperature & conditions
+                        </div>
+                        <div class="prompt-card" onclick="sendPrompt('What will a visit to Yadadri cost?')">
+                            💰 <strong>Yadadri Budget</strong><br>Verified sevas & prasadam costs
+                        </div>
+                        <div class="prompt-card" onclick="sendPrompt('Plan a one-day visit to Yadadri.')">
+                            📅 <strong>Yadadri Itinerary</strong><br>One-day pilgrimage schedule
+                        </div>
+                        <div class="prompt-card" onclick="sendPrompt('Compare Srisailam and Bhadrachalam accommodation.')">
+                            ⚖️ <strong>Srisailam vs Bhadrachalam</strong><br>Compare stay options
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-bar">
+                <form id="chatForm" class="input-form">
+                    <button type="button" id="micBtn" class="btn-mic" title="Voice Input (Speech-to-Text)">
+                        <i data-lucide="mic" style="width: 18px; height: 18px;"></i>
+                    </button>
+                    <input type="text" id="userQuery" placeholder="Ask about timings, navigation routes, weather, or sevas..." autocomplete="off" required>
+                    <button type="submit" id="submitBtn" class="btn-send">
+                        <span>Ask AI</span>
+                        <i data-lucide="send" style="width: 16px; height: 16px;"></i>
+                    </button>
+                </form>
+            </div>
+        </main>
+
+        <!-- Right: Interactive Google Map & Places Side Panel -->
+        <aside class="map-panel" id="mapPanel">
+            <header class="map-panel-header">
+                <h2>
+                    <i data-lucide="map" style="width: 17px; height: 17px; color: var(--accent-gold);"></i>
+                    <span>Pilgrimage Map & Places</span>
+                </h2>
+                <div class="map-panel-tabs">
+                    <button class="map-tab-btn active" id="tabMapBtn">Map</button>
+                    <button class="map-tab-btn" id="tabPlacesBtn">Nearby Places</button>
+                </div>
+            </header>
+
+            <!-- Map View Container -->
+            <div class="map-container-wrapper">
+                <div id="googleMapContainer"></div>
+                <!-- Offline Fallback Banner -->
+                <div id="mapFallback" class="map-fallback-banner" style="display: none;">
+                    <i data-lucide="map-pin-off" style="width: 32px; height: 32px; color: var(--accent-gold); margin-bottom: 8px;"></i>
+                    <h3>Google Maps Unavailable</h3>
+                    <p>Map visualization is offline or restricted. Verified local RAG chat and multi-agent guidance remain 100% operational.</p>
+                </div>
+            </div>
+
+            <!-- Places List View -->
+            <div class="places-panel" id="placesPanel">
+                <div class="places-header">
+                    <span style="font-size: 13px; font-weight: 700; color: #fff;" id="placesTargetTitle">Nearby Discoveries</span>
+                    <span class="places-provenance-badge">Live Google Places Results</span>
+                </div>
+                <div style="font-size: 11.5px; color: var(--text-muted);">
+                    Live external amenities around selected shrines (accommodations, dining, facilities). Distinct from verified temple records.
+                </div>
+                <div class="places-list" id="placesList">
+                    <div style="font-size: 12px; color: var(--text-muted); text-align: center; padding: 20px;">
+                        Select a temple from the list or ask a navigation/location question to discover live places.
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Application Script -->
+    <script src="/static/app.js?v=3.1"></script>
+</body>
+</html>

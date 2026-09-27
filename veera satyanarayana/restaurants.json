@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Devasthanam Canteen & Annadanam Hall",
+    "cuisine": "South Indian Vegetarian / Prasadam",
+    "type": "Temple Annadanam / Devasthanam Canteen",
+    "distance": " 0.0 kmInside Temple Complex (Hilltop)",
+    "pricing": "Free Annadanam / ₹20 to ₹60 per item (Canteen breakfasts & meals)",
+    "timings": "Open during temple operating hours",
+    "address": "Ratnagiri Hilltop, Annavaram"
+  },
+  {
+    "name": "SAL Residency Restaurant",
+    "cuisine": "South Indian Pure Veg & Multi-Cuisine",
+    "type": "Private Hotel Restaurant",
+    "distance": "2.9 km / Gateway area",
+    "pricing": "₹300 to ₹500 for two",
+    "timings": "Breakfast, Lunch, Dinner",
+    "address": "Gateway Main Road, opposite Swamy Vari Temple, Annavaram"
+  },
+  {
+    "name": "Hotel Volety Grand Restaurant",
+    "cuisine": "Vegetarian & Multi-Cuisine",
+    "type": "Private Hotel Restaurant",
+    "distance": "~2 km from temple",
+    "pricing": "₹300 to ₹600 for two (A la carte & Meals)",
+    "timings": "Morning to Night",
+    "address": "Annavaram Bypass Road, Annavaram"
+  },
+  {
+    "name": "Spree One Resort Multi-Cuisine Restaurant",
+    "cuisine": "Multi-Cuisine",
+    "type": "Resort Restaurant",
+    "distance": "3.9 km from temple",
+    "pricing": "₹800 to ₹1500 for two (Premium resort dining pricing)",
+    "timings": "All Day Dining",
+    "address": "Annavaram"
+  }
+]

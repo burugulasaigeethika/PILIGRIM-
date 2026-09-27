@@ -1,0 +1,75 @@
+{
+  "police": [
+    {
+      "name": "Papannapet Police Station",
+      "phone": "08450-230533 (fax number)",
+      "alt_phone": "+91 8452223233",
+      "address": "Main Road, Opposite Police Station Bus Stop, Papannapet, Medak District (~18 km away)",
+      "details": "SHO Papannapet Mobile."
+    },
+    {
+      "name": "Medak Town Police Station",
+      "phone": "08452-221333 (fax-number)",
+      "alt_phone": "+91 8712657903",
+      "address": "Police Station Road, Near Medak Cathedral, Medak Town (~18 km away)",
+      "details": "Circle Inspector & DSP Medak (+91 8712657903)."
+    }
+  ],
+  "medical": [
+    {
+      "name": "Primary Health Centre (PHC) Papannapet",
+      "phone": "+91 8500201229",
+      "address": "Main Road, Papannapet Town (~17 km away)",
+      "details": "General outpatient care, primary emergency first aid, maternal care."
+    },
+    {
+      "name": "PHC Podichanpally (Government)",
+      "phone": "+91 8374041456",
+      "address": "Podichanpally Village (~8.9 km away)"
+    },
+    {
+      "name": "Government General Hospital (GGH), Medak (District Hospital)",
+      "phone": "91+ 9849099985",
+      "alt_phone": "",
+      "address": "Jambikunta, Main Road, Near Medak Collectorate Office, Medak (~14.7 km away)",
+      "details": "24/7 Emergency, Trauma Care, ICU, Pediatric, and Maternity services."
+    },
+    {
+      "name": "Life Care Super Speciality Hospital (Private)",
+      "phone": "08452-242211",
+      "address": "Nadeem Plaza, Hyderabad Road, Medak (~12.5 km away)",
+      "details": "24/7 Critical care, trauma, orthopedics, and internal medicine."
+    },
+    {
+      "name": "Chinnari Mother & Children's Hospital",
+      "phone": "08452-223456",
+      "address": "Azhampura, Medak (~13.3 km away)",
+      "details": "24/7 NICU, pediatric emergencies, and high-risk maternity care."
+    }
+  ],
+  "fire_and_rescue": {
+    "name": "Medak Fire Station",
+    "phone": "08452-221299",
+    "alt_phone": "+91 9963748220",
+    "address": "Fire Station Road, Medak Town (~15 km away)",
+    "details": "Station Fire Officer Mr. Baba Sharfuddin."
+  },
+  "helpline": [
+    {
+      "name": "National Emergency Number",
+      "phone": "112"
+    },
+    {
+      "name": "Police Control Room",
+      "phone": "100"
+    },
+    {
+      "name": "State Ambulance Service",
+      "phone": "108"
+    },
+    {
+      "name": "Fire Services",
+      "phone": "101"
+    }
+  ]
+}

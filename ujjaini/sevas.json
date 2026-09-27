@@ -1,0 +1,123 @@
+[
+
+  {
+    "name": "Abhisekam",
+    "telugu_name": "అభిషేకం",
+    "price": "₹501.00",
+    "timing": "before 11.00 AM",
+    "booking_url": "https://sriujjainimahakalimatha.org/sevas-services/shivalayam/abhisekam-shivalayam/abhisekam-2/",
+    "description": "Shiva Abhisekam. Please Collect your Prasadam before 11.00 am if you are planning to visit the temple. Prasadam will not be available after 11.00 am."
+  },
+  {
+    "name": "Annadanam(100)",
+    "telugu_name": "అన్నదానం",
+    "price": "₹7,500.00",
+    "timing": "6:00 AM to 6:30 PM",
+    "booking_url": "https://sriujjainimahakalimatha.org/sevas-services/annadanam/annadanam-100-people/",
+    "description": "Annadanam (100 people) One day, includes Kanduvas, Blouse piece, Archana"
+  },
+  {
+    "name": "Archana",
+    "telugu_name": "అర్చన",
+    "price": "₹150.00",
+    "timing": "6:00 AM to 6:30 PM",
+    "booking_url": "https://sriujjainimahakalimatha.org/sevas-services/archana/archana/",
+    "description": "Swarna Pushparchana 2 persons"
+  },
+  {
+    "name": "Chandi Homam",
+    "telugu_name": "చండీ హోమం",
+    "price": "₹1,300.00",
+    "timing": " 9:30 AM Pournami day (ONLY ON FULL MOON DAY)",
+    "booking_url": "https://sriujjainimahakalimatha.org/sevas-services/homams/chandi-homam/",
+    "description": "Chandi Homam is performed only on Pournami day (ONLY ON FULL MOON DAY). Devotees are advised to choose only pournami day for Chandi Homam sevas. Includes Kanduvas, Blouse piece, Pulihora, Bellam Pongali"
+  },
+  {
+    "name": "Ghatam Alankaram (Ashada Jathara)",
+    "telugu_name": "ఘటం అలంకారం",
+    "price": "₹2,501.00",
+    "timing": "6:00 AM to 6:30 PM",
+    "booking_url": "https://sriujjainimahakalimatha.org/sevas-services/sri-ujjaini-mahakali-matha/aashada-jathara/ghatam-alankaram-aashada-jathara/",
+    "description": "Ghatam Alankaram (Aashada Jathara): Flower decoration of Ammavari Ghatam with different kinds of flowers like kanakambaram, mallepullu, roses. Ghatam base will have neem leaf stalks. The ghatam will be smeared with turmeric paste."
+  },
+  {
+    "name": "Shaswatha Annadanam",
+    "telugu_name": "శాశ్వత అన్నదానం",
+    "price": "₹10,116.00",
+    "timing": "",
+    "booking_url": "https://sriujjainimahakalimatha.org/sevas-services/annadanam/shaswatha-annadanam/",
+    "description": "Lifetime endowment contribution toward temple Annadanam service."
+  },
+  {
+    "name": "Shiva Archana",
+    "telugu_name": "శివ అర్చన",
+    "price": "₹50.00",
+    "timing": "6:00 AM to 6:30 PM",
+    "booking_url": "https://sriujjainimahakalimatha.org/sevas-services/shivalayam/archana-shivalayam/archana-2/",
+    "description": "Standard archana service performed at the temple Shivalayam."
+  },
+  {
+    "name": "Kadgamala",
+    "telugu_name": "ఖడ్గమాల",
+    "price": "₹50.00",
+    "timing": "6:00 AM to 6:30 PM",
+    "booking_url": "https://sriujjainimahakalimatha.org/sevas-services/dailyservices/kadgamala/",
+    "description": ""
+  },
+  {
+    "name": "Nitya Aarthi",
+    "telugu_name": "నిత్య హారతి",
+    "price": "₹150.00",
+    "timing": "6:00 AM to 6:30 PM",
+    "booking_url": "https://sriujjainimahakalimatha.org/sevas-services/dailyservices/nitya-aarthi/s",
+    "description": ""
+  },
+  {
+    "name": "Nitya Annadanam",
+    "telugu_name": "నిత్య అన్నదానం",
+    "price": "₹1,500.00",
+    "timing": "",
+    "booking_url": "https://sriujjainimahakalimatha.org/sevas-services/annadanam/nitya-annadanam/",
+    "description": "Nitya Annadanam – 1 day For 11 people, includes Archana, 200g Pulihora"
+  },
+  {
+    "name": "Odibiyyam Offering",
+    "telugu_name": "ఒడిబియ్యం",
+    "price": "₹50.00",
+    "timing": "6:00 AM to 6:30 PM",
+    "booking_url": "https://sriujjainimahakalimatha.org/sevas-services/dailyservices/odibiyyam-offering/",
+    "description": "Odibiyyam Offering – Service Charges only. Devotees should bring the odibhiyam themselves"
+  },
+  {
+    "name": "Online Bonam",
+    "telugu_name": "ఆన్‌లైన్ బోనం",
+    "price": "₹501.00",
+    "timing": "6:00 AM to 6:30 PM",
+    "booking_url": "https://sriujjainimahakalimatha.org/sevas-services/sri-ujjaini-mahakali-matha/online-bonam/",
+    "description": "Online Bonam will be offered by the temple staff on behalf of the devotees who wish to offer Bonam to Sri Ujjaini Mahakali Ammavaru. This service is available to all."
+  },
+  {
+    "name": "Shaswatha Chandi Homam",
+    "telugu_name": "శాశ్వత చండీ హోమం",
+    "price": "₹10,116.00",
+    "timing": "9:30 AM",
+    "booking_url": "https://sriujjainimahakalimatha.org/sevas-services/homams/shaswatha-chandi-homam/",
+    "description": ""
+  },
+  {
+    "name": "Shaswatha Pooja",
+    "telugu_name": "శాశ్వత పూజ",
+    "price": "₹2,500.00",
+    "timing": "",
+    "booking_url": "https://sriujjainimahakalimatha.org/sevas-services/shaswatha-pooja/shaswatha-pooja/",
+    "description": "Shaswatha Pooja Includes Pulihora, Kanduvas, Blouse piece"
+  },
+  {
+    "name": "Veda Ashirvachanam",
+    "telugu_name": "వేద ఆశీర్వచనం",
+    "price": "₹1,001.00",
+    "timing": "6:30 AM to 6:30 PM",
+    "booking_url": "https://sriujjainimahakalimatha.org/sevas-services/dailyservices/veda-ashirvachanam/",
+    "description": "Veda Ashirvachanam Includes Kanduvas, Blouse piece, Laddu, Vada, Pulihora, Vastram"
+  }
+]

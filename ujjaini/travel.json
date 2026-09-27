@@ -1,0 +1,26 @@
+{
+  "bus_routes": [
+    "From Secunderabad Station: Bus Nos. 1, 2, 5K, 10K, 49M (Alight at General Bazaar / Mahankali Street)",
+    "From Koti / Abids: Bus Nos. 1, 107, 107VP to Secunderabad",
+    "From Mehdipatnam: Bus Nos. 5M, 49M to Secunderabad",
+    "From Dilsukhnagar: Bus Nos. 107, 107V to Secunderabad"
+  ],
+  "metro_routes": [
+    "Secunderabad West Metro Station (Green Line) - 800 meters (10 min walk)",
+    "Paradise Metro Station (Blue Line) - 1.2 km"
+  ],
+  "railway_stations": [
+    {
+      "station": "Secunderabad Junction Railway Station (SC)",
+      "distance": "2.2 km (8 minutes by auto/bus)"
+    },
+    {
+      "station": "Hyderabad Deccan / Nampally Railway Station (HYB)",
+      "distance": "7 km"
+    }
+  ],
+  "airport": {
+    "name": "Rajiv Gandhi International Airport (HYD), Shamshabad",
+    "distance": "35 km via PVNR Expressway"
+  }
+}

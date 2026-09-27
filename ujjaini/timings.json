@@ -1,0 +1,27 @@
+{
+  "temple_id": "ujjaini_mahakali_secunderabad",
+  "opening_time": "6:00 AM",
+  "closing_time": "9:00 PM",
+  "afternoon_break": {
+    "from": "12:00 PM",
+    "to": "4:00 PM"
+  },
+  "daily_schedule": [
+    {
+      "days": "Regular Days (Mon, Wed, Thu, Sat)",
+      "timings": "6:00 AM - 1:00 PM & 4:00 PM - 8:30 PM"
+    },
+    {
+      "days": "Tuesdays",
+      "timings": "5:30 AM - 1:00 PM & 4:00 PM - 9:00 PM"
+    },
+    {
+      "days": "Fridays",
+      "timings": "6:00 AM - 1:00 PM & 4:00 PM - 9:30 PM"
+    },
+    {
+      "days": "Sundays & Bonalu Days",
+      "timings": "5:00 AM - 10:00 PM (Continuous Darshanam)"
+    }
+  ]
+}

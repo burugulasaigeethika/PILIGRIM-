@@ -1,0 +1,44 @@
+{
+  "address": "Sri Venkateswara Swamy Vari Temple, Srivari Sannidhi Street (East Mada Street), Tirumala, Tirupati District, Andhra Pradesh - 517504, India",
+  "administrative_office": "TTD Administrative Building, K.T. Road, Tirupati - 517501, Andhra Pradesh",
+  "phones": [
+    "155257",
+    "1800 425 4141",
+    "1800 425 111111",
+    "1800 425 333333",
+    "0877-2233333",
+    "0877-2277777",
+    "0877-2287777"
+  ],
+  "emails": [
+    "helpdesk.ttd@tirumala.org",
+    "refundservices.ttd@tirumala.org",
+    "cd.refunddesk@tirumala.org",
+    "eottd@tirumala.org",
+    "pro@tirumala.org",
+    "cvso@tirumala.org"
+  ],
+  "website": "https://ttdevasthanams.ap.gov.in/",
+  "alternate_website": "https://tirupatibalaji.ap.gov.in",
+  "google_map": "https://www.google.com/maps/place/Tirumala,+Tirupati,+Tirupati+Urban,+Andhra+Pradesh/@13.6816399,79.3464804,14z/data=!3m1!4b1!4m6!3m5!1s0x3bb2b562cc4e1291:0x85a1996b4b87bcf6!8m2!3d13.6807357!4d79.3508975!16s%2Fm%2F0c417rs?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D",
+  "pincode": "517504",
+  "directory": {
+    "general_toll_free": "155257",
+    "national_toll_free": [
+      "1800 425 4141",
+      "1800 425 111111",
+      "1800 425 333333"
+    ],
+    "landline_numbers": [
+      "0877-2233333",
+      "0877-2277777",
+      "0877-2287777"
+    ],
+    "general_helpdesk_email": "helpdesk.ttd@tirumala.org",
+    "ticket_and_service_refunds_email": "refundservices.ttd@tirumala.org",
+    "caution_deposit_refunds_email": "cd.refunddesk@tirumala.org",
+    "executive_officer_eo_email": "eottd@tirumala.org",
+    "public_relations_officer_pro_email": "pro@tirumala.org",
+    "chief_vigilance_and_security_officer_cvso_email": "cvso@tirumala.org"
+  }
+}

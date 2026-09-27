@@ -1,0 +1,33 @@
+{
+  "temple_id": "sri_karmanghat_hanuman",
+  "opening_time": "6am",
+  "closing_time": "8:30pm",
+  "afternoon_break": {
+    "from": "12 noon",
+    "to": "4:30pm"
+  },
+  "daily_schedule": [
+    {
+      "days": "All days except Tuesdays and Saturdays",
+      "opening_time": "6am",
+      "closing_time": "8:30pm",
+      "morning_session": "6am to 12 noon",
+      "evening_session": "4:30pm to 8:30pm",
+      "afternoon_break": {
+        "from": "12 noon",
+        "to": "4:30pm"
+      }
+    },
+    {
+      "days": "Tuesdays and Saturdays",
+      "opening_time": "5.30am",
+      "closing_time": "9pm",
+      "morning_session": "5.30am to 1pm",
+      "evening_session": "4:30pm to 9pm",
+      "afternoon_break": {
+        "from": "1pm",
+        "to": "4:30pm"
+      }
+    }
+  ]
+}

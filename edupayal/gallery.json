@@ -1,0 +1,38 @@
+{
+  "images": [
+    {
+      "caption": "Image 1 (Main Entrance)",
+      "url": "http://edupayalavanadurgatemple.org/i/l-gallery-4.jpg"
+    },
+    {
+      "caption": "Image 2 (Cave View)",
+      "url": "https://travelwithkalyan.com/wp-content/uploads/2024/03/IMG20201231135747-scaled.jpg"
+    },
+    {
+      "caption": "Image 3 (Alankaran)",
+      "url": "http://edupayalavanadurgatemple.org/i/k854.jpeg"
+    }
+  ],
+  "videos": [
+    {
+      "caption": "Alankaran Video 866",
+      "url": "http://edupayalavanadurgatemple.org/866.mp4"
+    },
+    {
+      "caption": "Alankaran Video 865",
+      "url": "http://edupayalavanadurgatemple.org/865.mp4"
+    },
+    {
+      "caption": "Alankaran Video 858",
+      "url": "http://edupayalavanadurgatemple.org/858.mp4"
+    },
+    {
+      "caption": "Alankaran Video 847",
+      "url": "http://edupayalavanadurgatemple.org/847.mp4"
+    },
+    {
+      "caption": "Alankaran Video 844",
+      "url": "http://edupayalavanadurgatemple.org/844.mp4"
+    }
+  ]
+}

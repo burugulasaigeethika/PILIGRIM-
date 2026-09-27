@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Balkampet Yellamma Temple Nitya Annadanam",
+    "cuisine": "Free Vegetarian Meal",
+    "type": "Temple Annadanam",
+    "distance": "0 km",
+    "pricing": "Free",
+    "timings": "Afternoon hours",
+    "address": "Dedicated dining hall within or adjacent to the extended temple property"
+  },
+  {
+    "name": "New Amogha Veg",
+    "cuisine": "Vegetarian",
+    "type": "Private Veg Hotel",
+    "distance": "~1.0 km",
+    "pricing": "Average ₹100 – ₹200 per person",
+    "timings": "7:00 AM – 10:00 PM Daily",
+    "address": "Balkampet Road, Sanjeeva Reddy Nagar, Hyderabad, 500038"
+  },
+  {
+    "name": "Taaza Kitchen",
+    "cuisine": "Vegetarian Quick Service",
+    "type": "Private Veg Hotel",
+    "distance": "~1.2 km",
+    "pricing": "Average ₹50 – ₹150 per person",
+    "timings": "7:00 AM – 10:30 PM Daily",
+    "address": "Ameerpet, Hyderabad, Telangana 500016"
+  },
+  {
+    "name": "Subbayya Gari Hotel",
+    "cuisine": "Vegetarian Thali",
+    "type": "Private Veg Hotel",
+    "distance": "~1.5 km",
+    "pricing": "Average ₹200 – ₹400 per person",
+    "timings": "11:30 AM – 4:00 PM, 7:00 PM – 10:30 PM Daily",
+    "address": "Near Ameerpet Metro Station, Ameerpet, Hyderabad, 500016"
+  },
+  {
+    "name": "Santosh Dhaba",
+    "cuisine": "North Indian Vegetarian",
+    "type": "Private Veg Hotel",
+    "distance": "~1.5 km",
+    "pricing": "Average ₹200 – ₹350 per person",
+    "timings": "11:30 AM – 11:30 PM Daily",
+    "address": "Main Road, Ameerpet, Hyderabad, 500016"
+  }
+]

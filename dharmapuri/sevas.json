@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Abhishekam",
+    "telugu_name": "అభిషేకం",
+    "price": "₹500",
+    "timing": "from 6:00 AM",
+    "booking_url": "",
+    "description": "Sri Swami vari Abhishekam ritual starting at 6:00 AM"
+  },
+  {
+    "name": "Tulasi Visheṣārchana",
+    "telugu_name": "తులసి విశేషార్చన",
+    "price": "₹500",
+    "timing": "from 8:00 AM",
+    "booking_url": "",
+    "description": "Special Tulasi Archana ritual starting at 8:00 AM"
+  },
+  {
+    "name": "Sahasranamas / Korika Nivṛtti",
+    "telugu_name": "సహస్రనామాలు / కోరిక నివృత్తి",
+    "price": "₹50",
+    "timing": "Daily during Archana slots",
+    "booking_url": "",
+    "description": "Chanting of Sahasranamas and fulfillment of vows"
+  },
+  {
+    "name": "Gokṣanāma Harati",
+    "telugu_name": "గోక్షణామ హారతి",
+    "price": "₹200",
+    "timing": "Daily during Archana slots",
+    "booking_url": "",
+    "description": "Special Harati ritual"
+  },
+  {
+    "name": "Odi Biyyam",
+    "telugu_name": "ఒడి బియ్యం",
+    "price": "₹50",
+    "timing": "Daily during Archana slots",
+    "booking_url": "",
+    "description": "Traditional ritual offering of rice"
+  },
+  {
+    "name": "Kumkuma Archana",
+    "telugu_name": "కుంకుమ అర్చన",
+    "price": "₹200",
+    "timing": "Daily during Archana slots",
+    "booking_url": "",
+    "description": "Kumkuma Archana ritual"
+  },
+  {
+    "name": "Pulihora Bhogam / Dadhojana Bhogam",
+    "telugu_name": "పులిహోర భోగం / దద్ధోజన భోగం",
+    "price": "₹300",
+    "timing": "at 10:00 AM",
+    "booking_url": "",
+    "description": "Special food offerings of Pulihora or Dadhojana served at 10:00 AM"
+  },
+  {
+    "name": "Bōrela Bhogam",
+    "telugu_name": "బోరెల భోగం",
+    "price": "₹500",
+    "timing": "at 12:00 noon",
+    "booking_url": "",
+    "description": "Borela sweet food offering served at 12:00 noon"
+  },
+  {
+    "name": "Veda Aashirvachanam",
+    "telugu_name": "వేద ఆశీర్వచనం",
+    "price": "₹500",
+    "timing": "Daily during Archana slots",
+    "booking_url": "",
+    "description": "Vedic blessings by temple priests"
+  },
+  {
+    "name": "Mudupu",
+    "telugu_name": "ముడుపు",
+    "price": "₹300",
+    "timing": "Daily",
+    "booking_url": "",
+    "description": "Sacred mudupu offering ritual"
+  }
+]

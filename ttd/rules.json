@@ -1,0 +1,52 @@
+{
+  "ttd_guidelines_and_rules": {
+    "dress_code": {
+      "men": "Traditional Indian attire: White Dhoti (Pancha) with Angavastram (upper cloth) OR Kurta and Pyjama. (Strictly Prohibited: Western clothes, Jeans, Shorts, T-shirts, Bermudas, Track pants, Lungis, Caps, and Nightwear).",
+      "women": "Traditional Indian attire: Saree, Half-Saree (Langa Voni), or Chudidar / Salwar Kameez with mandatory pinned Dupatta/Chunni. (Strictly Prohibited: Western dresses, Jeans, Tight Leggings without Dupatta, Sleeveless tops, Crop tops, Shorts, and Skirts).",
+      "foreigners": "Must adhere strictly to traditional Indian dress code and sign a faith declaration form at the VQC complex confirming respect for the deity."
+    },
+    "electronic_ban": {
+      "policy": "Absolute zero-tolerance ban on all electronic and recording devices inside the temple premises and queue complexes.",
+      "prohibited_items": [
+        "Mobile phones",
+        "Smartwatches and fitness bands",
+        "Digital/Film cameras and video camcorders",
+        "Tablets and Laptops",
+        "Bluetooth earphones, headphones, and audio recorders",
+        "Power banks and electronic chargers"
+      ],
+      "deposit_facility": "Free computerized barcode locker counters available outside VQC I, VQC II, Supatham, and PAC complexes to safely store devices before entering."
+    },
+    "dos": [
+    "Pay obeisance to your Ishta Daivam or Kula Daivam before starting your Tirumala pilgrimage.",
+    "Book your travel and accommodation in Tirumala well in advance.",
+    "Bathe in the Swami Pushkarini and worship Sri Bhu Varaha Swamy in His temple before worshipping Lord Sri Venkateswara Swamy.",
+    "Bathe and wear clean traditional clothes before entering the sanctum shrine of Lord Sri Venkateswara Swamy.",
+    "Concentrate on Lord Sri Venkateswara Swamy while inside the temple.",
+    "Observe absolute silence and chant 'Om Namo Sri Venkatesaya' inside the temple.",
+    "Bathe in the Papavinasanam and Akasha Ganga theerthams in Tirumala.",
+    "Respect ancient customs and usages while at Tirumala.",
+    "Respect and promote religious sentiments among co-pilgrims.",
+    "Deposit all your offerings only into the main Hundi.",
+    "Wear a tilak in accordance with your religious affiliation.",
+    "Follow the procedures of the temple and wait patiently for your turn for the darshan of the Lord."
+  ],
+  "donts": [
+    "Don't come to Tirumala for any purpose other than worshipping the Lord.",
+    "Don't carry much jewellery and cash with you.",
+    "Don't wear footwear in and around the premises of the temple.",
+    "Don't approach touts for accommodation and darshan.",
+    "Don't prostrate (sastanga danda pranamam) inside the temple.",
+    "Don't throw away the prasadam and teertham given to you at the temple.",
+    "Don't eat non-vegetarian food, consume liquor or other intoxicants, or smoke while in Tirumala.",
+    "Don't wear any head coverings such as helmets, caps, turbans, and hats inside the temple premises.",
+    "Don't commit any act of violence or harshness on the temple premises.",
+    "Don't rush in for darshan instead of waiting for your turn in the queue.",
+    "Don't enter the temple if, according to custom or usage, you are prohibited from entering.",
+    "Don't wear flowers at Tirumala temple, as all flowers of the sacred Seven Hills are reserved for the Lord only.",
+    "Don't encourage beggars.",
+    "Don't spit or create a nuisance inside the temple premises.",
+    "Don't carry unlicensed weapons or ammunition to Tirumala (licensed weapons/ammunition must be declared at the Alipiri check point with relevant documentation)."
+  ]
+  }
+}

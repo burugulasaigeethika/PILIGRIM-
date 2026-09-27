@@ -1,0 +1,86 @@
+{
+  "temple_id": "bhadradri_bhadrachalam",
+  "opening_time": "04:30 AM",
+  "closing_time": "09:00 PM",
+  "afternoon_break": {
+    "from": "01:00 PM",
+    "to": "03:00 PM"
+  },
+  "daily_schedule": [
+    {
+      "time_slot": "04:30 AM – 05:00 AM",
+      "ritual_name": "Suprabhata Seva",
+      "details_and_significance": "Morning awakening hymns sung to wake the Lord (4:00 AM on weekends)."
+    },
+    {
+      "time_slot": "05:00 AM – 05:30 AM",
+      "ritual_name": "Harathi & Alankara Darshanam",
+      "details_and_significance": "Morning prayers and early aesthetic viewing of the main deities."
+    },
+    {
+      "time_slot": "05:30 AM – 06:00 AM",
+      "ritual_name": "Balabhogam & Nivedana",
+      "details_and_significance": "Offering of early morning naivedyam/prasadam."
+    },
+    {
+      "time_slot": "06:00 AM – 07:00 AM",
+      "ritual_name": "Sarva Darshanam & Abhishekam",
+      "details_and_significance": "Public entry open. Antaralaya Abhishekam is explicitly run on Sundays at 6:00 AM."
+    },
+    {
+      "time_slot": "07:00 AM – 09:30 AM",
+      "ritual_name": "Sarva Darshanam & Archanas",
+      "details_and_significance": "General public entry alongside individual Kesavanaamaarchana."
+    },
+    {
+      "time_slot": "09:30 AM – 11:00 AM",
+      "ritual_name": "Nitya Sitarama Kalyanotsavam",
+      "details_and_significance": "Daily celestial wedding ritual of Sri Rama and Seetha Devi."
+    },
+    {
+      "time_slot": "11:00 AM – 01:00 PM",
+      "ritual_name": "Maha Nivedana & Public Darshan",
+      "details_and_significance": "Royal culinary food offering followed by midday general access lines."
+    },
+    {
+      "time_slot": "01:00 PM – 03:00 PM",
+      "ritual_name": "Temple Closed",
+      "details_and_significance": "Afternoon rest period (Doors locked entirely)."
+    },
+    {
+      "time_slot": "03:00 PM – 06:30 PM",
+      "ritual_name": "Sarva Darshanam & Archanas",
+      "details_and_significance": "Post-noon public entry reopening and specialized archana queues."
+    },
+    {
+      "time_slot": "06:00 PM – 06:30 PM",
+      "ritual_name": "Evening Aaradhana & Nivedana",
+      "details_and_significance": "Sunset prayers, systematic lighting of lamps, and evening food offering."
+    },
+    {
+      "time_slot": "06:30 PM – 08:00 PM",
+      "ritual_name": "Rajata Ratha / Special Vahana Seva",
+      "details_and_significance": "Evening entry queues. Features the Silver Chariot procession."
+    },
+    {
+      "time_slot": "08:00 PM – 08:30 PM",
+      "ritual_name": "Aalaya Chuttu Seva",
+      "details_and_significance": "Circuit parikrama procession of deities around the inner courtyard."
+    },
+    {
+      "time_slot": "08:30 PM – 09:00 PM",
+      "ritual_name": "Sarva Darshanam",
+      "details_and_significance": "Final general crowd clearance slot."
+    },
+    {
+      "time_slot": "09:00 PM – 09:30 PM",
+      "ritual_name": "Ekantha Seva / Pavalimpu Seva",
+      "details_and_significance": "Final bedtime lullabies sung to put the deities to rest."
+    },
+    {
+      "time_slot": "09:30 PM",
+      "ritual_name": "Temple Closed",
+      "details_and_significance": "Night closure (Doors locked)."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "dress_code": {
+    "men": "Any decent traditional outfit for Darshan. For Garbhagriha Abhishekam, men must remove Shirt and Vest (Dhoti / Pancha required).",
+    "women": "Any decent traditional outfit for Darshan. For Garbhagriha Abhishekam, women must wear Saree or Chudidhar with Dupatta."
+  },
+  "dos": [
+    "Do take a holy bath in the Triveni Sangam (Godavari, Pranahita, Saraswati river confluence) before entering the temple queue lines.",
+    "Do offer prayers to Lord Kaleshwara (Yama) FIRST, before worshipping Lord Mukteshwara (Shiva) as per ancient temple tradition.",
+    "Do maintain quiet and follow line discipline during peak rush hours.",
+    "Do deposit footwear, leather items, and electronic gadgets at designated cloakrooms outside.",
+    "Do wear traditional attire and place tilak/kumkum on your forehead as a mark of devotion."
+  ],
+  "donts": [
+    "Don't wear any footwear inside or around the main temple boundary walls.",
+    "Don't take photographs or record videos inside the sanctum sanctorum (Garbhagriha); cameras and cell phones are strictly prohibited.",
+    "Don't consume non-vegetarian food, alcohol, or tobacco products before or during your temple visit.",
+    "Don't carry plastic bags, matchboxes, or sharp objects inside security check zones.",
+    "Don't deal with unauthorized brokers or touts promising quick darshan.",
+    "Don't litter or throw trash along the Triveni Sangam river ghats or temple premises."
+  ],
+  "electronic_ban": "Don't take photographs or record videos inside the sanctum sanctorum (Garbhagriha); cameras and cell phones are strictly prohibited. Deposit electronic gadgets at designated cloakrooms outside.",
+  "safety_guidelines": "Take care while bathing in Triveni Sangam. Use safety railings. Do not enter deep zones or cross security barricades."
+}

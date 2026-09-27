@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Golkonda Resorts & Spa",
+    "type": "Private Hotel",
+    "distance": "12.7 km via NH163 driving route (3.9 km radial distance)",
+    "price": "₹8,500 - ₹14,000 per night (approx.)",
+    "description": "Located near Gandipet (Osman Sagar), offering premium villa accommodations, dining, and spa facilities."
+  },
+  {
+    "name": "Mrugavani Resort & Spa",
+    "type": "Private Hotel",
+    "distance": "about 10 km",
+    "price": "",
+    "description": "Positioned near Mrugavani National Park, providing comfortable eco-villas, rooms, and family facilities."
+  },
+  {
+    "name": "Local Highway Lodges",
+    "type": "Private Hotel",
+    "distance": "approximately 3-5 km",
+    "price": "",
+    "description": "Located along the Chevella-Moinabad main road, offering basic budget-friendly rooms."
+  },
+  {
+    "name": "Hyderabad City Hotels",
+    "type": "Private Hotel",
+    "distance": "25-30 km",
+    "price": "",
+    "description": "Since the temple is located 25-30 km from central Hyderabad, most devotees prefer staying in Gachibowli, Kokapet, or Narsingi."
+  }
+]

@@ -1,0 +1,119 @@
+[
+  {
+    "festival_name": "Srivari Salakatla & Navarathri Brahmotsavams",
+    "month": "Bhadrapada / Ashwayuja (September / October)",
+    "description": "9-day annual mega festival celebrated with grand vahanas and daily processions around the four Mada streets. In Adhika Masa years, two Brahmotsavams are conducted.",
+    "importance": "The grandest annual festival established by Lord Brahma himself, attracting hundreds of thousands of pilgrims.",
+    "schedule": [
+      {
+        "day": "Day 1",
+        "events": "Ankurarpanam, Dhwajarohanam & Pedda Sesha Vahanam"
+      },
+      {
+        "day": "Day 2",
+        "events": "Chinna Sesha Vahanam & Hamsa Vahanam"
+      },
+      {
+        "day": "Day 3",
+        "events": "Simha Vahanam & Muthyapu Pandiri Vahanam"
+      },
+      {
+        "day": "Day 4",
+        "events": "Kalpavriksha Vahanam & Sarvabhupala Vahanam"
+      },
+      {
+        "day": "Day 5 (Grand Highlight)",
+        "events": "Mohini Avataram & Srivari Garuda Seva (07:00 PM – Midnight with 300,000+ devotees)"
+      },
+      {
+        "day": "Day 6",
+        "events": "Hanumantha Vahanam, Swarna Ratham (Golden Chariot) & Gaja Vahanam"
+      },
+      {
+        "day": "Day 7",
+        "events": "Suryaprabha Vahanam & Chandraprabha Vahanam"
+      },
+      {
+        "day": "Day 8",
+        "events": "Rathotsavam (Maha Theru Wooden Chariot) & Ashwa Vahanam"
+      },
+      {
+        "day": "Day 9",
+        "events": "Chakrasnanam at Swami Pushkarini & Dhwajavarohanam"
+      }
+    ]
+  },
+  {
+    "festival_name": "Vaikuntha Ekadashi & Vaikuntha Dwara Darshanam",
+    "month": "Margashirsha / Pushya (December / January)",
+    "description": "Opening of the sacred inner Vaikuntha Dwaram circumambulating the sanctum sanctorum for 10 consecutive days.",
+    "importance": "Passing through the golden Vaikuntha Dwaram during these 10 days is believed to bestow moksha (liberation)."
+  },
+  {
+    "festival_name": "Rathasapthami (Surya Jayanti / Mini Brahmotsavam)",
+    "month": "Magha (January / February)",
+    "description": "One-day mega event where Lord Malayappa Swamy rides 7 different vahanas from 05:30 AM to 09:00 PM.",
+    "importance": "Honors the Sun God with non-stop vahana processions starting with Suryaprabha at dawn and concluding with Chandraprabha."
+  },
+  {
+    "festival_name": "Srivari Teppotsavam (Float Festival)",
+    "month": "Phalguna (March)",
+    "description": "5-day illuminated boat festival in the Swami Pushkarini holy tank during Phalguna Pournami.",
+    "importance": "Processional deities glide across the holy tank on decorated floats (Day 1: Lord Rama; Day 2: Lord Krishna; Days 3–5: Sri Malayappa Swamy)."
+  },
+  {
+    "festival_name": "Srivari Annual Vasanthotsavam",
+    "month": "Chaitra (March / April)",
+    "description": "3-day spring festival conducted at the Vasanta Mandapam starting on Trayodasi.",
+    "importance": "Includes Snapana Tirumanjanam (sacred bath with milk, honey, coconut water, and turmeric) to give cooling relief to the deities."
+  },
+  {
+    "festival_name": "Padmavathi Parinayam (Celestial Wedding)",
+    "month": "Vaisakha (May)",
+    "description": "3-day annual festival celebrated in the evening at Narayanagiri Gardens.",
+    "importance": "Re-enacts the celestial wedding of Lord Srinivasa and Goddess Padmavathi on Gaja, Ashwa, and Garuda vahanas."
+  },
+  {
+    "festival_name": "Abhidhyeyaka Abhishekam / Jyeshthabhishekam",
+    "month": "Jyeshtha (June)",
+    "description": "3-day ritual conducted during the Jyeshtha star constellation.",
+    "importance": "Special Abhishekam and protective golden armor (Kavacham) installation to safeguard ancient Utsava Murthis from wear and tear."
+  },
+  {
+    "festival_name": "Pushpa Pallaki",
+    "month": "Aani / Ashadha (July)",
+    "description": "Procession of the Lord on a palanquin beautifully decorated with tons of seasonal flowers.",
+    "importance": "Marks the end of the traditional Tamil financial year and commencement of new accounting ledgers."
+  },
+  {
+    "festival_name": "Srivari Pavithrotsavam (Festival of Purification)",
+    "month": "Sravana (August)",
+    "description": "3-day ritual starting on Ekadasi where holy silk threads (Pavithrams) are adorned on the deities.",
+    "importance": "Purifies the temple and seeks forgiveness for any unwitting lapses or errors committed in daily rituals throughout the year."
+  },
+  {
+    "festival_name": "Srivari Pushpa Yagam (Flower Festival)",
+    "month": "Krittika (October / November)",
+    "description": "Conducted after annual Brahmotsavams on the star Sravanam.",
+    "importance": "Devotees and priests offer tons of fresh aromatic flowers to Sri Malayappa Swamy to ward off natural calamities."
+  },
+  {
+    "festival_name": "Koil Alwar Tirumanjanam",
+    "month": "4 times a year (Precedes Ugadi, Anivara Asthanam, Brahmotsavam, and Vaikuntha Ekadasi)",
+    "description": "Traditional cleansing of the inner sanctum (Garbha Griha), walls, ceiling, and idols with an aromatic herbal disinfectant paste (Kicchili Gadda, camphor, sandalwood, turmeric).",
+    "importance": "Ensures complete spiritual and physical purification of the holy shrine before major festivals."
+  },
+  {
+    "festival_name": "Major Temple Asthanams & Seasonal Celebrations",
+    "description": "Special court assemblies (Asthanams) held inside Bangaru Vakili with traditional temple music and honors.",
+    "festivals_list": [
+      "Ugadi Asthanam (Telugu New Year)",
+      "Anivara Asthanam (July 16/17 - Annual Budgeting Day)",
+      "Sri Rama Navami Asthanam",
+      "Gokulashtami / Sri Krishna Janmashtami Asthanam",
+      "Deepavali Asthanam",
+      "Karthika Deepotsavam",
+      "Adhyayanotsavam (25-day Tamil Prabandha recitation during Dhanurmasam)"
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Yadadri Ghee Laddu (100g)",
+    "price": "₹30",
+    "description": "Famous pure ghee sweet laddu distributed at temple counters."
+  },
+  {
+    "name": "Kalyanotsavam Laddu (500g)",
+    "price": "₹150",
+    "description": "Large pure ghee laddu prasadam included with Kalyanotsavam ticket."
+  },
+  {
+    "name": "Tamarind Pulihora",
+    "price": "₹20",
+    "description": "Spicy tamarind rice offering."
+  },
+  {
+    "name": "Vada Prasadam",
+    "price": "₹20",
+    "description": "Sacred savory vada offering."
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "police": [
+    {
+      "name": "Dharmapuri Police Station",
+      "phone": "+91 87126 56824",
+      "details": "Station House Officer (SHO), Dharmapuri Police Station handling localized town jurisdiction."
+    },
+    {
+      "name": "Jagtial Police Control Room",
+      "phone": "+91 8724 223100",
+      "alternate_phone": "+91 87126 56811",
+      "details": "Jagtial District Police Control Room administrative communications desk."
+    }
+  ],
+  "medical": [
+    {
+      "name": "Community Health Center, Dharmapuri",
+      "phone": "+91 8724 273055",
+      "address": "Near Old Bus Stand, Jagtial-Dharmapuri Main Road, Dharmapuri, Jagtial District, Telangana 505425",
+      "details": "Primary government medical emergency facility situated ~1.5 km from the main temple arch gateway."
+    },
+    {
+      "name": "Fortune Sigma Multispeciality Hospital",
+      "phone": "+91 8724 230102",
+      "address": "H.No. 7-6-196, Beside LIC Office, Ashok Nagar, Gollapally Road, Jagtial, Telangana 505327",
+      "details": "Private multi-specialty trauma facility situated ~29.1 km from the temple site. Verified 24-hour critical care and ICU availability."
+    },
+    {
+      "name": "Anvi Shree Multi-Speciality Hospital",
+      "phone": "+91 87242 28842",
+      "address": "H.No. 7-6-190/1, Gollapally Road, Ashok Nagar, Jagtial, Telangana 505327",
+      "details": "Private medical infrastructure setup in Jagtial town district hub, located ~29.6 km away from Dharmapuri village."
+    }
+  ],
+  "helpline": [
+    {
+      "name": "National Emergency Number",
+      "phone": "112"
+    },
+    {
+      "name": "Police Emergency",
+      "phone": "100"
+    },
+    {
+      "name": "Ambulance",
+      "phone": "108"
+    },
+    {
+      "name": "Fire Emergency",
+      "phone": "101"
+    }
+  ]
+}

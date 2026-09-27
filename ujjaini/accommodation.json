@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Minerva Grand Hotel - Secunderabad",
+    "type": "3-star hotel",
+    "distance": "600 metres",
+    "price": "₹4,00 to ₹5000 per night",
+    "description": "Rating: 4.1 (8.4K reviews). Located approximately 550 metres from the temple along Mahankali Street. It features polished 3-star accommodations, a popular upscale restaurant, an on-site cafe, and an automated valet parking setup to completely bypass General Bazaar's congestion. Highlight Feature: Automated Valet Parking."
+  },
+  {
+    "name": "Grand Continent Secunderabad",
+    "type": "3-star hotel",
+    "distance": "850 metres",
+    "price": "₹3,500 to ₹4000 per night",
+    "description": "Rating: 4.0 (176 reviews). A polished Sarovar Portico affiliate property situated 280 metres away from the shrine. It provides premium amenities and highly modern rooms suited for family travelers"
+  },
+  {
+    "name": "WELKIN HOTEL",
+    "type": "3-star hotel",
+    "distance": "1.1 km",
+    "price": "~₹2,500",
+    "description": "Rating: 4.3 (1.1K reviews). A well-rated 3-star property located right near Paradise Circle. Rooms average around ₹2,164 per night and include complimentary Wi-Fi and free breakfast layout options"
+  },
+  {
+    "name": "Hotel Maya Deluxe",
+    "type": "Hotel",
+    "distance": "600 m",
+    "price": "₹900 to ₹1,500 per night",
+    "description": "Category: Budget. Highlight Feature: Highly rated room service"
+  }
+]

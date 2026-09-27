@@ -1,0 +1,45 @@
+{
+  "police": [
+    {
+      "name": "SR Nagar Police Station (Law & Order)",
+      "phone": "9490616619",
+      "address": "S.R. Nagar X Roads, opposite Govt. Urban Health Post, Hyderabad - 500038 (~1.0 km away)",
+      "details": "SHO SR Nagar Line."
+    },
+    {
+      "name": "SR Nagar Traffic Police Station",
+      "phone": "040-27852506",
+      "alt_phone": "8712660637",
+      "address": "621, 7-1-254, SR Nagar Main Rd, Srinivasa Nagar, Hyderabad"
+    }
+  ],
+  "medical": [
+    {
+      "name": "S. V. Hospital (Private)",
+      "phone": "040-65589530",
+      "address": "7-1-246/B/1, Road Opposite Yellamma Temple, Balkampet, Hyderabad",
+      "details": "Located directly opposite the temple. Open 24/7 Casualty."
+    },
+    {
+      "name": "ESIC Super Speciality Hospital (Government)",
+      "phone": "040-23701714",
+      "address": "ESIC Super Speciality Hospital, Essae Digitronics Road, Sanathnagar, Hyderabad (~2.0 km away)",
+      "details": "Open 24/7 Emergency Wing."
+    }
+  ],
+  "helpline": [
+    {
+      "name": "Emergency Police Helpline",
+      "phone": "100 / 112"
+    },
+    {
+      "name": "State Ambulance Service",
+      "phone": "108"
+    },
+    {
+      "name": "Sanathnagar Fire Station",
+      "phone": "101",
+      "address": "Sanathnagar Industrial Area (~3.0 km away)"
+    }
+  ]
+}

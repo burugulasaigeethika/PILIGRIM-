@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Kaadhale - Pure Vegetarian Restaurant",
+    "type": "Pure Vegetarian Restaurant",
+    "distance": "~1.5 km",
+    "cost": "₹200–400",
+    "speciality": "Located directly opposite the iconic Secunderabad Clock Tower. Famous for serving a signature unlimited Dakshina Bhojanam thali on traditional banana leaves for ₹200 to ₹400. Portion items like Guntur Karam Ghee Podi Idli and filter coffee are heavily praised. Rating: 4.6 (5.5K reviews)."
+  },
+  {
+    "name": "Flavours of Taj Mahal Hotel",
+    "type": "South Indian",
+    "distance": "650 m",
+    "cost": "₹200–400",
+    "speciality": "Situated within Krishna Complex on SD Road. It is a long-standing, trusted hub for traditional South Indian breakfasts and filter coffee. Rating: 4.0 (1.7K reviews)."
+  },
+  {
+    "name": "Paradise Biryani | Secunderabad",
+    "type": "Biryani",
+    "distance": "1.1 km",
+    "cost": "₹200–600",
+    "speciality": "The historic, original branch located near Paradise Circle. A must-visit for traditional Hyderabadi Dum Biryani and freshly cooked kebabs. Rating: 4.0 (104.2K reviews)."
+  },
+  {
+    "name": "Vivaha Bhojanambu",
+    "type": "Restaurant",
+    "distance": "2.1 km ",
+    "cost": "₹600 - ₹1,400",
+    "speciality": "Authentic regional Telugu pulavs"
+  }
+]

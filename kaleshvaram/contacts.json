@@ -1,0 +1,54 @@
+{
+  "address": "Sri Kaleshwara Mukteshwara Swamy Devasthanam, Kaleshwaram Village, Mahadevpur Mandal, Jayashankar Bhupalpally District, Telangana - 505504",
+  "phones": [
+    "+91 94910 17012",
+    "+91 94910 18012"
+  ],
+  "emails": [],
+  "website": "https://www.kaleshwaramtemple.com/",
+  "google_map": "https://www.google.com/maps/search/?api=1&query=Sri+Kaleshwara+Mukteshwara+Swamy+Temple+Kaleshwaram",
+  "google_embed_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3789.281!2d79.904026!3d18.811821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3350123456789%3A0x123456789abcdef!2sSri+Kaleshwara+Mukteshwara+Swamy+Temple%2C+Kaleshwaram!5e0!3m2!1sen!2sin!4v1528791090794",
+  "alternate_website": "",
+  "pincode": "505504",
+  "directory": {
+    "temple_office_executive_officer": "+91 94910 17012",
+    "temple_inquiry_desk": "+91 94910 18012"
+  },
+  "emergency_services": {
+    "hospitals": [
+      {
+        "name": "Kaleshwaram Primary Health Centre (PHC)",
+        "type": "Government PHC",
+        "address": "Kaleshwaram Village,505504",
+        "distance": "~ 400 m",
+        "contact_number": "",
+        "working_hours": ""
+      },
+      {
+        "name": "Government General Hospital Bhupalpally",
+        "type": "Government General Hospital",
+        "address": "Bhupalpally",
+        "distance": "~54.6 km away",
+        "contact_number": "08713-221300 or +91 97017 77907",
+        "working_hours": ""
+      }
+    ],
+    "ambulance_services": [
+      {
+        "name": "Medical Ambulance",
+        "contact": "108",
+        "description": "Universal Medical Ambulance Helpline"
+      }
+    ],
+    "police_and_security": [
+      {
+        "name": "Kaleshwaram Police Station",
+        "address": "Kaleshwaram police 3, Police station, Kaleshwaram, Telangana 505504",
+        "contact_numbers": {
+          "sho_phone": "+91 79010 97045",
+          "email": "sho-klrm-jsb@tspolice.gov.in"
+        }
+      }
+    ]
+  }
+}

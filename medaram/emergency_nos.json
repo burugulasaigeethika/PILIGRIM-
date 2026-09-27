@@ -1,0 +1,23 @@
+{
+  "police": "100 / 112",
+  "ambulance": "108",
+  "fire": "101",
+  "helpline": "08715-222047 (Mulugu District Collectorate Office)",
+  "temple_control_room": "08715-223257 / 08717-281247",
+  "integrated_command_control": "08715-222047",
+  "local_police_station": {
+    "tadvai_sho": "+91 87172 81247",
+    "tadvai_police_station": "+91 94910 68909",
+    "sp_office_mulugu": "08715-222047"
+  },
+  "she_teams_women_safety": "100 / +91 94407 95200",
+  "medical_emergency_desk": {
+    "central_jathara_hospital": "108",
+    "area_hospital_mulugu": "08715-222055"
+  },
+  "transport_enquiry": {
+    "tgsrtc_control_room": "08715-223257",
+    "tgsrtc_hanamkonda": "+91 99592 26148",
+    "tgsrtc_hyderabad_mgbs": "+91 99592 26160"
+  }
+}

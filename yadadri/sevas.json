@@ -1,0 +1,418 @@
+[
+    {
+        "name": "Special Entry",
+        "telugu_name": "ప్రత్యేక ప్రవేశం",
+        "price": "₹150",
+        "timing": "07:00 AM - 09:00 PM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=92",
+        "description": "Special entry darshan service for quicker access to the deity."
+    },
+    {
+        "name": "Break Darshanam",
+        "telugu_name": "బ్రేక్ దర్శన",
+        "price": "₹300",
+        "timing": "09:00 AM - 10:00 AM, 04:00 PM - 05:00 PM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=113",
+        "description": "VIP Break Darshan service available in daily morning and evening slots."
+    },
+    {
+        "name": "Nijabhishekam (For Couples)",
+        "telugu_name": "నిజాభిషేకం (దంపతులు)",
+        "price": "₹800",
+        "timing": "05:15 AM - 06:15 AM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=87",
+        "description": "For 2 persons. Reporting time: 04:45 AM. Reporting place: East Gopuram (₹150 Special Entry). Includes free 100gm Laddu."
+    },
+    {
+        "name": "Sahasra Namarchana Morning",
+        "telugu_name": "సహస్ర నామార్చన (ఉదయం)",
+        "price": "₹300",
+        "timing": "06:15 AM - 07:00 AM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=88",
+        "description": "For 1 person. Reporting time: 05:45 AM. Reporting place: East Gopuram (₹150 Special Entry)."
+    },
+    {
+        "name": "Sri Sudharshana Narasimha Maha Homam",
+        "telugu_name": "శ్రీ సుదర్శన నరసింహ మహా హోమం",
+        "price": "₹1,250",
+        "timing": "07:30 AM - 08:45 AM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=89",
+        "description": "For 2 persons. Reporting time: 07:00 AM. Reporting place: East Gopuram (₹150 Special Entry). Includes free 500gm Abhishekam Laddu, Sheshavastram and Kanuma."
+    },
+    {
+        "name": "Sri Swamy Vari Nitya Kalyanam",
+        "telugu_name": "శ్రీ స్వామి వారి నిత్య కల్యాణం",
+        "price": "₹1,500",
+        "timing": "09:45 AM - 11:30 AM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=90",
+        "description": "For 2 persons. Reporting time: 09:15 AM. Reporting place: East Gopuram (₹150 Special Entry). Includes free 500gm Abhishekam Laddu, 250gm Pulihora, Vada, Sheshavastram and Kanuma."
+    },
+    {
+        "name": "Shayanotsavam",
+        "telugu_name": "శయనోత్సవం",
+        "price": "₹100",
+        "timing": "09:30 PM - 09:45 PM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=91",
+        "description": "For 1 person. Reporting time: 09:00 PM. Reporting place: East Gopuram (₹150 Special Entry)."
+    },
+    {
+        "name": "Nijabhishekam (1 Person)",
+        "telugu_name": "నిజాభిషేకం (ఒకరు)",
+        "price": "₹400",
+        "timing": "05:15 AM - 06:15 AM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=94",
+        "description": "For 1 person. Reporting time: 04:45 AM. Reporting place: East Gopuram (₹150 Special Entry)."
+    },
+    {
+        "name": "Jodu Sevalu",
+        "telugu_name": "జోడు సేవలు",
+        "price": "₹700",
+        "timing": "05:30 PM - 06:30 PM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=96",
+        "description": "For 2 persons. Reporting time: 05:00 PM. Reporting place: East Gopuram (₹150 Special Entry)."
+    },
+    {
+        "name": "Suvarna Pushparchana",
+        "telugu_name": "సువర్ణ పుష్పార్చన",
+        "price": "₹600",
+        "timing": "07:00 AM - 09:00 PM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=97",
+        "description": "For 2 persons. Reporting time: 07:00 AM onwards. Includes free 100gm Laddu, Sheshavastram and Kanuma."
+    },
+    {
+        "name": "Suprabhatha Darshanam",
+        "telugu_name": "సుప్రభాత దర్శనం",
+        "price": "₹100",
+        "timing": "03:30 AM - 04:00 AM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=98",
+        "description": "For 1 person. Reporting time: 03:00 AM. Reporting place: East Gopuram (₹150 Special Entry)."
+    },
+    {
+        "name": "Darbar Seva",
+        "telugu_name": "దర్బార్ సేవ",
+        "price": "₹516",
+        "timing": "06:30 PM - 07:00 PM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=100",
+        "description": "For 2 persons. Reporting time: 06:00 PM. Reporting place: East Gopuram (₹150 Special Entry). Includes free 100gm Laddu."
+    },
+    {
+        "name": "Sataghatabhishekam (Swathi Nakshtram only)",
+        "telugu_name": "శఠఘటాభిషేకం",
+        "price": "₹500",
+        "timing": "05:15 AM - 07:15 AM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=101",
+        "description": "Available only on Swathi Nakshatram. For 1 person. Reporting time: 04:45 AM. Reporting place: East Gopuram (₹150 Special Entry)."
+    },
+    {
+        "name": "Sahasra Namarchana Evening",
+        "telugu_name": "సహస్ర నామార్చన (సాయంత్రం)",
+        "price": "₹300",
+        "timing": "07:45 PM - 08:15 PM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=128",
+        "description": "For 1 person. Reporting time: 07:15 PM. Reporting place: East Gopuram (₹150 Special Entry)."
+    },
+    {
+        "name": "Annaprasana",
+        "telugu_name": "అన్నప్రాసన",
+        "price": "₹1,000",
+        "timing": "10:00 AM - 02:30 PM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=129",
+        "description": "For 2 persons. Reporting time: 09:30 AM onwards. Reporting place: East Gopuram (₹150 Special Entry)."
+    },
+    {
+        "name": "Sri Swamy Vari Laksha Pushparchana (On every Ekadashi day)",
+        "telugu_name": "శ్రీ స్వామి వారి లక్ష పుష్పార్చన",
+        "price": "₹2,500",
+        "timing": "09:00 AM - 10:30 AM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=134",
+        "description": "Available on every Ekadashi day. For 2 persons. Reporting time: 08:30 AM. Includes 500gm Abhishekam Laddu, 250gm Pulihora, Vada, Sheshavastram and Kanuma."
+    },
+    {
+        "name": "Veda Ashirvachanam",
+        "telugu_name": "వేద ఆశీర్వచనం",
+        "price": "₹600",
+        "timing": "07:00 AM - 09:00 PM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=135",
+        "description": "For 2 persons. Reporting time: 07:00 AM onwards. Includes free 100gm Laddu, Sheshavastram and Kanuma."
+    },
+    {
+        "name": "Ammavari Unjali Seva (Every Friday)",
+        "telugu_name": "అమ్మవారి ఉంజలి సేవ",
+        "price": "₹1,000",
+        "timing": "05:00 PM - 06:00 PM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=144",
+        "description": "Available every Friday. For 2 persons. Reporting time: 04:30 PM. Reporting place: East Gopuram. Includes free 500gm Abhishekam Laddu."
+    },
+    {
+        "name": "Sri Swamy Vaari Thiru Kalyana Mahotsavam",
+        "telugu_name": "శ్రీ స్వామి వారి తిరు కళ్యాణ మహోత్సవం",
+        "price": "₹3,000",
+        "timing": "08:45 PM - 10:45 PM",
+        "booking_url": "",
+        "description": "For 2 persons. Reporting time: 07:45 PM. Reporting place: Thiru Kalyanam Entrance. Includes 500gm Abhishekam Laddu, Vada, Sheshavastram and Kanuma."
+    },
+    {
+        "name": "Ashtotharam",
+        "telugu_name": "అష్టోత్తరం",
+        "price": "₹200",
+        "timing": "07:00 AM - 09:00 PM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=188",
+        "description": "For 2 persons. Reporting place: Inside temple."
+    },
+    {
+        "name": "Sri Lakshmi Narasimha (Homamu) Havanamu (Jayanthi Special)",
+        "telugu_name": "శ్రీ లక్ష్మీ నరసింహ హోమం",
+        "price": "₹2,000",
+        "timing": "09:00 AM - 11:30 AM and 06:30 PM - 09:00 PM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=189",
+        "description": "Jayanthi Special. For 2 persons. Reporting time: 08:30 AM or 06:00 PM. Includes 500gm Abhishekam Laddu, Sheshavastram and Kanuma."
+    },
+    {
+        "name": "Laksha Kunkumarchana (Jayanthi Special)",
+        "telugu_name": "లక్ష కుంకుమార్చన",
+        "price": "₹2,000",
+        "timing": "09:00 AM - 10:30 AM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=190",
+        "description": "Jayanthi Special. For 2 persons. Reporting time: 08:30 AM. Includes 500gm Abhishekam Laddu, Sheshavastram and Kanuma."
+    },
+    {
+        "name": "Laksha Pushparchana (Jayanthi Special)",
+        "telugu_name": "లక్ష పుష్పార్చన",
+        "price": "₹2,000",
+        "timing": "09:00 AM - 10:30 AM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=191",
+        "description": "Jayanthi Special. For 2 persons. Reporting time: 08:30 AM. Includes 500gm Abhishekam Laddu, Sheshavastram and Kanuma."
+    },
+    {
+        "name": "Rudrabhishekam",
+        "telugu_name": "రుద్రాభిషేకం",
+        "price": "₹300",
+        "timing": "07:30 AM - 08:00 AM and 11:30 AM - 12:00 PM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=160",
+        "description": "For 2 persons. Reporting times: 07:00 AM and 11:00 AM. Reporting place: Shivalayam."
+    },
+    {
+        "name": "Ashtotharam (Shivalayam)",
+        "telugu_name": "అష్టోత్తరం (శివాలయం)",
+        "price": "₹200",
+        "timing": "07:30 AM - 12:30 PM and 01:00 PM - 08:30 PM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=161",
+        "description": "For 2 persons. Reporting time: 07:30 AM onwards and 01:00 PM onwards. Reporting place: Shivalayam."
+    },
+    {
+        "name": "Sri Swamy Vaari Kalyanam (Shivalayam)",
+        "telugu_name": "శ్రీ స్వామి వారి కళ్యాణం (శివాలయం)",
+        "price": "₹500",
+        "timing": "11:30 AM - 12:30 PM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=162",
+        "description": "For 2 persons. Reporting time: 11:00 AM. Reporting place: Shivalayam."
+    },
+    {
+        "name": "Sri Swamy Vaari Uuregimpu Seva",
+        "telugu_name": "శ్రీ స్వామి వారి ఊరేగింపు సేవ",
+        "price": "₹250",
+        "timing": "05:30 PM - 06:00 PM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=163",
+        "description": "For 2 persons. Reporting time: 05:00 PM. Reporting place: Shivalayam."
+    },
+    {
+        "name": "Chandi Homam (Every Friday)",
+        "telugu_name": "చండీ హోమం",
+        "price": "₹1,250",
+        "timing": "09:00 AM - 11:15 AM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=164",
+        "description": "Available every Friday. For 2 persons. Reporting time: 08:30 AM. Reporting place: Shivalayam."
+    },
+    {
+        "name": "Ganapathi Homam (Only on Sankata Chaturdashi)",
+        "telugu_name": "గణపతి హోమం",
+        "price": "₹1,500",
+        "timing": "09:00 AM - 10:00 AM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=165",
+        "description": "Available only on Sankata Chaturdashi. For 2 persons. Reporting time: 08:30 AM. Reporting place: Shivalayam."
+    },
+    {
+        "name": "Rudra Homam",
+        "telugu_name": "రుద్ర హోమం",
+        "price": "₹1,000",
+        "timing": "09:00 AM - 10:00 AM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=166",
+        "description": "For 2 persons. Reporting time: 08:30 AM. Reporting place: Shivalayam."
+    },
+    {
+        "name": "Shani Thrayodashi",
+        "telugu_name": "శని త్రయోదశి",
+        "price": "₹300",
+        "timing": "10:30 AM - 11:00 AM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=167",
+        "description": "For 2 persons. Reporting time: 10:00 AM. Reporting place: Shivalayam."
+    },
+    {
+        "name": "Rahu Kethu Puja (Only On Tuesday)",
+        "telugu_name": "రాహు కేతు పూజ",
+        "price": "₹300",
+        "timing": "03:00 PM - 03:30 PM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=168",
+        "description": "Available only on Tuesday. For 1 person. Reporting time: 02:30 PM. Reporting place: Shivalayam."
+    },
+    {
+        "name": "Navagraha Puja",
+        "telugu_name": "నవగ్రహ పూజ",
+        "price": "₹300",
+        "timing": "10:30 AM - 11:00 AM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=169",
+        "description": "For 2 persons. Reporting time: 10:00 AM. Reporting place: Shivalayam."
+    },
+    {
+        "name": "Rudrabhishekam (Maasa Shivarathri)",
+        "telugu_name": "రుద్రాభిషేకం (మాస శివరాత్రి)",
+        "price": "₹300",
+        "timing": "07:00 PM - 08:30 PM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=170",
+        "description": "Available only on Maasa Shivarathri. For 1 person. Reporting time: 06:30 PM. Reporting place: Shivalayam."
+    },
+    {
+        "name": "Sparsha Darshanam",
+        "telugu_name": "స్పర్శ దర్శనం",
+        "price": "₹500",
+        "timing": "08:30 AM - 11:30 AM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=193",
+        "description": "For 2 persons. Reporting time: 07:30 AM onwards. Reporting place: Shivalayam."
+    },
+    {
+        "name": "Sparsha Prathyaksha Abhishekam (Only On Maasa Shivarathri)",
+        "telugu_name": "స్పర్శ ప్రత్యక్ష అభిషేకం",
+        "price": "₹500",
+        "timing": "07:00 PM - 08:30 PM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=194",
+        "description": "Available only on Maasa Shivarathri. For 2 persons. Reporting time: 06:30 PM onwards. Reporting place: Shivalayam."
+    },
+    {
+        "name": "Sri Satya Narayana Swamy Vratham",
+        "telugu_name": "శ్రీ సత్యనారాయణ స్వామి వ్రతం",
+        "price": "₹1,000",
+        "timing": "4 batches: 07:30 AM, 10:00 AM, 12:00 PM, 04:00 PM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=102",
+        "description": "For 2 persons (Couple). Reporting time: One hour before. Reporting place: Downhills Vratamandapam."
+    },
+    {
+        "name": "Scooter Puja",
+        "telugu_name": "స్కూటర్ పూజ",
+        "price": "₹300",
+        "timing": "07:00 AM - 07:00 PM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=103",
+        "description": "For 2 persons. Reporting place: Downhills Vahanapujala Counter."
+    },
+    {
+        "name": "Auto Puja",
+        "telugu_name": "ఆటో పూజ",
+        "price": "₹400",
+        "timing": "07:00 AM - 07:00 PM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=104",
+        "description": "For 5 persons. Reporting place: Downhills Vahanapujala Counter."
+    },
+    {
+        "name": "Car Puja",
+        "telugu_name": "కారు పూజ",
+        "price": "₹600",
+        "timing": "07:00 AM - 07:00 PM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=105",
+        "description": "For 5 persons. Reporting place: Downhills Vahanapujala Counter."
+    },
+    {
+        "name": "Bus/Lorry/Tractor Puja",
+        "telugu_name": "బస్/లారీ/ట్రాక్టర్ పూజ",
+        "price": "₹1,000",
+        "timing": "07:00 AM - 07:00 PM",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=106",
+        "description": "For 5 persons. Reporting place: Downhills Vahanapujala Counter."
+    },
+    {
+        "name": "Sri Swamy Vaari Saswata Kalyanam",
+        "telugu_name": "శ్రీ స్వామి వారి శాశ్వత కల్యాణం",
+        "price": "₹10,000",
+        "timing": "Yearly One Day",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=107",
+        "description": "Saswata Puja Scheme for Sri Swamy Vaari Kalyanam, available yearly for one day."
+    },
+    {
+        "name": "Sri Swamy Vaari Saswata Nitya Nijabhishekam",
+        "telugu_name": "శ్రీ స్వామి వారి శాశ్వత నిత్య నిజాభిషేకం",
+        "price": "₹15,000",
+        "timing": "Everyday",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=108",
+        "description": "Saswata Puja Scheme for Nitya Nijabhishekam."
+    },
+    {
+        "name": "Sri Swamy Vaari Sashwatha Brahmotsavam",
+        "telugu_name": "శ్రీ స్వామి వారి శాశ్వత బ్రహ్మోత్సవం",
+        "price": "₹15,000",
+        "timing": "Yearly One Day",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=136",
+        "description": "Sashwatha Brahmotsavam scheme, available yearly for one day."
+    },
+    {
+        "name": "Sri Swamy Vaari Sashwatha Sahasra Namarchana",
+        "telugu_name": "శ్రీ స్వామి వారి శాశ్వత సహస్ర నామార్చన",
+        "price": "₹2,500",
+        "timing": "Yearly One Day",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=137",
+        "description": "Sashwatha Sahasra Namarchana scheme, available yearly for one day."
+    },
+    {
+        "name": "Sri Andal Ammavari Sashwatha Abhishekam",
+        "telugu_name": "శ్రీ ఆండాళ్ అమ్మవారి శాశ్వత అభిషేకం",
+        "price": "₹2,500",
+        "timing": "Yearly One Friday",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=138",
+        "description": "Sashwatha Abhishekam scheme for Sri Andal Ammavari."
+    },
+    {
+        "name": "Sri Swamy Vaari Saswata Nijabhishekam",
+        "telugu_name": "శ్రీ స్వామి వారి శాశ్వత నిజాభిషేకం",
+        "price": "₹2,500",
+        "timing": "Yearly One Day - Except Swathi Nakshatram",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=154",
+        "description": "Available yearly for one day, except Swathi Nakshatram."
+    },
+    {
+        "name": "Sri Anjaneya Swamy Vari Saswatha Aaku Puja",
+        "telugu_name": "శ్రీ ఆంజనేయ స్వామి వారి శాశ్వత ఆకు పూజ",
+        "price": "₹5,000",
+        "timing": "Yearly One Tuesday",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=155",
+        "description": "Saswatha Aaku Puja scheme for Sri Anjaneya Swamy Vari."
+    },
+    {
+        "name": "Sri Swamy Vaari Saswatha Nithya Archana",
+        "telugu_name": "శ్రీ స్వామి వారి శాశ్వత నిత్య అర్చన",
+        "price": "₹15,000",
+        "timing": "Every Day",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=156",
+        "description": "Saswatha Nithya Archana scheme for Sri Swamy Vaari."
+    },
+    {
+        "name": "Sri Laxmi Ammavari Saswatha Nithya Archana",
+        "telugu_name": "శ్రీ లక్ష్మీ అమ్మవారి శాశ్వత నిత్య అర్చన",
+        "price": "₹15,000",
+        "timing": "Nitya",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=157",
+        "description": "Saswatha Nithya Archana scheme for Sri Laxmi Ammavari."
+    },
+    {
+        "name": "Sri Anjaneya Swamy Vaari Saswatha Nithya Archana",
+        "telugu_name": "శ్రీ ఆంజనేయ స్వామి వారి శాశ్వత నిత్య అర్చన",
+        "price": "₹15,000",
+        "timing": "Nitya",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=158",
+        "description": "Saswatha Nithya Archana scheme for Sri Anjaneya Swamy Vaari."
+    },
+    {
+        "name": "Sri Andal Ammavari Saswatha Nithya Archana",
+        "telugu_name": "శ్రీ ఆండాళ్ అమ్మవారి శాశ్వత నిత్య అర్చన",
+        "price": "₹15,000",
+        "timing": "Every Friday",
+        "booking_url": "https://yadagiriguttatemple.telangana.gov.in/bookings/index.php?ssid=159",
+        "description": "Saswatha Nithya Archana scheme for Sri Andal Ammavari."
+    }
+]

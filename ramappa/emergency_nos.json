@@ -1,0 +1,41 @@
+{
+  "police": [
+    {
+      "name": "Venkatapur Police Station (Closest)",
+      "phone": "+91 87126 56743",
+      "alt_phone": "+91 94407 95238",
+      "address": "Mulugu-Ramappa Road, Venkatapur Mandal (~5 km away)",
+      "details": "Circle Inspector Line. Manages law enforcement, visitor safety, and traffic routing across Palampet heritage precinct."
+    },
+    {
+      "name": "Mulugu District Police Headquarters",
+      "phone": "+91 87126 56700",
+      "address": "National Highway 163, Mulugu (~15 km away)",
+      "details": "District Control Room."
+    }
+  ],
+  "medical": [
+    {
+      "name": "Government Primary Health Centre (PHC), Venkatapur",
+      "address": "Venkatapur Village (6 km km away)",
+      "details": "Provides baseline outpatient services, immediate stabilization, heatstroke care, and essential first-aid treatment."
+    },
+    {
+      "name": "Government Area Hospital, Mulugu (Best for Emergencies)",
+      "phone": "+91 94933 17615",
+      "address": "National Highway 163, Mulugu Town (~15 km away)",
+      "details": "Open 24 hours. Outfitted with emergency facilities, surgical wings, and active ambulance support lines."
+    }
+  ],
+  "helpline": [
+    {
+      "name": "Unified Emergency Helpline",
+      "phone": "100 / 112"
+    },
+    {
+      "name": "Free State Ambulance Network",
+      "phone": "108",
+      "details": "Public emergency pickup and transit directly to Mulugu or Warangal medical centers."
+    }
+  ]
+}

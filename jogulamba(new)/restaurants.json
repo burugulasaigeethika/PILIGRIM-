@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Varahi Hotel",
+    "cuisine": "South Indian Tiffins & Meals",
+    "type": "South Indian Tiffins & Meals",
+    "distance": "~ 72 m",
+    "pricing": "₹40 - ₹120",
+    "timings": "06:00 AM – 09:30 PM",
+    "address": "Varahi Tiffins, Plot No.265, Vasavi Colony Rd, beside TNR Apartment, Kothapet, Hyderabad, Telangana 500102"
+  },
+  {
+    "name": "Padma Hotel & Lodge",
+    "cuisine": "South Indian / Local Meals",
+    "type": "South Indian / Local Meals",
+    "distance": "~ 270 m",
+    "pricing": "₹1–₹200",
+    "timings": "07:00 AM – 09:00 PM",
+    "address": "Padma Hotel & lodge, Alampur (P), Telangana 509152"
+  },
+  {
+    "name": "Raviteja Aryavysya Bhojanashaala",
+    "cuisine": "Vegetarian / Traditional Meals",
+    "type": "Vegetarian / Traditional Meals",
+    "distance": "~ 1.2 km",
+    "pricing": "₹1–₹200",
+    "timings": "11:30 AM – 03:30 PM, 07:00 PM – 09:30 PM",
+    "address": "Raviteja Aryavysya Bhojanashaala, beside BRS Function Hall, Alampur (P), Telangana 509152"
+  },
+  {
+    "name": "Srija Mess",
+    "cuisine": "Local Meals / Vegetarian-friendly",
+    "type": "Local Meals / Vegetarian-friendly",
+    "distance": "~1.3 km",
+    "pricing": "₹1–₹200",
+    "timings": "06:30 AM – 08:30 PM",
+    "address": "Srija mess, Sreeja mess, Alampur Rd, near bsnl office, Alampur (P), Telangana 509152"
+  },
+  {
+    "name": "Anitha Hotel",
+    "cuisine": "Tiffins & Local Meals",
+    "type": "Tiffins & Local Meals",
+    "distance": "~ 450 m",
+    "pricing": "₹1–₹200",
+    "timings": "06:00 AM – 09:00 PM",
+    "address": "Anitha Hotel, Alampur (P), Telangana 509152"
+  }
+]

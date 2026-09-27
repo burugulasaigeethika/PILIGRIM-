@@ -1,0 +1,56 @@
+{
+  "facilities": [
+    {
+      "name": "Annadanam (Free Meals)",
+      "description": "The temple provides free lunch daily to all visiting pilgrims from 11:30 AM to 2:30 PM at the Annadanam hall."
+    },
+    {
+      "name": "Devasthanam Satralu",
+      "description": "Clean and budget-friendly guest houses managed by the temple administration."
+    },
+  {
+      "name": "Haritha Hotel Edupayala",
+      "description": "Telangana Tourism (TSTDC) operates AC and Non-AC guest rooms and cottages near the temple site."
+    },
+    {
+      "name": "Local Stalls",
+      "description": "Small eateries and tiffin centers serving South Indian meals are located near the guest houses."
+    },
+    {
+      "name": "Kalyana Katta (Tonsure)",
+      "description": "Dedicated areas located near the river ghats for traditional hair offerings."
+    },
+    {
+      "name": "Vehicle Puja",
+      "description": "Performed at the temple entrance for safety and blessings."
+    },
+    {
+      "name": "Pure Vegetarian Dining Network",
+      "description": "At the foothills, several local family-run eateries and community kitchens serve traditional, pure vegetarian meals (without onion and garlic/Sattvic options) tailored specifically for devotees observing fasts or performing sacred rituals."
+    },
+    {
+      "name": "Public Toilets",
+      "description": "Standard public toilet facilities are provided by the temple board near the main entrance gates, kalyana katta, and near the bathing ghats."
+    },
+    {
+      "name": "Drinking Water Facilities",
+      "description": "Reverse Osmosis (RO) purified drinking water stations are installed at key points, including the queue lines, temple entrance, and Devasthanam Satralu."
+    },
+    {
+      "name": "Parking Areas",
+      "description": "Large open-air parking lots are maintained by the temple administration near the main entrance. Separate parking fees apply during major festivals (₹50 for two-wheelers, ₹200 for cars/four-wheelers)."
+    },
+    {
+      "name": "First-Aid Counter / Medical Emergencies",
+      "description": "A basic first-aid counter is active in the temple administrative block during general darshan hours."
+    },
+    {
+      "name": "Designated Safe Bathing Ghats",
+      "description": "Equipped with security chains/railings."
+    },
+    {
+      "name": "Temple Control Room / Public Address System",
+      "description": "Announcements can be made from the Temple Control Room/Administrative Office near the main entrance."
+    }
+  ]
+}

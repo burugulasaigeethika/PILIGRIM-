@@ -1,0 +1,44 @@
+[
+  {
+    "item": "Bangaram (Jaggery)",
+    "price": "₹40–60/kg (At official local counters)",
+    "timings": "24/7 during Jathara days",
+    "location": "Offered directly on the Gaddelu (Platform)",
+    "description": "Primary offering representing pure gold. Devotees offer Jaggery equal to or exceeding their body weight (Tula Bhara) in fulfillment of vows."
+  },
+  {
+    "item": "Pasupu & Kumkuma (Turmeric & Vermilion)",
+    "price": "Free / Minimal Nominal Packets",
+    "timings": "During Darshan hours",
+    "location": "Gaddelu Platform & Chilakala Gutta",
+    "description": "Sacred yellow and red powders offered to Goddesses Sammakka & Saralamma; small portions are collected back by devotees as blessed Prasadam."
+  },
+  {
+    "item": "Vodi Biyyam & Saare Sets",
+    "price": "₹150–500 (Varies by saree material)",
+    "timings": "During Darshan hours",
+    "location": "Kannepally Temple & Main Gaddelu",
+    "description": "Traditional maternal offering set comprising raw rice, coconuts, blousestuffs/silk sarees, and dried dates presented to the mother-daughter deities."
+  },
+  {
+    "item": "Doorstep Prasadam Kit (TGSRTC / Postal Service)",
+    "price": "₹299 per kit (Doorstep delivery)",
+    "timings": "Pre-booking & Post-Jathara delivery",
+    "location": "Delivered to home via TGSRTC Logistics / MeeSeva / Postal Dept.",
+    "description": "Official Endowments Dept. kit containing sample Bangaram (Jaggery), Pasupu, Kumkuma, and a framed sacred photo of Ammavarlu for devotees unable to visit."
+  },
+  {
+    "item": "Online Tula Bhara Jaggery Service",
+    "price": "₹60/kg + Postal & Service Charges",
+    "timings": "Online Pre-booking via T-App Folio / MeeSeva",
+    "location": "Offered virtually on behalf of the devotee at Gaddelu",
+    "description": "Allows non-visiting devotees to pay for exact weight-equivalent Jaggery, which is offered at Gaddelu by temple staff, with blessed Prasadam posted to their address."
+  },
+  {
+    "item": "Kannullu & Silver/Gold Replicas",
+    "price": "₹50–500 (Based on metal)",
+    "timings": "During Darshan hours",
+    "location": "Offered directly at Gaddelu",
+    "description": "Small embossed metal silver or brass eye replicas offered by devotees seeking healing from eye ailments or health issues."
+  }
+]

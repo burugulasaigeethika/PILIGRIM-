@@ -1,0 +1,121 @@
+[
+  {
+    "id": "AGG_RIVER_BANK_ALL",
+    "question": "List all the temples that have river bank",
+    "type": "cross_temple_aggregation",
+    "status": "PASSED",
+    "latency_ms": 12.31,
+    "retrieved_chunks": 11,
+    "sources": [
+      "ahobilam/river_bank.json",
+      "badrachalam/river_bank.json",
+      "basara/river_bank.json",
+      "dharmapuri/river_bank.json",
+      "edupayal/river_bank.json",
+      "jogulamba(new)/river_bank.json",
+      "kaleshvaram/river_bank.json",
+      "medaram/river_bank.json",
+      "srisaila/river_bank.json",
+      "veera satyanarayana/river_bank.json",
+      "vemulavada/river_bank.json"
+    ],
+    "answer": "Based on the temple knowledge base, the following **11 temples** have confirmed **River Bank** information:\n\n1. **Ahobilam** \u2014 River: Bhavanashini River (Pavanasini River) (Ghat: Raktha Kundam)\n2. **Badrachalam** \u2014 River: River Godavari (Dakshina Vahini) (Ghat: Godavari Bathing Ghats & Kalyana Katta)\n3. **Basara** \u2014 River: River Godavari (Ghat: Basara Godavari River Bathing Ghat)\n4. **Dharmapuri** \u2014 River: Godavari (Dakshina Vahini) (Ghat: Dharmapuri Godavari River Bathing Ghat)\n5. **Edupayal** \u2014 River: Manjeera River (Edu Payalu Confluence) (Ghat: Edupayala Seven Streams River Ghats)\n6. **Jogulamba(New)** \u2014 River: Tungabhadra River & Krishna River (Sacred Confluence / Tungabhadra\u2013Krishna Sangam) (Ghat: Jogulamba River Ghat)\n7. **Kaleshvaram** \u2014 River: Dakshina Triveni Sangamam (River Godavari, River Pranahita, and subterranean River Saraswati) (Ghat: Triveni Sangam Bathing Ghats)\n8. **Medaram** \u2014 River: Jampanna Vagu (Ghat: Jampanna Vagu Main Bathing Ghats)\n9. **Srisaila** \u2014 River: Krishna River (Patalaganga) (Ghat: Patalaganga Bathing Ghat)\n10. **Veera Satyanarayana** \u2014 River: Pampa River (Ghat: Pampa River Foothills Boating & Ghat Point)\n11. **Vemulavada** \u2014 River: Mulavagu stream (tributary of Godavari River) & Dharma Gundam (Pushkarni) / Gudicheruvu (Ghat: Dharma Gundam Bathing Steps)",
+    "notes": []
+  },
+  {
+    "id": "AGG_RIVER_WHICH_TEMPLES",
+    "question": "Which temples have a river?",
+    "type": "cross_temple_aggregation",
+    "status": "PASSED",
+    "latency_ms": 2.18,
+    "retrieved_chunks": 11,
+    "sources": [
+      "ahobilam/river_bank.json",
+      "badrachalam/river_bank.json",
+      "basara/river_bank.json",
+      "dharmapuri/river_bank.json",
+      "edupayal/river_bank.json",
+      "jogulamba(new)/river_bank.json",
+      "kaleshvaram/river_bank.json",
+      "medaram/river_bank.json",
+      "srisaila/river_bank.json",
+      "veera satyanarayana/river_bank.json",
+      "vemulavada/river_bank.json"
+    ],
+    "answer": "Based on the temple knowledge base, the following **11 temples** have confirmed **River Bank** information:\n\n1. **Ahobilam** \u2014 River: Bhavanashini River (Pavanasini River) (Ghat: Raktha Kundam)\n2. **Badrachalam** \u2014 River: River Godavari (Dakshina Vahini) (Ghat: Godavari Bathing Ghats & Kalyana Katta)\n3. **Basara** \u2014 River: River Godavari (Ghat: Basara Godavari River Bathing Ghat)\n4. **Dharmapuri** \u2014 River: Godavari (Dakshina Vahini) (Ghat: Dharmapuri Godavari River Bathing Ghat)\n5. **Edupayal** \u2014 River: Manjeera River (Edu Payalu Confluence) (Ghat: Edupayala Seven Streams River Ghats)\n6. **Jogulamba(New)** \u2014 River: Tungabhadra River & Krishna River (Sacred Confluence / Tungabhadra\u2013Krishna Sangam) (Ghat: Jogulamba River Ghat)\n7. **Kaleshvaram** \u2014 River: Dakshina Triveni Sangamam (River Godavari, River Pranahita, and subterranean River Saraswati) (Ghat: Triveni Sangam Bathing Ghats)\n8. **Medaram** \u2014 River: Jampanna Vagu (Ghat: Jampanna Vagu Main Bathing Ghats)\n9. **Srisaila** \u2014 River: Krishna River (Patalaganga) (Ghat: Patalaganga Bathing Ghat)\n10. **Veera Satyanarayana** \u2014 River: Pampa River (Ghat: Pampa River Foothills Boating & Ghat Point)\n11. **Vemulavada** \u2014 River: Mulavagu stream (tributary of Godavari River) & Dharma Gundam (Pushkarni) / Gudicheruvu (Ghat: Dharma Gundam Bathing Steps)",
+    "notes": []
+  },
+  {
+    "id": "AGG_ACCOMMODATION_ALL",
+    "question": "List all temples with accommodation",
+    "type": "cross_temple_aggregation",
+    "status": "PASSED",
+    "latency_ms": 2.1,
+    "retrieved_chunks": 20,
+    "sources": [
+      "ahobilam/accommodation.json",
+      "badrachalam/accommodation.json",
+      "balkampet/accommodation.json",
+      "basara/accommodation.json",
+      "birla mandir/accommodation.json",
+      "chilkur/accommodation.json",
+      "dharmapuri/accommodation.json",
+      "edupayal/accommodation.json",
+      "jogulamba(new)/accommodation.json",
+      "kaleshvaram/accommodation.json",
+      "karmanghat/accommodation.json",
+      "medaram/accommodation.json",
+      "ramappa/accommodation.json",
+      "srisaila/accommodation.json",
+      "thousand pillar/accommodation.json",
+      "ttd/accommodation.json",
+      "ujjaini/accommodation.json",
+      "veera satyanarayana/accommodation.json",
+      "vemulavada/accommodation.json",
+      "yadadri/accommodation.json"
+    ],
+    "answer": "Based on the temple knowledge base, the following **20 temples** have confirmed **Accommodation** information:\n\n1. **Ahobilam** \u2014 Offers 4 accommodation options\n2. **Badrachalam** \u2014 Offers 7 accommodation options\n3. **Balkampet** \u2014 Offers 3 accommodation options\n4. **Basara** \u2014 Offers 4 accommodation options\n5. **Birla Mandir** \u2014 Offers 2 accommodation options\n6. **Chilkur** \u2014 Offers 4 accommodation options\n7. **Dharmapuri** \u2014 Offers 1 accommodation options\n8. **Edupayal** \u2014 Offers 6 accommodation options\n9. **Jogulamba(New)** \u2014 Offers 6 accommodation options\n10. **Kaleshvaram** \u2014 Offers 4 accommodation options\n11. **Karmanghat** \u2014 Offers 7 accommodation options\n12. **Medaram** \u2014 Offers 7 accommodation options\n13. **Ramappa** \u2014 Offers 5 accommodation options\n14. **Srisaila** \u2014 Offers 4 accommodation options\n15. **Thousand Pillar** \u2014 Offers 9 accommodation options\n16. **Ttd** \u2014 Offers 48 accommodation options\n17. **Ujjaini** \u2014 Offers 4 accommodation options\n18. **Veera Satyanarayana** \u2014 Offers 12 accommodation options\n19. **Vemulavada** \u2014 Offers 5 accommodation options\n20. **Yadadri** \u2014 Offers 8 accommodation options",
+    "notes": []
+  },
+  {
+    "id": "SPECIFIC_TEMPLE_RIVER_DHARMAPURI",
+    "question": "Does Dharmapuri have a river bank?",
+    "type": "specific_temple_normal",
+    "status": "PASSED",
+    "latency_ms": 6229.39,
+    "retrieved_chunks": 3,
+    "sources": [
+      "dharmapuri/river_bank.json"
+    ],
+    "answer": "Yes, Dharmapuri has a river bank.",
+    "notes": []
+  },
+  {
+    "id": "NORMAL_TARGETED_PRICE",
+    "question": "What is the price of Abhishekam in Dharmapuri?",
+    "type": "normal_targeted",
+    "status": "PASSED",
+    "latency_ms": 3676.75,
+    "retrieved_chunks": 3,
+    "sources": [
+      "dharmapuri/faq.json",
+      "dharmapuri/prasadam.json",
+      "dharmapuri/sevas.json"
+    ],
+    "answer": "The price of Abhishekam in Dharmapuri is \u20b9500.",
+    "notes": []
+  },
+  {
+    "id": "SINGLE_TEMPLE_COMPLETE_LIST",
+    "question": "What are all the sevas in Dharmapuri?",
+    "type": "single_temple_complete_list",
+    "status": "PASSED",
+    "latency_ms": 44465.35,
+    "retrieved_chunks": 1,
+    "sources": [
+      "dharmapuri/sevas.json"
+    ],
+    "answer": "Based on the provided context, the sevas in Dharmapuri are:\n\n1. Abhishekam - Telugu Name: \u0c05\u0c2d\u0c3f\u0c37\u0c47\u0c15\u0c02\n   Price: \u20b9500\n   Timing: from 6:00 AM\n\n2. Tulasi Vishe\u1e63\u0101rchana - Telugu Name: \u0c24\u0c41\u0c32\u0c38\u0c3f \u0c35\u0c3f\u0c36\u0c47\u0c37\u0c3e\u0c30\u0c4d\u0c1a\u0c28\n   Price: \u20b9500\n   Timing: from 8:00 AM\n\n3. Sahasranamas / Korika Niv\u1e5btti - Telugu Name: \u0c38\u0c39\u0c38\u0c4d\u0c30\u0c28\u0c3e\u0c2e\u0c3e\u0c32\u0c41 / \u0c15\u0c4b\u0c30\u0c3f\u0c15 \u0c28\u0c3f\u0c35\u0c43\u0c24\u0c4d\u0c24\u0c3f\n   Price: \u20b950\n   Timing: Daily during Archana slots\n   Description: Chanting of Sahasranamas and fulfillment of vows\n\n4. Gok\u1e63an\u0101ma Harati - Telugu Name: \u0c17\u0c4b\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c2e \u0c39\u0c3e\u0c30\u0c24\u0c3f\n   Price: \u20b9200\n   Timing: Daily during Archana slots\n   Description: Special Harati ritual\n\n5. Odi Biyyam - Telugu Name: \u0c12\u0c21\u0c3f \u0c2c\u0c3f\u0c2f\u0c4d\u0c2f\u0c02\n   Price: \u20b950\n   Timing: Daily during Archana slots\n   Description: Traditional ritual offering of rice\n\n6. Kumkuma Archana - Telugu Name: \u0c15\u0c41\u0c02\u0c15\u0c41\u0c2e \u0c05\u0c30\u0c4d\u0c1a\u0c28\n   Price: \u20b9200\n   Timing: Daily during Archana slots\n   Description: Kumkuma Archana ritual\n\n7. Pulihora Bhogam / Dadhojana Bhogam - Telugu Name: \u0c2a\u0c41\u0c32\u0c3f\u0c39\u0c4b\u0c30 \u0c2d\u0c4b\u0c17\u0c02 / \u0c26\u0c26\u0c4d\u0c27\u0c4b\u0c1c\u0c28 \u0c2d\u0c4b\u0c17\u0c02\n   Price: \u20b9300\n   Timing: at 10:00 AM\n   Description: Special food offerings of Pulihora or Dadhojana served at 10:00 AM\n\n8. B\u014drela Bhogam - Telugu Name: \u0c2c\u0c4b\u0c30\u0c46\u0c32 \u0c2d\u0c4b\u0c17\u0c02\n   Price: \u20b9500\n   Timing: at 12:00 noon\n   Description: Borela sweet food offering served at 12:00 noon\n\n9. Veda Aashirvachanam - Telugu Name: \u0c35\u0c47\u0c26 \u0c06\u0c36\u0c40\u0c30\u0c4d\u0c35\u0c1a\u0c28\u0c02\n   Price: \u20b9500\n   Timing: Daily during Archana slots\n   Description: Vedic blessings by temple priests\n\nThese are all the sevas available in Dharmapuri based on the provided context.",
+    "notes": []
+  }
+]

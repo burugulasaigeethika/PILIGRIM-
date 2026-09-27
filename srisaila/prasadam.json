@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Srisaila Mallikarjuna Swamy Laddu",
+    "price": "₹20 - ₹50",
+    "description": "Sacred pure ghee sweet laddu offered to Sri Mallikarjuna Swamy."
+  },
+  {
+    "name": "Bhramaramba Devi Pulihora",
+    "price": "₹20",
+    "description": "Traditional tamarind rice prasadam distributed at temple counters."
+  },
+  {
+    "name": "Vada Prasadam",
+    "price": "₹20",
+    "description": "Sacred savory vada offering."
+  },
+  {
+    "name": "Mysurpa",
+    "price": "₹25",
+    "description": "Rich ghee sweet delicacy prepared at the temple prasadam unit."
+  },
+  {
+    "name": "Sri Gokulam Pure Cow Milk & Ghee Prasadams",
+    "price": "Standard rates",
+    "description": "Prepared using pure cow milk sourced directly from Sri Gokulam Gosala housing 1500+ cows."
+  }
+]

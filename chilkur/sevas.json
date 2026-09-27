@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Free Darshanam",
+    "telugu_name": "ఉచిత సర్వ దర్శ నము",
+    "price": "₹0 (Free)",
+    "timing": "Morning Slot: 06:00 AM – 01:00 PM, Evening Slot: 04:00 PM – 08:00 PM",
+    "booking_url": "Not Applicable",
+    "description": "Free and direct entry. Chilkur Balaji Temple does not host paid Arjitha Sevas, quick darshan tickets, or online booking slots. The temple operates on a strictly non-commercial basis to treat all devotees equally."
+  },
+  {
+    "name": "11 Wish-Making Pradakshinam (Sankalpa)",
+    "telugu_name": "11 ప్రదక్షిణల",
+    "price": "₹0 (Free)",
+    "timing": "Available during all open Darshan hours (5:00 AM – 1:00 PM & 4:00 PM – 8:00 PM)",
+    "booking_url": "Not Applicable",
+    "description": "Perform 11 pradakshinas (circumambulations) around the outer path to make your wish."
+  },
+  {
+    "name": "108 Thanksgiving Pradakshinam (Krithagnatha)",
+    "telugu_name": "108 ప్రదక్షిణల",
+    "price": "₹0 (Free)",
+    "timing": "Recommended during early morning hours (5:00 AM – 7:30 AM) to avoid peak heat and crowds",
+    "booking_url": "Not Applicable",
+    "description": "Perform 108 pradakshinas barefoot once your wish is successfully fulfilled."
+  },
+  {
+    "name": "Amma Vari Darshanam",
+    "telugu_name": "అమ్మవారి దర్శ నము",
+    "price": "₹0 (Free)",
+    "timing": "During all open Darshan hours",
+    "booking_url": "Not Applicable",
+    "description": "Free and open to all devotees inside the main complex to visit Sri Rajya Lakshmi Ammavaru."
+  }
+]

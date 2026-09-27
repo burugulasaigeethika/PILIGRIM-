@@ -1,0 +1,54 @@
+{
+  "bus_routes": [
+    "From Hyderabad via Warangal / Karimnagar & Manthani",
+    "From Hanamkonda / Warangal via Bhupalpally & Mahadevpur",
+    "From Karimnagar via Manthani",
+    "From Peddapalli via Manthani",
+    "From Godavarikhani via Manthani",
+    "From Manthani (approx 32 km)",
+    "From Bhupalpally (approx 60 km)",
+    "From Sircilla / Vemulawada via Karimnagar & Manthani",
+    "From Chandrapur / Maharashtra via Sironcha across the Pranahita river bridge"
+  ],
+  "railway": {
+    "station": "Ramagundam (RDM)",
+    "distance": "approximately 65 km",
+    "other_stations": [
+      {
+        "station": "Peddapalli Railway Station (PDPL)",
+        "distance": "approximately 75 km"
+      },
+      {
+        "station": "Mancherial Railway Station (MCI)",
+        "distance": "approximately 70 km"
+      },
+      {
+        "station": "Warangal / Kazipet Railway Station",
+        "distance": "approximately 110–130 km"
+      }
+    ]
+  },
+  "airport": {
+    "name": "Rajiv Gandhi International Airport, Hyderabad",
+    "distance": "approximately 260 km to 280 km"
+  },
+  "how_to_reach": [
+    "Kaleshwaram is well-connected by road, with the nearest railway options around 65-75 km away and the nearest major airport at Hyderabad."
+  ],
+  "nearest_railway_station": {
+    "name": "Ramagundam (RDM)",
+    "distance": "approximately 65 km",
+    "connectivity": "Also near Peddapalli (PDPL, ~75 km), Mancherial (MCI, ~70 km), and Warangal/Kazipet (~110-130 km)"
+  },
+  "nearest_airport": {
+    "name": "Rajiv Gandhi International Airport, Hyderabad",
+    "distance": "approximately 260 km to 280 km",
+    "connectivity": "International and domestic connectivity"
+  },
+  "road_routes": [
+    "Regular TSRTC bus transportation connects Kaleshwaram to Manthani, Godavarikhani, Karimnagar, Hanamkonda (Warangal), and Bhupalpally."
+  ],
+  "parking_info": [
+    "Ample parking is available at the TG Tourism Haritha Hotel and nearby areas."
+  ]
+}

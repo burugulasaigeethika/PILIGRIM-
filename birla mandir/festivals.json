@@ -1,0 +1,20 @@
+[
+  {
+    "festival_name": "Vaikuntha Ekadashi",
+    "description": "The most auspicious day at the temple. Special golden gateways are simulated, and tens of thousands of local families visit to catch a glimpse of the 11-foot-tall inner statue. [[1](https://www.incredibleindia.gov.in/en/telangana/hyderabad/birla-temple#:~:text=With%20an%2011%2Dfoot%20statue%20standing%20tall%20within%2C%20worshipers%20from)]",
+    "month": "December/January",
+    "importance": "The most auspicious day at the temple."
+  },
+  {
+    "festival_name": "Brahmotsavam",
+    "description": "A multi-day annual grand festival featuring unique spiritual decorations and specialized daily prayers for Lord Venkateshwara.",
+    "month": "October / November",
+    "importance": "The primary multi-day festival celebration on the temple calendar, aligned with the traditional regional cycle."
+  },
+  {
+    "festival_name": "Janmashtami & Dasara",
+    "description": "The entire marble complex is illuminated with decorative LED string lights, drawing heavy crowds during the festive nights.",
+    "month": "August / September & October",
+    "importance": "High-priority cultural celebrations that see extended visiting lines and intensive evening decorative displays."
+  }
+]

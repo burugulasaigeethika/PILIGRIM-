@@ -1,0 +1,40 @@
+{
+  "annadanam": {
+    "booking_url": "https://basaratemple.telangana.gov.in/annadaanam/",
+    "required_fields": [
+      "Name *",
+      "Gothram *",
+      "Email",
+      "Gender *",
+      "Address *",
+      "Name (Telugu) *",
+      "Gothram (Telugu) *",
+      "Mobile *",
+      "Purpose",
+      "Amount *"
+    ]
+  },
+  "e_hundi": {
+    "booking_url": "https://basaratemple.telangana.gov.in/e_hundi/",
+    "required_fields": [
+      "Name *",
+      "Gothram *",
+      "Email",
+      "Gender *",
+      "Address *",
+      "Name (Telugu) *",
+      "Gothram (Telugu) *",
+      "Mobile *",
+      "Purpose",
+      "Amount *"
+    ]
+  },
+  "refund_policy": [
+    "1.No amount will be refunded in case of Accomodation (Room Booking), Cot Booking and Darshan facilities cancellation.",
+    "2.Online Donation for Free Prasad Bhojan and other fund categories is non refundable.",
+    "3.Book Shop facilities are non-cancellable, non-refundable and non transferrable.",
+    "4.Due to technical failure, if transaction remains incomplete and amount has been deducted from devotee's account, then she/he will get full refund after deducting reasonable fac applicable only for Accommodation and Darshan facilities. In case of donation, donation receipt will be sent to devotee's registered address with Temple.",
+    "5.After processing the refund, devotee will get automated Email.",
+    "6.Final decision regarding any complaint about refund lies with SRI GNANA SARASWATHI DEVASTHANAM Executive Officer."
+  ]
+}

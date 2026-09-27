@@ -1,0 +1,26 @@
+[
+  {
+    "query": "What is the price of Abhishekam in Dharmapuri?",
+    "mode": "targeted",
+    "is_targeted": true,
+    "passed": true
+  },
+  {
+    "query": "What time does Dharmapuri Temple open?",
+    "mode": "targeted",
+    "is_targeted": true,
+    "passed": true
+  },
+  {
+    "query": "What is the phone number of Basara Temple?",
+    "mode": "targeted",
+    "is_targeted": true,
+    "passed": true
+  },
+  {
+    "query": "What is the history of Yadadri?",
+    "mode": "targeted",
+    "is_targeted": true,
+    "passed": true
+  }
+]

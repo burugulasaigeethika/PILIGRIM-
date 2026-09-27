@@ -1,0 +1,61 @@
+{
+  "address": "The Manager, Malola Guest House, Sri Ahobila Muth, Ahobilam Village, Allagadda Mandal, Nandyal District, Andhra Pradesh - 518545",
+  "phones": [
+    "+91 8519 252045",
+    "+91 8519 252024",
+    "+91 94905 15284",
+    "+91 94407 92736",
+    "+91 8519 220022"
+  ],
+  "emails": [],
+  "website": "https://ahobilamutt.org",
+  "google_map": "https://www.google.com/maps/search/?api=1&query=Ahobilam+Temple",
+  "google_embed_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.222718361047!2d78.71804797500588!3d15.127814485420364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb5c3d2a0000001%3A0x7d64b1f4ab60b135!2sAhobilam%20Temple!5e0!3m2!1sen!2sin!4v1700000000000",
+  "pincode": "518545",
+  "directory": {
+    "guest_house_reservations_manager": "Badri Narayanan",
+    "manager_mobile_1": "+91 94905 15284",
+    "manager_mobile_2": "+91 94407 92736",
+    "guest_house_landline_1": "+91 8519 252045",
+    "guest_house_landline_2": "+91 8519 252024"
+  },
+  "emergency_services": {
+    "police": [
+      {
+        "name": "Allagadda Police Station (Ahobilam division)",
+        "contact_number": "+91 8519 220022"
+      },
+      {
+        "name": "Universal Police Help Line",
+        "contact_number": "100 or 112"
+      }
+    ],
+    "hospitals": [
+      {
+        "name": "Temple First-Aid Post",
+        "location": "Lower Ahobilam complex for minor issues",
+        "description": "Located in Lower Ahobilam complex near the guest house for minor issues."
+      },
+      {
+        "name": "Government Area Hospital (Allagadda)",
+        "distance": "~30 km",
+        "description": "Provides primary emergency and trauma care."
+      },
+      {
+        "name": "Nandyal District Hospital",
+        "distance": "~65 km",
+        "description": "Major multispecialty hospital for tertiary care."
+      }
+    ],
+    "ambulance_services": [
+      {
+        "name": "Universal Medical Ambulance",
+        "contact": "108"
+      }
+    ],
+    "fire_and_rescue_services": {
+      "name": "Universal Fire Department",
+      "contact": "101"
+    }
+  }
+}

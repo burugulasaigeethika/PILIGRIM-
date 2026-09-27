@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Krrish Boutique Hotel",
+    "type": "Private Hotel",
+    "distance": "~1.1 km",
+    "price": "Starting at ₹2,151/night",
+    "description": "Located in Ameerpet. Nearby external private hotel (not affiliated with the temple)."
+  },
+  {
+    "name": "Sunrise Business Hotel",
+    "type": "Private Hotel",
+    "distance": "~1.7 km",
+    "price": "Starting at ₹2,003/night",
+    "description": "Located in SR Nagar. Nearby external private hotel (not affiliated with the temple)."
+  },
+  {
+    "name": "Aditya Park Hyderabad",
+    "type": "Private Hotel",
+    "distance": "~1.8 km",
+    "price": "Starting at ₹4,478/night",
+    "description": "Located in Ameerpet. Nearby external private hotel (not affiliated with the temple)."
+  }
+]

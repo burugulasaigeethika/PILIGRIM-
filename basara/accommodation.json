@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Laxmi Grand Inn",
+    "type": "Private Hotel",
+    "distance": "~150 Metres",
+    "price": "₹1,600 - ₹3,500",
+    "description": "onally clean property located very close to the temple entrance. Features hot water geysers, power backup, and lift access."
+  },
+  {
+    "name": "Nakshatra Inn",
+    "type": "Private Hotel",
+    "distance": "5 Min Walk",
+    "price": "₹1,500 - ₹3,000",
+    "description": "New construction with parking space."
+  },
+  {
+    "name": "Haritha Hotel Basara",
+    "type": "TSTDC Govt",
+    "distance": "200 Metres",
+    "price": "₹1,500 - ₹2,500",
+    "description": "Located directly opposite the main police station, offering easy walkable access to the temple's rear entrance. While it provides a safe, government-regulated compound with large parking zones, the property is dated and maintenance can be basic. Highlights / Caveats: Massive parking; basic maintenance."
+  },
+  {
+    "name": "100 TTD Guest Houses",
+    "type": "Devasthanam",
+    "distance": "Walkable",
+    "price": "₹600 to ₹1,500 per night ",
+    "description": "The temple board directly runs low-cost properties like the TTD 100 Rooms Guest House, Rajanna Nilayam, and Babli Soma Guest House. Prices range affordably from ₹800 to ₹1,500 per night for AC options. These rooms cannot be booked online; they are strictly allocated on a first-come, first-served basis over physical counters. Highlights / Caveats: Very cheap; counter booking only."
+  }
+]

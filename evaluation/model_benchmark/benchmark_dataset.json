@@ -1,0 +1,5347 @@
+[
+  {
+    "id": "TARGETED_001",
+    "query": "What are the temple timings at Ahobilam?",
+    "archetype": "targeted",
+    "temple": "Ahobilam",
+    "category": "timings",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ahobilam"
+    ],
+    "expected_categories": [
+      "timings"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Timings information available"
+  },
+  {
+    "id": "TARGETED_002",
+    "query": "What is the contact number of Ahobilam temple?",
+    "archetype": "targeted",
+    "temple": "Ahobilam",
+    "category": "contacts",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ahobilam"
+    ],
+    "expected_categories": [
+      "contacts"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Contacts information available"
+  },
+  {
+    "id": "TARGETED_003",
+    "query": "What is the history of Ahobilam temple?",
+    "archetype": "targeted",
+    "temple": "Ahobilam",
+    "category": "temple",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ahobilam"
+    ],
+    "expected_categories": [
+      "temple"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Temple information available"
+  },
+  {
+    "id": "TARGETED_004",
+    "query": "What is the dress code and rules at Ahobilam?",
+    "archetype": "targeted",
+    "temple": "Ahobilam",
+    "category": "rules",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ahobilam"
+    ],
+    "expected_categories": [
+      "rules"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Rules information available"
+  },
+  {
+    "id": "TARGETED_005",
+    "query": "Does Ahobilam have wheelchair facilities?",
+    "archetype": "targeted",
+    "temple": "Ahobilam",
+    "category": "wheelchair",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ahobilam"
+    ],
+    "expected_categories": [
+      "wheelchair"
+    ],
+    "exhaustive": false,
+    "expected_status": "INFORMATION_NOT_AVAILABLE",
+    "expected_evidence_preview": ""
+  },
+  {
+    "id": "TARGETED_006",
+    "query": "How can I travel to Ahobilam?",
+    "archetype": "targeted",
+    "temple": "Ahobilam",
+    "category": "travel",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ahobilam"
+    ],
+    "expected_categories": [
+      "travel"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Travel information available"
+  },
+  {
+    "id": "TARGETED_007",
+    "query": "What are the temple timings at Badrachalam?",
+    "archetype": "targeted",
+    "temple": "Badrachalam",
+    "category": "timings",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Badrachalam"
+    ],
+    "expected_categories": [
+      "timings"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Timings information available"
+  },
+  {
+    "id": "TARGETED_008",
+    "query": "What is the contact number of Badrachalam temple?",
+    "archetype": "targeted",
+    "temple": "Badrachalam",
+    "category": "contacts",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Badrachalam"
+    ],
+    "expected_categories": [
+      "contacts"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Contacts information available"
+  },
+  {
+    "id": "TARGETED_009",
+    "query": "What is the history of Badrachalam temple?",
+    "archetype": "targeted",
+    "temple": "Badrachalam",
+    "category": "temple",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Badrachalam"
+    ],
+    "expected_categories": [
+      "temple"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Temple information available"
+  },
+  {
+    "id": "TARGETED_010",
+    "query": "What is the dress code and rules at Badrachalam?",
+    "archetype": "targeted",
+    "temple": "Badrachalam",
+    "category": "rules",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Badrachalam"
+    ],
+    "expected_categories": [
+      "rules"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Rules information available"
+  },
+  {
+    "id": "TARGETED_011",
+    "query": "Does Badrachalam have wheelchair facilities?",
+    "archetype": "targeted",
+    "temple": "Badrachalam",
+    "category": "wheelchair",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Badrachalam"
+    ],
+    "expected_categories": [
+      "wheelchair"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Wheelchair accessible: Side Entrance Lift: A lift is available near a side entrance specifically for elderly and differentl"
+  },
+  {
+    "id": "TARGETED_012",
+    "query": "How can I travel to Badrachalam?",
+    "archetype": "targeted",
+    "temple": "Badrachalam",
+    "category": "travel",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Badrachalam"
+    ],
+    "expected_categories": [
+      "travel"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Travel information available"
+  },
+  {
+    "id": "TARGETED_013",
+    "query": "What are the temple timings at Balkampet?",
+    "archetype": "targeted",
+    "temple": "Balkampet",
+    "category": "timings",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Balkampet"
+    ],
+    "expected_categories": [
+      "timings"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Timings information available"
+  },
+  {
+    "id": "TARGETED_014",
+    "query": "What is the contact number of Balkampet temple?",
+    "archetype": "targeted",
+    "temple": "Balkampet",
+    "category": "contacts",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Balkampet"
+    ],
+    "expected_categories": [
+      "contacts"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Contacts information available"
+  },
+  {
+    "id": "TARGETED_015",
+    "query": "What is the history of Balkampet temple?",
+    "archetype": "targeted",
+    "temple": "Balkampet",
+    "category": "temple",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Balkampet"
+    ],
+    "expected_categories": [
+      "temple"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Temple information available"
+  },
+  {
+    "id": "TARGETED_016",
+    "query": "What is the dress code and rules at Balkampet?",
+    "archetype": "targeted",
+    "temple": "Balkampet",
+    "category": "rules",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Balkampet"
+    ],
+    "expected_categories": [
+      "rules"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Rules information available"
+  },
+  {
+    "id": "TARGETED_017",
+    "query": "Does Balkampet have wheelchair facilities?",
+    "archetype": "targeted",
+    "temple": "Balkampet",
+    "category": "wheelchair",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Balkampet"
+    ],
+    "expected_categories": [
+      "wheelchair"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_UNAVAILABLE",
+    "expected_evidence_preview": "Not wheelchair friendly (Subterranean Staircase Access Only: The main self-manifested sanctum is situated 10 feet below groun)"
+  },
+  {
+    "id": "TARGETED_018",
+    "query": "How can I travel to Balkampet?",
+    "archetype": "targeted",
+    "temple": "Balkampet",
+    "category": "travel",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Balkampet"
+    ],
+    "expected_categories": [
+      "travel"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Travel information available"
+  },
+  {
+    "id": "TARGETED_019",
+    "query": "What are the temple timings at Basara?",
+    "archetype": "targeted",
+    "temple": "Basara",
+    "category": "timings",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Basara"
+    ],
+    "expected_categories": [
+      "timings"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Timings information available"
+  },
+  {
+    "id": "TARGETED_020",
+    "query": "What is the contact number of Basara temple?",
+    "archetype": "targeted",
+    "temple": "Basara",
+    "category": "contacts",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Basara"
+    ],
+    "expected_categories": [
+      "contacts"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Contacts information available"
+  },
+  {
+    "id": "TARGETED_021",
+    "query": "What is the history of Basara temple?",
+    "archetype": "targeted",
+    "temple": "Basara",
+    "category": "temple",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Basara"
+    ],
+    "expected_categories": [
+      "temple"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Temple information available"
+  },
+  {
+    "id": "TARGETED_022",
+    "query": "What is the dress code and rules at Basara?",
+    "archetype": "targeted",
+    "temple": "Basara",
+    "category": "rules",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Basara"
+    ],
+    "expected_categories": [
+      "rules"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Rules information available"
+  },
+  {
+    "id": "TARGETED_023",
+    "query": "Does Basara have wheelchair facilities?",
+    "archetype": "targeted",
+    "temple": "Basara",
+    "category": "wheelchair",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Basara"
+    ],
+    "expected_categories": [
+      "wheelchair"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Available: The temple complex features wheelchair-accessible entrances, flat concrete pathways, and ramp access across main corrido"
+  },
+  {
+    "id": "TARGETED_024",
+    "query": "How can I travel to Basara?",
+    "archetype": "targeted",
+    "temple": "Basara",
+    "category": "travel",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Basara"
+    ],
+    "expected_categories": [
+      "travel"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Travel information available"
+  },
+  {
+    "id": "TARGETED_025",
+    "query": "What are the temple timings at Birla Mandir?",
+    "archetype": "targeted",
+    "temple": "Birla Mandir",
+    "category": "timings",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Birla Mandir"
+    ],
+    "expected_categories": [
+      "timings"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Timings information available"
+  },
+  {
+    "id": "TARGETED_026",
+    "query": "What is the contact number of Birla Mandir temple?",
+    "archetype": "targeted",
+    "temple": "Birla Mandir",
+    "category": "contacts",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Birla Mandir"
+    ],
+    "expected_categories": [
+      "contacts"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Contacts information available"
+  },
+  {
+    "id": "TARGETED_027",
+    "query": "What is the history of Birla Mandir temple?",
+    "archetype": "targeted",
+    "temple": "Birla Mandir",
+    "category": "temple",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Birla Mandir"
+    ],
+    "expected_categories": [
+      "temple"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Temple information available"
+  },
+  {
+    "id": "TARGETED_028",
+    "query": "What is the dress code and rules at Birla Mandir?",
+    "archetype": "targeted",
+    "temple": "Birla Mandir",
+    "category": "rules",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Birla Mandir"
+    ],
+    "expected_categories": [
+      "rules"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Rules information available"
+  },
+  {
+    "id": "TARGETED_029",
+    "query": "Does Birla Mandir have wheelchair facilities?",
+    "archetype": "targeted",
+    "temple": "Birla Mandir",
+    "category": "wheelchair",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Birla Mandir"
+    ],
+    "expected_categories": [
+      "wheelchair"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_UNAVAILABLE",
+    "expected_evidence_preview": "Not wheelchair friendly (Lift Available with Step Caveats: An on-site elevator/lift facility is operated for senior citizens )"
+  },
+  {
+    "id": "TARGETED_030",
+    "query": "How can I travel to Birla Mandir?",
+    "archetype": "targeted",
+    "temple": "Birla Mandir",
+    "category": "travel",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Birla Mandir"
+    ],
+    "expected_categories": [
+      "travel"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Travel information available"
+  },
+  {
+    "id": "TARGETED_031",
+    "query": "What are the temple timings at Chilkur?",
+    "archetype": "targeted",
+    "temple": "Chilkur",
+    "category": "timings",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Chilkur"
+    ],
+    "expected_categories": [
+      "timings"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Timings information available"
+  },
+  {
+    "id": "TARGETED_032",
+    "query": "What is the contact number of Chilkur temple?",
+    "archetype": "targeted",
+    "temple": "Chilkur",
+    "category": "contacts",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Chilkur"
+    ],
+    "expected_categories": [
+      "contacts"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Contacts information available"
+  },
+  {
+    "id": "TARGETED_033",
+    "query": "What is the history of Chilkur temple?",
+    "archetype": "targeted",
+    "temple": "Chilkur",
+    "category": "temple",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Chilkur"
+    ],
+    "expected_categories": [
+      "temple"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Temple information available"
+  },
+  {
+    "id": "TARGETED_034",
+    "query": "What is the dress code and rules at Chilkur?",
+    "archetype": "targeted",
+    "temple": "Chilkur",
+    "category": "rules",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Chilkur"
+    ],
+    "expected_categories": [
+      "rules"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Rules information available"
+  },
+  {
+    "id": "TARGETED_035",
+    "query": "Does Chilkur have wheelchair facilities?",
+    "archetype": "targeted",
+    "temple": "Chilkur",
+    "category": "wheelchair",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Chilkur"
+    ],
+    "expected_categories": [
+      "wheelchair"
+    ],
+    "exhaustive": false,
+    "expected_status": "INFORMATION_NOT_AVAILABLE",
+    "expected_evidence_preview": ""
+  },
+  {
+    "id": "TARGETED_036",
+    "query": "How can I travel to Chilkur?",
+    "archetype": "targeted",
+    "temple": "Chilkur",
+    "category": "travel",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Chilkur"
+    ],
+    "expected_categories": [
+      "travel"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Travel information available"
+  },
+  {
+    "id": "TARGETED_037",
+    "query": "What are the temple timings at Dharmapuri?",
+    "archetype": "targeted",
+    "temple": "Dharmapuri",
+    "category": "timings",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Dharmapuri"
+    ],
+    "expected_categories": [
+      "timings"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Timings information available"
+  },
+  {
+    "id": "TARGETED_038",
+    "query": "What is the contact number of Dharmapuri temple?",
+    "archetype": "targeted",
+    "temple": "Dharmapuri",
+    "category": "contacts",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Dharmapuri"
+    ],
+    "expected_categories": [
+      "contacts"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Contacts information available"
+  },
+  {
+    "id": "TARGETED_039",
+    "query": "What is the history of Dharmapuri temple?",
+    "archetype": "targeted",
+    "temple": "Dharmapuri",
+    "category": "temple",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Dharmapuri"
+    ],
+    "expected_categories": [
+      "temple"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Temple information available"
+  },
+  {
+    "id": "TARGETED_040",
+    "query": "What is the dress code and rules at Dharmapuri?",
+    "archetype": "targeted",
+    "temple": "Dharmapuri",
+    "category": "rules",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Dharmapuri"
+    ],
+    "expected_categories": [
+      "rules"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Rules information available"
+  },
+  {
+    "id": "TARGETED_041",
+    "query": "Does Dharmapuri have wheelchair facilities?",
+    "archetype": "targeted",
+    "temple": "Dharmapuri",
+    "category": "wheelchair",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Dharmapuri"
+    ],
+    "expected_categories": [
+      "wheelchair"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_UNAVAILABLE",
+    "expected_evidence_preview": "Not wheelchair friendly (Walking Aids Recommended: Navigating the stone temple courtyards (Prakarams) and long flight of ston)"
+  },
+  {
+    "id": "TARGETED_042",
+    "query": "How can I travel to Dharmapuri?",
+    "archetype": "targeted",
+    "temple": "Dharmapuri",
+    "category": "travel",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Dharmapuri"
+    ],
+    "expected_categories": [
+      "travel"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Travel information available"
+  },
+  {
+    "id": "TARGETED_043",
+    "query": "What are the temple timings at Edupayal?",
+    "archetype": "targeted",
+    "temple": "Edupayal",
+    "category": "timings",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Edupayal"
+    ],
+    "expected_categories": [
+      "timings"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Timings information available"
+  },
+  {
+    "id": "TARGETED_044",
+    "query": "What is the contact number of Edupayal temple?",
+    "archetype": "targeted",
+    "temple": "Edupayal",
+    "category": "contacts",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Edupayal"
+    ],
+    "expected_categories": [
+      "contacts"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Contacts information available"
+  },
+  {
+    "id": "TARGETED_045",
+    "query": "What is the history of Edupayal temple?",
+    "archetype": "targeted",
+    "temple": "Edupayal",
+    "category": "temple",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Edupayal"
+    ],
+    "expected_categories": [
+      "temple"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Temple information available"
+  },
+  {
+    "id": "TARGETED_046",
+    "query": "What is the dress code and rules at Edupayal?",
+    "archetype": "targeted",
+    "temple": "Edupayal",
+    "category": "rules",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Edupayal"
+    ],
+    "expected_categories": [
+      "rules"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Rules information available"
+  },
+  {
+    "id": "TARGETED_047",
+    "query": "Does Edupayal have wheelchair facilities?",
+    "archetype": "targeted",
+    "temple": "Edupayal",
+    "category": "wheelchair",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Edupayal"
+    ],
+    "expected_categories": [
+      "wheelchair"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_UNAVAILABLE",
+    "expected_evidence_preview": "Not wheelchair friendly (Riverbed Cave Shrine Access: The self-manifested sanctum is located directly within the riverbed of )"
+  },
+  {
+    "id": "TARGETED_048",
+    "query": "How can I travel to Edupayal?",
+    "archetype": "targeted",
+    "temple": "Edupayal",
+    "category": "travel",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Edupayal"
+    ],
+    "expected_categories": [
+      "travel"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Travel information available"
+  },
+  {
+    "id": "TARGETED_049",
+    "query": "What are the temple timings at Jogulamba(New)?",
+    "archetype": "targeted",
+    "temple": "Jogulamba(New)",
+    "category": "timings",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Jogulamba(New)"
+    ],
+    "expected_categories": [
+      "timings"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Timings information available"
+  },
+  {
+    "id": "TARGETED_050",
+    "query": "What is the contact number of Jogulamba(New) temple?",
+    "archetype": "targeted",
+    "temple": "Jogulamba(New)",
+    "category": "contacts",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Jogulamba(New)"
+    ],
+    "expected_categories": [
+      "contacts"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Contacts information available"
+  },
+  {
+    "id": "TARGETED_051",
+    "query": "What is the history of Jogulamba(New) temple?",
+    "archetype": "targeted",
+    "temple": "Jogulamba(New)",
+    "category": "temple",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Jogulamba(New)"
+    ],
+    "expected_categories": [
+      "temple"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Temple information available"
+  },
+  {
+    "id": "TARGETED_052",
+    "query": "What is the dress code and rules at Jogulamba(New)?",
+    "archetype": "targeted",
+    "temple": "Jogulamba(New)",
+    "category": "rules",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Jogulamba(New)"
+    ],
+    "expected_categories": [
+      "rules"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Rules information available"
+  },
+  {
+    "id": "TARGETED_053",
+    "query": "Does Jogulamba(New) have wheelchair facilities?",
+    "archetype": "targeted",
+    "temple": "Jogulamba(New)",
+    "category": "wheelchair",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Jogulamba(New)"
+    ],
+    "expected_categories": [
+      "wheelchair"
+    ],
+    "exhaustive": false,
+    "expected_status": "INFORMATION_NOT_AVAILABLE",
+    "expected_evidence_preview": ""
+  },
+  {
+    "id": "TARGETED_054",
+    "query": "How can I travel to Jogulamba(New)?",
+    "archetype": "targeted",
+    "temple": "Jogulamba(New)",
+    "category": "travel",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Jogulamba(New)"
+    ],
+    "expected_categories": [
+      "travel"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Travel information available"
+  },
+  {
+    "id": "TARGETED_055",
+    "query": "What are the temple timings at Kaleshvaram?",
+    "archetype": "targeted",
+    "temple": "Kaleshvaram",
+    "category": "timings",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Kaleshvaram"
+    ],
+    "expected_categories": [
+      "timings"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Timings information available"
+  },
+  {
+    "id": "TARGETED_056",
+    "query": "What is the contact number of Kaleshvaram temple?",
+    "archetype": "targeted",
+    "temple": "Kaleshvaram",
+    "category": "contacts",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Kaleshvaram"
+    ],
+    "expected_categories": [
+      "contacts"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Contacts information available"
+  },
+  {
+    "id": "TARGETED_057",
+    "query": "What is the history of Kaleshvaram temple?",
+    "archetype": "targeted",
+    "temple": "Kaleshvaram",
+    "category": "temple",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Kaleshvaram"
+    ],
+    "expected_categories": [
+      "temple"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Temple information available"
+  },
+  {
+    "id": "TARGETED_058",
+    "query": "What is the dress code and rules at Kaleshvaram?",
+    "archetype": "targeted",
+    "temple": "Kaleshvaram",
+    "category": "rules",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Kaleshvaram"
+    ],
+    "expected_categories": [
+      "rules"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Rules information available"
+  },
+  {
+    "id": "TARGETED_059",
+    "query": "Does Kaleshvaram have wheelchair facilities?",
+    "archetype": "targeted",
+    "temple": "Kaleshvaram",
+    "category": "wheelchair",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Kaleshvaram"
+    ],
+    "expected_categories": [
+      "wheelchair"
+    ],
+    "exhaustive": false,
+    "expected_status": "INFORMATION_NOT_AVAILABLE",
+    "expected_evidence_preview": ""
+  },
+  {
+    "id": "TARGETED_060",
+    "query": "How can I travel to Kaleshvaram?",
+    "archetype": "targeted",
+    "temple": "Kaleshvaram",
+    "category": "travel",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Kaleshvaram"
+    ],
+    "expected_categories": [
+      "travel"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Travel information available"
+  },
+  {
+    "id": "TARGETED_061",
+    "query": "What are the temple timings at Karmanghat?",
+    "archetype": "targeted",
+    "temple": "Karmanghat",
+    "category": "timings",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Karmanghat"
+    ],
+    "expected_categories": [
+      "timings"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Timings information available"
+  },
+  {
+    "id": "TARGETED_062",
+    "query": "What is the contact number of Karmanghat temple?",
+    "archetype": "targeted",
+    "temple": "Karmanghat",
+    "category": "contacts",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Karmanghat"
+    ],
+    "expected_categories": [
+      "contacts"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Contacts information available"
+  },
+  {
+    "id": "TARGETED_063",
+    "query": "What is the history of Karmanghat temple?",
+    "archetype": "targeted",
+    "temple": "Karmanghat",
+    "category": "temple",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Karmanghat"
+    ],
+    "expected_categories": [
+      "temple"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Temple information available"
+  },
+  {
+    "id": "TARGETED_064",
+    "query": "What is the dress code and rules at Karmanghat?",
+    "archetype": "targeted",
+    "temple": "Karmanghat",
+    "category": "rules",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Karmanghat"
+    ],
+    "expected_categories": [
+      "rules"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Rules information available"
+  },
+  {
+    "id": "TARGETED_065",
+    "query": "Does Karmanghat have wheelchair facilities?",
+    "archetype": "targeted",
+    "temple": "Karmanghat",
+    "category": "wheelchair",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Karmanghat"
+    ],
+    "expected_categories": [
+      "wheelchair"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Wheelchair accessible: Wheelchair-Accessible Entrance: Main entry points and outer courtyards feature ramp access suitable "
+  },
+  {
+    "id": "TARGETED_066",
+    "query": "How can I travel to Karmanghat?",
+    "archetype": "targeted",
+    "temple": "Karmanghat",
+    "category": "travel",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Karmanghat"
+    ],
+    "expected_categories": [
+      "travel"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Travel information available"
+  },
+  {
+    "id": "TARGETED_067",
+    "query": "What are the temple timings at Medaram?",
+    "archetype": "targeted",
+    "temple": "Medaram",
+    "category": "timings",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Medaram"
+    ],
+    "expected_categories": [
+      "timings"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Timings information available"
+  },
+  {
+    "id": "TARGETED_068",
+    "query": "What is the contact number of Medaram temple?",
+    "archetype": "targeted",
+    "temple": "Medaram",
+    "category": "contacts",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Medaram"
+    ],
+    "expected_categories": [
+      "contacts"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Contacts information available"
+  },
+  {
+    "id": "TARGETED_069",
+    "query": "What is the history of Medaram temple?",
+    "archetype": "targeted",
+    "temple": "Medaram",
+    "category": "temple",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Medaram"
+    ],
+    "expected_categories": [
+      "temple"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Temple information available"
+  },
+  {
+    "id": "TARGETED_070",
+    "query": "What is the dress code and rules at Medaram?",
+    "archetype": "targeted",
+    "temple": "Medaram",
+    "category": "rules",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Medaram"
+    ],
+    "expected_categories": [
+      "rules"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Rules information available"
+  },
+  {
+    "id": "TARGETED_071",
+    "query": "Does Medaram have wheelchair facilities?",
+    "archetype": "targeted",
+    "temple": "Medaram",
+    "category": "wheelchair",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Medaram"
+    ],
+    "expected_categories": [
+      "wheelchair"
+    ],
+    "exhaustive": false,
+    "expected_status": "INFORMATION_NOT_AVAILABLE",
+    "expected_evidence_preview": ""
+  },
+  {
+    "id": "TARGETED_072",
+    "query": "How can I travel to Medaram?",
+    "archetype": "targeted",
+    "temple": "Medaram",
+    "category": "travel",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Medaram"
+    ],
+    "expected_categories": [
+      "travel"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Travel information available"
+  },
+  {
+    "id": "TARGETED_073",
+    "query": "What are the temple timings at Ramappa?",
+    "archetype": "targeted",
+    "temple": "Ramappa",
+    "category": "timings",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ramappa"
+    ],
+    "expected_categories": [
+      "timings"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Timings information available"
+  },
+  {
+    "id": "TARGETED_074",
+    "query": "What is the contact number of Ramappa temple?",
+    "archetype": "targeted",
+    "temple": "Ramappa",
+    "category": "contacts",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ramappa"
+    ],
+    "expected_categories": [
+      "contacts"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Contacts information available"
+  },
+  {
+    "id": "TARGETED_075",
+    "query": "What is the history of Ramappa temple?",
+    "archetype": "targeted",
+    "temple": "Ramappa",
+    "category": "temple",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ramappa"
+    ],
+    "expected_categories": [
+      "temple"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Temple information available"
+  },
+  {
+    "id": "TARGETED_076",
+    "query": "What is the dress code and rules at Ramappa?",
+    "archetype": "targeted",
+    "temple": "Ramappa",
+    "category": "rules",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ramappa"
+    ],
+    "expected_categories": [
+      "rules"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Rules information available"
+  },
+  {
+    "id": "TARGETED_077",
+    "query": "Does Ramappa have wheelchair facilities?",
+    "archetype": "targeted",
+    "temple": "Ramappa",
+    "category": "wheelchair",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ramappa"
+    ],
+    "expected_categories": [
+      "wheelchair"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_UNAVAILABLE",
+    "expected_evidence_preview": "Not wheelchair friendly (Not Wheelchair Friendly: The temple is built on a high, star-shaped raised platform typical of Kakat)"
+  },
+  {
+    "id": "TARGETED_078",
+    "query": "How can I travel to Ramappa?",
+    "archetype": "targeted",
+    "temple": "Ramappa",
+    "category": "travel",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ramappa"
+    ],
+    "expected_categories": [
+      "travel"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Travel information available"
+  },
+  {
+    "id": "TARGETED_079",
+    "query": "What are the temple timings at Srisaila?",
+    "archetype": "targeted",
+    "temple": "Srisaila",
+    "category": "timings",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Srisaila"
+    ],
+    "expected_categories": [
+      "timings"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Timings information available"
+  },
+  {
+    "id": "TARGETED_080",
+    "query": "What is the contact number of Srisaila temple?",
+    "archetype": "targeted",
+    "temple": "Srisaila",
+    "category": "contacts",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Srisaila"
+    ],
+    "expected_categories": [
+      "contacts"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Contacts information available"
+  },
+  {
+    "id": "TARGETED_081",
+    "query": "What is the history of Srisaila temple?",
+    "archetype": "targeted",
+    "temple": "Srisaila",
+    "category": "temple",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Srisaila"
+    ],
+    "expected_categories": [
+      "temple"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Temple information available"
+  },
+  {
+    "id": "TARGETED_082",
+    "query": "What is the dress code and rules at Srisaila?",
+    "archetype": "targeted",
+    "temple": "Srisaila",
+    "category": "rules",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Srisaila"
+    ],
+    "expected_categories": [
+      "rules"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Rules information available"
+  },
+  {
+    "id": "TARGETED_083",
+    "query": "Does Srisaila have wheelchair facilities?",
+    "archetype": "targeted",
+    "temple": "Srisaila",
+    "category": "wheelchair",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Srisaila"
+    ],
+    "expected_categories": [
+      "wheelchair"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Wheelchair accessible: Battery Vehicles & Wheelchairs: Battery-operated buggies and wheelchairs are provided by Srisaila De"
+  },
+  {
+    "id": "TARGETED_084",
+    "query": "How can I travel to Srisaila?",
+    "archetype": "targeted",
+    "temple": "Srisaila",
+    "category": "travel",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Srisaila"
+    ],
+    "expected_categories": [
+      "travel"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Travel information available"
+  },
+  {
+    "id": "TARGETED_085",
+    "query": "What are the temple timings at Thousand Pillar?",
+    "archetype": "targeted",
+    "temple": "Thousand Pillar",
+    "category": "timings",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Thousand Pillar"
+    ],
+    "expected_categories": [
+      "timings"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Timings information available"
+  },
+  {
+    "id": "TARGETED_086",
+    "query": "What is the contact number of Thousand Pillar temple?",
+    "archetype": "targeted",
+    "temple": "Thousand Pillar",
+    "category": "contacts",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Thousand Pillar"
+    ],
+    "expected_categories": [
+      "contacts"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Contacts information available"
+  },
+  {
+    "id": "TARGETED_087",
+    "query": "What is the history of Thousand Pillar temple?",
+    "archetype": "targeted",
+    "temple": "Thousand Pillar",
+    "category": "temple",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Thousand Pillar"
+    ],
+    "expected_categories": [
+      "temple"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Temple information available"
+  },
+  {
+    "id": "TARGETED_088",
+    "query": "What is the dress code and rules at Thousand Pillar?",
+    "archetype": "targeted",
+    "temple": "Thousand Pillar",
+    "category": "rules",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Thousand Pillar"
+    ],
+    "expected_categories": [
+      "rules"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Rules information available"
+  },
+  {
+    "id": "TARGETED_089",
+    "query": "Does Thousand Pillar have wheelchair facilities?",
+    "archetype": "targeted",
+    "temple": "Thousand Pillar",
+    "category": "wheelchair",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Thousand Pillar"
+    ],
+    "expected_categories": [
+      "wheelchair"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_UNAVAILABLE",
+    "expected_evidence_preview": "Not wheelchair friendly (Accessible Entrance Gates: The main entrance and exit pathways are wide and flat, allowing convenien)"
+  },
+  {
+    "id": "TARGETED_090",
+    "query": "How can I travel to Thousand Pillar?",
+    "archetype": "targeted",
+    "temple": "Thousand Pillar",
+    "category": "travel",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Thousand Pillar"
+    ],
+    "expected_categories": [
+      "travel"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Travel information available"
+  },
+  {
+    "id": "TARGETED_091",
+    "query": "What are the temple timings at Ttd?",
+    "archetype": "targeted",
+    "temple": "Ttd",
+    "category": "timings",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ttd"
+    ],
+    "expected_categories": [
+      "timings"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Timings information available"
+  },
+  {
+    "id": "TARGETED_092",
+    "query": "What is the contact number of Ttd temple?",
+    "archetype": "targeted",
+    "temple": "Ttd",
+    "category": "contacts",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ttd"
+    ],
+    "expected_categories": [
+      "contacts"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Contacts information available"
+  },
+  {
+    "id": "TARGETED_093",
+    "query": "What is the history of Ttd temple?",
+    "archetype": "targeted",
+    "temple": "Ttd",
+    "category": "temple",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ttd"
+    ],
+    "expected_categories": [
+      "temple"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Temple information available"
+  },
+  {
+    "id": "TARGETED_094",
+    "query": "What is the dress code and rules at Ttd?",
+    "archetype": "targeted",
+    "temple": "Ttd",
+    "category": "rules",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ttd"
+    ],
+    "expected_categories": [
+      "rules"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Rules information available"
+  },
+  {
+    "id": "TARGETED_095",
+    "query": "Does Ttd have wheelchair facilities?",
+    "archetype": "targeted",
+    "temple": "Ttd",
+    "category": "wheelchair",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ttd"
+    ],
+    "expected_categories": [
+      "wheelchair"
+    ],
+    "exhaustive": false,
+    "expected_status": "INFORMATION_NOT_AVAILABLE",
+    "expected_evidence_preview": ""
+  },
+  {
+    "id": "TARGETED_096",
+    "query": "How can I travel to Ttd?",
+    "archetype": "targeted",
+    "temple": "Ttd",
+    "category": "travel",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ttd"
+    ],
+    "expected_categories": [
+      "travel"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Travel information available"
+  },
+  {
+    "id": "TARGETED_097",
+    "query": "What are the temple timings at Ujjaini?",
+    "archetype": "targeted",
+    "temple": "Ujjaini",
+    "category": "timings",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ujjaini"
+    ],
+    "expected_categories": [
+      "timings"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Timings information available"
+  },
+  {
+    "id": "TARGETED_098",
+    "query": "What is the contact number of Ujjaini temple?",
+    "archetype": "targeted",
+    "temple": "Ujjaini",
+    "category": "contacts",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ujjaini"
+    ],
+    "expected_categories": [
+      "contacts"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Contacts information available"
+  },
+  {
+    "id": "TARGETED_099",
+    "query": "What is the history of Ujjaini temple?",
+    "archetype": "targeted",
+    "temple": "Ujjaini",
+    "category": "temple",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ujjaini"
+    ],
+    "expected_categories": [
+      "temple"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Temple information available"
+  },
+  {
+    "id": "TARGETED_100",
+    "query": "What is the dress code and rules at Ujjaini?",
+    "archetype": "targeted",
+    "temple": "Ujjaini",
+    "category": "rules",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ujjaini"
+    ],
+    "expected_categories": [
+      "rules"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Rules information available"
+  },
+  {
+    "id": "TARGETED_101",
+    "query": "Does Ujjaini have wheelchair facilities?",
+    "archetype": "targeted",
+    "temple": "Ujjaini",
+    "category": "wheelchair",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ujjaini"
+    ],
+    "expected_categories": [
+      "wheelchair"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_UNAVAILABLE",
+    "expected_evidence_preview": "Not wheelchair friendly (The temple is a historic structure located in a dense urban market area. It currently lacks dedicate)"
+  },
+  {
+    "id": "TARGETED_102",
+    "query": "How can I travel to Ujjaini?",
+    "archetype": "targeted",
+    "temple": "Ujjaini",
+    "category": "travel",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ujjaini"
+    ],
+    "expected_categories": [
+      "travel"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Travel information available"
+  },
+  {
+    "id": "TARGETED_103",
+    "query": "What are the temple timings at Veera Satyanarayana?",
+    "archetype": "targeted",
+    "temple": "Veera Satyanarayana",
+    "category": "timings",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Veera Satyanarayana"
+    ],
+    "expected_categories": [
+      "timings"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Timings information available"
+  },
+  {
+    "id": "TARGETED_104",
+    "query": "What is the contact number of Veera Satyanarayana temple?",
+    "archetype": "targeted",
+    "temple": "Veera Satyanarayana",
+    "category": "contacts",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Veera Satyanarayana"
+    ],
+    "expected_categories": [
+      "contacts"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Contacts information available"
+  },
+  {
+    "id": "TARGETED_105",
+    "query": "What is the history of Veera Satyanarayana temple?",
+    "archetype": "targeted",
+    "temple": "Veera Satyanarayana",
+    "category": "temple",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Veera Satyanarayana"
+    ],
+    "expected_categories": [
+      "temple"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Temple information available"
+  },
+  {
+    "id": "TARGETED_106",
+    "query": "What is the dress code and rules at Veera Satyanarayana?",
+    "archetype": "targeted",
+    "temple": "Veera Satyanarayana",
+    "category": "rules",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Veera Satyanarayana"
+    ],
+    "expected_categories": [
+      "rules"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Rules information available"
+  },
+  {
+    "id": "TARGETED_107",
+    "query": "Does Veera Satyanarayana have wheelchair facilities?",
+    "archetype": "targeted",
+    "temple": "Veera Satyanarayana",
+    "category": "wheelchair",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Veera Satyanarayana"
+    ],
+    "expected_categories": [
+      "wheelchair"
+    ],
+    "exhaustive": false,
+    "expected_status": "INFORMATION_NOT_AVAILABLE",
+    "expected_evidence_preview": ""
+  },
+  {
+    "id": "TARGETED_108",
+    "query": "How can I travel to Veera Satyanarayana?",
+    "archetype": "targeted",
+    "temple": "Veera Satyanarayana",
+    "category": "travel",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Veera Satyanarayana"
+    ],
+    "expected_categories": [
+      "travel"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Travel information available"
+  },
+  {
+    "id": "TARGETED_109",
+    "query": "What are the temple timings at Vemulavada?",
+    "archetype": "targeted",
+    "temple": "Vemulavada",
+    "category": "timings",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Vemulavada"
+    ],
+    "expected_categories": [
+      "timings"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Timings information available"
+  },
+  {
+    "id": "TARGETED_110",
+    "query": "What is the contact number of Vemulavada temple?",
+    "archetype": "targeted",
+    "temple": "Vemulavada",
+    "category": "contacts",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Vemulavada"
+    ],
+    "expected_categories": [
+      "contacts"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Contacts information available"
+  },
+  {
+    "id": "TARGETED_111",
+    "query": "What is the history of Vemulavada temple?",
+    "archetype": "targeted",
+    "temple": "Vemulavada",
+    "category": "temple",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Vemulavada"
+    ],
+    "expected_categories": [
+      "temple"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Temple information available"
+  },
+  {
+    "id": "TARGETED_112",
+    "query": "What is the dress code and rules at Vemulavada?",
+    "archetype": "targeted",
+    "temple": "Vemulavada",
+    "category": "rules",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Vemulavada"
+    ],
+    "expected_categories": [
+      "rules"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Rules information available"
+  },
+  {
+    "id": "TARGETED_113",
+    "query": "Does Vemulavada have wheelchair facilities?",
+    "archetype": "targeted",
+    "temple": "Vemulavada",
+    "category": "wheelchair",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Vemulavada"
+    ],
+    "expected_categories": [
+      "wheelchair"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Wheelchair accessible: Wheelchairs: The main temple complex is built on flat ground-level terrain, making manual wheelchair"
+  },
+  {
+    "id": "TARGETED_114",
+    "query": "How can I travel to Vemulavada?",
+    "archetype": "targeted",
+    "temple": "Vemulavada",
+    "category": "travel",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Vemulavada"
+    ],
+    "expected_categories": [
+      "travel"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Travel information available"
+  },
+  {
+    "id": "TARGETED_115",
+    "query": "What are the temple timings at Yadadri?",
+    "archetype": "targeted",
+    "temple": "Yadadri",
+    "category": "timings",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Yadadri"
+    ],
+    "expected_categories": [
+      "timings"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Timings information available"
+  },
+  {
+    "id": "TARGETED_116",
+    "query": "What is the contact number of Yadadri temple?",
+    "archetype": "targeted",
+    "temple": "Yadadri",
+    "category": "contacts",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Yadadri"
+    ],
+    "expected_categories": [
+      "contacts"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Contacts information available"
+  },
+  {
+    "id": "TARGETED_117",
+    "query": "What is the history of Yadadri temple?",
+    "archetype": "targeted",
+    "temple": "Yadadri",
+    "category": "temple",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Yadadri"
+    ],
+    "expected_categories": [
+      "temple"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Temple information available"
+  },
+  {
+    "id": "TARGETED_118",
+    "query": "What is the dress code and rules at Yadadri?",
+    "archetype": "targeted",
+    "temple": "Yadadri",
+    "category": "rules",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Yadadri"
+    ],
+    "expected_categories": [
+      "rules"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Rules information available"
+  },
+  {
+    "id": "TARGETED_119",
+    "query": "Does Yadadri have wheelchair facilities?",
+    "archetype": "targeted",
+    "temple": "Yadadri",
+    "category": "wheelchair",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Yadadri"
+    ],
+    "expected_categories": [
+      "wheelchair"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Wheelchair accessible: Elevators, Escalators & Ramps: The newly reconstructed stone temple complex is equipped with elevato"
+  },
+  {
+    "id": "TARGETED_120",
+    "query": "How can I travel to Yadadri?",
+    "archetype": "targeted",
+    "temple": "Yadadri",
+    "category": "travel",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Yadadri"
+    ],
+    "expected_categories": [
+      "travel"
+    ],
+    "exhaustive": false,
+    "expected_status": "CONFIRMED_AVAILABLE",
+    "expected_evidence_preview": "Travel information available"
+  },
+  {
+    "id": "COMPLETE_121",
+    "query": "What are all the sevas in Ahobilam?",
+    "archetype": "complete_category",
+    "temple": "Ahobilam",
+    "category": "sevas",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ahobilam"
+    ],
+    "expected_categories": [
+      "sevas"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 6
+  },
+  {
+    "id": "COMPLETE_122",
+    "query": "List all festivals celebrated at Ahobilam.",
+    "archetype": "complete_category",
+    "temple": "Ahobilam",
+    "category": "festivals",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ahobilam"
+    ],
+    "expected_categories": [
+      "festivals"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 3
+  },
+  {
+    "id": "COMPLETE_123",
+    "query": "What are all the sevas in Badrachalam?",
+    "archetype": "complete_category",
+    "temple": "Badrachalam",
+    "category": "sevas",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Badrachalam"
+    ],
+    "expected_categories": [
+      "sevas"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 14
+  },
+  {
+    "id": "COMPLETE_124",
+    "query": "List all festivals celebrated at Badrachalam.",
+    "archetype": "complete_category",
+    "temple": "Badrachalam",
+    "category": "festivals",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Badrachalam"
+    ],
+    "expected_categories": [
+      "festivals"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 3
+  },
+  {
+    "id": "COMPLETE_125",
+    "query": "What are all the sevas in Balkampet?",
+    "archetype": "complete_category",
+    "temple": "Balkampet",
+    "category": "sevas",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Balkampet"
+    ],
+    "expected_categories": [
+      "sevas"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 5
+  },
+  {
+    "id": "COMPLETE_126",
+    "query": "List all festivals celebrated at Balkampet.",
+    "archetype": "complete_category",
+    "temple": "Balkampet",
+    "category": "festivals",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Balkampet"
+    ],
+    "expected_categories": [
+      "festivals"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 3
+  },
+  {
+    "id": "COMPLETE_127",
+    "query": "What are all the sevas in Basara?",
+    "archetype": "complete_category",
+    "temple": "Basara",
+    "category": "sevas",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Basara"
+    ],
+    "expected_categories": [
+      "sevas"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 10
+  },
+  {
+    "id": "COMPLETE_128",
+    "query": "List all festivals celebrated at Basara.",
+    "archetype": "complete_category",
+    "temple": "Basara",
+    "category": "festivals",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Basara"
+    ],
+    "expected_categories": [
+      "festivals"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 5
+  },
+  {
+    "id": "COMPLETE_129",
+    "query": "What are all the sevas in Birla Mandir?",
+    "archetype": "complete_category",
+    "temple": "Birla Mandir",
+    "category": "sevas",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Birla Mandir"
+    ],
+    "expected_categories": [
+      "sevas"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 4
+  },
+  {
+    "id": "COMPLETE_130",
+    "query": "List all festivals celebrated at Birla Mandir.",
+    "archetype": "complete_category",
+    "temple": "Birla Mandir",
+    "category": "festivals",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Birla Mandir"
+    ],
+    "expected_categories": [
+      "festivals"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 3
+  },
+  {
+    "id": "COMPLETE_131",
+    "query": "What are all the sevas in Chilkur?",
+    "archetype": "complete_category",
+    "temple": "Chilkur",
+    "category": "sevas",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Chilkur"
+    ],
+    "expected_categories": [
+      "sevas"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 4
+  },
+  {
+    "id": "COMPLETE_132",
+    "query": "List all festivals celebrated at Chilkur.",
+    "archetype": "complete_category",
+    "temple": "Chilkur",
+    "category": "festivals",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Chilkur"
+    ],
+    "expected_categories": [
+      "festivals"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 4
+  },
+  {
+    "id": "COMPLETE_133",
+    "query": "What are all the sevas in Dharmapuri?",
+    "archetype": "complete_category",
+    "temple": "Dharmapuri",
+    "category": "sevas",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Dharmapuri"
+    ],
+    "expected_categories": [
+      "sevas"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 10
+  },
+  {
+    "id": "COMPLETE_134",
+    "query": "List all festivals celebrated at Dharmapuri.",
+    "archetype": "complete_category",
+    "temple": "Dharmapuri",
+    "category": "festivals",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Dharmapuri"
+    ],
+    "expected_categories": [
+      "festivals"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 7
+  },
+  {
+    "id": "COMPLETE_135",
+    "query": "What are all the sevas in Edupayal?",
+    "archetype": "complete_category",
+    "temple": "Edupayal",
+    "category": "sevas",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Edupayal"
+    ],
+    "expected_categories": [
+      "sevas"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 4
+  },
+  {
+    "id": "COMPLETE_136",
+    "query": "List all festivals celebrated at Edupayal.",
+    "archetype": "complete_category",
+    "temple": "Edupayal",
+    "category": "festivals",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Edupayal"
+    ],
+    "expected_categories": [
+      "festivals"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 4
+  },
+  {
+    "id": "COMPLETE_137",
+    "query": "What are all the sevas in Jogulamba(New)?",
+    "archetype": "complete_category",
+    "temple": "Jogulamba(New)",
+    "category": "sevas",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Jogulamba(New)"
+    ],
+    "expected_categories": [
+      "sevas"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 8
+  },
+  {
+    "id": "COMPLETE_138",
+    "query": "List all festivals celebrated at Jogulamba(New).",
+    "archetype": "complete_category",
+    "temple": "Jogulamba(New)",
+    "category": "festivals",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Jogulamba(New)"
+    ],
+    "expected_categories": [
+      "festivals"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 6
+  },
+  {
+    "id": "COMPLETE_139",
+    "query": "What are all the sevas in Kaleshvaram?",
+    "archetype": "complete_category",
+    "temple": "Kaleshvaram",
+    "category": "sevas",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Kaleshvaram"
+    ],
+    "expected_categories": [
+      "sevas"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 27
+  },
+  {
+    "id": "COMPLETE_140",
+    "query": "List all festivals celebrated at Kaleshvaram.",
+    "archetype": "complete_category",
+    "temple": "Kaleshvaram",
+    "category": "festivals",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Kaleshvaram"
+    ],
+    "expected_categories": [
+      "festivals"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 3
+  },
+  {
+    "id": "COMPLETE_141",
+    "query": "What are all the sevas in Karmanghat?",
+    "archetype": "complete_category",
+    "temple": "Karmanghat",
+    "category": "sevas",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Karmanghat"
+    ],
+    "expected_categories": [
+      "sevas"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 40
+  },
+  {
+    "id": "COMPLETE_142",
+    "query": "List all festivals celebrated at Karmanghat.",
+    "archetype": "complete_category",
+    "temple": "Karmanghat",
+    "category": "festivals",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Karmanghat"
+    ],
+    "expected_categories": [
+      "festivals"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 4
+  },
+  {
+    "id": "COMPLETE_143",
+    "query": "What are all the sevas in Medaram?",
+    "archetype": "complete_category",
+    "temple": "Medaram",
+    "category": "sevas",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Medaram"
+    ],
+    "expected_categories": [
+      "sevas"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 4
+  },
+  {
+    "id": "COMPLETE_144",
+    "query": "List all festivals celebrated at Medaram.",
+    "archetype": "complete_category",
+    "temple": "Medaram",
+    "category": "festivals",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Medaram"
+    ],
+    "expected_categories": [
+      "festivals"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 2
+  },
+  {
+    "id": "COMPLETE_145",
+    "query": "What are all the sevas in Ramappa?",
+    "archetype": "complete_category",
+    "temple": "Ramappa",
+    "category": "sevas",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ramappa"
+    ],
+    "expected_categories": [
+      "sevas"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 0
+  },
+  {
+    "id": "COMPLETE_146",
+    "query": "List all festivals celebrated at Ramappa.",
+    "archetype": "complete_category",
+    "temple": "Ramappa",
+    "category": "festivals",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ramappa"
+    ],
+    "expected_categories": [
+      "festivals"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 3
+  },
+  {
+    "id": "COMPLETE_147",
+    "query": "What are all the sevas in Srisaila?",
+    "archetype": "complete_category",
+    "temple": "Srisaila",
+    "category": "sevas",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Srisaila"
+    ],
+    "expected_categories": [
+      "sevas"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 39
+  },
+  {
+    "id": "COMPLETE_148",
+    "query": "List all festivals celebrated at Srisaila.",
+    "archetype": "complete_category",
+    "temple": "Srisaila",
+    "category": "festivals",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Srisaila"
+    ],
+    "expected_categories": [
+      "festivals"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 7
+  },
+  {
+    "id": "COMPLETE_149",
+    "query": "What are all the sevas in Thousand Pillar?",
+    "archetype": "complete_category",
+    "temple": "Thousand Pillar",
+    "category": "sevas",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Thousand Pillar"
+    ],
+    "expected_categories": [
+      "sevas"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 4
+  },
+  {
+    "id": "COMPLETE_150",
+    "query": "List all festivals celebrated at Thousand Pillar.",
+    "archetype": "complete_category",
+    "temple": "Thousand Pillar",
+    "category": "festivals",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Thousand Pillar"
+    ],
+    "expected_categories": [
+      "festivals"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 5
+  },
+  {
+    "id": "COMPLETE_151",
+    "query": "What are all the sevas in Ttd?",
+    "archetype": "complete_category",
+    "temple": "Ttd",
+    "category": "sevas",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ttd"
+    ],
+    "expected_categories": [
+      "sevas"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 14
+  },
+  {
+    "id": "COMPLETE_152",
+    "query": "List all festivals celebrated at Ttd.",
+    "archetype": "complete_category",
+    "temple": "Ttd",
+    "category": "festivals",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ttd"
+    ],
+    "expected_categories": [
+      "festivals"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 12
+  },
+  {
+    "id": "COMPLETE_153",
+    "query": "What are all the sevas in Ujjaini?",
+    "archetype": "complete_category",
+    "temple": "Ujjaini",
+    "category": "sevas",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ujjaini"
+    ],
+    "expected_categories": [
+      "sevas"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 15
+  },
+  {
+    "id": "COMPLETE_154",
+    "query": "List all festivals celebrated at Ujjaini.",
+    "archetype": "complete_category",
+    "temple": "Ujjaini",
+    "category": "festivals",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ujjaini"
+    ],
+    "expected_categories": [
+      "festivals"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 5
+  },
+  {
+    "id": "COMPLETE_155",
+    "query": "What are all the sevas in Veera Satyanarayana?",
+    "archetype": "complete_category",
+    "temple": "Veera Satyanarayana",
+    "category": "sevas",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Veera Satyanarayana"
+    ],
+    "expected_categories": [
+      "sevas"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 27
+  },
+  {
+    "id": "COMPLETE_156",
+    "query": "List all festivals celebrated at Veera Satyanarayana.",
+    "archetype": "complete_category",
+    "temple": "Veera Satyanarayana",
+    "category": "festivals",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Veera Satyanarayana"
+    ],
+    "expected_categories": [
+      "festivals"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 15
+  },
+  {
+    "id": "COMPLETE_157",
+    "query": "What are all the sevas in Vemulavada?",
+    "archetype": "complete_category",
+    "temple": "Vemulavada",
+    "category": "sevas",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Vemulavada"
+    ],
+    "expected_categories": [
+      "sevas"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 80
+  },
+  {
+    "id": "COMPLETE_158",
+    "query": "List all festivals celebrated at Vemulavada.",
+    "archetype": "complete_category",
+    "temple": "Vemulavada",
+    "category": "festivals",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Vemulavada"
+    ],
+    "expected_categories": [
+      "festivals"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 3
+  },
+  {
+    "id": "COMPLETE_159",
+    "query": "What are all the sevas in Yadadri?",
+    "archetype": "complete_category",
+    "temple": "Yadadri",
+    "category": "sevas",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Yadadri"
+    ],
+    "expected_categories": [
+      "sevas"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 52
+  },
+  {
+    "id": "COMPLETE_160",
+    "query": "List all festivals celebrated at Yadadri.",
+    "archetype": "complete_category",
+    "temple": "Yadadri",
+    "category": "festivals",
+    "expected_route": "complete_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Yadadri"
+    ],
+    "expected_categories": [
+      "festivals"
+    ],
+    "exhaustive": true,
+    "expected_item_count": 4
+  },
+  {
+    "id": "CROSS_POS_161",
+    "query": "List all temples that have a river bank.",
+    "archetype": "cross_temple_positive",
+    "category": "river_bank",
+    "expected_route": "cross_temple_aggregation",
+    "expected_scope": "cross_temple",
+    "expected_condition": "positive",
+    "expected_temples": [
+      "Ahobilam",
+      "Badrachalam",
+      "Basara",
+      "Dharmapuri",
+      "Edupayal",
+      "Jogulamba(New)",
+      "Kaleshvaram",
+      "Medaram",
+      "Srisaila",
+      "Veera Satyanarayana",
+      "Vemulavada"
+    ],
+    "expected_match_count": 11,
+    "exhaustive": true
+  },
+  {
+    "id": "CROSS_POS_162",
+    "query": "Which temples are situated near a river or water body?",
+    "archetype": "cross_temple_positive",
+    "category": "river_bank",
+    "expected_route": "cross_temple_aggregation",
+    "expected_scope": "cross_temple",
+    "expected_condition": "positive",
+    "expected_temples": [
+      "Ahobilam",
+      "Badrachalam",
+      "Basara",
+      "Dharmapuri",
+      "Edupayal",
+      "Jogulamba(New)",
+      "Kaleshvaram",
+      "Medaram",
+      "Srisaila",
+      "Veera Satyanarayana",
+      "Vemulavada"
+    ],
+    "expected_match_count": 11,
+    "exhaustive": true
+  },
+  {
+    "id": "CROSS_POS_163",
+    "query": "Which temples have accommodation?",
+    "archetype": "cross_temple_positive",
+    "category": "accommodation",
+    "expected_route": "cross_temple_aggregation",
+    "expected_scope": "cross_temple",
+    "expected_condition": "positive",
+    "expected_temples": [
+      "Ahobilam",
+      "Badrachalam",
+      "Balkampet",
+      "Basara",
+      "Birla Mandir",
+      "Chilkur",
+      "Dharmapuri",
+      "Edupayal",
+      "Jogulamba(New)",
+      "Kaleshvaram",
+      "Karmanghat",
+      "Medaram",
+      "Ramappa",
+      "Srisaila",
+      "Thousand Pillar",
+      "Ttd",
+      "Ujjaini",
+      "Veera Satyanarayana",
+      "Vemulavada",
+      "Yadadri"
+    ],
+    "expected_match_count": 20,
+    "exhaustive": true
+  },
+  {
+    "id": "CROSS_POS_164",
+    "query": "List all temples offering rooms or cottages for stay.",
+    "archetype": "cross_temple_positive",
+    "category": "accommodation",
+    "expected_route": "cross_temple_aggregation",
+    "expected_scope": "cross_temple",
+    "expected_condition": "positive",
+    "expected_temples": [
+      "Ahobilam",
+      "Badrachalam",
+      "Balkampet",
+      "Basara",
+      "Birla Mandir",
+      "Chilkur",
+      "Dharmapuri",
+      "Edupayal",
+      "Jogulamba(New)",
+      "Kaleshvaram",
+      "Karmanghat",
+      "Medaram",
+      "Ramappa",
+      "Srisaila",
+      "Thousand Pillar",
+      "Ttd",
+      "Ujjaini",
+      "Veera Satyanarayana",
+      "Vemulavada",
+      "Yadadri"
+    ],
+    "expected_match_count": 20,
+    "exhaustive": true
+  },
+  {
+    "id": "CROSS_POS_165",
+    "query": "Which temples have restaurants or food nearby?",
+    "archetype": "cross_temple_positive",
+    "category": "restaurants",
+    "expected_route": "cross_temple_aggregation",
+    "expected_scope": "cross_temple",
+    "expected_condition": "positive",
+    "expected_temples": [
+      "Ahobilam",
+      "Badrachalam",
+      "Balkampet",
+      "Basara",
+      "Birla Mandir",
+      "Chilkur",
+      "Dharmapuri",
+      "Edupayal",
+      "Jogulamba(New)",
+      "Kaleshvaram",
+      "Karmanghat",
+      "Medaram",
+      "Ramappa",
+      "Srisaila",
+      "Thousand Pillar",
+      "Ttd",
+      "Ujjaini",
+      "Veera Satyanarayana",
+      "Vemulavada",
+      "Yadadri"
+    ],
+    "expected_match_count": 20,
+    "exhaustive": true
+  },
+  {
+    "id": "CROSS_POS_166",
+    "query": "List all temples with nearby dining facilities.",
+    "archetype": "cross_temple_positive",
+    "category": "restaurants",
+    "expected_route": "cross_temple_aggregation",
+    "expected_scope": "cross_temple",
+    "expected_condition": "positive",
+    "expected_temples": [
+      "Ahobilam",
+      "Badrachalam",
+      "Balkampet",
+      "Basara",
+      "Birla Mandir",
+      "Chilkur",
+      "Dharmapuri",
+      "Edupayal",
+      "Jogulamba(New)",
+      "Kaleshvaram",
+      "Karmanghat",
+      "Medaram",
+      "Ramappa",
+      "Srisaila",
+      "Thousand Pillar",
+      "Ttd",
+      "Ujjaini",
+      "Veera Satyanarayana",
+      "Vemulavada",
+      "Yadadri"
+    ],
+    "expected_match_count": 20,
+    "exhaustive": true
+  },
+  {
+    "id": "CROSS_POS_167",
+    "query": "Which temples have wheelchair access?",
+    "archetype": "cross_temple_positive",
+    "category": "wheelchair",
+    "expected_route": "cross_temple_aggregation",
+    "expected_scope": "cross_temple",
+    "expected_condition": "positive",
+    "expected_temples": [
+      "Badrachalam",
+      "Basara",
+      "Karmanghat",
+      "Srisaila",
+      "Vemulavada",
+      "Yadadri"
+    ],
+    "expected_match_count": 6,
+    "exhaustive": true
+  },
+  {
+    "id": "CROSS_POS_168",
+    "query": "List all temples that provide wheelchair ramps.",
+    "archetype": "cross_temple_positive",
+    "category": "wheelchair",
+    "expected_route": "cross_temple_aggregation",
+    "expected_scope": "cross_temple",
+    "expected_condition": "positive",
+    "expected_temples": [
+      "Badrachalam",
+      "Basara",
+      "Karmanghat",
+      "Srisaila",
+      "Vemulavada",
+      "Yadadri"
+    ],
+    "expected_match_count": 6,
+    "exhaustive": true
+  },
+  {
+    "id": "CROSS_POS_169",
+    "query": "Which temples provide vehicle parking facilities?",
+    "archetype": "cross_temple_positive",
+    "category": "facilities",
+    "expected_route": "cross_temple_aggregation",
+    "expected_scope": "cross_temple",
+    "expected_condition": "positive",
+    "expected_temples": [
+      "Ahobilam",
+      "Badrachalam",
+      "Balkampet",
+      "Basara",
+      "Birla Mandir",
+      "Chilkur",
+      "Dharmapuri",
+      "Edupayal",
+      "Jogulamba(New)",
+      "Kaleshvaram",
+      "Karmanghat",
+      "Medaram",
+      "Ramappa",
+      "Srisaila",
+      "Thousand Pillar",
+      "Ttd",
+      "Ujjaini",
+      "Veera Satyanarayana",
+      "Vemulavada",
+      "Yadadri"
+    ],
+    "expected_match_count": 20,
+    "exhaustive": true
+  },
+  {
+    "id": "CROSS_POS_170",
+    "query": "Which temples offer free Annadanam meals?",
+    "archetype": "cross_temple_positive",
+    "category": "prasadam",
+    "expected_route": "cross_temple_aggregation",
+    "expected_scope": "cross_temple",
+    "expected_condition": "positive",
+    "expected_temples": [
+      "Ahobilam",
+      "Badrachalam",
+      "Balkampet",
+      "Chilkur",
+      "Dharmapuri",
+      "Edupayal",
+      "Jogulamba(New)",
+      "Kaleshvaram",
+      "Karmanghat",
+      "Medaram",
+      "Srisaila",
+      "Thousand Pillar",
+      "Ttd",
+      "Ujjaini",
+      "Veera Satyanarayana",
+      "Vemulavada",
+      "Yadadri"
+    ],
+    "expected_match_count": 17,
+    "exhaustive": true
+  },
+  {
+    "id": "CROSS_POS_171",
+    "query": "Which temples perform daily sevas?",
+    "archetype": "cross_temple_positive",
+    "category": "sevas",
+    "expected_route": "cross_temple_aggregation",
+    "expected_scope": "cross_temple",
+    "expected_condition": "positive",
+    "expected_temples": [
+      "Ahobilam",
+      "Badrachalam",
+      "Balkampet",
+      "Basara",
+      "Birla Mandir",
+      "Chilkur",
+      "Dharmapuri",
+      "Edupayal",
+      "Jogulamba(New)",
+      "Kaleshvaram",
+      "Karmanghat",
+      "Medaram",
+      "Srisaila",
+      "Thousand Pillar",
+      "Ttd",
+      "Ujjaini",
+      "Veera Satyanarayana",
+      "Vemulavada",
+      "Yadadri"
+    ],
+    "expected_match_count": 19,
+    "exhaustive": true
+  },
+  {
+    "id": "CROSS_POS_172",
+    "query": "Which temples celebrate annual Brahmotsavams or festivals?",
+    "archetype": "cross_temple_positive",
+    "category": "festivals",
+    "expected_route": "cross_temple_aggregation",
+    "expected_scope": "cross_temple",
+    "expected_condition": "positive",
+    "expected_temples": [
+      "Ahobilam",
+      "Badrachalam",
+      "Balkampet",
+      "Basara",
+      "Birla Mandir",
+      "Chilkur",
+      "Dharmapuri",
+      "Edupayal",
+      "Jogulamba(New)",
+      "Kaleshvaram",
+      "Karmanghat",
+      "Medaram",
+      "Ramappa",
+      "Srisaila",
+      "Thousand Pillar",
+      "Ttd",
+      "Ujjaini",
+      "Veera Satyanarayana",
+      "Vemulavada",
+      "Yadadri"
+    ],
+    "expected_match_count": 20,
+    "exhaustive": true
+  },
+  {
+    "id": "CROSS_POS_173",
+    "query": "Which temples accept online e-hundi donations?",
+    "archetype": "cross_temple_positive",
+    "category": "donations",
+    "expected_route": "cross_temple_aggregation",
+    "expected_scope": "cross_temple",
+    "expected_condition": "positive",
+    "expected_temples": [
+      "Ahobilam",
+      "Badrachalam",
+      "Basara",
+      "Birla Mandir",
+      "Chilkur",
+      "Edupayal",
+      "Kaleshvaram",
+      "Karmanghat",
+      "Medaram",
+      "Ramappa",
+      "Thousand Pillar",
+      "Ttd",
+      "Ujjaini",
+      "Veera Satyanarayana",
+      "Vemulavada",
+      "Yadadri"
+    ],
+    "expected_match_count": 16,
+    "exhaustive": true
+  },
+  {
+    "id": "CROSS_NEG_174",
+    "query": "List all temples that don't have wheelchair facilities.",
+    "archetype": "cross_temple_negative",
+    "category": "wheelchair",
+    "expected_route": "cross_temple_aggregation",
+    "expected_condition": "negative",
+    "expected_scope": "cross_temple",
+    "expected_confirmed_unavailable": [
+      "Balkampet",
+      "Birla Mandir",
+      "Dharmapuri",
+      "Edupayal",
+      "Ramappa",
+      "Thousand Pillar",
+      "Ujjaini"
+    ],
+    "expected_information_missing": [
+      "Ahobilam",
+      "Chilkur",
+      "Jogulamba(New)",
+      "Kaleshvaram",
+      "Medaram",
+      "Ttd",
+      "Veera Satyanarayana"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "CROSS_NEG_175",
+    "query": "Which temples lack wheelchair ramps or disabled access?",
+    "archetype": "cross_temple_negative",
+    "category": "wheelchair",
+    "expected_route": "cross_temple_aggregation",
+    "expected_condition": "negative",
+    "expected_scope": "cross_temple",
+    "expected_confirmed_unavailable": [
+      "Balkampet",
+      "Birla Mandir",
+      "Dharmapuri",
+      "Edupayal",
+      "Ramappa",
+      "Thousand Pillar",
+      "Ujjaini"
+    ],
+    "expected_information_missing": [
+      "Ahobilam",
+      "Chilkur",
+      "Jogulamba(New)",
+      "Kaleshvaram",
+      "Medaram",
+      "Ttd",
+      "Veera Satyanarayana"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "CROSS_NEG_176",
+    "query": "Which temples are not wheelchair accessible?",
+    "archetype": "cross_temple_negative",
+    "category": "wheelchair",
+    "expected_route": "cross_temple_aggregation",
+    "expected_condition": "negative",
+    "expected_scope": "cross_temple",
+    "expected_confirmed_unavailable": [
+      "Balkampet",
+      "Birla Mandir",
+      "Dharmapuri",
+      "Edupayal",
+      "Ramappa",
+      "Thousand Pillar",
+      "Ujjaini"
+    ],
+    "expected_information_missing": [
+      "Ahobilam",
+      "Chilkur",
+      "Jogulamba(New)",
+      "Kaleshvaram",
+      "Medaram",
+      "Ttd",
+      "Veera Satyanarayana"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "CROSS_NEG_177",
+    "query": "Which temples don't have restaurants?",
+    "archetype": "cross_temple_negative",
+    "category": "restaurants",
+    "expected_route": "cross_temple_aggregation",
+    "expected_condition": "negative",
+    "expected_scope": "cross_temple",
+    "expected_confirmed_unavailable": [],
+    "expected_information_missing": [],
+    "exhaustive": true
+  },
+  {
+    "id": "CROSS_NEG_178",
+    "query": "Which temples don't have accommodation?",
+    "archetype": "cross_temple_negative",
+    "category": "accommodation",
+    "expected_route": "cross_temple_aggregation",
+    "expected_condition": "negative",
+    "expected_scope": "cross_temple",
+    "expected_confirmed_unavailable": [],
+    "expected_information_missing": [],
+    "exhaustive": true
+  },
+  {
+    "id": "CROSS_NEG_179",
+    "query": "Which temples don't have dedicated parking?",
+    "archetype": "cross_temple_negative",
+    "category": "facilities",
+    "expected_route": "cross_temple_aggregation",
+    "expected_condition": "negative",
+    "expected_scope": "cross_temple",
+    "expected_confirmed_unavailable": [],
+    "expected_information_missing": [],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_180",
+    "query": "What accommodation and restaurants are available near Ahobilam?",
+    "archetype": "multi_category",
+    "temple": "Ahobilam",
+    "categories": [
+      "accommodation",
+      "restaurants"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ahobilam"
+    ],
+    "expected_categories": [
+      "accommodation",
+      "restaurants"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_181",
+    "query": "What are the timings, sevas and festivals at Ahobilam?",
+    "archetype": "multi_category",
+    "temple": "Ahobilam",
+    "categories": [
+      "timings",
+      "sevas",
+      "festivals"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ahobilam"
+    ],
+    "expected_categories": [
+      "timings",
+      "sevas",
+      "festivals"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_182",
+    "query": "Tell me about facilities and travel options for Ahobilam.",
+    "archetype": "multi_category",
+    "temple": "Ahobilam",
+    "categories": [
+      "facilities",
+      "travel"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ahobilam"
+    ],
+    "expected_categories": [
+      "facilities",
+      "travel"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_183",
+    "query": "What are the rules and timings at Ahobilam?",
+    "archetype": "multi_category",
+    "temple": "Ahobilam",
+    "categories": [
+      "rules",
+      "timings"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ahobilam"
+    ],
+    "expected_categories": [
+      "rules",
+      "timings"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_184",
+    "query": "What prasadams and sevas are offered at Ahobilam?",
+    "archetype": "multi_category",
+    "temple": "Ahobilam",
+    "categories": [
+      "prasadam",
+      "sevas"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ahobilam"
+    ],
+    "expected_categories": [
+      "prasadam",
+      "sevas"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_185",
+    "query": "What accommodation and restaurants are available near Badrachalam?",
+    "archetype": "multi_category",
+    "temple": "Badrachalam",
+    "categories": [
+      "accommodation",
+      "restaurants"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Badrachalam"
+    ],
+    "expected_categories": [
+      "accommodation",
+      "restaurants"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_186",
+    "query": "What are the timings, sevas and festivals at Badrachalam?",
+    "archetype": "multi_category",
+    "temple": "Badrachalam",
+    "categories": [
+      "timings",
+      "sevas",
+      "festivals"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Badrachalam"
+    ],
+    "expected_categories": [
+      "timings",
+      "sevas",
+      "festivals"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_187",
+    "query": "Tell me about facilities and travel options for Badrachalam.",
+    "archetype": "multi_category",
+    "temple": "Badrachalam",
+    "categories": [
+      "facilities",
+      "travel"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Badrachalam"
+    ],
+    "expected_categories": [
+      "facilities",
+      "travel"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_188",
+    "query": "What are the rules and timings at Badrachalam?",
+    "archetype": "multi_category",
+    "temple": "Badrachalam",
+    "categories": [
+      "rules",
+      "timings"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Badrachalam"
+    ],
+    "expected_categories": [
+      "rules",
+      "timings"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_189",
+    "query": "What prasadams and sevas are offered at Badrachalam?",
+    "archetype": "multi_category",
+    "temple": "Badrachalam",
+    "categories": [
+      "prasadam",
+      "sevas"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Badrachalam"
+    ],
+    "expected_categories": [
+      "prasadam",
+      "sevas"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_190",
+    "query": "What accommodation and restaurants are available near Balkampet?",
+    "archetype": "multi_category",
+    "temple": "Balkampet",
+    "categories": [
+      "accommodation",
+      "restaurants"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Balkampet"
+    ],
+    "expected_categories": [
+      "accommodation",
+      "restaurants"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_191",
+    "query": "What are the timings, sevas and festivals at Balkampet?",
+    "archetype": "multi_category",
+    "temple": "Balkampet",
+    "categories": [
+      "timings",
+      "sevas",
+      "festivals"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Balkampet"
+    ],
+    "expected_categories": [
+      "timings",
+      "sevas",
+      "festivals"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_192",
+    "query": "Tell me about facilities and travel options for Balkampet.",
+    "archetype": "multi_category",
+    "temple": "Balkampet",
+    "categories": [
+      "facilities",
+      "travel"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Balkampet"
+    ],
+    "expected_categories": [
+      "facilities",
+      "travel"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_193",
+    "query": "What are the rules and timings at Balkampet?",
+    "archetype": "multi_category",
+    "temple": "Balkampet",
+    "categories": [
+      "rules",
+      "timings"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Balkampet"
+    ],
+    "expected_categories": [
+      "rules",
+      "timings"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_194",
+    "query": "What prasadams and sevas are offered at Balkampet?",
+    "archetype": "multi_category",
+    "temple": "Balkampet",
+    "categories": [
+      "prasadam",
+      "sevas"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Balkampet"
+    ],
+    "expected_categories": [
+      "prasadam",
+      "sevas"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_195",
+    "query": "What accommodation and restaurants are available near Basara?",
+    "archetype": "multi_category",
+    "temple": "Basara",
+    "categories": [
+      "accommodation",
+      "restaurants"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Basara"
+    ],
+    "expected_categories": [
+      "accommodation",
+      "restaurants"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_196",
+    "query": "What are the timings, sevas and festivals at Basara?",
+    "archetype": "multi_category",
+    "temple": "Basara",
+    "categories": [
+      "timings",
+      "sevas",
+      "festivals"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Basara"
+    ],
+    "expected_categories": [
+      "timings",
+      "sevas",
+      "festivals"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_197",
+    "query": "Tell me about facilities and travel options for Basara.",
+    "archetype": "multi_category",
+    "temple": "Basara",
+    "categories": [
+      "facilities",
+      "travel"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Basara"
+    ],
+    "expected_categories": [
+      "facilities",
+      "travel"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_198",
+    "query": "What are the rules and timings at Basara?",
+    "archetype": "multi_category",
+    "temple": "Basara",
+    "categories": [
+      "rules",
+      "timings"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Basara"
+    ],
+    "expected_categories": [
+      "rules",
+      "timings"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_199",
+    "query": "What prasadams and sevas are offered at Basara?",
+    "archetype": "multi_category",
+    "temple": "Basara",
+    "categories": [
+      "prasadam",
+      "sevas"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Basara"
+    ],
+    "expected_categories": [
+      "prasadam",
+      "sevas"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_200",
+    "query": "What accommodation and restaurants are available near Birla Mandir?",
+    "archetype": "multi_category",
+    "temple": "Birla Mandir",
+    "categories": [
+      "accommodation",
+      "restaurants"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Birla Mandir"
+    ],
+    "expected_categories": [
+      "accommodation",
+      "restaurants"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_201",
+    "query": "What are the timings, sevas and festivals at Birla Mandir?",
+    "archetype": "multi_category",
+    "temple": "Birla Mandir",
+    "categories": [
+      "timings",
+      "sevas",
+      "festivals"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Birla Mandir"
+    ],
+    "expected_categories": [
+      "timings",
+      "sevas",
+      "festivals"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_202",
+    "query": "Tell me about facilities and travel options for Birla Mandir.",
+    "archetype": "multi_category",
+    "temple": "Birla Mandir",
+    "categories": [
+      "facilities",
+      "travel"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Birla Mandir"
+    ],
+    "expected_categories": [
+      "facilities",
+      "travel"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_203",
+    "query": "What are the rules and timings at Birla Mandir?",
+    "archetype": "multi_category",
+    "temple": "Birla Mandir",
+    "categories": [
+      "rules",
+      "timings"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Birla Mandir"
+    ],
+    "expected_categories": [
+      "rules",
+      "timings"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_204",
+    "query": "What prasadams and sevas are offered at Birla Mandir?",
+    "archetype": "multi_category",
+    "temple": "Birla Mandir",
+    "categories": [
+      "prasadam",
+      "sevas"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Birla Mandir"
+    ],
+    "expected_categories": [
+      "prasadam",
+      "sevas"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_205",
+    "query": "What accommodation and restaurants are available near Chilkur?",
+    "archetype": "multi_category",
+    "temple": "Chilkur",
+    "categories": [
+      "accommodation",
+      "restaurants"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Chilkur"
+    ],
+    "expected_categories": [
+      "accommodation",
+      "restaurants"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_206",
+    "query": "What are the timings, sevas and festivals at Chilkur?",
+    "archetype": "multi_category",
+    "temple": "Chilkur",
+    "categories": [
+      "timings",
+      "sevas",
+      "festivals"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Chilkur"
+    ],
+    "expected_categories": [
+      "timings",
+      "sevas",
+      "festivals"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_207",
+    "query": "Tell me about facilities and travel options for Chilkur.",
+    "archetype": "multi_category",
+    "temple": "Chilkur",
+    "categories": [
+      "facilities",
+      "travel"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Chilkur"
+    ],
+    "expected_categories": [
+      "facilities",
+      "travel"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_208",
+    "query": "What are the rules and timings at Chilkur?",
+    "archetype": "multi_category",
+    "temple": "Chilkur",
+    "categories": [
+      "rules",
+      "timings"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Chilkur"
+    ],
+    "expected_categories": [
+      "rules",
+      "timings"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "MULTI_209",
+    "query": "What prasadams and sevas are offered at Chilkur?",
+    "archetype": "multi_category",
+    "temple": "Chilkur",
+    "categories": [
+      "prasadam",
+      "sevas"
+    ],
+    "expected_route": "multi_category",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Chilkur"
+    ],
+    "expected_categories": [
+      "prasadam",
+      "sevas"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "BROAD_210",
+    "query": "Tell me everything about Ahobilam Temple.",
+    "archetype": "broad_temple",
+    "temple": "Ahobilam",
+    "expected_route": "broad_temple",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ahobilam"
+    ],
+    "expected_categories": [
+      "*"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "BROAD_211",
+    "query": "Tell me everything about Badrachalam Temple.",
+    "archetype": "broad_temple",
+    "temple": "Badrachalam",
+    "expected_route": "broad_temple",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Badrachalam"
+    ],
+    "expected_categories": [
+      "*"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "BROAD_212",
+    "query": "Tell me everything about Balkampet Temple.",
+    "archetype": "broad_temple",
+    "temple": "Balkampet",
+    "expected_route": "broad_temple",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Balkampet"
+    ],
+    "expected_categories": [
+      "*"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "BROAD_213",
+    "query": "Tell me everything about Basara Temple.",
+    "archetype": "broad_temple",
+    "temple": "Basara",
+    "expected_route": "broad_temple",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Basara"
+    ],
+    "expected_categories": [
+      "*"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "BROAD_214",
+    "query": "Tell me everything about Birla Mandir Temple.",
+    "archetype": "broad_temple",
+    "temple": "Birla Mandir",
+    "expected_route": "broad_temple",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Birla Mandir"
+    ],
+    "expected_categories": [
+      "*"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "BROAD_215",
+    "query": "Tell me everything about Chilkur Temple.",
+    "archetype": "broad_temple",
+    "temple": "Chilkur",
+    "expected_route": "broad_temple",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Chilkur"
+    ],
+    "expected_categories": [
+      "*"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "BROAD_216",
+    "query": "Tell me everything about Dharmapuri Temple.",
+    "archetype": "broad_temple",
+    "temple": "Dharmapuri",
+    "expected_route": "broad_temple",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Dharmapuri"
+    ],
+    "expected_categories": [
+      "*"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "BROAD_217",
+    "query": "Tell me everything about Edupayal Temple.",
+    "archetype": "broad_temple",
+    "temple": "Edupayal",
+    "expected_route": "broad_temple",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Edupayal"
+    ],
+    "expected_categories": [
+      "*"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "BROAD_218",
+    "query": "Tell me everything about Jogulamba(New) Temple.",
+    "archetype": "broad_temple",
+    "temple": "Jogulamba(New)",
+    "expected_route": "broad_temple",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Jogulamba(New)"
+    ],
+    "expected_categories": [
+      "*"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "BROAD_219",
+    "query": "Tell me everything about Kaleshvaram Temple.",
+    "archetype": "broad_temple",
+    "temple": "Kaleshvaram",
+    "expected_route": "broad_temple",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Kaleshvaram"
+    ],
+    "expected_categories": [
+      "*"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "BROAD_220",
+    "query": "Tell me everything about Karmanghat Temple.",
+    "archetype": "broad_temple",
+    "temple": "Karmanghat",
+    "expected_route": "broad_temple",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Karmanghat"
+    ],
+    "expected_categories": [
+      "*"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "BROAD_221",
+    "query": "Tell me everything about Medaram Temple.",
+    "archetype": "broad_temple",
+    "temple": "Medaram",
+    "expected_route": "broad_temple",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Medaram"
+    ],
+    "expected_categories": [
+      "*"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "BROAD_222",
+    "query": "Tell me everything about Ramappa Temple.",
+    "archetype": "broad_temple",
+    "temple": "Ramappa",
+    "expected_route": "broad_temple",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ramappa"
+    ],
+    "expected_categories": [
+      "*"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "BROAD_223",
+    "query": "Tell me everything about Srisaila Temple.",
+    "archetype": "broad_temple",
+    "temple": "Srisaila",
+    "expected_route": "broad_temple",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Srisaila"
+    ],
+    "expected_categories": [
+      "*"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "BROAD_224",
+    "query": "Tell me everything about Thousand Pillar Temple.",
+    "archetype": "broad_temple",
+    "temple": "Thousand Pillar",
+    "expected_route": "broad_temple",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Thousand Pillar"
+    ],
+    "expected_categories": [
+      "*"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "BROAD_225",
+    "query": "Tell me everything about Ttd Temple.",
+    "archetype": "broad_temple",
+    "temple": "Ttd",
+    "expected_route": "broad_temple",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ttd"
+    ],
+    "expected_categories": [
+      "*"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "BROAD_226",
+    "query": "Tell me everything about Ujjaini Temple.",
+    "archetype": "broad_temple",
+    "temple": "Ujjaini",
+    "expected_route": "broad_temple",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ujjaini"
+    ],
+    "expected_categories": [
+      "*"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "BROAD_227",
+    "query": "Tell me everything about Veera Satyanarayana Temple.",
+    "archetype": "broad_temple",
+    "temple": "Veera Satyanarayana",
+    "expected_route": "broad_temple",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Veera Satyanarayana"
+    ],
+    "expected_categories": [
+      "*"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "BROAD_228",
+    "query": "Tell me everything about Vemulavada Temple.",
+    "archetype": "broad_temple",
+    "temple": "Vemulavada",
+    "expected_route": "broad_temple",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Vemulavada"
+    ],
+    "expected_categories": [
+      "*"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "BROAD_229",
+    "query": "Tell me everything about Yadadri Temple.",
+    "archetype": "broad_temple",
+    "temple": "Yadadri",
+    "expected_route": "broad_temple",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Yadadri"
+    ],
+    "expected_categories": [
+      "*"
+    ],
+    "exhaustive": true
+  },
+  {
+    "id": "REFUSAL_230",
+    "query": "Does Ahobilam have a helicopter launch pad?",
+    "archetype": "grounded_refusal",
+    "temple": "Ahobilam",
+    "fake_entity": "helicopter",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "REFUSAL_231",
+    "query": "Does Ahobilam have a metro train station inside the sanctum?",
+    "archetype": "grounded_refusal",
+    "temple": "Ahobilam",
+    "fake_entity": "metro",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "REFUSAL_232",
+    "query": "Does Ahobilam offer submarine boat rides?",
+    "archetype": "grounded_refusal",
+    "temple": "Ahobilam",
+    "fake_entity": "submarine",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "REFUSAL_233",
+    "query": "Is there an indoor ski resort at Ahobilam?",
+    "archetype": "grounded_refusal",
+    "temple": "Ahobilam",
+    "fake_entity": "ski resort",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "REFUSAL_234",
+    "query": "Does Ahobilam have an international airport inside the complex?",
+    "archetype": "grounded_refusal",
+    "temple": "Ahobilam",
+    "fake_entity": "airport",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "REFUSAL_235",
+    "query": "What is the ticket price for roller coaster rides at Ahobilam?",
+    "archetype": "grounded_refusal",
+    "temple": "Ahobilam",
+    "fake_entity": "roller coaster",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "REFUSAL_236",
+    "query": "Does Badrachalam have a helicopter launch pad?",
+    "archetype": "grounded_refusal",
+    "temple": "Badrachalam",
+    "fake_entity": "helicopter",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "REFUSAL_237",
+    "query": "Does Badrachalam have a metro train station inside the sanctum?",
+    "archetype": "grounded_refusal",
+    "temple": "Badrachalam",
+    "fake_entity": "metro",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "REFUSAL_238",
+    "query": "Does Badrachalam offer submarine boat rides?",
+    "archetype": "grounded_refusal",
+    "temple": "Badrachalam",
+    "fake_entity": "submarine",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "REFUSAL_239",
+    "query": "Is there an indoor ski resort at Badrachalam?",
+    "archetype": "grounded_refusal",
+    "temple": "Badrachalam",
+    "fake_entity": "ski resort",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "REFUSAL_240",
+    "query": "Does Badrachalam have an international airport inside the complex?",
+    "archetype": "grounded_refusal",
+    "temple": "Badrachalam",
+    "fake_entity": "airport",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "REFUSAL_241",
+    "query": "What is the ticket price for roller coaster rides at Badrachalam?",
+    "archetype": "grounded_refusal",
+    "temple": "Badrachalam",
+    "fake_entity": "roller coaster",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "REFUSAL_242",
+    "query": "Does Balkampet have a helicopter launch pad?",
+    "archetype": "grounded_refusal",
+    "temple": "Balkampet",
+    "fake_entity": "helicopter",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "REFUSAL_243",
+    "query": "Does Balkampet have a metro train station inside the sanctum?",
+    "archetype": "grounded_refusal",
+    "temple": "Balkampet",
+    "fake_entity": "metro",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "REFUSAL_244",
+    "query": "Does Balkampet offer submarine boat rides?",
+    "archetype": "grounded_refusal",
+    "temple": "Balkampet",
+    "fake_entity": "submarine",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "REFUSAL_245",
+    "query": "Is there an indoor ski resort at Balkampet?",
+    "archetype": "grounded_refusal",
+    "temple": "Balkampet",
+    "fake_entity": "ski resort",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "REFUSAL_246",
+    "query": "Does Balkampet have an international airport inside the complex?",
+    "archetype": "grounded_refusal",
+    "temple": "Balkampet",
+    "fake_entity": "airport",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "REFUSAL_247",
+    "query": "What is the ticket price for roller coaster rides at Balkampet?",
+    "archetype": "grounded_refusal",
+    "temple": "Balkampet",
+    "fake_entity": "roller coaster",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "REFUSAL_248",
+    "query": "Does Basara have a helicopter launch pad?",
+    "archetype": "grounded_refusal",
+    "temple": "Basara",
+    "fake_entity": "helicopter",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "REFUSAL_249",
+    "query": "Does Basara have a metro train station inside the sanctum?",
+    "archetype": "grounded_refusal",
+    "temple": "Basara",
+    "fake_entity": "metro",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "REFUSAL_250",
+    "query": "Does Basara offer submarine boat rides?",
+    "archetype": "grounded_refusal",
+    "temple": "Basara",
+    "fake_entity": "submarine",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "REFUSAL_251",
+    "query": "Is there an indoor ski resort at Basara?",
+    "archetype": "grounded_refusal",
+    "temple": "Basara",
+    "fake_entity": "ski resort",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "REFUSAL_252",
+    "query": "Does Basara have an international airport inside the complex?",
+    "archetype": "grounded_refusal",
+    "temple": "Basara",
+    "fake_entity": "airport",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "REFUSAL_253",
+    "query": "What is the ticket price for roller coaster rides at Basara?",
+    "archetype": "grounded_refusal",
+    "temple": "Basara",
+    "fake_entity": "roller coaster",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "REFUSAL_254",
+    "query": "Does Birla Mandir have a helicopter launch pad?",
+    "archetype": "grounded_refusal",
+    "temple": "Birla Mandir",
+    "fake_entity": "helicopter",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "REFUSAL_255",
+    "query": "Does Birla Mandir have a metro train station inside the sanctum?",
+    "archetype": "grounded_refusal",
+    "temple": "Birla Mandir",
+    "fake_entity": "metro",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "REFUSAL_256",
+    "query": "Does Birla Mandir offer submarine boat rides?",
+    "archetype": "grounded_refusal",
+    "temple": "Birla Mandir",
+    "fake_entity": "submarine",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "REFUSAL_257",
+    "query": "Is there an indoor ski resort at Birla Mandir?",
+    "archetype": "grounded_refusal",
+    "temple": "Birla Mandir",
+    "fake_entity": "ski resort",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "REFUSAL_258",
+    "query": "Does Birla Mandir have an international airport inside the complex?",
+    "archetype": "grounded_refusal",
+    "temple": "Birla Mandir",
+    "fake_entity": "airport",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "REFUSAL_259",
+    "query": "What is the ticket price for roller coaster rides at Birla Mandir?",
+    "archetype": "grounded_refusal",
+    "temple": "Birla Mandir",
+    "fake_entity": "roller coaster",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_refusal": true,
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_260",
+    "query": "Can I crash near Ahobilam for the night?",
+    "archetype": "colloquial",
+    "temple": "Ahobilam",
+    "category": "accommodation",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ahobilam"
+    ],
+    "expected_categories": [
+      "accommodation"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_261",
+    "query": "Can I crash near Badrachalam for the night?",
+    "archetype": "colloquial",
+    "temple": "Badrachalam",
+    "category": "accommodation",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Badrachalam"
+    ],
+    "expected_categories": [
+      "accommodation"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_262",
+    "query": "Can I crash near Balkampet for the night?",
+    "archetype": "colloquial",
+    "temple": "Balkampet",
+    "category": "accommodation",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Balkampet"
+    ],
+    "expected_categories": [
+      "accommodation"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_263",
+    "query": "Can I crash near Basara for the night?",
+    "archetype": "colloquial",
+    "temple": "Basara",
+    "category": "accommodation",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Basara"
+    ],
+    "expected_categories": [
+      "accommodation"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_264",
+    "query": "Can I crash near Birla Mandir for the night?",
+    "archetype": "colloquial",
+    "temple": "Birla Mandir",
+    "category": "accommodation",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Birla Mandir"
+    ],
+    "expected_categories": [
+      "accommodation"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_265",
+    "query": "Can I crash near Chilkur for the night?",
+    "archetype": "colloquial",
+    "temple": "Chilkur",
+    "category": "accommodation",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Chilkur"
+    ],
+    "expected_categories": [
+      "accommodation"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_266",
+    "query": "Can I crash near Dharmapuri for the night?",
+    "archetype": "colloquial",
+    "temple": "Dharmapuri",
+    "category": "accommodation",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Dharmapuri"
+    ],
+    "expected_categories": [
+      "accommodation"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_267",
+    "query": "Can I crash near Edupayal for the night?",
+    "archetype": "colloquial",
+    "temple": "Edupayal",
+    "category": "accommodation",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Edupayal"
+    ],
+    "expected_categories": [
+      "accommodation"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_268",
+    "query": "Where can I grab good food around Ahobilam?",
+    "archetype": "colloquial",
+    "temple": "Ahobilam",
+    "category": "restaurants",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ahobilam"
+    ],
+    "expected_categories": [
+      "restaurants"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_269",
+    "query": "Where can I grab good food around Badrachalam?",
+    "archetype": "colloquial",
+    "temple": "Badrachalam",
+    "category": "restaurants",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Badrachalam"
+    ],
+    "expected_categories": [
+      "restaurants"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_270",
+    "query": "Where can I grab good food around Balkampet?",
+    "archetype": "colloquial",
+    "temple": "Balkampet",
+    "category": "restaurants",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Balkampet"
+    ],
+    "expected_categories": [
+      "restaurants"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_271",
+    "query": "Where can I grab good food around Basara?",
+    "archetype": "colloquial",
+    "temple": "Basara",
+    "category": "restaurants",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Basara"
+    ],
+    "expected_categories": [
+      "restaurants"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_272",
+    "query": "Where can I grab good food around Birla Mandir?",
+    "archetype": "colloquial",
+    "temple": "Birla Mandir",
+    "category": "restaurants",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Birla Mandir"
+    ],
+    "expected_categories": [
+      "restaurants"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_273",
+    "query": "Where can I grab good food around Chilkur?",
+    "archetype": "colloquial",
+    "temple": "Chilkur",
+    "category": "restaurants",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Chilkur"
+    ],
+    "expected_categories": [
+      "restaurants"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_274",
+    "query": "Where can I grab good food around Dharmapuri?",
+    "archetype": "colloquial",
+    "temple": "Dharmapuri",
+    "category": "restaurants",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Dharmapuri"
+    ],
+    "expected_categories": [
+      "restaurants"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_275",
+    "query": "Where can I grab good food around Edupayal?",
+    "archetype": "colloquial",
+    "temple": "Edupayal",
+    "category": "restaurants",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Edupayal"
+    ],
+    "expected_categories": [
+      "restaurants"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_276",
+    "query": "What time does the main darshan start at Ahobilam?",
+    "archetype": "colloquial",
+    "temple": "Ahobilam",
+    "category": "timings",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ahobilam"
+    ],
+    "expected_categories": [
+      "timings"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_277",
+    "query": "What time does the main darshan start at Badrachalam?",
+    "archetype": "colloquial",
+    "temple": "Badrachalam",
+    "category": "timings",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Badrachalam"
+    ],
+    "expected_categories": [
+      "timings"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_278",
+    "query": "What time does the main darshan start at Balkampet?",
+    "archetype": "colloquial",
+    "temple": "Balkampet",
+    "category": "timings",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Balkampet"
+    ],
+    "expected_categories": [
+      "timings"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_279",
+    "query": "What time does the main darshan start at Basara?",
+    "archetype": "colloquial",
+    "temple": "Basara",
+    "category": "timings",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Basara"
+    ],
+    "expected_categories": [
+      "timings"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_280",
+    "query": "What time does the main darshan start at Birla Mandir?",
+    "archetype": "colloquial",
+    "temple": "Birla Mandir",
+    "category": "timings",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Birla Mandir"
+    ],
+    "expected_categories": [
+      "timings"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_281",
+    "query": "What time does the main darshan start at Chilkur?",
+    "archetype": "colloquial",
+    "temple": "Chilkur",
+    "category": "timings",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Chilkur"
+    ],
+    "expected_categories": [
+      "timings"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_282",
+    "query": "What time does the main darshan start at Dharmapuri?",
+    "archetype": "colloquial",
+    "temple": "Dharmapuri",
+    "category": "timings",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Dharmapuri"
+    ],
+    "expected_categories": [
+      "timings"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_283",
+    "query": "What time does the main darshan start at Edupayal?",
+    "archetype": "colloquial",
+    "temple": "Edupayal",
+    "category": "timings",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Edupayal"
+    ],
+    "expected_categories": [
+      "timings"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_284",
+    "query": "Do they have wheelchair help for old people at Ahobilam?",
+    "archetype": "colloquial",
+    "temple": "Ahobilam",
+    "category": "wheelchair",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ahobilam"
+    ],
+    "expected_categories": [
+      "wheelchair"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_285",
+    "query": "Do they have wheelchair help for old people at Badrachalam?",
+    "archetype": "colloquial",
+    "temple": "Badrachalam",
+    "category": "wheelchair",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Badrachalam"
+    ],
+    "expected_categories": [
+      "wheelchair"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_286",
+    "query": "Do they have wheelchair help for old people at Balkampet?",
+    "archetype": "colloquial",
+    "temple": "Balkampet",
+    "category": "wheelchair",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Balkampet"
+    ],
+    "expected_categories": [
+      "wheelchair"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_287",
+    "query": "Do they have wheelchair help for old people at Basara?",
+    "archetype": "colloquial",
+    "temple": "Basara",
+    "category": "wheelchair",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Basara"
+    ],
+    "expected_categories": [
+      "wheelchair"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_288",
+    "query": "Do they have wheelchair help for old people at Birla Mandir?",
+    "archetype": "colloquial",
+    "temple": "Birla Mandir",
+    "category": "wheelchair",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Birla Mandir"
+    ],
+    "expected_categories": [
+      "wheelchair"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_289",
+    "query": "Do they have wheelchair help for old people at Chilkur?",
+    "archetype": "colloquial",
+    "temple": "Chilkur",
+    "category": "wheelchair",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Chilkur"
+    ],
+    "expected_categories": [
+      "wheelchair"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_290",
+    "query": "Do they have wheelchair help for old people at Dharmapuri?",
+    "archetype": "colloquial",
+    "temple": "Dharmapuri",
+    "category": "wheelchair",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Dharmapuri"
+    ],
+    "expected_categories": [
+      "wheelchair"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_291",
+    "query": "Do they have wheelchair help for old people at Edupayal?",
+    "archetype": "colloquial",
+    "temple": "Edupayal",
+    "category": "wheelchair",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Edupayal"
+    ],
+    "expected_categories": [
+      "wheelchair"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_292",
+    "query": "How to reach Ahobilam by train or bus?",
+    "archetype": "colloquial",
+    "temple": "Ahobilam",
+    "category": "travel",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ahobilam"
+    ],
+    "expected_categories": [
+      "travel"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_293",
+    "query": "How to reach Badrachalam by train or bus?",
+    "archetype": "colloquial",
+    "temple": "Badrachalam",
+    "category": "travel",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Badrachalam"
+    ],
+    "expected_categories": [
+      "travel"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_294",
+    "query": "How to reach Balkampet by train or bus?",
+    "archetype": "colloquial",
+    "temple": "Balkampet",
+    "category": "travel",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Balkampet"
+    ],
+    "expected_categories": [
+      "travel"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_295",
+    "query": "How to reach Basara by train or bus?",
+    "archetype": "colloquial",
+    "temple": "Basara",
+    "category": "travel",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Basara"
+    ],
+    "expected_categories": [
+      "travel"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_296",
+    "query": "How to reach Birla Mandir by train or bus?",
+    "archetype": "colloquial",
+    "temple": "Birla Mandir",
+    "category": "travel",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Birla Mandir"
+    ],
+    "expected_categories": [
+      "travel"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_297",
+    "query": "How to reach Chilkur by train or bus?",
+    "archetype": "colloquial",
+    "temple": "Chilkur",
+    "category": "travel",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Chilkur"
+    ],
+    "expected_categories": [
+      "travel"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_298",
+    "query": "How to reach Dharmapuri by train or bus?",
+    "archetype": "colloquial",
+    "temple": "Dharmapuri",
+    "category": "travel",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Dharmapuri"
+    ],
+    "expected_categories": [
+      "travel"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_299",
+    "query": "How to reach Edupayal by train or bus?",
+    "archetype": "colloquial",
+    "temple": "Edupayal",
+    "category": "travel",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Edupayal"
+    ],
+    "expected_categories": [
+      "travel"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_300",
+    "query": "What poojas are done at Ahobilam?",
+    "archetype": "colloquial",
+    "temple": "Ahobilam",
+    "category": "sevas",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Ahobilam"
+    ],
+    "expected_categories": [
+      "sevas"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_301",
+    "query": "What poojas are done at Badrachalam?",
+    "archetype": "colloquial",
+    "temple": "Badrachalam",
+    "category": "sevas",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Badrachalam"
+    ],
+    "expected_categories": [
+      "sevas"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_302",
+    "query": "What poojas are done at Balkampet?",
+    "archetype": "colloquial",
+    "temple": "Balkampet",
+    "category": "sevas",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Balkampet"
+    ],
+    "expected_categories": [
+      "sevas"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_303",
+    "query": "What poojas are done at Basara?",
+    "archetype": "colloquial",
+    "temple": "Basara",
+    "category": "sevas",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Basara"
+    ],
+    "expected_categories": [
+      "sevas"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_304",
+    "query": "What poojas are done at Birla Mandir?",
+    "archetype": "colloquial",
+    "temple": "Birla Mandir",
+    "category": "sevas",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Birla Mandir"
+    ],
+    "expected_categories": [
+      "sevas"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_305",
+    "query": "What poojas are done at Chilkur?",
+    "archetype": "colloquial",
+    "temple": "Chilkur",
+    "category": "sevas",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Chilkur"
+    ],
+    "expected_categories": [
+      "sevas"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_306",
+    "query": "What poojas are done at Dharmapuri?",
+    "archetype": "colloquial",
+    "temple": "Dharmapuri",
+    "category": "sevas",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Dharmapuri"
+    ],
+    "expected_categories": [
+      "sevas"
+    ],
+    "exhaustive": false
+  },
+  {
+    "id": "COLLOQUIAL_307",
+    "query": "What poojas are done at Edupayal?",
+    "archetype": "colloquial",
+    "temple": "Edupayal",
+    "category": "sevas",
+    "expected_route": "targeted",
+    "expected_scope": "single_temple",
+    "expected_temples": [
+      "Edupayal"
+    ],
+    "expected_categories": [
+      "sevas"
+    ],
+    "exhaustive": false
+  }
+]

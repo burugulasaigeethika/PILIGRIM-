@@ -1,0 +1,57 @@
+{
+  "address": "Hereditary Trustee / Archaka, Sri Chilkur Balaji Temple, Chilkur Village, Moinabad Mandal, Rangareddy District, Telangana - 501504",
+  "phones": [
+    "+91 84172 35933"
+  ],
+  "emails": [],
+  "website": "http://www.chilkurbalaji.com/",
+  "google_map": "https://www.google.com/maps/search/?api=1&query=Chilkur+Balaji+Temple",
+  "google_embed_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.697424072846!2d78.29749117502422!3d17.378280683505505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9542a2fbd727%3A0xe54fb797c55531d0!2sChilkur%20Balaji%20Temple!5e0!3m2!1sen!2sin!4v1700000000000",
+  "alternate_website": "",
+  "pincode": "501504",
+  "directory": {
+    "Temple Contact (Informational Inquiry)": "+91 84172 35933"
+  },
+  "emergency_services": {
+    "hospitals": [
+      {
+        "name": "Rishitha Hospital",
+        "type": "Private",
+        "address": "Chilkur Balaji Temple Road",
+        "distance": "~12.8km",
+        "contact_number": "040 2970 8086",
+        "working_hours": "24/7"
+      },
+      {
+        "name": "Bhaskar General Hospital (Yenkapally)",
+        "type": "Private/Teaching",
+        "address": "Yenkapally",
+        "distance": "~4.8 km",
+        "contact_number": "",
+        "working_hours": "24/7"
+      },
+      {
+        "name": "Continental Hospitals (Gachibowli)",
+        "type": "Private",
+        "address": "Gachibowli",
+        "distance": "~20.0 km",
+        "contact_number": "040 6700 0000",
+        "working_hours": "24/7"
+      }
+    ],
+    "ambulance_services": [
+      {
+        "name": "Universal Medical Ambulance (Telangana)",
+        "contact": "108",
+        "description": "Medical Ambulance"
+      }
+    ],
+    "police_and_security": [
+      {
+        "name": "Moinabad Police Station (Temple jurisdiction)",
+        "address": "Moinabad",
+        "contact_numbers": "+91 40 2785 2400"
+      }
+    ]
+  }
+}

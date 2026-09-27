@@ -1,0 +1,416 @@
+[
+  {
+    "query_id": 1,
+    "query": "Plan a 2 day itinerary to Yadadri with a budget of \u20b95000",
+    "agent": "response_aggregator",
+    "latency_ms": 112.71160002797842,
+    "sources": [
+      "yadadri/timings.json",
+      "yadadri/sevas.json",
+      "yadadri/travel.json",
+      "yadadri/accommodation.json",
+      "yadadri/prasadam.json",
+      "yadadri/crowd.json",
+      "yadadri/facilities.json"
+    ],
+    "answer": "### Pilgrimage Itinerary: Yadadri (2 Days)\n\n#### Day 1: Yadadri Temple\n\n**Verified Temple Information:**\n- **Operating Schedule**: Standard daily opening hours apply.\n- **Featured Sevas**: Special Entry (07:00 AM - 09:00 PM), Break Darshanam (09:00 AM - 10:00 AM, 04:00 PM - 05:00 PM)\n- **Prasadam / Food**: Prasadam offerings and food counters available.\n- **Accommodation**: On-site Devasthanam guest houses / choultries verified in records.\n- **Transit & Connectivity**: Bus Connectivity: Located ~60 km from Hyderabad off NH-163 (Warangal Highway)\n\n**Suggested Visit Plan:**\n- **Morning Window**: Arrive early for initial darshan and attend morning sevas if participating.\n- **Afternoon Window**: Utilize Annadanam / lunch services. Observe any afternoon sanctum rest periods.\n- **Evening Window**: Attend evening Harathi / darshan, visit sub-shrines, and proceed to lodging.\n\n#### Day 2: Yadadri Temple\n\n**Verified Temple Information:**\n- **Operating Schedule**: Standard daily opening hours apply.\n- **Featured Sevas**: Special Entry (07:00 AM - 09:00 PM), Break Darshanam (09:00 AM - 10:00 AM, 04:00 PM - 05:00 PM)\n- **Prasadam / Food**: Prasadam offerings and food counters available.\n- **Accommodation**: On-site Devasthanam guest houses / choultries verified in records.\n- **Transit & Connectivity**: Bus Connectivity: Located ~60 km from Hyderabad off NH-163 (Warangal Highway)\n\n**Suggested Visit Plan:**\n- **Morning Window**: Arrive early for initial darshan and attend morning sevas if participating.\n- **Afternoon Window**: Utilize Annadanam / lunch services. Observe any afternoon sanctum rest periods.\n- **Evening Window**: Attend evening Harathi / darshan, visit sub-shrines, and proceed to lodging.\n\n*(Live-Data Limitation: This itinerary is constructed strictly from verified static records. It does not include real-time traffic, live road conditions, real-time travel durations, live weather forecasts, or dynamic room booking availability. Please verify current local transit schedules and devasthanam announcements before departure).*\n\n**Sources:**\n- **Yadadri**: yadadri/timings.json, yadadri/sevas.json, yadadri/travel.json, yadadri/accommodation.json, yadadri/prasadam.json, yadadri/crowd.json, yadadri/facilities.json\n\n## \ud83d\udcb0 Pilgrimage Budget \u2014 Yadadri Lakshmi Narasimha\n\n### Verified Costs\n- **Special Entry**: \u20b9150 (per service) *(Source: verified temple record)*\n- **Break Darshanam**: \u20b9300 (per service) *(Source: verified temple record)*\n- **Premium, modern villa-style cottages**: \u20b93,000 (per room per night) *(Source: verified temple record)* *(Alternative option)*\n- **Temple Satralu & Guest Houses**: \u20b91,000 (per room per night) *(Source: verified temple record)* *(Alternative option)*\n- **Yadadri Ghee Laddu (100g)**: \u20b930 (per item) *(Source: verified temple record)*\n- **Kalyanotsavam Laddu (500g)**: \u20b9150 (per item) *(Source: verified temple record)*\n\n### Calculated Costs\n- **Calculated Total Range**: **\u20b91,630 \u2013 \u20b93,630**\n- **User Budget Limit**: **\u20b95,000**\n- **Budget Status**: \u2705 **Within Budget** (Calculated total \u20b91,630 \u2013 \u20b93,630 is within \u20b95,000)\n\n### Costs Not Available\n- **High-end VVIP suites and cottages**: Highly restricted VVIP pricing. *(Unavailable / requires current devasthanam verification)*\n\n### Total\n- **\u20b91,630 \u2013 \u20b93,630**\n\n*(Total excludes travel (varies by transport provider / not supplied), personal dining / food (unless specified)).*\n\n### Assumptions\n- Group size: 1 person (default assumption)\n- Duration: 2 day(s)\n\n### Notes\n- Verified prices are from the project's static records.\n- Prices may change; verify current temple tariffs before payment.\n- Official devasthanam tickets and room bookings should be confirmed at the temple enquiry counter.",
+    "metadata": {
+      "agent_count": 2,
+      "agents": [
+        "itinerary_planning",
+        "budget"
+      ],
+      "successful_agents": [
+        "itinerary_planning",
+        "budget"
+      ],
+      "failed_agents": [],
+      "has_conflict": false,
+      "aggregation_latency_ms": 1.3113000895828009,
+      "itinerary": true,
+      "temples": [
+        "Yadadri"
+      ],
+      "duration_days": 2,
+      "sources_by_temple": {
+        "Yadadri": [
+          "yadadri/timings.json",
+          "yadadri/sevas.json",
+          "yadadri/travel.json",
+          "yadadri/accommodation.json",
+          "yadadri/prasadam.json",
+          "yadadri/crowd.json",
+          "yadadri/facilities.json"
+        ]
+      },
+      "disclaimer_present": true,
+      "parameters": {
+        "pax": 1,
+        "pax_assumed": true,
+        "days": 2,
+        "days_assumed": false,
+        "budget_limit": 5000.0,
+        "accom_requested": false
+      },
+      "calculated_total": {
+        "min": 1630.0,
+        "max": 3630.0,
+        "currency": "INR"
+      },
+      "verified_item_count": 6,
+      "unquantified_item_count": 1,
+      "user_item_count": 0,
+      "pipeline_latency_ms": 69.49179992079735
+    },
+    "success": true
+  },
+  {
+    "query_id": 2,
+    "query": "Plan a 2 day trip to Yadadri under \u20b95000 including accommodation",
+    "agent": "response_aggregator",
+    "latency_ms": 92.41329994983971,
+    "sources": [
+      "yadadri/timings.json",
+      "yadadri/sevas.json",
+      "yadadri/travel.json",
+      "yadadri/accommodation.json",
+      "yadadri/prasadam.json",
+      "yadadri/crowd.json",
+      "yadadri/facilities.json"
+    ],
+    "answer": "### Pilgrimage Itinerary: Yadadri (2 Days)\n\n#### Day 1: Yadadri Temple\n\n**Verified Temple Information:**\n- **Operating Schedule**: Standard daily opening hours apply.\n- **Featured Sevas**: Special Entry (07:00 AM - 09:00 PM), Break Darshanam (09:00 AM - 10:00 AM, 04:00 PM - 05:00 PM)\n- **Prasadam / Food**: Prasadam offerings and food counters available.\n- **Accommodation**: On-site Devasthanam guest houses / choultries verified in records.\n- **Transit & Connectivity**: Bus Connectivity: Located ~60 km from Hyderabad off NH-163 (Warangal Highway)\n\n**Suggested Visit Plan:**\n- **Morning Window**: Arrive early for initial darshan and attend morning sevas if participating.\n- **Afternoon Window**: Utilize Annadanam / lunch services. Observe any afternoon sanctum rest periods.\n- **Evening Window**: Attend evening Harathi / darshan, visit sub-shrines, and proceed to lodging.\n\n#### Day 2: Yadadri Temple\n\n**Verified Temple Information:**\n- **Operating Schedule**: Standard daily opening hours apply.\n- **Featured Sevas**: Special Entry (07:00 AM - 09:00 PM), Break Darshanam (09:00 AM - 10:00 AM, 04:00 PM - 05:00 PM)\n- **Prasadam / Food**: Prasadam offerings and food counters available.\n- **Accommodation**: On-site Devasthanam guest houses / choultries verified in records.\n- **Transit & Connectivity**: Bus Connectivity: Located ~60 km from Hyderabad off NH-163 (Warangal Highway)\n\n**Suggested Visit Plan:**\n- **Morning Window**: Arrive early for initial darshan and attend morning sevas if participating.\n- **Afternoon Window**: Utilize Annadanam / lunch services. Observe any afternoon sanctum rest periods.\n- **Evening Window**: Attend evening Harathi / darshan, visit sub-shrines, and proceed to lodging.\n\n*(Live-Data Limitation: This itinerary is constructed strictly from verified static records. It does not include real-time traffic, live road conditions, real-time travel durations, live weather forecasts, or dynamic room booking availability. Please verify current local transit schedules and devasthanam announcements before departure).*\n\n**Sources:**\n- **Yadadri**: yadadri/timings.json, yadadri/sevas.json, yadadri/travel.json, yadadri/accommodation.json, yadadri/prasadam.json, yadadri/crowd.json, yadadri/facilities.json\n\n## \ud83d\udcb0 Pilgrimage Budget \u2014 Yadadri Lakshmi Narasimha\n\n### Verified Costs\n- **Special Entry**: \u20b9150 (per service) *(Source: verified temple record)*\n- **Break Darshanam**: \u20b9300 (per service) *(Source: verified temple record)*\n- **Premium, modern villa-style cottages**: \u20b93,000 (per room per night) *(Source: verified temple record)* *(Alternative option)*\n- **Temple Satralu & Guest Houses**: \u20b91,000 (per room per night) *(Source: verified temple record)* *(Alternative option)*\n- **Yadadri Ghee Laddu (100g)**: \u20b930 (per item) *(Source: verified temple record)*\n- **Kalyanotsavam Laddu (500g)**: \u20b9150 (per item) *(Source: verified temple record)*\n\n### Calculated Costs\n- **Calculated Total Range**: **\u20b91,630 \u2013 \u20b93,630**\n- **User Budget Limit**: **\u20b95,000**\n- **Budget Status**: \u2705 **Within Budget** (Calculated total \u20b91,630 \u2013 \u20b93,630 is within \u20b95,000)\n\n### Costs Not Available\n- **High-end VVIP suites and cottages**: Highly restricted VVIP pricing. *(Unavailable / requires current devasthanam verification)*\n\n### Total\n- **\u20b91,630 \u2013 \u20b93,630**\n\n*(Total excludes travel (varies by transport provider / not supplied), personal dining / food (unless specified)).*\n\n### Assumptions\n- Group size: 1 person (default assumption)\n- Duration: 2 day(s)\n\n### Notes\n- Verified prices are from the project's static records.\n- Prices may change; verify current temple tariffs before payment.\n- Official devasthanam tickets and room bookings should be confirmed at the temple enquiry counter.",
+    "metadata": {
+      "agent_count": 2,
+      "agents": [
+        "itinerary_planning",
+        "budget"
+      ],
+      "successful_agents": [
+        "itinerary_planning",
+        "budget"
+      ],
+      "failed_agents": [],
+      "has_conflict": false,
+      "aggregation_latency_ms": 0.7296998519450426,
+      "itinerary": true,
+      "temples": [
+        "Yadadri"
+      ],
+      "duration_days": 2,
+      "sources_by_temple": {
+        "Yadadri": [
+          "yadadri/timings.json",
+          "yadadri/sevas.json",
+          "yadadri/travel.json",
+          "yadadri/accommodation.json",
+          "yadadri/prasadam.json",
+          "yadadri/crowd.json",
+          "yadadri/facilities.json"
+        ]
+      },
+      "disclaimer_present": true,
+      "parameters": {
+        "pax": 1,
+        "pax_assumed": true,
+        "days": 2,
+        "days_assumed": false,
+        "budget_limit": 5000.0,
+        "accom_requested": true
+      },
+      "calculated_total": {
+        "min": 1630.0,
+        "max": 3630.0,
+        "currency": "INR"
+      },
+      "verified_item_count": 6,
+      "unquantified_item_count": 1,
+      "user_item_count": 0,
+      "pipeline_latency_ms": 47.62790002860129
+    },
+    "success": true
+  },
+  {
+    "query_id": 3,
+    "query": "Which temples currently have temperatures above 27\u00b0C?",
+    "agent": "live_weather",
+    "latency_ms": 4198.547499952838,
+    "sources": [
+      "Weather data by Open-Meteo.com under CC BY 4.0"
+    ],
+    "answer": "## \ud83c\udf24\ufe0f Live Weather Filter \u2014 Temples with Temperature above 27\u00b0C\n\nBased on **live observations from Open-Meteo**, the following registered pilgrimage temples currently match your criteria:\n\nNone of the 20 registered pilgrimage temples currently have temperatures above 27\u00b0C.\n\nCurrent live observations at monitored temples include: Ahobilam (26.4\u00b0C), Badrachalam (26.5\u00b0C), Balkampet (24.8\u00b0C), Basara (25.2\u00b0C), Birla Mandir (24.9\u00b0C), Chilkur (24.3\u00b0C).\n\n### \ud83d\udca1 Practical Pilgrimage Advice\n- Check live queue and darshan timings prior to travel.\n- Weather conditions fluctuate throughout the day; prepare appropriate attire.\n\n*Weather data by Open-Meteo.com under CC BY 4.0*",
+    "metadata": {
+      "provider": "Open-Meteo",
+      "query_type": "cross_temple_threshold",
+      "filter": {
+        "type": "above",
+        "threshold": 27.0,
+        "description": "above 27\u00b0C"
+      },
+      "matched_count": 0,
+      "matched_temples": [],
+      "total_evaluated": 20,
+      "attribution": "Weather data by Open-Meteo.com under CC BY 4.0",
+      "aggregation_latency_ms": 0.0100000761449337,
+      "agent_count": 1,
+      "coordinator_latency_ms": 4186.841200105846
+    },
+    "success": true
+  },
+  {
+    "query_id": 4,
+    "query": "What are the current temperatures at Yadadri, Basara, Bhadrachalam and Vemulavada?",
+    "agent": "live_weather",
+    "latency_ms": 15.47779981046915,
+    "sources": [
+      "Weather data by Open-Meteo.com under CC BY 4.0"
+    ],
+    "answer": "## \ud83c\udf24\ufe0f Live Weather Report \u2014 Sri Sita Ramachandraswamy Temple, Bhadrachalam, Sri Gnana Saraswathi Devasthanam, Basara, Sri Raja Rajeshwara Swamy Temple, Vemulawada, Sri Lakshmi Narasimha Swamy Temple, Yadadri\n\n### \ud83c\udf21\ufe0f Current Live Observations\n\n1. **Sri Sita Ramachandraswamy Temple, Bhadrachalam** (Badrachalam)\n   - **Current Temperature**: **26.5\u00b0C**\n   - **Condition**: Clear sky\n   - **Today's Range**: 25.7\u00b0C to 32.3\u00b0C\n   - **Humidity**: 92% | **Wind Speed**: 5.5 km/h\n\n2. **Sri Gnana Saraswathi Devasthanam, Basara** (Basara)\n   - **Current Temperature**: **25.2\u00b0C**\n   - **Condition**: Mainly clear\n   - **Today's Range**: 24.7\u00b0C to 31.6\u00b0C\n   - **Humidity**: 82% | **Wind Speed**: 7.5 km/h\n\n3. **Sri Raja Rajeshwara Swamy Temple, Vemulawada** (Vemulavada)\n   - **Current Temperature**: **24.4\u00b0C**\n   - **Condition**: Mainly clear\n   - **Today's Range**: 23.8\u00b0C to 31.4\u00b0C\n   - **Humidity**: 83% | **Wind Speed**: 6.9 km/h\n\n4. **Sri Lakshmi Narasimha Swamy Temple, Yadadri** (Yadadri)\n   - **Current Temperature**: **24.9\u00b0C**\n   - **Condition**: Clear sky\n   - **Today's Range**: 24.5\u00b0C to 31.1\u00b0C\n   - **Humidity**: 82% | **Wind Speed**: 9.6 km/h\n\n### \ud83d\udca1 Practical Pilgrimage Advice\n- Stay hydrated during afternoon darshan hours and check queue conditions.\n- Layer with light shawls for morning/evening visits if temperatures drop.\n\n*Weather data by Open-Meteo.com under CC BY 4.0*",
+    "metadata": {
+      "provider": "Open-Meteo",
+      "query_type": "multi_temple_weather",
+      "temples": [
+        "Badrachalam",
+        "Basara",
+        "Vemulavada",
+        "Yadadri"
+      ],
+      "observations": {
+        "Badrachalam": {
+          "temperature": 26.5,
+          "condition": "Clear sky",
+          "humidity": 92,
+          "wind": 5.5
+        },
+        "Basara": {
+          "temperature": 25.2,
+          "condition": "Mainly clear",
+          "humidity": 82,
+          "wind": 7.5
+        },
+        "Vemulavada": {
+          "temperature": 24.4,
+          "condition": "Mainly clear",
+          "humidity": 83,
+          "wind": 6.9
+        },
+        "Yadadri": {
+          "temperature": 24.9,
+          "condition": "Clear sky",
+          "humidity": 82,
+          "wind": 9.6
+        }
+      },
+      "attribution": "Weather data by Open-Meteo.com under CC BY 4.0",
+      "aggregation_latency_ms": 0.029499875381588936,
+      "agent_count": 1,
+      "coordinator_latency_ms": 8.782600052654743
+    },
+    "success": true
+  },
+  {
+    "query_id": 5,
+    "query": "Recommend a temple where the temperature is around 25\u201330\u00b0C",
+    "agent": "recommendation",
+    "latency_ms": 3063.205099897459,
+    "sources": [
+      "Open-Meteo Weather API"
+    ],
+    "answer": "### \ud83c\udf24\ufe0f Live Weather Recommendations (25\u00b0C \u2013 30\u00b0C)\n\nBased on **live observations from Open-Meteo**, the following registered pilgrimage temples currently satisfy your requested temperature range:\n\n- **Sri Ujjaini Mahakali Temple, Secunderabad**: **25.0\u00b0C** (Live observation: 2026-09-26T16:51:52.510056+00:00)\n- **Sri Gnana Saraswathi Devasthanam, Basara**: **25.2\u00b0C** (Live observation: 2026-09-26T16:51:50.513940+00:00)\n- **Sri Kaleshwara Mukteshwara Swamy Temple, Kaleshwaram**: **25.4\u00b0C** (Live observation: 2026-09-26T16:51:51.424865+00:00)\n- **Sammakka Saralamma Gaddelu, Medaram**: **25.6\u00b0C** (Live observation: 2026-09-26T16:51:51.727344+00:00)\n- **Ramappa Temple, Palampet**: **25.6\u00b0C** (Live observation: 2026-09-26T16:51:51.877682+00:00)\n- **Thousand Pillar Temple, Hanamkonda**: **26.0\u00b0C** (Live observation: 2026-09-26T16:51:52.177804+00:00)\n- **Sri Ahobila Narasimha Swamy Temple**: **26.4\u00b0C** (Live observation: 2026-09-26T16:51:50.063739+00:00)\n- **Sri Sita Ramachandraswamy Temple, Bhadrachalam**: **26.5\u00b0C** (Live observation: 2026-09-26T16:51:50.213528+00:00)\n- **Sri Veera Venkata Satyanarayana Swamy Temple, Annavaram**: **26.5\u00b0C** (Live observation: 2026-09-26T16:51:52.660640+00:00)\n- **Jogulamba Devi Temple, Alampur**: **27.0\u00b0C** (Live observation: 2026-09-26T16:51:51.274039+00:00)\n\n> **Note**: These temperatures reflect live observations and conditions may change during your journey.\n> **Attribution**: Weather data by Open-Meteo.com under CC BY 4.0.\n\n*(To check darshan timings, sevas, or accommodation for any of these temples, please ask about that specific temple).*",
+    "metadata": {
+      "weather_filter": {
+        "type": "range",
+        "min_temp": 25.0,
+        "max_temp": 30.0
+      },
+      "matched_temples": [
+        "Sri Ujjaini Mahakali Temple, Secunderabad",
+        "Sri Gnana Saraswathi Devasthanam, Basara",
+        "Sri Kaleshwara Mukteshwara Swamy Temple, Kaleshwaram",
+        "Sammakka Saralamma Gaddelu, Medaram",
+        "Ramappa Temple, Palampet",
+        "Thousand Pillar Temple, Hanamkonda",
+        "Sri Ahobila Narasimha Swamy Temple",
+        "Sri Sita Ramachandraswamy Temple, Bhadrachalam",
+        "Sri Veera Venkata Satyanarayana Swamy Temple, Annavaram",
+        "Jogulamba Devi Temple, Alampur"
+      ],
+      "aggregation_latency_ms": 0.014299992471933365,
+      "agent_count": 1,
+      "coordinator_latency_ms": 3056.329100159928
+    },
+    "success": true
+  },
+  {
+    "query_id": 6,
+    "query": "Compare Yadadri and Basara accommodation.",
+    "agent": "comparison",
+    "latency_ms": 41.667900048196316,
+    "sources": [
+      "yadadri/accommodation.json",
+      "basara/accommodation.json"
+    ],
+    "answer": "### Comparison: Yadadri vs Basara\n\n#### Accommodation\n- **Yadadri**: Name: Hilltop cottages; Type: High-end VVIP suites and cottages; Distance: 0 km (Located directly at the temple). (and 37 more records)\n- **Basara**: Name: Laxmi Grand Inn; Type: Private Hotel; Distance: ~150 Metres (and 17 more records)\n\n**Sources:**\n- **Yadadri**: yadadri/accommodation.json\n- **Basara**: basara/accommodation.json",
+    "metadata": {
+      "comparison_temples": [
+        "Yadadri",
+        "Basara"
+      ],
+      "comparison_categories": [
+        "accommodation"
+      ],
+      "sources_by_temple": {
+        "Yadadri": [
+          "yadadri/accommodation.json"
+        ],
+        "Basara": [
+          "basara/accommodation.json"
+        ]
+      },
+      "partial_failures": [],
+      "aggregation_latency_ms": 0.004499917849898338,
+      "agent_count": 1,
+      "coordinator_latency_ms": 11.737700086086988
+    },
+    "success": true
+  },
+  {
+    "query_id": 7,
+    "query": "Which temples are on a river bank?",
+    "agent": "cross_temple_aggregation",
+    "latency_ms": 17.768299905583262,
+    "sources": [
+      "ahobilam/river_bank.json",
+      "badrachalam/river_bank.json",
+      "basara/river_bank.json",
+      "dharmapuri/river_bank.json",
+      "edupayal/river_bank.json",
+      "jogulamba(new)/river_bank.json",
+      "kaleshvaram/river_bank.json",
+      "medaram/river_bank.json",
+      "srisaila/river_bank.json",
+      "veera_satyanarayana/river_bank.json",
+      "vemulavada/river_bank.json"
+    ],
+    "answer": "Based on the temple knowledge base, the following **11 temples** have confirmed **River Bank** information:\n\n1. **Ahobilam** \u2014 River: Bhavanashini River (Pavanasini River) (Ghat: Raktha Kundam)\n2. **Badrachalam** \u2014 River: River Godavari (Dakshina Vahini) (Ghat: Godavari Bathing Ghats & Kalyana Katta)\n3. **Basara** \u2014 River: River Godavari (Ghat: Basara Godavari River Bathing Ghat)\n4. **Dharmapuri** \u2014 River: Godavari (Dakshina Vahini) (Ghat: Dharmapuri Godavari River Bathing Ghat)\n5. **Edupayal** \u2014 River: Manjeera River (Edu Payalu Confluence) (Ghat: Edupayala Seven Streams River Ghats)\n6. **Jogulamba(New)** \u2014 River: Tungabhadra River & Krishna River (Sacred Confluence / Tungabhadra\u2013Krishna Sangam) (Ghat: Jogulamba River Ghat)\n7. **Kaleshvaram** \u2014 River: Dakshina Triveni Sangamam (River Godavari, River Pranahita, and subterranean River Saraswati) (Ghat: Triveni Sangam Bathing Ghats)\n8. **Medaram** \u2014 River: Jampanna Vagu (Ghat: Jampanna Vagu Main Bathing Ghats)\n9. **Srisaila** \u2014 River: Krishna River (Patalaganga) (Ghat: Patalaganga Bathing Ghat)\n10. **Veera Satyanarayana** \u2014 River: Pampa River (Ghat: Pampa River Foothills Boating & Ghat Point)\n11. **Vemulavada** \u2014 River: Mulavagu stream (tributary of Godavari River) & Dharma Gundam (Pushkarni) / Gudicheruvu (Ghat: Dharma Gundam Bathing Steps)",
+    "metadata": {
+      "category": "river_bank",
+      "condition": "positive",
+      "total_temples_searched": 20,
+      "matching_temples_count": 11,
+      "matching_temples": [
+        "Ahobilam",
+        "Badrachalam",
+        "Basara",
+        "Dharmapuri",
+        "Edupayal",
+        "Jogulamba(New)",
+        "Kaleshvaram",
+        "Medaram",
+        "Srisaila",
+        "Veera Satyanarayana",
+        "Vemulavada"
+      ],
+      "confirmed_available_count": 11,
+      "confirmed_unavailable_count": 6,
+      "information_not_available_count": 3,
+      "complete": true,
+      "aggregation_latency_ms": 0.004299916326999664,
+      "agent_count": 1,
+      "coordinator_latency_ms": 11.107099941000342
+    },
+    "success": true
+  },
+  {
+    "query_id": 8,
+    "query": "What are Yadadri temple timings?",
+    "agent": "temple_information",
+    "latency_ms": 13415.697199990973,
+    "sources": [
+      "yadadri/faq.json",
+      "yadadri/timings.json"
+    ],
+    "answer": "The temple is open daily from 4:00 AM to 9:45 PM. It is closed for a brief afternoon rest period between 3:00 PM and 4:00 PM.",
+    "metadata": {
+      "temple": "Yadadri",
+      "confidence_score": 7.555850028991699,
+      "retrieved_chunks": 3,
+      "is_refusal": false,
+      "is_complete_list": false,
+      "plan": {
+        "scope": "single_temple",
+        "temples": [
+          "Yadadri"
+        ],
+        "categories": [
+          "timings"
+        ],
+        "intent": "targeted_fact",
+        "condition": "none",
+        "exhaustive": false,
+        "retrieval_mode": "targeted",
+        "raw_query": "What are Yadadri temple timings?"
+      },
+      "grounding_validation": {
+        "is_valid": true,
+        "temple_scope_valid": true,
+        "category_scope_valid": true,
+        "violations": []
+      },
+      "aggregation_latency_ms": 0.02529984340071678,
+      "agent_count": 1,
+      "coordinator_latency_ms": 13406.000399962068
+    },
+    "success": true
+  },
+  {
+    "query_id": 9,
+    "query": "How far is Hyderabad from Yadadri?",
+    "agent": "live_navigation",
+    "latency_ms": 1671.550199855119,
+    "sources": [
+      "Google Maps Routes API"
+    ],
+    "answer": "### Live Route Navigation: Yadadri \u2192 Hyderabad\n\n#### Route Facts\n- **Distance**: 65.5 km\n- **Estimated Duration (Driving)**: 1 hr 47 min\n- **Traffic-Aware Duration**: 1 hr 36 min\n- **Primary Route**: NH163\n\n#### Journey Details\n- **Origin**: Yadadri\n- **Destination**: Hyderabad\n- **Travel Mode**: Driving\n- **Provider**: Google Maps Routes API\n- **Retrieved At**: 2026-09-26T16:52:06Z\n\n> **Note**: Navigation details are retrieved live from Google Maps Routes API. Actual travel times, road conditions, tolls, and detours may vary depending on local traffic, weather, and devasthanam parking regulations.",
+    "metadata": {
+      "origin": "Sri Lakshmi Narasimha Swamy Temple, Yadadri",
+      "destination": "Hyderabad",
+      "origin_canonical": "Yadadri",
+      "destination_canonical": null,
+      "distance_km": 65.5,
+      "duration_minutes": 107.0,
+      "traffic_duration_minutes": 95.9,
+      "route_summary": "NH163",
+      "travel_mode": "driving",
+      "provider": "Google Maps Routes API",
+      "retrieved_at": "2026-09-26T16:52:06Z",
+      "cache_hit": false,
+      "aggregation_latency_ms": 0.017300015315413475,
+      "agent_count": 1,
+      "coordinator_latency_ms": 1657.409799983725
+    },
+    "success": true
+  },
+  {
+    "query_id": 10,
+    "query": "What emergency services are available at Yadadri?",
+    "agent": "emergency",
+    "latency_ms": 9.841300081461668,
+    "sources": [
+      "yadadri/emergency_nos.json",
+      "yadadri/contacts.json"
+    ],
+    "answer": "### \ud83d\udea8 Emergency & Medical Information \u2014 Yadadri Sri Lakshmi Narasimha Swamy\n\n#### \ud83c\udfe5 Medical & Hospital Assistance\n \u2022 **Primary Health Centre (PHC), Yadagirigutta** \u2014 Phone: +91 9949997989 \u2014 Location: Rajapet Road, Yadagirigpally, Yadagirigutta (3.1 km) \u2014 (Outpatient, primary emergency first aid, maternal care.)\n \u2022 **Government General Hospital (GGH), Bhongir (District Hospital)** \u2014 Phone: +91 7702131479 \u2014 Location: Main Road, Bhongir (14.8 km away) \u2014 (24/7 Emergency & Trauma care, 220-bed hospital, ICU, pediatrics, orthopedics.)\n \u2022 **Dr.Racha Yadagiri Hospital** \u2014 Location: 1.6 km \u2014 (24/7 emergency first aid, general medicine.)\n \u2022 **Temple First Aid Clinic** \u2014 Location: Hilltop entrance near administrative block \u2014 (Duty doctor and basic first-aid supplies during darshan hours.)\n\n#### \ud83d\udc6e Police & Security Services\n \u2022 **Yadagirigutta Police Station** \u2014 Phone: 08685-236619 | Alt: +91 9440795643 \u2014 Location: Rajapet Road, Yadagirigutta (2.1 km at foothills) \u2014 (Circle Inspector (CI) Yadagirigutta.)\n \u2022 **ACP Yadadri Office** \u2014 Phone: 08685-242204 | Alt: +91 8333818894 \u2014 Location: Police PS Road, Yadagirigutta (~2.5 km)\n\n#### \ud83c\udfdb\ufe0f Temple Control Room & Help Desk\n\u2022 **Temple Administrative Office(Landline)**: `08685-236622`\n\u2022 **Administrative Office(Alternate)**: `08685-236645`\n\u2022 **Temple Reception and Accomodation**: `08685-236623`\n\u2022 **YYogananda Nilayam Accomodation Desk**: `08685-236664`\n\n#### \ud83d\ude92 Fire, Rescue & Statutory Helplines\n \u2022 **Bhongir Fire Station** \u2014 Phone: 101 | Alt: +91 8712699151 \u2014 Location: Near DSP Office, Jagdevpur Road, Bhongir (~14 km away) \u2014 (District Fire Officer (+91 8712699153).)\n\u2022 **National Emergency Number**: `112` | **State Ambulance**: `108` | **Police**: `100` | **Fire**: `101`",
+    "metadata": {
+      "temple": "Yadadri Sri Lakshmi Narasimha Swamy",
+      "canonical_temple": "Yadadri",
+      "has_verified_emergency": true,
+      "has_medical": true,
+      "has_police": true,
+      "has_help_desk": true,
+      "aggregation_latency_ms": 0.01409999094903469,
+      "agent_count": 1,
+      "coordinator_latency_ms": 2.5740000419318676
+    },
+    "success": true
+  }
+]

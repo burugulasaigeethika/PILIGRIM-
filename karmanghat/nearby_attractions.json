@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Saroornagar Lake & Park",
+    "distance": "~2.5 km",
+    "description": "Scenic lakeside promenade with walking tracks, park areas, and evening food stalls."
+  },
+  {
+    "name": "Priyadarshini Park",
+    "distance": "~3.0 km",
+    "description": "Green urban park featuring manicured lawns, walking trails, and children's play zones."
+  },
+  {
+    "name": "Shri Ashtalakshmi Temple",
+    "distance": "~3.5 km",
+    "description": "Famous pink-hued South Indian temple complex dedicated to the eight manifestations of Goddess Lakshmi."
+  },
+  {
+    "name": "Meerpet Burj",
+    "distance": "~4.0 km",
+    "description": "Ancient stone watchtower dating back centuries, located in the nearby Meerpet locality."
+  },
+  {
+    "name": "Shri Shyam Baba Mandir (Kachiguda)",
+    "distance": "~8.5 km",
+    "description": "Prominent marble temple complex dedicated to Lord Khatu Shyam / Lord Krishna, located on Veeranna Gutta near Kachiguda."
+  }
+]

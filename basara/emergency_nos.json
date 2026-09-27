@@ -1,0 +1,26 @@
+{
+  "police": [
+    {
+      "name": "Basara Police Station (Closest)",
+      "phone": "+91 87126 59540",
+      "details": "Station House Officer (SHO)"
+    },
+    {
+      "name": "Basara Police Station Line 2",
+      "phone": "+91 87126 58195"
+    }
+  ],
+  "medical": [
+    {
+      "name": "RGUKT Basar Campus Hospital",
+      "phone": "+91 87522 55588",
+      "address": "Campus Road, Mahadpur, Basar (1.4 km away)",
+      "details": "Open 24 hours. Houses dedicated medical staff and primary bed facilities, handling immediate stabilization before major trauma centers."
+    },
+    {
+      "name": "Sri Saraswati Clinic (Ayurvedic Clinic)",
+      "address": "VXM3+5G9, Basar, Telangana (Approx. 600m away)",
+      "details": "Local private general physician setup ideal for cold, fever, basic diagnostics, and pharmacy needs."
+    }
+  ]
+}

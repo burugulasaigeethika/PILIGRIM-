@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Haritha Restaurant",
+    "cuisine": "Pure Veg & South Indian Meals",
+    "type": "State Tourism Restaurant",
+    "distance": "~1 km",
+    "pricing": "₹50 – ₹200",
+    "timings": "7:00 AM – 10:00 PM",
+    "address": "TG Tourism Hotel, Main Road"
+  },
+
+  {
+    "name": "Devasthanam Annadana Satram",
+    "cuisine": "Free Wholesome Vegetarian Meal",
+    "type": "Temple Annadanam / Canteen",
+    "distance": "Inside",
+    "pricing": "Free",
+    "timings": "12:00 PM – 2:30 PM",
+    "address": "Temple Complex"
+  }
+]

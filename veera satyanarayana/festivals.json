@@ -1,0 +1,138 @@
+[
+  {
+    "festival_name": "Sri Swamy Vari Varshika Kalyana Mahotsavam (Brahmotsavaalu)",
+    "month": "Vaisakha Suddha Dasami to Vaisakha Purnima (April–May)",
+    "importance": "The crown of all annual festivals celebrated for 6 days with grand celestial marriage, cultural programs, processions, and vahana sevas.",
+    "description": "Formerly performed on Magha Suddha Ekadasi, now celebrated for six days commencing from Vaisakha Suddha Dasami/Ekadasi to suit pilgrims. Lord Sri Veera Venkata Satyanarayana Swamy is wedded to Goddess Sri Anantha Lakshmi Ammavaru in the divine presence of Lord Sri Seeta Ramachandra Swamy.",
+    "schedule": [
+      {
+        "date": "Day 1",
+        "tithi_event": "Vaisakha Suddha Dasami",
+        "details": "Making up Sri Veera Venkata Satyanarayana Swamy as bridegroom; Vighneswara puja, giving vayanams to muthaiduvas; in the night Lord Sri Rama and Goddess Sita go out into the village on silver Anjaneya Vahanam to invite devotees and pilgrims to witness the Kalyana Mahotsavam."
+      },
+      {
+        "date": "Day 2",
+        "tithi_event": "Vaisakha Suddha Ekadasi",
+        "details": "Sri Swamy Vari Divya Kalyanam performed in the divine presence of Lord Sri Seeta Ramalu Varu with grand rituals."
+      },
+      {
+        "date": "Day 3",
+        "tithi_event": "Vaisakha Suddha Dwadasi",
+        "details": "Pradhana Sthalipaka Homam, followed by Arundhathi Nakshatra Darshan, Asthanaseva, and night procession on Ravana Vahanam."
+      },
+      {
+        "date": "Day 4",
+        "tithi_event": "Vaisakha Suddha Triodasi",
+        "details": "Sri Veera Venkata Satyanarayana Swamy's Kalyanasadasyam, Sri Rama Sabhapathi, Panditasabha, Mahadasirvadam, Sabhasathkaram, and night procession on Ponna Vahanam."
+      },
+      {
+        "date": "Day 5",
+        "tithi_event": "Vaisakha Suddha Chathurdasi",
+        "details": "Lord's Viharam in the garden on the north of Ratnagiri and return to Ratnagiri, Mahanivedana, special Veena performance in the presence of the Lord, and Car Festival (Rathotsavam) at night."
+      },
+      {
+        "date": "Day 6",
+        "tithi_event": "Vaisakha Purnima",
+        "details": "Chakra Teertham (holy bath), Nakabali, and Sri Swamy Vari Sri Pushpayaga Mahotsavam concluding the Brahmotsavam."
+      }
+    ]
+  },
+  {
+    "festival_name": "Sri Swami Vari Jayanti",
+    "month": "Sravana Sukla Vidiya (Sravana Masam / July–August)",
+    "importance": "The divine advent and discovery day of Lord Satyadeva celebrated as the Lord's birthday with great eclat.",
+    "description": "Celebrates the self-manifestation and installation of Lord Veera Venkata Satyanarayana Swamy on Ratnagiri hill (originally installed on Sravana Suddha Vidiya of Khara year, 1891 AD). Special poojas, abhishekam, and festivities are conducted.",
+    "schedule": []
+  },
+  {
+    "festival_name": "Giri Pradakshina & Jwala Toranam",
+    "month": "Karthika Pournami (November)",
+    "importance": "Circumambulation of Ratnagiri hill and sacred bonfire ritual attracting thousands of devotees.",
+    "description": "Mass circumambulation of Ratnagiri hill along with lighting of the sacred Jwala Toranam on Karthika Pournami night.",
+    "schedule": []
+  },
+  {
+    "festival_name": "Theppotsavam (Boat Festival)",
+    "month": "Karthika Suddha Dwadasi (November)",
+    "importance": "Colourful floating boat festival celebrated on the waters of the Pampa River.",
+    "description": "The utsava deities of Lord Satyadeva and Ammavaru are taken out in a colorfully illuminated boat on the Pampa River touching the foot of Ratnagiri.",
+    "schedule": []
+  },
+  {
+    "festival_name": "Sri Devi Navaratrulu & Vijaya Dasami",
+    "month": "Ashwayuja Sukla Padyami to Dasami (September–October)",
+    "importance": "Nine nights of divine mother worship followed by Jammi Pooja on Vijaya Dasami.",
+    "description": "Mahanyasa Abhishekam and Laksha Kumkumarchana are performed at the Yantralayam during Navaratri, concluding with Jammi Pooja on Vijaya Dasami.",
+    "schedule": []
+  },
+  {
+    "festival_name": "Mahasivaratri",
+    "month": "Magha Bahula Chaturdasi (February–March)",
+    "importance": "Grand night-long worship emphasizing the Hari-Hara synthesis of Lord Satyadeva.",
+    "description": "Mahanyasa Poorvaka Abhishekam and Laksha Bilwarchana are performed with great devotion in the Main Temple.",
+    "schedule": []
+  },
+  {
+    "festival_name": "Sri Rama Navami",
+    "month": "Chaitra Suddha Navami (March–April)",
+    "importance": "Celebration of Sri Sitarama Kalyanotsavam at the Sri Ramalayam.",
+    "description": "Sri Sitarama Kalyanotsavams are performed in the adjoining Ramalayam for the Kshetra Palaka Lord Rama.",
+    "schedule": []
+  },
+  {
+    "festival_name": "Sri Kanaka Durgamma Vari Jatara Mahotsavams",
+    "month": "Chaitra Bahula Shasti to Amavasya (April)",
+    "importance": "Annual jatara festival dedicated to Goddess Kanaka Durga.",
+    "description": "Special rustic rituals, offerings, and processions conducted at the Sri Kanaka Durga temple.",
+    "schedule": []
+  },
+  {
+    "festival_name": "Ugadi",
+    "month": "Chaitra Suddha Padyami (March–April)",
+    "importance": "Telugu New Year festival featuring traditional Panchangasravanam.",
+    "description": "Panchangasravanam and special prayers are performed for universal prosperity.",
+    "schedule": []
+  },
+  {
+    "festival_name": "Sri Saraswathi Pooja",
+    "month": "1st April",
+    "importance": "Worship of Goddess Saraswathi for students and learning.",
+    "description": "Special Sri Saraswathi Pooja performed on 1st April.",
+    "schedule": []
+  },
+  {
+    "festival_name": "Sri Krishna Jayanti",
+    "month": "Sravana Bahula Ashtami (August–September)",
+    "importance": "Celebration of Lord Krishna's birth with Utla Sambaram.",
+    "description": "Utla Sambaram (pot breaking festival) and joyous rituals are conducted.",
+    "schedule": []
+  },
+  {
+    "festival_name": "Sri Vinayaka Chavithi",
+    "month": "Bhadrapada Suddha Chavithi (August–September)",
+    "importance": "Ganapathi Navaratri Utsavams.",
+    "description": "Grand Ganapathi Navaratri Utsavams celebrated in the temple complex and Yantralayam.",
+    "schedule": []
+  },
+  {
+    "festival_name": "Diwali (Deepotsavam)",
+    "month": "Ashwayuja Amavasya (October–November)",
+    "importance": "Festival of lights celebrated with temple illumination.",
+    "description": "Deepotsavam and lighting of thousands of oil lamps around the temple on Ratnagiri hill.",
+    "schedule": []
+  },
+  {
+    "festival_name": "Kanuma Utsavam (Prabha Utsavam)",
+    "month": "Sankranti / Kanuma Day (January)",
+    "importance": "Traditional chariot/prabha procession in the village.",
+    "description": "Prabha Utsavam will be conducted with decorated arches in the village.",
+    "schedule": []
+  },
+  {
+    "festival_name": "Dhanurmasam Grama Sevas",
+    "month": "Dhanur Masam (December–January)",
+    "importance": "Village deity processions during the auspicious month of Dhanurmasam.",
+    "description": "Grama sevas are conducted on every Ekadasi day throughout Dhanur Masam.",
+    "schedule": []
+  }
+]

@@ -1,0 +1,63 @@
+{
+  "temple_id": "ahobilam_narasimha",
+  "name": "Sri Ahobila Lakshmi Nrisimha Swamy Temple",
+  "alternate_names": [
+    "Singavel Kunram"
+  ],
+  "state": "Andhra Pradesh",
+  "district": "Nandyal District",
+  "village": "Ahobilam",
+  "address": "Ahobilam Village, Allagadda Mandal, Nandyal District, Andhra Pradesh - 518545",
+  "river": "Bhavanashini River (Pavanasini River)",
+  "main_deity": "Lord Lakshmi Narasimha Swamy",
+  "other_deities": [
+    "Nava Narasimha (nine distinct self-manifested forms)",
+    "Bhargava Narasimha Swamy",
+    "Yogananda Narasimha Swamy",
+    "Chatravata Narasimha Swamy",
+    "Ahobila Narasimha Swamy",
+    "Krodakara / Varaha Narasimha Swamy",
+    "Karanja Narasimha Swamy",
+    "Malola Narasimha Swamy",
+    "Jwala Narasimha Swamy",
+    "Pavana Narasimha Swamy",
+    "Prahlada Varada",
+    "Lakshmi",
+    "Andal",
+    "Azhwars"
+  ],
+  "description": "Sri Ahobila Lakshmi Nrisimha Swamy Temple, the abode of Lord Narasimha situated in the Nallamala Hills of Nandyal District in Andhra Pradesh, is a highly ancient and revered Vaishnavite pilgrimage center. The shrine deserves a special mention in terms of its unique geographical layout, dense forest surroundings, and deep spiritual sanctity, being considered a \"Svayam Vyakta Kshetram\" (self-manifested shrine). The Eastern Ghats are traditionally likened to the great serpent Adisesha, with Ahobilam representing its middle fold, Tirumala the hood, and Srisailam the tail. Ahobilam is divided into two areas: Diguvu Ahobilam (Lower Ahobilam) and Eguvu Ahobilam (Upper Ahobilam), separated by a distance of approximately 12.8 km. Sri Ahobila Muth, one of India's most prominent Sri Vaishnava religious institutions established over 600 years ago, administers the temple.",
+  "history": "Sri Ahobila Muth was established over 600 years ago and administers the temple under hereditary trusteeship. A prominent Jayasthambham (victory pillar) erected in the spacious ground outside the lower temple marks the historical victory of Emperor Krishnadeva Raya of the Vijayanagara Empire. Additional structures were built by Kakatiya kings, especially Pratapa Rudra. Sri Ahobila Muth was founded here by Kidambi Srinivasachar under the instructions of Lord Narasimha, taking the ascetic name Srimad Adivan Satakopan Jeeyar. The portable metal deity (Utsava Moorthy) of the Malola Narasimha temple (meaning \"beloved to Lakshmi\") is the presiding traveling deity of the pontiffs (Azhagiya Singars) of the Muth, which accompanies them on their spiritual tours across India.",
+  "mythology": "Puranas like the Brahmanda Purana, Koorma Purana, Padma Purana, and Vishnu Purana mention this place as the capital and palace of the demon king Hiranyakasipu. It is here that Sriman Narayana incarnated as the half-man, half-lion Lord Narasimha to slay the demon and protect his child devotee Prahlada. The word \"Ahobilam\" is derived from two legends: \"Aho Balam\" (expression of the Gods praising the incredible strength of Lord Narasimha after slaying the demon) or \"Aho Bilam\" (signifying the great cave where the self-manifested deity was worshipped by Garuda). The Mackenzie Collection's \"Ahobilam Kaifiyat\" in Telugu contains village register records detailing this legend.",
+  "sub_temples": [
+    "Bhargava Narasimha Swamy",
+    "Yogananda Narasimha Swamy",
+    "Chatravata Narasimha Swamy",
+    "Ahobila Narasimha Swamy",
+    "Krodakara / Varaha Narasimha Swamy",
+    "Karanja Narasimha Swamy",
+    "Malola Narasimha Swamy",
+    "Jwala Narasimha Swamy",
+    "Pavana Narasimha Swamy",
+    "Prahlada Varada Sannidhi",
+    "Ugra Sthambham",
+    "Prahlada Mettu"
+  ],
+  "architecture": {
+    "style": "Features structures built by Kakatiya kings (especially Pratapa Rudra) and the Vijayanagara Empire.",
+    "highlights": [
+      {
+        "name": "Jayasthambham (Victory Pillar)",
+        "description": "A prominent victory pillar erected in the spacious ground outside the lower temple, marking the historical victory of Emperor Krishnadeva Raya of the Vijayanagara Empire."
+      },
+      {
+        "name": "Upper Ahobilam Temple",
+        "description": "Encloses the main cave shrine of Ugra Narasimha (Ahobila Narasimha Swamy), the earliest cave temple."
+      },
+      {
+        "name": "Lower Ahobilam Temple",
+        "description": "Dedicated to Prahlada Varada (the Lord whose grace bestows blessings on Prahlada) and contains shrines for Lakshmi, Andal, and the Azhwars."
+      }
+    ]
+  }
+}

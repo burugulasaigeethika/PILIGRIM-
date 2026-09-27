@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Sri Seetha Rama Choultry",
+    "type": "Temple Choultry (Devasthanam)",
+    "distance": "500 meter",
+    "price": "₹200 per day",
+    "description": "94 economy rooms available. Highly budget-friendly baseline accommodation. Advance bookings require 1 day rent + 50% caution deposit (1.5 total) via MeeSeva or DD 30 days ahead."
+  },
+  {
+    "name": "Old Centenary Cottages",
+    "type": "Temple Cottage (Devasthanam)",
+    "distance": "700 m",
+    "price": "₹400 per day",
+    "description": "64 massive cottage variants featuring 4 large beds per room. Highly optimal for larger groups and traditional families."
+  },
+  {
+    "name": "New Centenary Cottages",
+    "type": "Temple Cottage (Devasthanam)",
+    "distance": "650 m",
+    "price": "₹500 per day",
+    "description": "32 economy multi-bed rooms available. Budget-friendly choice located near the primary foot steps."
+  },
+  {
+    "name": "Satya Niketan",
+    "type": "Temple Choultry (Devasthanam)",
+    "distance": "550 m",
+    "price": "₹200 per day",
+    "description": "62 economy rooms available. Features extensive open backside courtyard space dedicated for performing family events and mass marriages."
+  },
+  {
+    "name": "Prakash Sadan ",
+    "type": "Temple Guest House (Devasthanam)",
+    "distance": "550 m",
+    "price": "₹650 to ₹1600 per day",
+    "description": "41 spacious ordinary rooms available. Excellent proximity to the main queue line complex. Requires an equivalent refundable caution deposit at check-in."
+  },
+  {
+    "name": "Hari Hara Sadan",
+    "type": "Temple Guest House (Devasthanam)",
+    "distance": "Uphill (Ratnagiri Hill)",
+    "price": "₹600 per day",
+    "description": "51 standard rooms available."
+  },
+  {
+    "name": "Siva Sadan",
+    "type": "Temple Guest House (Devasthanam)",
+    "distance": "Uphill (Main Temple Complex Area)",
+    "price": "₹1680 to ₹2500 per day",
+    "description": "116 premium standard rooms. Highly sanitized, spacious rooms offering superb hillside views, attached modern clean bathrooms, and proximity to canteens."
+  },
+  {
+    "name": "Mythri Residency",
+    "type": "Private Hotel",
+    "distance": "~2 km from temple",
+    "price": "~₹2000 per day",
+    "description": "Premium private stay located directly facing the main entry ghat road. Features free Wi-Fi, elevator/lift, air-conditioned rooms, parking, and dedicated room service."
+  },
+  {
+    "name": "SAL Residency",
+    "type": "Private Hotel",
+    "distance": "1.2 km",
+    "price": "₹1800 to ₹2300 per day",
+    "description": "Located on Gateway Main Road, opposite the Swamy Vari Temple; features free Wi-Fi, parking, restaurant, and 24-hour front desk."
+  },
+  {
+    "name": "Hotel Volety Grand",
+    "type": "Private Hotel",
+    "distance": "~3 km",
+    "price": "₹2300 to ₹2600 per day",
+    "description": "Located on the Annavaram bypass road; offers spacious rooms, elevator, and restaurant facilities."
+  },
+  {
+    "name": "Spree One Resort & Convention",
+    "type": "Private Resort",
+    "distance": "3.9 km",
+    "price": "₹4700 to ₹5000 per day",
+    "description": "Premium resort featuring outdoor swimming pool, kids' pool, multi-cuisine restaurant, Wi-Fi, and parking."
+  },
+  {
+    "name": "Tirumala Residency",
+    "type": "Private Lodge",
+    "distance": "3.4 km",
+    "price": "₹1800 to ₹2000 per day",
+    "description": "Lodge accommodation located in Ramraju Nagar / Bendapudi area with Wi-Fi and parking facilities."
+  }
+]

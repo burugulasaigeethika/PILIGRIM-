@@ -1,0 +1,23 @@
+# Environment & Secrets (NEVER COMMIT)
+.env
+
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# IDE / OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary runtime locks & scratch
+*.lock
+scratch/

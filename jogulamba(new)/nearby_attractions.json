@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Nava Brahma Temples",
+    "distance": "~130 m (Adjacent)",
+    "type": "Historical / Temple Complex",
+    "description": "Group of nine 7th-century Shiva shrines with rock-cut Nagara architecture."
+  },
+  {
+    "name": "Bala Brahmeswara Temple",
+    "distance": "~250 m (Adjacent)",
+    "type": "Historical / Shiva Shrine",
+    "description": "Head shrine of the Nava Brahma group where the Jogulamba idol was hidden."
+  },
+  {
+    "name": "Archaeological Museum Alampur",
+    "distance": "~180 m",
+    "type": "Heritage Museum",
+    "description": "Heritage museum housing ancient Chalukyan sculptures and inscriptions."
+  },
+  {
+    "name": "Alampur Pushkar Ghat",
+    "distance": "~ 210 m",
+    "type": "Sacred River Ghat",
+    "description": "Sacred river bank steps looking over the Krishna and Tungabhadra confluence."
+  },
+  {
+    "name": "Papanasi Temples",
+    "distance": "~2.5 km",
+    "type": "Historical / Temple Cluster",
+    "description": "Historic cluster of 23 smaller square-plan Phamsana style shrines."
+  },
+  {
+    "name": "Sri Sangameshwara Temple",
+    "distance": "~1.1 km",
+    "type": "Sacred Shrine / River Confluence",
+    "description": "Sacred site positioned directly at the geographic merger of the twin rivers."
+  },
+  {
+    "name": "Kurnool Konda Reddy Buruju",
+    "distance": "~27.8 km",
+    "type": "Historical Military Watchtower Fortress",
+    "description": "Massive 12th-century military watchtower fortress in Kurnool city center."
+  },
+  {
+    "name": "Beechupally Anjaneya Swamy Temple",
+    "distance": "~49.9 km",
+    "type": "Riverside Shrine",
+    "description": "Ancient riverside Hanuman shrine situated next to the Nizam Konda fort."
+  },
+  {
+    "name": "Gadwal Fort",
+    "distance": "~63.4 km",
+    "type": "Historical Fort",
+    "description": "Historic medieval mud-and-stone fort famous for its giant brass cannon."
+  }
+]

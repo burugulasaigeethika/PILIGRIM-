@@ -1,0 +1,51 @@
+[
+  {
+    "festival_name": "Maha Shivaratri",
+    "month": "Magha / Phalguna (Hindu Month)",
+    "importance": "Supreme festival celebrating Lord Shiva and Sri Chakra manifestation at Srisailam.",
+    "description": "All godly beings meet at Srisailam; celebrated with grand Utsavas, Lakshadeepotsavas, Pallakisevas, and conclusion by washing tridents in Mallika Gundam.",
+    "schedule": []
+  },
+  {
+    "festival_name": "Brahmotsavam",
+    "month": "Annual Festival Period",
+    "importance": "Major temple Brahmotsavam celebrating Shiva-Shakti.",
+    "description": "Includes special Abhishekams, processions, and formal immersion of divine tridents in Mallika Gundam.",
+    "schedule": []
+  },
+  {
+    "festival_name": "Sankranti",
+    "month": "Pushya (January)",
+    "importance": "Harvest and holy water ritual festival.",
+    "description": "Rituals completed after washing tridents in the sacred Mallika Gundam water body.",
+    "schedule": []
+  },
+  {
+    "festival_name": "Vijayadashami / Ayudha Puja",
+    "month": "Ashvayaja Shuddhi Dashami",
+    "importance": "Celebration of victory over Ravana and evil powers by worshipping Aparajita Devi.",
+    "description": "Worship of Sami (Jammi) Vruksham, vehicle pujas, and exchanging Shami leaves with elders for blessings.",
+    "schedule": []
+  },
+  {
+    "festival_name": "Mallikarjuna Bhramaramba Kalyanam",
+    "month": "Annual Divine Marriage Period",
+    "importance": "Celebration of the celestial wedding of Sri Mallikarjuna Swamy and Sri Bhramaramba Devi.",
+    "description": "Includes Nitya Kalyanam to Somaskandamurthi and placing peacock feathers behind Bhramarambika Devi.",
+    "schedule": []
+  },
+  {
+    "festival_name": "Sankatahara Chaturthi",
+    "month": "Monthly Chaturthi Tithi",
+    "importance": "Dedicated to Chintamani Ratnagarbha Ganapathi.",
+    "description": "Special Abhishekam and Ganapathi Homam performed for trouble removal.",
+    "schedule": []
+  },
+  {
+    "festival_name": "Pushpagiri Brahmotsavam",
+    "month": "Chaitra Bahula Thrayodashi to Vaishaka Shuddhi Saptami",
+    "importance": "Annual festival at Pushpagiri sub-gateway.",
+    "description": "Includes Radhotsavam, Kalyanotsavam, and special festivities for Vaidyanatha and Chennakeshava Swamy.",
+    "schedule": []
+  }
+]

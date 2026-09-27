@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "cloud_api_violations_count": 0,
+  "violations": [],
+  "local_components": {
+    "embeddings": "all-MiniLM-L6-v2 (Local PyTorch)",
+    "vector_store": "Qdrant Local (on-disk)",
+    "sparse_index": "BM25 Local (on-disk)",
+    "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2 (Local PyTorch)",
+    "llm": "Ollama Local (qwen2.5:1.5b)"
+  }
+}

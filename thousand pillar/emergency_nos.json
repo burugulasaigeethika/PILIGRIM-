@@ -1,0 +1,54 @@
+{
+  "police": [
+    {
+      "name": "Hanamkonda Law & Order Police Station",
+      "phone": "+91 94910 89126",
+      "address": "Hanamkonda",
+      "details": "Station House Officer (SHO)."
+    },
+    {
+      "name": "Hanamkonda Patrol Cars / Mobile Patrol",
+      "phone": "+91 63005 31346",
+      "details": "24/7 Mobile Patrol."
+    },
+    {
+      "name": "Hanamkonda Traffic Police Station",
+      "phone": "+91 87126 85053",
+      "address": "Hanamkonda Chowrasta",
+      "details": "Traffic management & assistance."
+    }
+  ],
+  "medical": [
+    {
+      "name": "G.R. Hospital (Private Multispecialty)",
+      "phone": "+91 870 255 0999",
+      "alt_phone": "020-48562555",
+      "address": "2.5 km",
+      "details": "Private multi-specialty emergency care."
+    },
+    {
+      "name": "MGM Government Hospital (Major Public Trauma Centre)",
+      "phone": "+91 870 257 1151",
+      "address": "2.7 km",
+      "details": "Major government 24/7 emergency & trauma hospital."
+    }
+  ],
+  "fire_and_rescue": {
+    "name": "Warangal / Hanamkonda Fire Station",
+    "phone": "101"
+  },
+  "helpline": [
+    {
+      "name": "All-in-One Emergency Response System",
+      "phone": "112"
+    },
+    {
+      "name": "Police Control Room",
+      "phone": "100"
+    },
+    {
+      "name": "Medical Emergency / Ambulance",
+      "phone": "108"
+    }
+  ]
+}

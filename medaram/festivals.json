@@ -1,0 +1,58 @@
+[
+  {
+    "festival_name": "Medaram Sammakka-Saralamma Maha Jathara (Biennial 4-Day Mega Festival)",
+    "month": "Magha Masam full moon (Magha Sudha Purnima - Late January / February)",
+    "importance": "Asia’s largest tribal congregation and the second-largest religious gathering in India after the Kumbh Mela. Officially declared a State Festival by the Government of Telangana in 1998.",
+    "description": "Celebrated once every two years (biennially) during the full moon of Magha Masam. Over 1.5 to 1.75 crore (15–17.5 million) pilgrims gather over four days in Medaram forest village. Devotees honor the supreme sacrifice of the Koya tribal mother and daughter who fought against Kakatiya dynasty taxation and oppression.",
+    "schedule": [
+      {
+        "date": "Day 1 (Wednesday)",
+        "tithi_event": "Arrival of Saralamma, Pagididda Raju, and Govinda Raju",
+        "details": "Secret morning pujas conducted by Koya priests. In the evening, Goddess Saralamma's deity form is brought from Kannepally village shrine via Jampanna Vagu to the Medaram Gaddelu platform. Simultaneously, Pagididda Raju is brought from Punugondla village and Govinda Raju from Kondayi village amidst traditional Koya music, Aarti, and tribal processions."
+      },
+      {
+        "date": "Day 2 (Thursday)",
+        "tithi_event": "Arrival of Goddess Sammakka (Edurukolla Ghattam)",
+        "details": "Arrival of Goddess Sammakka from Chilakala Gutta hill onto the main Gadde platform. Koya tribal priests bring the divine Kumkuma Bharanam (casket of vermilion) amidst intense spiritual fervor. District Superintendent of Police (SP) fires three gunshots into the air as official state homage to mark her arrival."
+      },
+      {
+        "date": "Day 3 (Friday)",
+        "tithi_event": "Peak Day / Maha Darshanam & Offering of Mokkubadulu & Bangaram",
+        "details": "The peak day of the Jathara when both deities reside on the Gaddelu platform. Crores of devotees take Punya Snanams (holy dips) in Jampanna Vagu, offer 'Odi Biyyam' (sacred rice mix), 'Saare', and present 'Bangaram' (Jaggery equal to or exceeding their body weight) as fulfillment of vows."
+      },
+      {
+        "date": "Day 4 (Saturday)",
+        "tithi_event": "Vana Pravesham (Return to the Forest)",
+        "details": "The concluding day of the 4-day festival. After afternoon pujas and rituals, state security honors are accorded again as the deities symbolically return to their sacred forest abodes until the next biennial Jathara."
+      }
+    ]
+  },
+  {
+    "festival_name": "Mini Jathara (Manda Melige / Annual Observance)",
+    "month": "Magha Masam (February - Non-Jathara Years)",
+    "importance": "Annual tribal ritual observance and shrine maintenance at Medaram",
+    "description": "Conducted in non-Maha Jathara years by hereditary Koya priests (Siddaboina and Kene family clans). A 4-day ritual called 'Manda Melige' is performed at Medaram, Kannepally, Punugondla, and Kondayi shrines to clean the altars, perform sacred forest offerings, and preserve Koya spiritual traditions.",
+    "schedule": [
+      {
+        "date": "Day 1 (Wednesday)",
+        "tithi_event": "Manda Melige & Temple Cleaning",
+        "details": "Koya priests perform sacred cleaning and purification rituals at the Medaram Gaddelu and Kannepally shrines."
+      },
+      {
+        "date": "Day 2 (Thursday)",
+        "tithi_event": "Forest Offerings & Alankarams",
+        "details": "Special private pujas and traditional forest offerings are conducted under tree covers by the tribal clan leaders."
+      },
+      {
+        "date": "Day 3 (Friday)",
+        "tithi_event": "Public Darshan & Local Devotee Offerings",
+        "details": "Devotees from nearby forest districts visit for quiet darshan and offer jaggery and coconuts without the massive multi-million crowds."
+      },
+      {
+        "date": "Day 4 (Saturday)",
+        "tithi_event": "Conclusion of Manda Melige",
+        "details": "Final prayers and sealing of sacred items until the next observance."
+      }
+    ]
+  }
+]

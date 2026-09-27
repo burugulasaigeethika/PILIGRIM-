@@ -1,0 +1,67 @@
+{
+  "police": [
+    {
+      "name": "Saroornagar Police Station",
+      "phone": "040-27853580",
+      "address": "~3 km away from the temple",
+      "details": "Primary local jurisdiction police station covering Karmanghat."
+    },
+    {
+      "name": "L.B. Nagar Police Station",
+      "phone": "040-27853583",
+      "address": "~2.2 km away near LB Nagar Junction / Galleria Mall",
+      "details": "Sub-divisional police station for traffic and law enforcement."
+    }
+  ],
+  "medical": [
+    {
+      "name": "Viswas Hospital",
+      "phone": "Available on-site",
+      "address": "300 meters from temple entrance",
+      "details": "Immediate first-aid & local outpatient emergencies."
+    },
+    {
+      "name": "Onus Robotic Hospitals",
+      "phone": "+91 73967 77240",
+      "address": "900 meters away on Champapet Road",
+      "details": "Ortho, Neuro, and Advanced Diagnostics."
+    },
+    {
+      "name": "Padma Nursing Home",
+      "phone": "+91 77290 36574",
+      "address": "1.1 km away",
+      "details": "Gynecology, General Medicine, and Trauma Care."
+    },
+    {
+      "name": "CBM Multi-Speciality Hospital",
+      "phone": "+91 80552 23347",
+      "address": "1.2 km away",
+      "details": "ICU care and disabled-friendly infrastructure."
+    },
+    {
+      "name": "Gleneagles AWARE Hospital",
+      "phone": "040-44777777",
+      "address": "2.4 km away (LB Nagar Main Road)",
+      "details": "24/7 Tertiary care, major trauma, cardiac, and ICU critical care."
+    }
+  ],
+  "fire_and_rescue": {
+    "name": "LB Nagar / Malakpet Fire Station",
+    "phone": "101",
+    "details": "Nearest local fire department response units."
+  },
+  "helpline": [
+    {
+      "name": "National Emergency Support",
+      "phone": "112"
+    },
+    {
+      "name": "Police Control Room",
+      "phone": "100"
+    },
+    {
+      "name": "Medical Emergency Ambulance",
+      "phone": "108"
+    }
+  ]
+}

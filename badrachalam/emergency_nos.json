@@ -1,0 +1,72 @@
+{
+  "hospitals": [
+    {
+      "name": "Government Area Hospital, Bhadrachalam",
+      "type": "Government Secondary-Level Hospital (200 beds)",
+      "address": "Medical Colony, Bhadrachalam, Bhadradri Kothagudem District, Telangana - 507111",
+      "distance": "~1.8 km",
+      "contact_number": "Information not officially available. (Pilgrims can dial 108 for emergency dispatch)",
+      "emergency_availability": "24/7 emergency and trauma services, blood bank, and secondary care departments.",
+      "working_hours": "24/7 (Emergency), Outpatient (9:00 AM – 2:00 PM)",
+      "google_map": "https://maps.google.com/?q=Area+Hospital+Bhadrachalam"
+    },
+    {
+      "name": "Primary Health Centre (PHC) Bhadrachalam",
+      "type": "Government PHC",
+      "address": "Bhadrachalam Town, Telangana - 507111",
+      "distance": "~2 km",
+      "contact_number": "Information not officially available. (Pilgrims can dial 108)",
+      "available_medical_services": "General outpatient consulting, primary emergency first aid, vaccination, and basic diagnostics.",
+      "working_hours": "9:00 AM – 4:00 PM (Monday to Saturday)"
+    }
+  ],
+  "ambulance_services": [
+    {
+      "name": "108 Emergency Ambulance",
+      "contact": "108",
+      "description": "Telangana State 24/7 Emergency Response Service. Ambulances are stationed locally for rapid deployment during accidents or medical crises."
+    },
+    {
+      "name": "Temple First Aid Center",
+      "description": "A basic first-aid room is maintained by the Devasthanam near the main temple administrative block during darshan hours."
+    }
+  ],
+  "police_and_security": [
+    {
+      "name": "Bhadrachalam Police Station",
+      "address": "Temple Road, Bhadrachalam, Bhadradri Kothagudem District, Telangana - 507111",
+      "distance": "~0.8 km (Within walking distance)",
+      "contact_numbers": {
+        "landline": "08743-232533 / 08743-232433",
+        "sp_bhadradri_kothagudem_district_office": "+91 8712682000"
+      },
+      "google_map": "https://maps.google.com/?q=Bhadrachalam+Police+Station"
+    },
+    {
+      "name": "Devasthanam Security Control Room",
+      "location": "Temple Courtyard entrance block",
+      "distance": "Within the temple premises",
+      "contact_number": "Information not officially available. (Report to guards on duty in person)"
+    }
+  ],
+  "fire_and_rescue_services": {
+    "name": "Bhadrachalam Fire Station",
+    "address": "Medical Colony / Temple Road, Bhadrachalam, Telangana - 507111",
+    "distance": "~1.8 km",
+    "contact_numbers": {
+      "landline": "101 (Emergency)",
+      "station_phone": "+91 8712699292",
+      "station_fire_officer_mobile": "+91 8712699293"
+    }
+  },
+  "important_emergency_helplines": {
+    "national_emergency_number": "112",
+    "police_control_room": "100",
+    "ambulance_services": "108",
+    "fire_services": "101",
+    "women_helpline": "1091 / 181",
+    "child_helpline": "1098",
+    "health_medical_advice_helpline": "104",
+    "telangana_state_disaster_management_control_room": "040-23442940"
+  }
+}

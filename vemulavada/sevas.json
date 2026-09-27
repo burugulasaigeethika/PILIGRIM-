@@ -1,0 +1,722 @@
+[
+  {
+    "name": "Mangala Vaidyam",
+    "telugu_name": "మంగళ వాయిద్యం",
+    "price": "Free (Temple Ritual)",
+    "timing": "From 4.00 AM to 4.10 AM",
+    "booking_url": "",
+    "image": "",
+    "description": "MORNING PUJAS"
+  },
+  {
+    "name": "Suprabhata Seva",
+    "telugu_name": "సుప్రభాత సేవ",
+    "price": "Free / Ritual",
+    "timing": "From 4.10 AM to 4.30 AM",
+    "booking_url": "",
+    "image": "",
+    "description": "MORNING PUJAS"
+  },
+  {
+    "name": "Prabhata Harathi",
+    "telugu_name": "ప్రభాత హారతి",
+    "price": "Free / Ritual",
+    "timing": "At 4.35 AM",
+    "booking_url": "",
+    "image": "",
+    "description": "MORNING PUJAS"
+  },
+  {
+    "name": "Aalaya Suddhi [Cleaning]",
+    "telugu_name": "ఆలయ శుద్ధి",
+    "price": "",
+    "timing": "From 4.35 AM to 5.00 AM",
+    "booking_url": "",
+    "image": "",
+    "description": "MORNING PUJAS"
+  },
+  {
+    "name": "Gomatha Puja & Kode Puja",
+    "telugu_name": "గోమాత పూజ & కోడె పూజ",
+    "price": "Free / Included",
+    "timing": "From 5.00 AM to 5.15 AM",
+    "booking_url": "",
+    "image": "",
+    "description": "MORNING PUJAS"
+  },
+  {
+    "name": "Prathakala Puja",
+    "telugu_name": "ప్రాతఃకాల పూజ",
+    "price": "Free / Ritual",
+    "timing": "From 5.15 AM to 6.15 AM",
+    "booking_url": "",
+    "image": "",
+    "description": "MORNING PUJAS"
+  },
+  {
+    "name": "Nithya Kalyanam",
+    "telugu_name": "నిత్య కల్యాణం",
+    "price": "₹1,000",
+    "timing": "From 10.30 AM to 12.30 PM",
+    "booking_url": "",
+    "image": "",
+    "description": "MORNING PUJAS"
+  },
+  {
+    "name": "Madhyanhika Puja & Nivedana & Anna Puja.",
+    "telugu_name": "మధ్యాహ్నిక పూజ & అన్న పూజ",
+    "price": "Free / Ritual",
+    "timing": "From 11.40 AM to 12.10 PM",
+    "booking_url": "",
+    "image": "",
+    "description": "MORNING PUJAS. NOTE: During Monday, Masa Sivarathri & Sani Thrayodasi days, Madhyanhika Puja & Nivedana & Anna Puja would be performed from 2.30 PM to 3.00 PM"
+  },
+  {
+    "name": "Pradosakala Puja",
+    "telugu_name": "ప్రదోషకాల పూజ",
+    "price": "Free",
+    "timing": "From 6.00 PM to 7.00 PM",
+    "booking_url": "",
+    "image": "",
+    "description": "EVENING PUJAS"
+  },
+  {
+    "name": "Nishikala Puja",
+    "telugu_name": "నిశికాల పూజ",
+    "price": "Free /Temple Ritual",
+    "timing": "From 9.10 PM to 10.0 PM",
+    "booking_url": "",
+    "image": "",
+    "description": "EVENING PUJAS"
+  },
+  {
+    "name": "Pavalimpu Seva",
+    "telugu_name": "పావలింపు సేవ",
+    "price": "Free /Temple Ritual",
+    "timing": "From 10.00 PM to 10.20 PM & temple would be closed",
+    "booking_url": "",
+    "image": "",
+    "description": "EVENING PUJAS. NOTE: During Mondays which are not covered with the Thithi i.e., Eakadasi, Dwadashi, Sankramana, Masa Sivarathri, Bahula Astami etc., Eakantha Seva would be performed to the deity."
+  },
+  {
+    "name": "Sarva Darsanam",
+    "telugu_name": "సర్వ దర్శనం",
+    "price": "Free",
+    "timing": "From 4.35 AM to 5.00 AM",
+    "booking_url": "",
+    "image": "",
+    "description": "DARSHANAM/ARJITHA SEVA TIMINGS"
+  },
+  {
+    "name": "Dharma Darsanam & Abhisekam",
+    "telugu_name": "ధర్మ దర్శనం & అభిషేకం",
+    "price": "₹600",
+    "timing": "From 6.15 PM to 11.30 AM",
+    "booking_url": "",
+    "image": "",
+    "description": "DARSHANAM/ARJITHA SEVA TIMINGS. NOTE: During Monday, Masa Sivarathri and Sani Pradosam, Abhisekam would be performed from 6.15 AM to 2.30 PM & Anna Puja would be performed from 3.00 PM to 5.00 PM and Bilvarchana would not be performed"
+  },
+  {
+    "name": "Darsanam & Anna Puja",
+    "telugu_name": "దర్శనం & అన్న పూజ",
+    "price": "Free / Included",
+    "timing": "From 12.10 PM to 2.00 PM",
+    "booking_url": "",
+    "image": "",
+    "description": "DARSHANAM/ARJITHA SEVA TIMINGS"
+  },
+  {
+    "name": "Darsanam & Bilvarchana, Sivarchana",
+    "telugu_name": "దర్శనం & బిల్వార్చన, శివార్చన",
+    "price": "₹100",
+    "timing": "From 2.30 PM to 5.55 PM",
+    "booking_url": "",
+    "image": "",
+    "description": "DARSHANAM/ARJITHA SEVA TIMINGS"
+  },
+  {
+    "name": "Darsanam & Aakula Puja, Maha Puja, Pallaki Seva, Pedda Seva",
+    "telugu_name": "దర్శనం & ఆకుల పూజ, మహా పూజ, పల్లకి సేవ, పెద్ద సేవ",
+    "price": "₹300 - ₹500",
+    "timing": "From 7.10 PM to 9.00 PM",
+    "booking_url": "",
+    "image": "",
+    "description": "DARSHANAM/ARJITHA SEVA TIMINGS"
+  },
+  {
+    "name": "Sathyanarayana Vratham",
+    "telugu_name": "సత్యనారాయణ వ్రతం",
+    "price": "₹400",
+    "timing": "From 1.00 AM to 3.00 PM",
+    "booking_url": "",
+    "image": "",
+    "description": "SPECIAL SEVAS"
+  },
+  {
+    "name": "Kalyanam",
+    "telugu_name": "కల్యాణం",
+    "price": "₹1,000",
+    "timing": "From 10.30 AM to 12.30 PM",
+    "booking_url": "",
+    "image": "",
+    "description": "SPECIAL SEVAS"
+  },
+  {
+    "name": "Maha Lingarchana",
+    "telugu_name": "మహా లింగార్చణ",
+    "price": "₹1,000",
+    "timing": "From 6.30 PM to 8.30 PM",
+    "booking_url": "",
+    "image": "",
+    "description": "SPECIAL SEVAS"
+  },
+  {
+    "name": "Kumkuma Puja",
+    "telugu_name": "కుంకుమ పూజ",
+    "price": "₹100",
+    "timing": "From 6.15 AM to 8.30 PM",
+    "booking_url": "",
+    "image": "",
+    "description": "SPECIAL SEVAS"
+  },
+  {
+    "name": "Kode Mrokkubadi",
+    "telugu_name": "కోడె మొక్కుబడి",
+    "price": "",
+    "timing": "From 6.15 AM to 8.30 PM",
+    "booking_url": "₹200 to ₹500",
+    "image": "",
+    "description": "SPECIAL SEVAS. NOTE: During Monday and other peak days when the inflow of pilgrims is at very high side Kode Mrokkubadi Puja would be started at 4.30 AM for the convenience of the pilgrims"
+  },
+  {
+    "name": "Gandadeepa Archana",
+    "telugu_name": "గండదీప అర్చన",
+    "price": "₹100",
+    "timing": "From 6.15 AM to 8.30 PM",
+    "booking_url": "",
+    "image": "",
+    "description": "SPECIAL SEVAS"
+  },
+  {
+    "name": "Sheegra Darshanam",
+    "telugu_name": "శీఘ్ర దర్శనం",
+    "price": "100",
+    "timing": "During temple darshan hours",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=87",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/57bd8c34a527174fe7a051901ce382c7.jpg",
+    "description": "ARJITHA SEVAS - Seva 1"
+  },
+  {
+    "name": "Veda Asshirwachanam",
+    "telugu_name": "వేద ఆశీర్వచనం",
+    "price": "1000",
+    "timing": "Morning to Evening hours",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=110",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/8f60600b0cba37aa081a5ff540ee2cfa.jpg",
+    "description": "ARJITHA SEVAS - Seva 2"
+  },
+  {
+    "name": "Subramanya Abishekam",
+    "telugu_name": "సుబ్రహ్మణ్య అభిషేకం",
+    "price": "251",
+    "timing": "Morning hours",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=116",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/b4840eb8b0decd9de4b62e08635f76cd.jpg",
+    "description": "ARJITHA SEVAS - Seva 3"
+  },
+  {
+    "name": "Dakshana Murthy Abhishekam",
+    "telugu_name": "దక్షణ మూర్తి అభిషేకం",
+    "price": "251",
+    "timing": "Morning hours",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=117",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/7bb830b0e9767d9800be334dc4fde3d2.jpg",
+    "description": "ARJITHA SEVAS - Seva 4"
+  },
+  {
+    "name": "Keshakanda Pooja (Mottu)",
+    "telugu_name": "కేశకండ పూజ",
+    "price": "251",
+    "timing": "Daytime hours",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=118",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/07fd30c3078655b78ab4a0da93f196f9.jpg",
+    "description": "ARJITHA SEVAS - Seva 5"
+  },
+  {
+    "name": "Kodekattuta (Standard)",
+    "telugu_name": "కోడెకట్టుట",
+    "price": "200",
+    "timing": "5.00 AM to 8.30 PM",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=47",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/582c1fe2059b0b459f1bf3dfb335846a.png",
+    "description": "ARJITHA SEVAS - Seva 6"
+  },
+  {
+    "name": "Kodekattuta (Special)",
+    "telugu_name": "కోడెకట్టుట",
+    "price": "500",
+    "timing": "5.00 AM to 8.30 PM",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=123",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/6631b75eead52b9c2a3e254a0aff4aeb.jpg",
+    "description": "ARJITHA SEVAS - Seva 7"
+  },
+  {
+    "name": "Maha Rudrabhishekam (Maha Mandapam)",
+    "telugu_name": "మహా రుద్రాభిషేకం (మహా మండపం)",
+    "price": "1000",
+    "timing": "7.00 AM to 11.00 AM",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=113",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/c4015f1e297bbad4a09569e28e015cb2.jpg",
+    "description": "ARJITHA SEVAS - Seva 8"
+  },
+  {
+    "name": "Abhishekam (Nagireddy Mandapam)",
+    "telugu_name": "అభిషేకం (నాగిరెడ్డి మండపం)",
+    "price": "500",
+    "timing": "7.00 AM to 11.00 AM",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=114",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/db66f10752155b62a8bf704dbd040a0b.jpg",
+    "description": "ARJITHA SEVAS - Seva 9"
+  },
+  {
+    "name": "Anna Puja (Nagireddy Mandampam)",
+    "telugu_name": "అన్నపూజ (నాగిరెడ్డి మండపం)",
+    "price": "500",
+    "timing": "12.30 PM to 2.30 PM",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=49",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/f1f41033a9f51dd1a849b05848a478d7.jpg",
+    "description": "ARJITHA SEVAS - Seva 10"
+  },
+  {
+    "name": "Anna Puja (In Garbhalayam)",
+    "telugu_name": "అన్న పూజ (గర్భాలయం)",
+    "price": "1000",
+    "timing": "Morning to Afternoon hours",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=51",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/f1f41033a9f51dd1a849b05848a478d7.jpg",
+    "description": "ARJITHA SEVAS - Seva 11"
+  },
+  {
+    "name": "Aakula Pooja",
+    "telugu_name": "ఆకుల పూజ",
+    "price": "600",
+    "timing": "Morning hours",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=50",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/ad9f4360c8912012124a253de0d968d0.jpg",
+    "description": "ARJITHA SEVAS - Seva 12"
+  },
+  {
+    "name": "Kumkuma Puja",
+    "telugu_name": "కుంకుమ పూజ",
+    "price": "300",
+    "timing": "Morning to Evening hours",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=52",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/c438d6e44f35c2a23cf25ccb7d9a82ec.jpg",
+    "description": "ARJITHA SEVAS - Seva 13"
+  },
+  {
+    "name": "Shivakalyanam",
+    "telugu_name": "శివకళ్యాణం",
+    "price": "1500",
+    "timing": "Morning / Scheduled timings",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=53",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/sivakalyanam.jpg",
+    "description": "ARJITHA SEVAS - Seva 14"
+  },
+  {
+    "name": "Chandi Sahitha Rudra Homam",
+    "telugu_name": "చండీ సహిత రుద్ర హోమం",
+    "price": "1516",
+    "timing": "Morning hours",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=98",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/0d48ffc4e5d585a569053e44f51cc38d.jpg",
+    "description": "ARJITHA SEVAS - Seva 15"
+  },
+  {
+    "name": "Mahalingaarchana",
+    "telugu_name": "మహాలింగార్చన",
+    "price": "1000",
+    "timing": "Evening hours (approx. 6:30 PM - 8:30 PM)",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=54",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/Maha%20lingarchana.jpeg",
+    "description": "ARJITHA SEVAS - Seva 16"
+  },
+  {
+    "name": "Pedda Seva",
+    "telugu_name": "పెద్ద సేవ",
+    "price": "350",
+    "timing": "Morning to Evening hours",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=56",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/Pedda%20seva.jpeg",
+    "description": "ARJITHA SEVAS - Seva 17"
+  },
+  {
+    "name": "Pallaki Seva",
+    "telugu_name": "పల్లకి సేవ",
+    "price": "200",
+    "timing": "Evening procession hours",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=57",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/Pallaki%20seva.jpeg",
+    "description": "ARJITHA SEVAS - Seva 18"
+  },
+  {
+    "name": "Sri Satyanarayana Swamy Vratham",
+    "telugu_name": "శ్రీ సత్యనారాయణ స్వామి వ్రతం",
+    "price": "600",
+    "timing": "1:00 PM to 3:00 PM",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=112",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/0ec534fb8e4ed22961d6be417b625d55.jpg",
+    "description": "ARJITHA SEVAS - Seva 19"
+  },
+  {
+    "name": "Lorry,Bus,Car Vahana Puja",
+    "telugu_name": "లారీ,బస్,కారు వాహన పూజ",
+    "price": "400",
+    "timing": "Daytime hours",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=63",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/d7cba5e734b3e2f50f2fbef8b78b8703.jpg",
+    "description": "ARJITHA SEVAS - Seva 20"
+  },
+  {
+    "name": "Auto,Tempo Vehicle Pooja",
+    "telugu_name": "ఆటో, టెంపో వాహన పూజ",
+    "price": "250",
+    "timing": "Daytime hours",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=64",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/7faae883c93f866f4d76106be43fa26e.jpg",
+    "description": "ARJITHA SEVAS - Seva 21"
+  },
+  {
+    "name": "Vehicle Pooja (Two Wheeler)",
+    "telugu_name": "వాహన పూజ (ద్విచక్ర వాహనము)",
+    "price": "100",
+    "timing": "Daytime hours",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=65",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/moterpooja.jpg",
+    "description": "ARJITHA SEVAS - Seva 22"
+  },
+  {
+    "name": "Kalyanakatta1 Kesha Khadhan",
+    "telugu_name": "కళ్యాణకట్ట1 కేశ ఖండనం",
+    "price": "50",
+    "timing": "Morning to Evening hours",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=90",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/keshakandam.jpg",
+    "description": "ARJITHA SEVAS - Seva 23"
+  },
+  {
+    "name": "Kalyanakatta2 Kesha Khadhan",
+    "telugu_name": "కళ్యాణకట్ట2 కేశ ఖండనం",
+    "price": "50",
+    "timing": "Morning to Evening hours",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=122",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/keshakandam.jpg",
+    "description": "ARJITHA SEVAS - Seva 24"
+  },
+  {
+    "name": "Saswatha Rudrabhishekam",
+    "telugu_name": "శాశ్వత రుద్రాభిషేకం",
+    "price": "3000",
+    "timing": "Scheduled Annual / Lifetime Seva",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=31",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/ea399f76b7815dd9c1bde7ef28832213.jpg",
+    "description": "SASWATHA SEVAS - Seva 1"
+  },
+  {
+    "name": "Saswatha Laghunyaanapoorvaka Rudrabhishekam",
+    "telugu_name": "శాశ్వత లఘున్యానపూర్వక రుద్రాభిషేకం",
+    "price": "1500",
+    "timing": "Scheduled Annual / Lifetime Seva",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=32",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/a3bdab62684472732749e9c9e1d5a5b7.jpg",
+    "description": "SASWATHA SEVAS - Seva 2"
+  },
+  {
+    "name": "Saswatha AnnaPuja",
+    "telugu_name": "శాశ్వత అన్నపూజ",
+    "price": "1000",
+    "timing": "Scheduled Annual / Lifetime Seva",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=33",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/f1f41033a9f51dd1a849b05848a478d7.jpg",
+    "description": "SASWATHA SEVAS - Seva 3"
+  },
+  {
+    "name": "Saswatha Shiva Kalyanam",
+    "telugu_name": "శాశ్వత శివకళ్యాణము",
+    "price": "5000",
+    "timing": "Scheduled Annual / Lifetime Seva",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=34",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/Sri%20swami%20vari%20kalyanam.jpeg",
+    "description": "SASWATHA SEVAS - Seva 4"
+  },
+  {
+    "name": "Saswatha Maha lingarchana",
+    "telugu_name": "శాశ్వత మహ లింగార్చన",
+    "price": "3000",
+    "timing": "Scheduled Annual / Lifetime Seva",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=35",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/Maha%20lingarchana.jpeg",
+    "description": "SASWATHA SEVAS - Seva 5"
+  },
+  {
+    "name": "Saswatha Mahapuja",
+    "telugu_name": "శాశ్వత మహాపూజ",
+    "price": "1000",
+    "timing": "Scheduled Annual / Lifetime Seva",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=36",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/cdaf19a573657fb64be2b780a0c7dd36.jpg",
+    "description": "SASWATHA SEVAS - Seva 6"
+  },
+  {
+    "name": "Shaswatha kumkumapuja",
+    "telugu_name": "శాశ్వత కుంకుమపూజ",
+    "price": "1000",
+    "timing": "Scheduled Annual / Lifetime Seva",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=37",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/Kumkum%20puja.jpeg",
+    "description": "SASWATHA SEVAS - Seva 7"
+  },
+  {
+    "name": "Saswatha Kodepuja",
+    "telugu_name": "శాశ్వత కోడెపూజ",
+    "price": "1000",
+    "timing": "Scheduled Annual / Lifetime Seva",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=38",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/kodemrokkubadi.jpg",
+    "description": "SASWATHA SEVAS - Seva 8"
+  },
+  {
+    "name": "Maharaaja Posakalu",
+    "telugu_name": "మహారాజు పోషకులు",
+    "price": "10116",
+    "timing": "Nityannadanam Scheme",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=42",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/maharajaposhakalu.jpg",
+    "description": "NITYANNADANAM - Seva 1"
+  },
+  {
+    "name": "Poshakulu",
+    "telugu_name": "పోషకులు",
+    "price": "5116",
+    "timing": "Nityannadanam Scheme",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=43",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/rajaposhakalu.jpg",
+    "description": "NITYANNADANAM - Seva 2"
+  },
+  {
+    "name": "Saadhaarana Sabhyulu",
+    "telugu_name": "సాధారణ సభ్యులు",
+    "price": "1116",
+    "timing": "Nityannadanam Scheme",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=44",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/b50078cab95d43153213d846997acf7b.jpg",
+    "description": "NITYANNADANAM - Seva 3"
+  },
+  {
+    "name": "Oka Roju Annadaanamu",
+    "telugu_name": "ఒక రోజు అన్నదానము",
+    "price": "351",
+    "timing": "Nityannadanam Scheme",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=45",
+    "image": "https://vemulawadatemple.telangana.gov.in/fservices/index.php?sid=9",
+    "description": "NITYANNADANAM - Seva 4"
+  },
+  {
+    "name": "Patnam Veyuta",
+    "telugu_name": "పట్నం వేయుట",
+    "price": "100",
+    "timing": "",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=72",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/Pattnam.jpeg",
+    "description": "SUB -TEMPLE – SRI BADDI POCHAMMA - Service 1"
+  },
+  {
+    "name": "Amma Vari Puja (Odi Biyam)",
+    "telugu_name": "అమ్మవారి పూజ (ఒడి బియ్యం)",
+    "price": "50",
+    "timing": "",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=73",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/f191bcd3e1db98e3f4d32ec9fe0b4383.jpg",
+    "description": "SUB -TEMPLE – SRI BADDI POCHAMMA - Service 2"
+  },
+  {
+    "name": "Bonam",
+    "telugu_name": "బోనం",
+    "price": "20",
+    "timing": "",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=74",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/bonam.jpg",
+    "description": "SUB -TEMPLE – SRI BADDI POCHAMMA - Service 3"
+  },
+  {
+    "name": "Bellam Saka",
+    "telugu_name": "బెల్లం సాక",
+    "price": "5",
+    "timing": "",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=75",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/Bellam%20saka.jpeg",
+    "description": "SUB -TEMPLE – SRI BADDI POCHAMMA - Service 4"
+  },
+  {
+    "name": "Keshakandanam",
+    "telugu_name": "కేశ ఖండనం",
+    "price": "10",
+    "timing": "",
+    "booking_url": "",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/keshakandam.jpg",
+    "description": "SUB -TEMPLE – SRI BADDI POCHAMMA - Service 5"
+  },
+  {
+    "name": "Sri Bheemeshwara Abhishekam",
+    "telugu_name": "శ్రీ భీమేశ్వర అభిషేకం",
+    "price": "516",
+    "timing": "",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=39",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/6cb2dd098d994a21902b2f6ac30af040.jpg",
+    "description": "SUB -TEMPLE – SRI BEEMESHWARA ALAYAM - Service 1"
+  },
+  {
+    "name": "Navagraha Puja",
+    "telugu_name": "నవగ్రహ పూజ",
+    "price": "100",
+    "timing": "",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=40",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/navagraha.jpg",
+    "description": "SUB -TEMPLE – SRI BEEMESHWARA ALAYAM - Service 2"
+  },
+  {
+    "name": "Dadwasa Jyotirlingalu",
+    "telugu_name": "దాద్వశ జ్యోతిర్లింగాలు",
+    "price": "100",
+    "timing": "",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=41",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/d7e0258a7db678903cbb8c00657a408c.jpg",
+    "description": "SUB -TEMPLE – SRI BEEMESHWARA ALAYAM - Service 3"
+  },
+  {
+    "name": "Upanayanam",
+    "telugu_name": "ఉపనయనం",
+    "price": "200",
+    "timing": "",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=77",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/09ac4787af9275355203e723ea26cc62.jpg",
+    "description": "SUB -TEMPLE – SRI BEEMESHWARA ALAYAM - Service 4"
+  },
+  {
+    "name": "Sakrutha Varthanam",
+    "telugu_name": "సకృతా వర్తనం",
+    "price": "100",
+    "timing": "",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=78",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/c41df24c1ffe8b5e06bb6a77f15550fd.jpg",
+    "description": "SUB -TEMPLE – SRI BEEMESHWARA ALAYAM - Service 5"
+  },
+  {
+    "name": "Gandadeepam",
+    "telugu_name": "గండాదీపము",
+    "price": "5",
+    "timing": "",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=79",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/gandadeepam.jpg",
+    "description": "SUB -TEMPLE – SRI BEEMESHWARA ALAYAM - Service 6"
+  },
+  {
+    "name": "Dwadasha Jyotirlinga Abhishekam",
+    "telugu_name": "ద్వాదశ జ్యోతిర్లింగ అభిషేకం",
+    "price": "100",
+    "timing": "",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=80",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/jyotirlinga.jpeg",
+    "description": "SUB -TEMPLE – SRI BEEMESHWARA ALAYAM - Service 7"
+  },
+  {
+    "name": "Anjaneya Abhishekam",
+    "telugu_name": "ఆంజనేయ అభిషేకం",
+    "price": "50",
+    "timing": "",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=81",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/856127eb34cf257e6640130e1a526df1.jpg",
+    "description": "SUB -TEMPLE – SRI BEEMESHWARA ALAYAM - Service 8"
+  },
+  {
+    "name": "Gopuja",
+    "telugu_name": "గోపూజ",
+    "price": "50",
+    "timing": "",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=82",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/d9d51254f0fab3ac21a0551d75fe116c.jpg",
+    "description": "SUB -TEMPLE – SRI BEEMESHWARA ALAYAM - Service 9"
+  },
+  {
+    "name": "Sadhyojaata Sivarchana",
+    "telugu_name": "సద్యోజాత శివార్చన",
+    "price": "50",
+    "timing": "",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=83",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/d376d5de36e4380d5da3f3a587329192.jpg",
+    "description": "SUB -TEMPLE – SRI BEEMESHWARA ALAYAM - Service 10"
+  },
+  {
+    "name": "Archana (Sri Bheemeshwara Alayam)",
+    "telugu_name": "అర్చన (శ్రీ భీమేశ్వరాలయం)",
+    "price": "10",
+    "timing": "",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=84",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/4d7851fbfbc9ae1a9be28a2b0d935e14.jpg",
+    "description": "SUB -TEMPLE – SRI BEEMESHWARA ALAYAM - Service 11"
+  },
+  {
+    "name": "Archana(Sri Nagareshwara Swami)",
+    "telugu_name": "అర్చన (శ్రీ నగరేశ్వర స్వామి)",
+    "price": "10",
+    "timing": "",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=85",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/a3612cad050c73550ab08a6fca58631c.jpg",
+    "description": "SUB -TEMPLE – SRI NAGARESHWARA SWAMY TEMPLE - Service 1"
+  },
+  {
+    "name": "Abhishekam",
+    "telugu_name": "అభిషేకం",
+    "price": "25",
+    "timing": "",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=86",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/2b52c3f3f75ce05f31da1fc98486c3d0.jpg",
+    "description": "SUB -TEMPLE – SRI NAGARESHWARA SWAMY TEMPLE - Service 2"
+  },
+  {
+    "name": "Motor Cycle,Vespa Vehicle Puja",
+    "telugu_name": "మోటార్ సైకిల్, వెస్పా వాహన పూజ",
+    "price": "10",
+    "timing": "",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=102",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/5073284dd64bc280f012a93e22408f2d.jpg",
+    "description": "SUB -TEMPLE – SRI NARASIMHA SWAMY TEMPLE - Service 1"
+  },
+  {
+    "name": "Three Wheeler Vehicle",
+    "telugu_name": "త్రిచక్ర వాహనం",
+    "price": "15",
+    "timing": "",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=103",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/7faae883c93f866f4d76106be43fa26e.jpg",
+    "description": "SUB -TEMPLE – SRI NARASIMHA SWAMY TEMPLE - Service 2"
+  },
+  {
+    "name": "Four Wheeler Vehicle",
+    "telugu_name": "నాలుగు చక్రముల వాహనము",
+    "price": "20",
+    "timing": "",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=104",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/d7cba5e734b3e2f50f2fbef8b78b8703.jpg",
+    "description": "SUB -TEMPLE – SRI NARASIMHA SWAMY TEMPLE - Service 3"
+  },
+  {
+    "name": "Heavy Vehicle",
+    "telugu_name": "భారి వాహనము",
+    "price": "50",
+    "timing": "",
+    "booking_url": "https://vemulawadatemple.telangana.gov.in/bookings/index.php?ssid=105",
+    "image": "https://vemulawadatemple.telangana.gov.in/files/cfdd5424f3f0c68ecf3b8dce76c19ad3.jpg",
+    "description": "SUB -TEMPLE – SRI NARASIMHA SWAMY TEMPLE - Service 4"
+  }
+]

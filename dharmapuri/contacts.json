@@ -1,0 +1,81 @@
+{
+  "address": "Sri Lakshmi Narasimha Swamy Temple, Dharmapuri, Jagtial District, Telangana 505425",
+  "phones": [],
+  "emails": [],
+  "website": "https://dharmapurikshetram.in",
+  "google_map": "https://www.google.com/maps/dir//Sri+Lakshmi+Narasimha+Swami+Devasthanam,+Sri+Laxmi+Narasimha,+3-57,+Swami+Temple+Road,+near+by+Laxmi+Narashimha+Swamy+Temple,+Boyawada,+Dharmapuri,+Telangana+505425/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3bcd4144e3ea54e1:0xe20bd0ca6bbb3016?sa=X&ved=1t:57443&ictx=111",
+  "google_embed_map": "",
+  "alternate_website": "",
+  "pincode": "505425",
+  "directory": {
+    "Dharmapuri Police Station": "+91-87126-56824",
+    "Dharmapuri Circle Inspector": "+91-87126-56817",
+    "Jagtial Police Control Room": "+91-87126-56811",
+    "Jagtial Police Control Room Landline": "+91-8724-223100"
+  },
+  "emergency_numbers": {
+    "Police": "100",
+    "Ambulance": "108",
+    "Emergency": "112",
+    "Fire": "101"
+  },
+  "emergency_services": {
+    "hospitals": [
+      {
+        "name": "Community Health Centre (CHC) Dharmapuri",
+        "type": "Government",
+        "address": "Dharmapuri, Jagtial DistricBDK Dharmapurit, Telangana",
+        "distance": "~1.5 km",
+        "contact_number": "+91-96765-24777",
+        "working_hours": "24/7 Casualty & Emergency Services"
+      },
+      {
+        "name": "Fortune Sigma Multispeciality Hospital",
+        "type": "Private",
+        "address": "H.No. 7-6-196, Ashoknagar, Gollapally Road, Jagtial, Telangana 505327",
+        "distance": "~29.3 km",
+        "contact_number": "+91-8724-230102",
+        "working_hours": ""
+      },
+      {
+        "name": "Anvi Shree Multi-Speciality Hospital",
+        "type": "Private",
+        "address": "H.No. 7-6-190/1, Gollapally Road, Ashok Nagar, Jagtial, Telangana",
+        "distance": "~29.5 km",
+        "contact_number": "+91-87242-28842",
+        "working_hours": "24/7 Emergency & ICU Care"
+      }
+    ],
+    "ambulance_services": [
+      {
+        "name": "Telangana Emergency Ambulance Service",
+        "contact": "108",
+        "description": "Emergency ambulance service in Telangana"
+      }
+    ],
+    "police_and_security": [
+      {
+        "name": "Dharmapuri Police Station",
+        "address": "Dharmapuri, Jagtial District, Telangana",
+        "contact_numbers": [
+          "+91-87126-56824"
+        ]
+      },
+      {
+        "name": "Dharmapuri Circle Inspector",
+        "address": "Dharmapuri, Jagtial District, Telangana",
+        "contact_numbers": [
+          "+91-87126-56817"
+        ]
+      },
+      {
+        "name": "Jagtial Police Control Room",
+        "address": "Jagtial District, Telangana",
+        "contact_numbers": [
+          "+91-8724-223100",
+          "+91-87126-56811"
+        ]
+      }
+    ]
+  }
+}

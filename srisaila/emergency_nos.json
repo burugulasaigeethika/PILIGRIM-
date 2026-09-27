@@ -1,0 +1,42 @@
+{
+  "police": [
+    {
+      "name": "Srisailam One Town Police Station",
+      "phone": "08524-287033",
+      "address": "Srisailam Temple Town, Nandyal District, Andhra Pradesh",
+      "details": "Local station for temple security and traffic regulation."
+    }
+  ],
+  "medical": [
+    {
+      "name": "Srisaila Devasthanam Hospital",
+      "phone": "08524-288884",
+      "address": "Srisailam Temple Area",
+      "details": "24/7 Devasthanam emergency medical care and outpatient clinic."
+    },
+    {
+      "name": "Government Hospital, Srisailam",
+      "address": "Srisailam Town",
+      "details": "Primary emergency medical treatment."
+    }
+  ],
+  "fire_and_rescue": {
+    "name": "Srisailam Fire Station",
+    "phone": "101",
+    "address": "Srisailam Town"
+  },
+  "helpline": [
+    {
+      "name": "National Emergency Hotline",
+      "phone": "112"
+    },
+    {
+      "name": "Police Control Room",
+      "phone": "100"
+    },
+    {
+      "name": "Ambulance Service",
+      "phone": "108"
+    }
+  ]
+}

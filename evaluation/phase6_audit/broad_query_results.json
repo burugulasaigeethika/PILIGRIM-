@@ -1,0 +1,26 @@
+[
+  {
+    "query": "Tell me everything about Dharmapuri Temple.",
+    "temple": "Dharmapuri",
+    "mode": "broad_temple",
+    "available_categories_count": 20,
+    "prioritized_max_budget": 6,
+    "passed": true
+  },
+  {
+    "query": "Give me complete information about Basara Temple.",
+    "temple": "Basara",
+    "mode": "broad_temple",
+    "available_categories_count": 21,
+    "prioritized_max_budget": 6,
+    "passed": true
+  },
+  {
+    "query": "What should I know about Yadadri Temple?",
+    "temple": "Yadadri",
+    "mode": "targeted",
+    "available_categories_count": 21,
+    "prioritized_max_budget": 6,
+    "passed": false
+  }
+]

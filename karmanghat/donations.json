@@ -1,0 +1,51 @@
+{
+  "annadanam": {
+    "booking_url": "",
+    "required_fields": [
+      "Name",
+      "Gothram",
+      "Email",
+      "Gender",
+      "Address",
+      "Purpose",
+      "Name (Telugu)",
+      "Gothram (Telugu)",
+      "Mobile",
+      "Amount"
+    ],
+    "action": "Make Payment"
+  },
+  "e_hundi": {
+    "booking_url": "",
+    "required_fields": [
+      "Name",
+      "Gothram",
+      "Email",
+      "Gender",
+      "Address",
+      "Purpose",
+      "Name (Telugu)",
+      "Gothram (Telugu)",
+      "Mobile",
+      "Amount"
+    ],
+    "action": "Make Payment"
+  },
+  "general_donation": {
+    "booking_url": "",
+    "required_fields": [
+      "Name",
+      "Gothram",
+      "Email",
+      "Gender",
+      "Address",
+      "Purpose",
+      "Name (Telugu)",
+      "Gothram (Telugu)",
+      "Mobile",
+      "Amount"
+    ],
+    "action": "Make Payment"
+  },
+  "refund_policy": []
+}

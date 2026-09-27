@@ -1,0 +1,78 @@
+{
+  "address": "Executive Officer,\nSri Karmanghat Hanuman Devasthanam,\n8-2-61, Inner Ring Road, Karmanghat (V),\nSaroornagar (M), Ranga Reddy Dist, Telangana - 500079.",
+  "phones": [
+    "040-24222222",
+    "+91 97041 75441"
+  ],
+  "emails": [
+    "info@karmanghattemple.telangana.gov.in"
+  ],
+  "website": "https://karmanghattemple.telangana.gov.in/",
+  "google_map": "https://www.google.com/maps?ll=17.341166,78.522387&z=14&t=m&hl=en-US&gl=US&mapclient=embed&cid=13183519333387411891",
+  "google_embed_map": "https://www.google.com/maps?ll=17.341166,78.522387&z=14&t=m&hl=en-US&gl=US&mapclient=embed&cid=13183519333387411891",
+  "emergency_contacts": {
+    "helplines": [
+      {
+        "name": "National Emergency Support",
+        "number": "112",
+        "description": "Instantly routes to Police, Fire, or Medical response"
+      },
+      {
+        "name": "Police Control Room",
+        "number": "100"
+      },
+      {
+        "name": "Medical Emergency Ambulance",
+        "number": "108"
+      },
+      {
+        "name": "Fire and Rescue",
+        "number": "101"
+      }
+    ],
+    "police_jurisdictions": [
+      {
+        "name": "Saroornagar Police Station",
+        "distance": "~3 km",
+        "description": "Located ~3 km away from the temple for local law enforcement issues."
+      },
+      {
+        "name": "L.B. Nagar Police Station",
+        "distance": "~2.2 km",
+        "description": "Located ~2.2 km away at the Galleria Metro Mall area."
+      }
+    ],
+    "hospitals": [
+      {
+        "name": "Viswas Hospital",
+        "distance": "300 meters",
+        "best_for": "Immediate first-aid & local emergencies",
+        "emergency_contact": "Not available online"
+      },
+      {
+        "name": "Onus Robotic Hospitals",
+        "distance": "900 meters",
+        "best_for": "Ortho, Neuro, Advanced Diagnostics",
+        "emergency_contact": "+91 73967 77240"
+      },
+      {
+        "name": "Padma Nursing Home",
+        "distance": "1.1 km",
+        "best_for": "Gynecology, General Medicine, Fractures",
+        "emergency_contact": "+91 77290 36574"
+      },
+      {
+        "name": "CBM Multi-Speciality",
+        "distance": "1.2 km",
+        "best_for": "Disabled-friendly infrastructure, ICU care",
+        "emergency_contact": "+91 80552 23347"
+      },
+      {
+        "name": "Gleneagles AWARE Hospital",
+        "distance": "2.4 km",
+        "best_for": "Major trauma, kidney, or cardiac conditions",
+        "emergency_contact": "+91 92402 61112"
+      }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Haritha Hotel Ramappa (TSTDC Resort)",
+    "type": "Government tourism hotel / resort",
+    "distance": "~1.2 km from Ramappa Temple",
+    "price": "₹2,000-₹4,000 per night, depending on room type and season",
+    "description": "Located near Ramappa Lake in Palampet, Mulugu District. Offers accommodation, restaurant facilities, parking and scenic lake surroundings."
+  },
+  {
+    "name": "Haritha Lake View Resort, Ramappa",
+    "type": "Lake-view resort hotel",
+    "distance": "1.3 km from Ramappa Temple",
+    "price": "₹2,000-₹4,500 per night, depending on room type and availability",
+    "description": "Located near Ramappa Lake and close to Ramappa Temple. Features accommodation, restaurant facilities, parking and a lake-view setting. Advance booking is recommended, especially during weekends and holidays."
+  },
+  {
+    "name": "Haritha Grand, Mulugu",
+    "type": "Hotel",
+    "distance": "~14.5 km from Ramappa Temple",
+    "price": "Price varies by room type and booking date",
+    "description": "Located on Warangal–Mulugu Road near Gattamma Village. Suitable for pilgrims looking for accommodation closer to Mulugu town."
+  },
+  {
+    "name": "Haritha Hotel Laknavaram",
+    "type": "Government tourism resort",
+    "distance": "~ 26.7 km from Ramappa Temple",
+    "price": "Price varies by cottage or room type and booking date",
+    "description": "A tourism resort near Laknavaram Lake, known for its scenic surroundings and cottages. Suitable if you want to combine a Ramappa Temple visit with Laknavaram tourism."
+  },
+  {
+    "name": "G.M.R Residency",
+    "type": "Budget hotel/residency",
+    "distance": "~ 30 km from Ramappa Temple",
+    "price": "Price varies by room type and booking date",
+    "description": "An accommodation option farther from Ramappa Temple, with AC and non-AC rooms and parking mentioned in traveller listings."
+  }
+
+]

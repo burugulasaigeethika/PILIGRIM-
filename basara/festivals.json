@@ -1,0 +1,32 @@
+[
+  {
+    "festival_name": "Vasant Panchami / Sri Panchami",
+    "description": "Vasant Panchami is the grandest festival celebrated at Sri Gnana Saraswathi Temple, Basara. Lakhs of devotees and parents visit the temple to perform Akshara Abhyasam (holy initiation into learning and education) for children.",
+    "month": "Magha Masam (Typically matches January or February)",
+    "importance": "Widely revered as the manifestation day (Saraswathi Jayanthi) of the Goddess of Knowledge. It features the absolute highest annual single-day crowd density."
+  },
+  {
+    "festival_name": "Devi Navarathrotsavams (Sharad Navratri)",
+    "description": "9-day grand celebrations dedicated to Goddess Durga, Lakshmi, and Saraswathi with special Alankarams, Chandi Homam, and religious discourses.",
+    "month": "Ashwayuja Masam (Typically matches September or October)",
+    "importance": "Marks the victory of light over spiritual darkness. Celebrates high-density Vedic chanting sessions and elaborate ritual decoration shifts across the main shrine layouts."
+  },
+  {
+    "festival_name": "Mahasivarathri Jathra",
+    "description": "Major festival where lakhs of pilgrims visit the shrine to offer vows to Lord Vyaseshwara & Lord Shiva on the banks of Godavari.",
+    "month": "Magha Masam / Bahula Trayodashi (Typically matches February or March)",
+    "importance": "Highlights the deep historical intersection of Saivite and Vaishnavite traditions at Basara, drawing extensive night-long meditation crowds to the river banks."
+  },
+  {
+    "festival_name": "Vyasa Pournima",
+    "description": "Vyasa paurnima Utsavam is celebrated on Ashada Paurnima. As the legend of the temple says the Deity of the temple was esatablished by Veda Vyasa, hence Utasavam is performed in a large scale.\nFor more details about the Vyasa Paurnima Utsavam at Basara Temple contact Basara Devasthanam.",
+    "month": "Ashadha Masam (Typically matches June or July)",
+    "importance": "A deeply unique heritage festival specific to Basara. Celebrated on a massive scale to pay ancestral homage to the legendary author of the Mahabharata and the Puranas."
+  },
+  {
+    "festival_name": "Other Festivals",
+    "description": "Sreerama Navami, Vyasa Purnima, Sravana Masotsavam, Kartheeka Masotsavam, Deepavali, and Akshaya Tritiya.",
+    "month": "Distributed across the Hindu Lunar Calendar cycles",
+    "importance": "Ensures the continuous flow of seasonal community prayers, special evening oil-lamp line lightings (Deepotsavam), and localized multi-deity offerings."
+  }
+]

@@ -1,0 +1,63 @@
+{
+  "temple_id": "balkampet_yellamma",
+  "name": "Sri Yellamma Pochamma Devasthanam, Balkampet",
+  "alternate_names": [
+    "Balkampet Yellamma Temple",
+    "Balkampet Yellamma Pochamma Temple",
+    "Balkampet Yellamma Gudi"
+  ],
+  "state": "Telangana",
+  "district": "Hyderabad",
+  "village": "Balkampet",
+  "address": "Sri Yellamma Pochamma Devasthanam, Balkampet Road, BK Guda, Balkampet, Hyderabad, Telangana - 500038",
+  "river": "",
+  "main_deity": "Goddess Yellamma (also known as Renuka Devi, Jala Durga, or Jaggadamba)",
+  "other_deities": [
+    "Goddess Pochamma",
+    "Serpent Deity (Naga Devatha)",
+    "Lord Ganesha",
+    "Goddess Rajarajeshwari"
+  ],
+  "description": "The Sri Yellamma Pochamma Devasthanam (Balkampet Yellamma Temple) is a historic Hindu shrine located in Balkampet, Hyderabad, Telangana. The temple is famous for its unique physical layout, wherein the main self-manifested (Swayambhu) idol of the Goddess is situated approximately 10 feet below ground level and is partially submerged in water, giving her the name Jala Durga. It is a major spiritual center in Hyderabad, drawing crowds on Sundays and Tuesdays, and is famous for the annual Bonalu Jathara and Yellamma Kalyanotsavam festivals. A historic well is located in the temple complex, and the water is called Theertham. Devotees believe that the water in the well is a cure to all ailments, and a bath/sprinkling of this water purifies skin diseases. Devotees offer animal sacrifices in the form of chickens and goats (traditionally performed in surrounding areas). Managed by the Endowments Department of the Government of Telangana under the supervision of an Executive Officer (EO). Temple Type: Hindu Goddess Temple (Shakta Tradition). Primary Source: Official Temple Website.",
+  "history": "The temple devasthanam was first constructed in the 15th Century AD. The idol of the Goddess is located 10 feet deeper than the ground level. The temple took its current form later, during renovations in the early 20th Century AD. An Akhand Jyoth (eternal lamp) was lit during the renovation and remains burning in the temple. Primary Source: Official Temple Website, About Us Page (https://balkampettemple.telangana.gov.in/about_us/) under the \"About Us\" section.",
+  "mythology": "The primary legend associated with the temple is the traditional story of Renuka Devi:\n• The Story of Renuka: Renuka, daughter of Raja Renuka, was married to sage Jamadagni (son of Satyavati). They had five sons, including Parashurama. One day, Renuka failed to perform one of her regular household duties, which angered Jamadagni. He banished her, and she was advised by saints to perform penance by doing pujas in front of a Shivalinga and feed Brahmins.\n• The Execution: Jamadagni, still furious, commanded his sons to punish their mother. The four eldest refused and were burned to ashes by their father's gaze. The youngest son, Parashurama, obeyed his father and set out with an axe. He found his mother hiding in a village and beheaded her, along with the village woman who had been hiding her.\n• The Resurrection Mismatch: Jamadagni, pleased with Parashurama's obedience, granted him a boon. Parashurama asked for the lives of his mother, brothers, and the village woman to be restored. During the process of joining the heads back to the bodies, the head of Renuka was mistakenly restored to the village woman's body, and vice versa. Jamadagni accepted the form with Renuka's body, and the other form (village woman's body with Renuka's head) became known as Yellamma (mother of all).\n• Kali Incarnation: Goddess Yellamma is also believed to be an incarnation of Goddess Kali, explaining the celebratory nature of the Bonalu festival.",
+  "sub_temples": [
+    {
+      "name": "Sri Pochamma Temple (శ్రీ పోచమ్మ ఆలయం)",
+      "location": "Inside the temple complex",
+      "significance": "Deity: Goddess Pochamma. Worshipped alongside Yellamma during regional festivals."
+    },
+    {
+      "name": "Sri Naga Devatha Temple (శ్రీ నాగ దేవత ఆలయం)",
+      "location": "Inside the temple complex",
+      "significance": "Deity: Serpent Deity (Naga Devatha)."
+    },
+    {
+      "name": "Ganapathi Temple (గణపతి ఆలయం)",
+      "location": "Near the entrance of the temple complex",
+      "significance": "Deity: Lord Ganesha."
+    },
+    {
+      "name": "Sri Rajarajeshwari Shrine",
+      "location": "Inside the temple complex",
+      "significance": "Deity: Goddess Rajarajeshwari."
+    }
+  ],
+  "architecture": {
+    "style": "Subterranean sanctum layout",
+    "highlights": [
+      {
+        "name": "Swayambhu Subterranean Sanctum",
+        "description": "Main self-manifested idol situated approximately 10 feet below ground level, partially submerged in water (Jala Durga)."
+      },
+      {
+        "name": "Akhand Jyoth",
+        "description": "An eternal lamp lit during the early 20th Century AD renovation that remains burning in the temple."
+      },
+      {
+        "name": "Theertham Well",
+        "description": "Historic well located in the temple complex whose water is believed to cure all ailments and purify skin diseases."
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "temple_id": "birla_mandir_hyderabad",
+  "name": "Birla Mandir (Sri Venkateswara Temple)",
+  "alternate_names": [
+    "Sri Venkateswara Temple",
+    "Birla Temple Hyderabad"
+  ],
+  "state": "Telangana",
+  "district": "Hyderabad",
+  "village": "Khairatabad",
+  "address": "Naubat Pahad, Hill Fort Road, Ambedkar Colony, Khairatabad, Hyderabad, Telangana - 500004",
+  "river": "Hussain Sagar Lake (Panoramic Hilltop View)",
+  "main_deity": "11-foot tall idol of Lord Venkateswara (resembling Tirupati Balaji) sculpted out of a single black granite rock under a carved lotus canopy.",
+  "other_deities": [
+    "Goddess Padmavathi",
+    "Goddess Andal",
+    "Lord Shiva",
+    "Lord Hanuman",
+    "Lord Ganesha"
+  ],
+  "description": "Perched atop a 280-foot high hillock called Naubat Pahad, Birla Mandir in Hyderabad is an architectural masterpiece constructed almost entirely using 2,000 metric tonnes of pure white marble brought from Jodhpur and Makrana, Rajasthan. Built by the Birla Foundation (Hindustan Charity Trust) over a decade and consecrated in 1976.",
+  "history": "Commissioned by industrialist and philanthropist Dr. B.D. Birla and built over 10 years by skilled artisans. Consecrated and opened to the public in 1976 under the Birla Foundation.",
+  "mythology": "Blends South Indian Dravidian gopurams, North Indian Rajasthani styling, and Odisha Utkal-style vimana architecture. Uniquely features NO traditional brass bells to maintain a quiet environment for silent prayer, meditation, and spiritual contemplation.",
+  "sub_temples": [
+    "Goddess Padmavathi Shrine",
+    "Goddess Andal Shrine",
+    "Lord Shiva Shrine",
+    "Lord Hanuman Shrine",
+    "Lord Ganesha Shrine"
+  ]
+}

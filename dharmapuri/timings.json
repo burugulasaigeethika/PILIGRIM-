@@ -1,0 +1,71 @@
+{
+  "temple_id": "dharmapuri_lakshmi_narasimha_swamy",
+  "opening_time": "5:00 AM",
+  "closing_time": "8:00 PM",
+  "afternoon_break": {
+    "from": "2:30 PM",
+    "to": "4:00 PM"
+  },
+  "daily_schedule": [
+    {
+      "time_slot": "5:00 AM",
+      "ritual_name": "Suprabhatham",
+      "details_and_significance": "Morning awakening prayers"
+    },
+    {
+      "time_slot": "5:30 AM",
+      "ritual_name": "Water Fetching Procession",
+      "details_and_significance": "Proceeding to Godavari River to bring water for Sri Swami vari Abhishekam with traditional instruments"
+    },
+    {
+      "time_slot": "6:00 AM – 8:00 AM",
+      "ritual_name": "Abhishekam & Nityanivedanam",
+      "details_and_significance": "Sri Swami vari Abhishekam, Nityanivedan, Harathi, Manthrapushpam, Distribution of Prasadam and Archanas"
+    },
+    {
+      "time_slot": "8:00 AM – 9:00 AM",
+      "ritual_name": "Darshanam & Archanas",
+      "details_and_significance": "General Darshanam and Archana pujas"
+    },
+    {
+      "time_slot": "9:00 AM – 10:00 AM",
+      "ritual_name": "Sri Laxminarasimha Homam (Sudarshana Homam)",
+      "details_and_significance": "Daily Homam ritual performed in the temple premises"
+    },
+    {
+      "time_slot": "10:00 AM – 11:30 AM",
+      "ritual_name": "Nithya Kalyanotsavam",
+      "details_and_significance": "Sri Laxminarasimha Swamy Nithya Kalyanam, followed by Darshanam & Archanas"
+    },
+    {
+      "time_slot": "12:00 PM",
+      "ritual_name": "Maha Nivedana",
+      "details_and_significance": "Maha Nivedana"
+    },
+    {
+      "time_slot": "12:00 PM – 2:30 PM",
+      "ritual_name": "Darshanam & Archanas",
+      "details_and_significance": "General Darshanam and Archana pujas"
+    },
+    {
+      "time_slot": "2:30 PM – 4:00 PM",
+      "ritual_name": "Temple Closed",
+      "details_and_significance": "Afternoon rest (Doors closed)"
+    },
+    {
+      "time_slot": "4:00 PM – 7:00 PM",
+      "ritual_name": "Darshanam & Archanas",
+      "details_and_significance": "Evening Darshanam and Archana pujas"
+    },
+    {
+      "time_slot": "7:00 PM – 8:00 PM",
+      "ritual_name": "Evening Aaradhana & Pavalimpu Seva",
+      "details_and_significance": "Aaradhana, Nityanivedan, Harathi, Manthrapushpam, Distribution of Prasadam, and Pavalimpu Seva (putting the deity to rest)"
+    },
+    {
+      "time_slot": "8:00 PM",
+      "ritual_name": "Temple Closed",
+      "details_and_significance": "Night closure (Doors closed)"
+    }
+  ]
+}

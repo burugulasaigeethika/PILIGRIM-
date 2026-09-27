@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Suprabhata Seva",
+    "timing": "Conducted daily around to 5:30 AM to 6:00 AM",
+    "description": "The morning ritual performed to awaken the deity."
+  },
+  {
+    "name": "Nitya Abhishekam",
+    "timing": "Conducted daily between 6:30 AM and 8:00 AM",
+    "description": "The primary ritual where the Shiva Lingam is bathed with holy water, milk, and traditional offerings. Devotees can regularly request archana and abhishekam."
+  },
+  {
+    "name": "Nitya Archana & Harati",
+    "timing": "Performed throughout the day for visiting devotees (08:00 AM to 11:15 AM & 04:00 PM to 07:30 PM)",
+    "description": "Continuous short prayers, chantings of the deity's name, and light offerings performed by the temple priests."
+  },
+  {
+    "name": "Maha Mangala Harati",
+    "timing": "Performed around 11:05 AM to 11:30 AM",
+    "description": "The grand noon closing prayer performed right before the main sanctum closes for afternoon resting hours."
+  }
+]

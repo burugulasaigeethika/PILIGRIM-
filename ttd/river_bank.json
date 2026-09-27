@@ -1,0 +1,43 @@
+{
+  "river_and_tanks": {
+    "foothills_river": "Swarnamukhi River (Flows through Tirupati valley at the foot of Seshachalam Hills)",
+    "main_temple_tank": "Swami Pushkarini (Sacred water tank adjacent to Sri Venkateswara Swamy Temple, Tirumala)"
+  },
+  "theerthams": [
+    {
+      "name": "Swami Pushkarini",
+      "location": "Adjacent to Main Temple, Tirumala",
+      "description": "Sacred temple tank brought from Vaikuntha by Garuda. Taking a holy dip here before entering the temple is considered spiritually cleansing."
+    },
+    {
+      "name": "Papavinasanam Theertham",
+      "location": "5 km North of Tirumala Main Temple",
+      "description": "Perennial waterfall and reservoir equipped with structured shower spouts for pilgrims to bathe safely."
+    },
+    {
+      "name": "Akasa Ganga Theertham",
+      "location": "3 km North of Tirumala Main Temple",
+      "description": "Natural mountain stream whose holy water is collected daily for Sri Venkateswara Swamy Abhishekam."
+    },
+    {
+      "name": "Kapila Theertham",
+      "location": "KT Road, Foot of Tirumala Hills, Tirupati",
+      "description": "Sacred waterfall flowing down Seshachalam rocks into a large pond at the ancient Kapileswara Swamy Temple."
+    },
+    {
+      "name": "Chakra Theertham",
+      "location": "West of Tirumala Temple",
+      "description": "Holy water spot where Lord Vishnu's Sudarshana Chakra is believed to have struck the rocks to create a stream."
+    },
+    {
+      "name": "Gogarbham & Pandava Theertham",
+      "location": "Near Gogarbham Dam, Tirumala Forest Zone",
+      "description": "Gogarbham Dam serves as a key water source for Tirumala; Pandava Theertham is a nearby sacred natural stream site."
+    }
+  ],
+  "safety_and_cleanliness_guidelines": [
+    "Use designated steps, non-slip mats, and stainless steel railings while entering Swami Pushkarini.",
+    "Soaps, shampoos, detergents, washing clothes, and swimming are strictly prohibited in all holy tanks and streams.",
+    "Swami Pushkarini features 24/7 automated water filtration and recycling, continuous CCTV monitoring, and SDRF lifebuoy/lifeguard presence."
+  ]
+}

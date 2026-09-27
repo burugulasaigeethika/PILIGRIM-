@@ -1,0 +1,54 @@
+{
+  "address": "Executive Officer,\nSri Raja Rajeshwara Swamy Devasthanam,\nVemulawada,Rajanna Sircilla District\nTelangana - 505302",
+  "phones": [
+    "+91 83339 97618",
+    "+91 83339 97619",
+    "+91 83339 97612"
+  ],
+  "emails": [
+    "eo_vemulawada@yahoo.co.in"
+  ],
+  "website": "https://vemulawadatemple.telangana.gov.in",
+  "google_map": "https://www.google.com/maps/search/?api=1&query=Sri+Raja+Rajeshwara+Swamy+Temple+Vemulawada",
+  "google_embed_map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3244.122036054639!2d78.86872810558445!3d18.4672344836484!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x64b302ef11f789f!2sSri+Raja+Rajeshwara+Swamy+Temple%2C+Vemulawada!5e0!3m2!1sen!2sin!4v1528791090794",
+  "directory":{
+    "Temple Superintendent 1": "+91 83339 97618",
+    "Temple Superintendent 2": "+91 83339 97619",
+    "Temple Assistant Executive Officer": "+91 83339 97612"
+  },
+  "emergency_contacts": {
+    "universal_emergency_numbers": [
+      "Police Help Line: 100 or 112",
+      "Medical Ambulance: 108 (Rajanna Sircilla District Directory)",
+      "Fire Department: 101 (Rajanna Sircilla District Directory)"
+    ],
+    "local_police_stations": [
+      "Vemulawada Town Police Station (Inspector): 8712656413",
+      "Vemulawada Rural Police Station (Sub-Inspector): 8712656417"
+    ],
+    "medical_emergencies": [
+      {
+        "name": "Area Hospital / CHC Vemulawada (Government)",
+        "distance": "~1.0 km (A 3-minute drive from the temple complex).",
+        "phone_numbers": [
+          "+91 9490510308",
+          "+91 9440078901"
+        ]
+      },
+      {
+        "name": "Sri Raksha Multi Speciality Hospital",
+        "distance": "~1.9 km (Located on the Bypass Road).",
+        "phone_numbers": [
+          "+91 91600 05122"
+        ]
+      },
+      {
+        "name": "Vijaya Durga Clinic",
+        "distance": "4.2 km ",
+        "phone_numbers": [
+          "+91 91820 78261"
+        ]
+      }
+    ]
+  }
+}

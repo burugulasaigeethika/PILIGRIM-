@@ -1,0 +1,26 @@
+{
+  "how_to_reach": [
+    "Take TSRTC Bus 288D directly from Mehdipatnam Bus Depot or drive via the Vikarabad highway."
+  ],
+  "nearest_railway_station": {
+    "name": "Hyderabad Deccan Railway Station (Nampally)",
+    "distance": "approximately 26 km away",
+    "connectivity": "Well connected to the temple via city buses or direct taxi/auto-rickshaw services from the station exit."
+  },
+  "nearest_airport": {
+    "name": "Rajiv Gandhi International Airport in Shamshabad, Hyderabad",
+    "distance": "31.3 km via driving route",
+    "connectivity": "via the ORR (Outer Ring Road)"
+  },
+  "bus_routes": [
+    "Direct Bus Route 288D from Mehdipatnam Bus Depot directly to Chilkur Balaji Temple (Frequent services daily, extra frequency on weekends).",
+    "Connecting Bus from Koti / Secunderabad to Mehdipatnam, then transfer to 288D.",
+    "Any regional bus towards Vikarabad/Chevella from Mehdipatnam; alight at Moinabad junction and take a local auto-rickshaw (~3 km)."
+  ],
+  "road_routes": [
+    "NH163 highway network via Mehdipatnam, Langar Houz, and Moinabad."
+  ],
+  "parking_info": [
+    "Spacious parking area for private vehicles, buses, and two-wheelers outside the temple outer boundary."
+  ]
+}

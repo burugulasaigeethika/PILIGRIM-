@@ -1,0 +1,125 @@
+{
+  "temple_id": "vemulawada-sri-raja-rajeshwara-swamy-temple",
+  "opening_time": "4.00 AM",
+  "closing_time": "10.20 PM",
+  "afternoon_break": {
+    "from": "11:40 AM",
+    "to": "12:10 PM"
+  },
+  "daily_schedule": [
+    {
+      "name": "Mangala Vaidyam",
+      "timing": "From 4.00 AM to 4.10 AM",
+      "category": "MORNING PUJAS"
+    },
+    {
+      "name": "Suprabhata Seva",
+      "timing": "From 4.10 AM to 4.30 AM",
+      "category": "MORNING PUJAS"
+    },
+    {
+      "name": "Prabhata Harathi",
+      "timing": "At 4.35 AM",
+      "category": "MORNING PUJAS"
+    },
+    {
+      "name": "Aalaya Suddhi [Cleaning]",
+      "timing": "From 4.35 AM to 5.00 AM",
+      "category": "MORNING PUJAS"
+    },
+    {
+      "name": "Gomatha Puja & Kode Puja",
+      "timing": "From 5.00 AM to 5.15 AM",
+      "category": "MORNING PUJAS"
+    },
+    {
+      "name": "Prathakala Puja",
+      "timing": "From 5.15 AM to 6.15 AM",
+      "category": "MORNING PUJAS"
+    },
+    {
+      "name": "Nithya Kalyanam",
+      "timing": "From 10.30 AM to 12.30 PM",
+      "category": "MORNING PUJAS"
+    },
+    {
+      "name": "Madhyanhika Puja & Nivedana & Anna Puja.",
+      "timing": "From 11.40 AM to 12.10 PM",
+      "category": "MORNING PUJAS",
+      "note": "During Monday, Masa Sivarathri & Sani Thrayodasi days, Madhyanhika Puja & Nivedana & Anna Puja would be performed from 2.30 PM to 3.00 PM"
+    },
+    {
+      "name": "Pradosakala Puja",
+      "timing": "From 6.00 PM to 7.00 PM",
+      "category": "EVENING PUJAS"
+    },
+    {
+      "name": "Nishikala Puja",
+      "timing": "From 9.10 PM to 10.00 PM",
+      "category": "EVENING PUJAS"
+    },
+    {
+      "name": "Pavalimpu Seva",
+      "timing": "From 10.00 PM to 10.20 PM & temple would be closed",
+      "category": "EVENING PUJAS",
+      "note": "During Mondays which are not covered with the Thithi i.e., Eakadasi, Dwadashi, Sankramana, Masa Sivarathri, Bahula Astami etc., Eakantha Seva would be performed to the deity."
+    },
+    {
+      "name": "Sarva Darsanam",
+      "timing": "From 4.35 AM to 5.00 AM",
+      "category": "DARSHANAM/ARJITHA SEVA TIMINGS"
+    },
+    {
+      "name": "Dharma Darsanam & Abhisekam",
+      "timing": "From 6.15 PM to 11.30 AM",
+      "category": "DARSHANAM/ARJITHA SEVA TIMINGS",
+      "note": "During Monday, Masa Sivarathri and Sani Pradosam, Abhisekam would be performed from 6.15 AM to 2.30 PM & Anna Puja would be performed from 3.00 PM to 5.00 PM and Bilvarchana would not be performed"
+    },
+    {
+      "name": "Darsanam & Anna Puja",
+      "timing": "From 12.10 PM to 2.00 PM",
+      "category": "DARSHANAM/ARJITHA SEVA TIMINGS"
+    },
+    {
+      "name": "Darsanam & Bilvarchana, Sivarchana",
+      "timing": "From 2.30 PM to 5.55 PM",
+      "category": "DARSHANAM/ARJITHA SEVA TIMINGS"
+    },
+    {
+      "name": "Darsanam & Aakula Puja, Maha Puja, Pallaki Seva, Pedda Seva",
+      "timing": "From 7.10 PM to 9.00 PM",
+      "category": "DARSHANAM/ARJITHA SEVA TIMINGS"
+    },
+    {
+      "name": "Sathyanarayana Vratham",
+      "timing": "From 1.00 PM to 3.00 PM",
+      "category": "SPECIAL SEVAS"
+    },
+    {
+      "name": "Kalyanam",
+      "timing": "From 10.30 AM to 12.30 PM",
+      "category": "SPECIAL SEVAS"
+    },
+    {
+      "name": "Maha Lingarchana",
+      "timing": "From 6.30 PM to 8.30 PM",
+      "category": "SPECIAL SEVAS"
+    },
+    {
+      "name": "Kumkuma Puja",
+      "timing": "From 6.15 AM to 8.30 PM",
+      "category": "SPECIAL SEVAS"
+    },
+    {
+      "name": "Kode Mrokkubadi",
+      "timing": "From 6.15 AM to 8.30 PM",
+      "category": "SPECIAL SEVAS",
+      "note": "During Monday and other peak days when the inflow of pilgrims is at very high side Kode Mrokkubadi Puja would be started at 4.30 AM for the convenience of the pilgrims"
+    },
+    {
+      "name": "Gandadeepa Archana",
+      "timing": "From 6.15 AM to 8.30 PM",
+      "category": "SPECIAL SEVAS"
+    }
+  ]
+}

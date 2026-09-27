@@ -1,0 +1,97 @@
+[
+  {
+    "festival_name": "Annual Brahmotsavams",
+    "description": "The annual spring Brahmotsavams are celebrated for 15 days, starting from Ugadi. The 2026 schedule spanned from 19 March to 2 April 2026.\nNOTE: During the annual Brahmotsavams (19-03-2026 to 02-04-2026), regular daily Nitya Kalyanams, Homams, and other private Arjitha Sevas are suspended.",
+    "month": "Phalguna/Chaitra Masam",
+    "importance": "Major annual spring festival featuring Sree Seetha Ramachandra Swamy Thiru Kalyanotsavam (on Sri Rama Navami) where the Government of Telangana officially presents Mutyala Talambralu (pearls) and silk clothes on behalf of the state, Sree Maha Pattabhishekam (Coronation ceremony), Divya Vimana Rathotsavam, Teppotsavam, and other key rituals.",
+    "schedule_2026": [
+      {
+        "date": "19 Mar 2026",
+        "tithi_event": "Ugadi",
+        "details": "Panchanga Sravanam & Commencement of Utsavams."
+      },
+      {
+        "date": "23 Mar 2026",
+        "tithi_event": "Evening",
+        "details": "Ankurarpanam & Agni Prathistha (Seed sowing and fire invocation)."
+      },
+      {
+        "date": "25 Mar 2026",
+        "tithi_event": "10:00 AM",
+        "details": "Dhwajarohanam (Hoisting of the sacred Garuda flag to initiate the festival)."
+      },
+      {
+        "date": "24 Mar 2026",
+        "tithi_event": "7:00 PM",
+        "details": "Matsyavataram Alankaram & Bheri Puja."
+      },
+      {
+        "date": "23 Mar 2026",
+        "tithi_event": "7:00 PM",
+        "details": "Kurmavataram Alankaram & Sri Sesha Vahana Seva."
+      },
+      {
+        "date": "24 Mar 2026",
+        "tithi_event": "7:00 PM",
+        "details": "Varahavataram Alankaram & Sri Hamsa Vahana Seva."
+      },
+      {
+        "date": "25 Mar 2026",
+        "tithi_event": "7:00 PM",
+        "details": "Sri Krishna Alankaram & Sri Simha Vahana Seva."
+      },
+      {
+        "date": "26 Mar 2026",
+        "tithi_event": "6:00 PM",
+        "details": "Edurukolu Mahotsavam (The traditional welcoming ceremony between the bridegroom and bride's families)."
+      },
+      {
+        "date": "27 Mar 2026",
+        "tithi_event": "Sri Rama Navami (10:30 AM)",
+        "details": "Sree Seetha Ramachandra Swamy Thiru Kalyanotsavam (The celestial wedding of Lord Sri Rama and Goddess Seetha, celebrated in the Mithila Stadium). The Government of Telangana officially presents Mutyala Talambralu (pearls) and silk clothes on behalf of the state."
+      },
+      {
+        "date": "28 Mar 2026",
+        "tithi_event": "10:30 AM",
+        "details": "Sree Maha Pattabhishekam (The grand Coronation ceremony of Lord Sri Rama)."
+      },
+      {
+        "date": "29 Mar 2026",
+        "tithi_event": "5:00 PM",
+        "details": "Divya Vimana Rathotsavam (The grand chariot procession carrying the deities)."
+      },
+      {
+        "date": "30 Mar 2026",
+        "tithi_event": "6:30 PM",
+        "details": "Teppotsavam (Swan boat festival in Godavari River)."
+      },
+      {
+        "date": "02 Apr 2026",
+        "tithi_event": "10:00 AM",
+        "details": "Maha Purnahuti, followed by Chakra Teertham (Holy immersion in Godavari River)."
+      },
+      {
+        "date": "1 Apr 2026",
+        "tithi_event": "10:00 AM",
+        "details": "Pushpayagam (Offering of flowers to the deities)."
+      },
+      {
+        "date": "2 Apr 2026",
+        "tithi_event": "10:00 AM",
+        "details": "Shataghata Abhishekam, followed by Dolotsavam (Swing festival) & Official Conclusion."
+      }
+    ]
+  },
+  {
+    "festival_name": "Vaikuntha Ekadashi (Mukkoti Ekadashi)",
+    "description": "Vaikuntha Ekadashi (Mukkoti Ekadashi) is observed on Sunday, 20 December 2026.\nTeppotsavam (Float Festival): Celebrated on Dashami evening (19 December 2026). The deities are taken in a colorful procession on a swan-shaped boat (Hamsa Vahanam) in the Godavari River, accompanied by fireworks.\nUttara Dwara Darshanam: Opens at dawn (around 5:00 AM) on Ekadashi morning (20 December 2026). Devotees enter through the Northern Gate, representing entry into Vaikuntha.\nMukkoti Dwadashi Dwara Darshanam: Observed on the following day with special offerings and distribution of holy prasadam.",
+    "month": "Margashirsha Masam",
+    "importance": "Major festival where pilgrims enter through Uttara Dwara (Northern Gate) representing entry into Vaikuntha, preceded by Teppotsavam on Dashami evening and followed by Mukkoti Dwadashi Dwara Darshanam."
+  },
+  {
+    "festival_name": "Sri Bhadradri Vaggeyakara Utsavams",
+    "description": "Held annually in January (on Purvabhadra Nakshatram in Pushya Masam) to honor Bhakta Ramadasu. Vocalists and musicians gather to perform Gosthi Gana Sankeerthana of Ramadasu's Navaratna Keerthanas.",
+    "month": "Pushya Masam (January)",
+    "importance": "Musical and devotional festival honoring Bhakta Ramadasu with Gosthi Gana Sankeerthana of his Navaratna Keerthanas."
+  }
+]

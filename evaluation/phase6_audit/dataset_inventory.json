@@ -1,0 +1,3221 @@
+{
+  "total_temples": 20,
+  "temples": {
+    "Ahobilam": {
+      "folder_name": "ahobilam",
+      "file_count": 21,
+      "files": {
+        "accommodation.json": {
+          "rel_path": "ahobilam/accommodation.json",
+          "stem": "accommodation",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "contacts.json": {
+          "rel_path": "ahobilam/contacts.json",
+          "stem": "contacts",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "crowd.json": {
+          "rel_path": "ahobilam/crowd.json",
+          "stem": "crowd",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "donations.json": {
+          "rel_path": "ahobilam/donations.json",
+          "stem": "donations",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "elderly_ppl.json": {
+          "rel_path": "ahobilam/elderly_ppl.json",
+          "stem": "elderly_ppl",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "emergency_nos.json": {
+          "rel_path": "ahobilam/emergency_nos.json",
+          "stem": "emergency_nos",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "facilities.json": {
+          "rel_path": "ahobilam/facilities.json",
+          "stem": "facilities",
+          "structure_type": "dict",
+          "item_count": 7,
+          "has_explicit_negatives": false
+        },
+        "faq.json": {
+          "rel_path": "ahobilam/faq.json",
+          "stem": "faq",
+          "structure_type": "list[10]",
+          "item_count": 10,
+          "has_explicit_negatives": false
+        },
+        "festivals.json": {
+          "rel_path": "ahobilam/festivals.json",
+          "stem": "festivals",
+          "structure_type": "list[3]",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "gallery.json": {
+          "rel_path": "ahobilam/gallery.json",
+          "stem": "gallery",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "maps.json": {
+          "rel_path": "ahobilam/maps.json",
+          "stem": "maps",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "nearby_attractions.json": {
+          "rel_path": "ahobilam/nearby_attractions.json",
+          "stem": "nearby_attractions",
+          "structure_type": "list[3]",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "prasadam.json": {
+          "rel_path": "ahobilam/prasadam.json",
+          "stem": "prasadam",
+          "structure_type": "list[3]",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "restaurants.json": {
+          "rel_path": "ahobilam/restaurants.json",
+          "stem": "restaurants",
+          "structure_type": "list[3]",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "river_bank.json": {
+          "rel_path": "ahobilam/river_bank.json",
+          "stem": "river_bank",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "rules.json": {
+          "rel_path": "ahobilam/rules.json",
+          "stem": "rules",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "sevas.json": {
+          "rel_path": "ahobilam/sevas.json",
+          "stem": "sevas",
+          "structure_type": "list[6]",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "sub_temples.json": {
+          "rel_path": "ahobilam/sub_temples.json",
+          "stem": "sub_temples",
+          "structure_type": "list[12]",
+          "item_count": 12,
+          "has_explicit_negatives": false
+        },
+        "temple.json": {
+          "rel_path": "ahobilam/temple.json",
+          "stem": "temple",
+          "structure_type": "dict",
+          "item_count": 14,
+          "has_explicit_negatives": false
+        },
+        "timings.json": {
+          "rel_path": "ahobilam/timings.json",
+          "stem": "timings",
+          "structure_type": "dict",
+          "item_count": 10,
+          "has_explicit_negatives": false
+        },
+        "travel.json": {
+          "rel_path": "ahobilam/travel.json",
+          "stem": "travel",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        }
+      },
+      "missing_registered_categories": []
+    },
+    "Badrachalam": {
+      "folder_name": "badrachalam",
+      "file_count": 21,
+      "files": {
+        "accommodation.json": {
+          "rel_path": "badrachalam/accommodation.json",
+          "stem": "accommodation",
+          "structure_type": "list[7]",
+          "item_count": 7,
+          "has_explicit_negatives": false
+        },
+        "contacts.json": {
+          "rel_path": "badrachalam/contacts.json",
+          "stem": "contacts",
+          "structure_type": "dict",
+          "item_count": 26,
+          "has_explicit_negatives": false
+        },
+        "crowd.json": {
+          "rel_path": "badrachalam/crowd.json",
+          "stem": "crowd",
+          "structure_type": "dict",
+          "item_count": 11,
+          "has_explicit_negatives": false
+        },
+        "donations.json": {
+          "rel_path": "badrachalam/donations.json",
+          "stem": "donations",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "elderly_ppl.json": {
+          "rel_path": "badrachalam/elderly_ppl.json",
+          "stem": "elderly_ppl",
+          "structure_type": "dict",
+          "item_count": 1,
+          "has_explicit_negatives": false
+        },
+        "emergency_nos.json": {
+          "rel_path": "badrachalam/emergency_nos.json",
+          "stem": "emergency_nos",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "facilities.json": {
+          "rel_path": "badrachalam/facilities.json",
+          "stem": "facilities",
+          "structure_type": "dict",
+          "item_count": 11,
+          "has_explicit_negatives": false
+        },
+        "faq.json": {
+          "rel_path": "badrachalam/faq.json",
+          "stem": "faq",
+          "structure_type": "list[9]",
+          "item_count": 9,
+          "has_explicit_negatives": false
+        },
+        "festivals.json": {
+          "rel_path": "badrachalam/festivals.json",
+          "stem": "festivals",
+          "structure_type": "list[3]",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "gallery.json": {
+          "rel_path": "badrachalam/gallery.json",
+          "stem": "gallery",
+          "structure_type": "dict",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "maps.json": {
+          "rel_path": "badrachalam/maps.json",
+          "stem": "maps",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "nearby_attractions.json": {
+          "rel_path": "badrachalam/nearby_attractions.json",
+          "stem": "nearby_attractions",
+          "structure_type": "list[5]",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "prasadam.json": {
+          "rel_path": "badrachalam/prasadam.json",
+          "stem": "prasadam",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "restaurants.json": {
+          "rel_path": "badrachalam/restaurants.json",
+          "stem": "restaurants",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "river_bank.json": {
+          "rel_path": "badrachalam/river_bank.json",
+          "stem": "river_bank",
+          "structure_type": "dict",
+          "item_count": 1,
+          "has_explicit_negatives": false
+        },
+        "rules.json": {
+          "rel_path": "badrachalam/rules.json",
+          "stem": "rules",
+          "structure_type": "dict",
+          "item_count": 8,
+          "has_explicit_negatives": false
+        },
+        "sevas.json": {
+          "rel_path": "badrachalam/sevas.json",
+          "stem": "sevas",
+          "structure_type": "list[14]",
+          "item_count": 14,
+          "has_explicit_negatives": false
+        },
+        "sub_temples.json": {
+          "rel_path": "badrachalam/sub_temples.json",
+          "stem": "sub_temples",
+          "structure_type": "list[1]",
+          "item_count": 1,
+          "has_explicit_negatives": false
+        },
+        "temple.json": {
+          "rel_path": "badrachalam/temple.json",
+          "stem": "temple",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "timings.json": {
+          "rel_path": "badrachalam/timings.json",
+          "stem": "timings",
+          "structure_type": "dict",
+          "item_count": 15,
+          "has_explicit_negatives": false
+        },
+        "travel.json": {
+          "rel_path": "badrachalam/travel.json",
+          "stem": "travel",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        }
+      },
+      "missing_registered_categories": []
+    },
+    "Balkampet": {
+      "folder_name": "balkampet",
+      "file_count": 20,
+      "files": {
+        "accommodation.json": {
+          "rel_path": "balkampet/accommodation.json",
+          "stem": "accommodation",
+          "structure_type": "list[3]",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "contacts.json": {
+          "rel_path": "balkampet/contacts.json",
+          "stem": "contacts",
+          "structure_type": "dict",
+          "item_count": 1,
+          "has_explicit_negatives": false
+        },
+        "crowd.json": {
+          "rel_path": "balkampet/crowd.json",
+          "stem": "crowd",
+          "structure_type": "dict",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "elderly_ppl.json": {
+          "rel_path": "balkampet/elderly_ppl.json",
+          "stem": "elderly_ppl",
+          "structure_type": "dict",
+          "item_count": 1,
+          "has_explicit_negatives": true
+        },
+        "emergency_nos.json": {
+          "rel_path": "balkampet/emergency_nos.json",
+          "stem": "emergency_nos",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "facilities.json": {
+          "rel_path": "balkampet/facilities.json",
+          "stem": "facilities",
+          "structure_type": "dict",
+          "item_count": 6,
+          "has_explicit_negatives": true
+        },
+        "faq.json": {
+          "rel_path": "balkampet/faq.json",
+          "stem": "faq",
+          "structure_type": "list[10]",
+          "item_count": 10,
+          "has_explicit_negatives": false
+        },
+        "festivals.json": {
+          "rel_path": "balkampet/festivals.json",
+          "stem": "festivals",
+          "structure_type": "list[3]",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "gallery.json": {
+          "rel_path": "balkampet/gallery.json",
+          "stem": "gallery",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "maps.json": {
+          "rel_path": "balkampet/maps.json",
+          "stem": "maps",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "nearby_attractions.json": {
+          "rel_path": "balkampet/nearby_attractions.json",
+          "stem": "nearby_attractions",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "prasadam.json": {
+          "rel_path": "balkampet/prasadam.json",
+          "stem": "prasadam",
+          "structure_type": "list[1]",
+          "item_count": 1,
+          "has_explicit_negatives": false
+        },
+        "restaurants.json": {
+          "rel_path": "balkampet/restaurants.json",
+          "stem": "restaurants",
+          "structure_type": "list[5]",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "river_bank.json": {
+          "rel_path": "balkampet/river_bank.json",
+          "stem": "river_bank",
+          "structure_type": "dict",
+          "item_count": 4,
+          "has_explicit_negatives": true
+        },
+        "rules.json": {
+          "rel_path": "balkampet/rules.json",
+          "stem": "rules",
+          "structure_type": "dict",
+          "item_count": 14,
+          "has_explicit_negatives": false
+        },
+        "sevas.json": {
+          "rel_path": "balkampet/sevas.json",
+          "stem": "sevas",
+          "structure_type": "list[5]",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "sub_temples.json": {
+          "rel_path": "balkampet/sub_temples.json",
+          "stem": "sub_temples",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "temple.json": {
+          "rel_path": "balkampet/temple.json",
+          "stem": "temple",
+          "structure_type": "dict",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "timings.json": {
+          "rel_path": "balkampet/timings.json",
+          "stem": "timings",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "travel.json": {
+          "rel_path": "balkampet/travel.json",
+          "stem": "travel",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        }
+      },
+      "missing_registered_categories": [
+        "donations"
+      ]
+    },
+    "Basara": {
+      "folder_name": "basara",
+      "file_count": 21,
+      "files": {
+        "accommodation.json": {
+          "rel_path": "basara/accommodation.json",
+          "stem": "accommodation",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "contacts.json": {
+          "rel_path": "basara/contacts.json",
+          "stem": "contacts",
+          "structure_type": "dict",
+          "item_count": 1,
+          "has_explicit_negatives": false
+        },
+        "crowd.json": {
+          "rel_path": "basara/crowd.json",
+          "stem": "crowd",
+          "structure_type": "dict",
+          "item_count": 7,
+          "has_explicit_negatives": false
+        },
+        "donations.json": {
+          "rel_path": "basara/donations.json",
+          "stem": "donations",
+          "structure_type": "dict",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "elderly_ppl.json": {
+          "rel_path": "basara/elderly_ppl.json",
+          "stem": "elderly_ppl",
+          "structure_type": "dict",
+          "item_count": 1,
+          "has_explicit_negatives": false
+        },
+        "emergency_nos.json": {
+          "rel_path": "basara/emergency_nos.json",
+          "stem": "emergency_nos",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "facilities.json": {
+          "rel_path": "basara/facilities.json",
+          "stem": "facilities",
+          "structure_type": "dict",
+          "item_count": 8,
+          "has_explicit_negatives": false
+        },
+        "faq.json": {
+          "rel_path": "basara/faq.json",
+          "stem": "faq",
+          "structure_type": "list[9]",
+          "item_count": 9,
+          "has_explicit_negatives": false
+        },
+        "festivals.json": {
+          "rel_path": "basara/festivals.json",
+          "stem": "festivals",
+          "structure_type": "list[5]",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "gallery.json": {
+          "rel_path": "basara/gallery.json",
+          "stem": "gallery",
+          "structure_type": "dict",
+          "item_count": 11,
+          "has_explicit_negatives": false
+        },
+        "maps.json": {
+          "rel_path": "basara/maps.json",
+          "stem": "maps",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "nearby_attractions.json": {
+          "rel_path": "basara/nearby_attractions.json",
+          "stem": "nearby_attractions",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "prasadam.json": {
+          "rel_path": "basara/prasadam.json",
+          "stem": "prasadam",
+          "structure_type": "dict",
+          "item_count": 0,
+          "has_explicit_negatives": false
+        },
+        "restaurants.json": {
+          "rel_path": "basara/restaurants.json",
+          "stem": "restaurants",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "river_bank.json": {
+          "rel_path": "basara/river_bank.json",
+          "stem": "river_bank",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "rules.json": {
+          "rel_path": "basara/rules.json",
+          "stem": "rules",
+          "structure_type": "dict",
+          "item_count": 24,
+          "has_explicit_negatives": false
+        },
+        "sevas.json": {
+          "rel_path": "basara/sevas.json",
+          "stem": "sevas",
+          "structure_type": "list[10]",
+          "item_count": 10,
+          "has_explicit_negatives": false
+        },
+        "sub_temples.json": {
+          "rel_path": "basara/sub_temples.json",
+          "stem": "sub_temples",
+          "structure_type": "list[5]",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "temple.json": {
+          "rel_path": "basara/temple.json",
+          "stem": "temple",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "timings.json": {
+          "rel_path": "basara/timings.json",
+          "stem": "timings",
+          "structure_type": "dict",
+          "item_count": 10,
+          "has_explicit_negatives": false
+        },
+        "travel.json": {
+          "rel_path": "basara/travel.json",
+          "stem": "travel",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        }
+      },
+      "missing_registered_categories": []
+    },
+    "Birla Mandir": {
+      "folder_name": "birla mandir",
+      "file_count": 21,
+      "files": {
+        "accommodation.json": {
+          "rel_path": "birla mandir/accommodation.json",
+          "stem": "accommodation",
+          "structure_type": "list[2]",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "contacts.json": {
+          "rel_path": "birla mandir/contacts.json",
+          "stem": "contacts",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "crowd.json": {
+          "rel_path": "birla mandir/crowd.json",
+          "stem": "crowd",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "donations.json": {
+          "rel_path": "birla mandir/donations.json",
+          "stem": "donations",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "elderly_ppl.json": {
+          "rel_path": "birla mandir/elderly_ppl.json",
+          "stem": "elderly_ppl",
+          "structure_type": "dict",
+          "item_count": 1,
+          "has_explicit_negatives": true
+        },
+        "emergency_nos.json": {
+          "rel_path": "birla mandir/emergency_nos.json",
+          "stem": "emergency_nos",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "facilities.json": {
+          "rel_path": "birla mandir/facilities.json",
+          "stem": "facilities",
+          "structure_type": "dict",
+          "item_count": 7,
+          "has_explicit_negatives": false
+        },
+        "faq.json": {
+          "rel_path": "birla mandir/faq.json",
+          "stem": "faq",
+          "structure_type": "list[8]",
+          "item_count": 8,
+          "has_explicit_negatives": false
+        },
+        "festivals.json": {
+          "rel_path": "birla mandir/festivals.json",
+          "stem": "festivals",
+          "structure_type": "list[3]",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "gallery.json": {
+          "rel_path": "birla mandir/gallery.json",
+          "stem": "gallery",
+          "structure_type": "dict",
+          "item_count": 1,
+          "has_explicit_negatives": false
+        },
+        "maps.json": {
+          "rel_path": "birla mandir/maps.json",
+          "stem": "maps",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "nearby_attractions.json": {
+          "rel_path": "birla mandir/nearby_attractions.json",
+          "stem": "nearby_attractions",
+          "structure_type": "list[8]",
+          "item_count": 8,
+          "has_explicit_negatives": false
+        },
+        "prasadam.json": {
+          "rel_path": "birla mandir/prasadam.json",
+          "stem": "prasadam",
+          "structure_type": "dict",
+          "item_count": 0,
+          "has_explicit_negatives": false
+        },
+        "restaurants.json": {
+          "rel_path": "birla mandir/restaurants.json",
+          "stem": "restaurants",
+          "structure_type": "list[2]",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "river_bank.json": {
+          "rel_path": "birla mandir/river_bank.json",
+          "stem": "river_bank",
+          "structure_type": "dict",
+          "item_count": 0,
+          "has_explicit_negatives": false
+        },
+        "rules.json": {
+          "rel_path": "birla mandir/rules.json",
+          "stem": "rules",
+          "structure_type": "dict",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "sevas.json": {
+          "rel_path": "birla mandir/sevas.json",
+          "stem": "sevas",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "sub_temples.json": {
+          "rel_path": "birla mandir/sub_temples.json",
+          "stem": "sub_temples",
+          "structure_type": "list[5]",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "temple.json": {
+          "rel_path": "birla mandir/temple.json",
+          "stem": "temple",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "timings.json": {
+          "rel_path": "birla mandir/timings.json",
+          "stem": "timings",
+          "structure_type": "dict",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "travel.json": {
+          "rel_path": "birla mandir/travel.json",
+          "stem": "travel",
+          "structure_type": "dict",
+          "item_count": 8,
+          "has_explicit_negatives": false
+        }
+      },
+      "missing_registered_categories": []
+    },
+    "Chilkur": {
+      "folder_name": "chilkur",
+      "file_count": 21,
+      "files": {
+        "accommodation.json": {
+          "rel_path": "chilkur/accommodation.json",
+          "stem": "accommodation",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "contacts.json": {
+          "rel_path": "chilkur/contacts.json",
+          "stem": "contacts",
+          "structure_type": "dict",
+          "item_count": 1,
+          "has_explicit_negatives": false
+        },
+        "crowd.json": {
+          "rel_path": "chilkur/crowd.json",
+          "stem": "crowd",
+          "structure_type": "dict",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "donations.json": {
+          "rel_path": "chilkur/donations.json",
+          "stem": "donations",
+          "structure_type": "dict",
+          "item_count": 1,
+          "has_explicit_negatives": false
+        },
+        "elderly_ppl.json": {
+          "rel_path": "chilkur/elderly_ppl.json",
+          "stem": "elderly_ppl",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "emergency_nos.json": {
+          "rel_path": "chilkur/emergency_nos.json",
+          "stem": "emergency_nos",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "facilities.json": {
+          "rel_path": "chilkur/facilities.json",
+          "stem": "facilities",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "faq.json": {
+          "rel_path": "chilkur/faq.json",
+          "stem": "faq",
+          "structure_type": "list[10]",
+          "item_count": 10,
+          "has_explicit_negatives": false
+        },
+        "festivals.json": {
+          "rel_path": "chilkur/festivals.json",
+          "stem": "festivals",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "gallery.json": {
+          "rel_path": "chilkur/gallery.json",
+          "stem": "gallery",
+          "structure_type": "list[5]",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "maps.json": {
+          "rel_path": "chilkur/maps.json",
+          "stem": "maps",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "nearby_attractions.json": {
+          "rel_path": "chilkur/nearby_attractions.json",
+          "stem": "nearby_attractions",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "prasadam.json": {
+          "rel_path": "chilkur/prasadam.json",
+          "stem": "prasadam",
+          "structure_type": "list[3]",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "restaurants.json": {
+          "rel_path": "chilkur/restaurants.json",
+          "stem": "restaurants",
+          "structure_type": "list[3]",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "river_bank.json": {
+          "rel_path": "chilkur/river_bank.json",
+          "stem": "river_bank",
+          "structure_type": "dict",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "rules.json": {
+          "rel_path": "chilkur/rules.json",
+          "stem": "rules",
+          "structure_type": "dict",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "sevas.json": {
+          "rel_path": "chilkur/sevas.json",
+          "stem": "sevas",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "sub_temples.json": {
+          "rel_path": "chilkur/sub_temples.json",
+          "stem": "sub_temples",
+          "structure_type": "list[2]",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "temple.json": {
+          "rel_path": "chilkur/temple.json",
+          "stem": "temple",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "timings.json": {
+          "rel_path": "chilkur/timings.json",
+          "stem": "timings",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "travel.json": {
+          "rel_path": "chilkur/travel.json",
+          "stem": "travel",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        }
+      },
+      "missing_registered_categories": []
+    },
+    "Dharmapuri": {
+      "folder_name": "dharmapuri",
+      "file_count": 20,
+      "files": {
+        "accommodation.json": {
+          "rel_path": "dharmapuri/accommodation.json",
+          "stem": "accommodation",
+          "structure_type": "list[1]",
+          "item_count": 1,
+          "has_explicit_negatives": false
+        },
+        "contacts.json": {
+          "rel_path": "dharmapuri/contacts.json",
+          "stem": "contacts",
+          "structure_type": "dict",
+          "item_count": 11,
+          "has_explicit_negatives": false
+        },
+        "crowd.json": {
+          "rel_path": "dharmapuri/crowd.json",
+          "stem": "crowd",
+          "structure_type": "dict",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "elderly_ppl.json": {
+          "rel_path": "dharmapuri/elderly_ppl.json",
+          "stem": "elderly_ppl",
+          "structure_type": "dict",
+          "item_count": 1,
+          "has_explicit_negatives": true
+        },
+        "emergency_nos.json": {
+          "rel_path": "dharmapuri/emergency_nos.json",
+          "stem": "emergency_nos",
+          "structure_type": "dict",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "facilities.json": {
+          "rel_path": "dharmapuri/facilities.json",
+          "stem": "facilities",
+          "structure_type": "dict",
+          "item_count": 7,
+          "has_explicit_negatives": false
+        },
+        "faq.json": {
+          "rel_path": "dharmapuri/faq.json",
+          "stem": "faq",
+          "structure_type": "list[13]",
+          "item_count": 13,
+          "has_explicit_negatives": false
+        },
+        "festivals.json": {
+          "rel_path": "dharmapuri/festivals.json",
+          "stem": "festivals",
+          "structure_type": "list[7]",
+          "item_count": 7,
+          "has_explicit_negatives": false
+        },
+        "gallery.json": {
+          "rel_path": "dharmapuri/gallery.json",
+          "stem": "gallery",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "maps.json": {
+          "rel_path": "dharmapuri/maps.json",
+          "stem": "maps",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "nearby_attractions.json": {
+          "rel_path": "dharmapuri/nearby_attractions.json",
+          "stem": "nearby_attractions",
+          "structure_type": "list[6]",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "prasadam.json": {
+          "rel_path": "dharmapuri/prasadam.json",
+          "stem": "prasadam",
+          "structure_type": "list[5]",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "restaurants.json": {
+          "rel_path": "dharmapuri/restaurants.json",
+          "stem": "restaurants",
+          "structure_type": "list[3]",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "river_bank.json": {
+          "rel_path": "dharmapuri/river_bank.json",
+          "stem": "river_bank",
+          "structure_type": "dict",
+          "item_count": 1,
+          "has_explicit_negatives": false
+        },
+        "rules.json": {
+          "rel_path": "dharmapuri/rules.json",
+          "stem": "rules",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "sevas.json": {
+          "rel_path": "dharmapuri/sevas.json",
+          "stem": "sevas",
+          "structure_type": "list[10]",
+          "item_count": 10,
+          "has_explicit_negatives": false
+        },
+        "sub_temples.json": {
+          "rel_path": "dharmapuri/sub_temples.json",
+          "stem": "sub_temples",
+          "structure_type": "list[5]",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "temple.json": {
+          "rel_path": "dharmapuri/temple.json",
+          "stem": "temple",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "timings.json": {
+          "rel_path": "dharmapuri/timings.json",
+          "stem": "timings",
+          "structure_type": "dict",
+          "item_count": 12,
+          "has_explicit_negatives": false
+        },
+        "travel.json": {
+          "rel_path": "dharmapuri/travel.json",
+          "stem": "travel",
+          "structure_type": "dict",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        }
+      },
+      "missing_registered_categories": [
+        "donations"
+      ]
+    },
+    "Edupayal": {
+      "folder_name": "edupayal",
+      "file_count": 21,
+      "files": {
+        "accommodation.json": {
+          "rel_path": "edupayal/accommodation.json",
+          "stem": "accommodation",
+          "structure_type": "list[6]",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "contacts.json": {
+          "rel_path": "edupayal/contacts.json",
+          "stem": "contacts",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "crowd.json": {
+          "rel_path": "edupayal/crowd.json",
+          "stem": "crowd",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "donations.json": {
+          "rel_path": "edupayal/donations.json",
+          "stem": "donations",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "elderly_ppl.json": {
+          "rel_path": "edupayal/elderly_ppl.json",
+          "stem": "elderly_ppl",
+          "structure_type": "dict",
+          "item_count": 1,
+          "has_explicit_negatives": true
+        },
+        "emergency_nos.json": {
+          "rel_path": "edupayal/emergency_nos.json",
+          "stem": "emergency_nos",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "facilities.json": {
+          "rel_path": "edupayal/facilities.json",
+          "stem": "facilities",
+          "structure_type": "dict",
+          "item_count": 13,
+          "has_explicit_negatives": false
+        },
+        "faq.json": {
+          "rel_path": "edupayal/faq.json",
+          "stem": "faq",
+          "structure_type": "list[14]",
+          "item_count": 14,
+          "has_explicit_negatives": false
+        },
+        "festivals.json": {
+          "rel_path": "edupayal/festivals.json",
+          "stem": "festivals",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "gallery.json": {
+          "rel_path": "edupayal/gallery.json",
+          "stem": "gallery",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "maps.json": {
+          "rel_path": "edupayal/maps.json",
+          "stem": "maps",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "nearby_attractions.json": {
+          "rel_path": "edupayal/nearby_attractions.json",
+          "stem": "nearby_attractions",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "prasadam.json": {
+          "rel_path": "edupayal/prasadam.json",
+          "stem": "prasadam",
+          "structure_type": "list[2]",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "restaurants.json": {
+          "rel_path": "edupayal/restaurants.json",
+          "stem": "restaurants",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "river_bank.json": {
+          "rel_path": "edupayal/river_bank.json",
+          "stem": "river_bank",
+          "structure_type": "dict",
+          "item_count": 1,
+          "has_explicit_negatives": false
+        },
+        "rules.json": {
+          "rel_path": "edupayal/rules.json",
+          "stem": "rules",
+          "structure_type": "dict",
+          "item_count": 7,
+          "has_explicit_negatives": false
+        },
+        "sevas.json": {
+          "rel_path": "edupayal/sevas.json",
+          "stem": "sevas",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "sub_temples.json": {
+          "rel_path": "edupayal/sub_temples.json",
+          "stem": "sub_temples",
+          "structure_type": "list[0]",
+          "item_count": 0,
+          "has_explicit_negatives": false
+        },
+        "temple.json": {
+          "rel_path": "edupayal/temple.json",
+          "stem": "temple",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "timings.json": {
+          "rel_path": "edupayal/timings.json",
+          "stem": "timings",
+          "structure_type": "dict",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "travel.json": {
+          "rel_path": "edupayal/travel.json",
+          "stem": "travel",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        }
+      },
+      "missing_registered_categories": []
+    },
+    "Jogulamba(New)": {
+      "folder_name": "jogulamba(new)",
+      "file_count": 21,
+      "files": {
+        "accommodation.json": {
+          "rel_path": "jogulamba(new)/accommodation.json",
+          "stem": "accommodation",
+          "structure_type": "list[6]",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "contacts.json": {
+          "rel_path": "jogulamba(new)/contacts.json",
+          "stem": "contacts",
+          "structure_type": "dict",
+          "item_count": 11,
+          "has_explicit_negatives": false
+        },
+        "crowd.json": {
+          "rel_path": "jogulamba(new)/crowd.json",
+          "stem": "crowd",
+          "structure_type": "dict",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "donations.json": {
+          "rel_path": "jogulamba(new)/donations.json",
+          "stem": "donations",
+          "structure_type": "dict",
+          "item_count": 0,
+          "has_explicit_negatives": false
+        },
+        "elderly_ppl.json": {
+          "rel_path": "jogulamba(new)/elderly_ppl.json",
+          "stem": "elderly_ppl",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "emergency_nos.json": {
+          "rel_path": "jogulamba(new)/emergency_nos.json",
+          "stem": "emergency_nos",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "facilities.json": {
+          "rel_path": "jogulamba(new)/facilities.json",
+          "stem": "facilities",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "faq.json": {
+          "rel_path": "jogulamba(new)/faq.json",
+          "stem": "faq",
+          "structure_type": "list[10]",
+          "item_count": 10,
+          "has_explicit_negatives": false
+        },
+        "festivals.json": {
+          "rel_path": "jogulamba(new)/festivals.json",
+          "stem": "festivals",
+          "structure_type": "list[6]",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "gallery.json": {
+          "rel_path": "jogulamba(new)/gallery.json",
+          "stem": "gallery",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "maps.json": {
+          "rel_path": "jogulamba(new)/maps.json",
+          "stem": "maps",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "nearby_attractions.json": {
+          "rel_path": "jogulamba(new)/nearby_attractions.json",
+          "stem": "nearby_attractions",
+          "structure_type": "list[9]",
+          "item_count": 9,
+          "has_explicit_negatives": false
+        },
+        "prasadam.json": {
+          "rel_path": "jogulamba(new)/prasadam.json",
+          "stem": "prasadam",
+          "structure_type": "list[2]",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "restaurants.json": {
+          "rel_path": "jogulamba(new)/restaurants.json",
+          "stem": "restaurants",
+          "structure_type": "list[5]",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "river_bank.json": {
+          "rel_path": "jogulamba(new)/river_bank.json",
+          "stem": "river_bank",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "rules.json": {
+          "rel_path": "jogulamba(new)/rules.json",
+          "stem": "rules",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "sevas.json": {
+          "rel_path": "jogulamba(new)/sevas.json",
+          "stem": "sevas",
+          "structure_type": "list[8]",
+          "item_count": 8,
+          "has_explicit_negatives": false
+        },
+        "sub_temples.json": {
+          "rel_path": "jogulamba(new)/sub_temples.json",
+          "stem": "sub_temples",
+          "structure_type": "list[3]",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "temple.json": {
+          "rel_path": "jogulamba(new)/temple.json",
+          "stem": "temple",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "timings.json": {
+          "rel_path": "jogulamba(new)/timings.json",
+          "stem": "timings",
+          "structure_type": "dict",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "travel.json": {
+          "rel_path": "jogulamba(new)/travel.json",
+          "stem": "travel",
+          "structure_type": "dict",
+          "item_count": 10,
+          "has_explicit_negatives": false
+        }
+      },
+      "missing_registered_categories": []
+    },
+    "Kaleshvaram": {
+      "folder_name": "kaleshvaram",
+      "file_count": 21,
+      "files": {
+        "accommodation.json": {
+          "rel_path": "kaleshvaram/accommodation.json",
+          "stem": "accommodation",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "contacts.json": {
+          "rel_path": "kaleshvaram/contacts.json",
+          "stem": "contacts",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "crowd.json": {
+          "rel_path": "kaleshvaram/crowd.json",
+          "stem": "crowd",
+          "structure_type": "dict",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "donations.json": {
+          "rel_path": "kaleshvaram/donations.json",
+          "stem": "donations",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "elderly_ppl.json": {
+          "rel_path": "kaleshvaram/elderly_ppl.json",
+          "stem": "elderly_ppl",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": true
+        },
+        "emergency_nos.json": {
+          "rel_path": "kaleshvaram/emergency_nos.json",
+          "stem": "emergency_nos",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "facilities.json": {
+          "rel_path": "kaleshvaram/facilities.json",
+          "stem": "facilities",
+          "structure_type": "dict",
+          "item_count": 11,
+          "has_explicit_negatives": false
+        },
+        "faq.json": {
+          "rel_path": "kaleshvaram/faq.json",
+          "stem": "faq",
+          "structure_type": "list[10]",
+          "item_count": 10,
+          "has_explicit_negatives": false
+        },
+        "festivals.json": {
+          "rel_path": "kaleshvaram/festivals.json",
+          "stem": "festivals",
+          "structure_type": "list[3]",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "gallery.json": {
+          "rel_path": "kaleshvaram/gallery.json",
+          "stem": "gallery",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "maps.json": {
+          "rel_path": "kaleshvaram/maps.json",
+          "stem": "maps",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "nearby_attractions.json": {
+          "rel_path": "kaleshvaram/nearby_attractions.json",
+          "stem": "nearby_attractions",
+          "structure_type": "list[5]",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "prasadam.json": {
+          "rel_path": "kaleshvaram/prasadam.json",
+          "stem": "prasadam",
+          "structure_type": "list[3]",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "restaurants.json": {
+          "rel_path": "kaleshvaram/restaurants.json",
+          "stem": "restaurants",
+          "structure_type": "list[2]",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "river_bank.json": {
+          "rel_path": "kaleshvaram/river_bank.json",
+          "stem": "river_bank",
+          "structure_type": "dict",
+          "item_count": 1,
+          "has_explicit_negatives": false
+        },
+        "rules.json": {
+          "rel_path": "kaleshvaram/rules.json",
+          "stem": "rules",
+          "structure_type": "dict",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "sevas.json": {
+          "rel_path": "kaleshvaram/sevas.json",
+          "stem": "sevas",
+          "structure_type": "list[27]",
+          "item_count": 27,
+          "has_explicit_negatives": false
+        },
+        "sub_temples.json": {
+          "rel_path": "kaleshvaram/sub_temples.json",
+          "stem": "sub_temples",
+          "structure_type": "list[9]",
+          "item_count": 9,
+          "has_explicit_negatives": false
+        },
+        "temple.json": {
+          "rel_path": "kaleshvaram/temple.json",
+          "stem": "temple",
+          "structure_type": "dict",
+          "item_count": 9,
+          "has_explicit_negatives": false
+        },
+        "timings.json": {
+          "rel_path": "kaleshvaram/timings.json",
+          "stem": "timings",
+          "structure_type": "dict",
+          "item_count": 9,
+          "has_explicit_negatives": false
+        },
+        "travel.json": {
+          "rel_path": "kaleshvaram/travel.json",
+          "stem": "travel",
+          "structure_type": "dict",
+          "item_count": 9,
+          "has_explicit_negatives": false
+        }
+      },
+      "missing_registered_categories": []
+    },
+    "Karmanghat": {
+      "folder_name": "karmanghat",
+      "file_count": 21,
+      "files": {
+        "accommodation.json": {
+          "rel_path": "karmanghat/accommodation.json",
+          "stem": "accommodation",
+          "structure_type": "list[7]",
+          "item_count": 7,
+          "has_explicit_negatives": false
+        },
+        "contacts.json": {
+          "rel_path": "karmanghat/contacts.json",
+          "stem": "contacts",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": true
+        },
+        "crowd.json": {
+          "rel_path": "karmanghat/crowd.json",
+          "stem": "crowd",
+          "structure_type": "dict",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "donations.json": {
+          "rel_path": "karmanghat/donations.json",
+          "stem": "donations",
+          "structure_type": "dict",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "elderly_ppl.json": {
+          "rel_path": "karmanghat/elderly_ppl.json",
+          "stem": "elderly_ppl",
+          "structure_type": "dict",
+          "item_count": 1,
+          "has_explicit_negatives": false
+        },
+        "emergency_nos.json": {
+          "rel_path": "karmanghat/emergency_nos.json",
+          "stem": "emergency_nos",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "facilities.json": {
+          "rel_path": "karmanghat/facilities.json",
+          "stem": "facilities",
+          "structure_type": "dict",
+          "item_count": 10,
+          "has_explicit_negatives": false
+        },
+        "faq.json": {
+          "rel_path": "karmanghat/faq.json",
+          "stem": "faq",
+          "structure_type": "list[10]",
+          "item_count": 10,
+          "has_explicit_negatives": false
+        },
+        "festivals.json": {
+          "rel_path": "karmanghat/festivals.json",
+          "stem": "festivals",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "gallery.json": {
+          "rel_path": "karmanghat/gallery.json",
+          "stem": "gallery",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "maps.json": {
+          "rel_path": "karmanghat/maps.json",
+          "stem": "maps",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "nearby_attractions.json": {
+          "rel_path": "karmanghat/nearby_attractions.json",
+          "stem": "nearby_attractions",
+          "structure_type": "list[5]",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "prasadam.json": {
+          "rel_path": "karmanghat/prasadam.json",
+          "stem": "prasadam",
+          "structure_type": "list[8]",
+          "item_count": 8,
+          "has_explicit_negatives": false
+        },
+        "restaurants.json": {
+          "rel_path": "karmanghat/restaurants.json",
+          "stem": "restaurants",
+          "structure_type": "list[3]",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "river_bank.json": {
+          "rel_path": "karmanghat/river_bank.json",
+          "stem": "river_bank",
+          "structure_type": "dict",
+          "item_count": 1,
+          "has_explicit_negatives": true
+        },
+        "rules.json": {
+          "rel_path": "karmanghat/rules.json",
+          "stem": "rules",
+          "structure_type": "dict",
+          "item_count": 16,
+          "has_explicit_negatives": false
+        },
+        "sevas.json": {
+          "rel_path": "karmanghat/sevas.json",
+          "stem": "sevas",
+          "structure_type": "list[40]",
+          "item_count": 40,
+          "has_explicit_negatives": false
+        },
+        "sub_temples.json": {
+          "rel_path": "karmanghat/sub_temples.json",
+          "stem": "sub_temples",
+          "structure_type": "list[13]",
+          "item_count": 13,
+          "has_explicit_negatives": false
+        },
+        "temple.json": {
+          "rel_path": "karmanghat/temple.json",
+          "stem": "temple",
+          "structure_type": "dict",
+          "item_count": 13,
+          "has_explicit_negatives": false
+        },
+        "timings.json": {
+          "rel_path": "karmanghat/timings.json",
+          "stem": "timings",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "travel.json": {
+          "rel_path": "karmanghat/travel.json",
+          "stem": "travel",
+          "structure_type": "dict",
+          "item_count": 10,
+          "has_explicit_negatives": false
+        }
+      },
+      "missing_registered_categories": []
+    },
+    "Medaram": {
+      "folder_name": "medaram",
+      "file_count": 21,
+      "files": {
+        "accommodation.json": {
+          "rel_path": "medaram/accommodation.json",
+          "stem": "accommodation",
+          "structure_type": "list[7]",
+          "item_count": 7,
+          "has_explicit_negatives": false
+        },
+        "contacts.json": {
+          "rel_path": "medaram/contacts.json",
+          "stem": "contacts",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "crowd.json": {
+          "rel_path": "medaram/crowd.json",
+          "stem": "crowd",
+          "structure_type": "dict",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "donations.json": {
+          "rel_path": "medaram/donations.json",
+          "stem": "donations",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "elderly_ppl.json": {
+          "rel_path": "medaram/elderly_ppl.json",
+          "stem": "elderly_ppl",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "emergency_nos.json": {
+          "rel_path": "medaram/emergency_nos.json",
+          "stem": "emergency_nos",
+          "structure_type": "dict",
+          "item_count": 10,
+          "has_explicit_negatives": false
+        },
+        "facilities.json": {
+          "rel_path": "medaram/facilities.json",
+          "stem": "facilities",
+          "structure_type": "dict",
+          "item_count": 11,
+          "has_explicit_negatives": false
+        },
+        "faq.json": {
+          "rel_path": "medaram/faq.json",
+          "stem": "faq",
+          "structure_type": "list[10]",
+          "item_count": 10,
+          "has_explicit_negatives": false
+        },
+        "festivals.json": {
+          "rel_path": "medaram/festivals.json",
+          "stem": "festivals",
+          "structure_type": "list[2]",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "gallery.json": {
+          "rel_path": "medaram/gallery.json",
+          "stem": "gallery",
+          "structure_type": "list[5]",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "maps.json": {
+          "rel_path": "medaram/maps.json",
+          "stem": "maps",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "nearby_attractions.json": {
+          "rel_path": "medaram/nearby_attractions.json",
+          "stem": "nearby_attractions",
+          "structure_type": "list[12]",
+          "item_count": 12,
+          "has_explicit_negatives": false
+        },
+        "prasadam.json": {
+          "rel_path": "medaram/prasadam.json",
+          "stem": "prasadam",
+          "structure_type": "list[6]",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "restaurants.json": {
+          "rel_path": "medaram/restaurants.json",
+          "stem": "restaurants",
+          "structure_type": "list[6]",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "river_bank.json": {
+          "rel_path": "medaram/river_bank.json",
+          "stem": "river_bank",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "rules.json": {
+          "rel_path": "medaram/rules.json",
+          "stem": "rules",
+          "structure_type": "dict",
+          "item_count": 15,
+          "has_explicit_negatives": false
+        },
+        "sevas.json": {
+          "rel_path": "medaram/sevas.json",
+          "stem": "sevas",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "sub_temples.json": {
+          "rel_path": "medaram/sub_temples.json",
+          "stem": "sub_temples",
+          "structure_type": "list[3]",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "temple.json": {
+          "rel_path": "medaram/temple.json",
+          "stem": "temple",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "timings.json": {
+          "rel_path": "medaram/timings.json",
+          "stem": "timings",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "travel.json": {
+          "rel_path": "medaram/travel.json",
+          "stem": "travel",
+          "structure_type": "dict",
+          "item_count": 11,
+          "has_explicit_negatives": false
+        }
+      },
+      "missing_registered_categories": []
+    },
+    "Ramappa": {
+      "folder_name": "ramappa",
+      "file_count": 21,
+      "files": {
+        "accommodation.json": {
+          "rel_path": "ramappa/accommodation.json",
+          "stem": "accommodation",
+          "structure_type": "list[5]",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "contacts.json": {
+          "rel_path": "ramappa/contacts.json",
+          "stem": "contacts",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "crowd.json": {
+          "rel_path": "ramappa/crowd.json",
+          "stem": "crowd",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "donations.json": {
+          "rel_path": "ramappa/donations.json",
+          "stem": "donations",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "elderly_ppl.json": {
+          "rel_path": "ramappa/elderly_ppl.json",
+          "stem": "elderly_ppl",
+          "structure_type": "dict",
+          "item_count": 1,
+          "has_explicit_negatives": true
+        },
+        "emergency_nos.json": {
+          "rel_path": "ramappa/emergency_nos.json",
+          "stem": "emergency_nos",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "facilities.json": {
+          "rel_path": "ramappa/facilities.json",
+          "stem": "facilities",
+          "structure_type": "dict",
+          "item_count": 7,
+          "has_explicit_negatives": false
+        },
+        "faq.json": {
+          "rel_path": "ramappa/faq.json",
+          "stem": "faq",
+          "structure_type": "list[8]",
+          "item_count": 8,
+          "has_explicit_negatives": false
+        },
+        "festivals.json": {
+          "rel_path": "ramappa/festivals.json",
+          "stem": "festivals",
+          "structure_type": "list[3]",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "gallery.json": {
+          "rel_path": "ramappa/gallery.json",
+          "stem": "gallery",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "maps.json": {
+          "rel_path": "ramappa/maps.json",
+          "stem": "maps",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "nearby_attractions.json": {
+          "rel_path": "ramappa/nearby_attractions.json",
+          "stem": "nearby_attractions",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "prasadam.json": {
+          "rel_path": "ramappa/prasadam.json",
+          "stem": "prasadam",
+          "structure_type": "dict",
+          "item_count": 0,
+          "has_explicit_negatives": false
+        },
+        "restaurants.json": {
+          "rel_path": "ramappa/restaurants.json",
+          "stem": "restaurants",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "river_bank.json": {
+          "rel_path": "ramappa/river_bank.json",
+          "stem": "river_bank",
+          "structure_type": "dict",
+          "item_count": 1,
+          "has_explicit_negatives": true
+        },
+        "rules.json": {
+          "rel_path": "ramappa/rules.json",
+          "stem": "rules",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "sevas.json": {
+          "rel_path": "ramappa/sevas.json",
+          "stem": "sevas",
+          "structure_type": "list[0]",
+          "item_count": 0,
+          "has_explicit_negatives": false
+        },
+        "sub_temples.json": {
+          "rel_path": "ramappa/sub_temples.json",
+          "stem": "sub_temples",
+          "structure_type": "list[3]",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "temple.json": {
+          "rel_path": "ramappa/temple.json",
+          "stem": "temple",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "timings.json": {
+          "rel_path": "ramappa/timings.json",
+          "stem": "timings",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "travel.json": {
+          "rel_path": "ramappa/travel.json",
+          "stem": "travel",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        }
+      },
+      "missing_registered_categories": []
+    },
+    "Srisaila": {
+      "folder_name": "srisaila",
+      "file_count": 20,
+      "files": {
+        "accommodation.json": {
+          "rel_path": "srisaila/accommodation.json",
+          "stem": "accommodation",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "contacts.json": {
+          "rel_path": "srisaila/contacts.json",
+          "stem": "contacts",
+          "structure_type": "dict",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "crowd.json": {
+          "rel_path": "srisaila/crowd.json",
+          "stem": "crowd",
+          "structure_type": "dict",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "elderly_ppl.json": {
+          "rel_path": "srisaila/elderly_ppl.json",
+          "stem": "elderly_ppl",
+          "structure_type": "dict",
+          "item_count": 1,
+          "has_explicit_negatives": false
+        },
+        "emergency_nos.json": {
+          "rel_path": "srisaila/emergency_nos.json",
+          "stem": "emergency_nos",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "facilities.json": {
+          "rel_path": "srisaila/facilities.json",
+          "stem": "facilities",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "faq.json": {
+          "rel_path": "srisaila/faq.json",
+          "stem": "faq",
+          "structure_type": "list[13]",
+          "item_count": 13,
+          "has_explicit_negatives": false
+        },
+        "festivals.json": {
+          "rel_path": "srisaila/festivals.json",
+          "stem": "festivals",
+          "structure_type": "list[7]",
+          "item_count": 7,
+          "has_explicit_negatives": false
+        },
+        "gallery.json": {
+          "rel_path": "srisaila/gallery.json",
+          "stem": "gallery",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "maps.json": {
+          "rel_path": "srisaila/maps.json",
+          "stem": "maps",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "nearby_attractions.json": {
+          "rel_path": "srisaila/nearby_attractions.json",
+          "stem": "nearby_attractions",
+          "structure_type": "list[9]",
+          "item_count": 9,
+          "has_explicit_negatives": false
+        },
+        "prasadam.json": {
+          "rel_path": "srisaila/prasadam.json",
+          "stem": "prasadam",
+          "structure_type": "list[5]",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "restaurants.json": {
+          "rel_path": "srisaila/restaurants.json",
+          "stem": "restaurants",
+          "structure_type": "list[6]",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "river_bank.json": {
+          "rel_path": "srisaila/river_bank.json",
+          "stem": "river_bank",
+          "structure_type": "dict",
+          "item_count": 1,
+          "has_explicit_negatives": false
+        },
+        "rules.json": {
+          "rel_path": "srisaila/rules.json",
+          "stem": "rules",
+          "structure_type": "dict",
+          "item_count": 7,
+          "has_explicit_negatives": false
+        },
+        "sevas.json": {
+          "rel_path": "srisaila/sevas.json",
+          "stem": "sevas",
+          "structure_type": "list[39]",
+          "item_count": 39,
+          "has_explicit_negatives": false
+        },
+        "sub_temples.json": {
+          "rel_path": "srisaila/sub_temples.json",
+          "stem": "sub_temples",
+          "structure_type": "list[23]",
+          "item_count": 23,
+          "has_explicit_negatives": false
+        },
+        "temple.json": {
+          "rel_path": "srisaila/temple.json",
+          "stem": "temple",
+          "structure_type": "dict",
+          "item_count": 19,
+          "has_explicit_negatives": false
+        },
+        "timings.json": {
+          "rel_path": "srisaila/timings.json",
+          "stem": "timings",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "travel.json": {
+          "rel_path": "srisaila/travel.json",
+          "stem": "travel",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        }
+      },
+      "missing_registered_categories": [
+        "donations"
+      ]
+    },
+    "Thousand Pillar": {
+      "folder_name": "thousand pillar",
+      "file_count": 21,
+      "files": {
+        "accommodation.json": {
+          "rel_path": "thousand pillar/accommodation.json",
+          "stem": "accommodation",
+          "structure_type": "list[9]",
+          "item_count": 9,
+          "has_explicit_negatives": false
+        },
+        "contacts.json": {
+          "rel_path": "thousand pillar/contacts.json",
+          "stem": "contacts",
+          "structure_type": "dict",
+          "item_count": 8,
+          "has_explicit_negatives": false
+        },
+        "crowd.json": {
+          "rel_path": "thousand pillar/crowd.json",
+          "stem": "crowd",
+          "structure_type": "dict",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "donations.json": {
+          "rel_path": "thousand pillar/donations.json",
+          "stem": "donations",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "elderly_ppl.json": {
+          "rel_path": "thousand pillar/elderly_ppl.json",
+          "stem": "elderly_ppl",
+          "structure_type": "dict",
+          "item_count": 1,
+          "has_explicit_negatives": true
+        },
+        "emergency_nos.json": {
+          "rel_path": "thousand pillar/emergency_nos.json",
+          "stem": "emergency_nos",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "facilities.json": {
+          "rel_path": "thousand pillar/facilities.json",
+          "stem": "facilities",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "faq.json": {
+          "rel_path": "thousand pillar/faq.json",
+          "stem": "faq",
+          "structure_type": "list[10]",
+          "item_count": 10,
+          "has_explicit_negatives": false
+        },
+        "festivals.json": {
+          "rel_path": "thousand pillar/festivals.json",
+          "stem": "festivals",
+          "structure_type": "list[5]",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "gallery.json": {
+          "rel_path": "thousand pillar/gallery.json",
+          "stem": "gallery",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "maps.json": {
+          "rel_path": "thousand pillar/maps.json",
+          "stem": "maps",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "nearby_attractions.json": {
+          "rel_path": "thousand pillar/nearby_attractions.json",
+          "stem": "nearby_attractions",
+          "structure_type": "list[7]",
+          "item_count": 7,
+          "has_explicit_negatives": false
+        },
+        "prasadam.json": {
+          "rel_path": "thousand pillar/prasadam.json",
+          "stem": "prasadam",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "restaurants.json": {
+          "rel_path": "thousand pillar/restaurants.json",
+          "stem": "restaurants",
+          "structure_type": "list[5]",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "river_bank.json": {
+          "rel_path": "thousand pillar/river_bank.json",
+          "stem": "river_bank",
+          "structure_type": "dict",
+          "item_count": 4,
+          "has_explicit_negatives": true
+        },
+        "rules.json": {
+          "rel_path": "thousand pillar/rules.json",
+          "stem": "rules",
+          "structure_type": "dict",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "sevas.json": {
+          "rel_path": "thousand pillar/sevas.json",
+          "stem": "sevas",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "sub_temples.json": {
+          "rel_path": "thousand pillar/sub_temples.json",
+          "stem": "sub_temples",
+          "structure_type": "list[3]",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "temple.json": {
+          "rel_path": "thousand pillar/temple.json",
+          "stem": "temple",
+          "structure_type": "dict",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "timings.json": {
+          "rel_path": "thousand pillar/timings.json",
+          "stem": "timings",
+          "structure_type": "dict",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "travel.json": {
+          "rel_path": "thousand pillar/travel.json",
+          "stem": "travel",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        }
+      },
+      "missing_registered_categories": []
+    },
+    "Ttd": {
+      "folder_name": "ttd",
+      "file_count": 21,
+      "files": {
+        "accommodation.json": {
+          "rel_path": "ttd/accommodation.json",
+          "stem": "accommodation",
+          "structure_type": "list[48]",
+          "item_count": 48,
+          "has_explicit_negatives": false
+        },
+        "contacts.json": {
+          "rel_path": "ttd/contacts.json",
+          "stem": "contacts",
+          "structure_type": "dict",
+          "item_count": 7,
+          "has_explicit_negatives": false
+        },
+        "crowd.json": {
+          "rel_path": "ttd/crowd.json",
+          "stem": "crowd",
+          "structure_type": "dict",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "donations.json": {
+          "rel_path": "ttd/donations.json",
+          "stem": "donations",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "elderly_ppl.json": {
+          "rel_path": "ttd/elderly_ppl.json",
+          "stem": "elderly_ppl",
+          "structure_type": "dict",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "emergency_nos.json": {
+          "rel_path": "ttd/emergency_nos.json",
+          "stem": "emergency_nos",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "facilities.json": {
+          "rel_path": "ttd/facilities.json",
+          "stem": "facilities",
+          "structure_type": "dict",
+          "item_count": 15,
+          "has_explicit_negatives": false
+        },
+        "faq.json": {
+          "rel_path": "ttd/faq.json",
+          "stem": "faq",
+          "structure_type": "list[17]",
+          "item_count": 17,
+          "has_explicit_negatives": false
+        },
+        "festivals.json": {
+          "rel_path": "ttd/festivals.json",
+          "stem": "festivals",
+          "structure_type": "list[12]",
+          "item_count": 12,
+          "has_explicit_negatives": false
+        },
+        "gallery.json": {
+          "rel_path": "ttd/gallery.json",
+          "stem": "gallery",
+          "structure_type": "dict",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "maps.json": {
+          "rel_path": "ttd/maps.json",
+          "stem": "maps",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "nearby_attractions.json": {
+          "rel_path": "ttd/nearby_attractions.json",
+          "stem": "nearby_attractions",
+          "structure_type": "list[9]",
+          "item_count": 9,
+          "has_explicit_negatives": false
+        },
+        "prasadam.json": {
+          "rel_path": "ttd/prasadam.json",
+          "stem": "prasadam",
+          "structure_type": "dict",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "restaurants.json": {
+          "rel_path": "ttd/restaurants.json",
+          "stem": "restaurants",
+          "structure_type": "list[7]",
+          "item_count": 7,
+          "has_explicit_negatives": false
+        },
+        "river_bank.json": {
+          "rel_path": "ttd/river_bank.json",
+          "stem": "river_bank",
+          "structure_type": "dict",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "rules.json": {
+          "rel_path": "ttd/rules.json",
+          "stem": "rules",
+          "structure_type": "dict",
+          "item_count": 1,
+          "has_explicit_negatives": false
+        },
+        "sevas.json": {
+          "rel_path": "ttd/sevas.json",
+          "stem": "sevas",
+          "structure_type": "list[14]",
+          "item_count": 14,
+          "has_explicit_negatives": false
+        },
+        "sub_temples.json": {
+          "rel_path": "ttd/sub_temples.json",
+          "stem": "sub_temples",
+          "structure_type": "list[10]",
+          "item_count": 10,
+          "has_explicit_negatives": false
+        },
+        "temple.json": {
+          "rel_path": "ttd/temple.json",
+          "stem": "temple",
+          "structure_type": "dict",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "timings.json": {
+          "rel_path": "ttd/timings.json",
+          "stem": "timings",
+          "structure_type": "dict",
+          "item_count": 15,
+          "has_explicit_negatives": false
+        },
+        "travel.json": {
+          "rel_path": "ttd/travel.json",
+          "stem": "travel",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        }
+      },
+      "missing_registered_categories": []
+    },
+    "Ujjaini": {
+      "folder_name": "ujjaini",
+      "file_count": 21,
+      "files": {
+        "accommodation.json": {
+          "rel_path": "ujjaini/accommodation.json",
+          "stem": "accommodation",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "contacts.json": {
+          "rel_path": "ujjaini/contacts.json",
+          "stem": "contacts",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "crowd.json": {
+          "rel_path": "ujjaini/crowd.json",
+          "stem": "crowd",
+          "structure_type": "dict",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "donations.json": {
+          "rel_path": "ujjaini/donations.json",
+          "stem": "donations",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "elderly_ppl.json": {
+          "rel_path": "ujjaini/elderly_ppl.json",
+          "stem": "elderly_ppl",
+          "structure_type": "dict",
+          "item_count": 1,
+          "has_explicit_negatives": true
+        },
+        "emergency_nos.json": {
+          "rel_path": "ujjaini/emergency_nos.json",
+          "stem": "emergency_nos",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "facilities.json": {
+          "rel_path": "ujjaini/facilities.json",
+          "stem": "facilities",
+          "structure_type": "dict",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "faq.json": {
+          "rel_path": "ujjaini/faq.json",
+          "stem": "faq",
+          "structure_type": "list[7]",
+          "item_count": 7,
+          "has_explicit_negatives": false
+        },
+        "festivals.json": {
+          "rel_path": "ujjaini/festivals.json",
+          "stem": "festivals",
+          "structure_type": "list[5]",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "gallery.json": {
+          "rel_path": "ujjaini/gallery.json",
+          "stem": "gallery",
+          "structure_type": "dict",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "maps.json": {
+          "rel_path": "ujjaini/maps.json",
+          "stem": "maps",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "nearby_attractions.json": {
+          "rel_path": "ujjaini/nearby_attractions.json",
+          "stem": "nearby_attractions",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "prasadam.json": {
+          "rel_path": "ujjaini/prasadam.json",
+          "stem": "prasadam",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "restaurants.json": {
+          "rel_path": "ujjaini/restaurants.json",
+          "stem": "restaurants",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "river_bank.json": {
+          "rel_path": "ujjaini/river_bank.json",
+          "stem": "river_bank",
+          "structure_type": "dict",
+          "item_count": 0,
+          "has_explicit_negatives": false
+        },
+        "rules.json": {
+          "rel_path": "ujjaini/rules.json",
+          "stem": "rules",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "sevas.json": {
+          "rel_path": "ujjaini/sevas.json",
+          "stem": "sevas",
+          "structure_type": "list[15]",
+          "item_count": 15,
+          "has_explicit_negatives": false
+        },
+        "sub_temples.json": {
+          "rel_path": "ujjaini/sub_temples.json",
+          "stem": "sub_temples",
+          "structure_type": "list[2]",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "temple.json": {
+          "rel_path": "ujjaini/temple.json",
+          "stem": "temple",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "timings.json": {
+          "rel_path": "ujjaini/timings.json",
+          "stem": "timings",
+          "structure_type": "dict",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "travel.json": {
+          "rel_path": "ujjaini/travel.json",
+          "stem": "travel",
+          "structure_type": "dict",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        }
+      },
+      "missing_registered_categories": []
+    },
+    "Veera Satyanarayana": {
+      "folder_name": "veera satyanarayana",
+      "file_count": 21,
+      "files": {
+        "accommodation.json": {
+          "rel_path": "veera satyanarayana/accommodation.json",
+          "stem": "accommodation",
+          "structure_type": "list[12]",
+          "item_count": 12,
+          "has_explicit_negatives": false
+        },
+        "contacts.json": {
+          "rel_path": "veera satyanarayana/contacts.json",
+          "stem": "contacts",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "crowd.json": {
+          "rel_path": "veera satyanarayana/crowd.json",
+          "stem": "crowd",
+          "structure_type": "dict",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "donations.json": {
+          "rel_path": "veera satyanarayana/donations.json",
+          "stem": "donations",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "elderly_ppl.json": {
+          "rel_path": "veera satyanarayana/elderly_ppl.json",
+          "stem": "elderly_ppl",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "emergency_nos.json": {
+          "rel_path": "veera satyanarayana/emergency_nos.json",
+          "stem": "emergency_nos",
+          "structure_type": "dict",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "facilities.json": {
+          "rel_path": "veera satyanarayana/facilities.json",
+          "stem": "facilities",
+          "structure_type": "dict",
+          "item_count": 10,
+          "has_explicit_negatives": false
+        },
+        "faq.json": {
+          "rel_path": "veera satyanarayana/faq.json",
+          "stem": "faq",
+          "structure_type": "list[10]",
+          "item_count": 10,
+          "has_explicit_negatives": false
+        },
+        "festivals.json": {
+          "rel_path": "veera satyanarayana/festivals.json",
+          "stem": "festivals",
+          "structure_type": "list[15]",
+          "item_count": 15,
+          "has_explicit_negatives": false
+        },
+        "gallery.json": {
+          "rel_path": "veera satyanarayana/gallery.json",
+          "stem": "gallery",
+          "structure_type": "list[3]",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "maps.json": {
+          "rel_path": "veera satyanarayana/maps.json",
+          "stem": "maps",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "nearby_attractions.json": {
+          "rel_path": "veera satyanarayana/nearby_attractions.json",
+          "stem": "nearby_attractions",
+          "structure_type": "list[9]",
+          "item_count": 9,
+          "has_explicit_negatives": false
+        },
+        "prasadam.json": {
+          "rel_path": "veera satyanarayana/prasadam.json",
+          "stem": "prasadam",
+          "structure_type": "list[2]",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "restaurants.json": {
+          "rel_path": "veera satyanarayana/restaurants.json",
+          "stem": "restaurants",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "river_bank.json": {
+          "rel_path": "veera satyanarayana/river_bank.json",
+          "stem": "river_bank",
+          "structure_type": "dict",
+          "item_count": 1,
+          "has_explicit_negatives": false
+        },
+        "rules.json": {
+          "rel_path": "veera satyanarayana/rules.json",
+          "stem": "rules",
+          "structure_type": "dict",
+          "item_count": 21,
+          "has_explicit_negatives": false
+        },
+        "sevas.json": {
+          "rel_path": "veera satyanarayana/sevas.json",
+          "stem": "sevas",
+          "structure_type": "list[27]",
+          "item_count": 27,
+          "has_explicit_negatives": false
+        },
+        "sub_temples.json": {
+          "rel_path": "veera satyanarayana/sub_temples.json",
+          "stem": "sub_temples",
+          "structure_type": "list[5]",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "temple.json": {
+          "rel_path": "veera satyanarayana/temple.json",
+          "stem": "temple",
+          "structure_type": "dict",
+          "item_count": 11,
+          "has_explicit_negatives": false
+        },
+        "timings.json": {
+          "rel_path": "veera satyanarayana/timings.json",
+          "stem": "timings",
+          "structure_type": "dict",
+          "item_count": 16,
+          "has_explicit_negatives": false
+        },
+        "travel.json": {
+          "rel_path": "veera satyanarayana/travel.json",
+          "stem": "travel",
+          "structure_type": "dict",
+          "item_count": 17,
+          "has_explicit_negatives": false
+        }
+      },
+      "missing_registered_categories": []
+    },
+    "Vemulavada": {
+      "folder_name": "vemulavada",
+      "file_count": 21,
+      "files": {
+        "accommodation.json": {
+          "rel_path": "vemulavada/accommodation.json",
+          "stem": "accommodation",
+          "structure_type": "list[5]",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "contacts.json": {
+          "rel_path": "vemulavada/contacts.json",
+          "stem": "contacts",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "crowd.json": {
+          "rel_path": "vemulavada/crowd.json",
+          "stem": "crowd",
+          "structure_type": "dict",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "donations.json": {
+          "rel_path": "vemulavada/donations.json",
+          "stem": "donations",
+          "structure_type": "dict",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "elderly_ppl.json": {
+          "rel_path": "vemulavada/elderly_ppl.json",
+          "stem": "elderly_ppl",
+          "structure_type": "dict",
+          "item_count": 1,
+          "has_explicit_negatives": false
+        },
+        "emergency_nos.json": {
+          "rel_path": "vemulavada/emergency_nos.json",
+          "stem": "emergency_nos",
+          "structure_type": "dict",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "facilities.json": {
+          "rel_path": "vemulavada/facilities.json",
+          "stem": "facilities",
+          "structure_type": "dict",
+          "item_count": 13,
+          "has_explicit_negatives": false
+        },
+        "faq.json": {
+          "rel_path": "vemulavada/faq.json",
+          "stem": "faq",
+          "structure_type": "list[10]",
+          "item_count": 10,
+          "has_explicit_negatives": false
+        },
+        "festivals.json": {
+          "rel_path": "vemulavada/festivals.json",
+          "stem": "festivals",
+          "structure_type": "list[3]",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "gallery.json": {
+          "rel_path": "vemulavada/gallery.json",
+          "stem": "gallery",
+          "structure_type": "dict",
+          "item_count": 21,
+          "has_explicit_negatives": false
+        },
+        "maps.json": {
+          "rel_path": "vemulavada/maps.json",
+          "stem": "maps",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "nearby_attractions.json": {
+          "rel_path": "vemulavada/nearby_attractions.json",
+          "stem": "nearby_attractions",
+          "structure_type": "list[6]",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "prasadam.json": {
+          "rel_path": "vemulavada/prasadam.json",
+          "stem": "prasadam",
+          "structure_type": "list[6]",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "restaurants.json": {
+          "rel_path": "vemulavada/restaurants.json",
+          "stem": "restaurants",
+          "structure_type": "list[6]",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "river_bank.json": {
+          "rel_path": "vemulavada/river_bank.json",
+          "stem": "river_bank",
+          "structure_type": "dict",
+          "item_count": 1,
+          "has_explicit_negatives": false
+        },
+        "rules.json": {
+          "rel_path": "vemulavada/rules.json",
+          "stem": "rules",
+          "structure_type": "dict",
+          "item_count": 6,
+          "has_explicit_negatives": false
+        },
+        "sevas.json": {
+          "rel_path": "vemulavada/sevas.json",
+          "stem": "sevas",
+          "structure_type": "list[80]",
+          "item_count": 80,
+          "has_explicit_negatives": false
+        },
+        "sub_temples.json": {
+          "rel_path": "vemulavada/sub_temples.json",
+          "stem": "sub_temples",
+          "structure_type": "list[15]",
+          "item_count": 15,
+          "has_explicit_negatives": false
+        },
+        "temple.json": {
+          "rel_path": "vemulavada/temple.json",
+          "stem": "temple",
+          "structure_type": "dict",
+          "item_count": 20,
+          "has_explicit_negatives": false
+        },
+        "timings.json": {
+          "rel_path": "vemulavada/timings.json",
+          "stem": "timings",
+          "structure_type": "dict",
+          "item_count": 22,
+          "has_explicit_negatives": false
+        },
+        "travel.json": {
+          "rel_path": "vemulavada/travel.json",
+          "stem": "travel",
+          "structure_type": "dict",
+          "item_count": 17,
+          "has_explicit_negatives": false
+        }
+      },
+      "missing_registered_categories": []
+    },
+    "Yadadri": {
+      "folder_name": "yadadri",
+      "file_count": 21,
+      "files": {
+        "accommodation.json": {
+          "rel_path": "yadadri/accommodation.json",
+          "stem": "accommodation",
+          "structure_type": "list[8]",
+          "item_count": 8,
+          "has_explicit_negatives": false
+        },
+        "contacts.json": {
+          "rel_path": "yadadri/contacts.json",
+          "stem": "contacts",
+          "structure_type": "dict",
+          "item_count": 7,
+          "has_explicit_negatives": false
+        },
+        "crowd.json": {
+          "rel_path": "yadadri/crowd.json",
+          "stem": "crowd",
+          "structure_type": "dict",
+          "item_count": 8,
+          "has_explicit_negatives": false
+        },
+        "donations.json": {
+          "rel_path": "yadadri/donations.json",
+          "stem": "donations",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "elderly_ppl.json": {
+          "rel_path": "yadadri/elderly_ppl.json",
+          "stem": "elderly_ppl",
+          "structure_type": "dict",
+          "item_count": 1,
+          "has_explicit_negatives": false
+        },
+        "emergency_nos.json": {
+          "rel_path": "yadadri/emergency_nos.json",
+          "stem": "emergency_nos",
+          "structure_type": "dict",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "facilities.json": {
+          "rel_path": "yadadri/facilities.json",
+          "stem": "facilities",
+          "structure_type": "dict",
+          "item_count": 26,
+          "has_explicit_negatives": false
+        },
+        "faq.json": {
+          "rel_path": "yadadri/faq.json",
+          "stem": "faq",
+          "structure_type": "list[11]",
+          "item_count": 11,
+          "has_explicit_negatives": false
+        },
+        "festivals.json": {
+          "rel_path": "yadadri/festivals.json",
+          "stem": "festivals",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "gallery.json": {
+          "rel_path": "yadadri/gallery.json",
+          "stem": "gallery",
+          "structure_type": "dict",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "maps.json": {
+          "rel_path": "yadadri/maps.json",
+          "stem": "maps",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "nearby_attractions.json": {
+          "rel_path": "yadadri/nearby_attractions.json",
+          "stem": "nearby_attractions",
+          "structure_type": "list[3]",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "prasadam.json": {
+          "rel_path": "yadadri/prasadam.json",
+          "stem": "prasadam",
+          "structure_type": "list[4]",
+          "item_count": 4,
+          "has_explicit_negatives": false
+        },
+        "restaurants.json": {
+          "rel_path": "yadadri/restaurants.json",
+          "stem": "restaurants",
+          "structure_type": "list[3]",
+          "item_count": 3,
+          "has_explicit_negatives": false
+        },
+        "river_bank.json": {
+          "rel_path": "yadadri/river_bank.json",
+          "stem": "river_bank",
+          "structure_type": "dict",
+          "item_count": 1,
+          "has_explicit_negatives": true
+        },
+        "rules.json": {
+          "rel_path": "yadadri/rules.json",
+          "stem": "rules",
+          "structure_type": "dict",
+          "item_count": 7,
+          "has_explicit_negatives": false
+        },
+        "sevas.json": {
+          "rel_path": "yadadri/sevas.json",
+          "stem": "sevas",
+          "structure_type": "list[52]",
+          "item_count": 52,
+          "has_explicit_negatives": false
+        },
+        "sub_temples.json": {
+          "rel_path": "yadadri/sub_temples.json",
+          "stem": "sub_temples",
+          "structure_type": "list[2]",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        },
+        "temple.json": {
+          "rel_path": "yadadri/temple.json",
+          "stem": "temple",
+          "structure_type": "dict",
+          "item_count": 5,
+          "has_explicit_negatives": false
+        },
+        "timings.json": {
+          "rel_path": "yadadri/timings.json",
+          "stem": "timings",
+          "structure_type": "dict",
+          "item_count": 13,
+          "has_explicit_negatives": false
+        },
+        "travel.json": {
+          "rel_path": "yadadri/travel.json",
+          "stem": "travel",
+          "structure_type": "dict",
+          "item_count": 2,
+          "has_explicit_negatives": false
+        }
+      },
+      "missing_registered_categories": []
+    }
+  },
+  "global_category_stats": {
+    "accommodation": {
+      "temple_count": 20,
+      "total_items": 150,
+      "file_names": [
+        "accommodation.json"
+      ]
+    },
+    "contacts": {
+      "temple_count": 20,
+      "total_items": 113,
+      "file_names": [
+        "contacts.json"
+      ]
+    },
+    "crowd": {
+      "temple_count": 20,
+      "total_items": 108,
+      "file_names": [
+        "crowd.json"
+      ]
+    },
+    "donations": {
+      "temple_count": 17,
+      "total_items": 52,
+      "file_names": [
+        "donations.json"
+      ]
+    },
+    "elderly_ppl": {
+      "temple_count": 20,
+      "total_items": 47,
+      "file_names": [
+        "elderly_ppl.json"
+      ]
+    },
+    "emergency_nos": {
+      "temple_count": 20,
+      "total_items": 79,
+      "file_names": [
+        "emergency_nos.json"
+      ]
+    },
+    "facilities": {
+      "temple_count": 20,
+      "total_items": 186,
+      "file_names": [
+        "facilities.json"
+      ]
+    },
+    "faq": {
+      "temple_count": 20,
+      "total_items": 209,
+      "file_names": [
+        "faq.json"
+      ]
+    },
+    "festivals": {
+      "temple_count": 20,
+      "total_items": 101,
+      "file_names": [
+        "festivals.json"
+      ]
+    },
+    "gallery": {
+      "temple_count": 20,
+      "total_items": 96,
+      "file_names": [
+        "gallery.json"
+      ]
+    },
+    "maps": {
+      "temple_count": 20,
+      "total_items": 40,
+      "file_names": [
+        "maps.json"
+      ]
+    },
+    "nearby_attractions": {
+      "temple_count": 20,
+      "total_items": 120,
+      "file_names": [
+        "nearby_attractions.json"
+      ]
+    },
+    "prasadam": {
+      "temple_count": 20,
+      "total_items": 67,
+      "file_names": [
+        "prasadam.json"
+      ]
+    },
+    "restaurants": {
+      "temple_count": 20,
+      "total_items": 83,
+      "file_names": [
+        "restaurants.json"
+      ]
+    },
+    "river_bank": {
+      "temple_count": 20,
+      "total_items": 42,
+      "file_names": [
+        "river_bank.json"
+      ]
+    },
+    "rules": {
+      "temple_count": 20,
+      "total_items": 168,
+      "file_names": [
+        "rules.json"
+      ]
+    },
+    "sevas": {
+      "temple_count": 20,
+      "total_items": 367,
+      "file_names": [
+        "sevas.json"
+      ]
+    },
+    "sub_temples": {
+      "temple_count": 20,
+      "total_items": 125,
+      "file_names": [
+        "sub_temples.json"
+      ]
+    },
+    "temple": {
+      "temple_count": 20,
+      "total_items": 145,
+      "file_names": [
+        "temple.json"
+      ]
+    },
+    "timings": {
+      "temple_count": 20,
+      "total_items": 166,
+      "file_names": [
+        "timings.json"
+      ]
+    },
+    "travel": {
+      "temple_count": 20,
+      "total_items": 131,
+      "file_names": [
+        "travel.json"
+      ]
+    }
+  },
+  "total_files": 417,
+  "total_items": 2595
+}

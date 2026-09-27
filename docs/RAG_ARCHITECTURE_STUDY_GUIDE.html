@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PilgrimAI — RAG Architecture & Codebase Study Guide</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #d97706;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-dark: #0f172a;
+            --text-muted: #475569;
+            --border: #e2e8f0;
+            --accent: #0284c7;
+            --code-bg: #f1f5f9;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            background-color: var(--bg);
+            color: var(--text-dark);
+            line-height: 1.65;
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 35px;
+        }
+        h1 {
+            color: var(--primary);
+            font-size: 2.2rem;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            color: var(--secondary);
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        .badge {
+            display: inline-block;
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        h2 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 8px;
+            margin-top: 40px;
+        }
+        h3 {
+            color: var(--accent);
+            font-size: 1.2rem;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+        }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+            margin-bottom: 12px;
+        }
+        .filename {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--primary);
+            font-family: monospace;
+        }
+        .tag {
+            background: #fef3c7;
+            color: #92400e;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        .key-title {
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-top: 10px;
+        }
+        pre {
+            background: var(--code-bg);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 12px;
+            overflow-x: auto;
+            font-family: Consolas, Monaco, "Courier New", monospace;
+            font-size: 0.9rem;
+            color: #334155;
+            margin: 10px 0;
+        }
+        .gist-box {
+            background: #ecfdf5;
+            border-left: 4px solid #10b981;
+            padding: 10px 14px;
+            border-radius: 0 6px 6px 0;
+            margin-top: 12px;
+            font-size: 0.95rem;
+            color: #065f46;
+        }
+        .qa-card {
+            background: #ffffff;
+            border-left: 4px solid var(--primary);
+            padding: 16px;
+            margin-bottom: 15px;
+            border-radius: 0 8px 8px 0;
+            border-top: 1px solid var(--border);
+            border-right: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+        .qa-q {
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+        .qa-a {
+            color: var(--text-dark);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #fff;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 10px 14px;
+            text-align: left;
+        }
+        th {
+            background: #f1f5f9;
+            color: var(--primary);
+        }
+        .flow-step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+        .flow-num {
+            background: var(--primary);
+            color: #fff;
+            border-radius: 50%;
+            width: 26px;
+            height: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.85rem;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>PilgrimAI — RAG Architecture Study Guide</h1>
+        <div class="subtitle">Complete Technical Guide & Code Breakdown for Telangana Temples AI Assistant</div>
+        <div class="badge">100% Offline • Zero-Hallucination • Hybrid Search • Parent-Child RAG</div>
+    </header>
+
+    <h2>1. Executive Summary & Core Philosophy</h2>
+    <div class="card">
+        <p><strong>PilgrimAI</strong> is an offline, zero-hallucination domain AI assistant designed for pilgrims visiting temples across Telangana. It solves the critical limitations of standard RAG systems through four key pillars:</p>
+        <ul>
+            <li><strong>Parent-Child Chunking:</strong> Small 300-char child snippets for dense search precision + full parent section context for LLM comprehension.</li>
+            <li><strong>Hybrid Retrieval:</strong> Combines Dense Vectors (semantic intent) and BM25 (exact Telugu terms, proper nouns, and prices) via Reciprocal Rank Fusion (RRF).</li>
+            <li><strong>Neural Cross-Encoder Reranking:</strong> Re-evaluates top 30 candidates with deep cross-attention to pass the highest-scoring Top-3 parent chunks to the LLM.</li>
+            <li><strong>Deterministic Inference (T=0.0):</strong> Guarantees responses strictly reflect dataset facts without hallucination.</li>
+        </ul>
+    </div>
+
+    <h2>2. High-Level Pipeline Flow</h2>
+    <div class="card">
+        <div class="flow-step">
+            <div class="flow-num">1</div>
+            <div><strong>Query Planning (query_planner.py):</strong> Analyzes query, resolves aliases, and routes to 1 of 5 specialized retrieval routes.</div>
+        </div>
+        <div class="flow-step">
+            <div class="flow-num">2</div>
+            <div><strong>Parallel Hybrid Search:</strong> Queries Qdrant (dense vectors) and BM25 (keywords) to fetch the top 30 candidate chunks.</div>
+        </div>
+        <div class="flow-step">
+            <div class="flow-num">3</div>
+            <div><strong>Reciprocal Rank Fusion (rrf.py):</strong> Fuses and deduplicates rankings into a unified score.</div>
+        </div>
+        <div class="flow-step">
+            <div class="flow-num">4</div>
+            <div><strong>Neural Reranking (reranker.py):</strong> Cross-Encoder evaluates query-chunk pairs and picks the top 3 parent passages.</div>
+        </div>
+        <div class="flow-step">
+            <div class="flow-num">5</div>
+            <div><strong>Relevance Guardrail (guardrail.py):</strong> If top score &lt; -3.0, returns an immediate polite refusal (saves LLM compute).</div>
+        </div>
+        <div class="flow-step">
+            <div class="flow-num">6</div>
+            <div><strong>Context & Prompt Construction:</strong> Formats parent documents into clean Markdown with zero-hallucination rules.</div>
+        </div>
+        <div class="flow-step">
+            <div class="flow-num">7</div>
+            <div><strong>LLM Generation & Grounding Check:</strong> Ollama Qwen 2.5 (1.5B) generates the answer, verified by answer_grounding_validator.py.</div>
+        </div>
+    </div>
+
+    <h2>3. The 5 Smart Retrieval Routes</h2>
+    <table>
+        <tr>
+            <th>Route Name</th>
+            <th>When It Triggers</th>
+            <th>Retrieval Strategy</th>
+            <th>Example Query</th>
+        </tr>
+        <tr>
+            <td><strong>TARGETED</strong></td>
+            <td>Single temple + specific topic</td>
+            <td>Hybrid vector + BM25 filtered by temple</td>
+            <td><em>"VIP darshan timings at Yadagirigutta"</em></td>
+        </tr>
+        <tr>
+            <td><strong>COMPLETE_CATEGORY</strong></td>
+            <td>Exact direct file match</td>
+            <td>O(1) Direct Memory Cache lookup</td>
+            <td><em>"Dress code for Bhadrachalam"</em></td>
+        </tr>
+        <tr>
+            <td><strong>CROSS_TEMPLE</strong></td>
+            <td>Mentions 2+ temples</td>
+            <td>Multi-temple parallel retrieval & merge</td>
+            <td><em>"Compare rooms in Vemulawada vs Yadagirigutta"</em></td>
+        </tr>
+        <tr>
+            <td><strong>MULTI_CATEGORY</strong></td>
+            <td>Single temple + 2+ questions</td>
+            <td>Multi-topic context slicing</td>
+            <td><em>"Timings, entry fee, and parking for Ramappa"</em></td>
+        </tr>
+        <tr>
+            <td><strong>BROAD_TEMPLE</strong></td>
+            <td>General overview question</td>
+            <td>Priority: History &rarr; Deity &rarr; Timings &rarr; Festivals</td>
+            <td><em>"Tell me about Thousand Pillar Temple"</em></td>
+        </tr>
+    </table>
+
+    <h2>4. Complete File-by-File Breakdown (All 22 Code Modules)</h2>
+
+    <!-- File 1 -->
+    <div class="card">
+        <div class="card-header">
+            <span class="filename">1. config.py</span>
+            <span class="tag">Configuration</span>
+        </div>
+        <p><strong>Purpose:</strong> Central configuration storing model names, chunk dimensions, file paths, and score thresholds.</p>
+        <pre>EMBEDDING_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
+CROSS_ENCODER_MODEL_NAME = "cross-encoder/ms-marco-MiniLM-L-6-v2"
+CHILD_CHUNK_SIZE = 300
+GUARDRAIL_SCORE_THRESHOLD = -3.0</pre>
+        <div class="gist-box"><strong>In Gist:</strong> The master control settings file for the entire engine.</div>
+    </div>
+
+    <!-- File 2 -->
+    <div class="card">
+        <div class="card-header">
+            <span class="filename">2. utils.py</span>
+            <span class="tag">Utilities</span>
+        </div>
+        <p><strong>Purpose:</strong> Cleans text, trims whitespace, and converts JSON types (booleans, nulls) into clean readable words.</p>
+        <pre>def sanitize_json_value(val: Any) -> str:
+    if val is None: return ""
+    if isinstance(val, bool): return "Yes" if val else "No"</pre>
+        <div class="gist-box"><strong>In Gist:</strong> The formatting toolkit ensuring clean data representation.</div>
+    </div>
+
+    <!-- File 3 -->
+    <div class="card">
+        <div class="card-header">
+            <span class="filename">3. prompt.py</span>
+            <span class="tag">Prompting</span>
+        </div>
+        <p><strong>Purpose:</strong> Anti-hallucination system prompt that forbids the LLM from making up facts or using external knowledge.</p>
+        <pre>SYSTEM_PROMPT = """You are PilgrimAI, an expert guide for Telangana Temples.
+1. Rely ONLY on the clear facts directly mentioned in the Context.
+2. Do NOT assume or extrapolate."""</pre>
+        <div class="gist-box"><strong>In Gist:</strong> The strict rulebook keeping the LLM honest and grounded.</div>
+    </div>
+
+    <!-- File 4 -->
+    <div class="card">
+        <div class="card-header">
+            <span class="filename">4. loader.py</span>
+            <span class="tag">Ingestion</span>
+        </div>
+        <p><strong>Purpose:</strong> Dynamically discovers temple folders on disk and streams JSON files without hardcoded lists.</p>
+        <pre>RESERVED_DIRS = {"backend", "qdrant_db", "bm25_index", ".git", ".venv", "tests"}
+def load_temple_files(self) -> Generator[...]:
+    for folder in temple_folders:
+        for json_path in folder.rglob("*.json"):
+            yield (temple_name, file_name, relative_path, json_content)</pre>
+        <div class="gist-box"><strong>In Gist:</strong> The automated file discovery system.</div>
+    </div>
+
+    <!-- File 5 -->
+    <div class="card">
+        <div class="card-header">
+            <span class="filename">5. parser.py</span>
+            <span class="tag">Ingestion</span>
+        </div>
+        <p><strong>Purpose:</strong> Flattens nested JSON hierarchies (darshan slots, poojas) into human-readable Markdown parent documents.</p>
+        <pre>def _format_dict(self, d: Dict[str, Any], indent: int = 0) -> str:
+    for k, v in d.items():
+        formatted_key = k.replace("_", " ").title()</pre>
+        <div class="gist-box"><strong>In Gist:</strong> The translator converting raw JSON data into clean readable chapters.</div>
+    </div>
+
+    <!-- File 6 -->
+    <div class="card">
+        <div class="card-header">
+            <span class="filename">6. chunker.py</span>
+            <span class="tag">Ingestion</span>
+        </div>
+        <p><strong>Purpose:</strong> Creates small 300-char child chunks for search index precision while keeping parent document links.</p>
+        <pre>self.splitter = RecursiveCharacterTextSplitter(chunk_size=300, chunk_overlap=50)
+child_doc = Document(
+    page_content=chunk,
+    metadata={**parent_doc.metadata, "is_child": True, "parent_id": parent_id}
+)</pre>
+        <div class="gist-box"><strong>In Gist:</strong> Creates small index cards that link back to the full book chapter.</div>
+    </div>
+
+    <!-- File 7 -->
+    <div class="card">
+        <div class="card-header">
+            <span class="filename">7. ingest.py</span>
+            <span class="tag">Ingestion</span>
+        </div>
+        <p><strong>Purpose:</strong> CLI script that coordinates offline loading, embedding, and indexing into Qdrant and BM25.</p>
+        <pre>vectordb_manager.create_collection(child_documents, parent_documents)
+bm25_manager.build_index(child_documents)</pre>
+        <div class="gist-box"><strong>In Gist:</strong> The offline index compiler.</div>
+    </div>
+
+    <!-- File 8 -->
+    <div class="card">
+        <div class="card-header">
+            <span class="filename">8. category_registry.py</span>
+            <span class="tag">Knowledge</span>
+        </div>
+        <p><strong>Purpose:</strong> Domain dictionary mapping user keywords and synonyms to 23 canonical temple categories.</p>
+        <pre>CATEGORY_SYNONYMS = {
+    "timings": ["darshan timings", "opening hours", "closing time", "schedule"],
+    "accessibility": ["wheelchair", "elderly", "lift", "ramp", "physically disabled"],
+}</pre>
+        <div class="gist-box"><strong>In Gist:</strong> The vocabulary engine mapping user intent to data categories.</div>
+    </div>
+
+    <!-- File 9 -->
+    <div class="card">
+        <div class="card-header">
+            <span class="filename">9. knowledge_registry.py</span>
+            <span class="tag">Knowledge</span>
+        </div>
+        <p><strong>Purpose:</strong> In-memory dictionary store for instant O(1) lookups for direct category queries.</p>
+        <pre>def get_temple_category_data(self, temple_name: str, category: str):
+    canonical_temple = self.resolve_temple_name(temple_name)
+    return self._store.get(canonical_temple, {}).get(category)</pre>
+        <div class="gist-box"><strong>In Gist:</strong> The high-speed memory cache for direct facts.</div>
+    </div>
+
+    <!-- File 10 -->
+    <div class="card">
+        <div class="card-header">
+            <span class="filename">10. embeddings.py</span>
+            <span class="tag">Retrieval</span>
+        </div>
+        <p><strong>Purpose:</strong> Converts text into 384-dimensional dense vector embeddings using local SentenceTransformer.</p>
+        <pre>self.model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
+def embed_query(self, text: str) -> List[float]:
+    return self.model.encode(text, normalize_embeddings=True).tolist()</pre>
+        <div class="gist-box"><strong>In Gist:</strong> The text-to-vector encoder.</div>
+    </div>
+
+    <!-- File 11 -->
+    <div class="card">
+        <div class="card-header">
+            <span class="filename">11. vectordb.py</span>
+            <span class="tag">Retrieval</span>
+        </div>
+        <p><strong>Purpose:</strong> Manages local on-disk Qdrant vector database for HNSW dense similarity searches.</p>
+        <pre>self.client = QdrantClient(path=settings.QDRANT_DB_PATH)
+def search_candidates(self, query_vector, filter_temple=None, top_k=30):</pre>
+        <div class="gist-box"><strong>In Gist:</strong> The dense vector search engine.</div>
+    </div>
+
+    <!-- File 12 -->
+    <div class="card">
+        <div class="card-header">
+            <span class="filename">12. bm25.py</span>
+            <span class="tag">Retrieval</span>
+        </div>
+        <p><strong>Purpose:</strong> BM25Okapi sparse lexical search engine to match exact deity names, Telugu terms, and prices.</p>
+        <pre>self.bm25 = BM25Okapi(tokenized_corpus)
+def search_candidates(self, query: str, filter_temple=None, top_k=30):</pre>
+        <div class="gist-box"><strong>In Gist:</strong> The exact-keyword search specialist.</div>
+    </div>
+
+    <!-- File 13 -->
+    <div class="card">
+        <div class="card-header">
+            <span class="filename">13. rrf.py</span>
+            <span class="tag">Retrieval</span>
+        </div>
+        <p><strong>Purpose:</strong> Reciprocal Rank Fusion (RRF) algorithm to merge and deduplicate Vector and BM25 search results.</p>
+        <pre># RRF Formula: Score(d) = sum(1.0 / (60.0 + rank))
+def reciprocal_rank_fusion(vector_results, bm25_results, k=60.0):</pre>
+        <div class="gist-box"><strong>In Gist:</strong> The fair judge combining vector results and keyword results.</div>
+    </div>
+
+    <!-- File 14 -->
+    <div class="card">
+        <div class="card-header">
+            <span class="filename">14. reranker.py</span>
+            <span class="tag">Retrieval</span>
+        </div>
+        <p><strong>Purpose:</strong> Neural Cross-Encoder (ms-marco) evaluating candidate chunks to select the Top-3 parent passages.</p>
+        <pre>scores = self.model.predict([(query, doc.page_content) for doc in candidates])
+ranked = sorted(zip(candidates, scores), key=lambda x: x[1], reverse=True)[:top_k]</pre>
+        <div class="gist-box"><strong>In Gist:</strong> The fine-tooth comb that picks the 3 best answers from 30 candidates.</div>
+    </div>
+
+    <!-- File 15 -->
+    <div class="card">
+        <div class="card-header">
+            <span class="filename">15. guardrail.py</span>
+            <span class="tag">Safety</span>
+        </div>
+        <p><strong>Purpose:</strong> Blocks out-of-domain queries (cooking, coding, sports) if the top reranker score is below -3.0.</p>
+        <pre>def evaluate_relevance(self, top_score: float) -> Tuple[bool, str]:
+    if top_score < settings.GUARDRAIL_SCORE_THRESHOLD:  # -3.0
+        return False, "I can only assist with information regarding Telangana temples..."</pre>
+        <div class="gist-box"><strong>In Gist:</strong> The security guard filtering out off-topic questions.</div>
+    </div>
+
+    <!-- File 16 -->
+    <div class="card">
+        <div class="card-header">
+            <span class="filename">16. query_planner.py</span>
+            <span class="tag">Planning</span>
+        </div>
+        <p><strong>Purpose:</strong> Analyzes user query, aliases, and category triggers to select the optimal retrieval route.</p>
+        <pre>class RetrievalRoute(str, Enum):
+    TARGETED = "TARGETED"
+    COMPLETE_CATEGORY = "COMPLETE_CATEGORY"
+    CROSS_TEMPLE = "CROSS_TEMPLE"
+    MULTI_CATEGORY = "MULTI_CATEGORY"
+    BROAD_TEMPLE = "BROAD_TEMPLE"</pre>
+        <div class="gist-box"><strong>In Gist:</strong> The intelligent traffic controller directing queries.</div>
+    </div>
+
+    <!-- File 17 -->
+    <div class="card">
+        <div class="card-header">
+            <span class="filename">17. context_builder.py</span>
+            <span class="tag">Assembly</span>
+        </div>
+        <p><strong>Purpose:</strong> Formats retrieved documents and metadata into clean, structured Markdown context blocks for the LLM.</p>
+        <pre>def build_targeted_context(self, temple_name, category, text_chunks):
+    return f"### TEMPLE: {temple_name}\n### CATEGORY: {category.upper()}\n{content}"</pre>
+        <div class="gist-box"><strong>In Gist:</strong> The document layout designer packaging context for the LLM.</div>
+    </div>
+
+    <!-- File 18 -->
+    <div class="card">
+        <div class="card-header">
+            <span class="filename">18. answer_scope_controller.py</span>
+            <span class="tag">Safety</span>
+        </div>
+        <p><strong>Purpose:</strong> Manages multi-part queries and formats the prompt to guarantee every question is answered.</p>
+        <pre>@dataclass
+class AnswerScope:
+    temple_name: Optional[str]
+    requested_categories: List[str]
+    is_multi_part: bool</pre>
+        <div class="gist-box"><strong>In Gist:</strong> The checklist manager ensuring all sub-questions are answered.</div>
+    </div>
+
+    <!-- File 19 -->
+    <div class="card">
+        <div class="card-header">
+            <span class="filename">19. completeness_validator.py</span>
+            <span class="tag">Validation</span>
+        </div>
+        <p><strong>Purpose:</strong> Tri-state availability logic distinguishing confirmed presence, confirmed absence, and missing data.</p>
+        <pre>CONFIRMED_AVAILABLE = "CONFIRMED_AVAILABLE"
+CONFIRMED_UNAVAILABLE = "CONFIRMED_UNAVAILABLE"
+INFORMATION_NOT_AVAILABLE = "INFORMATION_NOT_AVAILABLE"</pre>
+        <div class="gist-box"><strong>In Gist:</strong> The logic auditor distinguishing "confirmed not there" from "not in records".</div>
+    </div>
+
+    <!-- File 20 -->
+    <div class="card">
+        <div class="card-header">
+            <span class="filename">20. answer_grounding_validator.py</span>
+            <span class="tag">Validation</span>
+        </div>
+        <p><strong>Purpose:</strong> Post-generation validator checking generated answer against source context to sanitize hallucinated details.</p>
+        <pre>def validate(self, answer: str, context: str) -> GroundingResult:
+def sanitize_answer(self, answer: str, context: str) -> str:</pre>
+        <div class="gist-box"><strong>In Gist:</strong> The final fact-checking proofreader.</div>
+    </div>
+
+    <!-- File 21 -->
+    <div class="card">
+        <div class="card-header">
+            <span class="filename">21. llm.py</span>
+            <span class="tag">Generation</span>
+        </div>
+        <p><strong>Purpose:</strong> Connects to local Ollama running Qwen 2.5 (1.5B) at Temperature = 0.0 for deterministic output.</p>
+        <pre>payload = {
+    "model": "qwen2.5:1.5b",
+    "prompt": prompt,
+    "options": {"temperature": 0.0, "top_p": 0.9}
+}</pre>
+        <div class="gist-box"><strong>In Gist:</strong> The local natural language generator.</div>
+    </div>
+
+    <!-- File 22 -->
+    <div class="card">
+        <div class="card-header">
+            <span class="filename">22. chat.py</span>
+            <span class="tag">Orchestration</span>
+        </div>
+        <p><strong>Purpose:</strong> The central service class (PilgrimRAGService) connecting every subsystem into an end-to-end workflow.</p>
+        <pre>class PilgrimRAGService:
+    def answer(self, query: str) -> Dict[str, Any]:
+        plan = self.planner.plan(query)
+        docs, score = self.retrieve(query, plan)
+        is_valid, msg = self.guardrail.evaluate_relevance(score)
+        if not is_valid: return {"answer": msg, "sources": []}
+        raw_answer = self.llm.generate(prompt)
+        final_answer = self.grounding_validator.sanitize(raw_answer, context)
+        return {"answer": final_answer, "sources": sources}</pre>
+        <div class="gist-box"><strong>In Gist:</strong> The conductor leading the entire RAG pipeline.</div>
+    </div>
+
+    <h2>5. Top 5 Interview / Viva Questions & Answers</h2>
+
+    <div class="qa-card">
+        <div class="qa-q">Q1: Why did you choose Parent-Child Chunking instead of standard fixed chunking?</div>
+        <div class="qa-a"><strong>Answer:</strong> Fixed chunking creates arbitrary cuts that often separate related data (like pooja ticket prices from pooja names). With Parent-Child Chunking, we search over small 300-character child chunks for high semantic precision, but inject the entire parent document into the prompt so the LLM has complete context.</div>
+    </div>
+
+    <div class="qa-card">
+        <div class="qa-q">Q2: Why combine Dense Vector Search and BM25 Sparse Search using RRF?</div>
+        <div class="qa-a"><strong>Answer:</strong> Dense vector embeddings understand high-level semantics (e.g., "where to stay" &rarr; accommodation), but can struggle with exact proper nouns and numbers. BM25 excels at exact keyword and numeric matching (e.g., "Saswatha Pooja ₹500"). Reciprocal Rank Fusion (RRF) merges their strengths without needing manual score tuning.</div>
+    </div>
+
+    <div class="qa-card">
+        <div class="qa-q">Q3: Why is Temperature set to 0.0 in the LLM?</div>
+        <div class="qa-a"><strong>Answer:</strong> PilgrimAI is an informative pilgrimage assistant where precision is vital. A temperature of 0.0 turns off stochastic creativity, ensuring the model deterministically selects the most probable tokens strictly grounded in the retrieved facts.</div>
+    </div>
+
+    <div class="qa-card">
+        <div class="qa-q">Q4: How does your pipeline block out-of-domain queries without wasting LLM tokens?</div>
+        <div class="qa-a"><strong>Answer:</strong> guardrail.py checks the top score from the neural Cross-Encoder. If the score is below -3.0, the query is identified as irrelevant (e.g., general trivia or coding) and an instant refusal message is returned immediately without invoking the LLM.</div>
+    </div>
+
+    <div class="qa-card">
+        <div class="qa-q">Q5: What is the Tri-State Completeness Principle in completeness_validator.py?</div>
+        <div class="qa-a"><strong>Answer:</strong> In travel and accessibility, missing data must never be reported as confirmed absence. The validator distinguishes between: (1) Confirmed Available, (2) Confirmed Unavailable (explicit negative statements like "No lift"), and (3) Information Not Available (missing data), avoiding misleading claims.</div>
+    </div>
+
+</body>
+</html>

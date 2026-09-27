@@ -1,0 +1,27 @@
+{
+  "temple_id": "thousand_pillar_temple",
+  "opening_time": "6:00 am",
+  "closing_time": "8:00 pm",
+  "afternoon_break": {
+    "from": "12:30 pm",
+    "to": "4:00 pm"
+  },
+  "daily_schedule": [
+    {
+      "name": "Suprabhata Seva",
+      "timing": "5:30 AM to 6:00 AM"
+    },
+    {
+      "name": "Nitya Abhishekam",
+      "timing": "6:30 AM to 8:00 AM"
+    },
+    {
+      "name": "Nitya Archana & Harati",
+      "timing": "Continuous throughout the day"
+    },
+    {
+      "name": "Maha Mangala Harati",
+      "timing": "12:00 PM to 12:30 PM"
+    }
+  ]
+}

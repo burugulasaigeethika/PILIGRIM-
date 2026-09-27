@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Sakshi Ganapathi Temple",
+    "distance": "3 km from Srisailam Temple (on the entry highway)",
+    "type": "Mandatory Holy Shrine",
+    "description": "Houses Lord Ganesha who traditionally records the names of all visiting pilgrims to give testimony (Sakshi) to Lord Shiva. Pilgrims traditionally visit this spot first."
+  },
+  {
+    "name": "Paladhara-Panchadhara",
+    "distance": "4 km from Srisailam Temple (in a narrow valley)",
+    "type": "Sacred Natural Stream / Meditation Spot",
+    "description": "Perennial water streams representing Shiva's five faces. This is the historic site where Sri Adi Shankaracharya meditated and composed his famous Shivananda Lahari."
+  },
+  {
+    "name": "Hatakeswaram",
+    "distance": "4.5 km from Srisailam Temple (opposite Paladhara)",
+    "type": "Ancient Shiva Temple",
+    "description": "An ancient stone temple housing a unique Shiva Lingam where legendary sages performed intensive penance. It plays a significant role in local folklore."
+  },
+  {
+    "name": "Sikharam (Sikhareswara Swamy)",
+    "distance": "8.3 km from Srisailam Temple",
+    "type": "Highest Mountain Peak Shrine",
+    "description": "The highest geographic point in the Srisailam hills. Features an ancient temple where viewing the main temple's spire through a special column is believed to grant salvation."
+  },
+  {
+    "name": "Pathala Ganga",
+    "distance": "1.7 km behind the main Srisailam Temple complex",
+    "type": "Sacred River Ghat",
+    "description": "A sacred stretch of the Krishna River down a deep gorge used for holy dips. Accessible via a walk down 600 stone steps or via the APTDC ropeway cable cars."
+  },
+  {
+    "name": "Srisailam Dam & Reservoir View Point",
+    "distance": "14 km from Srisailam Temple",
+    "type": "Scenic Lookout / Engineering Landmark",
+    "description": "Offers panoramic views of the massive dam built across the Krishna River gorge. Features dramatic views during monsoon season when the crest gates are opened."
+  },
+  {
+    "name": "Akkamahadevi Caves",
+    "distance": "36 km",
+    "type": "Adventure / Mystical Limestone Caves",
+    "description": "Naturally formed dark limestone caves deep in the Nallamala forest. Accessible only via boat ride followed by a short trek to see a self-manifested Shiva Lingam inside."
+  },
+  {
+    "name": "Octopus View Point",
+    "distance": "30 km from Srisailam Temple (near Domalpenta)",
+    "type": "Panoramic Nature Overlook",
+    "description": "A deep valley viewpoint offering a bird's-eye perspective of the Krishna River backwaters winding through the hills, creating an appearance resembling an octopus."
+  },
+  {
+    "name": "Chenchu Lakshmi Tribal Museum",
+    "distance": "700 m",
+    "type": "Cultural Museum / Educational Center",
+    "description": "Managed by the state, this museum displays detailed lifestyle, hunting, and cultural exhibits of the indigenous Chenchu tribes native to the Nallamala forests."
+  }
+]

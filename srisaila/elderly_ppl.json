@@ -1,0 +1,12 @@
+{
+  "wheelchair_accessibility": {
+    "is_wheelchair_friendly": true,
+    "has_lift": true,
+    "has_battery_vehicles": true,
+    "details": [
+      "Battery Vehicles & Wheelchairs: Battery-operated buggies and wheelchairs are provided by Srisaila Devasthanam for elderly and differently-abled devotees near the CRO and main gopuram entry.",
+      "Priority Darshan Line: Dedicated queue lines and priority access counters are available for Senior Citizens and Divyangjan upon producing age/disability proof.",
+      "Patalaganga Ropeway: Ropeway / Cable car service is available for elderly devotees to reach the Patalaganga Krishna River bathing ghats without descending the 500 stone steps."
+    ]
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "river_bank": {
+    "total_scope_evaluated": 20,
+    "confirmed_unavailable_count": 6,
+    "confirmed_unavailable_temples": [
+      "Balkampet",
+      "Chilkur",
+      "Karmanghat",
+      "Ramappa",
+      "Thousand Pillar",
+      "Yadadri"
+    ],
+    "information_not_available_count": 3,
+    "information_not_available_temples": [
+      "Birla Mandir",
+      "Ttd",
+      "Ujjaini"
+    ],
+    "all_20_evaluated": true
+  },
+  "accommodation": {
+    "total_scope_evaluated": 20,
+    "confirmed_unavailable_count": 0,
+    "confirmed_unavailable_temples": [],
+    "information_not_available_count": 0,
+    "information_not_available_temples": [],
+    "all_20_evaluated": true
+  },
+  "restaurants": {
+    "total_scope_evaluated": 20,
+    "confirmed_unavailable_count": 0,
+    "confirmed_unavailable_temples": [],
+    "information_not_available_count": 0,
+    "information_not_available_temples": [],
+    "all_20_evaluated": true
+  },
+  "wheelchair": {
+    "total_scope_evaluated": 20,
+    "confirmed_unavailable_count": 7,
+    "confirmed_unavailable_temples": [
+      "Balkampet",
+      "Birla Mandir",
+      "Dharmapuri",
+      "Edupayal",
+      "Ramappa",
+      "Thousand Pillar",
+      "Ujjaini"
+    ],
+    "information_not_available_count": 7,
+    "information_not_available_temples": [
+      "Ahobilam",
+      "Chilkur",
+      "Jogulamba(New)",
+      "Kaleshvaram",
+      "Medaram",
+      "Ttd",
+      "Veera Satyanarayana"
+    ],
+    "all_20_evaluated": true
+  },
+  "facilities": {
+    "total_scope_evaluated": 20,
+    "confirmed_unavailable_count": 0,
+    "confirmed_unavailable_temples": [],
+    "information_not_available_count": 0,
+    "information_not_available_temples": [],
+    "all_20_evaluated": true
+  },
+  "prasadam": {
+    "total_scope_evaluated": 20,
+    "confirmed_unavailable_count": 0,
+    "confirmed_unavailable_temples": [],
+    "information_not_available_count": 3,
+    "information_not_available_temples": [
+      "Basara",
+      "Birla Mandir",
+      "Ramappa"
+    ],
+    "all_20_evaluated": true
+  },
+  "sevas": {
+    "total_scope_evaluated": 20,
+    "confirmed_unavailable_count": 0,
+    "confirmed_unavailable_temples": [],
+    "information_not_available_count": 1,
+    "information_not_available_temples": [
+      "Ramappa"
+    ],
+    "all_20_evaluated": true
+  },
+  "festivals": {
+    "total_scope_evaluated": 20,
+    "confirmed_unavailable_count": 0,
+    "confirmed_unavailable_temples": [],
+    "information_not_available_count": 0,
+    "information_not_available_temples": [],
+    "all_20_evaluated": true
+  }
+}

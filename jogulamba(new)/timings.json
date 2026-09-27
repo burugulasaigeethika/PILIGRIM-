@@ -1,0 +1,41 @@
+{
+  "temple_id": "sri_jogulamba_devi_temple",
+  "opening_time": "06:30 AM",
+  "closing_time": "08:30 PM",
+  "afternoon_break": {
+    "from": "01:00 PM",
+    "to": "02:00 PM"
+  },
+  "daily_schedule": [
+    {
+      "time_slot": "07:00 AM – 08:00 AM",
+      "ritual_name": "Suprabhata Seva & Shuddhi",
+      "details_and_significance": "Morning awakening and purification rituals."
+    },
+    {
+      "time_slot": "08:00 AM – 09:00 AM",
+      "ritual_name": "Maha Abhishekam",
+      "details_and_significance": "Sacred morning Abhishekam."
+    },
+    {
+      "time_slot": "12:30 PM – 01:00 PM",
+      "ritual_name": "Maha Mangala Alankara Aarati",
+      "details_and_significance": "Midday grand alankaram and auspicious aarati."
+    },
+    {
+      "time_slot": "01:00 PM – 02:00 PM",
+      "ritual_name": "Break Time",
+      "details_and_significance": "Afternoon temple break."
+    },
+    {
+      "time_slot": "06:30 PM – 07:15 PM",
+      "ritual_name": "Pradosha Kala Pooja & Evening Aarati",
+      "details_and_significance": "Evening pradosha pooja and devotional aarati."
+    },
+    {
+      "time_slot": "08:30 PM",
+      "ritual_name": "Ekantha Seva & Closing",
+      "details_and_significance": "Night closing ritual and temple closure."
+    }
+  ]
+}

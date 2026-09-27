@@ -1,0 +1,31 @@
+[
+  {
+    "query": "Does Dharmapuri have a helicopter launch pad?",
+    "detected_temple": [
+      "Dharmapuri"
+    ],
+    "detected_categories": [],
+    "mode": "targeted",
+    "passed": true
+  },
+  {
+    "query": "Does Basara have a ski resort?",
+    "detected_temple": [
+      "Basara"
+    ],
+    "detected_categories": [],
+    "mode": "targeted",
+    "passed": true
+  },
+  {
+    "query": "Does Yadadri have a railway station inside the temple?",
+    "detected_temple": [
+      "Yadadri"
+    ],
+    "detected_categories": [
+      "travel"
+    ],
+    "mode": "targeted",
+    "passed": true
+  }
+]

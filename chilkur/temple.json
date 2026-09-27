@@ -1,0 +1,47 @@
+{
+  "temple_id": "chilkur_balaji",
+  "name": "Chilkur Balaji Temple",
+  "alternate_names": [
+    "Visa Balaji Temple",
+    "Telangana Tirupati"
+  ],
+  "state": "Telangana State",
+  "district": "Rangareddy District",
+  "village": "Chilkur",
+  "address": "Sri Chilkur Balaji Temple, Chilkur Village, Moinabad Mandal, Rangareddy District, Telangana - 501504",
+  "river": "Osmansagar Lake (Gandipet)",
+  "main_deity": "Lord Balaji Venkateshwara in the form of a Swayambhu idol (accompanied by Sridevi and Bhoodevi)",
+  "other_deities": [
+    "Sridevi",
+    "Bhoodevi",
+    "Rajya Lakshmi Ammavaru"
+  ],
+  "description": "Chilkur Balaji Temple, the Abode of Lord Venkateshwara – at Chilkur village of Rangareddy District in Telangana State is one of the ancient and famous Vaishnavite temples. The shrine deserves a special mention in terms of its simplicity and spiritual sanctity and is one of the oldest and most famous temples in Telangana State. Existence of this shrine is lost in the mists of antiquity and local traditions date the temple back half a millennium. The presiding Deity – Lord Balaji Venkateshwara in the form of a Swayambhu idol (accompanied by Sridevi and Bhoodevi) is known for his boundless benevolence in fulfilling the wishes of the devotees. This Shrine is popularly known as \"Telangana Tirupati\" and also famously as the \"Visa Balaji Temple\" because of the widespread belief that praying here helps devotees secure visas for foreign travel, especially for studies and employment. A unique feature of this temple is that it operates without government control, has no hundi (donation box), accepts no money or ornaments from devotees, and does not provide any VIP or paid fast-track darshan queues.",
+  "history": "History mentions that the temple was built during the time of Akkanna and Madanna, the uncles of Bhakta Ramdas (circa 17th century AD / 500 years ago). According to tradition, a devotee who used to visit Tirupati every year fell seriously ill and could not travel. Lord Venkateshwara appeared in his dream and said, \"I am right here in the jungle nearby. You don't have to worry.\" The devotee at once moved to the place indicated by the Lord in the dream and saw a mole-hill there, which he dug up. Accidentally, the axe struck Lord Balaji's idol covered by the mole-hill below the chin and on the chest, and surprisingly blood started flowing profusely from the \"wounds\", flooding the ground and turning it scarlet. The devotee could not believe his eyes. He heard a voice from the air which said, \"Flood the mole-hill with cow's milk.\" When the devotee did so, a Swayambhu idol of Lord Balaji accompanied by Sridevi and Bhoodevi was found, and this idol was installed with the due rites and a temple built for it.",
+  "mythology": "According to tradition, a devotee who used to visit Tirupati every year fell seriously ill and could not travel. Lord Venkateshwara appeared in his dream and said, \"I am right here in the jungle nearby. You don't have to worry.\" The devotee at once moved to the place indicated by the Lord in the dream and saw a mole-hill there, which he dug up. Accidentally, the axe struck Lord Balaji's idol covered by the mole-hill below the chin and on the chest, and surprisingly blood started flowing profusely from the \"wounds\", flooding the ground and turning it scarlet. The devotee could not believe his eyes. He heard a voice from the air which said, \"Flood the mole-hill with cow's milk.\" When the devotee did so, a Swayambhu idol of Lord Balaji accompanied by Sridevi and Bhoodevi was found, and this idol was installed with the due rites and a temple built for it. Historical & Spiritual Importance: With the earnest desire to revive the former glory and importance of the temple, the idol of Ammavaru was installed in 1963 (the year following the Chinese aggression). When the aggression was unilaterally vacated, Ammavaru was given the name of Rajya Lakshmi, signifying this welcome event. The unique feature of this idol is that lotus flowers are held in three hands and the fourth hand is in a position towards the lotus feet, which signifies the doctrine of Saranagathi (surrender).",
+  "sub_temples": [
+    {
+      "name": "Rajya Lakshmi Ammavaru Temple",
+      "location": "Inside the main complex",
+      "significance": "Installed in 1963 (the year following the Chinese aggression) with Rajya Lakshmi signifying the welcome event when the aggression was unilaterally vacated. The unique feature of this idol is that lotus flowers are held in three hands and the fourth hand is in a position towards the lotus feet, which signifies the doctrine of Saranagathi (surrender)."
+    },
+    {
+      "name": "Shrine dedicated to the first Jeer of Sri Ahobila Mutt",
+      "location": "Inside the main complex",
+      "significance": "Dedicated shrine inside the temple complex."
+    }
+  ],
+  "architecture": {
+    "style": "Simple and ancient Vaishnavite temple structure",
+    "highlights": [
+      {
+        "name": "Main Garbha-Griha",
+        "description": "Houses the Swayambhu Lord Balaji Venkateshwara alongside Sridevi and Bhoodevi."
+      },
+      {
+        "name": "Rajya Lakshmi Ammavaru Temple",
+        "description": "Houses the Rajya Lakshmi Ammavaru idol, installed in 1963, featuring lotus flowers held in three hands and the fourth hand towards the lotus feet."
+      }
+    ]
+  }
+}

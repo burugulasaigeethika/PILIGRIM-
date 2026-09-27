@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Silathoranam",
+    "location": "Tirumala Hilltop",
+    "distance": "1 km from main temple (near Chakra Teertham)",
+    "description": "2.5-billion-year-old natural pre-Cambrian geological rock arch formation; classified as a national geo-heritage monument."
+  },
+  {
+    "name": "Srivari Padaalu",
+    "location": "Narayanadri Peak, Tirumala",
+    "distance": "2.5 km from main temple",
+    "description": "The highest peak on Tirumala hills where Lord Venkateswara first set His divine footprints on Earth."
+  },
+  {
+    "name": "Japali Hanuman Theertham",
+    "location": "Tirumala Sacred Forest",
+    "distance": "4 km from main temple",
+    "description": "Ancient swayambhu forest temple where Sage Jabali performed penance and Lord Hanuman resides."
+  },
+  {
+    "name": "Akasa Ganga Waterfall",
+    "location": "Tirumala Hilltop",
+    "distance": "5 km north of main temple",
+    "description": "Sacred mountain waterfall providing holy water for the Lord's daily Abhishekam ritual."
+  },
+  {
+    "name": "Papavinasanam Reservoir & Theertham",
+    "location": "Tirumala Hilltop",
+    "distance": "8 km north of main temple",
+    "description": "Holy bathing waterfall and reservoir surrounded by scenic hills, believed to wash away sins."
+  },
+  {
+    "name": "Sri Venkateswara Museum (SV Museum)",
+    "location": "Tirumala Hilltop",
+    "distance": "Near main temple (opposite Supatham Entrance)",
+    "description": "Houses ancient stone sculptures, bronze idols, temple armor, musical instruments, and photo archives."
+  },
+  {
+    "name": "Chandragiri Fort & Raja Mahal",
+    "location": "Chandragiri",
+    "distance": "12 km from Tirupati / 28 km from Tirumala",
+    "description": "11th-century Vijayanagara kingdom capital palace with light and sound shows."
+  },
+  {
+    "name": "Sri Venkateswara Zoological Park",
+    "location": "Tirupati Foothills",
+    "distance": "20 km from Tirumala hilltop / 10 km from Tirupati station",
+    "description": "One of Asia's largest natural zoos spread over 5,500 acres within the Seshachalam forest biosphere."
+  },
+  {
+    "name": "Talakona Waterfalls",
+    "location": "Sri Venkateswara National Park",
+    "distance": "60 km from Tirumala hilltop",
+    "description": "Highest waterfall in Andhra Pradesh (270 ft cascade) located in dense forest with canopy rope walk ways."
+  }
+]

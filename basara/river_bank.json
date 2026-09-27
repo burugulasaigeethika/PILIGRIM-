@@ -1,0 +1,72 @@
+{
+  "river_name": "River Godavari",
+  "ghats": [
+    {
+      "name": "Basara Godavari River Bathing Ghat",
+      "description": "Sacred bathing steps along Godavari River where pilgrims take holy purification dips (Nadi Snanam) before main temple entry and Aksharabhyasam rituals."
+    }
+  ],
+  "significance": "The Godavari River at Basara is considered spiritually cleansing, with holy dips believed to erase karmic burdens. The river serves as the core site for the historic Godavari Pushkaralu festival.",
+  "mega_events": [
+    {
+      "event": "Godavari Pushkaralu (Once Every 12 Years)",
+      "significance": "Widely known as the 'Kumbh Mela of South India'. While traditionally celebrating Jupiter's transit into Simha Rasi (Leo), the upcoming 2027 cycle marks an essential multi-state pilgrimage milestone.",
+      "verified_crowd_data": "1.5 to 2 million total footfall over 12 days; daily counts reach 150,000 to 200,000 on opening (Aadhi Pushkaram) and closing (Anthya Pushkaralu) days.",
+      "safety_measures": "District Collector deploys emergency medical camps, strict river-barricading zones, and automated crowd-tracking technology."
+    }
+  ],
+  "festive_surges": [
+    {
+      "festival": "Maha Shivaratri (February/March)",
+      "river_activity": "Joint temple-and-river festival. Mandatory purification holy bath (Nadi Snanam) before main temple entry and pradakshinas.",
+      "verified_crowd_data": "15,000 to 20,000 pilgrims crowd the bathing ghat steps from pre-dawn (2:30 AM) until noon."
+    },
+    {
+      "festival": "Dasara Navaratri — Deepotsavam (September/October)",
+      "river_activity": "Floating lamp ritual (Deepotsavam / Deepa Danam) along the banks; devotees launch lit clay lamps (diyas) onto river water.",
+      "verified_crowd_data": "5,000 to 10,000 onlookers gather around 5:30 PM to 7:00 PM aligning with evening Harathi."
+    }
+  ],
+  "daily_traditions": [
+    {
+      "event": "Godavari Nitya Harathi",
+      "occurrence": "Every Evening (~6:00 PM)",
+      "typical_daily_crowd": "300 - 1,000 people (Spikes on Sundays)",
+      "operational_details": "Held at Godavari River Aarti Point. Peaceful, no ticket fee, recommended photography and cultural spot."
+    },
+    {
+      "event": "Pithru Karma (Post-Death Rituals)",
+      "occurrence": "Daily (Morning hours)",
+      "typical_daily_crowd": "100 - 300 family units",
+      "operational_details": "Performed at designated sub-section of the ghat for ash immersion similar to Kashi."
+    },
+    {
+      "event": "Pre-Aksharabhyasam Dip",
+      "occurrence": "Daily (4:30 AM - 9:00 AM)",
+      "typical_daily_crowd": "1,000 - 3,000 people",
+      "operational_details": "Parents bring young toddlers for foot splashing or a quick dip before going to the temple."
+    }
+  ],
+  "seasonal_conditions": {
+    "monsoon": {
+      "months": "July to October",
+      "water_level": "High / Overflowing",
+      "boating_status": "Active (Subject to weather)",
+      "safety_risk_level": "High (Strong currents)",
+      "advisory": "If heavy floods occur, step access to the bathing ghat may be temporarily closed by the district administration for safety."
+    },
+    "winter": {
+      "months": "November to February",
+      "water_level": "Medium / Steady",
+      "boating_status": "Active & Safe",
+      "safety_risk_level": "Low (Best for bathing)"
+    },
+    "summer": {
+      "months": "March to June",
+      "water_level": "Very Low / Near Dry",
+      "boating_status": "Mostly Suspended",
+      "safety_risk_level": "Low (Stagnant water)"
+    }
+  },
+  "safety_rules": "Because crowd densities peak to dangerous levels during Pushkaralu, emergency medical camps, strict river-barricading zones, and automated crowd-tracking technology are deployed by District Collector. Step access to bathing ghat may be temporarily closed during heavy monsoon floods for safety."
+}

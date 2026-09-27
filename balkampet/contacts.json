@@ -1,0 +1,59 @@
+{
+  "address": "Executive Officer, Sri Yellamma Pochamma Devasthanam, Balkampet Road, BK Guda, Balkampet, Hyderabad, Telangana - 500038",
+  "phones": [
+    "040-23704311"
+  ],
+  "emails": [
+    "aceo_balkampet@yahoo.co.in"
+  ],
+  "website": "https://balkampettemple.telangana.gov.in/",
+  "google_map": "https://maps.google.com/?q=Balkampet+Yellamma+Temple",
+  "google_embed_map": "",
+  "alternate_website": "",
+  "pincode": "500038",
+  "directory": {
+    "Executive Officer Address": "Sri Yellamma Pochamma Devasthanam, Balkampet Road, BK Guda, Balkampet, Hyderabad, Telangana - 500038",
+    "General Inquiries Phone": "040-23704311",
+    "Correspondence Email": "aceo_balkampet@yahoo.co.in",
+    "Official Website Discrepancy Note": "The footer and contact page of the official website (balkampettemple.telangana.gov.in) display contact details belonging to Vemulawada Temple (phone 0872-3236-018 and email eo-vemulawada@telangana.gov.in)."
+  },
+  "emergency_services": {
+    "hospitals": [
+      {
+        "name": "S. V. Hospital",
+        "type": "Private",
+        "address": "7-1-246/B/1, Road Opposite Yellamma Temple, Balkampet, Hyderabad, 500038",
+        "distance": "Located directly opposite the temple",
+        "contact_number": "040-65589530",
+        "working_hours": "24/7 Casualty"
+      },
+      {
+        "name": "ESIC Super Speciality Hospital",
+        "type": "Government",
+        "address": "ESIC Super Speciality Hospital, Essae Digitronics Road, Sanathnagar, Hyderabad, Telangana - 500018",
+        "distance": "~2.0 km",
+        "contact_number": "040-23701714",
+        "working_hours": "24/7 Emergency Wing"
+      }
+    ],
+    "ambulance_services": [
+      {
+        "name": "State Ambulance Service",
+        "contact": "108",
+        "description": "Dial 108 for immediate emergency deployment"
+      }
+    ],
+    "police_and_security": [
+      {
+        "name": "SR Nagar Police Station (Law & Order)",
+        "address": "S.R. Nagar X Roads, towards Umesh Chandra Statue, Opposite Govt. Urban Health Post, S.R. Nagar, Hyderabad, Telangana - 500038",
+        "contact_numbers": "9490616619 (SHO SR Nagar) / Dial 100 or 112 (Emergency)"
+      },
+      {
+        "name": "SR Nagar Traffic Police Station",
+        "address": "621, 7-1-254, SR Nagar Main Rd, Srinivasa Nagar, Hyderabad, 500038",
+        "contact_numbers": "040-27852506 / 8712660637"
+      }
+    ]
+  }
+}
