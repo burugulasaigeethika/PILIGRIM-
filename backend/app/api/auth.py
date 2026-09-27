@@ -1,5 +1,7 @@
 import logging
-from datetime import datetime, timezone
+import secrets
+import hashlib
+from datetime import datetime, timezone, timedelta
 from typing import Optional, Dict, Any
 from bson import ObjectId
 from fastapi import APIRouter, HTTPException, status, Depends, Query
@@ -13,7 +15,7 @@ from app.auth.jwt import (
     verify_email_token,
     get_current_user
 )
-from app.tasks.celery_app import send_verification_email
+from app.tasks.celery_app import send_verification_email, send_password_reset_email
 
 logger = logging.getLogger(__name__)
 
@@ -27,6 +29,14 @@ class RegisterRequest(BaseModel):
 class LoginRequest(BaseModel):
     email: EmailStr = Field(..., description="Registered email address")
     password: str = Field(..., description="Account password")
+
+class ForgotPasswordRequest(BaseModel):
+    email: EmailStr = Field(..., description="User registered email address")
+
+class ResetPasswordRequest(BaseModel):
+    token: str = Field(..., min_length=1, description="Password reset token")
+    new_password: str = Field(..., min_length=4, description="New secure password")
+
 
 class UserResponse(BaseModel):
     id: str
@@ -188,3 +198,119 @@ async def verify_email_endpoint(token: str = Query(..., description="Verificatio
         "message": "Email verified successfully.",
         "email": email
     }
+
+@router.post("/forgot-password")
+async def forgot_password_endpoint(request: ForgotPasswordRequest):
+    """
+    Receives email, generates single-use reset token hash with 30-min expiration,
+    dispatches reset email via Celery/RabbitMQ, and returns a generic security message.
+    """
+    users_col = get_users_collection()
+    normalized_email = request.email.strip().lower()
+    user = users_col.find_one({"email": normalized_email})
+    
+    if user:
+        raw_token = secrets.token_urlsafe(32)
+        token_hash = hashlib.sha256(raw_token.encode("utf-8")).hexdigest()
+        expires_at = datetime.now(timezone.utc) + timedelta(minutes=30)
+        
+        users_col.update_one(
+            {"_id": user["_id"]},
+            {
+                "$set": {
+                    "password_reset_token_hash": token_hash,
+                    "password_reset_expires_at": expires_at,
+                    "updated_at": datetime.now(timezone.utc)
+                }
+            }
+        )
+        
+        try:
+            send_password_reset_email.delay(
+                email=normalized_email,
+                token=raw_token,
+                user_name=user.get("name")
+            )
+            logger.info(f"[AUTH] Queued password reset email task for {normalized_email}")
+        except Exception as e:
+            logger.warning(f"[AUTH] Could not queue password reset task: {e}")
+            
+    # Always return identical generic message to prevent account enumeration
+    return {
+        "status": "success",
+        "message": "If an account exists for this email, a password reset link has been sent."
+    }
+
+@router.post("/reset-password")
+async def reset_password_endpoint(request: ResetPasswordRequest):
+    """
+    Validates single-use reset token hash, checks expiration, updates user password hash,
+    and invalidates the reset token immediately.
+    """
+    raw_token = request.token.strip()
+    if not raw_token:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Reset token is required."
+        )
+    if len(request.new_password) < 4:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Password must be at least 4 characters."
+        )
+        
+    token_hash = hashlib.sha256(raw_token.encode("utf-8")).hexdigest()
+    users_col = get_users_collection()
+    
+    user = users_col.find_one({"password_reset_token_hash": token_hash})
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Invalid or expired reset token."
+        )
+        
+    expires_at = user.get("password_reset_expires_at")
+    if not expires_at:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Invalid or expired reset token."
+        )
+        
+    # Convert to timezone-aware UTC if naive datetime from MongoDB
+    if expires_at.tzinfo is None:
+        expires_at = expires_at.replace(tzinfo=timezone.utc)
+        
+    if datetime.now(timezone.utc) > expires_at:
+        # Invalidate expired token
+        users_col.update_one(
+            {"_id": user["_id"]},
+            {"$unset": {"password_reset_token_hash": "", "password_reset_expires_at": ""}}
+        )
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Reset token has expired."
+        )
+        
+    # Hash new password
+    new_hash = hash_password(request.new_password)
+    
+    # Update password and atomically invalidate reset token
+    users_col.update_one(
+        {"_id": user["_id"]},
+        {
+            "$set": {
+                "password_hash": new_hash,
+                "updated_at": datetime.now(timezone.utc)
+            },
+            "$unset": {
+                "password_reset_token_hash": "",
+                "password_reset_expires_at": ""
+            }
+        }
+    )
+    
+    return {
+        "status": "success",
+        "message": "Password reset successfully. You can now sign in with your new password."
+    }
+

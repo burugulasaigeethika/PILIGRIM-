@@ -7,11 +7,127 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/static/style.css?v=2.4">
+    <link rel="stylesheet" href="/static/style.css?v=3.0">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-    <div class="app-layout">
+    <!-- ============================================================= -->
+    <!-- 1. Standalone Authentication Page (First Page When Unauthenticated) -->
+    <!-- ============================================================= -->
+    <div id="authPage" class="auth-page-container">
+        <div class="auth-card">
+            <!-- Brand Header -->
+            <div class="auth-brand">
+                <div class="auth-brand-logo">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                </div>
+                <h1>PILGRIMAI</h1>
+                <p class="auth-tagline">Your AI-powered pilgrimage companion</p>
+            </div>
+
+            <!-- View 1: SIGN IN (AUTH_LOGIN) -->
+            <div id="viewLogin" class="auth-view-content">
+                <h2 class="auth-heading">Sign In</h2>
+                <form id="loginForm" class="auth-form" autocomplete="on">
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" placeholder="name@example.com" required autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" placeholder="••••••••" required autocomplete="current-password">
+                    </div>
+                    <div class="form-row-link">
+                        <button type="button" id="linkToForgotPassword" class="btn-text-link">Forgot Password?</button>
+                    </div>
+                    <div id="loginError" class="auth-error-msg" style="display: none;"></div>
+                    <button type="submit" id="loginSubmitBtn" class="btn-primary-auth">Sign In</button>
+                </form>
+                <div class="auth-switch">
+                    <span>Don't have an account?</span>
+                    <button type="button" id="linkToRegister" class="btn-switch-link">Register</button>
+                </div>
+            </div>
+
+            <!-- View 2: REGISTER (AUTH_REGISTER) -->
+            <div id="viewRegister" class="auth-view-content" style="display: none;">
+                <h2 class="auth-heading">Create Account</h2>
+                <form id="registerForm" class="auth-form" autocomplete="off">
+                    <div class="form-group">
+                        <label for="regName">Full Name</label>
+                        <input type="text" id="regName" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="regEmail">Email Address</label>
+                        <input type="email" id="regEmail" placeholder="name@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="regPassword">Password</label>
+                        <input type="password" id="regPassword" minlength="4" placeholder="••••••••" required autocomplete="new-password">
+                    </div>
+                    <div class="form-group">
+                        <label for="regPasswordConfirm">Confirm Password</label>
+                        <input type="password" id="regPasswordConfirm" minlength="4" placeholder="••••••••" required autocomplete="new-password">
+                    </div>
+                    <div id="registerError" class="auth-error-msg" style="display: none;"></div>
+                    <div id="registerSuccess" class="auth-success-msg" style="display: none;"></div>
+                    <button type="submit" id="registerSubmitBtn" class="btn-primary-auth">Create Account</button>
+                </form>
+                <div class="auth-switch">
+                    <span>Already have an account?</span>
+                    <button type="button" id="linkToLoginFromReg" class="btn-switch-link">Sign In</button>
+                </div>
+            </div>
+
+            <!-- View 3: FORGOT PASSWORD (AUTH_FORGOT_PASSWORD) -->
+            <div id="viewForgotPassword" class="auth-view-content" style="display: none;">
+                <h2 class="auth-heading">Forgot Password</h2>
+                <p class="auth-subtext">Enter the email address associated with your account to receive a secure reset link.</p>
+                <form id="forgotPasswordForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="forgotEmail">Email Address</label>
+                        <input type="email" id="forgotEmail" placeholder="name@example.com" required>
+                    </div>
+                    <div id="forgotError" class="auth-error-msg" style="display: none;"></div>
+                    <div id="forgotSuccess" class="auth-success-msg" style="display: none;"></div>
+                    <button type="submit" id="forgotSubmitBtn" class="btn-primary-auth">Send Reset Link</button>
+                </form>
+                <div class="auth-switch">
+                    <button type="button" id="linkToLoginFromForgot" class="btn-switch-link">← Back to Sign In</button>
+                </div>
+            </div>
+
+            <!-- View 4: RESET PASSWORD (AUTH_RESET_PASSWORD) -->
+            <div id="viewResetPassword" class="auth-view-content" style="display: none;">
+                <h2 class="auth-heading">Reset Password</h2>
+                <p class="auth-subtext">Enter your new account password below.</p>
+                <form id="resetPasswordForm" class="auth-form">
+                    <input type="hidden" id="resetTokenValue">
+                    <div class="form-group">
+                        <label for="resetPasswordInput">New Password</label>
+                        <input type="password" id="resetPasswordInput" minlength="4" placeholder="••••••••" required autocomplete="new-password">
+                    </div>
+                    <div class="form-group">
+                        <label for="resetPasswordConfirmInput">Confirm New Password</label>
+                        <input type="password" id="resetPasswordConfirmInput" minlength="4" placeholder="••••••••" required autocomplete="new-password">
+                    </div>
+                    <div id="resetError" class="auth-error-msg" style="display: none;"></div>
+                    <div id="resetSuccess" class="auth-success-msg" style="display: none;"></div>
+                    <button type="submit" id="resetSubmitBtn" class="btn-primary-auth">Reset Password</button>
+                </form>
+                <div class="auth-switch">
+                    <button type="button" id="linkToLoginFromReset" class="btn-switch-link">Back to Sign In</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================= -->
+    <!-- 2. Main Authenticated PilgrimAI Application -->
+    <!-- ============================================================= -->
+    <div id="appLayout" class="app-layout" style="display: none;">
         <!-- Left Sidebar -->
         <aside class="sidebar">
             <div class="brand-header">
@@ -90,18 +206,16 @@
                         <span>Map & Places</span>
                     </button>
 
-                    <!-- Auth Controls -->
-                    <div class="auth-controls" id="authControls">
-                        <button id="authLoginBtn" class="btn-auth-login" title="Login or Register">
-                            <i data-lucide="user" style="width: 14px; height: 14px;"></i>
-                            <span id="authBtnLabel">Sign In</span>
-                        </button>
-                        <div id="userProfileBadge" class="user-profile-badge" style="display: none;">
-                            <span id="userNameDisplay" class="user-name-text">Pilgrim</span>
-                            <button id="authLogoutBtn" class="btn-auth-logout" title="Log Out">
-                                <i data-lucide="log-out" style="width: 13px; height: 13px;"></i>
-                            </button>
+                    <!-- Authenticated User Control -->
+                    <div class="user-account-menu" id="userAccountMenu">
+                        <div class="user-pill" id="userPill">
+                            <i data-lucide="user-check" style="width: 14px; height: 14px; color: var(--accent-gold);"></i>
+                            <span id="headerUserName">Pilgrim</span>
                         </div>
+                        <button type="button" id="logoutBtn" class="btn-auth-logout" title="Sign Out">
+                            <i data-lucide="log-out" style="width: 13px; height: 13px;"></i>
+                            <span>Sign Out</span>
+                        </button>
                     </div>
                 </div>
             </header>
@@ -142,24 +256,31 @@
                     <input type="text" id="userQuery" placeholder="Ask about timings, navigation routes, weather, or sevas..." autocomplete="off" required>
                     <button type="submit" id="submitBtn" class="btn-send">
                         <span>Ask AI</span>
-                        <i data-lucide="send" style="width: 16px; height: 16px;"></i>
+                        <i data-lucide="send" style="width: 15px; height: 15px;"></i>
                     </button>
                 </form>
+                <div class="chat-footer-info">
+                    <span>⚡ 100% Local RAG + Live Multi-Agent Architecture</span>
+                    <span>•</span>
+                    <span>Offline-First Vector & Keyword Grounding</span>
+                </div>
             </div>
         </main>
 
-        <!-- Right: Interactive Google Map & Places Side Panel -->
-        <aside class="map-panel" id="mapPanel">
-            <header class="map-panel-header">
-                <h2>
-                    <i data-lucide="map" style="width: 17px; height: 17px; color: var(--accent-gold);"></i>
-                    <span>Pilgrimage Map & Places</span>
-                </h2>
+        <!-- Right Side: Google Maps & Places Panel -->
+        <aside class="map-panel collapsed" id="mapPanel">
+            <div class="map-panel-header">
                 <div class="map-panel-tabs">
-                    <button class="map-tab-btn active" id="tabMapBtn">Map</button>
-                    <button class="map-tab-btn" id="tabPlacesBtn">Nearby Places</button>
+                    <button class="map-tab-btn active" id="tabMapBtn">
+                        <i data-lucide="map" style="width: 14px; height: 14px;"></i>
+                        <span>Interactive Map</span>
+                    </button>
+                    <button class="map-tab-btn" id="tabPlacesBtn">
+                        <i data-lucide="compass" style="width: 14px; height: 14px;"></i>
+                        <span>Nearby Places</span>
+                    </button>
                 </div>
-            </header>
+            </div>
 
             <!-- Map View Container -->
             <div class="map-container-wrapper">
@@ -190,53 +311,7 @@
         </aside>
     </div>
 
-    <!-- Auth Modal Dialog -->
-    <div id="authModal" class="auth-modal-backdrop" style="display: none;">
-        <div class="auth-modal-card">
-            <div class="auth-modal-header">
-                <h3 id="authModalTitle">Sign In to PilgrimAI</h3>
-                <button type="button" id="closeAuthModal" class="btn-close-modal">&times;</button>
-            </div>
-            <div class="auth-modal-tabs">
-                <button type="button" id="tabLogin" class="auth-tab active">Login</button>
-                <button type="button" id="tabRegister" class="auth-tab">Register</button>
-            </div>
-            <!-- Login Form -->
-            <form id="loginForm" class="auth-form">
-                <div class="form-group">
-                    <label for="loginEmail">Email Address</label>
-                    <input type="email" id="loginEmail" required placeholder="pilgrim@example.com">
-                </div>
-                <div class="form-group">
-                    <label for="loginPassword">Password</label>
-                    <input type="password" id="loginPassword" required placeholder="••••••••">
-                </div>
-                <div id="loginError" class="auth-error-msg" style="display: none;"></div>
-                <button type="submit" id="loginSubmitBtn" class="btn-auth-submit">Sign In</button>
-            </form>
-            <!-- Register Form -->
-            <form id="registerForm" class="auth-form" style="display: none;">
-                <div class="form-group">
-                    <label for="regName">Full Name</label>
-                    <input type="text" id="regName" required placeholder="Your Name">
-                </div>
-                <div class="form-group">
-                    <label for="regEmail">Email Address</label>
-                    <input type="email" id="regEmail" required placeholder="pilgrim@example.com">
-                </div>
-                <div class="form-group">
-                    <label for="regPassword">Password (Min 4 chars)</label>
-                    <input type="password" id="regPassword" minlength="4" required placeholder="••••••••">
-                </div>
-                <div id="registerError" class="auth-error-msg" style="display: none;"></div>
-                <div id="registerSuccess" class="auth-success-msg" style="display: none;"></div>
-                <button type="submit" id="registerSubmitBtn" class="btn-auth-submit">Create Account</button>
-            </form>
-        </div>
-    </div>
-
     <!-- Application Script -->
-    <script src="/static/app.js?v=3.2"></script>
+    <script src="/static/app.js?v=4.0"></script>
 </body>
 </html>
-

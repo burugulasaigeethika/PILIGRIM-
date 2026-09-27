@@ -1957,100 +1957,102 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // -------------------------------------------------------------
-    // Auth UI Controller (Login / Register / Profile / Logout)
+    // Full Page Authentication State & View Controller
     // -------------------------------------------------------------
-    const authLoginBtn = document.getElementById("authLoginBtn");
-    const userProfileBadge = document.getElementById("userProfileBadge");
-    const userNameDisplay = document.getElementById("userNameDisplay");
-    const authLogoutBtn = document.getElementById("authLogoutBtn");
-    const authModal = document.getElementById("authModal");
-    const closeAuthModal = document.getElementById("closeAuthModal");
-    const tabLogin = document.getElementById("tabLogin");
-    const tabRegister = document.getElementById("tabRegister");
+    const authPage = document.getElementById("authPage");
+    const appLayout = document.getElementById("appLayout");
+    const headerUserName = document.getElementById("headerUserName");
+    const logoutBtn = document.getElementById("logoutBtn");
+
+    // Views
+    const viewLogin = document.getElementById("viewLogin");
+    const viewRegister = document.getElementById("viewRegister");
+    const viewForgotPassword = document.getElementById("viewForgotPassword");
+    const viewResetPassword = document.getElementById("viewResetPassword");
+
+    // Navigation Switch Links
+    const linkToRegister = document.getElementById("linkToRegister");
+    const linkToLoginFromReg = document.getElementById("linkToLoginFromReg");
+    const linkToForgotPassword = document.getElementById("linkToForgotPassword");
+    const linkToLoginFromForgot = document.getElementById("linkToLoginFromForgot");
+    const linkToLoginFromReset = document.getElementById("linkToLoginFromReset");
+
+    // Forms
     const loginForm = document.getElementById("loginForm");
     const registerForm = document.getElementById("registerForm");
-    const authModalTitle = document.getElementById("authModalTitle");
+    const forgotPasswordForm = document.getElementById("forgotPasswordForm");
+    const resetPasswordForm = document.getElementById("resetPasswordForm");
+
+    // Message Elements
     const loginError = document.getElementById("loginError");
     const registerError = document.getElementById("registerError");
     const registerSuccess = document.getElementById("registerSuccess");
+    const forgotError = document.getElementById("forgotError");
+    const forgotSuccess = document.getElementById("forgotSuccess");
+    const resetError = document.getElementById("resetError");
+    const resetSuccess = document.getElementById("resetSuccess");
+    const resetTokenValue = document.getElementById("resetTokenValue");
 
-    async function checkAuthStatus() {
-        const token = localStorage.getItem("pilgrim_jwt");
-        if (!token) {
-            if (authLoginBtn) authLoginBtn.style.display = "flex";
-            if (userProfileBadge) userProfileBadge.style.display = "none";
+    function clearAuthMessages() {
+        if (loginError) loginError.style.display = "none";
+        if (registerError) registerError.style.display = "none";
+        if (registerSuccess) registerSuccess.style.display = "none";
+        if (forgotError) forgotError.style.display = "none";
+        if (forgotSuccess) forgotSuccess.style.display = "none";
+        if (resetError) resetError.style.display = "none";
+        if (resetSuccess) resetSuccess.style.display = "none";
+    }
+
+    function switchAuthView(viewName) {
+        clearAuthMessages();
+        if (viewName === "AUTHENTICATED_APP") {
+            if (authPage) authPage.style.display = "none";
+            if (appLayout) appLayout.style.display = "flex";
+            if (window.lucide) lucide.createIcons();
+            if (googleMap) google.maps.event.trigger(googleMap, "resize");
             return;
         }
 
-        try {
-            const res = await fetch("/api/auth/me", {
-                headers: { "Authorization": `Bearer ${token}` }
-            });
-            if (res.ok) {
-                const user = await res.json();
-                if (authLoginBtn) authLoginBtn.style.display = "none";
-                if (userProfileBadge) {
-                    userProfileBadge.style.display = "flex";
-                    if (userNameDisplay) userNameDisplay.textContent = user.name || user.email;
-                }
-            } else {
-                localStorage.removeItem("pilgrim_jwt");
-                if (authLoginBtn) authLoginBtn.style.display = "flex";
-                if (userProfileBadge) userProfileBadge.style.display = "none";
-            }
-        } catch (e) {
-            console.warn("Auth check failed:", e);
-        }
+        // Show Auth Page, hide main application
+        if (authPage) authPage.style.display = "flex";
+        if (appLayout) appLayout.style.display = "none";
+
+        if (viewLogin) viewLogin.style.display = (viewName === "AUTH_LOGIN") ? "block" : "none";
+        if (viewRegister) viewRegister.style.display = (viewName === "AUTH_REGISTER") ? "block" : "none";
+        if (viewForgotPassword) viewForgotPassword.style.display = (viewName === "AUTH_FORGOT_PASSWORD") ? "block" : "none";
+        if (viewResetPassword) viewResetPassword.style.display = (viewName === "AUTH_RESET_PASSWORD") ? "block" : "none";
+
+        if (window.lucide) lucide.createIcons();
     }
 
-    if (authLoginBtn) {
-        authLoginBtn.addEventListener("click", () => {
-            if (authModal) authModal.style.display = "flex";
+    // Link Click Event Listeners
+    if (linkToRegister) {
+        linkToRegister.addEventListener("click", () => switchAuthView("AUTH_REGISTER"));
+    }
+    if (linkToLoginFromReg) {
+        linkToLoginFromReg.addEventListener("click", () => switchAuthView("AUTH_LOGIN"));
+    }
+    if (linkToForgotPassword) {
+        linkToForgotPassword.addEventListener("click", () => switchAuthView("AUTH_FORGOT_PASSWORD"));
+    }
+    if (linkToLoginFromForgot) {
+        linkToLoginFromForgot.addEventListener("click", () => switchAuthView("AUTH_LOGIN"));
+    }
+    if (linkToLoginFromReset) {
+        linkToLoginFromReset.addEventListener("click", () => {
+            // Remove reset_token query parameter from address bar
+            window.history.replaceState({}, document.title, window.location.pathname);
+            switchAuthView("AUTH_LOGIN");
         });
     }
 
-    if (closeAuthModal) {
-        closeAuthModal.addEventListener("click", () => {
-            if (authModal) authModal.style.display = "none";
-        });
-    }
-
-    if (authLogoutBtn) {
-        authLogoutBtn.addEventListener("click", () => {
-            localStorage.removeItem("pilgrim_jwt");
-            checkAuthStatus();
-        });
-    }
-
-    if (tabLogin) {
-        tabLogin.addEventListener("click", () => {
-            tabLogin.classList.add("active");
-            tabRegister.classList.remove("active");
-            loginForm.style.display = "flex";
-            registerForm.style.display = "none";
-            if (authModalTitle) authModalTitle.textContent = "Sign In to PilgrimAI";
-            if (loginError) loginError.style.display = "none";
-        });
-    }
-
-    if (tabRegister) {
-        tabRegister.addEventListener("click", () => {
-            tabRegister.classList.add("active");
-            tabLogin.classList.remove("active");
-            registerForm.style.display = "flex";
-            loginForm.style.display = "none";
-            if (authModalTitle) authModalTitle.textContent = "Create an Account";
-            if (registerError) registerError.style.display = "none";
-            if (registerSuccess) registerSuccess.style.display = "none";
-        });
-    }
-
+    // 1. Login Form Submit
     if (loginForm) {
         loginForm.addEventListener("submit", async (e) => {
             e.preventDefault();
+            clearAuthMessages();
             const email = document.getElementById("loginEmail").value.trim();
             const password = document.getElementById("loginPassword").value;
-            if (loginError) loginError.style.display = "none";
 
             try {
                 const res = await fetch("/api/auth/login", {
@@ -2061,31 +2063,42 @@ document.addEventListener("DOMContentLoaded", () => {
                 const data = await res.json();
                 if (!res.ok) {
                     if (loginError) {
-                        loginError.textContent = data.detail || "Invalid login credentials";
+                        loginError.textContent = data.detail || "Invalid email or password.";
                         loginError.style.display = "block";
                     }
                     return;
                 }
                 localStorage.setItem("pilgrim_jwt", data.access_token);
-                if (authModal) authModal.style.display = "none";
-                checkAuthStatus();
+                if (headerUserName) {
+                    headerUserName.textContent = data.user ? (data.user.name || data.user.email) : "Pilgrim";
+                }
+                switchAuthView("AUTHENTICATED_APP");
             } catch (err) {
                 if (loginError) {
-                    loginError.textContent = "Connection error. Please try again.";
+                    loginError.textContent = "Unable to connect to server. Please try again.";
                     loginError.style.display = "block";
                 }
             }
         });
     }
 
+    // 2. Register Form Submit
     if (registerForm) {
         registerForm.addEventListener("submit", async (e) => {
             e.preventDefault();
+            clearAuthMessages();
             const name = document.getElementById("regName").value.trim();
             const email = document.getElementById("regEmail").value.trim();
             const password = document.getElementById("regPassword").value;
-            if (registerError) registerError.style.display = "none";
-            if (registerSuccess) registerSuccess.style.display = "none";
+            const confirmPassword = document.getElementById("regPasswordConfirm").value;
+
+            if (password !== confirmPassword) {
+                if (registerError) {
+                    registerError.textContent = "Passwords do not match.";
+                    registerError.style.display = "block";
+                }
+                return;
+            }
 
             try {
                 const res = await fetch("/api/auth/register", {
@@ -2096,31 +2109,155 @@ document.addEventListener("DOMContentLoaded", () => {
                 const data = await res.json();
                 if (!res.ok) {
                     if (registerError) {
-                        registerError.textContent = data.detail || "Registration failed";
+                        registerError.textContent = data.detail || "Registration failed.";
                         registerError.style.display = "block";
                     }
                     return;
                 }
                 if (registerSuccess) {
-                    registerSuccess.textContent = "Registration successful! You can now log in.";
+                    registerSuccess.textContent = "Registration successful! A verification email has been sent. Redirecting to login...";
                     registerSuccess.style.display = "block";
                 }
                 setTimeout(() => {
-                    tabLogin.click();
-                }, 1500);
+                    switchAuthView("AUTH_LOGIN");
+                    const loginEmailInput = document.getElementById("loginEmail");
+                    if (loginEmailInput) loginEmailInput.value = email;
+                }, 2000);
             } catch (err) {
                 if (registerError) {
-                    registerError.textContent = "Connection error. Please try again.";
+                    registerError.textContent = "Unable to connect to server. Please try again.";
                     registerError.style.display = "block";
                 }
             }
         });
     }
 
-    // Check initial auth on page load
-    checkAuthStatus();
+    // 3. Forgot Password Form Submit
+    if (forgotPasswordForm) {
+        forgotPasswordForm.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            clearAuthMessages();
+            const email = document.getElementById("forgotEmail").value.trim();
+
+            try {
+                const res = await fetch("/api/auth/forgot-password", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ email })
+                });
+                const data = await res.json();
+                if (forgotSuccess) {
+                    forgotSuccess.textContent = data.message || "If an account exists for this email, a password reset link has been sent.";
+                    forgotSuccess.style.display = "block";
+                }
+            } catch (err) {
+                if (forgotError) {
+                    forgotError.textContent = "Unable to connect to server. Please try again.";
+                    forgotError.style.display = "block";
+                }
+            }
+        });
+    }
+
+    // 4. Reset Password Form Submit
+    if (resetPasswordForm) {
+        resetPasswordForm.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            clearAuthMessages();
+            const token = resetTokenValue ? resetTokenValue.value : "";
+            const new_password = document.getElementById("resetPasswordInput").value;
+            const confirm_password = document.getElementById("resetPasswordConfirmInput").value;
+
+            if (new_password !== confirm_password) {
+                if (resetError) {
+                    resetError.textContent = "New passwords do not match.";
+                    resetError.style.display = "block";
+                }
+                return;
+            }
+
+            try {
+                const res = await fetch("/api/auth/reset-password", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ token, new_password })
+                });
+                const data = await res.json();
+                if (!res.ok) {
+                    if (resetError) {
+                        resetError.textContent = data.detail || "Failed to reset password.";
+                        resetError.style.display = "block";
+                    }
+                    return;
+                }
+                if (resetSuccess) {
+                    resetSuccess.textContent = "Password reset successfully! Redirecting to sign in...";
+                    resetSuccess.style.display = "block";
+                }
+                setTimeout(() => {
+                    window.history.replaceState({}, document.title, window.location.pathname);
+                    switchAuthView("AUTH_LOGIN");
+                }, 2000);
+            } catch (err) {
+                if (resetError) {
+                    resetError.textContent = "Unable to connect to server. Please try again.";
+                    resetError.style.display = "block";
+                }
+            }
+        });
+    }
+
+    // 5. Logout
+    if (logoutBtn) {
+        logoutBtn.addEventListener("click", () => {
+            localStorage.removeItem("pilgrim_jwt");
+            createFreshSession();
+            switchAuthView("AUTH_LOGIN");
+        });
+    }
+
+    // 6. Startup Authentication / URL Token Check
+    async function initAuthFlow() {
+        // Check for URL query parameter ?reset_token=...
+        const urlParams = new URLSearchParams(window.location.search);
+        const resetToken = urlParams.get("reset_token");
+        if (resetToken) {
+            if (resetTokenValue) resetTokenValue.value = resetToken;
+            switchAuthView("AUTH_RESET_PASSWORD");
+            return;
+        }
+
+        const token = localStorage.getItem("pilgrim_jwt");
+        if (!token) {
+            switchAuthView("AUTH_LOGIN");
+            return;
+        }
+
+        try {
+            const res = await fetch("/api/auth/me", {
+                headers: { "Authorization": `Bearer ${token}` }
+            });
+            if (res.ok) {
+                const user = await res.json();
+                if (headerUserName) {
+                    headerUserName.textContent = user.name || user.email;
+                }
+                switchAuthView("AUTHENTICATED_APP");
+            } else {
+                localStorage.removeItem("pilgrim_jwt");
+                switchAuthView("AUTH_LOGIN");
+            }
+        } catch (e) {
+            console.warn("Auth startup verification error:", e);
+            switchAuthView("AUTH_LOGIN");
+        }
+    }
+
+    // Run startup authentication check
+    initAuthFlow();
 
     // Initialize Maps
     initGoogleMaps();
 });
+
 

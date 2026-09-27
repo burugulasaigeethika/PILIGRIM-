@@ -84,3 +84,61 @@ def send_verification_email(self, email: str, token: str, user_name: Optional[st
             "error": str(e),
             "email": email
         }
+
+@celery_app.task(name="app.tasks.send_password_reset_email", bind=True)
+def send_password_reset_email(self, email: str, token: str, user_name: Optional[str] = None) -> Dict[str, Any]:
+    """
+    Background task to send a password reset link via Celery & RabbitMQ.
+    If SMTP credentials are provided, attempts real SMTP dispatch to Gmail.
+    If not provided, logs safely without exposing the raw token.
+    """
+    logger.info(f"[CELERY TASK] Received send_password_reset_email for email: {email}")
+    
+    recipient_name = user_name or "Pilgrim"
+    reset_url = f"http://localhost:8000/?reset_token={token}"
+    
+    # Check if SMTP is configured
+    if not settings.SMTP_HOST or not settings.SMTP_USERNAME:
+        logger.info(f"[CELERY RESET TASK] SMTP not configured. Skipped dispatch for {email}")
+        return {
+            "status": "skipped",
+            "reason": "SMTP_HOST or SMTP_USERNAME not configured",
+            "email": email
+        }
+    
+    # Attempt real SMTP transmission
+    try:
+        msg = MIMEMultipart("alternative")
+        msg["Subject"] = "Reset Your PilgrimAI Password"
+        msg["From"] = settings.SMTP_FROM_EMAIL
+        msg["To"] = email
+        
+        text_content = (
+            f"Hello {recipient_name},\n\n"
+            f"We received a request to reset your PilgrimAI account password.\n"
+            f"Click the link below to set a new password (valid for 30 minutes):\n\n"
+            f"{reset_url}\n\n"
+            f"If you did not request a password reset, you can safely ignore this email.\n\n"
+            f"— The PilgrimAI Team\n"
+        )
+        msg.attach(MIMEText(text_content, "plain"))
+        
+        with smtplib.SMTP(settings.SMTP_HOST, settings.SMTP_PORT) as server:
+            server.starttls()
+            if settings.SMTP_PASSWORD:
+                server.login(settings.SMTP_USERNAME, settings.SMTP_PASSWORD)
+            server.sendmail(settings.SMTP_FROM_EMAIL, email, msg.as_string())
+            
+        logger.info(f"[CELERY RESET TASK] Password reset email dispatched successfully to {email}")
+        return {
+            "status": "delivered",
+            "email": email
+        }
+    except Exception as e:
+        logger.error(f"[CELERY RESET TASK] Failed to send password reset email to {email}: {e}")
+        return {
+            "status": "failed",
+            "error": str(e),
+            "email": email
+        }
+
