@@ -16,6 +16,7 @@ load_dotenv()
 
 from app.api.chat import router as chat_router
 from app.api.maps import router as maps_router
+from app.api.auth import router as auth_router
 
 app = FastAPI(
     title="PilgrimAI Local Offline RAG API",
@@ -50,6 +51,8 @@ app.add_middleware(
 # Include Routers
 app.include_router(chat_router)
 app.include_router(maps_router)
+app.include_router(auth_router)
+
 
 # Mount Static Web Assets
 static_dir = Path(__file__).resolve().parent / "static"

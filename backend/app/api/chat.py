@@ -1,7 +1,7 @@
 import logging
 import uuid
 from typing import List, Optional, Dict, Any, TYPE_CHECKING
-from fastapi import APIRouter, HTTPException, status
+from fastapi import APIRouter, HTTPException, status, Depends
 from pydantic import BaseModel, Field
 
 if TYPE_CHECKING:
@@ -109,11 +109,17 @@ def set_coordinator(coordinator: Optional[Any]) -> None:
     global _coordinator_instance
     _coordinator_instance = coordinator
 
+from app.auth.jwt import get_optional_current_user
+
 @router.post("/chat", response_model=ChatResponse)
-async def chat_endpoint(request: ChatRequest):
+async def chat_endpoint(
+    request: ChatRequest,
+    current_user: Optional[Dict[str, Any]] = Depends(get_optional_current_user)
+):
     """
     POST /chat endpoint to receive user questions and return AI answers
     routed through the MasterAgentCoordinator multi-agent architecture.
+    Optionally associates authenticated user without modifying RAG or response contracts.
     """
     cleaned_question = request.question.strip()
     if not cleaned_question:
@@ -121,6 +127,10 @@ async def chat_endpoint(request: ChatRequest):
             status_code=status.HTTP_400_BAD_REQUEST,
             detail="Question field cannot be empty."
         )
+
+    user_info_str = f" [User: {current_user.get('email')}]" if current_user else " [Anonymous]"
+    logger.info(f"[CHAT ENDPOINT]{user_info_str} Received question: {cleaned_question[:80]}")
+
 
     session_id = request.session_id.strip() if request.session_id and request.session_id.strip() else str(uuid.uuid4())
 

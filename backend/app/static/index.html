@@ -89,6 +89,20 @@
                         <i data-lucide="map-pin" style="width: 14px; height: 14px;"></i>
                         <span>Map & Places</span>
                     </button>
+
+                    <!-- Auth Controls -->
+                    <div class="auth-controls" id="authControls">
+                        <button id="authLoginBtn" class="btn-auth-login" title="Login or Register">
+                            <i data-lucide="user" style="width: 14px; height: 14px;"></i>
+                            <span id="authBtnLabel">Sign In</span>
+                        </button>
+                        <div id="userProfileBadge" class="user-profile-badge" style="display: none;">
+                            <span id="userNameDisplay" class="user-name-text">Pilgrim</span>
+                            <button id="authLogoutBtn" class="btn-auth-logout" title="Log Out">
+                                <i data-lucide="log-out" style="width: 13px; height: 13px;"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </header>
 
@@ -176,7 +190,53 @@
         </aside>
     </div>
 
+    <!-- Auth Modal Dialog -->
+    <div id="authModal" class="auth-modal-backdrop" style="display: none;">
+        <div class="auth-modal-card">
+            <div class="auth-modal-header">
+                <h3 id="authModalTitle">Sign In to PilgrimAI</h3>
+                <button type="button" id="closeAuthModal" class="btn-close-modal">&times;</button>
+            </div>
+            <div class="auth-modal-tabs">
+                <button type="button" id="tabLogin" class="auth-tab active">Login</button>
+                <button type="button" id="tabRegister" class="auth-tab">Register</button>
+            </div>
+            <!-- Login Form -->
+            <form id="loginForm" class="auth-form">
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <input type="email" id="loginEmail" required placeholder="pilgrim@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required placeholder="••••••••">
+                </div>
+                <div id="loginError" class="auth-error-msg" style="display: none;"></div>
+                <button type="submit" id="loginSubmitBtn" class="btn-auth-submit">Sign In</button>
+            </form>
+            <!-- Register Form -->
+            <form id="registerForm" class="auth-form" style="display: none;">
+                <div class="form-group">
+                    <label for="regName">Full Name</label>
+                    <input type="text" id="regName" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="regEmail">Email Address</label>
+                    <input type="email" id="regEmail" required placeholder="pilgrim@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="regPassword">Password (Min 4 chars)</label>
+                    <input type="password" id="regPassword" minlength="4" required placeholder="••••••••">
+                </div>
+                <div id="registerError" class="auth-error-msg" style="display: none;"></div>
+                <div id="registerSuccess" class="auth-success-msg" style="display: none;"></div>
+                <button type="submit" id="registerSubmitBtn" class="btn-auth-submit">Create Account</button>
+            </form>
+        </div>
+    </div>
+
     <!-- Application Script -->
-    <script src="/static/app.js?v=3.1"></script>
+    <script src="/static/app.js?v=3.2"></script>
 </body>
 </html>
+

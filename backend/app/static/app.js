@@ -226,9 +226,15 @@ document.addEventListener("DOMContentLoaded", () => {
         const loadingId = appendLoadingBubble();
 
         try {
+            const chatHeaders = { "Content-Type": "application/json" };
+            const storedJwt = localStorage.getItem("pilgrim_jwt");
+            if (storedJwt) {
+                chatHeaders["Authorization"] = `Bearer ${storedJwt}`;
+            }
+
             const res = await fetch("/chat", {
                 method: "POST",
-                headers: { "Content-Type": "application/json" },
+                headers: chatHeaders,
                 body: JSON.stringify({
                     question: question,
                     session_id: currentSessionId
@@ -1950,6 +1956,171 @@ document.addEventListener("DOMContentLoaded", () => {
         return html;
     }
 
+    // -------------------------------------------------------------
+    // Auth UI Controller (Login / Register / Profile / Logout)
+    // -------------------------------------------------------------
+    const authLoginBtn = document.getElementById("authLoginBtn");
+    const userProfileBadge = document.getElementById("userProfileBadge");
+    const userNameDisplay = document.getElementById("userNameDisplay");
+    const authLogoutBtn = document.getElementById("authLogoutBtn");
+    const authModal = document.getElementById("authModal");
+    const closeAuthModal = document.getElementById("closeAuthModal");
+    const tabLogin = document.getElementById("tabLogin");
+    const tabRegister = document.getElementById("tabRegister");
+    const loginForm = document.getElementById("loginForm");
+    const registerForm = document.getElementById("registerForm");
+    const authModalTitle = document.getElementById("authModalTitle");
+    const loginError = document.getElementById("loginError");
+    const registerError = document.getElementById("registerError");
+    const registerSuccess = document.getElementById("registerSuccess");
+
+    async function checkAuthStatus() {
+        const token = localStorage.getItem("pilgrim_jwt");
+        if (!token) {
+            if (authLoginBtn) authLoginBtn.style.display = "flex";
+            if (userProfileBadge) userProfileBadge.style.display = "none";
+            return;
+        }
+
+        try {
+            const res = await fetch("/api/auth/me", {
+                headers: { "Authorization": `Bearer ${token}` }
+            });
+            if (res.ok) {
+                const user = await res.json();
+                if (authLoginBtn) authLoginBtn.style.display = "none";
+                if (userProfileBadge) {
+                    userProfileBadge.style.display = "flex";
+                    if (userNameDisplay) userNameDisplay.textContent = user.name || user.email;
+                }
+            } else {
+                localStorage.removeItem("pilgrim_jwt");
+                if (authLoginBtn) authLoginBtn.style.display = "flex";
+                if (userProfileBadge) userProfileBadge.style.display = "none";
+            }
+        } catch (e) {
+            console.warn("Auth check failed:", e);
+        }
+    }
+
+    if (authLoginBtn) {
+        authLoginBtn.addEventListener("click", () => {
+            if (authModal) authModal.style.display = "flex";
+        });
+    }
+
+    if (closeAuthModal) {
+        closeAuthModal.addEventListener("click", () => {
+            if (authModal) authModal.style.display = "none";
+        });
+    }
+
+    if (authLogoutBtn) {
+        authLogoutBtn.addEventListener("click", () => {
+            localStorage.removeItem("pilgrim_jwt");
+            checkAuthStatus();
+        });
+    }
+
+    if (tabLogin) {
+        tabLogin.addEventListener("click", () => {
+            tabLogin.classList.add("active");
+            tabRegister.classList.remove("active");
+            loginForm.style.display = "flex";
+            registerForm.style.display = "none";
+            if (authModalTitle) authModalTitle.textContent = "Sign In to PilgrimAI";
+            if (loginError) loginError.style.display = "none";
+        });
+    }
+
+    if (tabRegister) {
+        tabRegister.addEventListener("click", () => {
+            tabRegister.classList.add("active");
+            tabLogin.classList.remove("active");
+            registerForm.style.display = "flex";
+            loginForm.style.display = "none";
+            if (authModalTitle) authModalTitle.textContent = "Create an Account";
+            if (registerError) registerError.style.display = "none";
+            if (registerSuccess) registerSuccess.style.display = "none";
+        });
+    }
+
+    if (loginForm) {
+        loginForm.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const email = document.getElementById("loginEmail").value.trim();
+            const password = document.getElementById("loginPassword").value;
+            if (loginError) loginError.style.display = "none";
+
+            try {
+                const res = await fetch("/api/auth/login", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ email, password })
+                });
+                const data = await res.json();
+                if (!res.ok) {
+                    if (loginError) {
+                        loginError.textContent = data.detail || "Invalid login credentials";
+                        loginError.style.display = "block";
+                    }
+                    return;
+                }
+                localStorage.setItem("pilgrim_jwt", data.access_token);
+                if (authModal) authModal.style.display = "none";
+                checkAuthStatus();
+            } catch (err) {
+                if (loginError) {
+                    loginError.textContent = "Connection error. Please try again.";
+                    loginError.style.display = "block";
+                }
+            }
+        });
+    }
+
+    if (registerForm) {
+        registerForm.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const name = document.getElementById("regName").value.trim();
+            const email = document.getElementById("regEmail").value.trim();
+            const password = document.getElementById("regPassword").value;
+            if (registerError) registerError.style.display = "none";
+            if (registerSuccess) registerSuccess.style.display = "none";
+
+            try {
+                const res = await fetch("/api/auth/register", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ name, email, password })
+                });
+                const data = await res.json();
+                if (!res.ok) {
+                    if (registerError) {
+                        registerError.textContent = data.detail || "Registration failed";
+                        registerError.style.display = "block";
+                    }
+                    return;
+                }
+                if (registerSuccess) {
+                    registerSuccess.textContent = "Registration successful! You can now log in.";
+                    registerSuccess.style.display = "block";
+                }
+                setTimeout(() => {
+                    tabLogin.click();
+                }, 1500);
+            } catch (err) {
+                if (registerError) {
+                    registerError.textContent = "Connection error. Please try again.";
+                    registerError.style.display = "block";
+                }
+            }
+        });
+    }
+
+    // Check initial auth on page load
+    checkAuthStatus();
+
     // Initialize Maps
     initGoogleMaps();
 });
+
