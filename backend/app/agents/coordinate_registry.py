@@ -42,7 +42,13 @@ _CANONICAL_TEMPLE_ALIASES: Dict[str, List[str]] = {
     "Srisaila": ["srisaila", "srisailam", "mallikarjuna", "bhramaramba", "srisailam temple"],
     "Thousand Pillar": ["thousand pillar", "thousand pillars", "rudreswara thousand", "thousand pillar temple"],
     "Ttd": ["ttd", "tirumala", "tirupati", "venkateswara ttd", "lord venkateswara", "tirumala venkateswara"],
-    "Ujjaini": ["ujjaini", "ujjaini mahakali", "mahakali secunderabad", "secunderabad mahakali", "sri ujjaini mahakali"],
+    "Ujjaini": [
+        "ujjaini", "ujjaini mahakali", "ujjaini mahankali", "mahakali secunderabad",
+        "secunderabad mahakali", "secunderabad mahankali", "sri ujjaini mahakali",
+        "sri ujjaini mahankali", "ujjaini mahakali temple", "ujjaini mahankali temple",
+        "sri ujjaini mahakali temple", "sri ujjaini mahankali temple", "ujjaini temple",
+        "ujjaini devasthanam"
+    ],
     "Veera Satyanarayana": ["veera satyanarayana", "satyanarayana swamy", "annavaram", "veera venkata satyanarayana", "annavaram satyanarayana"],
     "Vemulavada": ["vemulavada", "vemulawada", "rajarajeshwara", "rajanne", "rajanna", "sri raja rajeshwara"],
     "Yadadri": ["yadadri", "yadagirigutta", "laxmi narasimha yadadri", "narasimha yadadri", "yadagirigutta temple"]

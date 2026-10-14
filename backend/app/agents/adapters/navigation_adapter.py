@@ -67,6 +67,13 @@ class NavigationAdapter(BaseExternalAdapter):
     Translates origin and destination coordinates or addresses into Routes API v2 computeRoutes requests.
     """
 
+    _route_cache: Dict[str, Dict[str, Any]] = {}
+
+    @classmethod
+    def clear_cache(cls) -> None:
+        """Clears cached route calculation results."""
+        cls._route_cache.clear()
+
     def __init__(
         self,
         api_key: Optional[str] = None,
@@ -177,6 +184,9 @@ class NavigationAdapter(BaseExternalAdapter):
             )
 
         api_travel_mode = SUPPORTED_TRAVEL_MODES[mode_lower]
+        cache_key = f"{str(origin).lower()}->{str(destination).lower()}:{mode_lower}:{routing_preference}"
+        if cache_key in self._route_cache:
+            return dict(self._route_cache[cache_key])
 
         # Transit mode does not support routingPreference in Routes API v2
         payload: Dict[str, Any] = {
@@ -184,13 +194,23 @@ class NavigationAdapter(BaseExternalAdapter):
             "destination": self._format_waypoint(destination),
             "travelMode": api_travel_mode
         }
+        field_mask = [
+            "routes.duration",
+            "routes.distanceMeters",
+            "routes.description",
+            "routes.staticDuration",
+            "routes.polyline.encodedPolyline",
+            "routes.viewport"
+        ]
         if api_travel_mode == "DRIVE":
             payload["routingPreference"] = routing_preference
+            payload["extraComputations"] = ["TRAFFIC_ON_POLYLINE"]
+            field_mask.append("routes.travelAdvisory.speedReadingIntervals")
 
         headers = {
             "Content-Type": "application/json",
             "X-Goog-Api-Key": self._api_key,
-            "X-Goog-FieldMask": "routes.duration,routes.distanceMeters,routes.description,routes.staticDuration"
+            "X-Goog-FieldMask": ",".join(field_mask)
         }
 
         try:
@@ -201,7 +221,18 @@ class NavigationAdapter(BaseExternalAdapter):
                 json_data=payload
             )
         except ExternalHTTPError as e:
-            if e.status_code in (401, 403):
+            if "extraComputations" in payload and e.status_code == 400:
+                # Graceful fallback: retry without extraComputations if provider rejects extra parameter
+                payload.pop("extraComputations", None)
+                safe_mask = [m for m in field_mask if "speedReadingIntervals" not in m]
+                headers["X-Goog-FieldMask"] = ",".join(safe_mask)
+                resp = self.request(
+                    method="POST",
+                    url=self.api_url,
+                    headers=headers,
+                    json_data=payload
+                )
+            elif e.status_code in (401, 403):
                 safe_err = sanitize_text(str(e))
                 logger.error(f"Navigation authentication failed: {safe_err}")
                 raise ExternalHTTPError(
@@ -213,6 +244,9 @@ class NavigationAdapter(BaseExternalAdapter):
                 raise RouteNotFoundError(
                     "No route could be found between the specified origin and destination."
                 ) from None
+            else:
+                raise
+        except Exception:
             raise
 
         try:
@@ -234,4 +268,5 @@ class NavigationAdapter(BaseExternalAdapter):
             if not routes:
                 raise RouteNotFoundError("No route could be found between the specified origin and destination.")
 
+        self._route_cache[cache_key] = data
         return data

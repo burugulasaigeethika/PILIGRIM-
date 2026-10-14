@@ -167,6 +167,136 @@ body {
     padding-left: 4px;
 }
 
+.sidebar-divider {
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 14px 4px;
+}
+
+/* Chat History Section */
+.chat-history-section {
+    margin-bottom: 10px;
+}
+
+.chat-history-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.chat-history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    max-height: 260px;
+    overflow-y: auto;
+    padding-right: 2px;
+}
+
+.chat-history-list::-webkit-scrollbar {
+    width: 3px;
+}
+
+.chat-history-list::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+}
+
+.chat-history-group-title {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--accent-gold);
+    padding: 6px 6px 2px 6px;
+    font-weight: 700;
+    opacity: 0.85;
+}
+
+.chat-history-item {
+    font-size: 12px;
+    color: #cbd5e1;
+    padding: 7px 10px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid transparent;
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    user-select: none;
+    position: relative;
+}
+
+.chat-history-item:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: var(--border-color);
+    color: #fff;
+}
+
+.chat-history-item.active {
+    background: rgba(251, 191, 36, 0.12);
+    border-color: var(--accent-gold);
+    color: var(--accent-gold);
+    font-weight: 600;
+}
+
+.chat-history-item-left {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    flex: 1;
+    min-width: 0;
+}
+
+.chat-history-icon {
+    font-size: 12px;
+    flex-shrink: 0;
+    opacity: 0.7;
+}
+
+.chat-history-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+.btn-delete-session {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 4px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s ease;
+    flex-shrink: 0;
+    margin-left: 4px;
+}
+
+.chat-history-item:hover .btn-delete-session {
+    display: flex;
+}
+
+.btn-delete-session:hover {
+    color: #ef4444;
+    background: rgba(239, 68, 68, 0.15);
+}
+
+.history-empty-msg {
+    font-size: 11.5px;
+    color: var(--text-muted);
+    font-style: italic;
+    padding: 8px 6px;
+}
+
 .temple-list {
     list-style: none;
     display: flex;
@@ -387,32 +517,7 @@ body {
     color: var(--text-secondary);
     font-size: 13.5px;
     line-height: 1.5;
-    margin-bottom: 20px;
-}
-
-.prompt-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-    text-align: left;
-}
-
-.prompt-card {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid var(--border-color);
-    padding: 12px 14px;
-    border-radius: var(--radius-md);
-    color: #e2e8f0;
-    font-size: 12.5px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.prompt-card:hover {
-    background: rgba(251, 191, 36, 0.1);
-    border-color: var(--accent-gold);
-    color: var(--accent-gold);
-    transform: translateY(-2px);
+    margin-bottom: 0;
 }
 
 /* Message Rows */
@@ -767,7 +872,127 @@ body {
 
 .budget-tags {
     display: flex;
+    flex-wrap: wrap;
     gap: 6px;
+    font-size: 11px;
+    color: var(--text-secondary);
+}
+
+.budget-status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 12px;
+}
+.badge-within {
+    background: rgba(16, 185, 129, 0.15);
+    color: var(--accent-emerald);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+.badge-partial {
+    background: rgba(245, 158, 11, 0.15);
+    color: #f59e0b;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+}
+.badge-exceeds {
+    background: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.budget-breakdown-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 8px 0;
+}
+.breakdown-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 11px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 3px 8px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.breakdown-chip span {
+    color: var(--text-secondary);
+}
+.breakdown-chip strong {
+    color: var(--text-primary);
+}
+
+.budget-accom-section {
+    margin-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 8px;
+}
+.budget-accom-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--accent-gold);
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.budget-accom-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.budget-accom-item {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    padding: 8px 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.budget-accom-item:hover {
+    border-color: rgba(16, 185, 129, 0.4);
+    background: rgba(16, 185, 129, 0.05);
+}
+.budget-accom-item.selected {
+    border-color: var(--accent-emerald);
+    background: rgba(16, 185, 129, 0.1);
+}
+.budget-accom-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+.budget-accom-name {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+.tier-badge {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 1px 6px;
+    border-radius: 4px;
+}
+.tier-budget {
+    background: rgba(16, 185, 129, 0.15);
+    color: var(--accent-emerald);
+}
+.tier-standard {
+    background: rgba(59, 130, 246, 0.15);
+    color: #60a5fa;
+}
+.tier-premium {
+    background: rgba(168, 85, 247, 0.15);
+    color: #c084fc;
+}
+.budget-accom-details {
+    display: flex;
+    justify-content: space-between;
     font-size: 11px;
     color: var(--text-secondary);
 }
@@ -1429,5 +1654,750 @@ body {
     color: #f87171;
     border-color: rgba(239, 68, 68, 0.4);
 }
+
+/* =====================================================================
+   Dedicated Itinerary Planner & Saved Plans Styles
+   ===================================================================== */
+.btn-planner-action, .btn-saved-action {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 9px 12px;
+    margin-top: 6px;
+    border-radius: var(--radius-md);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid var(--border-color);
+}
+
+.btn-planner-action {
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.15), rgba(217, 119, 6, 0.2));
+    border-color: rgba(251, 191, 36, 0.35);
+    color: var(--accent-gold);
+}
+
+.btn-planner-action:hover {
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.25), rgba(217, 119, 6, 0.35));
+    border-color: var(--accent-gold);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(251, 191, 36, 0.2);
+}
+
+.btn-saved-action {
+    background: rgba(16, 185, 129, 0.1);
+    border-color: rgba(16, 185, 129, 0.25);
+    color: var(--accent-emerald);
+}
+
+.btn-saved-action:hover {
+    background: rgba(16, 185, 129, 0.2);
+    border-color: var(--accent-emerald);
+    transform: translateY(-1px);
+}
+
+.btn-header-planner {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.15), rgba(217, 119, 6, 0.25));
+    border: 1px solid rgba(251, 191, 36, 0.4);
+    border-radius: var(--radius-md);
+    color: var(--accent-gold);
+    font-size: 12.5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-header-planner:hover {
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.3), rgba(217, 119, 6, 0.4));
+    box-shadow: 0 0 14px rgba(251, 191, 36, 0.25);
+}
+
+.welcome-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 14px;
+    justify-content: center;
+}
+
+.welcome-chip {
+    padding: 6px 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    color: var(--text-secondary);
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.welcome-chip:hover {
+    background: rgba(251, 191, 36, 0.12);
+    border-color: rgba(251, 191, 36, 0.4);
+    color: var(--accent-gold);
+    transform: translateY(-1px);
+}
+
+/* Modal Overlay */
+.planner-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(4, 7, 13, 0.82);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.planner-modal-container {
+    background: var(--bg-sidebar);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-xl);
+    width: 100%;
+    max-width: 820px;
+    max-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), 0 0 30px rgba(251, 191, 36, 0.1);
+    overflow: hidden;
+    animation: modalFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.96) translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.planner-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    border-bottom: 1px solid var(--border-color);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.planner-modal-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.planner-icon-badge {
+    font-size: 22px;
+    background: rgba(251, 191, 36, 0.15);
+    border: 1px solid rgba(251, 191, 36, 0.3);
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.planner-modal-title h2 {
+    font-family: var(--font-heading);
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.planner-modal-title p {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.btn-close-modal {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-close-modal:hover {
+    background: rgba(239, 68, 68, 0.2);
+    color: #f87171;
+    border-color: rgba(239, 68, 68, 0.4);
+}
+
+.planner-tabs-bar {
+    display: flex;
+    border-bottom: 1px solid var(--border-color);
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0 20px;
+}
+
+.planner-tab-btn {
+    padding: 10px 18px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.planner-tab-btn.active {
+    color: var(--accent-gold);
+    border-bottom-color: var(--accent-gold);
+}
+
+.planner-modal-body {
+    padding: 20px 24px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.planner-form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+}
+
+.planner-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.planner-form label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    display: flex;
+    justify-content: space-between;
+}
+
+.field-hint {
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.field-required {
+    color: var(--accent-gold);
+    font-size: 11px;
+}
+
+.planner-form input[type="text"],
+.planner-form input[type="number"],
+.planner-form input[type="date"],
+.planner-form select {
+    background: var(--bg-input);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    padding: 9px 12px;
+    color: #fff;
+    font-size: 13px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.planner-form input:focus,
+.planner-form select:focus {
+    border-color: var(--accent-gold);
+    box-shadow: 0 0 8px var(--accent-gold-glow);
+}
+
+.form-subtext {
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+.custom-checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 12.5px;
+    color: var(--text-secondary);
+    user-select: none;
+}
+
+.destinations-chips-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    max-height: 140px;
+    overflow-y: auto;
+    padding: 4px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+}
+
+.dest-chip {
+    padding: 5px 11px;
+    border-radius: 16px;
+    font-size: 11.5px;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.dest-chip:hover {
+    border-color: rgba(251, 191, 36, 0.4);
+    color: #fff;
+}
+
+.dest-chip.selected {
+    background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-dark));
+    color: #000;
+    border-color: var(--accent-gold);
+    box-shadow: 0 2px 8px var(--accent-gold-glow);
+}
+
+.selected-dest-summary {
+    margin-top: 6px;
+    font-size: 11.5px;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.route-seq-tags {
+    color: var(--accent-gold);
+    font-weight: 600;
+}
+
+.planner-error-banner {
+    margin-top: 12px;
+    padding: 10px 14px;
+    background: rgba(239, 68, 68, 0.15);
+    border: 1px solid rgba(239, 68, 68, 0.35);
+    border-radius: var(--radius-sm);
+    color: #fca5a5;
+    font-size: 12.5px;
+}
+
+.planner-submit-bar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-primary-plan {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 24px;
+    background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-dark));
+    color: #000;
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: 13.5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 16px var(--accent-gold-glow);
+}
+
+.btn-primary-plan:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(251, 191, 36, 0.4);
+}
+
+.btn-primary-plan:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Planner Results Styles */
+.planner-result-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.btn-secondary-action, .btn-gold-action, .btn-primary-action {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border-radius: var(--radius-sm);
+    font-size: 12.5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-secondary-action {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+}
+
+.btn-secondary-action:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.btn-gold-action {
+    background: rgba(251, 191, 36, 0.15);
+    border: 1px solid rgba(251, 191, 36, 0.35);
+    color: var(--accent-gold);
+}
+
+.btn-gold-action:hover {
+    background: rgba(251, 191, 36, 0.25);
+    border-color: var(--accent-gold);
+}
+
+.btn-primary-action {
+    background: var(--accent-blue);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.btn-primary-action:hover {
+    background: #2563eb;
+}
+
+.planner-save-status {
+    padding: 10px 14px;
+    border-radius: var(--radius-sm);
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.planner-save-status.success {
+    background: rgba(16, 185, 129, 0.15);
+    border: 1px solid rgba(16, 185, 129, 0.35);
+    color: #6ee7b7;
+}
+
+.planner-save-status.error {
+    background: rgba(239, 68, 68, 0.15);
+    border: 1px solid rgba(239, 68, 68, 0.35);
+    color: #fca5a5;
+}
+
+.planner-cards-container {
+    margin-bottom: 16px;
+}
+
+.planner-markdown-content {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 18px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+}
+
+/* Saved Itineraries List */
+.saved-itineraries-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.saved-itin-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 14px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.saved-itin-card:hover {
+    border-color: rgba(251, 191, 36, 0.3);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.saved-itin-info h4 {
+    font-family: var(--font-heading);
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+.saved-itin-meta {
+    display: flex;
+    gap: 10px;
+    font-size: 11.5px;
+    color: var(--text-muted);
+}
+
+.saved-itin-actions {
+    display: flex;
+    gap: 6px;
+}
+
+.btn-itin-load {
+    padding: 5px 12px;
+    background: rgba(251, 191, 36, 0.15);
+    border: 1px solid rgba(251, 191, 36, 0.3);
+    border-radius: 6px;
+    color: var(--accent-gold);
+    font-size: 11.5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-itin-load:hover {
+    background: var(--accent-gold);
+    color: #000;
+}
+
+.btn-itin-delete {
+    padding: 5px 10px;
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.25);
+    border-radius: 6px;
+    color: #fca5a5;
+    font-size: 11.5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-itin-delete:hover {
+    background: rgba(239, 68, 68, 0.2);
+    color: #f87171;
+}
+
+.rec-stay-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-left: 3px solid #d97706;
+    border-radius: var(--radius-sm, 8px);
+    padding: 10px 12px;
+    transition: all 0.2s ease;
+}
+
+.rec-stay-card:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(245, 158, 11, 0.3);
+}
+
+/* -------------------------------------------------------------
+   Itinerary Overview & Google Maps Links UX (Phase 2 & 3)
+   ------------------------------------------------------------- */
+.itinerary-card {
+    background: rgba(18, 22, 34, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 4px solid var(--accent-gold);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 14px;
+    backdrop-filter: blur(10px);
+}
+
+.maps-action-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 3px 8px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.maps-link-search {
+    color: #fbbf24;
+    background: rgba(251, 191, 36, 0.1);
+    border: 1px solid rgba(251, 191, 36, 0.25);
+}
+
+.maps-link-search:hover {
+    background: rgba(251, 191, 36, 0.2);
+    color: #fef08a;
+}
+
+.maps-link-dir {
+    color: #60a5fa;
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.25);
+}
+
+.maps-link-dir:hover {
+    background: rgba(59, 130, 246, 0.2);
+    color: #93c5fd;
+}
+
+/* -------------------------------------------------------------
+   Nearby Places Discovery & Itinerary Editor (Phase 4)
+   ------------------------------------------------------------- */
+.planner-places-discovery {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.planner-discovery-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.planner-discovery-title {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.places-grid-mini {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 10px;
+}
+
+.place-card-mini {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 8px;
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    transition: all 0.2s ease;
+}
+
+.place-card-mini:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(251, 191, 36, 0.3);
+}
+
+.place-card-mini-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.place-card-mini-meta {
+    font-size: 11px;
+    color: var(--text-muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+}
+
+.place-source-tag {
+    font-size: 10px;
+    padding: 1px 6px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.source-kb {
+    background: rgba(16, 185, 129, 0.15);
+    color: var(--accent-emerald);
+}
+
+.source-google {
+    background: rgba(59, 130, 246, 0.15);
+    color: #93c5fd;
+}
+
+.place-actions-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4px;
+    padding-top: 6px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.btn-add-activity {
+    padding: 4px 8px;
+    background: rgba(251, 191, 36, 0.15);
+    border: 1px solid rgba(251, 191, 36, 0.3);
+    border-radius: 6px;
+    color: var(--accent-gold);
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-add-activity:hover {
+    background: var(--accent-gold);
+    color: #000;
+}
+
+.added-activities-bar {
+    background: rgba(251, 191, 36, 0.08);
+    border: 1px solid rgba(251, 191, 36, 0.2);
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.added-act-tag {
+    background: rgba(251, 191, 36, 0.2);
+    border: 1px solid rgba(251, 191, 36, 0.35);
+    border-radius: 12px;
+    padding: 2px 8px;
+    font-size: 11.5px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn-remove-act {
+    background: none;
+    border: none;
+    color: #f87171;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
 
 

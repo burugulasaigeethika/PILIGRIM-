@@ -42,7 +42,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let directionsRenderer = null;
     let directionsService = null;
     let activeRoutePolyline = null;
+    let activeRouteSegments = [];
     let activeRouteMarkers = [];
+    let trafficLayer = null;
     const VERIFIED_TEMPLE_REGISTRY = [
         { canonical_name: "Ahobilam", display_name: "Sri Ahobila Narasimha Swamy Temple", latitude: 15.127814, longitude: 78.718048, district: "Nandyal", state: "Andhra Pradesh" },
         { canonical_name: "Badrachalam", display_name: "Sri Sita Ramachandraswamy Temple, Bhadrachalam", latitude: 17.669822, longitude: 80.893641, district: "Bhadradri Kothagudem", state: "Telangana" },
@@ -98,25 +100,16 @@ document.addEventListener("DOMContentLoaded", () => {
         resetActiveSpeechUi();
         clearActiveRoute();
         
+        // Remove active state from history items
+        if (chatHistoryList) {
+            chatHistoryList.querySelectorAll(".chat-history-item").forEach(el => el.classList.remove("active"));
+        }
+
         // Reset message area to initial welcome box
         messageArea.innerHTML = `
             <div class="welcome-box" id="welcomeBox">
                 <h2>Namaste! New Session Started</h2>
-                <p>Conversation memory reset. Ask your question below or click a suggestion:</p>
-                <div class="prompt-grid">
-                    <div class="prompt-card" onclick="sendPrompt('What are the timings of Yadadri temple?')">
-                        🕒 <strong>Yadadri Timings</strong><br>Darshan schedule & poojas
-                    </div>
-                    <div class="prompt-card" onclick="sendPrompt('How far is Hyderabad from Yadadri?')">
-                        🧭 <strong>Hyderabad to Yadadri</strong><br>Driving distance & duration
-                    </div>
-                    <div class="prompt-card" onclick="sendPrompt('What is the weather at Yadadri?')">
-                        🌤️ <strong>Yadadri Weather</strong><br>Live temperature & conditions
-                    </div>
-                    <div class="prompt-card" onclick="sendPrompt('What will a visit to Yadadri cost?')">
-                        💰 <strong>Yadadri Budget</strong><br>Verified sevas & prasadam costs
-                    </div>
-                </div>
+                <p>Conversation memory reset. Ask your question below.</p>
             </div>
         `;
         if (directionsRenderer) {
@@ -129,6 +122,210 @@ document.addEventListener("DOMContentLoaded", () => {
         newChatBtn.addEventListener("click", () => {
             createFreshSession();
         });
+    }
+
+    // -------------------------------------------------------------
+    // Chat History Management (MongoDB-backed User Isolation)
+    // -------------------------------------------------------------
+    const chatHistoryList = document.getElementById("chatHistoryList");
+
+    async function loadChatHistory() {
+        if (!chatHistoryList) return;
+        const token = localStorage.getItem("pilgrim_jwt");
+        if (!token) {
+            chatHistoryList.innerHTML = '<div class="history-empty-msg">Sign in to view history</div>';
+            return;
+        }
+
+        try {
+            const res = await fetch("/api/chat/history", {
+                headers: { "Authorization": `Bearer ${token}` }
+            });
+            if (!res.ok) {
+                if (res.status === 401) {
+                    chatHistoryList.innerHTML = '<div class="history-empty-msg">Sign in to view history</div>';
+                }
+                return;
+            }
+
+            const sessions = await res.json();
+            if (!sessions || sessions.length === 0) {
+                chatHistoryList.innerHTML = '<div class="history-empty-msg">No conversations yet</div>';
+                return;
+            }
+
+            // Group sessions by Today, Yesterday, Earlier
+            const now = new Date();
+            const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+            const yesterday = new Date(today);
+            yesterday.setDate(yesterday.getDate() - 1);
+
+            const groups = {
+                today: [],
+                yesterday: [],
+                earlier: []
+            };
+
+            sessions.forEach(s => {
+                const sDate = s.updated_at ? new Date(s.updated_at) : new Date(s.created_at);
+                const sDay = new Date(sDate.getFullYear(), sDate.getMonth(), sDate.getDate());
+
+                if (sDay.getTime() >= today.getTime()) {
+                    groups.today.push(s);
+                } else if (sDay.getTime() >= yesterday.getTime()) {
+                    groups.yesterday.push(s);
+                } else {
+                    groups.earlier.push(s);
+                }
+            });
+
+            let html = "";
+            const renderGroup = (title, items) => {
+                if (!items || items.length === 0) return "";
+                let gHtml = `<div class="chat-history-group-title">${title}</div>`;
+                items.forEach(item => {
+                    const isActive = item.session_id === currentSessionId ? "active" : "";
+                    const safeTitle = escapeHtml(item.title || "Untitled Conversation");
+                    gHtml += `
+                        <div class="chat-history-item ${isActive}" data-session-id="${escapeHtml(item.session_id)}" title="${safeTitle}">
+                            <div class="chat-history-item-left">
+                                <span class="chat-history-icon">💬</span>
+                                <span class="chat-history-title">${safeTitle}</span>
+                            </div>
+                            <button type="button" class="btn-delete-session" title="Delete conversation" data-session-id="${escapeHtml(item.session_id)}">
+                                <i data-lucide="trash-2" style="width: 12px; height: 12px;"></i>
+                            </button>
+                        </div>
+                    `;
+                });
+                return gHtml;
+            };
+
+            html += renderGroup("Today", groups.today);
+            html += renderGroup("Yesterday", groups.yesterday);
+            html += renderGroup("Earlier", groups.earlier);
+
+            chatHistoryList.innerHTML = html;
+            if (window.lucide) lucide.createIcons();
+
+            // Attach event listeners for clicking conversation and deleting conversation
+            chatHistoryList.querySelectorAll(".chat-history-item").forEach(el => {
+                el.addEventListener("click", (e) => {
+                    if (e.target.closest(".btn-delete-session")) return;
+                    const sessId = el.getAttribute("data-session-id");
+                    if (sessId) {
+                        loadChatConversation(sessId);
+                    }
+                });
+            });
+
+            chatHistoryList.querySelectorAll(".btn-delete-session").forEach(btn => {
+                btn.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    const sessId = btn.getAttribute("data-session-id");
+                    if (sessId) {
+                        deleteChatConversation(sessId);
+                    }
+                });
+            });
+
+        } catch (err) {
+            console.warn("Failed to load chat history:", err);
+        }
+    }
+
+    async function loadChatConversation(sessionId) {
+        if (!sessionId) return;
+        const token = localStorage.getItem("pilgrim_jwt");
+        if (!token) return;
+
+        // Cancel active voice and routes
+        if (window.speechSynthesis) window.speechSynthesis.cancel();
+        resetActiveSpeechUi();
+        clearActiveRoute();
+
+        // Update active session id
+        currentSessionId = sessionId;
+        localStorage.setItem("pilgrim_session_id", sessionId);
+
+        // Update active class in sidebar history
+        if (chatHistoryList) {
+            chatHistoryList.querySelectorAll(".chat-history-item").forEach(el => {
+                if (el.getAttribute("data-session-id") === sessionId) {
+                    el.classList.add("active");
+                } else {
+                    el.classList.remove("active");
+                }
+            });
+        }
+
+        // Show loading state in message area
+        messageArea.innerHTML = `
+            <div style="display: flex; align-items: center; justify-content: center; height: 100%; color: var(--text-muted); font-size: 13px; gap: 8px;">
+                <span class="dot-online" style="animation: pulse 1s infinite;"></span>
+                Loading conversation...
+            </div>
+        `;
+
+        try {
+            const res = await fetch(`/api/chat/history/${encodeURIComponent(sessionId)}`, {
+                headers: { "Authorization": `Bearer ${token}` }
+            });
+            if (!res.ok) {
+                appendErrorMessage("Unable to load conversation messages.");
+                return;
+            }
+
+            const messages = await res.json();
+            messageArea.innerHTML = "";
+
+            if (!messages || messages.length === 0) {
+                messageArea.innerHTML = `
+                    <div class="welcome-box">
+                        <h2>Empty Conversation</h2>
+                        <p>No messages in this conversation. Ask a question to begin.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            messages.forEach(msg => {
+                if (msg.role === "user") {
+                    appendUserMessage(msg.content);
+                } else {
+                    appendBotResponse({
+                        answer: msg.content,
+                        agent_name: msg.agent_name || "temple_information"
+                    });
+                }
+            });
+
+            scrollToBottom();
+        } catch (err) {
+            console.error("Error loading chat conversation:", err);
+            appendErrorMessage("Failed to load conversation from server.");
+        }
+    }
+
+    async function deleteChatConversation(sessionId) {
+        if (!sessionId) return;
+        const token = localStorage.getItem("pilgrim_jwt");
+        if (!token) return;
+
+        try {
+            const res = await fetch(`/api/chat/history/${encodeURIComponent(sessionId)}`, {
+                method: "DELETE",
+                headers: { "Authorization": `Bearer ${token}` }
+            });
+            if (res.ok) {
+                if (currentSessionId === sessionId) {
+                    createFreshSession();
+                }
+                loadChatHistory();
+            }
+        } catch (err) {
+            console.error("Failed to delete session:", err);
+        }
     }
 
     // -------------------------------------------------------------
@@ -196,11 +393,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // -------------------------------------------------------------
     // Chat Submission & Orchestration
     // -------------------------------------------------------------
-    window.sendPrompt = function(text) {
-        userQuery.value = text;
-        chatForm.dispatchEvent(new Event("submit"));
-    };
-
     chatForm.addEventListener("submit", async (e) => {
         e.preventDefault();
         let question = userQuery.value.trim();
@@ -262,6 +454,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Trigger Map / Places side-effects if applicable
             handleMapSideEffects(data);
+
+            // Refresh chat history list
+            loadChatHistory();
 
         } catch (err) {
             removeLoadingBubble(loadingId);
@@ -351,21 +546,21 @@ document.addEventListener("DOMContentLoaded", () => {
         let structuredCardsHtml = "";
         const meta = data.metadata || {};
 
-        // Weather Card
-        if (data.agent_name === "live_weather" || meta.current_weather) {
-            structuredCardsHtml += renderWeatherCard(meta);
+        const hasBudget = Boolean(data.agent_name === "budget" || meta.calculated_total || meta.budget);
+        const hasItinerary = Boolean(data.agent_name === "itinerary_planning" || meta.itinerary);
+        const hasRoutes = Boolean(data.agent_name === "live_navigation" || meta.distance_km !== undefined || (meta.route_legs && meta.route_legs.length > 0));
+        const hasWeather = Boolean(data.agent_name === "live_weather" || meta.current_weather);
+
+        if (hasItinerary) {
+            structuredCardsHtml += renderItineraryCard(meta, { skipRoutes: hasBudget });
         }
-        // Budget Card
-        else if (data.agent_name === "budget" || meta.calculated_total) {
+        if (hasBudget) {
             structuredCardsHtml += renderBudgetCard(meta);
-        }
-        // Navigation Card
-        else if (data.agent_name === "live_navigation" || meta.distance_km !== undefined) {
+        } else if (hasRoutes && !hasItinerary) {
             structuredCardsHtml += renderNavigationCard(meta);
         }
-        // Itinerary Card
-        else if (data.agent_name === "itinerary_planning" || meta.itinerary) {
-            structuredCardsHtml += renderItineraryCard(meta);
+        if (hasWeather) {
+            structuredCardsHtml += renderWeatherCard(meta);
         }
 
         // 3. Format Answer Markdown
@@ -432,9 +627,46 @@ document.addEventListener("DOMContentLoaded", () => {
                 return { label: "Temple Recommendation", icon: "⭐", className: "badge-temple_info" };
             case "multi_intent":
                 return { label: "Multi-Intent Pipeline", icon: "⚡", className: "badge-comparison" };
+            case "response_aggregator":
+                return { label: "Pilgrim Guide", icon: "🛕", className: "badge-temple_info" };
             default:
                 return { label: agentName ? agentName.replace(/_/g, " ").replace(/\b\w/g, l => l.toUpperCase()) : "Pilgrim Specialist", icon: "✨", className: "badge-default" };
         }
+    }
+
+    // -------------------------------------------------------------
+    // Google Maps Helpers (Safe URL Generation & External Links)
+    // -------------------------------------------------------------
+    function generateGoogleMapsSearchUrl(placeName, context = "") {
+        if (!placeName) return "https://www.google.com/maps";
+        const q = (context && !placeName.toLowerCase().includes(context.toLowerCase()))
+            ? `${placeName}, ${context}`
+            : placeName;
+        return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q.trim())}`;
+    }
+
+    function generateGoogleMapsDirectionsUrl(origin, destination) {
+        if (!destination) return "https://www.google.com/maps";
+        const orig = origin ? encodeURIComponent(origin.trim()) : "";
+        const dest = encodeURIComponent(destination.trim());
+        return orig
+            ? `https://www.google.com/maps/dir/?api=1&origin=${orig}&destination=${dest}&travelmode=driving`
+            : `https://www.google.com/maps/dir/?api=1&destination=${dest}&travelmode=driving`;
+    }
+
+    function renderGoogleMapsActions(placeName, context = "", origin = "") {
+        const searchUrl = generateGoogleMapsSearchUrl(placeName, context);
+        const dirUrl = generateGoogleMapsDirectionsUrl(origin, context && !placeName.toLowerCase().includes(context.toLowerCase()) ? `${placeName}, ${context}` : placeName);
+        return `
+            <div class="maps-action-bar">
+                <a href="${escapeHtml(searchUrl)}" target="_blank" rel="noopener noreferrer" class="maps-action-link maps-link-search" onclick="event.stopPropagation();" title="View on Google Maps">
+                    📍 View on Google Maps
+                </a>
+                <a href="${escapeHtml(dirUrl)}" target="_blank" rel="noopener noreferrer" class="maps-action-link maps-link-dir" onclick="event.stopPropagation();" title="Get Directions">
+                    🧭 Get Directions
+                </a>
+            </div>
+        `;
     }
 
     // -------------------------------------------------------------
@@ -477,7 +709,251 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
     }
 
-    function renderBudgetCard(meta) {
+    function renderRouteJourneysSnippet(meta) {
+        if (!meta) return "";
+
+        // Check if multi-leg route array is available
+        if (meta.route_legs && Array.isArray(meta.route_legs) && meta.route_legs.length > 0) {
+            const legsHtml = meta.route_legs.map((leg, idx) => {
+                const legNum = leg.leg_index || (idx + 1);
+                const orig = leg.origin || "Origin";
+                const dest = leg.destination || "Destination";
+                const origCanon = leg.origin_canonical || "";
+                const destCanon = leg.destination_canonical || "";
+                const isReturn = leg.is_return || false;
+
+                // User-friendly journey labels (Requirement 2)
+                const journeyLabel = leg.journey_label || (
+                    isReturn
+                        ? `Return Journey: ${orig} to ${dest}`
+                        : `Journey ${legNum}: ${orig} to ${dest}`
+                );
+
+                if (leg.status === "unavailable" || leg.distance_km === null || leg.distance_km === undefined) {
+                    const errMsg = leg.error ? escapeHtml(leg.error) : "Route calculation unavailable";
+                    return `
+                        <div style="margin-top: 8px; padding-top: 6px; border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                            <div style="font-size: 11px; font-weight: 600; color: var(--accent-gold); margin-bottom: 2px;">${escapeHtml(journeyLabel)}</div>
+                            <div class="nav-route-row" style="font-size: 12.5px; margin-bottom: 2px;">
+                                <span>🧭</span>
+                                <span>${escapeHtml(orig)}</span>
+                                <span style="color: var(--accent-gold);">➔</span>
+                                <span>${escapeHtml(dest)}</span>
+                            </div>
+                            <div style="font-size: 11px; color: #f87171;">Route details unavailable (${errMsg})</div>
+                        </div>
+                    `;
+                }
+
+                const rawDist = leg.distance_km !== null && leg.distance_km !== undefined ? leg.distance_km : "";
+                const cleanDist = typeof rawDist === "string" ? decodeHtmlEntities(rawDist) : rawDist;
+                const dist = `${cleanDist} km`;
+                const dur = leg.duration_minutes !== null && leg.duration_minutes !== undefined ? `${Math.round(leg.duration_minutes)} min` : "N/A";
+                const traffic = leg.traffic_duration_minutes !== null && leg.traffic_duration_minutes !== undefined 
+                    ? `${Math.round(leg.traffic_duration_minutes)} min (traffic)` 
+                    : null;
+
+                const safeOrig = escapeHtml(orig).replace(/'/g, "\\'");
+                const safeDest = escapeHtml(dest).replace(/'/g, "\\'");
+                const safeOrigCanon = escapeHtml(origCanon).replace(/'/g, "\\'");
+                const safeDestCanon = escapeHtml(destCanon).replace(/'/g, "\\'");
+
+                const polyline = leg.polyline || "";
+                const viewport = leg.viewport || null;
+                const speedIntervals = leg.speed_reading_intervals || null;
+                const gmapsFallbackUrl = `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(orig)}&destination=${encodeURIComponent(dest)}&travelmode=driving`;
+
+                // Unique identifier so journeys do not overwrite one another (Requirement 1)
+                const routeKey = "rt_jny_" + legNum + "_" + Date.now() + "_" + Math.floor(Math.random() * 10000);
+                window._pilgrimRouteRegistry = window._pilgrimRouteRegistry || {};
+                window._pilgrimRouteRegistry[routeKey] = {
+                    origin: orig,
+                    destination: dest,
+                    origin_canonical: origCanon,
+                    destination_canonical: destCanon,
+                    polyline: polyline,
+                    viewport: viewport,
+                    speed_reading_intervals: speedIntervals,
+                    fallbackUrl: gmapsFallbackUrl
+                };
+
+                return `
+                    <div style="margin-top: 8px; padding-top: 6px; border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                        <div style="font-size: 11px; font-weight: 600; color: var(--accent-gold); margin-bottom: 2px;">${escapeHtml(journeyLabel)}</div>
+                        <div class="nav-route-row" style="font-size: 12.5px; margin-bottom: 2px;">
+                            <span>🧭</span>
+                            <span>${escapeHtml(orig)}</span>
+                            <span style="color: var(--accent-gold);">➔</span>
+                            <span>${escapeHtml(dest)}</span>
+                        </div>
+                        <div class="nav-metrics" style="margin-bottom: 4px; font-size: 11.5px;">
+                            <div class="nav-metric-item"><strong>Distance:</strong> ${dist}</div>
+                            <div class="nav-metric-item"><strong>Duration:</strong> ${dur}</div>
+                            ${traffic ? `<div class="nav-metric-item" style="color: var(--accent-gold);"><strong>Live Traffic:</strong> ${traffic}</div>` : ""}
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 10px; color: var(--text-muted);">Source: Google Maps Routes API</span>
+                            <button class="nav-btn-view-map" 
+                                    data-route-key="${routeKey}"
+                                    data-origin="${escapeHtml(orig)}" 
+                                    data-destination="${escapeHtml(dest)}" 
+                                    data-origin-canonical="${escapeHtml(origCanon)}" 
+                                    data-destination-canonical="${escapeHtml(destCanon)}"
+                                    data-gmaps-url="${escapeHtml(gmapsFallbackUrl)}"
+                                    onclick="handleViewRouteClick(this, '${routeKey}', '${safeOrig}', '${safeDest}', '${safeOrigCanon}', '${safeDestCanon}')">
+                                🗺️ View Route on Map
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }).join("");
+
+            return `
+                <div style="margin-top: 10px; padding-top: 4px;">
+                    ${legsHtml}
+                </div>
+            `;
+        }
+
+        // Single route fallback (when origin and distance are valid)
+        if (meta.origin && meta.distance_km !== undefined && meta.distance_km !== null) {
+            const orig = meta.origin;
+            const dest = meta.destination || ((meta.temples && meta.temples.length > 0) ? meta.temples[0] : "Destination");
+            const origCanon = meta.origin_canonical || "";
+            const destCanon = meta.destination_canonical || "";
+            const journeyLabel = `Journey 1: ${orig} to ${dest}`;
+            const rawDist = meta.distance_km !== null && meta.distance_km !== undefined ? meta.distance_km : "";
+            const cleanDist = typeof rawDist === "string" ? decodeHtmlEntities(rawDist) : rawDist;
+            const dist = `${cleanDist} km`;
+            const dur = meta.duration_minutes !== null && meta.duration_minutes !== undefined ? `${Math.round(meta.duration_minutes)} min` : "N/A";
+            const traffic = meta.traffic_duration_minutes !== null && meta.traffic_duration_minutes !== undefined 
+                ? `${Math.round(meta.traffic_duration_minutes)} min (traffic)` 
+                : null;
+
+            const safeOrig = escapeHtml(orig).replace(/'/g, "\\'");
+            const safeDest = escapeHtml(dest).replace(/'/g, "\\'");
+            const safeOrigCanon = escapeHtml(origCanon).replace(/'/g, "\\'");
+            const safeDestCanon = escapeHtml(destCanon).replace(/'/g, "\\'");
+
+            const polyline = meta.polyline || "";
+            const viewport = meta.viewport || null;
+            const speedIntervals = meta.speed_reading_intervals || null;
+            const gmapsFallbackUrl = `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(orig)}&destination=${encodeURIComponent(dest)}&travelmode=driving`;
+
+            const routeKey = "rt_jny_1_" + Date.now() + "_" + Math.floor(Math.random() * 10000);
+            window._pilgrimRouteRegistry = window._pilgrimRouteRegistry || {};
+            window._pilgrimRouteRegistry[routeKey] = {
+                origin: orig,
+                destination: dest,
+                origin_canonical: origCanon,
+                destination_canonical: destCanon,
+                polyline: polyline,
+                viewport: viewport,
+                speed_reading_intervals: speedIntervals,
+                fallbackUrl: gmapsFallbackUrl
+            };
+
+            return `
+                <div style="margin-top: 10px; padding-top: 8px; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+                    <div style="font-size: 11px; font-weight: 600; color: var(--accent-gold); margin-bottom: 2px;">${escapeHtml(journeyLabel)}</div>
+                    <div class="nav-route-row" style="font-size: 13px; margin-bottom: 4px;">
+                        <span>🧭</span>
+                        <span>${escapeHtml(orig)}</span>
+                        <span style="color: var(--accent-gold);">➔</span>
+                        <span>${escapeHtml(dest)}</span>
+                    </div>
+                    <div class="nav-metrics" style="margin-bottom: 6px;">
+                        <div class="nav-metric-item"><strong>Distance:</strong> ${dist}</div>
+                        <div class="nav-metric-item"><strong>Duration:</strong> ${dur}</div>
+                        ${traffic ? `<div class="nav-metric-item" style="color: var(--accent-gold);"><strong>Live Traffic:</strong> ${traffic}</div>` : ""}
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 10.5px; color: var(--text-muted);">Source: Google Maps Routes API</span>
+                        <button class="nav-btn-view-map" 
+                                data-route-key="${routeKey}"
+                                data-origin="${escapeHtml(orig)}" 
+                                data-destination="${escapeHtml(dest)}" 
+                                data-origin-canonical="${escapeHtml(origCanon)}" 
+                                data-destination-canonical="${escapeHtml(destCanon)}"
+                                data-gmaps-url="${escapeHtml(gmapsFallbackUrl)}"
+                                onclick="handleViewRouteClick(this, '${routeKey}', '${safeOrig}', '${safeDest}', '${safeOrigCanon}', '${safeDestCanon}')">
+                            🗺️ View Route on Map
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+
+        // No valid route data -> return empty string (do not render broken button)
+        return "";
+    }
+
+    function renderNavigationCard(meta) {
+        const snippet = renderRouteJourneysSnippet(meta);
+        if (!snippet) return "";
+        return `
+            <div class="structured-card navigation-card">
+                <div style="font-size: 13px; font-weight: 700; margin-bottom: 6px; color: var(--text-main);">
+                    🧭 Journey & Route Details
+                </div>
+                ${snippet}
+            </div>
+        `;
+    }
+
+    function renderItineraryCard(meta, options = {}) {
+        if (!meta) return "";
+        const temples = meta.temples || (meta.destinations || []);
+        const duration = meta.duration_days || temples.length || 1;
+        const origin = meta.origin || "";
+        const totalDist = meta.total_distance_km !== undefined ? `${meta.total_distance_km} km` : (meta.distance_km !== undefined ? `${meta.distance_km} km` : "");
+        const totalDur = meta.total_duration_minutes !== undefined ? `${Math.round(meta.total_duration_minutes)} min` : (meta.duration_minutes !== undefined ? `${Math.round(meta.duration_minutes)} min` : "");
+
+        const templeChips = temples.map(t => {
+            const url = generateGoogleMapsSearchUrl(t, "Telangana");
+            return `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" class="dest-chip selected" style="text-decoration:none; display:inline-flex; align-items:center; gap:4px; margin-right:4px; margin-bottom:4px;" title="View ${escapeHtml(t)} on Google Maps">🛕 ${escapeHtml(t)} <span style="font-size:10px;">↗</span></a>`;
+        }).join("");
+
+        let routeSnippet = "";
+        if (!options.skipRoutes) {
+            routeSnippet = renderRouteJourneysSnippet(meta);
+        }
+
+        let warningHtml = "";
+        if (meta.feasibility_warning) {
+            warningHtml = `
+                <div style="background: rgba(239, 68, 68, 0.1); border-left: 3px solid #ef4444; padding: 6px 10px; border-radius: 4px; font-size: 11.5px; color: #fca5a5; margin-top: 8px;">
+                    ⚠️ <strong>Travel Caution:</strong> ${escapeHtml(meta.feasibility_warning)}
+                </div>
+            `;
+        }
+
+        return `
+            <div class="structured-card itinerary-card">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+                    <div>
+                        <div style="font-size: 14px; font-weight: 700; color: var(--accent-gold);">
+                            🗓️ Your ${duration}-Day Pilgrimage Plan
+                        </div>
+                        <div style="font-size: 11.5px; color: var(--text-secondary); margin-top: 2px;">
+                            ${origin ? `Starting from <strong>${escapeHtml(origin)}</strong> • ` : ""}${temples.length} Sacred Destination${temples.length > 1 ? "s" : ""}
+                        </div>
+                    </div>
+                    ${totalDist ? `<span style="font-size: 11px; background: rgba(251, 191, 36, 0.15); color: var(--accent-gold); padding: 2px 8px; border-radius: 12px; font-weight: 600;">🚗 ${totalDist} (${totalDur})</span>` : ""}
+                </div>
+
+                <div style="margin-bottom: 8px;">
+                    <div style="font-size: 11px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-bottom: 4px;">Destinations:</div>
+                    <div style="display: flex; flex-wrap: wrap;">${templeChips}</div>
+                </div>
+
+                ${warningHtml}
+                ${routeSnippet}
+            </div>
+        `;
+    }
+
+    function renderBudgetCard(meta, options = {}) {
         const total = meta.calculated_total || {};
         let totalStr = "₹0";
         const isZeroCost = (total.min === 0 && total.max === 0) || (total.min === undefined && total.max === undefined);
@@ -488,36 +964,320 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         const pax = meta.parameters ? meta.parameters.pax : 1;
         const verifiedCount = meta.verified_item_count || 0;
-        const costLabel = isZeroCost ? "Temple Entry & Darshan (Free)" : "Verified Entry / Darshan / Seva Cost";
+        const costLabel = isZeroCost 
+            ? "Mandatory Temple Entry & Darshan (Free)" 
+            : (total.is_complete_estimate ? "Estimated Trip Cost" : "Verified Baseline Subtotal");
+
+        const routeSnippet = (options && options.skipRoutes) ? "" : renderRouteJourneysSnippet(meta);
+
+        // Budget breakdown badges & status
+        const bb = meta.budget_breakdown;
+        let statusBadgeHtml = "";
+        let budgetLimitTag = "";
+        if (bb && bb.budget_limit) {
+            budgetLimitTag = `<span>🎯 Budget: ₹${bb.budget_limit.toLocaleString()}</span><span>•</span>`;
+            if (bb.status === "within") {
+                const surplus = bb.total_max <= bb.budget_limit ? bb.budget_limit - bb.total_max : 0;
+                statusBadgeHtml = `<span class="budget-status-badge badge-within">✅ Within Budget (+₹${surplus.toLocaleString()})</span>`;
+            } else if (bb.status === "partially_within") {
+                const excess = bb.total_max > bb.budget_limit ? bb.total_max - bb.budget_limit : 0;
+                statusBadgeHtml = `<span class="budget-status-badge badge-partial">⚠️ Partially Within (Exceeds by ₹${excess.toLocaleString()})</span>`;
+            } else if (bb.status === "exceeds") {
+                const shortfall = bb.total_min > bb.budget_limit ? bb.total_min - bb.budget_limit : 0;
+                statusBadgeHtml = `<span class="budget-status-badge badge-exceeds">⚠️ Exceeds Budget by ₹${shortfall.toLocaleString()}</span>`;
+            }
+        }
+
+        // Breakdown chips
+        let breakdownChipsHtml = "";
+        if (bb) {
+            const chips = [];
+            if (bb.entry_max > 0) chips.push(`<span>🎟️ Darshan: ₹${bb.entry_min === bb.entry_max ? bb.entry_min.toLocaleString() : bb.entry_min.toLocaleString() + '–' + bb.entry_max.toLocaleString()}</span>`);
+            if (bb.sevas_max > 0) chips.push(`<span>🙏 Sevas: ₹${bb.sevas_min === bb.sevas_max ? bb.sevas_min.toLocaleString() : bb.sevas_min.toLocaleString() + '–' + bb.sevas_max.toLocaleString()}</span>`);
+            if (bb.accommodation_max > 0) chips.push(`<span>🏨 Stay: ₹${bb.accommodation_min === bb.accommodation_max ? bb.accommodation_min.toLocaleString() : bb.accommodation_min.toLocaleString() + '–' + bb.accommodation_max.toLocaleString()}</span>`);
+            if (bb.travel_max > 0) chips.push(`<span>🚗 Transit: ₹${bb.travel_min.toLocaleString()}</span>`);
+            if (bb.food_max > 0) chips.push(`<span>🍽️ Food: ₹${bb.food_min.toLocaleString()}</span>`);
+            if (chips.length > 0) {
+                breakdownChipsHtml = `<div class="budget-breakdown-chips">${chips.map(c => `<div class="breakdown-chip">${c}</div>`).join("")}</div>`;
+            }
+        }
+
+        // Interactive Multi-Destination Accommodation Plan & Alternatives
+        const cardId = "bcard_" + Date.now() + "_" + Math.floor(Math.random() * 10000);
+        let accomSectionHtml = "";
+        const accomOptions = meta.accommodation_options || [];
+        if (accomOptions.length > 0) {
+            // Group options by destination
+            const optionsByDest = {};
+            accomOptions.forEach((opt, idx) => {
+                const dest = opt.destination || opt.temple || "General";
+                if (!optionsByDest[dest]) optionsByDest[dest] = [];
+                optionsByDest[dest].push({ opt, idx });
+            });
+
+            // Calculate base non-accommodation baseline
+            const initialSelectedMin = accomOptions.filter(o => o.is_selected).reduce((s, o) => s + (o.stay_cost_min || 0), 0);
+            const initialSelectedMax = accomOptions.filter(o => o.is_selected).reduce((s, o) => s + (o.stay_cost_max || 0), 0);
+            const baseNonAccomMin = Math.max(0, (total.min || 0) - initialSelectedMin);
+            const baseNonAccomMax = Math.max(0, (total.max || 0) - initialSelectedMax);
+
+            window._pilgrimBudgetCards = window._pilgrimBudgetCards || {};
+            window._pilgrimBudgetCards[cardId] = {
+                meta: meta,
+                baseNonAccomMin: baseNonAccomMin,
+                baseNonAccomMax: baseNonAccomMax
+            };
+
+            // 1. Recommended Stay Plan Section (Stable badges)
+            let recStaysHtml = "";
+            let stayNum = 1;
+            for (const [dest, destItems] of Object.entries(optionsByDest)) {
+                const recEntry = destItems.find(it => it.opt.is_recommended) || destItems[0];
+                const selEntry = destItems.find(it => it.opt.is_selected) || destItems[0];
+                const recOpt = recEntry.opt;
+                const selOpt = selEntry.opt;
+                const isCustomSelected = (selEntry.idx !== recEntry.idx);
+
+                const recTarStr = recOpt.tariff_min === recOpt.tariff_max ? `₹${recOpt.tariff_min.toLocaleString()}` : `₹${recOpt.tariff_min.toLocaleString()} – ₹${recOpt.tariff_max.toLocaleString()}`;
+                const recStayStr = recOpt.stay_cost_min === recOpt.stay_cost_max ? `₹${recOpt.stay_cost_min.toLocaleString()}` : `₹${recOpt.stay_cost_min.toLocaleString()} – ₹${recOpt.stay_cost_max.toLocaleString()}`;
+
+                recStaysHtml += `
+                    <div class="rec-stay-card" data-dest="${escapeHtml(dest)}">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px;">
+                            <div>
+                                <strong style="font-size: 13px; color: var(--text-main);">Stay ${stayNum} — ${escapeHtml(dest)}</strong>
+                                <div style="font-size: 11.5px; color: var(--text-muted); margin-top: 2px;">📍 ${escapeHtml(recOpt.distance || 'Near ' + dest)}</div>
+                            </div>
+                            <span style="background: rgba(245, 158, 11, 0.15); color: #d97706; padding: 2px 8px; border-radius: 12px; font-size: 10.5px; font-weight: 700;">
+                                ⭐ Recommended for ${escapeHtml(dest)}
+                            </span>
+                        </div>
+                        <div style="font-size: 12px; margin-bottom: 4px;">
+                            <strong>${escapeHtml(recOpt.name)}</strong> (${escapeHtml(recOpt.tier || 'Standard')} • ${escapeHtml(recOpt.property_type || 'Hotel')})
+                        </div>
+                        <div style="font-size: 11px; color: var(--text-muted); display: flex; justify-content: space-between;">
+                            <span>Nightly Tariff: ${recTarStr} (${recOpt.nights || 1} night(s), ${recOpt.rooms || 1} room(s))</span>
+                            <span>Stay Total: <strong>${recStayStr}</strong></span>
+                        </div>
+                        <div class="maps-action-bar" style="margin-top: 6px;">
+                            <a href="${escapeHtml(generateGoogleMapsSearchUrl(recOpt.name, dest))}" target="_blank" rel="noopener noreferrer" class="maps-action-link maps-link-search" onclick="event.stopPropagation();" title="View hotel listing on Google Maps">
+                                📍 View on Google Maps
+                            </a>
+                            <a href="${escapeHtml(generateGoogleMapsDirectionsUrl(meta.origin || '', recOpt.name + ', ' + dest))}" target="_blank" rel="noopener noreferrer" class="maps-action-link maps-link-dir" onclick="event.stopPropagation();" title="Get driving directions">
+                                🧭 Get Directions
+                            </a>
+                        </div>
+                        <div class="dest-current-status" style="margin-top: 6px; font-size: 11px; padding: 4px 8px; border-radius: 6px; background: rgba(0,0,0,0.03);">
+                            ${isCustomSelected 
+                                ? `<span style="color: #2563eb; font-weight: 600;">🔄 Selected: ${escapeHtml(selOpt.name)} (Stay Subtotal: ₹${selOpt.stay_cost_min.toLocaleString()} – ₹${selOpt.stay_cost_max.toLocaleString()})</span>` 
+                                : `<span style="color: var(--accent-emerald); font-weight: 600;">✅ Selected (Recommended Property)</span>`}
+                        </div>
+                    </div>
+                `;
+                stayNum++;
+            }
+
+            // 2. Alternative Options Grouped by Destination
+            let altGroupsHtml = "";
+            for (const [dest, destItems] of Object.entries(optionsByDest)) {
+                const optCards = destItems.map(({ opt, idx }) => {
+                    const isSel = opt.is_selected;
+                    const tierClass = opt.tier && opt.tier.toLowerCase().includes("budget") ? "tier-budget" : (opt.tier && opt.tier.toLowerCase().includes("premium") ? "tier-premium" : "tier-standard");
+                    const tarStr = opt.tariff_min === opt.tariff_max ? `₹${opt.tariff_min.toLocaleString()}` : `₹${opt.tariff_min.toLocaleString()} – ₹${opt.tariff_max.toLocaleString()}`;
+                    const stayStr = opt.stay_cost_min === opt.stay_cost_max ? `₹${opt.stay_cost_min.toLocaleString()}` : `₹${opt.stay_cost_min.toLocaleString()} – ₹${opt.stay_cost_max.toLocaleString()}`;
+                    const fitBadge = opt.budget_fit === "within" 
+                        ? (opt.remaining_budget !== null && opt.remaining_budget !== undefined ? `<span style="color: var(--accent-emerald); font-size: 10.5px; font-weight: 600;">Fits (+₹${opt.remaining_budget.toLocaleString()})</span>` : `<span style="color: var(--accent-emerald); font-size: 10.5px; font-weight: 600;">Within Budget</span>`)
+                        : `<span style="color: #ef4444; font-size: 10.5px; font-weight: 600;">Exceeds Budget</span>`;
+
+                    const recTag = opt.is_recommended ? `<span style="color: #d97706; font-size: 10px; font-weight: 700; margin-left: 6px;">⭐ Recommended</span>` : "";
+                    const prefTag = opt.matches_preference ? `<span style="color: var(--accent-gold); font-size: 10px; font-weight: 600; margin-left: 6px;">★ Preferred Tier</span>` : "";
+
+                    return `
+                        <div class="budget-accom-item ${isSel ? 'selected' : ''}" 
+                             data-card-id="${cardId}" 
+                             data-idx="${idx}"
+                             data-dest="${escapeHtml(dest)}"
+                             onclick="handleAccommodationSelect('${cardId}', ${idx})">
+                            <div class="budget-accom-header">
+                                <span class="budget-accom-name">${isSel ? '🔘' : '⚪'} ${escapeHtml(opt.name)}${recTag}${prefTag}</span>
+                                <span class="tier-badge ${tierClass}">${escapeHtml(opt.tier || 'Standard')}</span>
+                            </div>
+                            <div class="budget-accom-details">
+                                <span>📍 ${escapeHtml(opt.distance || 'Near ' + dest)} • ${escapeHtml(opt.property_type || 'Hotel')}</span>
+                                <span>Tariff: ${tarStr}/night (${opt.nights || 1}N)</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 5px; font-size: 11px;">
+                                <span>Stay Subtotal: <strong>${stayStr}</strong></span>
+                                ${fitBadge}
+                            </div>
+                            <div class="maps-action-bar" style="margin-top: 6px;">
+                                <a href="${escapeHtml(generateGoogleMapsSearchUrl(opt.name, dest))}" target="_blank" rel="noopener noreferrer" class="maps-action-link maps-link-search" onclick="event.stopPropagation();" title="View hotel listing on Google Maps">
+                                    📍 View on Maps
+                                </a>
+                                <a href="${escapeHtml(generateGoogleMapsDirectionsUrl(meta.origin || '', opt.name + ', ' + dest))}" target="_blank" rel="noopener noreferrer" class="maps-action-link maps-link-dir" onclick="event.stopPropagation();" title="Get driving directions">
+                                    🧭 Directions
+                                </a>
+                            </div>
+                        </div>
+                    `;
+                }).join("");
+
+                altGroupsHtml += `
+                    <div style="margin-top: 10px;">
+                        <div style="font-size: 11.5px; font-weight: 700; color: var(--text-muted); margin-bottom: 6px;">
+                            🏨 Stays for ${escapeHtml(dest)} (${destItems.length} option${destItems.length > 1 ? 's' : ''})
+                        </div>
+                        <div class="budget-accom-list">
+                            ${optCards}
+                        </div>
+                    </div>
+                `;
+            }
+
+            accomSectionHtml = `
+                <div class="budget-accom-section">
+                    <div class="budget-accom-title" style="margin-bottom: 8px;">
+                        <span>🏨 Recommended Stay Plan</span>
+                        <span style="font-size: 10.5px; font-weight: normal; color: var(--text-muted);">Verified official records</span>
+                    </div>
+                    <div class="rec-stays-container" style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 14px;">
+                        ${recStaysHtml}
+                    </div>
+                    <div class="budget-accom-title" style="border-top: 1px solid rgba(0,0,0,0.06); padding-top: 10px;">
+                        <span>🔄 Other Accommodation Options (Click to select for destination)</span>
+                    </div>
+                    ${altGroupsHtml}
+                </div>
+            `;
+        }
 
         return `
-            <div class="structured-card budget-card">
+            <div class="structured-card budget-card" data-card-id="${cardId}" id="${cardId}">
                 <div class="budget-total-bar">
                     <div>
                         <div style="font-size: 11px; color: var(--text-muted); text-transform: uppercase;">${costLabel}</div>
                         <div class="budget-total-val">${totalStr}</div>
                     </div>
-                    <div style="text-align: right;">
+                    <div style="text-align: right; display: flex; flex-direction: column; align-items: flex-end; gap: 4px;">
                         <span style="font-size: 11px; background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald); padding: 2px 8px; border-radius: 12px; font-weight: 600;">
                             ${verifiedCount} Verified Tariff(s)
                         </span>
+                        <div class="budget-status-container">${statusBadgeHtml}</div>
                     </div>
                 </div>
                 <div class="budget-tags">
                     <span>👥 Group: ${pax} Pilgrim(s)</span>
                     <span>•</span>
-                    <span>${isZeroCost ? "General entry is free; optional special sevas/transport extra" : "Static verified temple records"}</span>
+                    ${budgetLimitTag}
+                    <span>${isZeroCost ? "Entry is free; personal transit & meals extra" : (total.is_complete_estimate ? "Complete trip estimate" : "Mandatory baseline; personal transit & meals extra")}</span>
                 </div>
+                ${breakdownChipsHtml}
+                ${accomSectionHtml}
+                ${routeSnippet}
             </div>
         `;
     }
+
+    window.handleAccommodationSelect = function(cardId, idx) {
+        const reg = window._pilgrimBudgetCards && window._pilgrimBudgetCards[cardId];
+        if (!reg) return;
+        const meta = reg.meta;
+        const opts = meta.accommodation_options || [];
+        if (!opts[idx]) return;
+
+        const targetOpt = opts[idx];
+        const targetDest = targetOpt.destination || targetOpt.temple || "General";
+
+        // Update selected flag only for options belonging to target destination
+        opts.forEach(o => {
+            const d = o.destination || o.temple || "General";
+            if (d === targetDest) {
+                o.is_selected = (o === targetOpt);
+            }
+        });
+
+        // Recalculate totals across ALL destinations
+        const selectedAccomMin = opts.filter(o => o.is_selected).reduce((s, o) => s + (o.stay_cost_min || 0), 0);
+        const selectedAccomMax = opts.filter(o => o.is_selected).reduce((s, o) => s + (o.stay_cost_max || 0), 0);
+
+        const newTotalMin = reg.baseNonAccomMin + selectedAccomMin;
+        const newTotalMax = reg.baseNonAccomMax + selectedAccomMax;
+
+        if (meta.calculated_total) {
+            meta.calculated_total.min = newTotalMin;
+            meta.calculated_total.max = newTotalMax;
+        }
+
+        const cardEl = document.querySelector(`.budget-card[data-card-id="${cardId}"]`) || document.getElementById(cardId);
+        if (cardEl) {
+            const valEl = cardEl.querySelector(".budget-total-val");
+            if (valEl) {
+                valEl.textContent = newTotalMin === newTotalMax 
+                    ? `₹${newTotalMin.toLocaleString()}` 
+                    : `₹${newTotalMin.toLocaleString()} – ₹${newTotalMax.toLocaleString()}`;
+            }
+
+            // Update UI list items for target destination
+            const items = cardEl.querySelectorAll(`.budget-accom-item[data-dest="${targetDest}"]`);
+            items.forEach(itemEl => {
+                const itemIdx = parseInt(itemEl.getAttribute("data-idx"), 10);
+                const optObj = opts[itemIdx];
+                if (optObj && optObj.is_selected) {
+                    itemEl.classList.add("selected");
+                    const nameEl = itemEl.querySelector(".budget-accom-name");
+                    if (nameEl) {
+                        const recTag = optObj.is_recommended ? `<span style="color: #d97706; font-size: 10px; font-weight: 700; margin-left: 6px;">⭐ Recommended</span>` : "";
+                        const prefTag = optObj.matches_preference ? `<span style="color: var(--accent-gold); font-size: 10px; font-weight: 600; margin-left: 6px;">★ Preferred Tier</span>` : "";
+                        nameEl.innerHTML = `🔘 ${escapeHtml(optObj.name)}${recTag}${prefTag}`;
+                    }
+                } else if (optObj) {
+                    itemEl.classList.remove("selected");
+                    const nameEl = itemEl.querySelector(".budget-accom-name");
+                    if (nameEl) {
+                        const recTag = optObj.is_recommended ? `<span style="color: #d97706; font-size: 10px; font-weight: 700; margin-left: 6px;">⭐ Recommended</span>` : "";
+                        const prefTag = optObj.matches_preference ? `<span style="color: var(--accent-gold); font-size: 10px; font-weight: 600; margin-left: 6px;">★ Preferred Tier</span>` : "";
+                        nameEl.innerHTML = `⚪ ${escapeHtml(optObj.name)}${recTag}${prefTag}`;
+                    }
+                }
+            });
+
+            // Update Recommended Stay Plan card's current status notice for targetDest
+            const recCard = cardEl.querySelector(`.rec-stay-card[data-dest="${targetDest}"]`);
+            if (recCard) {
+                const statusEl = recCard.querySelector(".dest-current-status");
+                if (statusEl) {
+                    const isRec = targetOpt.is_recommended;
+                    if (isRec) {
+                        statusEl.innerHTML = `<span style="color: var(--accent-emerald); font-weight: 600;">✅ Selected (Recommended Property)</span>`;
+                    } else {
+                        statusEl.innerHTML = `<span style="color: #2563eb; font-weight: 600;">🔄 Selected: ${escapeHtml(targetOpt.name)} (Stay Subtotal: ₹${targetOpt.stay_cost_min.toLocaleString()} – ₹${targetOpt.stay_cost_max.toLocaleString()})</span>`;
+                    }
+                }
+            }
+
+            // Update status badge
+            const blim = meta.parameters ? meta.parameters.budget_limit : (meta.budget_breakdown ? meta.budget_breakdown.budget_limit : null);
+            const statusContainer = cardEl.querySelector(".budget-status-container");
+            if (statusContainer && blim) {
+                if (newTotalMax <= blim) {
+                    statusContainer.innerHTML = `<span class="budget-status-badge badge-within">✅ Within Budget (+₹${(blim - newTotalMax).toLocaleString()})</span>`;
+                } else if (newTotalMin <= blim) {
+                    statusContainer.innerHTML = `<span class="budget-status-badge badge-partial">⚠️ Partially Within (Exceeds by ₹${(newTotalMax - blim).toLocaleString()})</span>`;
+                } else {
+                    statusContainer.innerHTML = `<span class="budget-status-badge badge-exceeds">⚠️ Exceeds Budget by ₹${(newTotalMin - blim).toLocaleString()}</span>`;
+                }
+            }
+        }
+    };
 
     function renderNavigationCard(meta) {
         const orig = meta.origin || "Origin";
         const dest = meta.destination || "Destination";
         const origCanon = meta.origin_canonical || "";
         const destCanon = meta.destination_canonical || "";
-        const dist = meta.distance_km !== null && meta.distance_km !== undefined ? `${meta.distance_km} km` : "N/A";
+        const rawDist = meta.distance_km !== null && meta.distance_km !== undefined ? meta.distance_km : null;
+        const cleanDist = typeof rawDist === "string" ? decodeHtmlEntities(rawDist) : rawDist;
+        const dist = cleanDist !== null ? `${cleanDist} km` : "N/A";
         const dur = meta.duration_minutes !== null && meta.duration_minutes !== undefined ? `${Math.round(meta.duration_minutes)} min` : "N/A";
         const traffic = meta.traffic_duration_minutes !== null && meta.traffic_duration_minutes !== undefined 
             ? `${Math.round(meta.traffic_duration_minutes)} min (traffic)` 
@@ -527,6 +1287,24 @@ document.addEventListener("DOMContentLoaded", () => {
         const safeDest = escapeHtml(dest).replace(/'/g, "\\'");
         const safeOrigCanon = escapeHtml(origCanon).replace(/'/g, "\\'");
         const safeDestCanon = escapeHtml(destCanon).replace(/'/g, "\\'");
+
+        const polyline = meta.polyline || "";
+        const viewport = meta.viewport || null;
+        const speedIntervals = meta.speed_reading_intervals || null;
+        const gmapsFallbackUrl = `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(orig)}&destination=${encodeURIComponent(dest)}&travelmode=driving`;
+
+        const routeKey = "rt_" + Date.now() + "_" + Math.floor(Math.random() * 10000);
+        window._pilgrimRouteRegistry = window._pilgrimRouteRegistry || {};
+        window._pilgrimRouteRegistry[routeKey] = {
+            origin: orig,
+            destination: dest,
+            origin_canonical: origCanon,
+            destination_canonical: destCanon,
+            polyline: polyline,
+            viewport: viewport,
+            speed_reading_intervals: speedIntervals,
+            fallbackUrl: gmapsFallbackUrl
+        };
 
         return `
             <div class="structured-card nav-card">
@@ -544,12 +1322,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 6px;">
                     <span style="font-size: 10.5px; color: var(--text-muted);">Source: Google Maps Routes API</span>
                     <button class="nav-btn-view-map" 
-                            id="viewRouteBtn"
+                            data-route-key="${routeKey}"
                             data-origin="${escapeHtml(orig)}" 
                             data-destination="${escapeHtml(dest)}" 
                             data-origin-canonical="${escapeHtml(origCanon)}" 
                             data-destination-canonical="${escapeHtml(destCanon)}"
-                            onclick="handleViewRouteClick(this, '${safeOrig}', '${safeDest}', '${safeOrigCanon}', '${safeDestCanon}')">
+                            data-gmaps-url="${escapeHtml(gmapsFallbackUrl)}"
+                            onclick="handleViewRouteClick(this, '${routeKey}', '${safeOrig}', '${safeDest}', '${safeOrigCanon}', '${safeDestCanon}')">
                         🗺️ View Route on Map
                     </button>
                 </div>
@@ -561,6 +1340,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const temples = meta.temples || [];
         const days = meta.duration_days || 1;
         const templePills = temples.map(t => `<span class="src-chip" style="background: rgba(244, 63, 94, 0.15); color: #fda4af;">${escapeHtml(t)}</span>`).join(" ");
+        const routeSnippet = renderRouteJourneysSnippet(meta);
 
         return `
             <div class="structured-card" style="border-color: rgba(244, 63, 94, 0.3); background: linear-gradient(135deg, rgba(136, 19, 55, 0.2), rgba(15, 23, 42, 0.8));">
@@ -571,6 +1351,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div style="display: flex; gap: 6px; flex-wrap: wrap;">
                     ${templePills}
                 </div>
+                ${routeSnippet}
             </div>
         `;
     }
@@ -728,6 +1509,14 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         } catch (e) {}
         try {
+            if (Array.isArray(activeRouteSegments)) {
+                activeRouteSegments.forEach(p => {
+                    try { p.setMap(null); } catch (e) {}
+                });
+                activeRouteSegments = [];
+            }
+        } catch (e) {}
+        try {
             if (Array.isArray(activeRouteMarkers)) {
                 activeRouteMarkers.forEach(m => {
                     try { m.setMap(null); } catch (e) {}
@@ -824,23 +1613,80 @@ document.addEventListener("DOMContentLoaded", () => {
     function renderModernPolylineRoute(routeData, origResolved, destResolved) {
         clearActiveRoute();
 
-        activeRoutePolyline = new google.maps.Polyline({
+        // 1. Ensure TrafficLayer is active on googleMap if supported
+        try {
+            if (!trafficLayer && window.google && google.maps && google.maps.TrafficLayer) {
+                trafficLayer = new google.maps.TrafficLayer();
+            }
+            if (trafficLayer && googleMap) {
+                trafficLayer.setMap(googleMap);
+            }
+        } catch (tlErr) {
+            console.warn("[PilgrimAI Routes] TrafficLayer initialization warning:", tlErr);
+        }
+
+        // 2. Underlying casing line for maximum contrast and Google Maps styling
+        const casingLine = new google.maps.Polyline({
             path: routeData.path,
             geodesic: true,
-            strokeColor: "#fbbf24",
-            strokeOpacity: 0.85,
-            strokeWeight: 6,
+            strokeColor: "#1e293b",
+            strokeOpacity: 0.65,
+            strokeWeight: 8,
+            zIndex: 90,
             map: googleMap
         });
+        activeRouteSegments.push(casingLine);
 
-        // Fit bounds across all points
+        // 3. Traffic-aware segments vs uniform route polyline
+        const intervals = routeData.speedIntervals;
+        const hasSpeedIntervals = Array.isArray(intervals) && intervals.length > 0 && intervals.some(inv => inv.speed && inv.speed !== "NORMAL");
+
+        if (hasSpeedIntervals) {
+            intervals.forEach(inv => {
+                const sIdx = inv.startPolylinePointIndex || 0;
+                const eIdx = (inv.endPolylinePointIndex !== undefined) ? inv.endPolylinePointIndex : (routeData.path.length - 1);
+                const segPoints = routeData.path.slice(sIdx, eIdx + 1);
+                if (segPoints.length >= 2) {
+                    let color = "#3b82f6"; // NORMAL (Google Maps route blue)
+                    if (inv.speed === "SLOW") color = "#f59e0b"; // SLOW (amber/orange)
+                    else if (inv.speed === "TRAFFIC_JAM") color = "#ef4444"; // HEAVY TRAFFIC (red)
+
+                    const seg = new google.maps.Polyline({
+                        path: segPoints,
+                        geodesic: true,
+                        strokeColor: color,
+                        strokeOpacity: 0.95,
+                        strokeWeight: 6,
+                        zIndex: 100,
+                        map: googleMap
+                    });
+                    activeRouteSegments.push(seg);
+                }
+            });
+        } else {
+            activeRoutePolyline = new google.maps.Polyline({
+                path: routeData.path,
+                geodesic: true,
+                strokeColor: "#3b82f6",
+                strokeOpacity: 0.9,
+                strokeWeight: 6,
+                zIndex: 100,
+                map: googleMap
+            });
+        }
+
+        // 4. Fit bounds across complete route with padding
         const bounds = new google.maps.LatLngBounds();
+        if (routeData.viewport && routeData.viewport.low && routeData.viewport.high) {
+            bounds.extend(new google.maps.LatLng(routeData.viewport.low.latitude, routeData.viewport.low.longitude));
+            bounds.extend(new google.maps.LatLng(routeData.viewport.high.latitude, routeData.viewport.high.longitude));
+        }
         routeData.path.forEach(pt => bounds.extend(pt));
-        googleMap.fitBounds(bounds);
+        googleMap.fitBounds(bounds, 45);
 
+        // 5. Origin ('A') and Destination ('B') Markers
         activeRouteMarkers = [];
 
-        // Origin and Destination Markers
         const startPos = (origResolved && typeof origResolved === "object" && origResolved.lat !== undefined)
             ? { lat: Number(origResolved.lat), lng: Number(origResolved.lng) }
             : (routeData.path && routeData.path.length > 0 ? routeData.path[0] : null);
@@ -855,9 +1701,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 map: googleMap,
                 title: (origResolved && origResolved.name) || "Origin",
                 label: { text: "A", color: "#fff", fontWeight: "bold" },
+                zIndex: 110,
                 icon: {
                     path: google.maps.SymbolPath.CIRCLE,
-                    scale: 8,
+                    scale: 9,
                     fillColor: "#3b82f6",
                     fillOpacity: 1,
                     strokeColor: "#ffffff",
@@ -873,9 +1720,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 map: googleMap,
                 title: (destResolved && destResolved.name) || "Destination",
                 label: { text: "B", color: "#fff", fontWeight: "bold" },
+                zIndex: 110,
                 icon: {
                     path: google.maps.SymbolPath.CIRCLE,
-                    scale: 8,
+                    scale: 9,
                     fillColor: "#10b981",
                     fillOpacity: 1,
                     strokeColor: "#ffffff",
@@ -912,9 +1760,20 @@ document.addEventListener("DOMContentLoaded", () => {
         if (data.agent_name === "live_navigation" || meta.distance_km !== undefined) {
             if (meta.origin && meta.destination) {
                 setTimeout(() => {
-                    const btn = document.getElementById("viewRouteBtn");
-                    focusRouteOnMap(meta.origin, meta.destination, btn, meta.origin_canonical, meta.destination_canonical);
-                }, 50);
+                    const navBtns = document.querySelectorAll(".nav-btn-view-map");
+                    const lastBtn = navBtns.length > 0 ? navBtns[navBtns.length - 1] : null;
+                    const routeKey = lastBtn ? lastBtn.getAttribute("data-route-key") : null;
+                    const routeData = (routeKey && window._pilgrimRouteRegistry && window._pilgrimRouteRegistry[routeKey]) ? window._pilgrimRouteRegistry[routeKey] : {
+                        origin: meta.origin,
+                        destination: meta.destination,
+                        origin_canonical: meta.origin_canonical,
+                        destination_canonical: meta.destination_canonical,
+                        polyline: meta.polyline,
+                        viewport: meta.viewport,
+                        speed_reading_intervals: meta.speed_reading_intervals
+                    };
+                    focusRouteOnMap(meta.origin, meta.destination, lastBtn, meta.origin_canonical, meta.destination_canonical, routeData);
+                }, 100);
             }
         }
 
@@ -940,15 +1799,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    window.focusRouteOnMap = async function(origin, destination, btn, originCanonical, destCanonical) {
+    window.focusRouteOnMap = async function(origin, destination, btn, originCanonical, destCanonical, routeMeta) {
         if (!origin || !destination) {
             console.warn("[PilgrimAI Routes Diagnostics] focusRouteOnMap called without origin or destination", { origin, destination });
-            return false;
-        }
-
-        // Failure 1: Map unavailable
-        if (!googleMap) {
-            console.warn("[PilgrimAI Routes Diagnostics] [Failure 1: Map unavailable] Google Map instance not initialized yet.");
             return false;
         }
 
@@ -960,35 +1813,38 @@ document.addEventListener("DOMContentLoaded", () => {
             tabMapBtn.classList.add("active");
             if (tabPlacesBtn) tabPlacesBtn.classList.remove("active");
         }
+
+        // Wait briefly for map if initializing
+        if (!googleMap && window.google && google.maps) {
+            await new Promise(r => setTimeout(r, 200));
+        }
+
+        if (!googleMap) {
+            console.warn("[PilgrimAI Routes Diagnostics] [Failure 1: Map unavailable] Google Map instance not initialized yet.");
+            return false;
+        }
+
         google.maps.event.trigger(googleMap, "resize");
 
-        // 2. Clear any previously displayed route (single active route visualization)
+        // 2. Clear previous route overlays (preserves temple markers)
         clearActiveRoute();
 
-        // 3. Resolve origin and destination
-        const origResolved = resolveLocationForMap(origin, originCanonical);
-        const destResolved = resolveLocationForMap(destination, destCanonical);
+        // 3. Priority 1: Use verified route polyline from backend Routes API v2
+        if (routeMeta && routeMeta.polyline) {
+            const decodedPoints = decodePolyline(routeMeta.polyline);
+            if (decodedPoints && decodedPoints.length > 0) {
+                const origPoint = decodedPoints[0];
+                const destPoint = decodedPoints[decodedPoints.length - 1];
+                const origResolved = { lat: origPoint.lat, lng: origPoint.lng, name: origin, isTemple: false };
+                const destResolved = resolveLocationForMap(destination, destCanonical) || { lat: destPoint.lat, lng: destPoint.lng, name: destination, isTemple: false };
 
-        // Failure 2: Origin coordinates unavailable
-        if (!origResolved) {
-            console.warn("[PilgrimAI Routes Diagnostics] [Failure 2: Origin coordinates unavailable] Unable to resolve coordinates for origin: " + origin);
-            return false;
-        }
+                const routeData = {
+                    path: decodedPoints,
+                    viewport: routeMeta.viewport,
+                    speedIntervals: routeMeta.speed_reading_intervals
+                };
 
-        // Failure 3: Destination coordinates unavailable
-        if (!destResolved) {
-            console.warn("[PilgrimAI Routes Diagnostics] [Failure 3: Destination coordinates unavailable] Unable to resolve coordinates for destination: " + destination);
-            return false;
-        }
-
-        // 4. Try modern Route.computeRoutes first if available (strict 300ms timeout)
-        const modernRoute = await tryModernRoutesCompute(origResolved, destResolved);
-        if (modernRoute) {
-            // Failure 6: Route geometry unavailable check
-            if (!modernRoute.path || modernRoute.path.length === 0) {
-                console.warn("[PilgrimAI Routes Diagnostics] [Failure 6: Route geometry unavailable] Modern routes returned no polyline points.");
-            } else {
-                const rendered = renderModernPolylineRoute(modernRoute, origResolved, destResolved);
+                const rendered = renderModernPolylineRoute(routeData, origResolved, destResolved);
                 if (rendered) {
                     if (btn) {
                         btn.classList.add("success");
@@ -1003,12 +1859,36 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
 
-        // 5. DirectionsService & DirectionsRenderer fallback
+        // 4. Fallback if no backend polyline: resolve locations and try client-side route
+        const origResolved = resolveLocationForMap(origin, originCanonical);
+        const destResolved = resolveLocationForMap(destination, destCanonical);
+
+        if (!origResolved || !destResolved) {
+            console.warn("[PilgrimAI Routes Diagnostics] Unable to resolve coordinates for fallback routing.");
+            return false;
+        }
+
+        // Try modern Route.computeRoutes first if available
+        const modernRoute = await tryModernRoutesCompute(origResolved, destResolved);
+        if (modernRoute && modernRoute.path && modernRoute.path.length > 0) {
+            const rendered = renderModernPolylineRoute(modernRoute, origResolved, destResolved);
+            if (rendered) {
+                if (btn) {
+                    btn.classList.add("success");
+                    btn.innerText = "✓ Route shown on map";
+                    setTimeout(() => {
+                        btn.classList.remove("success");
+                        btn.innerText = "🗺️ View Route on Map";
+                    }, 4000);
+                }
+                return true;
+            }
+        }
+
+        // Fallback to DirectionsService
         return new Promise((resolve) => {
             try {
-                // Failure 4: Routes JS API unavailable
                 if (!window.google || !google.maps) {
-                    console.warn("[PilgrimAI Routes Diagnostics] [Failure 4: Routes JS API unavailable] Google Maps JavaScript API is not loaded.");
                     resolve(false);
                     return;
                 }
@@ -1021,7 +1901,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         map: googleMap,
                         suppressMarkers: false,
                         polylineOptions: {
-                            strokeColor: "#fbbf24",
+                            strokeColor: "#3b82f6",
                             strokeWeight: 6,
                             strokeOpacity: 0.9
                         }
@@ -1041,24 +1921,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     destination: destWaypoint,
                     travelMode: google.maps.TravelMode.DRIVING
                 }, (result, status) => {
-                    if (status === google.maps.DirectionsStatus.OK && result) {
-                        // Failure 6 check: geometry check
-                        if (!result.routes || result.routes.length === 0 || !result.routes[0].overview_path || result.routes[0].overview_path.length === 0) {
-                            console.warn("[PilgrimAI Routes Diagnostics] [Failure 6: Route geometry unavailable] DirectionsService returned OK but empty overview_path.");
-                            resolve(false);
-                            return;
-                        }
-
+                    if (status === google.maps.DirectionsStatus.OK && result && result.routes && result.routes.length > 0) {
                         directionsRenderer.setDirections(result);
-
-                        // Fit bounds to entire route
                         if (result.routes[0].bounds) {
                             googleMap.fitBounds(result.routes[0].bounds);
                         }
-
-                        // Keep destination temple marker visible
                         highlightDestinationTemple(destResolved);
-
                         if (btn) {
                             btn.classList.add("success");
                             btn.innerText = "✓ Route shown on map";
@@ -1069,29 +1937,59 @@ document.addEventListener("DOMContentLoaded", () => {
                         }
                         resolve(true);
                     } else {
-                        // Failure 5: Route calculation rejected (e.g. REQUEST_DENIED due to key restrictions)
-                        console.warn("[PilgrimAI Routes Diagnostics] [Failure 5: Route calculation rejected] DirectionsService status: " + status + ". (Browser key lacks Directions API / Routes API capability in Google Cloud API restrictions)");
+                        console.warn("[PilgrimAI Routes Diagnostics] DirectionsService status:", status);
                         resolve(false);
                     }
                 });
             } catch (err) {
-                // Failure 7: Route rendering failed
-                console.error("[PilgrimAI Routes Diagnostics] [Failure 7: Route rendering failed] DirectionsService execution error: " + (err.message || err));
+                console.error("[PilgrimAI Routes Diagnostics] DirectionsService error:", err);
                 resolve(false);
             }
         });
     };
 
-    window.handleViewRouteClick = async function(btn, orig, dest, origCanon, destCanon) {
-        if (!orig || !dest) {
-            orig = orig || (btn && btn.dataset && btn.dataset.origin);
-            dest = dest || (btn && btn.dataset && btn.dataset.destination);
-            origCanon = origCanon || (btn && btn.dataset && btn.dataset.originCanonical);
-            destCanon = destCanon || (btn && btn.dataset && btn.dataset.destinationCanonical);
+    window.handleViewRouteClick = async function(btn, routeKeyOrOrig, dest, origCanon, destCanon) {
+        let routeMeta = null;
+        let orig = null;
+        let destination = null;
+        let originCanon = null;
+        let destinationCanon = null;
+        let gmapsUrl = null;
+
+        // Check if first argument is a registered route key
+        if (typeof routeKeyOrOrig === "string" && routeKeyOrOrig.startsWith("rt_") && window._pilgrimRouteRegistry && window._pilgrimRouteRegistry[routeKeyOrOrig]) {
+            routeMeta = window._pilgrimRouteRegistry[routeKeyOrOrig];
+            orig = routeMeta.origin;
+            destination = routeMeta.destination;
+            originCanon = routeMeta.origin_canonical;
+            destinationCanon = routeMeta.destination_canonical;
+            gmapsUrl = routeMeta.fallbackUrl;
+        } else {
+            orig = routeKeyOrOrig || (btn && btn.dataset && btn.dataset.origin);
+            destination = dest || (btn && btn.dataset && btn.dataset.destination);
+            originCanon = origCanon || (btn && btn.dataset && btn.dataset.originCanonical);
+            destinationCanon = destCanon || (btn && btn.dataset && btn.dataset.destinationCanonical);
+            const routeKey = btn && btn.dataset && btn.dataset.routeKey;
+            if (routeKey && window._pilgrimRouteRegistry && window._pilgrimRouteRegistry[routeKey]) {
+                routeMeta = window._pilgrimRouteRegistry[routeKey];
+            }
         }
 
-        if (!orig || !dest) {
-            if (btn) btn.innerText = "Route coordinates missing";
+        if (!gmapsUrl && btn && btn.dataset && btn.dataset.gmapsUrl) {
+            gmapsUrl = btn.dataset.gmapsUrl;
+        }
+        if (!gmapsUrl && orig && destination) {
+            gmapsUrl = `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(orig)}&destination=${encodeURIComponent(destination)}&travelmode=driving`;
+        }
+
+        // If the button is currently in fallback mode, open external directions
+        if (btn && btn.classList.contains("fallback-ready") && gmapsUrl) {
+            window.open(gmapsUrl, "_blank");
+            return;
+        }
+
+        if (!orig || !destination) {
+            if (btn) btn.innerText = "Route locations missing";
             return;
         }
 
@@ -1103,7 +2001,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         try {
-            const success = await focusRouteOnMap(orig, dest, btn, origCanon, destCanon);
+            const success = await focusRouteOnMap(orig, destination, btn, originCanon, destinationCanon, routeMeta);
             if (btn) {
                 btn.disabled = false;
                 btn.classList.remove("loading");
@@ -1115,12 +2013,14 @@ document.addEventListener("DOMContentLoaded", () => {
                         btn.innerText = originalText;
                     }, 4000);
                 } else {
+                    btn.classList.add("fallback-ready");
                     btn.classList.add("error");
-                    btn.innerText = "Unable to display this route on the map.";
+                    btn.innerText = "🌐 Open in Google Maps";
                     setTimeout(() => {
+                        btn.classList.remove("fallback-ready");
                         btn.classList.remove("error");
                         btn.innerText = originalText;
-                    }, 4000);
+                    }, 6000);
                 }
             }
         } catch (err) {
@@ -1128,12 +2028,14 @@ document.addEventListener("DOMContentLoaded", () => {
             if (btn) {
                 btn.disabled = false;
                 btn.classList.remove("loading");
+                btn.classList.add("fallback-ready");
                 btn.classList.add("error");
-                btn.innerText = "Unable to display this route on the map.";
+                btn.innerText = "🌐 Open in Google Maps";
                 setTimeout(() => {
+                    btn.classList.remove("fallback-ready");
                     btn.classList.remove("error");
                     btn.innerText = originalText;
-                }, 4000);
+                }, 6000);
             }
         }
     };
@@ -1921,17 +2823,106 @@ document.addEventListener("DOMContentLoaded", () => {
         messageArea.scrollTop = messageArea.scrollHeight;
     }
 
+    function decodeHtmlEntities(str) {
+        if (!str) return "";
+        let s = String(str);
+        for (let iter = 0; iter < 4; iter++) {
+            if (!s.includes("&") && !s.includes("&#")) break;
+            const prev = s;
+            s = s
+                .replace(/&#x([0-9a-fA-F]+);?/gi, (_, hex) => {
+                    const code = parseInt(hex, 16);
+                    return code > 0 ? String.fromCharCode(code) : _;
+                })
+                .replace(/&#([0-9]+);?/gi, (_, dec) => {
+                    const code = parseInt(dec, 10);
+                    return code > 0 ? String.fromCharCode(code) : _;
+                })
+                .replace(/&amp;/gi, "&")
+                .replace(/&lt;/gi, "<")
+                .replace(/&gt;/gi, ">")
+                .replace(/&quot;/gi, '"')
+                .replace(/&#39;/gi, "'")
+                .replace(/&apos;/gi, "'")
+                .replace(/&nbsp;/gi, " ")
+                .replace(/&euro;/gi, "€")
+                .replace(/&pound;/gi, "£")
+                .replace(/&yen;/gi, "¥")
+                .replace(/&inr;/gi, "₹");
+            if (s === prev) break;
+        }
+        return s;
+    }
+
     function escapeHtml(str) {
         if (!str) return "";
-        return String(str).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+        return String(str)
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#39;");
     }
 
     function formatMarkdownText(md) {
         if (!md) return "";
-        let html = escapeHtml(md);
+        let cleanMd = decodeHtmlEntities(md);
+        cleanMd = decodeHtmlEntities(cleanMd);
+        // Strip backslash escaping on pipes, hashes, asterisks
+        cleanMd = cleanMd.replace(/\\([|#*_\-\\])/g, "$1");
+        cleanMd = cleanMd.replace(/&#x20;/gi, " ");
+
+        // Parse markdown tables before HTML escaping / br conversion
+        cleanMd = cleanMd.replace(/(?:^|\n)(\|[^\n]+\|\n\|[\s:-|]+\|\n(?:\|[^\n]+\|(?:\n|$))+)/g, (match, tableBlock) => {
+            const rows = tableBlock.trim().split("\n").filter(l => l.trim().startsWith("|"));
+            if (rows.length < 2) return match;
+            const headers = rows[0].split("|").slice(1, -1).map(c => `<th>${c.trim()}</th>`).join("");
+            const body = rows.slice(2).map(r => {
+                const cells = r.split("|").slice(1, -1).map(c => `<td>${c.trim()}</td>`).join("");
+                return `<tr>${cells}</tr>`;
+            }).join("");
+            return `\n<div class="table-responsive" style="overflow-x:auto;margin:12px 0;"><table class="itinerary-table" style="width:100%;border-collapse:collapse;font-size:12px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.1);border-radius:6px;"><thead><tr style="background:rgba(255,255,255,0.06);border-bottom:1px solid rgba(255,255,255,0.1);">${headers}</tr></thead><tbody>${body}</tbody></table></div>\n`;
+        });
+
+        let html = escapeHtml(cleanMd);
 
         // Unescape escaped hashes like \#### or \###
         html = html.replace(/\\(#+)/g, "$1");
+
+        // Post-escape cleanup of any numeric entities that escapeHtml turned into &amp;#...
+        html = html
+            .replace(/&amp;#x([0-9a-fA-F]+);?/gi, (_, hex) => {
+                const code = parseInt(hex, 16);
+                return code > 0 ? String.fromCharCode(code) : _;
+            })
+            .replace(/&amp;#([0-9]+);?/gi, (_, dec) => {
+                const code = parseInt(dec, 10);
+                return code > 0 ? String.fromCharCode(code) : _;
+            });
+
+        // Restore natural apostrophes and single quotes
+        html = html.replace(/&#39;/g, "'");
+
+        // Restore parsed table HTML that was escaped
+        html = html
+            .replace(/&lt;div class="table-responsive" style="overflow-x:auto;margin:12px 0;"&gt;/g, '<div class="table-responsive" style="overflow-x:auto;margin:12px 0;">')
+            .replace(/&lt;\/div&gt;/g, '</div>')
+            .replace(/&lt;table class="itinerary-table"[^&]*&gt;/g, '<table class="itinerary-table" style="width:100%;border-collapse:collapse;font-size:12px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.1);border-radius:6px;">')
+            .replace(/&lt;\/table&gt;/g, '</table>')
+            .replace(/&lt;thead&gt;/g, '<thead>')
+            .replace(/&lt;\/thead&gt;/g, '</thead>')
+            .replace(/&lt;tbody&gt;/g, '<tbody>')
+            .replace(/&lt;\/tbody&gt;/g, '</tbody>')
+            .replace(/&lt;tr[^&]*&gt;/g, '<tr style="border-bottom:1px solid rgba(255,255,255,0.06);">')
+            .replace(/&lt;\/tr&gt;/g, '</tr>')
+            .replace(/&lt;th&gt;/g, '<th style="padding:6px 10px;text-align:left;color:var(--accent-gold);border:1px solid rgba(255,255,255,0.08);">')
+            .replace(/&lt;\/th&gt;/g, '</th>')
+            .replace(/&lt;td&gt;/g, '<td style="padding:6px 10px;border:1px solid rgba(255,255,255,0.06);">')
+            .replace(/&lt;\/td&gt;/g, '</td>');
+
+        // Clean any raw scraping footnote citations e.g. [[1](http...)] or [[1]http...]
+        html = html.replace(/:?\s*\[\[?\d+\]?\(?https?:\/\/[^\s\])]+\)?\]?/g, ".");
+        html = html.replace(/\.\s*\./g, ".");
 
         // Bold
         html = html.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
@@ -1944,12 +2935,14 @@ document.addEventListener("DOMContentLoaded", () => {
         html = html.replace(/^# (.*$)/gim, "<h1>$1</h1>");
         // Blockquotes
         html = html.replace(/^> (.*$)/gim, "<blockquote>$1</blockquote>");
-        // Bullet lists
-        html = html.replace(/^\- (.*$)/gim, "<li>$1</li>");
+        // Bullet lists (including indented sub-items)
+        html = html.replace(/^[\s\t]*\-\s+(.*$)/gim, "<li>$1</li>");
         // Wrap adjacent li elements into ul
         html = html.replace(/(<li>.*?<\/li>)/gs, "<ul>$1</ul>");
         html = html.replace(/<\/ul>\s*<ul>/g, "");
-        // Newlines to line breaks (outside lists)
+        // Links [Label](url)
+        html = html.replace(/\[([^\]]+)\]\((https?:\/\/[^\s\)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" style="color:var(--accent-gold);text-decoration:underline;">$1</a>');
+        // Newlines to line breaks (outside lists and tables)
         html = html.replace(/\n\n/g, "<br><br>");
         html = html.replace(/\n/g, "<br>");
 
@@ -2010,6 +3003,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (appLayout) appLayout.style.display = "flex";
             if (window.lucide) lucide.createIcons();
             if (googleMap) google.maps.event.trigger(googleMap, "resize");
+            loadChatHistory();
             return;
         }
 
@@ -2212,6 +3206,9 @@ document.addEventListener("DOMContentLoaded", () => {
         logoutBtn.addEventListener("click", () => {
             localStorage.removeItem("pilgrim_jwt");
             createFreshSession();
+            if (chatHistoryList) {
+                chatHistoryList.innerHTML = '<div class="history-empty-msg">No conversations yet</div>';
+            }
             switchAuthView("AUTH_LOGIN");
         });
     }
@@ -2250,6 +3247,703 @@ document.addEventListener("DOMContentLoaded", () => {
         } catch (e) {
             console.warn("Auth startup verification error:", e);
             switchAuthView("AUTH_LOGIN");
+        }
+    }
+
+    // -------------------------------------------------------------
+    // 7. Dedicated Itinerary Planner & Saved Plans Controller
+    // -------------------------------------------------------------
+    const itineraryPlannerModal = document.getElementById("itineraryPlannerModal");
+    const savedItinerariesModal = document.getElementById("savedItinerariesModal");
+    const openPlannerBtn = document.getElementById("openPlannerBtn");
+    const headerPlannerBtn = document.getElementById("headerPlannerBtn");
+    const chipOpenPlanner = document.getElementById("chipOpenPlanner");
+    const closePlannerModalBtn = document.getElementById("closePlannerModalBtn");
+    const closeSavedModalBtn = document.getElementById("closeSavedModalBtn");
+    const viewSavedItinerariesBtn = document.getElementById("viewSavedItinerariesBtn");
+
+    const plannerFormView = document.getElementById("plannerFormView");
+    const plannerResultView = document.getElementById("plannerResultView");
+    const plannerTabsBar = document.getElementById("plannerTabsBar");
+    const tabPlanFormBtn = document.getElementById("tabPlanFormBtn");
+    const tabPlanResultBtn = document.getElementById("tabPlanResultBtn");
+    const backToParamsBtn = document.getElementById("backToParamsBtn");
+
+    const itineraryPlannerForm = document.getElementById("itineraryPlannerForm");
+    const planOrigin = document.getElementById("planOrigin");
+    const planRoundTrip = document.getElementById("planRoundTrip");
+    const planDuration = document.getElementById("planDuration");
+    const planStartDate = document.getElementById("planStartDate");
+    const planPax = document.getElementById("planPax");
+    const planBudget = document.getElementById("planBudget");
+    const planAccomPref = document.getElementById("planAccomPref");
+    const planTransportPref = document.getElementById("planTransportPref");
+    const planFoodPref = document.getElementById("planFoodPref");
+    const planSubmitBtn = document.getElementById("planSubmitBtn");
+    const plannerErrorBanner = document.getElementById("plannerErrorBanner");
+
+    const destinationsChipsSelector = document.getElementById("destinationsChipsSelector");
+    const selectedDestSummary = document.getElementById("selectedDestSummary");
+    const routeSeqTags = document.getElementById("routeSeqTags");
+
+    const plannerCardsContainer = document.getElementById("plannerCardsContainer");
+    const plannerMarkdownContent = document.getElementById("plannerMarkdownContent");
+    const saveItineraryBtn = document.getElementById("saveItineraryBtn");
+    const sendToChatBtn = document.getElementById("sendToChatBtn");
+    const plannerSaveStatus = document.getElementById("plannerSaveStatus");
+    const savedItinerariesList = document.getElementById("savedItinerariesList");
+
+    let selectedTemplesList = [];
+    let currentPlanExecution = null;
+
+    function openPlanner() {
+        if (!itineraryPlannerModal) return;
+        itineraryPlannerModal.style.display = "flex";
+        if (window.lucide) lucide.createIcons();
+    }
+
+    function closePlanner() {
+        if (!itineraryPlannerModal) return;
+        itineraryPlannerModal.style.display = "none";
+    }
+
+    if (openPlannerBtn) openPlannerBtn.addEventListener("click", openPlanner);
+    if (headerPlannerBtn) headerPlannerBtn.addEventListener("click", openPlanner);
+    if (chipOpenPlanner) chipOpenPlanner.addEventListener("click", openPlanner);
+    if (closePlannerModalBtn) closePlannerModalBtn.addEventListener("click", closePlanner);
+
+    // Welcome box chips click handler
+    const welcomeBoxEl = document.getElementById("welcomeBox");
+    if (welcomeBoxEl) {
+        welcomeBoxEl.addEventListener("click", (e) => {
+            const btn = e.target.closest(".welcome-chip");
+            if (!btn) return;
+            const query = btn.getAttribute("data-query");
+            if (query && userInput) {
+                userInput.value = query;
+                if (chatForm) chatForm.dispatchEvent(new Event("submit"));
+            } else if (btn.id === "chipOpenPlanner" || btn.getAttribute("data-action") === "open-planner") {
+                openPlanner();
+            }
+        });
+    }
+
+    // Destination Chips Multi-Selection
+    if (destinationsChipsSelector) {
+        destinationsChipsSelector.addEventListener("click", (e) => {
+            const chip = e.target.closest(".dest-chip");
+            if (!chip) return;
+            const templeName = chip.getAttribute("data-temple");
+            if (!templeName) return;
+
+            const existingIdx = selectedTemplesList.indexOf(templeName);
+            if (existingIdx >= 0) {
+                selectedTemplesList.splice(existingIdx, 1);
+                chip.classList.remove("selected");
+            } else {
+                selectedTemplesList.push(templeName);
+                chip.classList.add("selected");
+            }
+
+            // Update route summary tags
+            if (selectedTemplesList.length > 0) {
+                selectedDestSummary.style.display = "flex";
+                routeSeqTags.textContent = selectedTemplesList.join(" ➔ ");
+                if (planDuration && (!planDuration.value || planDuration.value == "1")) {
+                    planDuration.value = Math.max(1, selectedTemplesList.length);
+                }
+            } else {
+                selectedDestSummary.style.display = "none";
+                routeSeqTags.textContent = "";
+            }
+
+            if (plannerErrorBanner) plannerErrorBanner.style.display = "none";
+        });
+    }
+
+    // Planner Tab Switching
+    function switchToFormTab() {
+        if (tabPlanFormBtn) tabPlanFormBtn.classList.add("active");
+        if (tabPlanResultBtn) tabPlanResultBtn.classList.remove("active");
+        if (plannerFormView) plannerFormView.style.display = "block";
+        if (plannerResultView) plannerResultView.style.display = "none";
+    }
+
+    function switchToResultTab() {
+        if (tabPlanFormBtn) tabPlanFormBtn.classList.remove("active");
+        if (tabPlanResultBtn) tabPlanResultBtn.classList.add("active");
+        if (plannerFormView) plannerFormView.style.display = "none";
+        if (plannerResultView) plannerResultView.style.display = "block";
+        if (plannerTabsBar) plannerTabsBar.style.display = "flex";
+        if (window.lucide) lucide.createIcons();
+    }
+
+    if (tabPlanFormBtn) tabPlanFormBtn.addEventListener("click", switchToFormTab);
+    if (tabPlanResultBtn) tabPlanResultBtn.addEventListener("click", switchToResultTab);
+    if (backToParamsBtn) backToParamsBtn.addEventListener("click", switchToFormTab);
+
+    // Planner Form Submit Handler
+    if (itineraryPlannerForm) {
+        itineraryPlannerForm.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            if (plannerErrorBanner) plannerErrorBanner.style.display = "none";
+
+            if (selectedTemplesList.length === 0) {
+                if (plannerErrorBanner) {
+                    plannerErrorBanner.textContent = "Please select at least one pilgrimage destination from the list above.";
+                    plannerErrorBanner.style.display = "block";
+                }
+                return;
+            }
+
+            const originVal = planOrigin ? planOrigin.value.trim() : "";
+            const roundTripVal = planRoundTrip ? planRoundTrip.checked : false;
+            const durationVal = planDuration ? parseInt(planDuration.value, 10) || selectedTemplesList.length : selectedTemplesList.length;
+            const startDateVal = planStartDate && planStartDate.value ? planStartDate.value : null;
+            const paxVal = planPax ? parseInt(planPax.value, 10) || 1 : 1;
+            const budgetVal = planBudget && planBudget.value ? parseFloat(planBudget.value) : null;
+            const accomVal = planAccomPref ? planAccomPref.value : null;
+            const transportVal = planTransportPref ? planTransportPref.value : null;
+            const foodVal = planFoodPref ? planFoodPref.value : null;
+
+            const payload = {
+                origin: originVal || null,
+                destinations: selectedTemplesList,
+                duration_days: durationVal,
+                start_date: startDateVal,
+                pax: paxVal,
+                budget_limit: budgetVal,
+                accommodation_preference: accomVal || null,
+                transport_preference: transportVal || null,
+                food_preference: foodVal || null,
+                round_trip: roundTripVal,
+                selected_activities: currentSelectedActivities
+            };
+
+            const origBtnHtml = planSubmitBtn ? planSubmitBtn.innerHTML : "";
+            if (planSubmitBtn) {
+                planSubmitBtn.disabled = true;
+                planSubmitBtn.innerHTML = `<span>Generating Schedule & Budget...</span>`;
+            }
+
+            try {
+                const token = localStorage.getItem("pilgrim_jwt");
+                const headers = { "Content-Type": "application/json" };
+                if (token) headers["Authorization"] = `Bearer ${token}`;
+
+                const res = await fetch("/api/itinerary/plan", {
+                    method: "POST",
+                    headers: headers,
+                    body: JSON.stringify(payload)
+                });
+
+                if (!res.ok) {
+                    const errJson = await res.json().catch(() => ({}));
+                    throw new Error(errJson.detail || `Server returned status ${res.status}`);
+                }
+
+                const data = await res.json();
+                currentPlanExecution = data;
+
+                // Render structured cards (preventing duplicate route cards)
+                let cardsHtml = "";
+                const meta = data.metadata || {};
+                const hasBudget = Boolean(meta.calculated_total || meta.budget);
+                const hasItinerary = Boolean(meta.itinerary);
+                const hasRoutes = Boolean(meta.distance_km !== undefined || (meta.route_legs && meta.route_legs.length > 0));
+
+                if (hasItinerary) {
+                    cardsHtml += renderItineraryCard(meta, { skipRoutes: hasBudget });
+                }
+                if (hasBudget) {
+                    cardsHtml += renderBudgetCard(meta);
+                } else if (hasRoutes && !hasItinerary) {
+                    cardsHtml += renderNavigationCard(meta);
+                }
+                if (plannerCardsContainer) plannerCardsContainer.innerHTML = cardsHtml;
+
+                // Render markdown content
+                if (plannerMarkdownContent) {
+                    plannerMarkdownContent.innerHTML = formatMarkdownText(data.answer);
+                }
+
+                // Switch to results tab
+                switchToResultTab();
+
+                // Load nearby places for the destination temples
+                loadPlannerNearbyPlaces(selectedTemplesList, durationVal);
+            } catch (err) {
+                console.error("[Planner Execution Error]:", err);
+                if (plannerErrorBanner) {
+                    plannerErrorBanner.textContent = `Planning error: ${err.message}`;
+                    plannerErrorBanner.style.display = "block";
+                }
+            } finally {
+                if (planSubmitBtn) {
+                    planSubmitBtn.disabled = false;
+                    planSubmitBtn.innerHTML = origBtnHtml;
+                    if (window.lucide) lucide.createIcons();
+                }
+            }
+        });
+    }
+
+    // -------------------------------------------------------------
+    // Nearby Places Discovery & Itinerary Activities Management
+    // -------------------------------------------------------------
+    let currentSelectedActivities = [];
+    let currentPlannerPlacesData = {};
+
+    async function loadPlannerNearbyPlaces(destinations, durationDays) {
+        const container = document.getElementById("plannerPlacesDiscovery");
+        if (!container) return;
+        if (!destinations || destinations.length === 0) {
+            container.style.display = "none";
+            return;
+        }
+
+        container.style.display = "block";
+        container.innerHTML = `<div style="font-size:12px; color:var(--text-muted); padding:8px 0;"><span class="dot-online" style="animation:pulse 1s infinite;"></span> Loading nearby attractions and verified places...</div>`;
+
+        currentPlannerPlacesData = {};
+        for (const dest of destinations) {
+            try {
+                const res = await fetch(`/api/maps/places?temple=${encodeURIComponent(dest)}&temple_name=${encodeURIComponent(dest)}&category=all`);
+                if (res.ok) {
+                    const data = await res.json();
+                    currentPlannerPlacesData[dest] = data.results || data.places || [];
+                }
+            } catch (err) {
+                console.warn(`[Places Discovery] Failed to load places for ${dest}:`, err);
+                currentPlannerPlacesData[dest] = [];
+            }
+        }
+
+        renderPlannerPlacesDiscovery(destinations, durationDays);
+    }
+
+    function getValidDaysForDestination(dest, destinations, durationDays) {
+        if (!destinations || destinations.length === 0) return [1];
+        const cleanDests = destinations.map(d => String(d).toLowerCase().trim());
+        const targetClean = String(dest).toLowerCase().trim();
+        const idx = cleanDests.findIndex(d => d === targetClean || targetClean.includes(d) || d.includes(targetClean));
+        const n = destinations.length;
+        if (idx === -1) return [1];
+        if (durationDays < n) {
+            const targetDay = Math.min(Math.floor(idx * durationDays / n), durationDays - 1) + 1;
+            return [targetDay];
+        }
+        const baseDays = Math.floor(durationDays / n);
+        const extra = durationDays % n;
+        let startDay = 1;
+        for (let i = 0; i < idx; i++) {
+            startDay += baseDays + (i < extra ? 1 : 0);
+        }
+        const daysForDest = baseDays + (idx < extra ? 1 : 0);
+        const days = [];
+        for (let d = 0; d < daysForDest; d++) {
+            days.push(startDay + d);
+        }
+        return days.length > 0 ? days : [1];
+    }
+
+    function renderPlannerPlacesDiscovery(destinations, durationDays) {
+        const container = document.getElementById("plannerPlacesDiscovery");
+        if (!container) return;
+
+        // Render added activities bar
+        let addedBarHtml = "";
+        if (currentSelectedActivities.length > 0) {
+            const tags = currentSelectedActivities.map((act, idx) => `
+                <div class="added-act-tag">
+                    <span>📅 Day ${act.day}: <strong>${escapeHtml(act.name)}</strong> (${escapeHtml(act.destination || '')})</span>
+                    <button type="button" class="btn-remove-act" onclick="removePlannerActivity(${idx})" title="Remove activity">✕</button>
+                </div>
+            `).join("");
+            addedBarHtml = `
+                <div class="added-activities-bar">
+                    <span style="font-size:11.5px; font-weight:700; color:var(--accent-gold);">Custom Activities Added:</span>
+                    ${tags}
+                </div>
+            `;
+        }
+
+        let groupsHtml = "";
+        for (const dest of destinations) {
+            const places = currentPlannerPlacesData[dest] || [];
+            if (places.length === 0) {
+                groupsHtml += `
+                    <div style="margin-bottom: 14px;">
+                        <div style="font-size:12px; font-weight:700; color:var(--accent-gold); margin-bottom:8px;">
+                            🏛️ Nearby Attractions for ${escapeHtml(dest)}
+                        </div>
+                        <div style="font-size:11.5px; color:var(--text-muted); padding:6px 0;">
+                            No verified nearby attractions found for this destination.
+                        </div>
+                    </div>
+                `;
+                continue;
+            }
+
+            const validDays = getValidDaysForDestination(dest, destinations, durationDays);
+            const placeCards = places.slice(0, 8).map(p => {
+                const isAdded = currentSelectedActivities.some(a => a.name.toLowerCase() === p.name.toLowerCase());
+                const searchUrl = p.map_url || generateGoogleMapsSearchUrl(p.name, dest);
+                const dirUrl = p.directions_url || generateGoogleMapsDirectionsUrl(dest, p.name);
+                const srcBadge = p.source === "Live Google Places Results"
+                    ? `<span style="background:rgba(59,130,246,0.15); color:#60a5fa; font-size:9.5px; padding:1px 6px; border-radius:10px;">Google Places</span>`
+                    : `<span style="background:rgba(16,185,129,0.15); color:var(--accent-emerald); font-size:9.5px; padding:1px 6px; border-radius:10px;">Temple Knowledge Base</span>`;
+
+                const safeName = escapeHtml(p.name).replace(/'/g, "\\'");
+                const safeDest = escapeHtml(dest).replace(/'/g, "\\'");
+
+                let daySelectOptions = "";
+                validDays.forEach(d => {
+                    daySelectOptions += `<option value="${d}">Day ${d}</option>`;
+                });
+
+                return `
+                    <div class="place-card-mini">
+                        <div class="place-name">${escapeHtml(p.name)}</div>
+                        <div class="place-meta">
+                            <span>🏷️ ${escapeHtml(p.category || 'Attraction')}</span>
+                            ${p.distance ? `<span>• 📍 ${escapeHtml(p.distance)}</span>` : ""}
+                            ${p.rating ? `<span>• ⭐ ${p.rating}</span>` : ""}
+                        </div>
+                        <div style="margin-top:4px; margin-bottom:6px;">${srcBadge}</div>
+                        <div class="maps-action-bar">
+                            <a href="${escapeHtml(searchUrl)}" target="_blank" rel="noopener noreferrer" class="maps-action-link maps-link-search" title="View listing on Google Maps">
+                                📍 View on Maps
+                            </a>
+                            <a href="${escapeHtml(dirUrl)}" target="_blank" rel="noopener noreferrer" class="maps-action-link maps-link-dir" title="Get driving directions">
+                                🧭 Directions
+                            </a>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:6px; margin-top:8px;">
+                            ${isAdded ? `
+                                <span style="color:var(--accent-emerald); font-size:11px; font-weight:700;">✅ Added to Schedule</span>
+                            ` : `
+                                <select id="day_sel_${escapeHtml(p.name).replace(/[^a-zA-Z0-9]/g, '_')}" style="padding:2px 4px; font-size:11px; background:var(--bg-card); color:var(--text-main); border:1px solid rgba(255,255,255,0.15); border-radius:4px;">
+                                    ${daySelectOptions}
+                                </select>
+                                <button type="button" class="btn-add-activity" onclick="addPlannerActivity('${safeName}', '${safeDest}', this)">
+                                    ➕ Add to Day
+                                </button>
+                            `}
+                        </div>
+                    </div>
+                `;
+            }).join("");
+
+            groupsHtml += `
+                <div style="margin-bottom: 14px;">
+                    <div style="font-size:12px; font-weight:700; color:var(--accent-gold); margin-bottom:8px;">
+                        🏛️ Nearby Attractions for ${escapeHtml(dest)}
+                    </div>
+                    <div class="places-grid-mini">${placeCards}</div>
+                </div>
+            `;
+        }
+
+        if (!groupsHtml) {
+            container.innerHTML = "";
+            container.style.display = "none";
+            return;
+        }
+
+        container.innerHTML = `
+            <div style="border-top:1px solid rgba(255,255,255,0.08); padding-top:12px; margin-top:12px;">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+                    <div>
+                        <strong style="font-size:13.5px; color:var(--text-main);">🏛️ Explore & Add Nearby Attractions</strong>
+                        <div style="font-size:11.5px; color:var(--text-secondary); margin-top:2px;">Discover verified sites & places near your pilgrimage destinations to include in your day schedules.</div>
+                    </div>
+                </div>
+                ${addedBarHtml}
+                ${groupsHtml}
+            </div>
+        `;
+    }
+
+    window.addPlannerActivity = function(placeName, dest, btnEl) {
+        let dayNum = 1;
+        if (btnEl) {
+            const selectEl = btnEl.previousElementSibling;
+            if (selectEl && selectEl.value) {
+                dayNum = parseInt(selectEl.value, 10) || 1;
+            }
+        }
+
+        if (!currentSelectedActivities.some(a => a.name.toLowerCase() === placeName.toLowerCase())) {
+            currentSelectedActivities.push({
+                name: placeName,
+                day: dayNum,
+                destination: dest
+            });
+        }
+
+        const durationVal = planDuration ? parseInt(planDuration.value, 10) || selectedTemplesList.length : selectedTemplesList.length;
+        renderPlannerPlacesDiscovery(selectedTemplesList, durationVal);
+        recalculatePlannerWithActivities();
+    };
+
+    window.removePlannerActivity = function(idx) {
+        if (idx >= 0 && idx < currentSelectedActivities.length) {
+            currentSelectedActivities.splice(idx, 1);
+        }
+        const durationVal = planDuration ? parseInt(planDuration.value, 10) || selectedTemplesList.length : selectedTemplesList.length;
+        renderPlannerPlacesDiscovery(selectedTemplesList, durationVal);
+        recalculatePlannerWithActivities();
+    };
+
+    async function recalculatePlannerWithActivities() {
+        if (!currentPlanExecution) return;
+        const p = currentPlanExecution.parameters || {};
+        const originVal = planOrigin ? planOrigin.value.trim() : (p.origin || "");
+        const roundTripVal = planRoundTrip ? planRoundTrip.checked : (p.round_trip || false);
+        const durationVal = planDuration ? parseInt(planDuration.value, 10) || selectedTemplesList.length : (p.duration_days || selectedTemplesList.length);
+        const startDateVal = planStartDate && planStartDate.value ? planStartDate.value : (p.start_date || null);
+        const paxVal = planPax ? parseInt(planPax.value, 10) || 1 : (p.pax || 1);
+        const budgetVal = planBudget && planBudget.value ? parseFloat(planBudget.value) : (p.budget_limit || null);
+        const accomVal = planAccomPref ? planAccomPref.value : (p.accommodation_preference || null);
+        const transportVal = planTransportPref ? planTransportPref.value : (p.transport_preference || null);
+        const foodVal = planFoodPref ? planFoodPref.value : (p.food_preference || null);
+
+        const payload = {
+            origin: originVal || null,
+            destinations: selectedTemplesList,
+            duration_days: durationVal,
+            start_date: startDateVal,
+            pax: paxVal,
+            budget_limit: budgetVal,
+            accommodation_preference: accomVal || null,
+            transport_preference: transportVal || null,
+            food_preference: foodVal || null,
+            round_trip: roundTripVal,
+            selected_activities: currentSelectedActivities
+        };
+
+        if (plannerMarkdownContent) {
+            plannerMarkdownContent.innerHTML = `<div style="padding:16px; color:var(--text-muted);"><span class="dot-online" style="animation:pulse 1s infinite;"></span> Updating itinerary schedule with added activities...</div>`;
+        }
+
+        try {
+            const token = localStorage.getItem("pilgrim_jwt");
+            const headers = { "Content-Type": "application/json" };
+            if (token) headers["Authorization"] = `Bearer ${token}`;
+
+            const res = await fetch("/api/itinerary/plan", {
+                method: "POST",
+                headers: headers,
+                body: JSON.stringify(payload)
+            });
+
+            if (res.ok) {
+                const data = await res.json();
+                currentPlanExecution = data;
+                const meta = data.metadata || {};
+                let cardsHtml = "";
+                const hasBudget = Boolean(meta.calculated_total || meta.budget);
+                const hasItinerary = Boolean(meta.itinerary);
+                const hasRoutes = Boolean(meta.distance_km !== undefined || (meta.route_legs && meta.route_legs.length > 0));
+
+                if (hasItinerary) {
+                    cardsHtml += renderItineraryCard(meta, { skipRoutes: hasBudget });
+                }
+                if (hasBudget) {
+                    cardsHtml += renderBudgetCard(meta);
+                } else if (hasRoutes && !hasItinerary) {
+                    cardsHtml += renderNavigationCard(meta);
+                }
+                if (plannerCardsContainer) plannerCardsContainer.innerHTML = cardsHtml;
+                if (plannerMarkdownContent) plannerMarkdownContent.innerHTML = formatMarkdownText(data.answer);
+            }
+        } catch (err) {
+            console.error("[Recalculate Error]:", err);
+        }
+    }
+
+    // Save Itinerary Handler
+    if (saveItineraryBtn) {
+        saveItineraryBtn.addEventListener("click", async () => {
+            if (!currentPlanExecution) return;
+            const token = localStorage.getItem("pilgrim_jwt");
+            if (!token) {
+                showSaveStatus("Please sign in with your account to save itineraries.", "error");
+                return;
+            }
+
+            const p = currentPlanExecution.parameters || {};
+            const meta = currentPlanExecution.metadata || {};
+            const savePayload = {
+                title: `Pilgrimage to ${selectedTemplesList.join(" & ")} (${p.duration_days || selectedTemplesList.length} Days)`,
+                origin: p.origin || null,
+                destinations: selectedTemplesList,
+                duration_days: p.duration_days || selectedTemplesList.length,
+                pax: p.pax || 1,
+                budget_limit: p.budget_limit || null,
+                preferences: p.preferences || {},
+                itinerary_text: currentPlanExecution.answer,
+                route_legs: meta.route_legs || [],
+                budget_breakdown: meta.calculated_total || {}
+            };
+
+            saveItineraryBtn.disabled = true;
+            try {
+                const res = await fetch("/api/itinerary/save", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Authorization": `Bearer ${token}`
+                    },
+                    body: JSON.stringify(savePayload)
+                });
+
+                if (!res.ok) {
+                    const errJson = await res.json().catch(() => ({}));
+                    throw new Error(errJson.detail || "Database save failed.");
+                }
+
+                showSaveStatus("✓ Itinerary saved successfully to your profile!", "success");
+            } catch (err) {
+                showSaveStatus(`Save failed: ${err.message}`, "error");
+            } finally {
+                saveItineraryBtn.disabled = false;
+            }
+        });
+    }
+
+    function showSaveStatus(msg, type) {
+        if (!plannerSaveStatus) return;
+        plannerSaveStatus.textContent = msg;
+        plannerSaveStatus.className = `planner-save-status ${type}`;
+        plannerSaveStatus.style.display = "block";
+        setTimeout(() => {
+            plannerSaveStatus.style.display = "none";
+        }, 5000);
+    }
+
+    // Continue in Chat Handler
+    if (sendToChatBtn) {
+        sendToChatBtn.addEventListener("click", () => {
+            if (!currentPlanExecution) return;
+            closePlanner();
+            const q = currentPlanExecution.query_used || `Plan a ${selectedTemplesList.length} day trip to ${selectedTemplesList.join(" and ")}`;
+            appendMessage("user", q);
+            renderAssistantBubble(currentPlanExecution);
+            scrollToBottom();
+        });
+    }
+
+    // Saved Itineraries Modal Controller
+    function openSavedModal() {
+        if (!savedItinerariesModal) return;
+        savedItinerariesModal.style.display = "flex";
+        loadSavedItineraries();
+        if (window.lucide) lucide.createIcons();
+    }
+
+    function closeSavedModal() {
+        if (!savedItinerariesModal) return;
+        savedItinerariesModal.style.display = "none";
+    }
+
+    if (viewSavedItinerariesBtn) viewSavedItinerariesBtn.addEventListener("click", openSavedModal);
+    if (closeSavedModalBtn) closeSavedModalBtn.addEventListener("click", closeSavedModal);
+
+    async function loadSavedItineraries() {
+        if (!savedItinerariesList) return;
+        const token = localStorage.getItem("pilgrim_jwt");
+        if (!token) {
+            savedItinerariesList.innerHTML = `
+                <div class="history-empty-msg" style="padding: 24px; text-align: center;">
+                    Please <button type="button" class="btn-text-link" onclick="document.getElementById('savedItinerariesModal').style.display='none'; switchAuthView('AUTH_LOGIN');">sign in</button> to access and manage your saved pilgrimage plans.
+                </div>
+            `;
+            return;
+        }
+
+        savedItinerariesList.innerHTML = `<div class="history-empty-msg">Loading saved itineraries...</div>`;
+
+        try {
+            const res = await fetch("/api/itinerary/saved", {
+                headers: { "Authorization": `Bearer ${token}` }
+            });
+            if (!res.ok) throw new Error("Could not load itineraries");
+            const data = await res.json();
+            const list = data.itineraries || [];
+
+            if (list.length === 0) {
+                savedItinerariesList.innerHTML = `<div class="history-empty-msg">No saved itineraries yet. Use the "Plan an Itinerary" tool to generate and save your pilgrimage plans!</div>`;
+                return;
+            }
+
+            savedItinerariesList.innerHTML = list.map(item => {
+                const title = escapeHtml(item.title || "Pilgrimage Plan");
+                const dests = (item.destinations || []).map(d => `<span class="src-chip" style="font-size:10px;">${escapeHtml(d)}</span>`).join(" ");
+                const days = item.duration_days || 1;
+                const pax = item.pax || 1;
+                const budgetStr = item.budget_limit ? `• Budget: ₹${Number(item.budget_limit).toLocaleString()}` : "";
+                const id = escapeHtml(item.itinerary_id);
+
+                return `
+                    <div class="saved-itin-card" data-id="${id}">
+                        <div class="saved-itin-info">
+                            <h4>${title}</h4>
+                            <div style="margin-bottom: 6px; display: flex; gap: 4px; flex-wrap: wrap;">${dests}</div>
+                            <div class="saved-itin-meta">
+                                <span>📅 ${days} Day(s)</span>
+                                <span>👥 ${pax} Pilgrim(s)</span>
+                                <span>${budgetStr}</span>
+                            </div>
+                        </div>
+                        <div class="saved-itin-actions">
+                            <button type="button" class="btn-itin-load" data-action="load" data-id="${id}">View</button>
+                            <button type="button" class="btn-itin-delete" data-action="delete" data-id="${id}">Delete</button>
+                        </div>
+                    </div>
+                `;
+            }).join("");
+
+            // Attach action clicks
+            savedItinerariesList.querySelectorAll("button").forEach(btn => {
+                btn.addEventListener("click", async (e) => {
+                    const action = btn.getAttribute("data-action");
+                    const itinId = btn.getAttribute("data-id");
+                    if (action === "delete") {
+                        btn.disabled = true;
+                        btn.textContent = "...";
+                        try {
+                            const delRes = await fetch(`/api/itinerary/saved/${itinId}`, {
+                                method: "DELETE",
+                                headers: { "Authorization": `Bearer ${token}` }
+                            });
+                            if (delRes.ok) {
+                                loadSavedItineraries();
+                            }
+                        } catch (e) {
+                            console.error("Delete error:", e);
+                        }
+                    } else if (action === "load") {
+                        const targetItem = list.find(it => it.itinerary_id === itinId);
+                        if (targetItem) {
+                            closeSavedModal();
+                            openPlanner();
+                            switchToResultTab();
+                            if (plannerCardsContainer) plannerCardsContainer.innerHTML = "";
+                            if (plannerMarkdownContent) plannerMarkdownContent.innerHTML = formatMarkdownText(targetItem.itinerary_text);
+                            currentPlanExecution = {
+                                answer: targetItem.itinerary_text,
+                                metadata: { itinerary: true, route_legs: targetItem.route_legs || [], calculated_total: targetItem.budget_breakdown || {} },
+                                query_used: `Saved: ${targetItem.title}`,
+                                parameters: { origin: targetItem.origin, destinations: targetItem.destinations, duration_days: targetItem.duration_days, pax: targetItem.pax }
+                            };
+                        }
+                    }
+                });
+            });
+        } catch (err) {
+            savedItinerariesList.innerHTML = `<div class="history-empty-msg" style="color:#f87171;">Failed to load saved itineraries: ${err.message}</div>`;
         }
     }
 

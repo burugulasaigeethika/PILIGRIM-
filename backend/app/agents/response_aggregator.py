@@ -13,6 +13,7 @@ Core Principles:
 """
 
 import re
+import html
 import time
 import logging
 from typing import List, Dict, Any, Set, Optional
@@ -34,34 +35,87 @@ class ResponseAggregator:
     def _detect_conflict(self, responses: List[AgentResponse]) -> bool:
         """
         Determines whether multiple responses contain conflicting assertions
-        (e.g., disjoint opening hours or contradictory statements).
+        (e.g., contradictory opening hours on the exact same temple query).
         """
         if len(responses) < 2:
             return False
 
-        # Extract time assertions (e.g. 4:00 AM vs 5:00 AM)
-        times_per_resp = []
-        for r in responses:
-            found_times = set(re.findall(r"\b\d{1,2}(?::\d{2})?\s*(?:am|pm)\b", r.answer, re.IGNORECASE))
-            times_per_resp.append(found_times)
-
-        populated_times = [t for t in times_per_resp if t]
-        if len(populated_times) >= 2:
-            for i in range(len(populated_times)):
-                for j in range(i + 1, len(populated_times)):
-                    if populated_times[i] != populated_times[j]:
-                        return True
-
-        # Check explicit conflict markers or differing numeric assertions on same keywords
+        # Check explicit conflict markers or differing opening/closing assertions on same keywords
         for i in range(len(responses)):
             for j in range(i + 1, len(responses)):
                 a1, a2 = responses[i].answer.lower(), responses[j].answer.lower()
+                m1 = re.findall(r"\b(?:opens\s+(?:daily\s+)?at|timings\s+are)\s+(\d{1,2}(?::\d{2})?\s*(?:am|pm))\b", a1)
+                m2 = re.findall(r"\b(?:opens\s+(?:daily\s+)?at|timings\s+are)\s+(\d{1,2}(?::\d{2})?\s*(?:am|pm))\b", a2)
+                if m1 and m2 and set(m1) != set(m2):
+                    return True
                 if "opens at" in a1 and "opens at" in a2 and a1 != a2:
                     return True
                 if "timings are" in a1 and "timings are" in a2 and a1 != a2:
                     return True
 
         return False
+
+    def _synthesize_itinerary_and_budget(
+        self,
+        itinerary_resp: AgentResponse,
+        budget_resp: AgentResponse
+    ) -> str:
+        """
+        Combines ItineraryPlanningAgent and BudgetAgent responses into a cohesive,
+        well-structured response following Requirement 4 without repetition or internal debug output.
+        """
+        it_lines = []
+        disclaimer_line = None
+        has_bg_accom = (
+            "recommended accommodation" in budget_resp.answer.lower()
+            or "recommended stay" in budget_resp.answer.lower()
+            or "accommodation comparison" in budget_resp.answer.lower()
+        )
+
+        skip_accom_catalog = False
+        for line in itinerary_resp.answer.strip().split("\n"):
+            if line.startswith("*(Data Sources & Scope:") or line.startswith("*(Live-Data Limitation:"):
+                disclaimer_line = line
+            elif line.strip().startswith("**Sources:**"):
+                break
+            elif has_bg_accom and (
+                (line.startswith("### ") or line.startswith("## "))
+                and any(k in line.lower() for k in ["accommodation", "lodging", "stay plan", "stay options"])
+            ):
+                skip_accom_catalog = True
+                continue
+            elif skip_accom_catalog and line.startswith("### ") and not any(k in line.lower() for k in ["accommodation", "lodging", "stay"]):
+                skip_accom_catalog = False
+                it_lines.append(line)
+            elif not skip_accom_catalog:
+                it_lines.append(line)
+        it_clean = "\n".join(it_lines).strip()
+
+        # Extract budget-relevant sections from budget answer
+        bg_sections = []
+        keep_bg_sec = False
+        for line in budget_resp.answer.strip().split("\n"):
+            if line.startswith("### ") or line.startswith("## "):
+                h_low = line.lower()
+                if any(ex in h_low for ex in ["travel & journey routes", "notes", "sources", "trip overview"]):
+                    keep_bg_sec = False
+                else:
+                    keep_bg_sec = True
+                    bg_sections.append(line)
+            elif keep_bg_sec:
+                bg_sections.append(line)
+
+        bg_clean = "\n".join(bg_sections).strip()
+        if bg_clean and not bg_clean.startswith("## "):
+            bg_clean = "## 💰 Budget Estimation & Cost Breakdown\n\n" + bg_clean
+
+        doc_parts = [it_clean]
+        if bg_clean:
+            doc_parts.append(bg_clean)
+        if disclaimer_line:
+            doc_parts.append(disclaimer_line)
+
+        return "\n\n".join(doc_parts).strip()
 
     def aggregate(self, responses: List[AgentResponse]) -> AgentResponse:
         """
@@ -159,6 +213,23 @@ class ResponseAggregator:
                     seen_sources.add(src)
                     merged_sources.append(src)
 
+        # Order responses logically by domain hierarchy:
+        # Overview/Temple Info -> Itinerary -> Weather -> Budget -> Navigation -> Emergency -> Other
+        AGENT_ORDER = {
+            "temple_information": 10,
+            "recommendation": 15,
+            "itinerary_planning": 20,
+            "live_weather": 30,
+            "budget": 40,
+            "live_navigation": 50,
+            "emergency": 60,
+            "voice_multilingual": 70,
+        }
+        ordered_successful = sorted(
+            unique_successful,
+            key=lambda r: AGENT_ORDER.get(r.agent_name, 100)
+        )
+
         # -------------------------------------------------------------
         # 5. Check Conflicting Information Across Multiple Responses
         # -------------------------------------------------------------
@@ -166,15 +237,27 @@ class ResponseAggregator:
 
         if has_conflict:
             conflict_lines = ["Information from the available agents differs:"]
-            for r in unique_successful:
+            for r in ordered_successful:
                 agent_label = r.agent_name or "Specialist Agent"
                 conflict_lines.append(f"- **{agent_label}**: {r.answer.strip()}")
             conflict_lines.append("\nNote: The conflicting information should be verified before relying on it.")
             combined_answer = "\n".join(conflict_lines)
         else:
-            # Clean paragraph-based composition
-            answer_parts = [r.answer.strip() for r in unique_successful if r.answer.strip()]
-            combined_answer = "\n\n".join(answer_parts)
+            it_resp = next((r for r in ordered_successful if r.agent_name == "itinerary_planning"), None)
+            bg_resp = next((r for r in ordered_successful if r.agent_name == "budget"), None)
+
+            if it_resp and bg_resp:
+                synthesized = self._synthesize_itinerary_and_budget(it_resp, bg_resp)
+                other_responses = [r for r in ordered_successful if r.agent_name not in ("itinerary_planning", "budget")]
+                if other_responses:
+                    combined_answer = synthesized + "\n\n---\n\n" + "\n\n---\n\n".join(r.answer.strip() for r in other_responses if r.answer.strip())
+                else:
+                    combined_answer = synthesized
+            else:
+                answer_parts = [r.answer.strip() for r in ordered_successful if r.answer.strip()]
+                combined_answer = "\n\n---\n\n".join(answer_parts) if len(answer_parts) > 1 else (answer_parts[0] if answer_parts else "")
+
+        combined_answer = html.unescape(combined_answer)
 
         # -------------------------------------------------------------
         # 6. Merge Metadata
@@ -194,8 +277,8 @@ class ResponseAggregator:
             merged_metadata["partial_failure"] = True
             merged_metadata["failure_errors"] = [r.error for r in failed if r.error]
 
-        # Propagate child metadata keys if not already present
-        for r in unique_successful:
+        # Propagate child metadata keys if not already present, respecting ordered_successful
+        for r in ordered_successful:
             for k, v in r.metadata.items():
                 if k not in merged_metadata:
                     merged_metadata[k] = v

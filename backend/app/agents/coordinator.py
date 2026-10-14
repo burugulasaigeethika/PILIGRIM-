@@ -13,6 +13,7 @@ Core Principles:
 - Zero LLM Generation: Performs no natural language generation directly.
 """
 
+import re
 import time
 import logging
 from typing import Dict, Any, List, Optional
@@ -182,16 +183,20 @@ class MasterAgentCoordinator:
                 state.intermediate_results["memory"] = {
                     "original_query": orig_query,
                     "resolved_query": resolved_query,
-                    "referenced_temple": resolution.get("referenced_temple")
+                    "referenced_temple": resolution.get("referenced_temple"),
+                    "resolved_from_pending": resolution.get("resolved_from_pending", False)
                 }
                 state.add_trace(
                     agent_name="coordinator",
                     step_name="memory_resolved",
                     status="completed",
                     metadata={
-                        "original_query": orig_query,
+                        "original_question": resolution.get("original_pending_question", orig_query),
+                        "follow_up": orig_query if resolution.get("resolved_from_pending") else None,
+                        "resolved_intent": "temple_information",
+                        "resolved_temple": resolution.get("referenced_temple"),
                         "resolved_query": resolved_query,
-                        "referenced_temple": resolution.get("referenced_temple")
+                        "resolved_from_pending": resolution.get("resolved_from_pending", False)
                     }
                 )
                 query = resolved_query
@@ -255,14 +260,42 @@ class MasterAgentCoordinator:
             state.final_response = final_resp
             return final_resp
 
+        # Elevate itinerary_planning with a specified budget to multi_intent (itinerary + budget)
+        if route_decision.intent == "itinerary_planning":
+            b_val = None
+            if state.structured_constraints:
+                b_val = state.structured_constraints.get("budget_limit") or state.structured_constraints.get("budget")
+            if not b_val:
+                from app.agents.budget_agent import extract_budget_parameters
+                bp = extract_budget_parameters(query, structured_constraints=state.structured_constraints)
+                b_val = bp.get("budget_limit")
+            if b_val:
+                route_decision.intent = "multi_intent"
+                route_decision.selected_agent = "multi_intent_pipeline"
+                subs = list(route_decision.metadata.get("sub_intents") or [])
+                if "itinerary" not in subs:
+                    subs.append("itinerary")
+                if "budget" not in subs:
+                    subs.append("budget")
+                route_decision.metadata["sub_intents"] = subs
+
         # -------------------------------------------------------------
         # 3. Ambiguous Query Handling (Clarification Route)
         # -------------------------------------------------------------
         if route_decision.intent == "clarification":
-            clarification_text = (
-                "Which temple would you like information about? "
-                "PilgrimAI currently covers 20 major temples in Telangana (e.g., Yadadri, Basara, Bhadrachalam, Srisailam, Dharmapuri, etc.)."
-            )
+            if route_decision.metadata.get("budget_intent") or (
+                hasattr(self.router, "_budget_patterns") and any(re.search(p, query, re.IGNORECASE) for p in self.router._budget_patterns)
+            ):
+                clarification_text = (
+                    "Which temple would you like to plan a visit or calculate a budget for? "
+                    "PilgrimAI currently covers 20 major pilgrimage temples in Telangana (e.g., Yadadri, Basara, Bhadrachalam, Srisailam, Dharmapuri, etc.). "
+                    "Once you specify the temple, I can provide verified darshan, seva, and accommodation costs."
+                )
+            else:
+                clarification_text = (
+                    "Which temple would you like information about? "
+                    "PilgrimAI currently covers 20 major temples in Telangana (e.g., Yadadri, Basara, Bhadrachalam, Srisailam, Dharmapuri, etc.)."
+                )
             clarification_resp = AgentResponse(
                 success=False,
                 agent_name="coordinator",
@@ -280,6 +313,16 @@ class MasterAgentCoordinator:
                 metadata={"intent": route_decision.intent}
             )
             state.final_response = clarification_resp
+            
+            # Record pending clarification in memory manager so subsequent entity response is resolved
+            if self.memory_manager is not None and state.session_id:
+                self.memory_manager.set_pending_clarification(
+                    session_id=state.session_id,
+                    pending_question=orig_query,
+                    pending_intent="temple_information",
+                    metadata=dict(route_decision.metadata)
+                )
+                self._record_memory(state.session_id, orig_query, query, clarification_resp)
             return clarification_resp
 
         # -------------------------------------------------------------
@@ -417,8 +460,8 @@ class MasterAgentCoordinator:
             state.final_response = agg_fail_resp
             return agg_fail_resp
 
-        # Safety guard: ensure final aggregated response answer is never empty
-        if not final_aggregated_response.answer or not final_aggregated_response.answer.strip():
+        # Safety guard: ensure final aggregated response answer is never empty on success
+        if final_aggregated_response.success and (not final_aggregated_response.answer or not final_aggregated_response.answer.strip()):
             final_aggregated_response.answer = (
                 "I could not retrieve details for this request. Please specify a temple name (e.g., Yadadri, Basara) "
                 "or rephrase your question regarding timings, budget, weather, or navigation."

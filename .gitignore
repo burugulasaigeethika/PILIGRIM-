@@ -21,3 +21,9 @@ Thumbs.db
 # Temporary runtime locks & scratch
 *.lock
 scratch/
+
+# Large documentation dumps (>100MB) & local verification artifacts
+COMPLETE_CODE_LINE_BY_LINE_EXPLANATION.txt
+ALL_CODE_FILES_DETAILED_EXPLANATION.txt
+PROJECT_FILES_DOCUMENTATION.txt
+final_verification_results.json

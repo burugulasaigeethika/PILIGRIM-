@@ -62,36 +62,168 @@ class SequentialMultiIntentPipeline:
         detected_temples = self.router._detect_temples(clean_query)
         primary_temple = detected_temples[0] if detected_temples else None
 
-        # Split on conjunctions, question marks, semicolons, or with/under budget clauses
-        split_pattern = r"(?:\s+(?:and|also|as\s+well\s+as|along\s+with|&)\s+|\s*[?;]\s*|\s+(?=(?:with\s+(?:a\s+)?budget|under\s+(?:a\s+budget\s+of\s+)?₹?\s*\d+)\b))"
-        raw_clauses = [c.strip() for c in re.split(split_pattern, clean_query, flags=re.IGNORECASE) if c.strip()]
+        # Protect conjunctions connecting multiple detected temple names/aliases so multi-temple
+        # itinerary / comparison phrases stay intact in a single clause
+        from app.agents.coordinate_registry import _CANONICAL_TEMPLE_ALIASES
+        all_aliases = set()
+        for a_list in _CANONICAL_TEMPLE_ALIASES.values():
+            all_aliases.update(a_list)
+        if hasattr(self.router, "planner") and hasattr(self.router.planner, "temple_aliases"):
+            for a_list in self.router.planner.temple_aliases.values():
+                all_aliases.update(a_list)
+
+        found_temple_keywords = []
+        for kw in sorted(all_aliases, key=len, reverse=True):
+            if re.search(rf"\b{re.escape(kw)}\b", clean_query, flags=re.IGNORECASE):
+                found_temple_keywords.append(kw)
+
+        protected_query = clean_query
+        if len(found_temple_keywords) > 1:
+            for t1 in found_temple_keywords:
+                for t2 in found_temple_keywords:
+                    if t1.lower() != t2.lower():
+                        p = rf"(\b{re.escape(t1)}\b[^\n;?]*?)(?:,\s*|\s+)(?:and|&|along\s+with|as\s+well\s+as)\s+([^\n;?]*?\b{re.escape(t2)}\b)"
+                        protected_query = re.sub(p, r"\1 __CONJOINED_AND__ \2", protected_query, flags=re.IGNORECASE)
+                        # Also protect comma-separated temple lists in itinerary queries (e.g. "A, B, C")
+                        p_comma = rf"(\b{re.escape(t1)}\b)\s*,\s*(\b{re.escape(t2)}\b)"
+                        protected_query = re.sub(p_comma, r"\1 __CONJOINED_COMMA__ \2", protected_query, flags=re.IGNORECASE)
+
+        # Protect attribute conjunctions such as 'amount and distance', 'price and distance' from being split
+        protected_query = re.sub(
+            r"\b((?:amount|price|tariff|rate|cost|name|names)\s+)(?:and|&)(\s+(?:distance|distances|location|locations|type|types|contact))\b",
+            r"\1__ATTR_AND__\2",
+            protected_query,
+            flags=re.IGNORECASE
+        )
+
+        # Protect return journey phrases such as 'and back to Chennai', 'and return to Chennai', 'and back to the starting city'
+        # so they remain attached to the preceding journey clause and are not split into an isolated clause
+        protected_query = re.sub(
+            r"\b(and|&|along\s+with|as\s+well\s+as)\s+((?:back|return|returning)\s+to\s+[^,;?]+)",
+            r"__RETURN_AND__ \2",
+            protected_query,
+            flags=re.IGNORECASE
+        )
+        protected_query = re.sub(
+            r"\b(and|&)\s+((?:back|return|returning)\s+to\s+(?:the\s+)?(?:starting|origin|start)\s*(?:city|place|point|location)?)\b",
+            r"__RETURN_AND__ \1",
+            protected_query,
+            flags=re.IGNORECASE
+        )
+        protected_query = re.sub(
+            r"\b(and|&)\s+(back|return|round[- ]*trip)\b",
+            r"__RETURN_AND__ \2",
+            protected_query,
+            flags=re.IGNORECASE
+        )
+
+        # Split on conjunctions, question marks, semicolons, or transition boundaries into other intents
+        split_pattern = (
+            r"(?:"
+            r"\s+(?:and|also|as\s+well\s+as|along\s+with|&)\s+"
+            r"|\s*[?;]\s*"
+            r"|\s+(?=(?:with\s+(?:a\s+)?budget|under\s+(?:a\s+)?budget|(?<!with\s)(?<!with\sa\s)budget\s+(?:is|of|for))\b)"
+            r"|\s+(?=(?:mention|check|tell\s+me|give|what\s+is|what\s+will|include|how\s+is|weather|forecast|temperature|today['’]?s)\s+(?:the\s+|today['’]?s\s+)?(?:weather|temperature|forecast|rain|climate)\b)"
+            r"|\s+(?=(?:how\s+to\s+reach|how\s+to\s+get|directions?\s+to|route\s+to|navigation\s+to|distance\s+to)\b)"
+            r")"
+        )
+        raw_clauses = [
+            c.replace("__CONJOINED_AND__", "and").replace("__CONJOINED_COMMA__", ", ").replace("__ATTR_AND__", "and").replace("__RETURN_AND__", "and").strip()
+            for c in re.split(split_pattern, protected_query, flags=re.IGNORECASE)
+            if c.strip()
+        ]
 
         if not raw_clauses:
             raw_clauses = [clean_query]
 
+        AGENT_NAME_MAP = {
+            "LiveWeatherAgent": "live_weather",
+            "weather": "live_weather",
+            "live_weather": "live_weather",
+            "BudgetAgent": "budget",
+            "budget": "budget",
+            "ItineraryPlanningAgent": "itinerary_planning",
+            "itinerary_planning": "itinerary_planning",
+            "itinerary": "itinerary_planning",
+            "LiveNavigationAgent": "live_navigation",
+            "live_navigation": "live_navigation",
+            "navigation": "live_navigation",
+            "RecommendationAgent": "recommendation",
+            "recommendation": "recommendation",
+            "EmergencyAgent": "emergency",
+            "emergency": "emergency",
+            "TempleInformationAgent": "temple_information",
+            "temple_information": "temple_information",
+            "sevas": "temple_information",
+            "seva": "temple_information",
+            "accommodation": "temple_information",
+            "accomodation": "temple_information",
+            "rooms": "temple_information",
+            "timings": "temple_information",
+            "timing": "temple_information",
+            "darshan": "temple_information",
+            "prasadam": "temple_information",
+            "food": "temple_information",
+            "facilities": "temple_information",
+            "history": "temple_information",
+            "rules": "temple_information",
+            "dress_code": "temple_information",
+            "travel": "temple_information",
+            "nearby_attractions": "temple_information",
+            "attractions": "temple_information",
+            "ComparisonAgent": "comparison",
+            "comparison": "comparison",
+            "CrossTempleAgent": "cross_temple_aggregation",
+            "cross_temple_aggregation": "cross_temple_aggregation"
+        }
+
         tasks = []
+        task_counter = 1
         for i, clause in enumerate(raw_clauses):
             # Check if clause already mentions a registered temple
             clause_temples = self.router._detect_temples(clause)
 
             if not clause_temples and primary_temple:
                 # Propagate primary temple context to the sub-query
-                task_query = f"{clause} at {primary_temple} temple"
+                if len(detected_temples) > 1:
+                    task_query = f"{clause} at {' and '.join(detected_temples)}"
+                else:
+                    task_query = f"{clause} at {primary_temple} temple"
             else:
                 task_query = clause
 
             # Route individual sub-query to determine task intent and specialist
             route_decision = self.router.route(task_query)
 
+            if route_decision.intent == "multi_intent":
+                # Unpack compound sub_intents if clause wasn't split by delimiters
+                sub_intents = route_decision.metadata.get("sub_intents", [])
+                if sub_intents:
+                    for si in sub_intents:
+                        agent_key = AGENT_NAME_MAP.get(si, si)
+                        tasks.append({
+                            "task_id": task_counter,
+                            "raw_clause": clause,
+                            "query": task_query,
+                            "intent": si,
+                            "target_agent": agent_key,
+                            "is_available": agent_key in self.agents,
+                            "route_decision": route_decision
+                        })
+                        task_counter += 1
+                    continue
+
             # Determine target agent name and availability
             target_agent = route_decision.selected_agent
             if target_agent == "none":
                 target_agent = route_decision.metadata.get("target_agent", route_decision.intent)
 
+            # Normalize through canonical agent registry map
+            target_agent = AGENT_NAME_MAP.get(target_agent, target_agent)
             is_available = target_agent in self.agents
 
             tasks.append({
-                "task_id": i + 1,
+                "task_id": task_counter,
                 "raw_clause": clause,
                 "query": task_query,
                 "intent": route_decision.intent,
@@ -99,6 +231,7 @@ class SequentialMultiIntentPipeline:
                 "is_available": is_available,
                 "route_decision": route_decision
             })
+            task_counter += 1
 
         return tasks
 
@@ -196,15 +329,21 @@ class SequentialMultiIntentPipeline:
         # 1.5 Extract Global Structured Constraints
         # -------------------------------------------------------------
         from app.agents.budget_agent import extract_budget_parameters
-        global_params = extract_budget_parameters(query)
+        existing_c = dict(state.structured_constraints) if state.structured_constraints else {}
+        global_params = extract_budget_parameters(query, structured_constraints=existing_c)
         state.structured_constraints = {
-            "duration_days": global_params.get("days", 1),
+            **existing_c,
+            "duration_days": existing_c.get("duration_days") or global_params.get("days", 1),
             "days_assumed": global_params.get("days_assumed", True),
-            "budget_limit": global_params.get("budget_limit"),
+            "budget_limit": existing_c.get("budget_limit") if existing_c.get("budget_limit") is not None else global_params.get("budget_limit"),
             "accommodation_required": global_params.get("accom_requested", False),
-            "pax": global_params.get("pax", 1),
+            "accommodation_preference": existing_c.get("accommodation_preference") or global_params.get("accommodation_preference"),
+            "transport_preference": existing_c.get("transport_preference") or global_params.get("transport_preference"),
+            "food_preference": existing_c.get("food_preference") or global_params.get("food_preference"),
+            "pax": existing_c.get("pax") or global_params.get("pax", 1),
             "pax_assumed": global_params.get("pax_assumed", True),
-            "temples": detected_temples
+            "temples": detected_temples,
+            "origin": existing_c.get("origin") or global_params.get("origin")
         }
 
         # -------------------------------------------------------------

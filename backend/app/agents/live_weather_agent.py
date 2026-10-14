@@ -161,12 +161,16 @@ class LiveWeatherAgent(BaseAgent):
     def _extract_temperature_filter(self, query: str) -> Optional[Dict[str, Any]]:
         """
         Deterministically extracts temperature threshold or range filter criteria from query.
+        Handles °C, ° C, degrees, deg, hyphenated ranges, and word forms.
         """
         q_norm = query.lower()
 
-        # Between / Range: e.g. "between 25 and 30", "between 25 to 30", "25 to 30", "25-30"
-        range_match = re.search(r"(?:between\s+)?(\d{1,2})\s*(?:[-–—]|to|and)\s*(\d{1,2})\s*(?:°?c|degrees?|deg)?", q_norm)
-        if range_match and ("between" in q_norm or any(w in q_norm for w in ["temperature", "temperatures", "weather", "deg", "degree", "°c"])):
+        # Between / Range: e.g. "between 25°C and 27°C", "between 27°C and 30°C?", "between 25 and 30", "25 to 30", "25-30", "25–27"
+        range_match = re.search(
+            r"(?:between\s+)?(\d{1,2})(?:\s*°?\s*c|\s*degrees?)?\s*(?:[-–—]|to|and)\s*(\d{1,2})\s*(?:°?\s*c|degrees?|deg)?",
+            q_norm
+        )
+        if range_match and ("between" in q_norm or any(w in q_norm for w in ["temperature", "temperatures", "weather", "deg", "degree", "°c", "°", "celsius"])):
             min_temp = float(range_match.group(1))
             max_temp = float(range_match.group(2))
             return {
@@ -177,7 +181,10 @@ class LiveWeatherAgent(BaseAgent):
             }
 
         # Above / Greater than: e.g. "above 27°c", "above 30 degrees", "more than 28", "higher than 27"
-        above_match = re.search(r"(?:above|over|higher\s+than|more\s+than|exceeding|greater\s+than)\s*(\d{1,2})\s*(?:°?c|degrees?|deg)?", q_norm)
+        above_match = re.search(
+            r"(?:above|over|higher\s+than|more\s+than|exceeding|greater\s+than)\s*(\d{1,2})\s*(?:°?\s*c|degrees?|deg)?\b",
+            q_norm
+        )
         if above_match:
             thresh = float(above_match.group(1))
             return {
@@ -186,8 +193,11 @@ class LiveWeatherAgent(BaseAgent):
                 "description": f"above {thresh:g}°C"
             }
 
-        # Below / Under / Less than: e.g. "below 25°c", "under 28 degrees", "less than 26"
-        below_match = re.search(r"(?:below|under|less\s+than|lower\s+than)\s*(\d{1,2})\s*(?:°?c|degrees?|deg)?", q_norm)
+        # Below / Under / Less than: e.g. "below 25°c", "under 28 degrees", "less than 26", "below 27 degrees"
+        below_match = re.search(
+            r"(?:below|under|less\s+than|lower\s+than)\s*(\d{1,2})\s*(?:°?\s*c|degrees?|deg)?\b",
+            q_norm
+        )
         if below_match:
             thresh = float(below_match.group(1))
             return {
@@ -197,7 +207,10 @@ class LiveWeatherAgent(BaseAgent):
             }
 
         # Around / Approx / About: e.g. "around 26°c", "approx 28 degrees", "about 25"
-        around_match = re.search(r"(?:around|approx|about)\s*(\d{1,2})\s*(?:°?c|degrees?|deg)?", q_norm)
+        around_match = re.search(
+            r"(?:around|approx|about)\s*(\d{1,2})\s*(?:°?\s*c|degrees?|deg)?\b",
+            q_norm
+        )
         if around_match:
             target = float(around_match.group(1))
             return {
@@ -659,13 +672,50 @@ class LiveWeatherAgent(BaseAgent):
             min_temp_today=min_temp_today
         )
 
-        # 7. Check for temporal sub-intent (e.g. tomorrow, weekend)
+        # 7. Check for temporal sub-intent (e.g. tomorrow, weekend, next N days)
         q_lower = query.lower()
         temporal_focus = "current"
         tomorrow_summary = ""
         weekend_summary = ""
+        next_days_summary = ""
 
-        if "tomorrow" in q_lower and daily and len(daily.get("time", [])) > 1:
+        # Check for next N days request (e.g., "next 3 days", "next 2 days", "3 days forecast")
+        n_days_match = re.search(r"\b(?:next|for|upcoming)\s+(\d+)\s+days?\b", q_lower)
+        if not n_days_match:
+            n_days_match = re.search(r"\b(\d+)\s*[- ]*days?\s+(?:forecast|weather)\b", q_lower)
+
+        if n_days_match and daily and isinstance(daily, dict):
+            req_days = int(n_days_match.group(1))
+            total_avail = len(daily.get("time", []))
+            days_to_show = min(req_days, total_avail)
+
+            if days_to_show > 0:
+                temporal_focus = f"next_{req_days}_days"
+                day_lines = [f"\n### 📅 Forecast for the Next {req_days} Day(s)"]
+                for idx in range(days_to_show):
+                    d_time = daily["time"][idx] if idx < len(daily.get("time", [])) else f"Day {idx+1}"
+                    w_code = daily["weather_code"][idx] if idx < len(daily.get("weather_code", [])) else None
+                    w_desc = get_weather_condition_description(w_code)
+                    w_max = daily["temperature_2m_max"][idx] if idx < len(daily.get("temperature_2m_max", [])) else "N/A"
+                    w_min = daily["temperature_2m_min"][idx] if idx < len(daily.get("temperature_2m_min", [])) else "N/A"
+                    w_rain = daily["precipitation_sum"][idx] if idx < len(daily.get("precipitation_sum", [])) else 0.0
+                    w_prob = daily["precipitation_probability_max"][idx] if idx < len(daily.get("precipitation_probability_max", [])) else 0
+
+                    try:
+                        dt_obj = datetime.datetime.fromisoformat(d_time)
+                        date_label = dt_obj.strftime('%a, %b %d')
+                    except Exception:
+                        date_label = d_time
+
+                    day_label = f"**Day {idx+1} ({date_label})**" if idx > 0 else f"**Today ({date_label})**"
+                    day_lines.append(f"- {day_label}: {w_desc} | {w_min}°C – {w_max}°C | Rain: {w_rain} mm ({w_prob}% prob)")
+
+                if req_days > total_avail:
+                    day_lines.append(f"*(Note: Open-Meteo provides up to {total_avail} days of verified forecasts; days beyond day {total_avail} are currently unavailable).*")
+
+                next_days_summary = "\n".join(day_lines) + "\n"
+
+        elif "tomorrow" in q_lower and daily and len(daily.get("time", [])) > 1:
             temporal_focus = "tomorrow"
             d_time = daily["time"][1]
             d_code = daily["weather_code"][1] if len(daily.get("weather_code", [])) > 1 else None
@@ -681,7 +731,7 @@ class LiveWeatherAgent(BaseAgent):
                 f"- **Precipitation**: {d_rain} mm (Probability: {d_prob}%)\n"
             )
 
-        if "weekend" in q_lower and daily and len(daily.get("time", [])) >= 3:
+        elif "weekend" in q_lower and daily and len(daily.get("time", [])) >= 3:
             temporal_focus = "weekend"
             weekend_lines = ["\n### 🗓️ Upcoming Weekend Forecast"]
             for idx, d_time in enumerate(daily.get("time", [])):
@@ -718,9 +768,11 @@ class LiveWeatherAgent(BaseAgent):
         if sunrise_today and sunset_today:
             lines.append(f"- **Sunrise**: {sunrise_today} | **Sunset**: {sunset_today}")
 
-        if tomorrow_summary:
+        if next_days_summary:
+            lines.append(next_days_summary)
+        elif tomorrow_summary:
             lines.append(tomorrow_summary)
-        if weekend_summary:
+        elif weekend_summary:
             lines.append(weekend_summary)
 
         lines.extend([

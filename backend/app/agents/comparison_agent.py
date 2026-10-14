@@ -67,7 +67,13 @@ class ComparisonAgent(BaseAgent):
             "Srisaila": ["srisaila", "srisailam", "mallikarjuna", "bhramaramba"],
             "Thousand Pillar": ["thousand pillar", "thousand pillars", "rudreswara thousand", "thousand pillar temple"],
             "Ttd": ["ttd", "tirumala", "tirupati", "venkateswara ttd", "lord venkateswara"],
-            "Ujjaini": ["ujjaini", "ujjaini mahakali", "mahakali secunderabad", "secunderabad mahakali"],
+            "Ujjaini": [
+                "ujjaini", "ujjaini mahakali", "ujjaini mahankali", "mahakali secunderabad",
+                "secunderabad mahakali", "secunderabad mahankali", "sri ujjaini mahakali",
+                "sri ujjaini mahankali", "ujjaini mahakali temple", "ujjaini mahankali temple",
+                "sri ujjaini mahakali temple", "sri ujjaini mahankali temple", "ujjaini temple",
+                "ujjaini devasthanam"
+            ],
             "Veera Satyanarayana": ["veera satyanarayana", "satyanarayana swamy", "annavaram", "veera venkata satyanarayana"],
             "Vemulavada": ["vemulavada", "vemulawada", "rajarajeshwara", "rajanna", "rajanne"],
             "Yadadri": ["yadadri", "yadagirigutta", "laxmi narasimha yadadri", "narasimha yadadri"]

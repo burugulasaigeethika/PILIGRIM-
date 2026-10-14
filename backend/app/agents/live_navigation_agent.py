@@ -65,6 +65,9 @@ class NavigationResult(BaseModel):
     provider: str = Field(default="Google Maps Routes API", description="Underlying navigation service provider")
     retrieved_at: Optional[str] = Field(default=None, description="ISO timestamp of route retrieval")
     cache_hit: bool = Field(default=False, description="Whether result was served from cache")
+    polyline: Optional[str] = Field(default=None, description="Encoded polyline string of the route geometry")
+    viewport: Optional[Dict[str, Any]] = Field(default=None, description="Bounding viewport coordinates {low, high}")
+    speed_reading_intervals: Optional[List[Dict[str, Any]]] = Field(default=None, description="Traffic speed reading intervals on polyline")
 
 
 def format_duration(minutes: Optional[float]) -> str:
@@ -109,18 +112,21 @@ class LiveNavigationAgent(BaseAgent):
         Deterministically extracts origin, destination, and travel mode from query text.
         
         Patterns supported:
+        - 'i want to travel to {dest} from {orig} give me bus routes'
+        - 'travel from {orig} to {dest}'
+        - 'travel to {dest} from {orig}'
+        - 'how do i get from {orig} to {dest}'
+        - 'route from {orig} to {dest}'
+        - 'bus from {orig} to {dest}'
+        - 'give me bus routes from {orig} to {dest}'
         - 'how far is {dest} from {orig}'
+        - 'how far is {orig} from {dest}'
         - 'distance from {orig} to {dest}'
         - 'directions from {orig} to {dest}'
-        - 'route from {orig} to {dest}'
-        - 'how long does it take from {orig} to {dest}'
-        - 'how long to reach {dest} from {orig}'
-        - 'driving time from {orig} to {dest}'
-        - 'travel time from {orig} to {dest}'
         - 'distance between {orig} and {dest}'
         - 'route between {orig} and {dest}'
-        - '{dest} from {orig}'
-        - 'from {orig} to {dest}'
+        - 'how long does it take to reach {dest} from {orig}'
+        - 'driving time from {orig} to {dest}'
         """
         clean_q = query.strip()
         q_lower = clean_q.lower()
@@ -131,7 +137,7 @@ class LiveNavigationAgent(BaseAgent):
             travel_mode = "walking"
         elif re.search(r"\b(cycle|cycling|bicycle|bicycling|by\s+bike|by\s+cycle)\b", q_lower):
             travel_mode = "bicycling"
-        elif re.search(r"\b(transit|bus|train|public\s+transit|by\s+bus|by\s+train)\b", q_lower):
+        elif re.search(r"\b(transit|bus|buses|train|trains|public\s+transit|by\s+bus|by\s+train)\b", q_lower):
             travel_mode = "transit"
 
         # 2. Origin & Destination Extraction
@@ -142,38 +148,51 @@ class LiveNavigationAgent(BaseAgent):
         stripped_q = re.sub(r"[?!.,;]+$", "", clean_q).strip()
 
         # Pattern A: 'between {orig} and {dest}'
-        m_between = re.search(r"\bbetween\s+(.+?)\s+and\s+(.+?)(?:\s+by\s+(?:car|walk|bike|transit|driving|foot))?$", stripped_q, re.IGNORECASE)
+        m_between = re.search(
+            r"\bbetween\s+(.+?)\s+and\s+(.+?)(?:\s+(?:by\s+(?:car|walk|bike|cycle|transit|driving|foot|bus|train)|give\s+me\s+.*|please.*))?$",
+            stripped_q,
+            re.IGNORECASE
+        )
         if m_between:
             orig_raw, dest_raw = m_between.group(1), m_between.group(2)
 
-        # Pattern B: '{action} from {orig} to {dest}'
+        # Pattern B: '{action/prefix} to {dest} from {orig} {suffix}'
+        # e.g., 'i want to travel to vemulavada from hyderabad give me bus routes'
+        # e.g., 'how far is Yadadri from Hyderabad', 'how to reach Yadadri from Hyderabad'
         if not orig_raw or not dest_raw:
-            m_from_to = re.search(r"\bfrom\s+(.+?)\s+to\s+(.+?)(?:\s+by\s+(?:car|walk|bike|transit|driving|foot))?$", stripped_q, re.IGNORECASE)
-            if m_from_to:
-                orig_raw, dest_raw = m_from_to.group(1), m_from_to.group(2)
-
-        # Pattern C: '{metric} (is|to reach|take) {dest} from {orig}'
-        if not orig_raw or not dest_raw:
-            m_dest_from_orig = re.search(
-                r"(?:how\s+far\s+is|how\s+long\s+(?:does\s+it\s+take\s+(?:to\s+reach)?|to\s+reach)?|directions?\s+to|route\s+to|reach|get\s+to)\s+(.+?)\s+from\s+(.+?)(?:\s+by\s+(?:car|walk|bike|transit|driving|foot))?$",
+            m_to_from = re.search(
+                r"(?:(?:i\s+want\s+to\s+)?(?:travel|go|drive|head)\s+to|how\s+(?:do\s+i|can\s+i|to)\s+(?:get|reach|go|travel)\s+to|directions?\s+to|route\s+to|how\s+far\s+is|how\s+long\s+(?:does\s+it\s+take\s+(?:to\s+reach)?|to\s+reach)?|to)\s+(.+?)\s+from\s+(.+?)$",
                 stripped_q,
                 re.IGNORECASE
             )
-            if m_dest_from_orig:
-                dest_raw, orig_raw = m_dest_from_orig.group(1), m_dest_from_orig.group(2)
+            if m_to_from:
+                dest_raw, orig_raw = m_to_from.group(1), m_to_from.group(2)
 
-        # Pattern D: '{dest} from {orig}'
+        # Pattern C: '{action/prefix} from {orig} to {dest} {suffix}'
+        # e.g., 'give me bus routes from Hyderabad to Vemulavada', 'Directions from Secunderabad to Basara'
+        if not orig_raw or not dest_raw:
+            m_from_to = re.search(
+                r"\bfrom\s+(.+?)\s+to\s+(.+?)$",
+                stripped_q,
+                re.IGNORECASE
+            )
+            if m_from_to:
+                orig_raw, dest_raw = m_from_to.group(1), m_from_to.group(2)
+
+        # Pattern D: '{dest} from {orig}' fallback
         if not orig_raw or not dest_raw:
             m_simple = re.search(r"(.+?)\s+from\s+(.+?)$", stripped_q, re.IGNORECASE)
             if m_simple:
-                # Exclude question prefixes from destination
                 cand_dest = m_simple.group(1)
-                cand_dest = re.sub(r"^(?:what\s+is\s+the\s+(?:distance|route|driving\s+time|travel\s+time)\s+(?:of|for)?\s*|how\s+far\s+is\s*|directions?\s+to\s*)", "", cand_dest, flags=re.IGNORECASE).strip()
                 dest_raw, orig_raw = cand_dest, m_simple.group(2)
 
         # Pattern E: Single location check (e.g., 'How far is Yadadri?', 'Directions to Basara', 'route map of Yadadri')
         if not orig_raw and not dest_raw:
-            m_single = re.search(r"(?:how\s+far\s+is|directions?\s+(?:to|of|for)|route\s+(?:map\s+)?(?:of|for|to)|map\s+route\s+(?:of|for|to)|travel\s+time\s+to|driving\s+time\s+to)\s+(.+?)$", stripped_q, re.IGNORECASE)
+            m_single = re.search(
+                r"(?:how\s+far\s+is|directions?\s+(?:to|of|for)|route\s+(?:map\s+)?(?:of|for|to)|map\s+route\s+(?:of|for|to)|travel\s+time\s+to|driving\s+time\s+to)\s+(.+?)$",
+                stripped_q,
+                re.IGNORECASE
+            )
             if m_single:
                 dest_raw = m_single.group(1).strip()
 
@@ -204,10 +223,33 @@ class LiveNavigationAgent(BaseAgent):
         t = text.strip()
         # Remove trailing question marks or punctuation
         t = re.sub(r"[?!.,;]+$", "", t).strip()
-        # Remove leading articles
+
+        # Remove leading conversational / intent filler prefixes
+        t = re.sub(
+            r"^(?:(?:i\s+want\s+to\s+)?(?:travel|go|drive|head)\s+(?:to|from)?|how\s+(?:do\s+i|can\s+i|to)\s+(?:get|reach|go|travel)\s+(?:to|from)?|give\s+me\s+(?:the\s+)?(?:bus\s+|driving\s+|car\s+)?(?:routes?|directions?|distance)\s+(?:to|from)?|show\s+me\s+(?:the\s+)?(?:bus\s+|driving\s+|car\s+)?(?:routes?|directions?|distance)\s+(?:to|from)?|tell\s+me\s+(?:the\s+)?(?:bus\s+|driving\s+|car\s+)?(?:routes?|directions?|distance)\s+(?:to|from)?|what\s+is\s+the\s+(?:distance|route|driving\s+time|travel\s+time)\s+(?:of|for|between|from|to)?|how\s+far\s+is|directions?\s+(?:to|from|for|of)?|routes?\s+(?:to|from|for|of)?|reach|get\s+to|travel\s+to|travel\s+from|the|a|an)\s+",
+            "",
+            t,
+            flags=re.IGNORECASE
+        ).strip()
+
+        # Remove trailing explanatory clauses (e.g., 'and explain the route information available', 'and tell me directions')
+        t = re.sub(
+            r"\s+(?:and|&)\s+(?:explain|tell\s+me|tell|describe|give\s+me|give|provide|show\s+me|show|detail)\b.*$",
+            "",
+            t,
+            flags=re.IGNORECASE
+        ).strip()
+
+        # Remove trailing noise words and filler suffixes
+        t = re.sub(
+            r"\s+(?:give\s+me\s+(?:bus\s+|driving\s+|car\s+)?(?:routes?|directions?)|show\s+(?:me\s+)?(?:bus\s+|driving\s+|car\s+)?(?:routes?|directions?)|bus\s+routes?|driving\s+routes?|routes?|directions?|bus\s+timings?|by\s+(?:car|walk|bike|cycle|transit|driving|foot|bus|train)|please|thanks|thank\s+you)+$",
+            "",
+            t,
+            flags=re.IGNORECASE
+        ).strip()
+
+        # Remove any lingering leading articles
         t = re.sub(r"^(the|a|an)\s+", "", t, flags=re.IGNORECASE).strip()
-        # Remove trailing noise words like 'temple', 'devasthanam', 'city' if not part of canonical name
-        t = re.sub(r"\s+(?:by\s+(?:car|walk|bike|transit|driving|foot|bus|train)).*$", "", t, flags=re.IGNORECASE).strip()
         return t if t else None
 
     def _resolve_location(self, place_name: Optional[str]) -> Tuple[str, Optional[Tuple[float, float]], Optional[str]]:
@@ -526,6 +568,18 @@ class LiveNavigationAgent(BaseAgent):
         # Route summary
         route_summary = primary_route.get("description")
 
+        # Route geometry (polyline and viewport)
+        polyline_encoded: Optional[str] = None
+        if "polyline" in primary_route and isinstance(primary_route["polyline"], dict):
+            polyline_encoded = primary_route["polyline"].get("encodedPolyline")
+
+        viewport_data: Optional[Dict[str, Any]] = primary_route.get("viewport")
+
+        # Traffic speed reading intervals
+        speed_intervals: Optional[List[Dict[str, Any]]] = None
+        if "travelAdvisory" in primary_route and isinstance(primary_route["travelAdvisory"], dict):
+            speed_intervals = primary_route["travelAdvisory"].get("speedReadingIntervals")
+
         # Construct NavigationResult
         iso_time = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(now_ts))
         result = NavigationResult(
@@ -540,7 +594,10 @@ class LiveNavigationAgent(BaseAgent):
             travel_mode=travel_mode,
             provider="Google Maps Routes API",
             retrieved_at=iso_time,
-            cache_hit=False
+            cache_hit=False,
+            polyline=polyline_encoded,
+            viewport=viewport_data,
+            speed_reading_intervals=speed_intervals
         )
 
         if self.cache_enabled:

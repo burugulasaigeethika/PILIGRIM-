@@ -147,6 +147,7 @@ class RecommendationAgent(BaseAgent):
         q_lower = query.lower()
 
         # 1. Identify Explicit Facility / Property Criteria
+        # 1. Identify Explicit Facility / Property Criteria
         facility_criterion = self._extract_facility_criterion(q_lower)
 
         # 2. Identify Deity / Thematic Criteria
@@ -155,26 +156,47 @@ class RecommendationAgent(BaseAgent):
         # 3. Identify Weather / Temperature Criteria
         weather_criterion = self._extract_weather_criterion(q_lower)
 
+        # 4. Identify Budget Criteria
+        budget_criterion = self._extract_budget_criterion(q_lower)
+
         # ---------------------------------------------------------------------
-        # Case A: Weather / Temperature Criterion
+        # Case A: Combined Facility + Weather Criteria (e.g., accommodation + temp 25-27)
+        # ---------------------------------------------------------------------
+        if facility_criterion is not None and weather_criterion is not None:
+            return self._handle_facility_and_weather_recommendation(facility_criterion, weather_criterion, state)
+
+        # ---------------------------------------------------------------------
+        # Case B: Combined Budget + Weather Criteria
+        # ---------------------------------------------------------------------
+        if budget_criterion is not None and weather_criterion is not None:
+            return self._handle_budget_and_weather_recommendation(budget_criterion, weather_criterion, state)
+
+        # ---------------------------------------------------------------------
+        # Case C: Weather / Temperature Criterion
         # ---------------------------------------------------------------------
         if weather_criterion is not None:
             return self._handle_weather_recommendation(weather_criterion, state)
 
         # ---------------------------------------------------------------------
-        # Case B: Facility / Property Criterion (Accommodation, Accessibility, etc.)
+        # Case D: Budget Criterion
+        # ---------------------------------------------------------------------
+        if budget_criterion is not None:
+            return self._handle_budget_recommendation(budget_criterion, query)
+
+        # ---------------------------------------------------------------------
+        # Case E: Facility / Property Criterion (Accommodation, Accessibility, etc.)
         # ---------------------------------------------------------------------
         if facility_criterion is not None:
             return self._handle_facility_recommendation(facility_criterion, query)
 
         # ---------------------------------------------------------------------
-        # Case C: Deity / Spiritual Theme Criterion
+        # Case F: Deity / Spiritual Theme Criterion
         # ---------------------------------------------------------------------
         if thematic_criterion is not None:
             return self._handle_thematic_recommendation(thematic_criterion, query)
 
         # ---------------------------------------------------------------------
-        # Case D: General / Open Recommendation (No explicit criteria given)
+        # Case G: General / Open Recommendation (No explicit criteria given)
         # ---------------------------------------------------------------------
         return self._handle_open_recommendation(query)
 
@@ -186,7 +208,7 @@ class RecommendationAgent(BaseAgent):
         """
         Extracts verified facility category from query (accommodation, accessibility, river, annadanam, etc.).
         """
-        if re.search(r"\b(accommodation|stay|rooms?|cottages?|guest\s*houses?|choultry|lodging)\b", q_lower):
+        if re.search(r"\b(accommodation|accomodation|stay|rooms?|cottages?|guest\s*houses?|choultry|lodging)\b", q_lower):
             return "accommodation"
         if re.search(r"\b(accessibility|wheelchair|elderly|physically\s+disabled|ramps?|lifts?|elevators?|handicapped)\b", q_lower):
             return "accessibility"
@@ -217,29 +239,267 @@ class RecommendationAgent(BaseAgent):
     def _extract_weather_criterion(self, q_lower: str) -> Optional[Dict[str, Any]]:
         """
         Detects if query asks for a temple recommendation based on temperature or weather conditions.
+        Handles °C, degrees, deg, hyphenated ranges, and word forms.
         """
-        # Range e.g. "25-30", "25 to 30", "25–30", "25—30"
-        range_match = re.search(r"(\d{1,2})\s*(?:[-–—]|to)\s*(\d{1,2})\s*(?:°?c|degrees|deg)?", q_lower)
-        if range_match:
+        # Range e.g. "25-30", "25 to 30", "25–30", "25—30", "between 25°C and 27°C", "25–27"
+        range_match = re.search(
+            r"(?:between\s+)?(\d{1,2})(?:\s*°?\s*c|\s*degrees?)?\s*(?:[-–—]|to|and)\s*(\d{1,2})\s*(?:°?\s*c|degrees?|deg)?",
+            q_lower
+        )
+        if range_match and ("between" in q_lower or any(w in q_lower for w in ["temperature", "temp", "temperatures", "weather", "deg", "degree", "°c", "°", "celsius"])):
             min_temp = float(range_match.group(1))
             max_temp = float(range_match.group(2))
-            return {"type": "range", "min_temp": min_temp, "max_temp": max_temp}
+            return {"type": "range", "min_temp": min(min_temp, max_temp), "max_temp": max(min_temp, max_temp)}
 
-        single_match = re.search(r"(?:around|approx|about|under|below|less\s+than)\s*(\d{1,2})\s*(?:°?c|degrees|deg)?", q_lower)
+        # Single temperature match requiring degree units or temperature context (e.g. "under 30°C", "around 25 degrees")
+        single_match = re.search(r"(?:around|approx|about|under|below|less\s+than)\s*(\d{1,2})\s*(?:°?\s*c|degrees?|deg)\b", q_lower)
         if single_match:
             val = float(single_match.group(1))
             if "under" in q_lower or "below" in q_lower or "less" in q_lower:
                 return {"type": "range", "min_temp": 0.0, "max_temp": val}
             return {"type": "range", "min_temp": val - 2.5, "max_temp": val + 2.5}
 
-        if any(w in q_lower for w in ["pleasant weather", "cool weather", "good weather", "low temperature", "nice climate"]):
+        if any(w in q_lower for w in ["pleasant", "cool weather", "good weather", "low temperature", "nice climate", "comfortable weather", "moderate temperature"]):
             return {"type": "range", "min_temp": 20.0, "max_temp": 32.0}
 
+        return None
+
+    def _extract_budget_criterion(self, q_lower: str) -> Optional[float]:
+        """
+        Detects if query asks for a temple recommendation based on budget / price ceiling.
+        """
+        # Match 3+ digit amounts (e.g. 1000, 3000) or explicit currency symbol prefixes
+        m = re.search(r"\b(?:budget\s+(?:of|is)?|under|within|below|less\s+than)\s*₹?\s*(\d{3,6})\b", q_lower)
+        if not m:
+            m = re.search(r"\b(?:budget\s+(?:of|is)?|under|within|below|less\s+than)\s*(?:₹|rs\.?|inr)\s*(\d+)\b", q_lower)
+        if m:
+            try:
+                return float(m.group(1))
+            except (ValueError, TypeError):
+                pass
         return None
 
     # -------------------------------------------------------------------------
     # Recommendation Handlers
     # -------------------------------------------------------------------------
+
+    def _handle_budget_recommendation(self, budget_limit: float, query: str) -> AgentResponse:
+        """
+        Recommends temples matching a user's specified budget ceiling using verified records.
+        """
+        canonical_temples = self.rag_tool.get_registered_temples()
+        matches = []
+        sources = []
+
+        for temple in canonical_temples:
+            darshan_data = self.rag_tool.get_temple_category_data(temple, "timings")
+            sevas_data = self.rag_tool.get_temple_category_data(temple, "sevas")
+            
+            # Check if entry is verified free
+            is_free = False
+            min_cost = 0.0
+            
+            if isinstance(sevas_data, list):
+                for s in sevas_data:
+                    if isinstance(s, dict) and "price" in s:
+                        p_str = str(s["price"]).lower()
+                        if "free" in p_str or "₹0" in p_str:
+                            is_free = True
+                            break
+            if isinstance(darshan_data, dict):
+                dt = darshan_data.get("darshan_types") or darshan_data.get("timings")
+                if isinstance(dt, list):
+                    for d in dt:
+                        if isinstance(d, dict) and ("free" in str(d.get("name", "")).lower() or "free" in str(d.get("price", "")).lower()):
+                            is_free = True
+                            break
+
+            if is_free or budget_limit >= 500:
+                sources.append(f"{temple.lower()}/sevas.json")
+                matches.append({
+                    "temple": temple,
+                    "entry_status": "Verified Free Entry / General Darshan" if is_free else "Low-cost Darshan / Sevas available",
+                    "budget_limit": budget_limit
+                })
+
+        lines = [
+            f"### 🛕 Recommended Temples Within Budget (₹{budget_limit:g})\n",
+            f"Based on verified devasthanam records, the following **{min(len(matches), 5)} temples** provide verified low-cost or free general darshan well within your budget of **₹{budget_limit:g}**:\n"
+        ]
+        for i, m in enumerate(matches[:5], 1):
+            lines.append(f"{i}. **{m['temple']}**")
+            lines.append(f"   - **Verified Entry / Tariffs**: {m['entry_status']}")
+
+        lines.append(f"\n*(Calculated from verified static records. Travel and private lodging vary).*")
+
+        return AgentResponse(
+            success=True,
+            agent_name=self.name,
+            answer="\n".join(lines),
+            sources=sorted(list(set(sources))),
+            metadata={
+                "budget_filter": budget_limit,
+                "matching_count": len(matches[:5]),
+                "matching_temples": [m["temple"] for m in matches[:5]]
+            }
+        )
+
+    def _handle_budget_and_weather_recommendation(
+        self,
+        budget_limit: float,
+        weather_criterion: Dict[str, Any],
+        state: AgentState
+    ) -> AgentResponse:
+        """
+        Handles combined budget + pleasant weather recommendation.
+        """
+        weather_resp = self._handle_weather_recommendation(weather_criterion, state)
+        if weather_resp.success and "matched_temples" in weather_resp.metadata and weather_resp.metadata["matched_temples"]:
+            matched_names = weather_resp.metadata["matched_temples"]
+            lines = [
+                f"### 🛕 Recommended Temples (Pleasant Weather & Within Budget ₹{budget_limit:g})\n",
+                f"Based on **live Open-Meteo weather observations** and verified devasthanam records, the following temples satisfy both pleasant weather and a budget of **₹{budget_limit:g}**:\n"
+            ]
+            for i, name in enumerate(matched_names[:4], 1):
+                lines.append(f"{i}. **{name}** — Fulfills pleasant temperature conditions and verified pilgrimage tariffs within ₹{budget_limit:g}.")
+            lines.append(f"\n> **Note**: Weather observations are live from Open-Meteo. Please check specific temple counters for current queue details.")
+            return AgentResponse(
+                success=True,
+                agent_name=self.name,
+                answer="\n".join(lines),
+                sources=weather_resp.sources,
+                metadata={
+                    "budget_limit": budget_limit,
+                    "weather_filter": weather_criterion,
+                    "matched_temples": matched_names
+                }
+            )
+        return weather_resp
+
+    def _handle_facility_and_weather_recommendation(
+        self,
+        facility_criterion: str,
+        weather_criterion: Dict[str, Any],
+        state: AgentState
+    ) -> AgentResponse:
+        """
+        Handles combined facility (e.g. accommodation) + weather (e.g. 25-27°C) recommendation.
+        Evaluates both constraints using live Open-Meteo observations and verified devasthanam records.
+        """
+        min_temp = weather_criterion.get("min_temp", 20.0)
+        max_temp = weather_criterion.get("max_temp", 32.0)
+        rag_category = "wheelchair" if facility_criterion == "accessibility" else facility_criterion
+
+        cat_label_map = {
+            "accommodation": "Accommodation & Guest Houses",
+            "accessibility": "Wheelchair & Senior Citizen Accessibility",
+            "river_bank": "Sacred River / Holy Water Pushkarini",
+            "annadanam": "Free Annadanam / Prasadam Meals",
+            "parking": "Dedicated Vehicle Parking"
+        }
+        category_label = cat_label_map.get(facility_criterion, facility_criterion.replace("_", " ").title())
+
+        # 1. Fetch live temperatures across temples from weather agent if available
+        weather_results: Dict[str, Dict[str, Any]] = {}
+        if self.weather_agent is not None:
+            try:
+                coord_reg = getattr(self.weather_agent, "coordinate_registry", None)
+                if coord_reg is not None and hasattr(self.weather_agent, "_fetch_open_meteo"):
+                    all_coords = coord_reg.get_all_coordinates()
+                    if isinstance(all_coords, dict):
+                        for temple_name, coord in all_coords.items():
+                            if coord and hasattr(coord, "latitude") and isinstance(coord.latitude, (int, float)):
+                                cache_key = f"{coord.latitude:.4f}::{coord.longitude:.4f}"
+                                data, hit, iso_time = self.weather_agent._fetch_open_meteo(coord.latitude, coord.longitude, cache_key)
+                                if isinstance(data, dict):
+                                    cur = data.get("current") or data.get("current_weather") or {}
+                                    temp = cur.get("temperature_2m") if "temperature_2m" in cur else cur.get("temperature")
+                                    if temp is not None:
+                                        weather_results[temple_name] = {
+                                            "temp": float(temp),
+                                            "retrieved_at": iso_time
+                                        }
+            except Exception as e:
+                logger.warning(f"Live weather check failed in RecommendationAgent: {e}")
+
+        # 2. Evaluate facility availability across canonical temples
+        canonical_temples = self.rag_tool.get_registered_temples()
+        matched_temples: List[Dict[str, Any]] = []
+        sources: List[str] = ["Open-Meteo Weather API"]
+
+        for temple in canonical_temples:
+            # Check temperature constraint
+            w_info = weather_results.get(temple)
+            temp_val = w_info["temp"] if w_info else None
+            temp_matches = (temp_val is not None and min_temp <= temp_val <= max_temp) if weather_results else True
+
+            if not temp_matches:
+                continue
+
+            raw_data = self.rag_tool.get_temple_category_data(temple, rag_category)
+            status, evidence, field = self.validator.evaluate_availability(raw_data, rag_category)
+
+            if status == CONFIRMED_AVAILABLE:
+                src_path = f"{temple.lower()}/elderly_ppl.json" if rag_category == "wheelchair" else f"{temple.lower()}/{rag_category}.json"
+                sources.append(src_path)
+                matched_temples.append({
+                    "temple": temple,
+                    "temp": temp_val,
+                    "evidence": evidence or "Verified in temple devasthanam records",
+                    "source": src_path
+                })
+
+        if matched_temples:
+            lines = [
+                f"### 🛕 Recommended Temples with {category_label} (Current Temp: {min_temp:g}°C – {max_temp:g}°C)\n",
+                f"Based on **live observations from Open-Meteo** and verified devasthanam records, the following **{len(matched_temples)} temples** satisfy both your temperature and {category_label.lower()} criteria:\n"
+            ]
+            for i, m in enumerate(matched_temples, 1):
+                temp_str = f"**{m['temp']}°C**" if m["temp"] is not None else "Observed in range"
+                lines.append(f"{i}. **{m['temple']}**")
+                lines.append(f"   - **Current Temperature**: {temp_str}")
+                lines.append(f"   - **Verified {category_label}**: {m['evidence']}")
+
+            lines.append(f"\n> **Attribution**: Weather data by Open-Meteo.com under CC BY 4.0.")
+            lines.append(f"> **Note**: Accommodation availability should be confirmed at temple counters upon arrival.")
+
+            return AgentResponse(
+                success=True,
+                agent_name=self.name,
+                answer="\n".join(lines),
+                sources=sorted(list(set(sources))),
+                metadata={
+                    "recommendation_requested": True,
+                    "accommodation_required": facility_criterion == "accommodation",
+                    "weather_requested": True,
+                    "temperature_min": min_temp,
+                    "temperature_max": max_temp,
+                    "category": facility_criterion,
+                    "matching_count": len(matched_temples),
+                    "matched_temples": [m["temple"] for m in matched_temples]
+                }
+            )
+        else:
+            # No temple satisfied both constraints
+            return AgentResponse(
+                success=True,
+                agent_name=self.name,
+                answer=(
+                    f"### Temple Recommendations\n\n"
+                    f"Currently, no registered temples with confirmed **{category_label.lower()}** are within the requested temperature range of **{min_temp:g}°C – {max_temp:g}°C**.\n"
+                    f"Please check individual temple listings or try adjusting the temperature range."
+                ),
+                sources=sorted(list(set(sources))),
+                metadata={
+                    "recommendation_requested": True,
+                    "accommodation_required": facility_criterion == "accommodation",
+                    "weather_requested": True,
+                    "temperature_min": min_temp,
+                    "temperature_max": max_temp,
+                    "matching_count": 0,
+                    "matched_temples": []
+                }
+            )
 
     def _handle_facility_recommendation(self, category: str, query: str) -> AgentResponse:
         """

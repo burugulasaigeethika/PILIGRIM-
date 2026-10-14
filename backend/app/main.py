@@ -17,11 +17,19 @@ load_dotenv()
 from app.api.chat import router as chat_router
 from app.api.maps import router as maps_router
 from app.api.auth import router as auth_router
+from app.api.chat_history import router as chat_history_router
+from app.api.itinerary import router as itinerary_router
+
+from fastapi.responses import FileResponse, JSONResponse
+
+class UTF8JSONResponse(JSONResponse):
+    media_type = "application/json; charset=utf-8"
 
 app = FastAPI(
     title="PilgrimAI Local Offline RAG API",
     description="100% Local Offline RAG pipeline using Qdrant (on-disk), BM25, RRF, Cross-Encoder, and Ollama Qwen2.5.",
-    version="3.0.0"
+    version="3.0.0",
+    default_response_class=UTF8JSONResponse
 )
 
 import logging
@@ -52,6 +60,8 @@ app.add_middleware(
 app.include_router(chat_router)
 app.include_router(maps_router)
 app.include_router(auth_router)
+app.include_router(chat_history_router)
+app.include_router(itinerary_router)
 
 
 # Mount Static Web Assets

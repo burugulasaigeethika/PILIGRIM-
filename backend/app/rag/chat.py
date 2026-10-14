@@ -14,7 +14,6 @@ from app.rag.reranker import LocalCrossEncoderReranker
 from app.rag.guardrail import RelevanceGuardrail, DEFAULT_REFUSAL_MESSAGE
 from app.rag.prompt import get_chat_prompt_template
 from app.rag.llm import LocalLLMService
-from app.agents.cross_temple_aggregation_agent import CrossTempleAggregationAgent
 from app.rag.category_registry import category_registry, CategoryRegistry
 from app.rag.knowledge_registry import knowledge_registry, KnowledgeRegistry
 from app.rag.query_planner import query_planner, QueryPlanner, QueryPlan
@@ -70,6 +69,7 @@ class PilgrimRAGService:
         self.context_builder = builder or context_builder
         self.scope_controller = scope_ctrl or answer_scope_controller
         self.grounding_validator = grounding_val or answer_grounding_validator
+        from app.agents.cross_temple_aggregation_agent import CrossTempleAggregationAgent
         self.aggregation_agent = CrossTempleAggregationAgent(
             cat_registry=self.category_registry,
             k_registry=self.knowledge_registry,

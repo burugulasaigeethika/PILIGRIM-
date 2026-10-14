@@ -110,8 +110,14 @@ def set_coordinator(coordinator: Optional[Any]) -> None:
     _coordinator_instance = coordinator
 
 from app.auth.jwt import get_optional_current_user
+from app.db.chat_history import save_user_message, save_assistant_message
 
-@router.post("/chat", response_model=ChatResponse)
+from fastapi.responses import JSONResponse
+
+class UTF8JSONResponse(JSONResponse):
+    media_type = "application/json; charset=utf-8"
+
+@router.post("/chat", response_model=ChatResponse, response_class=UTF8JSONResponse)
 async def chat_endpoint(
     request: ChatRequest,
     current_user: Optional[Dict[str, Any]] = Depends(get_optional_current_user)
@@ -131,8 +137,18 @@ async def chat_endpoint(
     user_info_str = f" [User: {current_user.get('email')}]" if current_user else " [Anonymous]"
     logger.info(f"[CHAT ENDPOINT]{user_info_str} Received question: {cleaned_question[:80]}")
 
-
     session_id = request.session_id.strip() if request.session_id and request.session_id.strip() else str(uuid.uuid4())
+
+    # Save user message to persistent MongoDB chat history if authenticated
+    if current_user:
+        try:
+            save_user_message(
+                user_id=str(current_user["_id"]),
+                session_id=session_id,
+                content=cleaned_question
+            )
+        except Exception as e:
+            logger.warning(f"[CHAT HISTORY] Could not persist user message: {e}")
 
     coordinator = get_coordinator()
 
@@ -140,6 +156,18 @@ async def chat_endpoint(
         from app.agents.state import AgentState
         state = AgentState(user_query=cleaned_question, session_id=session_id)
         agent_resp = coordinator.process(state)
+
+        # Save assistant response to persistent MongoDB chat history if authenticated
+        if current_user and agent_resp and agent_resp.answer:
+            try:
+                save_assistant_message(
+                    user_id=str(current_user["_id"]),
+                    session_id=session_id,
+                    content=agent_resp.answer,
+                    agent_name=agent_resp.agent_name
+                )
+            except Exception as e:
+                logger.warning(f"[CHAT HISTORY] Could not persist assistant message: {e}")
 
         # Extract retrieved chunks count safely
         retrieved_chunks = 0
