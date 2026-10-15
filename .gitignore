@@ -26,4 +26,8 @@ scratch/
 COMPLETE_CODE_LINE_BY_LINE_EXPLANATION.txt
 ALL_CODE_FILES_DETAILED_EXPLANATION.txt
 PROJECT_FILES_DOCUMENTATION.txt
-final_verification_results.json
+# Node & Frontend dependencies
+frontend/node_modules/
+frontend/dist/
+extracted_assets/
+*.zip
