@@ -62,7 +62,31 @@ export default function TempleDetailsModal({ temple, onClose, onAskAboutTemple }
           </div>
         </div>
 
-        <div className="modal-footer">
+        <div className="modal-footer" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 10, flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            <a
+              href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(temple.name + (temple.district ? ' ' + temple.district : '') + ' ' + temple.state)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-chat-header"
+              style={{ textDecoration: 'none' }}
+              title="Open location on Google Maps"
+            >
+              <MapPin size={13} color="#D96B24" />
+              <span>View on Maps</span>
+            </a>
+            <a
+              href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(temple.name + (temple.district ? ' ' + temple.district : '') + ' ' + temple.state)}&travelmode=driving`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-chat-header"
+              style={{ textDecoration: 'none' }}
+              title="Get driving directions on Google Maps"
+            >
+              <span>Get Directions</span>
+            </a>
+          </div>
+
           <button 
             className="btn-hero-primary" 
             style={{ fontSize: '0.82rem', padding: '8px 16px' }}
@@ -72,7 +96,7 @@ export default function TempleDetailsModal({ temple, onClose, onAskAboutTemple }
             }}
           >
             <Sparkles size={14} />
-            <span>Ask PilgrimAI About This Temple</span>
+            <span>Ask PilgrimAI</span>
           </button>
         </div>
       </div>

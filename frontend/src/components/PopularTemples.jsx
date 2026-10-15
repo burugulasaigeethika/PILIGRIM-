@@ -3,7 +3,8 @@ import { Landmark, MapPin, Heart, ArrowRight } from 'lucide-react';
 
 export default function PopularTemples({ 
   onSelectTemple, 
-  onViewAll 
+  onViewAll,
+  onOpenMap
 }) {
   const [favorites, setFavorites] = useState({});
 
@@ -114,16 +115,32 @@ export default function PopularTemples({
                   <p className="temple-description">{temple.description}</p>
                 </div>
 
-                <button 
-                  className="btn-temple-details"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    onSelectTemple(temple);
-                  }}
-                >
-                  <span>View Details</span>
-                  <ArrowRight size={12} />
-                </button>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 6, marginTop: 10 }}>
+                  <button 
+                    type="button"
+                    className="btn-chat-header"
+                    style={{ padding: '4px 8px', fontSize: '0.72rem' }}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      if (onOpenMap) onOpenMap(temple.name);
+                    }}
+                    title="View temple location & nearby places on Interactive Map"
+                  >
+                    <MapPin size={12} color="#D96B24" />
+                    <span>Map</span>
+                  </button>
+
+                  <button 
+                    className="btn-temple-details"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      onSelectTemple(temple);
+                    }}
+                  >
+                    <span>View Details</span>
+                    <ArrowRight size={12} />
+                  </button>
+                </div>
               </div>
             </div>
           );

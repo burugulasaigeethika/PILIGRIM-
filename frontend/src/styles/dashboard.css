@@ -1490,3 +1490,265 @@ body {
   border-color: #F6C4C4;
   background: #FDF4F4;
 }
+
+/* ==========================================================================
+   Nearby Attractions in Trip Planner & Recalculation
+   ========================================================================== */
+
+.added-activities-bar {
+  background: #FFF8EE;
+  border: 1px solid #F3DEC2;
+  border-radius: 10px;
+  padding: 10px 14px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.added-act-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #FFFFFF;
+  border: 1px solid #E6CDAA;
+  border-radius: 20px;
+  padding: 4px 10px;
+  font-size: 0.74rem;
+  color: #123C32;
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+
+.btn-remove-act {
+  background: none;
+  border: none;
+  color: #D9383A;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0 2px;
+  line-height: 1;
+}
+
+.btn-remove-act:hover {
+  transform: scale(1.2);
+}
+
+.planner-places-section {
+  background: #FAF8F3;
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.planner-places-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.planner-attractions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 10px;
+}
+
+.planner-attraction-card {
+  background: #FFFFFF;
+  border: 1px solid #E8E2D5;
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+  transition: all 0.15s;
+}
+
+.planner-attraction-card:hover {
+  border-color: #D9C2A7;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+.attraction-card-title {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: #123C32;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.attraction-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.68rem;
+  padding: 2px 7px;
+  border-radius: 9999px;
+  font-weight: 600;
+}
+
+.attraction-badge-source-verified {
+  background: #EFF7F1;
+  color: #2E7D4E;
+  border: 1px solid #D5EBD7;
+}
+
+.attraction-badge-source-google {
+  background: #EFF5FC;
+  color: #2F6DB5;
+  border: 1px solid #D7E5F5;
+}
+
+.attraction-badge-category {
+  background: #FCF4ED;
+  color: #D96B24;
+  border: 1px solid #F7E0CE;
+}
+
+.attraction-actions-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  padding-top: 6px;
+  border-top: 1px dashed #EDE7DC;
+  font-size: 0.75rem;
+}
+
+.attraction-links-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.attraction-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #4C5E55;
+  text-decoration: none;
+  font-size: 0.72rem;
+  padding: 3px 6px;
+  border-radius: 6px;
+  background: #F8F5EE;
+  border: 1px solid #E8E2D5;
+  transition: all 0.15s;
+}
+
+.attraction-link-btn:hover {
+  color: #123C32;
+  border-color: #123C32;
+  background: #FFFFFF;
+}
+
+.attraction-add-group {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.attraction-day-select {
+  padding: 3px 6px;
+  border: 1px solid #D8CFC0;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  background: #FFFFFF;
+  color: #123C32;
+  font-weight: 600;
+}
+
+.btn-add-activity-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  background: #123C32;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.btn-add-activity-pill:hover {
+  background: #0D2D25;
+}
+
+.btn-add-activity-pill.added {
+  background: #EFF7F1;
+  color: #2E7D4E;
+  border: 1px solid #D5EBD7;
+  cursor: default;
+}
+
+.recalculating-overlay {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #FFFDF7;
+  border: 1px solid #EBD5B3;
+  color: #8C5611;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Interactive Map & Places Discovery Modal
+   ========================================================================== */
+
+.interactive-map-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.map-embed-wrapper {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  background: #EAE6DD;
+}
+
+.map-offline-banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #FFF9F0;
+  border: 1px solid #F5DEB8;
+  color: #8C5611;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.places-discovery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 10px;
+}
+
+.places-discovery-card {
+  background: #FFFFFF;
+  border: 1px solid #E8E2D5;
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}

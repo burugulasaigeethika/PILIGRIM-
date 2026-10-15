@@ -14,6 +14,7 @@ import ChatHistoryModal from './components/ChatHistoryModal';
 import AuthModal from './components/AuthModal';
 import AboutModal from './components/AboutModal';
 import TravelAssistantModal from './components/TravelAssistantModal';
+import InteractiveMapModal from './components/InteractiveMapModal';
 import { ChatProvider, useChat } from './context/ChatContext';
 import { getCurrentUser } from './services/api';
 import './styles/dashboard.css';
@@ -36,6 +37,8 @@ function MainDashboard() {
   const [showChatHistory, setShowChatHistory] = useState(false);
   const [showAuthModal, setShowAuthModal] = useState(false);
   const [showAboutModal, setShowAboutModal] = useState(false);
+  const [showMapModal, setShowMapModal] = useState(false);
+  const [mapInitialTemple, setMapInitialTemple] = useState('Yadadri');
 
   // Auto-login if token exists
   useEffect(() => {
@@ -66,6 +69,11 @@ function MainDashboard() {
     setIsFullChatOpen(true);
   };
 
+  const handleOpenMap = (templeName = 'Yadadri') => {
+    setMapInitialTemple(typeof templeName === 'string' ? templeName : 'Yadadri');
+    setShowMapModal(true);
+  };
+
   return (
     <div className="app-layout">
       {/* Left Sidebar */}
@@ -78,6 +86,7 @@ function MainDashboard() {
         onOpenChatHistory={() => setShowChatHistory(true)}
         onOpenAbout={() => setShowAboutModal(true)}
         onOpenExplore={() => setShowExploreModal(true)}
+        onOpenMap={() => handleOpenMap('Yadadri')}
       />
 
       {/* Main Content Area */}
@@ -108,6 +117,7 @@ function MainDashboard() {
             <PopularTemples 
               onSelectTemple={(temple) => setSelectedTemple(temple)}
               onViewAll={() => setShowExploreModal(true)}
+              onOpenMap={handleOpenMap}
             />
 
             <AskPilgrimAI />
@@ -135,6 +145,12 @@ function MainDashboard() {
         isOpen={showExploreModal}
         onClose={() => setShowExploreModal(false)}
         onSelectTemple={(temple) => setSelectedTemple(temple)}
+      />
+
+      <InteractiveMapModal 
+        isOpen={showMapModal}
+        onClose={() => setShowMapModal(false)}
+        initialTemple={mapInitialTemple}
       />
 
       <TripPlannerModal 

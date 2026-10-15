@@ -6,7 +6,8 @@ import {
   Calendar, 
   Clock, 
   FileText, 
-  Info 
+  Info,
+  MapPin
 } from 'lucide-react';
 
 export default function Sidebar({ 
@@ -17,7 +18,8 @@ export default function Sidebar({
   onOpenSavedItineraries,
   onOpenChatHistory, 
   onOpenAbout,
-  onOpenExplore
+  onOpenExplore,
+  onOpenMap
 }) {
   const navItems = [
     { 
@@ -31,6 +33,12 @@ export default function Sidebar({
       label: 'Explore Temples', 
       icon: Landmark, 
       action: onOpenExplore 
+    },
+    { 
+      id: 'map', 
+      label: 'Map & Places', 
+      icon: MapPin, 
+      action: onOpenMap 
     },
     { 
       id: 'assistant', 

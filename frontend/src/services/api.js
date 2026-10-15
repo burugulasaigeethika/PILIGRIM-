@@ -161,3 +161,45 @@ export async function deleteSavedItinerary(itineraryId) {
   }
   return await response.json();
 }
+
+export async function getNearbyPlaces(temple, category = 'all', lat = null, lng = null) {
+  let url = `${BASE_URL}/api/maps/places?temple=${encodeURIComponent(temple)}&temple_name=${encodeURIComponent(temple)}&category=${encodeURIComponent(category)}`;
+  if (lat !== null && lng !== null) {
+    url += `&latitude=${lat}&longitude=${lng}`;
+  }
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`Failed to load places for ${temple} (${response.status})`);
+  }
+  return await response.json();
+}
+
+export async function forgotPassword(email) {
+  const response = await fetch(`${BASE_URL}/api/auth/forgot-password`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email }),
+  });
+  if (!response.ok) {
+    const err = await response.json().catch(() => ({}));
+    throw new Error(err.detail || 'Password reset request failed.');
+  }
+  return await response.json();
+}
+
+export function generateGoogleMapsSearchUrl(placeName, context = '') {
+  if (!placeName) return 'https://www.google.com/maps';
+  const query = context && !placeName.toLowerCase().includes(context.toLowerCase())
+    ? `${placeName}, ${context}`
+    : placeName;
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query.trim())}`;
+}
+
+export function generateGoogleMapsDirectionsUrl(origin, destination) {
+  if (!destination) return 'https://www.google.com/maps';
+  const orig = origin ? encodeURIComponent(origin.trim()) : '';
+  const dest = encodeURIComponent(destination.trim());
+  return orig
+    ? `https://www.google.com/maps/dir/?api=1&origin=${orig}&destination=${dest}&travelmode=driving`
+    : `https://www.google.com/maps/dir/?api=1&destination=${dest}&travelmode=driving`;
+}

@@ -217,6 +217,14 @@ async def search_nearby_places(
     # 2. Check server-side Places API key
     parsed_items: List[PlaceResultItem] = []
     server_key = os.environ.get("GOOGLE_PLACES_SERVER_API_KEY", "").strip()
+    if not server_key and not temple_ref_name:
+        return PlacesSearchResponse(
+            status="BROWSER_SEARCH_REQUIRED",
+            source="Live Google Places Results",
+            results=[],
+            message="Server-side Places API credential is not configured. Browser-side PlacesService should be used with the restricted Maps credential."
+        )
+
     if server_key:
         try:
             base_url = "https://maps.googleapis.com/maps/api/place/textsearch/json"
@@ -366,7 +374,7 @@ async def search_nearby_places(
     # If neither live API nor static records exist
     return PlacesSearchResponse(
         status="ZERO_RESULTS",
-        source="Verified Temple Knowledge Base",
+        source="Verified Temple Knowledge Base" if temple_ref_name else "Live Google Places Results",
         results=[],
         places=[],
         message=f"No nearby attractions or activities recorded for '{temple_ref_name or query or 'location'}'. Try searching with specific category keywords or explore official temple counters."

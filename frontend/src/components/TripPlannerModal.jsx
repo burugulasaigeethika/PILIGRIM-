@@ -12,9 +12,21 @@ import {
   MessageSquare, 
   Loader2,
   CheckCircle,
-  AlertCircle
+  AlertCircle,
+  ExternalLink,
+  Navigation,
+  Plus,
+  Landmark,
+  Compass,
+  Check
 } from 'lucide-react';
-import { planItinerary, saveItinerary } from '../services/api';
+import { 
+  planItinerary, 
+  saveItinerary, 
+  getNearbyPlaces, 
+  generateGoogleMapsSearchUrl, 
+  generateGoogleMapsDirectionsUrl 
+} from '../services/api';
 import StructuredCards from './StructuredCards';
 
 export default function TripPlannerModal({ 
@@ -41,6 +53,13 @@ export default function TripPlannerModal({
 
   const [saving, setSaving] = useState(false);
   const [saveStatus, setSaveStatus] = useState(null); // { type: 'success' | 'error', message: string }
+
+  // Nearby attractions & interactive recalculation states
+  const [nearbyPlaces, setNearbyPlaces] = useState({}); // { [dest]: PlaceResultItem[] }
+  const [loadingPlaces, setLoadingPlaces] = useState(false);
+  const [selectedActivities, setSelectedActivities] = useState([]); // [{ name, destination, day }]
+  const [selectedDaysByPlace, setSelectedDaysByPlace] = useState({}); // { [placeName]: dayNumber }
+  const [recalculating, setRecalculating] = useState(false);
 
   // 20 Certified Temples matching backend
   const certifiedTemples = [
@@ -82,6 +101,100 @@ export default function TripPlannerModal({
     }
   };
 
+  const getValidDaysForDestination = (dest, destinations, durationDays) => {
+    if (!destinations || destinations.length === 0) return [1];
+    const cleanDests = destinations.map(d => String(d).toLowerCase().trim());
+    const targetClean = String(dest).toLowerCase().trim();
+    const idx = cleanDests.findIndex(d => d === targetClean || targetClean.includes(d) || d.includes(targetClean));
+    const n = destinations.length;
+    const totalDays = Math.max(1, parseInt(durationDays, 10) || 1);
+    if (idx === -1) return [1];
+    if (totalDays < n) {
+      const targetDay = Math.min(Math.floor(idx * totalDays / n), totalDays - 1) + 1;
+      return [targetDay];
+    }
+    const baseDays = Math.floor(totalDays / n);
+    const extra = totalDays % n;
+    let startDay = 1;
+    for (let i = 0; i < idx; i++) {
+      startDay += baseDays + (i < extra ? 1 : 0);
+    }
+    const daysForDest = baseDays + (idx < extra ? 1 : 0);
+    const days = [];
+    for (let d = 0; d < daysForDest; d++) {
+      days.push(startDay + d);
+    }
+    return days.length > 0 ? days : [1];
+  };
+
+  const loadNearbyAttractions = async (dests) => {
+    if (!dests || dests.length === 0) return;
+    setLoadingPlaces(true);
+    const results = {};
+    for (const dest of dests) {
+      try {
+        const data = await getNearbyPlaces(dest, 'all');
+        results[dest] = data.results || data.places || [];
+      } catch (err) {
+        console.warn(`[Places Discovery] Failed to load places for ${dest}:`, err);
+        results[dest] = [];
+      }
+    }
+    setNearbyPlaces(results);
+    setLoadingPlaces(false);
+  };
+
+  const recalculateWithActivities = async (newActivities) => {
+    if (!planResult) return;
+    setRecalculating(true);
+    setErrorMsg(null);
+
+    const payload = {
+      origin: origin.trim() || null,
+      destinations: selectedDestinations,
+      duration_days: parseInt(duration, 10) || selectedDestinations.length,
+      start_date: startDate || null,
+      pax: parseInt(pax, 10) || 1,
+      budget_limit: budgetLimit ? parseFloat(budgetLimit) : null,
+      accommodation_preference: accommodation || null,
+      transport_preference: transport || null,
+      food_preference: food || null,
+      round_trip: roundTrip,
+      selected_activities: newActivities,
+    };
+
+    try {
+      const res = await planItinerary(payload);
+      setPlanResult(res);
+    } catch (err) {
+      setErrorMsg(`Recalculation error: ${err.message}`);
+    } finally {
+      setRecalculating(false);
+    }
+  };
+
+  const handleAddActivity = (dest, place, targetDay) => {
+    const isAdded = selectedActivities.some(
+      a => a.name.toLowerCase() === place.name.toLowerCase()
+    );
+    if (isAdded) return;
+
+    const newAct = {
+      name: place.name,
+      destination: dest,
+      day: parseInt(targetDay, 10) || 1,
+    };
+    const nextList = [...selectedActivities, newAct];
+    setSelectedActivities(nextList);
+    recalculateWithActivities(nextList);
+  };
+
+  const handleRemoveActivity = (indexToRemove) => {
+    const nextList = selectedActivities.filter((_, idx) => idx !== indexToRemove);
+    setSelectedActivities(nextList);
+    recalculateWithActivities(nextList);
+  };
+
   const handleGenerate = async (e) => {
     e.preventDefault();
     setErrorMsg(null);
@@ -110,7 +223,9 @@ export default function TripPlannerModal({
     try {
       const res = await planItinerary(payload);
       setPlanResult(res);
+      setSelectedActivities([]);
       setActiveTab('result');
+      loadNearbyAttractions(selectedDestinations);
     } catch (err) {
       setErrorMsg(err.message || "Failed to generate itinerary. Ensure backend server is healthy.");
     } finally {
@@ -468,8 +583,190 @@ export default function TripPlannerModal({
                 </div>
               )}
 
+              {/* Recalculating status indicator */}
+              {recalculating && (
+                <div className="recalculating-overlay">
+                  <Loader2 size={16} className="animate-spin" />
+                  <span>Updating itinerary schedule and budget with custom activities...</span>
+                </div>
+              )}
+
+              {/* Added Custom Activities Bar */}
+              {selectedActivities.length > 0 && (
+                <div className="added-activities-bar">
+                  <span style={{ fontSize: '0.76rem', fontWeight: 700, color: '#D96B24' }}>
+                    Custom Activities Added ({selectedActivities.length}):
+                  </span>
+                  {selectedActivities.map((act, actIdx) => (
+                    <div key={actIdx} className="added-act-tag">
+                      <span>📅 Day {act.day}: <strong>{act.name}</strong> ({act.destination})</span>
+                      <button
+                        type="button"
+                        className="btn-remove-act"
+                        onClick={() => handleRemoveActivity(actIdx)}
+                        title="Remove activity from schedule"
+                      >
+                        ✕
+                      </button>
+                    </div>
+                  ))}
+                </div>
+              )}
+
               {/* Render Structured Cards if available in metadata */}
               {planResult.metadata && <StructuredCards metadata={planResult.metadata} />}
+
+              {/* Nearby Attractions Discovery Section */}
+              <div className="planner-places-section">
+                <div className="planner-places-header">
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                    <Compass size={18} color="#D96B24" />
+                    <div>
+                      <h4 style={{ margin: 0, fontSize: '0.92rem', color: '#123C32', fontWeight: 700 }}>
+                        Nearby Attractions & Custom Activities
+                      </h4>
+                      <p style={{ margin: 0, fontSize: '0.72rem', color: '#6A7870' }}>
+                        Add verified historical forts, viewpoints, and cultural spots into your itinerary
+                      </p>
+                    </div>
+                  </div>
+                  {loadingPlaces && (
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: '0.74rem', color: '#6A7870' }}>
+                      <Loader2 size={13} className="animate-spin" />
+                      <span>Loading places...</span>
+                    </div>
+                  )}
+                </div>
+
+                {selectedDestinations.map((dest) => {
+                  const places = nearbyPlaces[dest] || [];
+                  const validDays = getValidDaysForDestination(dest, selectedDestinations, duration);
+
+                  return (
+                    <div key={dest} style={{ display: 'flex', flexDirection: 'column', gap: 8, marginTop: 4 }}>
+                      <div style={{ fontSize: '0.8rem', fontWeight: 700, color: '#123C32', display: 'flex', alignItems: 'center', gap: 6 }}>
+                        <Landmark size={14} color="#2E7D4E" />
+                        <span>Attractions near {dest}</span>
+                        <span style={{ fontSize: '0.7rem', fontWeight: 500, color: '#8A9890' }}>
+                          ({places.length} available)
+                        </span>
+                      </div>
+
+                      {places.length === 0 ? (
+                        <div style={{ fontSize: '0.75rem', color: '#8A9890', padding: '6px 0' }}>
+                          {loadingPlaces ? 'Fetching attractions...' : `No additional attractions found near ${dest}.`}
+                        </div>
+                      ) : (
+                        <div className="planner-attractions-grid">
+                          {places.slice(0, 8).map((p, pIdx) => {
+                            const addedItem = selectedActivities.find(
+                              (a) => a.name.toLowerCase() === p.name.toLowerCase()
+                            );
+                            const currentTargetDay = selectedDaysByPlace[p.name] || validDays[0] || 1;
+                            const searchUrl = p.map_url || generateGoogleMapsSearchUrl(p.name, dest);
+                            const dirUrl = p.directions_url || generateGoogleMapsDirectionsUrl(dest, p.name);
+
+                            return (
+                              <div key={pIdx} className="planner-attraction-card">
+                                <div>
+                                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 6, marginBottom: 4 }}>
+                                    <h5 className="attraction-card-title">{p.name}</h5>
+                                    {p.distance && (
+                                      <span style={{ fontSize: '0.7rem', color: '#D96B24', fontWeight: 700, whiteSpace: 'nowrap' }}>
+                                        {p.distance}
+                                      </span>
+                                    )}
+                                  </div>
+
+                                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4, marginBottom: 6 }}>
+                                    <span className="attraction-badge-pill attraction-badge-category">
+                                      {p.category || 'Sightseeing'}
+                                    </span>
+                                    <span className={`attraction-badge-pill ${p.source && p.source.includes('Google') ? 'attraction-badge-source-google' : 'attraction-badge-source-verified'}`}>
+                                      {p.source && p.source.includes('Google') ? 'Google Places' : 'Temple Knowledge Base'}
+                                    </span>
+                                  </div>
+
+                                  {p.description && (
+                                    <p style={{ fontSize: '0.74rem', color: '#55655E', margin: '0 0 6px 0', lineHeight: 1.4 }}>
+                                      {p.description}
+                                    </p>
+                                  )}
+                                </div>
+
+                                <div className="attraction-actions-row">
+                                  <div className="attraction-links-group">
+                                    <a
+                                      href={searchUrl}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      className="attraction-link-btn"
+                                      title="View on Google Maps"
+                                      onClick={(e) => e.stopPropagation()}
+                                    >
+                                      <ExternalLink size={11} />
+                                      <span>Map</span>
+                                    </a>
+                                    <a
+                                      href={dirUrl}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      className="attraction-link-btn"
+                                      title="Get Directions on Google Maps"
+                                      onClick={(e) => e.stopPropagation()}
+                                    >
+                                      <Navigation size={11} />
+                                      <span>Route</span>
+                                    </a>
+                                  </div>
+
+                                  <div className="attraction-add-group">
+                                    {addedItem ? (
+                                      <span className="btn-add-activity-pill added">
+                                        <Check size={11} />
+                                        <span>Added (Day {addedItem.day})</span>
+                                      </span>
+                                    ) : (
+                                      <>
+                                        <select
+                                          className="attraction-day-select"
+                                          value={currentTargetDay}
+                                          onChange={(e) =>
+                                            setSelectedDaysByPlace({
+                                              ...selectedDaysByPlace,
+                                              [p.name]: parseInt(e.target.value, 10),
+                                            })
+                                          }
+                                        >
+                                          {validDays.map((d) => (
+                                            <option key={d} value={d}>
+                                              Day {d}
+                                            </option>
+                                          ))}
+                                        </select>
+                                        <button
+                                          type="button"
+                                          className="btn-add-activity-pill"
+                                          onClick={() => handleAddActivity(dest, p, currentTargetDay)}
+                                          disabled={recalculating}
+                                          title={`Add ${p.name} to Day ${currentTargetDay}`}
+                                        >
+                                          <Plus size={11} />
+                                          <span>Add to Day</span>
+                                        </button>
+                                      </>
+                                    )}
+                                  </div>
+                                </div>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
 
               {/* Full Formatted Itinerary Text */}
               <div style={{ background: '#FAF8F3', border: '1px solid #E8E2D5', borderRadius: 12, padding: 18, maxHeight: 420, overflowY: 'auto' }}>

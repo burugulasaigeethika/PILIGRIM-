@@ -1,5 +1,6 @@
 import React from 'react';
-import { CloudSun, Navigation, DollarSign, Calendar, MapPin, Clock } from 'lucide-react';
+import { CloudSun, Navigation, DollarSign, Calendar, MapPin, Clock, ExternalLink, Compass } from 'lucide-react';
+import { generateGoogleMapsSearchUrl, generateGoogleMapsDirectionsUrl } from '../services/api';
 
 export default function StructuredCards({ metadata }) {
   if (!metadata || typeof metadata !== 'object') return null;
@@ -11,6 +12,9 @@ export default function StructuredCards({ metadata }) {
   
   const totalBudget = metadata.calculated_total || metadata.budget;
   const hasBudget = Boolean(totalBudget && (totalBudget.min !== undefined || totalBudget.total !== undefined));
+
+  const placesList = metadata.places || metadata.results || metadata.nearby_places || metadata.attractions || metadata.nearby_attractions;
+  const hasPlaces = Boolean(placesList && Array.isArray(placesList) && placesList.length > 0);
 
   return (
     <div style={{ marginTop: 8, display: 'flex', flexDirection: 'column', gap: 8 }}>
@@ -42,11 +46,24 @@ export default function StructuredCards({ metadata }) {
       {/* Navigation & Route Card */}
       {hasRoute && (
         <div className="structured-card nav-card-react">
-          <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 6 }}>
-            <Navigation size={16} color="#D96B24" />
-            <span style={{ fontWeight: 700, fontSize: '0.84rem', color: '#123C32' }}>
-              Travel & Road Route
-            </span>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 6 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+              <Navigation size={16} color="#D96B24" />
+              <span style={{ fontWeight: 700, fontSize: '0.84rem', color: '#123C32' }}>
+                Travel & Road Route
+              </span>
+            </div>
+            {metadata.origin && metadata.destination && (
+              <a
+                href={generateGoogleMapsDirectionsUrl(metadata.origin, metadata.destination)}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontSize: '0.72rem', color: '#D96B24', display: 'inline-flex', alignItems: 'center', gap: 3, fontWeight: 600, textDecoration: 'none' }}
+              >
+                <span>Live Route</span>
+                <ExternalLink size={11} />
+              </a>
+            )}
           </div>
           <div className="nav-route-row">
             <span>Total Distance:</span>
@@ -62,9 +79,20 @@ export default function StructuredCards({ metadata }) {
             <div style={{ marginTop: 6, paddingTop: 6, borderTop: '1px dashed #EADDCF', fontSize: '0.74rem' }}>
               <span style={{ fontWeight: 600, color: '#55655E' }}>Route Legs:</span>
               {metadata.route_legs.map((leg, idx) => (
-                <div key={idx} style={{ display: 'flex', justifyContent: 'space-between', color: '#6A7870', marginTop: 2 }}>
+                <div key={idx} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', color: '#6A7870', marginTop: 3 }}>
                   <span>{leg.origin || leg.from} ➔ {leg.destination || leg.to}</span>
-                  <span>{leg.distance_km ? `${leg.distance_km} km` : ''}</span>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                    <span>{leg.distance_km ? `${leg.distance_km} km` : ''}</span>
+                    <a
+                      href={generateGoogleMapsDirectionsUrl(leg.origin || leg.from, leg.destination || leg.to)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Open leg in Google Maps"
+                      style={{ color: '#D96B24' }}
+                    >
+                      <ExternalLink size={10} />
+                    </a>
+                  </div>
                 </div>
               ))}
             </div>
@@ -98,6 +126,60 @@ export default function StructuredCards({ metadata }) {
               ))}
             </div>
           )}
+        </div>
+      )}
+
+      {/* Nearby Places / Discoveries Card */}
+      {hasPlaces && (
+        <div className="structured-card" style={{ background: '#FAF8F3', borderColor: '#E5DDCF' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 8 }}>
+            <Compass size={16} color="#D96B24" />
+            <span style={{ fontWeight: 700, fontSize: '0.84rem', color: '#123C32' }}>
+              Nearby Attractions & Discoveries ({placesList.length})
+            </span>
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+            {placesList.slice(0, 5).map((p, pi) => {
+              const name = p.name || p.display_name;
+              const cat = p.category || p.type;
+              const searchUrl = p.map_url || generateGoogleMapsSearchUrl(name, metadata.display_name || '');
+              const dirUrl = p.directions_url || generateGoogleMapsDirectionsUrl(metadata.display_name || '', name);
+
+              return (
+                <div key={pi} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: '#FFFFFF', padding: '6px 10px', borderRadius: 8, border: '1px solid #ECE4D8', fontSize: '0.76rem' }}>
+                  <div>
+                    <div style={{ fontWeight: 600, color: '#123C32' }}>{name}</div>
+                    <div style={{ display: 'flex', gap: 6, fontSize: '0.68rem', color: '#8A9890', marginTop: 1 }}>
+                      {cat && <span>{cat}</span>}
+                      {p.distance && <span>• {p.distance}</span>}
+                    </div>
+                  </div>
+                  <div style={{ display: 'flex', gap: 6 }}>
+                    <a
+                      href={searchUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="attraction-link-btn"
+                      title="View on Google Maps"
+                    >
+                      <ExternalLink size={10} />
+                      <span>Map</span>
+                    </a>
+                    <a
+                      href={dirUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="attraction-link-btn"
+                      title="Get Directions"
+                    >
+                      <Navigation size={10} />
+                      <span>Route</span>
+                    </a>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       )}
     </div>
